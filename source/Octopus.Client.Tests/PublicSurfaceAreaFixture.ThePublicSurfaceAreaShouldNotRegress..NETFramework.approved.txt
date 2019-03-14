@@ -2950,8 +2950,11 @@ Octopus.Client.Model
   class MachineScriptPolicy
   {
     .ctor()
+    String BashScript { get; set; }
+    String CSharpScript { get; set; }
+    String FSharpScript { get; set; }
+    String PowershellScript { get; set; }
     Octopus.Client.Model.MachineScriptPolicyRunType RunType { get; set; }
-    String ScriptBody { get; set; }
   }
   MachineScriptPolicyRunType
   {
