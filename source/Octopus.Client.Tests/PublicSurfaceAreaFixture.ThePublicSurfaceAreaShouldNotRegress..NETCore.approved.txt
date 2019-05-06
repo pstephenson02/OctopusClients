@@ -4212,6 +4212,7 @@ Octopus.Client.Model
   class TaskDetailsResource
     Octopus.Client.Extensibility.IResource
     Octopus.Client.Model.IAuditedResource
+    Octopus.Client.Extensibility.IHaveSpaceResource
     Octopus.Client.Model.Resource
   {
     .ctor()
@@ -4219,6 +4220,7 @@ Octopus.Client.Model
     IList<ActivityElement> ActivityLogs { get; set; }
     Int64 PhysicalLogSize { get; set; }
     Octopus.Client.Model.TaskProgress Progress { get; set; }
+    String SpaceId { get; set; }
     Octopus.Client.Model.TaskResource Task { get; set; }
   }
   class TaskProgress

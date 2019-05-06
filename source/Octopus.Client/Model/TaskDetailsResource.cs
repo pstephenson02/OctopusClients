@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using Octopus.Client.Extensibility;
 
 namespace Octopus.Client.Model
 {
-    public class TaskDetailsResource : Resource
+    public class TaskDetailsResource : Resource, IHaveSpaceResource
     {
         private ActivityElement activityLog;
 
@@ -32,5 +33,6 @@ namespace Octopus.Client.Model
         public TaskProgress Progress { get; set; }
 
         public long PhysicalLogSize { get; set; }
+        public string SpaceId { get; set; }
     }
 }
