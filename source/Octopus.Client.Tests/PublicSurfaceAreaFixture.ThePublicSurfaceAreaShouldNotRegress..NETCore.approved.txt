@@ -4501,6 +4501,22 @@ Octopus.Client.Model
       static System.String WorkerpoolId
     }
   }
+  class UpgradeConfigurationResource
+    Octopus.Client.Extensibility.IResource
+    Octopus.Client.Model.IAuditedResource
+    Octopus.Client.Model.Resource
+  {
+    .ctor()
+    Boolean AllowChecking { get; set; }
+    Boolean IncludeStatistics { get; set; }
+    Octopus.Client.Model.UpgradeNotificationMode NotificationMode { get; set; }
+  }
+  UpgradeNotificationMode
+  {
+      AlwaysShow = 0
+      ShowOnlyMajorMinor = 1
+      NeverShow = 2
+  }
   class UserPermissionRestriction
   {
     .ctor()
