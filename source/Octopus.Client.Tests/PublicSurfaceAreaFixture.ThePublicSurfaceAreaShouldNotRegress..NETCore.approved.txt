@@ -5293,8 +5293,14 @@ Octopus.Client.Model.Endpoints
     Octopus.Client.Model.Endpoints.EndpointResource
   {
     String CertificateSignatureAlgorithm { get; set; }
+    Octopus.Client.Model.Endpoints.TentacleOperatingSystemFamily OperatingSystemFamily { get; set; }
     Octopus.Client.Model.Endpoints.TentacleDetailsResource TentacleVersionDetails { get; set; }
     String Thumbprint { get; set; }
+  }
+  TentacleOperatingSystemFamily
+  {
+      Windows = 0
+      Linux = 1
   }
 }
 Octopus.Client.Model.Forms

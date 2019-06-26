@@ -1,9 +1,14 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 using Octopus.Client.Extensibility.Attributes;
 
 namespace Octopus.Client.Model.Endpoints
 {
+    public enum TentacleOperatingSystemFamily
+    {
+        Windows,
+        Linux
+    }
+
     public abstract class TentacleEndpointResource : EndpointResource
     {
         [Required(ErrorMessage = "Please provide a thumbprint for this machine.")]
@@ -15,5 +20,7 @@ namespace Octopus.Client.Model.Endpoints
         public TentacleDetailsResource TentacleVersionDetails { get; set; }
 
         public string CertificateSignatureAlgorithm { get; set; }
+
+        public TentacleOperatingSystemFamily OperatingSystemFamily { get; set; } = TentacleOperatingSystemFamily.Windows;
     }
 }
