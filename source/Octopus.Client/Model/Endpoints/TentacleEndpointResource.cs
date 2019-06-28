@@ -21,6 +21,7 @@ namespace Octopus.Client.Model.Endpoints
 
         public string CertificateSignatureAlgorithm { get; set; }
 
+        [Writeable]
         public TentacleOperatingSystemFamily OperatingSystemFamily { get; set; } = TentacleOperatingSystemFamily.Windows;
     }
 }
