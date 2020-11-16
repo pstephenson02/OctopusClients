@@ -5330,8 +5330,9 @@ Octopus.Client.Model
   {
     .ctor()
     String DefaultBranch { get; set; }
+    String DeploymentProcessFilePath { get; set; }
     Octopus.Client.Model.SensitiveValue Password { get; set; }
-    String Url { get; set; }
+    Uri Url { get; set; }
     String Username { get; set; }
   }
   class VersioningStrategyResource
