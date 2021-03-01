@@ -1,0 +1,799 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly
+  commentId: T:Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly
+  id: InlineScriptActionFromFileInAssembly
+  parent: Octopus.Client.Model.DeploymentProcess
+  children:
+  - Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.#ctor(System.String,System.Reflection.Assembly)
+  - Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.GetScriptBody
+  - Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceAssembly
+  - Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceName
+  - Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Source
+  - Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Syntax
+  langs:
+  - csharp
+  - vb
+  name: InlineScriptActionFromFileInAssembly
+  nameWithType: InlineScriptActionFromFileInAssembly
+  fullName: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentProcess/InlineScriptActionFromFileInAssembly.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: InlineScriptActionFromFileInAssembly
+    path: ../source/Octopus.Client/Model/DeploymentProcess/InlineScriptActionFromFileInAssembly.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.DeploymentProcess
+  syntax:
+    content: 'public class InlineScriptActionFromFileInAssembly : ScriptAction'
+    content.vb: >-
+      Public Class InlineScriptActionFromFileInAssembly
+          Inherits ScriptAction
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.DeploymentProcess.ScriptAction
+  inheritedMembers:
+  - Octopus.Client.Model.DeploymentProcess.ScriptAction.CalculateScriptType(System.String)
+  - Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScript(Octopus.Client.Model.ScriptSyntax,System.String)
+  - Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScriptFromFileInAssembly(System.String,System.Reflection.Assembly)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.#ctor(System.String,System.Reflection.Assembly)
+  commentId: M:Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.#ctor(System.String,System.Reflection.Assembly)
+  id: '#ctor(System.String,System.Reflection.Assembly)'
+  parent: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly
+  langs:
+  - csharp
+  - vb
+  name: InlineScriptActionFromFileInAssembly(String, Assembly)
+  nameWithType: InlineScriptActionFromFileInAssembly.InlineScriptActionFromFileInAssembly(String, Assembly)
+  fullName: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.InlineScriptActionFromFileInAssembly(System.String, System.Reflection.Assembly)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentProcess/InlineScriptActionFromFileInAssembly.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/DeploymentProcess/InlineScriptActionFromFileInAssembly.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.DeploymentProcess
+  syntax:
+    content: public InlineScriptActionFromFileInAssembly(string resourceName, Assembly resourceAssembly = null)
+    parameters:
+    - id: resourceName
+      type: System.String
+    - id: resourceAssembly
+      type: System.Reflection.Assembly
+    content.vb: Public Sub New(resourceName As String, resourceAssembly As Assembly = Nothing)
+  overload: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Source
+  commentId: P:Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Source
+  id: Source
+  parent: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: InlineScriptActionFromFileInAssembly.Source
+  fullName: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Source
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentProcess/InlineScriptActionFromFileInAssembly.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Source
+    path: ../source/Octopus.Client/Model/DeploymentProcess/InlineScriptActionFromFileInAssembly.cs
+    startLine: 22
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.DeploymentProcess
+  syntax:
+    content: public override ScriptSource Source { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.DeploymentProcess.ScriptSource
+    content.vb: Public Overrides ReadOnly Property Source As ScriptSource
+  overridden: Octopus.Client.Model.DeploymentProcess.ScriptAction.Source
+  overload: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Source*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Syntax
+  commentId: P:Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Syntax
+  id: Syntax
+  parent: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly
+  langs:
+  - csharp
+  - vb
+  name: Syntax
+  nameWithType: InlineScriptActionFromFileInAssembly.Syntax
+  fullName: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Syntax
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentProcess/InlineScriptActionFromFileInAssembly.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Syntax
+    path: ../source/Octopus.Client/Model/DeploymentProcess/InlineScriptActionFromFileInAssembly.cs
+    startLine: 23
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.DeploymentProcess
+  syntax:
+    content: public override ScriptSyntax Syntax { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ScriptSyntax
+    content.vb: Public Overrides ReadOnly Property Syntax As ScriptSyntax
+  overridden: Octopus.Client.Model.DeploymentProcess.ScriptAction.Syntax
+  overload: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Syntax*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceAssembly
+  commentId: P:Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceAssembly
+  id: ResourceAssembly
+  parent: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly
+  langs:
+  - csharp
+  - vb
+  name: ResourceAssembly
+  nameWithType: InlineScriptActionFromFileInAssembly.ResourceAssembly
+  fullName: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceAssembly
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentProcess/InlineScriptActionFromFileInAssembly.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ResourceAssembly
+    path: ../source/Octopus.Client/Model/DeploymentProcess/InlineScriptActionFromFileInAssembly.cs
+    startLine: 24
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.DeploymentProcess
+  syntax:
+    content: public Assembly ResourceAssembly { get; }
+    parameters: []
+    return:
+      type: System.Reflection.Assembly
+    content.vb: Public ReadOnly Property ResourceAssembly As Assembly
+  overload: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceAssembly*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceName
+  commentId: P:Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceName
+  id: ResourceName
+  parent: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly
+  langs:
+  - csharp
+  - vb
+  name: ResourceName
+  nameWithType: InlineScriptActionFromFileInAssembly.ResourceName
+  fullName: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentProcess/InlineScriptActionFromFileInAssembly.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ResourceName
+    path: ../source/Octopus.Client/Model/DeploymentProcess/InlineScriptActionFromFileInAssembly.cs
+    startLine: 25
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.DeploymentProcess
+  syntax:
+    content: public string ResourceName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ResourceName As String
+  overload: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.GetScriptBody
+  commentId: M:Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.GetScriptBody
+  id: GetScriptBody
+  parent: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly
+  langs:
+  - csharp
+  - vb
+  name: GetScriptBody()
+  nameWithType: InlineScriptActionFromFileInAssembly.GetScriptBody()
+  fullName: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.GetScriptBody()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentProcess/InlineScriptActionFromFileInAssembly.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetScriptBody
+    path: ../source/Octopus.Client/Model/DeploymentProcess/InlineScriptActionFromFileInAssembly.cs
+    startLine: 26
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.DeploymentProcess
+  syntax:
+    content: public string GetScriptBody()
+    return:
+      type: System.String
+    content.vb: Public Function GetScriptBody As String
+  overload: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.GetScriptBody*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model.DeploymentProcess
+  commentId: N:Octopus.Client.Model.DeploymentProcess
+  name: Octopus.Client.Model.DeploymentProcess
+  nameWithType: Octopus.Client.Model.DeploymentProcess
+  fullName: Octopus.Client.Model.DeploymentProcess
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.DeploymentProcess.ScriptAction
+  commentId: T:Octopus.Client.Model.DeploymentProcess.ScriptAction
+  parent: Octopus.Client.Model.DeploymentProcess
+  name: ScriptAction
+  nameWithType: ScriptAction
+  fullName: Octopus.Client.Model.DeploymentProcess.ScriptAction
+- uid: Octopus.Client.Model.DeploymentProcess.ScriptAction.CalculateScriptType(System.String)
+  commentId: M:Octopus.Client.Model.DeploymentProcess.ScriptAction.CalculateScriptType(System.String)
+  parent: Octopus.Client.Model.DeploymentProcess.ScriptAction
+  isExternal: true
+  name: CalculateScriptType(String)
+  nameWithType: ScriptAction.CalculateScriptType(String)
+  fullName: Octopus.Client.Model.DeploymentProcess.ScriptAction.CalculateScriptType(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.DeploymentProcess.ScriptAction.CalculateScriptType(System.String)
+    name: CalculateScriptType
+    nameWithType: ScriptAction.CalculateScriptType
+    fullName: Octopus.Client.Model.DeploymentProcess.ScriptAction.CalculateScriptType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.DeploymentProcess.ScriptAction.CalculateScriptType(System.String)
+    name: CalculateScriptType
+    nameWithType: ScriptAction.CalculateScriptType
+    fullName: Octopus.Client.Model.DeploymentProcess.ScriptAction.CalculateScriptType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScript(Octopus.Client.Model.ScriptSyntax,System.String)
+  commentId: M:Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScript(Octopus.Client.Model.ScriptSyntax,System.String)
+  parent: Octopus.Client.Model.DeploymentProcess.ScriptAction
+  isExternal: true
+  name: InlineScript(ScriptSyntax, String)
+  nameWithType: ScriptAction.InlineScript(ScriptSyntax, String)
+  fullName: Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScript(Octopus.Client.Model.ScriptSyntax, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScript(Octopus.Client.Model.ScriptSyntax,System.String)
+    name: InlineScript
+    nameWithType: ScriptAction.InlineScript
+    fullName: Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScript
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ScriptSyntax
+    name: ScriptSyntax
+    nameWithType: ScriptSyntax
+    fullName: Octopus.Client.Model.ScriptSyntax
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScript(Octopus.Client.Model.ScriptSyntax,System.String)
+    name: InlineScript
+    nameWithType: ScriptAction.InlineScript
+    fullName: Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScript
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ScriptSyntax
+    name: ScriptSyntax
+    nameWithType: ScriptSyntax
+    fullName: Octopus.Client.Model.ScriptSyntax
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScriptFromFileInAssembly(System.String,System.Reflection.Assembly)
+  commentId: M:Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScriptFromFileInAssembly(System.String,System.Reflection.Assembly)
+  parent: Octopus.Client.Model.DeploymentProcess.ScriptAction
+  isExternal: true
+  name: InlineScriptFromFileInAssembly(String, Assembly)
+  nameWithType: ScriptAction.InlineScriptFromFileInAssembly(String, Assembly)
+  fullName: Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScriptFromFileInAssembly(System.String, System.Reflection.Assembly)
+  spec.csharp:
+  - uid: Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScriptFromFileInAssembly(System.String,System.Reflection.Assembly)
+    name: InlineScriptFromFileInAssembly
+    nameWithType: ScriptAction.InlineScriptFromFileInAssembly
+    fullName: Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScriptFromFileInAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: System.Reflection.Assembly
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScriptFromFileInAssembly(System.String,System.Reflection.Assembly)
+    name: InlineScriptFromFileInAssembly
+    nameWithType: ScriptAction.InlineScriptFromFileInAssembly
+    fullName: Octopus.Client.Model.DeploymentProcess.ScriptAction.InlineScriptFromFileInAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    nameWithType: Assembly
+    fullName: System.Reflection.Assembly
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.#ctor*
+  commentId: Overload:Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.#ctor
+  name: InlineScriptActionFromFileInAssembly
+  nameWithType: InlineScriptActionFromFileInAssembly.InlineScriptActionFromFileInAssembly
+  fullName: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.InlineScriptActionFromFileInAssembly
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+- uid: Octopus.Client.Model.DeploymentProcess.ScriptAction.Source
+  commentId: P:Octopus.Client.Model.DeploymentProcess.ScriptAction.Source
+  parent: Octopus.Client.Model.DeploymentProcess.ScriptAction
+  name: Source
+  nameWithType: ScriptAction.Source
+  fullName: Octopus.Client.Model.DeploymentProcess.ScriptAction.Source
+- uid: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Source*
+  commentId: Overload:Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Source
+  name: Source
+  nameWithType: InlineScriptActionFromFileInAssembly.Source
+  fullName: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Source
+- uid: Octopus.Client.Model.DeploymentProcess.ScriptSource
+  commentId: T:Octopus.Client.Model.DeploymentProcess.ScriptSource
+  parent: Octopus.Client.Model.DeploymentProcess
+  name: ScriptSource
+  nameWithType: ScriptSource
+  fullName: Octopus.Client.Model.DeploymentProcess.ScriptSource
+- uid: Octopus.Client.Model.DeploymentProcess.ScriptAction.Syntax
+  commentId: P:Octopus.Client.Model.DeploymentProcess.ScriptAction.Syntax
+  parent: Octopus.Client.Model.DeploymentProcess.ScriptAction
+  name: Syntax
+  nameWithType: ScriptAction.Syntax
+  fullName: Octopus.Client.Model.DeploymentProcess.ScriptAction.Syntax
+- uid: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Syntax*
+  commentId: Overload:Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Syntax
+  name: Syntax
+  nameWithType: InlineScriptActionFromFileInAssembly.Syntax
+  fullName: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.Syntax
+- uid: Octopus.Client.Model.ScriptSyntax
+  commentId: T:Octopus.Client.Model.ScriptSyntax
+  parent: Octopus.Client.Model
+  name: ScriptSyntax
+  nameWithType: ScriptSyntax
+  fullName: Octopus.Client.Model.ScriptSyntax
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceAssembly*
+  commentId: Overload:Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceAssembly
+  name: ResourceAssembly
+  nameWithType: InlineScriptActionFromFileInAssembly.ResourceAssembly
+  fullName: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceAssembly
+- uid: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceName*
+  commentId: Overload:Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceName
+  name: ResourceName
+  nameWithType: InlineScriptActionFromFileInAssembly.ResourceName
+  fullName: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.ResourceName
+- uid: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.GetScriptBody*
+  commentId: Overload:Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.GetScriptBody
+  name: GetScriptBody
+  nameWithType: InlineScriptActionFromFileInAssembly.GetScriptBody
+  fullName: Octopus.Client.Model.DeploymentProcess.InlineScriptActionFromFileInAssembly.GetScriptBody

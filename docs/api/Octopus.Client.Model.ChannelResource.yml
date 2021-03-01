@@ -1,0 +1,1383 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.ChannelResource
+  commentId: T:Octopus.Client.Model.ChannelResource
+  id: ChannelResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.ChannelResource.#ctor
+  - Octopus.Client.Model.ChannelResource.AddCommonRuleForAllActions(System.String,System.String,Octopus.Client.Model.DeploymentProcessResource)
+  - Octopus.Client.Model.ChannelResource.AddOrUpdateTenantTags(Octopus.Client.Model.TagResource[])
+  - Octopus.Client.Model.ChannelResource.AddRule(Octopus.Client.Model.ChannelVersionRuleResource)
+  - Octopus.Client.Model.ChannelResource.AddRule(System.String,System.String,Octopus.Client.Model.DeploymentActionResource[])
+  - Octopus.Client.Model.ChannelResource.ClearRules
+  - Octopus.Client.Model.ChannelResource.ClearTenantTags
+  - Octopus.Client.Model.ChannelResource.Description
+  - Octopus.Client.Model.ChannelResource.IsDefault
+  - Octopus.Client.Model.ChannelResource.LifecycleId
+  - Octopus.Client.Model.ChannelResource.Name
+  - Octopus.Client.Model.ChannelResource.ProjectId
+  - Octopus.Client.Model.ChannelResource.Rules
+  - Octopus.Client.Model.ChannelResource.SetAsDefaultChannel
+  - Octopus.Client.Model.ChannelResource.SpaceId
+  - Octopus.Client.Model.ChannelResource.TenantTags
+  - Octopus.Client.Model.ChannelResource.UsingLifecycle(Octopus.Client.Model.LifecycleResource)
+  langs:
+  - csharp
+  - vb
+  name: ChannelResource
+  nameWithType: ChannelResource
+  fullName: Octopus.Client.Model.ChannelResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ChannelResource
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class ChannelResource : Resource, IResource, IAuditedResource, INamedResource, IHaveSpaceResource'
+    content.vb: >-
+      Public Class ChannelResource
+          Inherits Resource
+          Implements IResource, IAuditedResource, INamedResource, IHaveSpaceResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  - Octopus.Client.Extensibility.INamedResource
+  - Octopus.Client.Extensibility.IHaveSpaceResource
+  inheritedMembers:
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.ChannelResource.#ctor
+  commentId: M:Octopus.Client.Model.ChannelResource.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: ChannelResource()
+  nameWithType: ChannelResource.ChannelResource()
+  fullName: Octopus.Client.Model.ChannelResource.ChannelResource()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ChannelResource()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.ChannelResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ChannelResource.Name
+  commentId: P:Octopus.Client.Model.ChannelResource.Name
+  id: Name
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ChannelResource.Name
+  fullName: Octopus.Client.Model.ChannelResource.Name
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Name
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Octopus.Client.Model.ChannelResource.Name*
+  implements:
+  - Octopus.Client.Extensibility.INamedResource.Name
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ChannelResource.Description
+  commentId: P:Octopus.Client.Model.ChannelResource.Description
+  id: Description
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: ChannelResource.Description
+  fullName: Octopus.Client.Model.ChannelResource.Description
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Description
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 18
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Octopus.Client.Model.ChannelResource.Description*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ChannelResource.ProjectId
+  commentId: P:Octopus.Client.Model.ChannelResource.ProjectId
+  id: ProjectId
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectId
+  nameWithType: ChannelResource.ProjectId
+  fullName: Octopus.Client.Model.ChannelResource.ProjectId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectId
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 21
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ProjectId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProjectId As String
+  overload: Octopus.Client.Model.ChannelResource.ProjectId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ChannelResource.LifecycleId
+  commentId: P:Octopus.Client.Model.ChannelResource.LifecycleId
+  id: LifecycleId
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: LifecycleId
+  nameWithType: ChannelResource.LifecycleId
+  fullName: Octopus.Client.Model.ChannelResource.LifecycleId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: LifecycleId
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 24
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string LifecycleId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LifecycleId As String
+  overload: Octopus.Client.Model.ChannelResource.LifecycleId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ChannelResource.IsDefault
+  commentId: P:Octopus.Client.Model.ChannelResource.IsDefault
+  id: IsDefault
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: IsDefault
+  nameWithType: ChannelResource.IsDefault
+  fullName: Octopus.Client.Model.ChannelResource.IsDefault
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsDefault
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 27
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public bool IsDefault { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsDefault As Boolean
+  overload: Octopus.Client.Model.ChannelResource.IsDefault*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ChannelResource.Rules
+  commentId: P:Octopus.Client.Model.ChannelResource.Rules
+  id: Rules
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: Rules
+  nameWithType: ChannelResource.Rules
+  fullName: Octopus.Client.Model.ChannelResource.Rules
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Rules
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 30
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<ChannelVersionRuleResource> Rules { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.ChannelVersionRuleResource}
+    content.vb: Public Property Rules As List(Of ChannelVersionRuleResource)
+  overload: Octopus.Client.Model.ChannelResource.Rules*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ChannelResource.TenantTags
+  commentId: P:Octopus.Client.Model.ChannelResource.TenantTags
+  id: TenantTags
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: TenantTags
+  nameWithType: ChannelResource.TenantTags
+  fullName: Octopus.Client.Model.ChannelResource.TenantTags
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TenantTags
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 33
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ReferenceCollection TenantTags { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property TenantTags As ReferenceCollection
+  overload: Octopus.Client.Model.ChannelResource.TenantTags*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ChannelResource.SetAsDefaultChannel
+  commentId: M:Octopus.Client.Model.ChannelResource.SetAsDefaultChannel
+  id: SetAsDefaultChannel
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: SetAsDefaultChannel()
+  nameWithType: ChannelResource.SetAsDefaultChannel()
+  fullName: Octopus.Client.Model.ChannelResource.SetAsDefaultChannel()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SetAsDefaultChannel
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 36
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ChannelResource SetAsDefaultChannel()
+    return:
+      type: Octopus.Client.Model.ChannelResource
+    content.vb: Public Function SetAsDefaultChannel As ChannelResource
+  overload: Octopus.Client.Model.ChannelResource.SetAsDefaultChannel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ChannelResource.UsingLifecycle(Octopus.Client.Model.LifecycleResource)
+  commentId: M:Octopus.Client.Model.ChannelResource.UsingLifecycle(Octopus.Client.Model.LifecycleResource)
+  id: UsingLifecycle(Octopus.Client.Model.LifecycleResource)
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: UsingLifecycle(LifecycleResource)
+  nameWithType: ChannelResource.UsingLifecycle(LifecycleResource)
+  fullName: Octopus.Client.Model.ChannelResource.UsingLifecycle(Octopus.Client.Model.LifecycleResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: UsingLifecycle
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 42
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ChannelResource UsingLifecycle(LifecycleResource lifecycle)
+    parameters:
+    - id: lifecycle
+      type: Octopus.Client.Model.LifecycleResource
+    return:
+      type: Octopus.Client.Model.ChannelResource
+    content.vb: Public Function UsingLifecycle(lifecycle As LifecycleResource) As ChannelResource
+  overload: Octopus.Client.Model.ChannelResource.UsingLifecycle*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ChannelResource.ClearRules
+  commentId: M:Octopus.Client.Model.ChannelResource.ClearRules
+  id: ClearRules
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: ClearRules()
+  nameWithType: ChannelResource.ClearRules()
+  fullName: Octopus.Client.Model.ChannelResource.ClearRules()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ClearRules
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 48
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ChannelResource ClearRules()
+    return:
+      type: Octopus.Client.Model.ChannelResource
+    content.vb: Public Function ClearRules As ChannelResource
+  overload: Octopus.Client.Model.ChannelResource.ClearRules*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ChannelResource.AddRule(Octopus.Client.Model.ChannelVersionRuleResource)
+  commentId: M:Octopus.Client.Model.ChannelResource.AddRule(Octopus.Client.Model.ChannelVersionRuleResource)
+  id: AddRule(Octopus.Client.Model.ChannelVersionRuleResource)
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: AddRule(ChannelVersionRuleResource)
+  nameWithType: ChannelResource.AddRule(ChannelVersionRuleResource)
+  fullName: Octopus.Client.Model.ChannelResource.AddRule(Octopus.Client.Model.ChannelVersionRuleResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddRule
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 54
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ChannelResource AddRule(ChannelVersionRuleResource rule)
+    parameters:
+    - id: rule
+      type: Octopus.Client.Model.ChannelVersionRuleResource
+    return:
+      type: Octopus.Client.Model.ChannelResource
+    content.vb: Public Function AddRule(rule As ChannelVersionRuleResource) As ChannelResource
+  overload: Octopus.Client.Model.ChannelResource.AddRule*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ChannelResource.AddCommonRuleForAllActions(System.String,System.String,Octopus.Client.Model.DeploymentProcessResource)
+  commentId: M:Octopus.Client.Model.ChannelResource.AddCommonRuleForAllActions(System.String,System.String,Octopus.Client.Model.DeploymentProcessResource)
+  id: AddCommonRuleForAllActions(System.String,System.String,Octopus.Client.Model.DeploymentProcessResource)
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: AddCommonRuleForAllActions(String, String, DeploymentProcessResource)
+  nameWithType: ChannelResource.AddCommonRuleForAllActions(String, String, DeploymentProcessResource)
+  fullName: Octopus.Client.Model.ChannelResource.AddCommonRuleForAllActions(System.String, System.String, Octopus.Client.Model.DeploymentProcessResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddCommonRuleForAllActions
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 60
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ChannelResource AddCommonRuleForAllActions(string versionRange, string tagRegex, DeploymentProcessResource process)
+    parameters:
+    - id: versionRange
+      type: System.String
+    - id: tagRegex
+      type: System.String
+    - id: process
+      type: Octopus.Client.Model.DeploymentProcessResource
+    return:
+      type: Octopus.Client.Model.ChannelResource
+    content.vb: Public Function AddCommonRuleForAllActions(versionRange As String, tagRegex As String, process As DeploymentProcessResource) As ChannelResource
+  overload: Octopus.Client.Model.ChannelResource.AddCommonRuleForAllActions*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ChannelResource.AddRule(System.String,System.String,Octopus.Client.Model.DeploymentActionResource[])
+  commentId: M:Octopus.Client.Model.ChannelResource.AddRule(System.String,System.String,Octopus.Client.Model.DeploymentActionResource[])
+  id: AddRule(System.String,System.String,Octopus.Client.Model.DeploymentActionResource[])
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: AddRule(String, String, DeploymentActionResource[])
+  nameWithType: ChannelResource.AddRule(String, String, DeploymentActionResource[])
+  fullName: Octopus.Client.Model.ChannelResource.AddRule(System.String, System.String, Octopus.Client.Model.DeploymentActionResource[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddRule
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 69
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nCreates a rule for all packages used in the supplied actions \n"
+  example: []
+  syntax:
+    content: public ChannelResource AddRule(string versionRange, string tagRegex, params DeploymentActionResource[] actions)
+    parameters:
+    - id: versionRange
+      type: System.String
+    - id: tagRegex
+      type: System.String
+    - id: actions
+      type: Octopus.Client.Model.DeploymentActionResource[]
+    return:
+      type: Octopus.Client.Model.ChannelResource
+    content.vb: Public Function AddRule(versionRange As String, tagRegex As String, ParamArray actions As DeploymentActionResource()) As ChannelResource
+  overload: Octopus.Client.Model.ChannelResource.AddRule*
+  nameWithType.vb: ChannelResource.AddRule(String, String, DeploymentActionResource())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.ChannelResource.AddRule(System.String, System.String, Octopus.Client.Model.DeploymentActionResource())
+  name.vb: AddRule(String, String, DeploymentActionResource())
+- uid: Octopus.Client.Model.ChannelResource.ClearTenantTags
+  commentId: M:Octopus.Client.Model.ChannelResource.ClearTenantTags
+  id: ClearTenantTags
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: ClearTenantTags()
+  nameWithType: ChannelResource.ClearTenantTags()
+  fullName: Octopus.Client.Model.ChannelResource.ClearTenantTags()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ClearTenantTags
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 85
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ChannelResource ClearTenantTags()
+    return:
+      type: Octopus.Client.Model.ChannelResource
+    content.vb: Public Function ClearTenantTags As ChannelResource
+  overload: Octopus.Client.Model.ChannelResource.ClearTenantTags*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ChannelResource.AddOrUpdateTenantTags(Octopus.Client.Model.TagResource[])
+  commentId: M:Octopus.Client.Model.ChannelResource.AddOrUpdateTenantTags(Octopus.Client.Model.TagResource[])
+  id: AddOrUpdateTenantTags(Octopus.Client.Model.TagResource[])
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateTenantTags(TagResource[])
+  nameWithType: ChannelResource.AddOrUpdateTenantTags(TagResource[])
+  fullName: Octopus.Client.Model.ChannelResource.AddOrUpdateTenantTags(Octopus.Client.Model.TagResource[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateTenantTags
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 91
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ChannelResource AddOrUpdateTenantTags(params TagResource[] tags)
+    parameters:
+    - id: tags
+      type: Octopus.Client.Model.TagResource[]
+    return:
+      type: Octopus.Client.Model.ChannelResource
+    content.vb: Public Function AddOrUpdateTenantTags(ParamArray tags As TagResource()) As ChannelResource
+  overload: Octopus.Client.Model.ChannelResource.AddOrUpdateTenantTags*
+  nameWithType.vb: ChannelResource.AddOrUpdateTenantTags(TagResource())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.ChannelResource.AddOrUpdateTenantTags(Octopus.Client.Model.TagResource())
+  name.vb: AddOrUpdateTenantTags(TagResource())
+- uid: Octopus.Client.Model.ChannelResource.SpaceId
+  commentId: P:Octopus.Client.Model.ChannelResource.SpaceId
+  id: SpaceId
+  parent: Octopus.Client.Model.ChannelResource
+  langs:
+  - csharp
+  - vb
+  name: SpaceId
+  nameWithType: ChannelResource.SpaceId
+  fullName: Octopus.Client.Model.ChannelResource.SpaceId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ChannelResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SpaceId
+    path: ../source/Octopus.Client/Model/ChannelResource.cs
+    startLine: 101
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string SpaceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SpaceId As String
+  overload: Octopus.Client.Model.ChannelResource.SpaceId*
+  implements:
+  - Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Extensibility.INamedResource
+  commentId: T:Octopus.Client.Extensibility.INamedResource
+  parent: Octopus.Client.Extensibility
+  name: INamedResource
+  nameWithType: INamedResource
+  fullName: Octopus.Client.Extensibility.INamedResource
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource
+  commentId: T:Octopus.Client.Extensibility.IHaveSpaceResource
+  parent: Octopus.Client.Extensibility
+  name: IHaveSpaceResource
+  nameWithType: IHaveSpaceResource
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.ChannelResource.#ctor*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.#ctor
+  name: ChannelResource
+  nameWithType: ChannelResource.ChannelResource
+  fullName: Octopus.Client.Model.ChannelResource.ChannelResource
+- uid: Octopus.Client.Model.ChannelResource.Name*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.Name
+  name: Name
+  nameWithType: ChannelResource.Name
+  fullName: Octopus.Client.Model.ChannelResource.Name
+- uid: Octopus.Client.Extensibility.INamedResource.Name
+  commentId: P:Octopus.Client.Extensibility.INamedResource.Name
+  parent: Octopus.Client.Extensibility.INamedResource
+  name: Name
+  nameWithType: INamedResource.Name
+  fullName: Octopus.Client.Extensibility.INamedResource.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.ChannelResource.Description*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.Description
+  name: Description
+  nameWithType: ChannelResource.Description
+  fullName: Octopus.Client.Model.ChannelResource.Description
+- uid: Octopus.Client.Model.ChannelResource.ProjectId*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.ProjectId
+  name: ProjectId
+  nameWithType: ChannelResource.ProjectId
+  fullName: Octopus.Client.Model.ChannelResource.ProjectId
+- uid: Octopus.Client.Model.ChannelResource.LifecycleId*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.LifecycleId
+  name: LifecycleId
+  nameWithType: ChannelResource.LifecycleId
+  fullName: Octopus.Client.Model.ChannelResource.LifecycleId
+- uid: Octopus.Client.Model.ChannelResource.IsDefault*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.IsDefault
+  name: IsDefault
+  nameWithType: ChannelResource.IsDefault
+  fullName: Octopus.Client.Model.ChannelResource.IsDefault
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.ChannelResource.Rules*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.Rules
+  name: Rules
+  nameWithType: ChannelResource.Rules
+  fullName: Octopus.Client.Model.ChannelResource.Rules
+- uid: System.Collections.Generic.List{Octopus.Client.Model.ChannelVersionRuleResource}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.ChannelVersionRuleResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ChannelVersionRuleResource>
+  nameWithType: List<ChannelVersionRuleResource>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.ChannelVersionRuleResource>
+  nameWithType.vb: List(Of ChannelVersionRuleResource)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.ChannelVersionRuleResource)
+  name.vb: List(Of ChannelVersionRuleResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ChannelVersionRuleResource
+    name: ChannelVersionRuleResource
+    nameWithType: ChannelVersionRuleResource
+    fullName: Octopus.Client.Model.ChannelVersionRuleResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ChannelVersionRuleResource
+    name: ChannelVersionRuleResource
+    nameWithType: ChannelVersionRuleResource
+    fullName: Octopus.Client.Model.ChannelVersionRuleResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.ChannelResource.TenantTags*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.TenantTags
+  name: TenantTags
+  nameWithType: ChannelResource.TenantTags
+  fullName: Octopus.Client.Model.ChannelResource.TenantTags
+- uid: Octopus.Client.Model.ReferenceCollection
+  commentId: T:Octopus.Client.Model.ReferenceCollection
+  parent: Octopus.Client.Model
+  name: ReferenceCollection
+  nameWithType: ReferenceCollection
+  fullName: Octopus.Client.Model.ReferenceCollection
+- uid: Octopus.Client.Model.ChannelResource.SetAsDefaultChannel*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.SetAsDefaultChannel
+  name: SetAsDefaultChannel
+  nameWithType: ChannelResource.SetAsDefaultChannel
+  fullName: Octopus.Client.Model.ChannelResource.SetAsDefaultChannel
+- uid: Octopus.Client.Model.ChannelResource
+  commentId: T:Octopus.Client.Model.ChannelResource
+  parent: Octopus.Client.Model
+  name: ChannelResource
+  nameWithType: ChannelResource
+  fullName: Octopus.Client.Model.ChannelResource
+- uid: Octopus.Client.Model.ChannelResource.UsingLifecycle*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.UsingLifecycle
+  name: UsingLifecycle
+  nameWithType: ChannelResource.UsingLifecycle
+  fullName: Octopus.Client.Model.ChannelResource.UsingLifecycle
+- uid: Octopus.Client.Model.LifecycleResource
+  commentId: T:Octopus.Client.Model.LifecycleResource
+  parent: Octopus.Client.Model
+  name: LifecycleResource
+  nameWithType: LifecycleResource
+  fullName: Octopus.Client.Model.LifecycleResource
+- uid: Octopus.Client.Model.ChannelResource.ClearRules*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.ClearRules
+  name: ClearRules
+  nameWithType: ChannelResource.ClearRules
+  fullName: Octopus.Client.Model.ChannelResource.ClearRules
+- uid: Octopus.Client.Model.ChannelResource.AddRule*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.AddRule
+  name: AddRule
+  nameWithType: ChannelResource.AddRule
+  fullName: Octopus.Client.Model.ChannelResource.AddRule
+- uid: Octopus.Client.Model.ChannelVersionRuleResource
+  commentId: T:Octopus.Client.Model.ChannelVersionRuleResource
+  parent: Octopus.Client.Model
+  name: ChannelVersionRuleResource
+  nameWithType: ChannelVersionRuleResource
+  fullName: Octopus.Client.Model.ChannelVersionRuleResource
+- uid: Octopus.Client.Model.ChannelResource.AddCommonRuleForAllActions*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.AddCommonRuleForAllActions
+  name: AddCommonRuleForAllActions
+  nameWithType: ChannelResource.AddCommonRuleForAllActions
+  fullName: Octopus.Client.Model.ChannelResource.AddCommonRuleForAllActions
+- uid: Octopus.Client.Model.DeploymentProcessResource
+  commentId: T:Octopus.Client.Model.DeploymentProcessResource
+  parent: Octopus.Client.Model
+  name: DeploymentProcessResource
+  nameWithType: DeploymentProcessResource
+  fullName: Octopus.Client.Model.DeploymentProcessResource
+- uid: Octopus.Client.Model.DeploymentActionResource[]
+  isExternal: true
+  name: DeploymentActionResource[]
+  nameWithType: DeploymentActionResource[]
+  fullName: Octopus.Client.Model.DeploymentActionResource[]
+  nameWithType.vb: DeploymentActionResource()
+  fullName.vb: Octopus.Client.Model.DeploymentActionResource()
+  name.vb: DeploymentActionResource()
+  spec.csharp:
+  - uid: Octopus.Client.Model.DeploymentActionResource
+    name: DeploymentActionResource
+    nameWithType: DeploymentActionResource
+    fullName: Octopus.Client.Model.DeploymentActionResource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Octopus.Client.Model.DeploymentActionResource
+    name: DeploymentActionResource
+    nameWithType: DeploymentActionResource
+    fullName: Octopus.Client.Model.DeploymentActionResource
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Octopus.Client.Model.ChannelResource.ClearTenantTags*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.ClearTenantTags
+  name: ClearTenantTags
+  nameWithType: ChannelResource.ClearTenantTags
+  fullName: Octopus.Client.Model.ChannelResource.ClearTenantTags
+- uid: Octopus.Client.Model.ChannelResource.AddOrUpdateTenantTags*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.AddOrUpdateTenantTags
+  name: AddOrUpdateTenantTags
+  nameWithType: ChannelResource.AddOrUpdateTenantTags
+  fullName: Octopus.Client.Model.ChannelResource.AddOrUpdateTenantTags
+- uid: Octopus.Client.Model.TagResource[]
+  isExternal: true
+  name: TagResource[]
+  nameWithType: TagResource[]
+  fullName: Octopus.Client.Model.TagResource[]
+  nameWithType.vb: TagResource()
+  fullName.vb: Octopus.Client.Model.TagResource()
+  name.vb: TagResource()
+  spec.csharp:
+  - uid: Octopus.Client.Model.TagResource
+    name: TagResource
+    nameWithType: TagResource
+    fullName: Octopus.Client.Model.TagResource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Octopus.Client.Model.TagResource
+    name: TagResource
+    nameWithType: TagResource
+    fullName: Octopus.Client.Model.TagResource
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Octopus.Client.Model.ChannelResource.SpaceId*
+  commentId: Overload:Octopus.Client.Model.ChannelResource.SpaceId
+  name: SpaceId
+  nameWithType: ChannelResource.SpaceId
+  fullName: Octopus.Client.Model.ChannelResource.SpaceId
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  commentId: P:Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  parent: Octopus.Client.Extensibility.IHaveSpaceResource
+  name: SpaceId
+  nameWithType: IHaveSpaceResource.SpaceId
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId

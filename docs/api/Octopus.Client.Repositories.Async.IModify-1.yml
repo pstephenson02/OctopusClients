@@ -1,0 +1,181 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.IModify`1
+  commentId: T:Octopus.Client.Repositories.Async.IModify`1
+  id: IModify`1
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+  langs:
+  - csharp
+  - vb
+  name: IModify<TResource>
+  nameWithType: IModify<TResource>
+  fullName: Octopus.Client.Repositories.Async.IModify<TResource>
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/IModify.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IModify
+    path: ../source/Octopus.Client/Repositories/Async/IModify.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: public interface IModify<TResource>
+    typeParameters:
+    - id: TResource
+    content.vb: Public Interface IModify(Of TResource)
+  nameWithType.vb: IModify(Of TResource)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Octopus.Client.Repositories.Async.IModify(Of TResource)
+  name.vb: IModify(Of TResource)
+- uid: Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+  commentId: M:Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+  id: Modify(`0)
+  parent: Octopus.Client.Repositories.Async.IModify`1
+  langs:
+  - csharp
+  - vb
+  name: Modify(TResource)
+  nameWithType: IModify<TResource>.Modify(TResource)
+  fullName: Octopus.Client.Repositories.Async.IModify<TResource>.Modify(TResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/IModify.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Modify
+    path: ../source/Octopus.Client/Repositories/Async/IModify.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<TResource> Modify(TResource resource)
+    parameters:
+    - id: resource
+      type: '{TResource}'
+    return:
+      type: System.Threading.Tasks.Task{{TResource}}
+    content.vb: Function Modify(resource As TResource) As Task(Of TResource)
+  overload: Octopus.Client.Repositories.Async.IModify`1.Modify*
+  nameWithType.vb: IModify(Of TResource).Modify(TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IModify(Of TResource).Modify(TResource)
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.IModify`1.Modify*
+  commentId: Overload:Octopus.Client.Repositories.Async.IModify`1.Modify
+  name: Modify
+  nameWithType: IModify<TResource>.Modify
+  fullName: Octopus.Client.Repositories.Async.IModify<TResource>.Modify
+  nameWithType.vb: IModify(Of TResource).Modify
+  fullName.vb: Octopus.Client.Repositories.Async.IModify(Of TResource).Modify
+- uid: '{TResource}'
+  commentId: '!:TResource'
+  definition: TResource
+  name: TResource
+  nameWithType: TResource
+  fullName: TResource
+- uid: System.Threading.Tasks.Task{{TResource}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TResource>
+  nameWithType: Task<TResource>
+  fullName: System.Threading.Tasks.Task<TResource>
+  nameWithType.vb: Task(Of TResource)
+  fullName.vb: System.Threading.Tasks.Task(Of TResource)
+  name.vb: Task(Of TResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TResource
+  name: TResource
+  nameWithType: TResource
+  fullName: TResource
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

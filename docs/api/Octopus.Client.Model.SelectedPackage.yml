@@ -1,0 +1,655 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.SelectedPackage
+  commentId: T:Octopus.Client.Model.SelectedPackage
+  id: SelectedPackage
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.SelectedPackage.#ctor
+  - Octopus.Client.Model.SelectedPackage.#ctor(System.String,System.String)
+  - Octopus.Client.Model.SelectedPackage.#ctor(System.String,System.String,System.String)
+  - Octopus.Client.Model.SelectedPackage.ActionName
+  - Octopus.Client.Model.SelectedPackage.PackageReferenceName
+  - Octopus.Client.Model.SelectedPackage.StepName
+  - Octopus.Client.Model.SelectedPackage.Version
+  langs:
+  - csharp
+  - vb
+  name: SelectedPackage
+  nameWithType: SelectedPackage
+  fullName: Octopus.Client.Model.SelectedPackage
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SelectedPackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SelectedPackage
+    path: ../source/Octopus.Client/Model/SelectedPackage.cs
+    startLine: 4
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public class SelectedPackage
+    content.vb: Public Class SelectedPackage
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.SelectedPackage.#ctor
+  commentId: M:Octopus.Client.Model.SelectedPackage.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.SelectedPackage
+  langs:
+  - csharp
+  - vb
+  name: SelectedPackage()
+  nameWithType: SelectedPackage.SelectedPackage()
+  fullName: Octopus.Client.Model.SelectedPackage.SelectedPackage()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SelectedPackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/SelectedPackage.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public SelectedPackage()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.SelectedPackage.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SelectedPackage.#ctor(System.String,System.String)
+  commentId: M:Octopus.Client.Model.SelectedPackage.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Octopus.Client.Model.SelectedPackage
+  langs:
+  - csharp
+  - vb
+  name: SelectedPackage(String, String)
+  nameWithType: SelectedPackage.SelectedPackage(String, String)
+  fullName: Octopus.Client.Model.SelectedPackage.SelectedPackage(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SelectedPackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/SelectedPackage.cs
+    startLine: 12
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  example: []
+  syntax:
+    content: public SelectedPackage(string actionName, string version)
+    parameters:
+    - id: actionName
+      type: System.String
+      description: The name of the deployment action
+    - id: version
+      type: System.String
+      description: The selected package version
+    content.vb: Public Sub New(actionName As String, version As String)
+  overload: Octopus.Client.Model.SelectedPackage.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SelectedPackage.#ctor(System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.SelectedPackage.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: Octopus.Client.Model.SelectedPackage
+  langs:
+  - csharp
+  - vb
+  name: SelectedPackage(String, String, String)
+  nameWithType: SelectedPackage.SelectedPackage(String, String, String)
+  fullName: Octopus.Client.Model.SelectedPackage.SelectedPackage(System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SelectedPackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/SelectedPackage.cs
+    startLine: 21
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  example: []
+  syntax:
+    content: public SelectedPackage(string actionName, string packageReferenceName, string version)
+    parameters:
+    - id: actionName
+      type: System.String
+      description: The name of the deployment action
+    - id: packageReferenceName
+      type: System.String
+      description: >-
+        The name of the package reference on the action.
+
+        <xref href="Octopus.Client.Model.PackageReference.Name" data-throw-if-not-resolved="false"></xref>
+    - id: version
+      type: System.String
+      description: The selected package version
+    content.vb: Public Sub New(actionName As String, packageReferenceName As String, version As String)
+  overload: Octopus.Client.Model.SelectedPackage.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SelectedPackage.StepName
+  commentId: P:Octopus.Client.Model.SelectedPackage.StepName
+  id: StepName
+  parent: Octopus.Client.Model.SelectedPackage
+  langs:
+  - csharp
+  - vb
+  name: StepName
+  nameWithType: SelectedPackage.StepName
+  fullName: Octopus.Client.Model.SelectedPackage.StepName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SelectedPackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: StepName
+    path: ../source/Octopus.Client/Model/SelectedPackage.cs
+    startLine: 28
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Obsolete("Replaced by ActionName")]
+
+      public string StepName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Obsolete("Replaced by ActionName")>
+
+      Public Property StepName As String
+  overload: Octopus.Client.Model.SelectedPackage.StepName*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Replaced by ActionName
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SelectedPackage.ActionName
+  commentId: P:Octopus.Client.Model.SelectedPackage.ActionName
+  id: ActionName
+  parent: Octopus.Client.Model.SelectedPackage
+  langs:
+  - csharp
+  - vb
+  name: ActionName
+  nameWithType: SelectedPackage.ActionName
+  fullName: Octopus.Client.Model.SelectedPackage.ActionName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SelectedPackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ActionName
+    path: ../source/Octopus.Client/Model/SelectedPackage.cs
+    startLine: 38
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nThe name of the deployment action\n"
+  example: []
+  syntax:
+    content: public string ActionName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ActionName As String
+  overload: Octopus.Client.Model.SelectedPackage.ActionName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SelectedPackage.PackageReferenceName
+  commentId: P:Octopus.Client.Model.SelectedPackage.PackageReferenceName
+  id: PackageReferenceName
+  parent: Octopus.Client.Model.SelectedPackage
+  langs:
+  - csharp
+  - vb
+  name: PackageReferenceName
+  nameWithType: SelectedPackage.PackageReferenceName
+  fullName: Octopus.Client.Model.SelectedPackage.PackageReferenceName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SelectedPackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: PackageReferenceName
+    path: ../source/Octopus.Client/Model/SelectedPackage.cs
+    startLine: 44
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nThe name of the package reference <xref href=\"Octopus.Client.Model.PackageReference.Name\" data-throw-if-not-resolved=\"false\"></xref> \n"
+  remarks: May be empty for steps which have a primary package
+  example: []
+  syntax:
+    content: public string PackageReferenceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PackageReferenceName As String
+  overload: Octopus.Client.Model.SelectedPackage.PackageReferenceName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SelectedPackage.Version
+  commentId: P:Octopus.Client.Model.SelectedPackage.Version
+  id: Version
+  parent: Octopus.Client.Model.SelectedPackage
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: SelectedPackage.Version
+  fullName: Octopus.Client.Model.SelectedPackage.Version
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SelectedPackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Version
+    path: ../source/Octopus.Client/Model/SelectedPackage.cs
+    startLine: 49
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nThe selected package version\n"
+  example: []
+  syntax:
+    content: public string Version { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Version As String
+  overload: Octopus.Client.Model.SelectedPackage.Version*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.SelectedPackage.#ctor*
+  commentId: Overload:Octopus.Client.Model.SelectedPackage.#ctor
+  name: SelectedPackage
+  nameWithType: SelectedPackage.SelectedPackage
+  fullName: Octopus.Client.Model.SelectedPackage.SelectedPackage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.PackageReference.Name
+  commentId: P:Octopus.Client.Model.PackageReference.Name
+  isExternal: true
+- uid: Octopus.Client.Model.SelectedPackage.StepName*
+  commentId: Overload:Octopus.Client.Model.SelectedPackage.StepName
+  name: StepName
+  nameWithType: SelectedPackage.StepName
+  fullName: Octopus.Client.Model.SelectedPackage.StepName
+- uid: Octopus.Client.Model.SelectedPackage.ActionName*
+  commentId: Overload:Octopus.Client.Model.SelectedPackage.ActionName
+  name: ActionName
+  nameWithType: SelectedPackage.ActionName
+  fullName: Octopus.Client.Model.SelectedPackage.ActionName
+- uid: Octopus.Client.Model.SelectedPackage.PackageReferenceName*
+  commentId: Overload:Octopus.Client.Model.SelectedPackage.PackageReferenceName
+  name: PackageReferenceName
+  nameWithType: SelectedPackage.PackageReferenceName
+  fullName: Octopus.Client.Model.SelectedPackage.PackageReferenceName
+- uid: Octopus.Client.Model.SelectedPackage.Version*
+  commentId: Overload:Octopus.Client.Model.SelectedPackage.Version
+  name: Version
+  nameWithType: SelectedPackage.Version
+  fullName: Octopus.Client.Model.SelectedPackage.Version

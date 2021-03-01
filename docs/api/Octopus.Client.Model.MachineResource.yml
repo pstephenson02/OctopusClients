@@ -1,0 +1,1466 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.MachineResource
+  commentId: T:Octopus.Client.Model.MachineResource
+  id: MachineResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.MachineResource.#ctor
+  - Octopus.Client.Model.MachineResource.AddOrUpdateEnvironments(Octopus.Client.Model.EnvironmentResource[])
+  - Octopus.Client.Model.MachineResource.AddOrUpdateRoles(System.String[])
+  - Octopus.Client.Model.MachineResource.AddOrUpdateTenants(Octopus.Client.Model.TenantResource[])
+  - Octopus.Client.Model.MachineResource.AddOrUpdateTenantTags(Octopus.Client.Model.TagResource[])
+  - Octopus.Client.Model.MachineResource.ClearEnvironments
+  - Octopus.Client.Model.MachineResource.ClearRoles
+  - Octopus.Client.Model.MachineResource.ClearTenants
+  - Octopus.Client.Model.MachineResource.ClearTenantTags
+  - Octopus.Client.Model.MachineResource.EnvironmentIds
+  - Octopus.Client.Model.MachineResource.RemoveEnvironment(Octopus.Client.Model.EnvironmentResource)
+  - Octopus.Client.Model.MachineResource.RemoveRole(System.String)
+  - Octopus.Client.Model.MachineResource.RemoveTenant(Octopus.Client.Model.TenantResource)
+  - Octopus.Client.Model.MachineResource.RemoveTenantTag(Octopus.Client.Model.TagResource)
+  - Octopus.Client.Model.MachineResource.Roles
+  - Octopus.Client.Model.MachineResource.TenantedDeploymentParticipation
+  - Octopus.Client.Model.MachineResource.TenantIds
+  - Octopus.Client.Model.MachineResource.TenantTags
+  langs:
+  - csharp
+  - vb
+  name: MachineResource
+  nameWithType: MachineResource
+  fullName: Octopus.Client.Model.MachineResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: MachineResource
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class MachineResource : MachineBasedResource, IResource, IAuditedResource, INamedResource'
+    content.vb: >-
+      Public Class MachineResource
+          Inherits MachineBasedResource
+          Implements IResource, IAuditedResource, INamedResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  - Octopus.Client.Model.MachineBasedResource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  - Octopus.Client.Extensibility.INamedResource
+  inheritedMembers:
+  - Octopus.Client.Model.MachineBasedResource.Name
+  - Octopus.Client.Model.MachineBasedResource.Thumbprint
+  - Octopus.Client.Model.MachineBasedResource.Uri
+  - Octopus.Client.Model.MachineBasedResource.IsDisabled
+  - Octopus.Client.Model.MachineBasedResource.MachinePolicyId
+  - Octopus.Client.Model.MachineBasedResource.Status
+  - Octopus.Client.Model.MachineBasedResource.HealthStatus
+  - Octopus.Client.Model.MachineBasedResource.HasLatestCalamari
+  - Octopus.Client.Model.MachineBasedResource.StatusSummary
+  - Octopus.Client.Model.MachineBasedResource.IsInProcess
+  - Octopus.Client.Model.MachineBasedResource.Endpoint
+  - Octopus.Client.Model.MachineBasedResource.OperatingSystem
+  - Octopus.Client.Model.MachineBasedResource.ShellName
+  - Octopus.Client.Model.MachineBasedResource.ShellVersion
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.MachineResource.#ctor
+  commentId: M:Octopus.Client.Model.MachineResource.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: MachineResource()
+  nameWithType: MachineResource.MachineResource()
+  fullName: Octopus.Client.Model.MachineResource.MachineResource()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public MachineResource()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.MachineResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.MachineResource.EnvironmentIds
+  commentId: P:Octopus.Client.Model.MachineResource.EnvironmentIds
+  id: EnvironmentIds
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentIds
+  nameWithType: MachineResource.EnvironmentIds
+  fullName: Octopus.Client.Model.MachineResource.EnvironmentIds
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: EnvironmentIds
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ReferenceCollection EnvironmentIds { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property EnvironmentIds As ReferenceCollection
+  overload: Octopus.Client.Model.MachineResource.EnvironmentIds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.MachineResource.Roles
+  commentId: P:Octopus.Client.Model.MachineResource.Roles
+  id: Roles
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: Roles
+  nameWithType: MachineResource.Roles
+  fullName: Octopus.Client.Model.MachineResource.Roles
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Roles
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 18
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ReferenceCollection Roles { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property Roles As ReferenceCollection
+  overload: Octopus.Client.Model.MachineResource.Roles*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.MachineResource.TenantedDeploymentParticipation
+  commentId: P:Octopus.Client.Model.MachineResource.TenantedDeploymentParticipation
+  id: TenantedDeploymentParticipation
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: TenantedDeploymentParticipation
+  nameWithType: MachineResource.TenantedDeploymentParticipation
+  fullName: Octopus.Client.Model.MachineResource.TenantedDeploymentParticipation
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TenantedDeploymentParticipation
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 24
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public TenantedDeploymentMode TenantedDeploymentParticipation { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.TenantedDeploymentMode
+    content.vb: Public Property TenantedDeploymentParticipation As TenantedDeploymentMode
+  overload: Octopus.Client.Model.MachineResource.TenantedDeploymentParticipation*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.MachineResource.TenantIds
+  commentId: P:Octopus.Client.Model.MachineResource.TenantIds
+  id: TenantIds
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: TenantIds
+  nameWithType: MachineResource.TenantIds
+  fullName: Octopus.Client.Model.MachineResource.TenantIds
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TenantIds
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 42
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ReferenceCollection TenantIds { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property TenantIds As ReferenceCollection
+  overload: Octopus.Client.Model.MachineResource.TenantIds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.MachineResource.TenantTags
+  commentId: P:Octopus.Client.Model.MachineResource.TenantTags
+  id: TenantTags
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: TenantTags
+  nameWithType: MachineResource.TenantTags
+  fullName: Octopus.Client.Model.MachineResource.TenantTags
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TenantTags
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 45
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ReferenceCollection TenantTags { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property TenantTags As ReferenceCollection
+  overload: Octopus.Client.Model.MachineResource.TenantTags*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.MachineResource.AddOrUpdateEnvironments(Octopus.Client.Model.EnvironmentResource[])
+  commentId: M:Octopus.Client.Model.MachineResource.AddOrUpdateEnvironments(Octopus.Client.Model.EnvironmentResource[])
+  id: AddOrUpdateEnvironments(Octopus.Client.Model.EnvironmentResource[])
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateEnvironments(EnvironmentResource[])
+  nameWithType: MachineResource.AddOrUpdateEnvironments(EnvironmentResource[])
+  fullName: Octopus.Client.Model.MachineResource.AddOrUpdateEnvironments(Octopus.Client.Model.EnvironmentResource[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateEnvironments
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 48
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public MachineResource AddOrUpdateEnvironments(params EnvironmentResource[] environments)
+    parameters:
+    - id: environments
+      type: Octopus.Client.Model.EnvironmentResource[]
+    return:
+      type: Octopus.Client.Model.MachineResource
+    content.vb: Public Function AddOrUpdateEnvironments(ParamArray environments As EnvironmentResource()) As MachineResource
+  overload: Octopus.Client.Model.MachineResource.AddOrUpdateEnvironments*
+  nameWithType.vb: MachineResource.AddOrUpdateEnvironments(EnvironmentResource())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.MachineResource.AddOrUpdateEnvironments(Octopus.Client.Model.EnvironmentResource())
+  name.vb: AddOrUpdateEnvironments(EnvironmentResource())
+- uid: Octopus.Client.Model.MachineResource.RemoveEnvironment(Octopus.Client.Model.EnvironmentResource)
+  commentId: M:Octopus.Client.Model.MachineResource.RemoveEnvironment(Octopus.Client.Model.EnvironmentResource)
+  id: RemoveEnvironment(Octopus.Client.Model.EnvironmentResource)
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: RemoveEnvironment(EnvironmentResource)
+  nameWithType: MachineResource.RemoveEnvironment(EnvironmentResource)
+  fullName: Octopus.Client.Model.MachineResource.RemoveEnvironment(Octopus.Client.Model.EnvironmentResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RemoveEnvironment
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 57
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public MachineResource RemoveEnvironment(EnvironmentResource environment)
+    parameters:
+    - id: environment
+      type: Octopus.Client.Model.EnvironmentResource
+    return:
+      type: Octopus.Client.Model.MachineResource
+    content.vb: Public Function RemoveEnvironment(environment As EnvironmentResource) As MachineResource
+  overload: Octopus.Client.Model.MachineResource.RemoveEnvironment*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.MachineResource.ClearEnvironments
+  commentId: M:Octopus.Client.Model.MachineResource.ClearEnvironments
+  id: ClearEnvironments
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: ClearEnvironments()
+  nameWithType: MachineResource.ClearEnvironments()
+  fullName: Octopus.Client.Model.MachineResource.ClearEnvironments()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ClearEnvironments
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 63
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public MachineResource ClearEnvironments()
+    return:
+      type: Octopus.Client.Model.MachineResource
+    content.vb: Public Function ClearEnvironments As MachineResource
+  overload: Octopus.Client.Model.MachineResource.ClearEnvironments*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.MachineResource.AddOrUpdateRoles(System.String[])
+  commentId: M:Octopus.Client.Model.MachineResource.AddOrUpdateRoles(System.String[])
+  id: AddOrUpdateRoles(System.String[])
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateRoles(String[])
+  nameWithType: MachineResource.AddOrUpdateRoles(String[])
+  fullName: Octopus.Client.Model.MachineResource.AddOrUpdateRoles(System.String[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateRoles
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 69
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public MachineResource AddOrUpdateRoles(params string[] roles)
+    parameters:
+    - id: roles
+      type: System.String[]
+    return:
+      type: Octopus.Client.Model.MachineResource
+    content.vb: Public Function AddOrUpdateRoles(ParamArray roles As String()) As MachineResource
+  overload: Octopus.Client.Model.MachineResource.AddOrUpdateRoles*
+  nameWithType.vb: MachineResource.AddOrUpdateRoles(String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.MachineResource.AddOrUpdateRoles(System.String())
+  name.vb: AddOrUpdateRoles(String())
+- uid: Octopus.Client.Model.MachineResource.RemoveRole(System.String)
+  commentId: M:Octopus.Client.Model.MachineResource.RemoveRole(System.String)
+  id: RemoveRole(System.String)
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: RemoveRole(String)
+  nameWithType: MachineResource.RemoveRole(String)
+  fullName: Octopus.Client.Model.MachineResource.RemoveRole(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RemoveRole
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 78
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public MachineResource RemoveRole(string role)
+    parameters:
+    - id: role
+      type: System.String
+    return:
+      type: Octopus.Client.Model.MachineResource
+    content.vb: Public Function RemoveRole(role As String) As MachineResource
+  overload: Octopus.Client.Model.MachineResource.RemoveRole*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.MachineResource.ClearRoles
+  commentId: M:Octopus.Client.Model.MachineResource.ClearRoles
+  id: ClearRoles
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: ClearRoles()
+  nameWithType: MachineResource.ClearRoles()
+  fullName: Octopus.Client.Model.MachineResource.ClearRoles()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ClearRoles
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 84
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public MachineResource ClearRoles()
+    return:
+      type: Octopus.Client.Model.MachineResource
+    content.vb: Public Function ClearRoles As MachineResource
+  overload: Octopus.Client.Model.MachineResource.ClearRoles*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.MachineResource.AddOrUpdateTenants(Octopus.Client.Model.TenantResource[])
+  commentId: M:Octopus.Client.Model.MachineResource.AddOrUpdateTenants(Octopus.Client.Model.TenantResource[])
+  id: AddOrUpdateTenants(Octopus.Client.Model.TenantResource[])
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateTenants(TenantResource[])
+  nameWithType: MachineResource.AddOrUpdateTenants(TenantResource[])
+  fullName: Octopus.Client.Model.MachineResource.AddOrUpdateTenants(Octopus.Client.Model.TenantResource[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateTenants
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 90
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public MachineResource AddOrUpdateTenants(params TenantResource[] tenants)
+    parameters:
+    - id: tenants
+      type: Octopus.Client.Model.TenantResource[]
+    return:
+      type: Octopus.Client.Model.MachineResource
+    content.vb: Public Function AddOrUpdateTenants(ParamArray tenants As TenantResource()) As MachineResource
+  overload: Octopus.Client.Model.MachineResource.AddOrUpdateTenants*
+  nameWithType.vb: MachineResource.AddOrUpdateTenants(TenantResource())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.MachineResource.AddOrUpdateTenants(Octopus.Client.Model.TenantResource())
+  name.vb: AddOrUpdateTenants(TenantResource())
+- uid: Octopus.Client.Model.MachineResource.RemoveTenant(Octopus.Client.Model.TenantResource)
+  commentId: M:Octopus.Client.Model.MachineResource.RemoveTenant(Octopus.Client.Model.TenantResource)
+  id: RemoveTenant(Octopus.Client.Model.TenantResource)
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: RemoveTenant(TenantResource)
+  nameWithType: MachineResource.RemoveTenant(TenantResource)
+  fullName: Octopus.Client.Model.MachineResource.RemoveTenant(Octopus.Client.Model.TenantResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RemoveTenant
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 99
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public MachineResource RemoveTenant(TenantResource tenant)
+    parameters:
+    - id: tenant
+      type: Octopus.Client.Model.TenantResource
+    return:
+      type: Octopus.Client.Model.MachineResource
+    content.vb: Public Function RemoveTenant(tenant As TenantResource) As MachineResource
+  overload: Octopus.Client.Model.MachineResource.RemoveTenant*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.MachineResource.ClearTenants
+  commentId: M:Octopus.Client.Model.MachineResource.ClearTenants
+  id: ClearTenants
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: ClearTenants()
+  nameWithType: MachineResource.ClearTenants()
+  fullName: Octopus.Client.Model.MachineResource.ClearTenants()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ClearTenants
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 105
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public MachineResource ClearTenants()
+    return:
+      type: Octopus.Client.Model.MachineResource
+    content.vb: Public Function ClearTenants As MachineResource
+  overload: Octopus.Client.Model.MachineResource.ClearTenants*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.MachineResource.AddOrUpdateTenantTags(Octopus.Client.Model.TagResource[])
+  commentId: M:Octopus.Client.Model.MachineResource.AddOrUpdateTenantTags(Octopus.Client.Model.TagResource[])
+  id: AddOrUpdateTenantTags(Octopus.Client.Model.TagResource[])
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateTenantTags(TagResource[])
+  nameWithType: MachineResource.AddOrUpdateTenantTags(TagResource[])
+  fullName: Octopus.Client.Model.MachineResource.AddOrUpdateTenantTags(Octopus.Client.Model.TagResource[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateTenantTags
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 111
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public MachineResource AddOrUpdateTenantTags(params TagResource[] tenantTags)
+    parameters:
+    - id: tenantTags
+      type: Octopus.Client.Model.TagResource[]
+    return:
+      type: Octopus.Client.Model.MachineResource
+    content.vb: Public Function AddOrUpdateTenantTags(ParamArray tenantTags As TagResource()) As MachineResource
+  overload: Octopus.Client.Model.MachineResource.AddOrUpdateTenantTags*
+  nameWithType.vb: MachineResource.AddOrUpdateTenantTags(TagResource())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.MachineResource.AddOrUpdateTenantTags(Octopus.Client.Model.TagResource())
+  name.vb: AddOrUpdateTenantTags(TagResource())
+- uid: Octopus.Client.Model.MachineResource.RemoveTenantTag(Octopus.Client.Model.TagResource)
+  commentId: M:Octopus.Client.Model.MachineResource.RemoveTenantTag(Octopus.Client.Model.TagResource)
+  id: RemoveTenantTag(Octopus.Client.Model.TagResource)
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: RemoveTenantTag(TagResource)
+  nameWithType: MachineResource.RemoveTenantTag(TagResource)
+  fullName: Octopus.Client.Model.MachineResource.RemoveTenantTag(Octopus.Client.Model.TagResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RemoveTenantTag
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 120
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public MachineResource RemoveTenantTag(TagResource tenantTag)
+    parameters:
+    - id: tenantTag
+      type: Octopus.Client.Model.TagResource
+    return:
+      type: Octopus.Client.Model.MachineResource
+    content.vb: Public Function RemoveTenantTag(tenantTag As TagResource) As MachineResource
+  overload: Octopus.Client.Model.MachineResource.RemoveTenantTag*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.MachineResource.ClearTenantTags
+  commentId: M:Octopus.Client.Model.MachineResource.ClearTenantTags
+  id: ClearTenantTags
+  parent: Octopus.Client.Model.MachineResource
+  langs:
+  - csharp
+  - vb
+  name: ClearTenantTags()
+  nameWithType: MachineResource.ClearTenantTags()
+  fullName: Octopus.Client.Model.MachineResource.ClearTenantTags()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/MachineResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ClearTenantTags
+    path: ../source/Octopus.Client/Model/MachineResource.cs
+    startLine: 126
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public MachineResource ClearTenantTags()
+    return:
+      type: Octopus.Client.Model.MachineResource
+    content.vb: Public Function ClearTenantTags As MachineResource
+  overload: Octopus.Client.Model.MachineResource.ClearTenantTags*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Model.MachineBasedResource
+  commentId: T:Octopus.Client.Model.MachineBasedResource
+  parent: Octopus.Client.Model
+  name: MachineBasedResource
+  nameWithType: MachineBasedResource
+  fullName: Octopus.Client.Model.MachineBasedResource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Extensibility.INamedResource
+  commentId: T:Octopus.Client.Extensibility.INamedResource
+  parent: Octopus.Client.Extensibility
+  name: INamedResource
+  nameWithType: INamedResource
+  fullName: Octopus.Client.Extensibility.INamedResource
+- uid: Octopus.Client.Model.MachineBasedResource.Name
+  commentId: P:Octopus.Client.Model.MachineBasedResource.Name
+  parent: Octopus.Client.Model.MachineBasedResource
+  name: Name
+  nameWithType: MachineBasedResource.Name
+  fullName: Octopus.Client.Model.MachineBasedResource.Name
+- uid: Octopus.Client.Model.MachineBasedResource.Thumbprint
+  commentId: P:Octopus.Client.Model.MachineBasedResource.Thumbprint
+  parent: Octopus.Client.Model.MachineBasedResource
+  name: Thumbprint
+  nameWithType: MachineBasedResource.Thumbprint
+  fullName: Octopus.Client.Model.MachineBasedResource.Thumbprint
+- uid: Octopus.Client.Model.MachineBasedResource.Uri
+  commentId: P:Octopus.Client.Model.MachineBasedResource.Uri
+  parent: Octopus.Client.Model.MachineBasedResource
+  name: Uri
+  nameWithType: MachineBasedResource.Uri
+  fullName: Octopus.Client.Model.MachineBasedResource.Uri
+- uid: Octopus.Client.Model.MachineBasedResource.IsDisabled
+  commentId: P:Octopus.Client.Model.MachineBasedResource.IsDisabled
+  parent: Octopus.Client.Model.MachineBasedResource
+  name: IsDisabled
+  nameWithType: MachineBasedResource.IsDisabled
+  fullName: Octopus.Client.Model.MachineBasedResource.IsDisabled
+- uid: Octopus.Client.Model.MachineBasedResource.MachinePolicyId
+  commentId: P:Octopus.Client.Model.MachineBasedResource.MachinePolicyId
+  parent: Octopus.Client.Model.MachineBasedResource
+  name: MachinePolicyId
+  nameWithType: MachineBasedResource.MachinePolicyId
+  fullName: Octopus.Client.Model.MachineBasedResource.MachinePolicyId
+- uid: Octopus.Client.Model.MachineBasedResource.Status
+  commentId: P:Octopus.Client.Model.MachineBasedResource.Status
+  parent: Octopus.Client.Model.MachineBasedResource
+  name: Status
+  nameWithType: MachineBasedResource.Status
+  fullName: Octopus.Client.Model.MachineBasedResource.Status
+- uid: Octopus.Client.Model.MachineBasedResource.HealthStatus
+  commentId: P:Octopus.Client.Model.MachineBasedResource.HealthStatus
+  parent: Octopus.Client.Model.MachineBasedResource
+  name: HealthStatus
+  nameWithType: MachineBasedResource.HealthStatus
+  fullName: Octopus.Client.Model.MachineBasedResource.HealthStatus
+- uid: Octopus.Client.Model.MachineBasedResource.HasLatestCalamari
+  commentId: P:Octopus.Client.Model.MachineBasedResource.HasLatestCalamari
+  parent: Octopus.Client.Model.MachineBasedResource
+  name: HasLatestCalamari
+  nameWithType: MachineBasedResource.HasLatestCalamari
+  fullName: Octopus.Client.Model.MachineBasedResource.HasLatestCalamari
+- uid: Octopus.Client.Model.MachineBasedResource.StatusSummary
+  commentId: P:Octopus.Client.Model.MachineBasedResource.StatusSummary
+  parent: Octopus.Client.Model.MachineBasedResource
+  name: StatusSummary
+  nameWithType: MachineBasedResource.StatusSummary
+  fullName: Octopus.Client.Model.MachineBasedResource.StatusSummary
+- uid: Octopus.Client.Model.MachineBasedResource.IsInProcess
+  commentId: P:Octopus.Client.Model.MachineBasedResource.IsInProcess
+  parent: Octopus.Client.Model.MachineBasedResource
+  name: IsInProcess
+  nameWithType: MachineBasedResource.IsInProcess
+  fullName: Octopus.Client.Model.MachineBasedResource.IsInProcess
+- uid: Octopus.Client.Model.MachineBasedResource.Endpoint
+  commentId: P:Octopus.Client.Model.MachineBasedResource.Endpoint
+  parent: Octopus.Client.Model.MachineBasedResource
+  name: Endpoint
+  nameWithType: MachineBasedResource.Endpoint
+  fullName: Octopus.Client.Model.MachineBasedResource.Endpoint
+- uid: Octopus.Client.Model.MachineBasedResource.OperatingSystem
+  commentId: P:Octopus.Client.Model.MachineBasedResource.OperatingSystem
+  parent: Octopus.Client.Model.MachineBasedResource
+  name: OperatingSystem
+  nameWithType: MachineBasedResource.OperatingSystem
+  fullName: Octopus.Client.Model.MachineBasedResource.OperatingSystem
+- uid: Octopus.Client.Model.MachineBasedResource.ShellName
+  commentId: P:Octopus.Client.Model.MachineBasedResource.ShellName
+  parent: Octopus.Client.Model.MachineBasedResource
+  name: ShellName
+  nameWithType: MachineBasedResource.ShellName
+  fullName: Octopus.Client.Model.MachineBasedResource.ShellName
+- uid: Octopus.Client.Model.MachineBasedResource.ShellVersion
+  commentId: P:Octopus.Client.Model.MachineBasedResource.ShellVersion
+  parent: Octopus.Client.Model.MachineBasedResource
+  name: ShellVersion
+  nameWithType: MachineBasedResource.ShellVersion
+  fullName: Octopus.Client.Model.MachineBasedResource.ShellVersion
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.MachineResource.#ctor*
+  commentId: Overload:Octopus.Client.Model.MachineResource.#ctor
+  name: MachineResource
+  nameWithType: MachineResource.MachineResource
+  fullName: Octopus.Client.Model.MachineResource.MachineResource
+- uid: Octopus.Client.Model.MachineResource.EnvironmentIds*
+  commentId: Overload:Octopus.Client.Model.MachineResource.EnvironmentIds
+  name: EnvironmentIds
+  nameWithType: MachineResource.EnvironmentIds
+  fullName: Octopus.Client.Model.MachineResource.EnvironmentIds
+- uid: Octopus.Client.Model.ReferenceCollection
+  commentId: T:Octopus.Client.Model.ReferenceCollection
+  parent: Octopus.Client.Model
+  name: ReferenceCollection
+  nameWithType: ReferenceCollection
+  fullName: Octopus.Client.Model.ReferenceCollection
+- uid: Octopus.Client.Model.MachineResource.Roles*
+  commentId: Overload:Octopus.Client.Model.MachineResource.Roles
+  name: Roles
+  nameWithType: MachineResource.Roles
+  fullName: Octopus.Client.Model.MachineResource.Roles
+- uid: Octopus.Client.Model.MachineResource.TenantedDeploymentParticipation*
+  commentId: Overload:Octopus.Client.Model.MachineResource.TenantedDeploymentParticipation
+  name: TenantedDeploymentParticipation
+  nameWithType: MachineResource.TenantedDeploymentParticipation
+  fullName: Octopus.Client.Model.MachineResource.TenantedDeploymentParticipation
+- uid: Octopus.Client.Model.TenantedDeploymentMode
+  commentId: T:Octopus.Client.Model.TenantedDeploymentMode
+  parent: Octopus.Client.Model
+  name: TenantedDeploymentMode
+  nameWithType: TenantedDeploymentMode
+  fullName: Octopus.Client.Model.TenantedDeploymentMode
+- uid: Octopus.Client.Model.MachineResource.TenantIds*
+  commentId: Overload:Octopus.Client.Model.MachineResource.TenantIds
+  name: TenantIds
+  nameWithType: MachineResource.TenantIds
+  fullName: Octopus.Client.Model.MachineResource.TenantIds
+- uid: Octopus.Client.Model.MachineResource.TenantTags*
+  commentId: Overload:Octopus.Client.Model.MachineResource.TenantTags
+  name: TenantTags
+  nameWithType: MachineResource.TenantTags
+  fullName: Octopus.Client.Model.MachineResource.TenantTags
+- uid: Octopus.Client.Model.MachineResource.AddOrUpdateEnvironments*
+  commentId: Overload:Octopus.Client.Model.MachineResource.AddOrUpdateEnvironments
+  name: AddOrUpdateEnvironments
+  nameWithType: MachineResource.AddOrUpdateEnvironments
+  fullName: Octopus.Client.Model.MachineResource.AddOrUpdateEnvironments
+- uid: Octopus.Client.Model.EnvironmentResource[]
+  isExternal: true
+  name: EnvironmentResource[]
+  nameWithType: EnvironmentResource[]
+  fullName: Octopus.Client.Model.EnvironmentResource[]
+  nameWithType.vb: EnvironmentResource()
+  fullName.vb: Octopus.Client.Model.EnvironmentResource()
+  name.vb: EnvironmentResource()
+  spec.csharp:
+  - uid: Octopus.Client.Model.EnvironmentResource
+    name: EnvironmentResource
+    nameWithType: EnvironmentResource
+    fullName: Octopus.Client.Model.EnvironmentResource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Octopus.Client.Model.EnvironmentResource
+    name: EnvironmentResource
+    nameWithType: EnvironmentResource
+    fullName: Octopus.Client.Model.EnvironmentResource
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Octopus.Client.Model.MachineResource
+  commentId: T:Octopus.Client.Model.MachineResource
+  parent: Octopus.Client.Model
+  name: MachineResource
+  nameWithType: MachineResource
+  fullName: Octopus.Client.Model.MachineResource
+- uid: Octopus.Client.Model.MachineResource.RemoveEnvironment*
+  commentId: Overload:Octopus.Client.Model.MachineResource.RemoveEnvironment
+  name: RemoveEnvironment
+  nameWithType: MachineResource.RemoveEnvironment
+  fullName: Octopus.Client.Model.MachineResource.RemoveEnvironment
+- uid: Octopus.Client.Model.EnvironmentResource
+  commentId: T:Octopus.Client.Model.EnvironmentResource
+  parent: Octopus.Client.Model
+  name: EnvironmentResource
+  nameWithType: EnvironmentResource
+  fullName: Octopus.Client.Model.EnvironmentResource
+- uid: Octopus.Client.Model.MachineResource.ClearEnvironments*
+  commentId: Overload:Octopus.Client.Model.MachineResource.ClearEnvironments
+  name: ClearEnvironments
+  nameWithType: MachineResource.ClearEnvironments
+  fullName: Octopus.Client.Model.MachineResource.ClearEnvironments
+- uid: Octopus.Client.Model.MachineResource.AddOrUpdateRoles*
+  commentId: Overload:Octopus.Client.Model.MachineResource.AddOrUpdateRoles
+  name: AddOrUpdateRoles
+  nameWithType: MachineResource.AddOrUpdateRoles
+  fullName: Octopus.Client.Model.MachineResource.AddOrUpdateRoles
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Octopus.Client.Model.MachineResource.RemoveRole*
+  commentId: Overload:Octopus.Client.Model.MachineResource.RemoveRole
+  name: RemoveRole
+  nameWithType: MachineResource.RemoveRole
+  fullName: Octopus.Client.Model.MachineResource.RemoveRole
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.MachineResource.ClearRoles*
+  commentId: Overload:Octopus.Client.Model.MachineResource.ClearRoles
+  name: ClearRoles
+  nameWithType: MachineResource.ClearRoles
+  fullName: Octopus.Client.Model.MachineResource.ClearRoles
+- uid: Octopus.Client.Model.MachineResource.AddOrUpdateTenants*
+  commentId: Overload:Octopus.Client.Model.MachineResource.AddOrUpdateTenants
+  name: AddOrUpdateTenants
+  nameWithType: MachineResource.AddOrUpdateTenants
+  fullName: Octopus.Client.Model.MachineResource.AddOrUpdateTenants
+- uid: Octopus.Client.Model.TenantResource[]
+  isExternal: true
+  name: TenantResource[]
+  nameWithType: TenantResource[]
+  fullName: Octopus.Client.Model.TenantResource[]
+  nameWithType.vb: TenantResource()
+  fullName.vb: Octopus.Client.Model.TenantResource()
+  name.vb: TenantResource()
+  spec.csharp:
+  - uid: Octopus.Client.Model.TenantResource
+    name: TenantResource
+    nameWithType: TenantResource
+    fullName: Octopus.Client.Model.TenantResource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Octopus.Client.Model.TenantResource
+    name: TenantResource
+    nameWithType: TenantResource
+    fullName: Octopus.Client.Model.TenantResource
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Octopus.Client.Model.MachineResource.RemoveTenant*
+  commentId: Overload:Octopus.Client.Model.MachineResource.RemoveTenant
+  name: RemoveTenant
+  nameWithType: MachineResource.RemoveTenant
+  fullName: Octopus.Client.Model.MachineResource.RemoveTenant
+- uid: Octopus.Client.Model.TenantResource
+  commentId: T:Octopus.Client.Model.TenantResource
+  parent: Octopus.Client.Model
+  name: TenantResource
+  nameWithType: TenantResource
+  fullName: Octopus.Client.Model.TenantResource
+- uid: Octopus.Client.Model.MachineResource.ClearTenants*
+  commentId: Overload:Octopus.Client.Model.MachineResource.ClearTenants
+  name: ClearTenants
+  nameWithType: MachineResource.ClearTenants
+  fullName: Octopus.Client.Model.MachineResource.ClearTenants
+- uid: Octopus.Client.Model.MachineResource.AddOrUpdateTenantTags*
+  commentId: Overload:Octopus.Client.Model.MachineResource.AddOrUpdateTenantTags
+  name: AddOrUpdateTenantTags
+  nameWithType: MachineResource.AddOrUpdateTenantTags
+  fullName: Octopus.Client.Model.MachineResource.AddOrUpdateTenantTags
+- uid: Octopus.Client.Model.TagResource[]
+  isExternal: true
+  name: TagResource[]
+  nameWithType: TagResource[]
+  fullName: Octopus.Client.Model.TagResource[]
+  nameWithType.vb: TagResource()
+  fullName.vb: Octopus.Client.Model.TagResource()
+  name.vb: TagResource()
+  spec.csharp:
+  - uid: Octopus.Client.Model.TagResource
+    name: TagResource
+    nameWithType: TagResource
+    fullName: Octopus.Client.Model.TagResource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Octopus.Client.Model.TagResource
+    name: TagResource
+    nameWithType: TagResource
+    fullName: Octopus.Client.Model.TagResource
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Octopus.Client.Model.MachineResource.RemoveTenantTag*
+  commentId: Overload:Octopus.Client.Model.MachineResource.RemoveTenantTag
+  name: RemoveTenantTag
+  nameWithType: MachineResource.RemoveTenantTag
+  fullName: Octopus.Client.Model.MachineResource.RemoveTenantTag
+- uid: Octopus.Client.Model.TagResource
+  commentId: T:Octopus.Client.Model.TagResource
+  parent: Octopus.Client.Model
+  name: TagResource
+  nameWithType: TagResource
+  fullName: Octopus.Client.Model.TagResource
+- uid: Octopus.Client.Model.MachineResource.ClearTenantTags*
+  commentId: Overload:Octopus.Client.Model.MachineResource.ClearTenantTags
+  name: ClearTenantTags
+  nameWithType: MachineResource.ClearTenantTags
+  fullName: Octopus.Client.Model.MachineResource.ClearTenantTags

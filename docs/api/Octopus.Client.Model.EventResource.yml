@@ -1,0 +1,1211 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.EventResource
+  commentId: T:Octopus.Client.Model.EventResource
+  id: EventResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.EventResource.Category
+  - Octopus.Client.Model.EventResource.Comments
+  - Octopus.Client.Model.EventResource.Details
+  - Octopus.Client.Model.EventResource.IdentityEstablishedWith
+  - Octopus.Client.Model.EventResource.IsService
+  - Octopus.Client.Model.EventResource.Message
+  - Octopus.Client.Model.EventResource.MessageHtml
+  - Octopus.Client.Model.EventResource.MessageReferences
+  - Octopus.Client.Model.EventResource.Occurred
+  - Octopus.Client.Model.EventResource.RelatedDocumentIds
+  - Octopus.Client.Model.EventResource.SpaceId
+  - Octopus.Client.Model.EventResource.UserAgent
+  - Octopus.Client.Model.EventResource.UserId
+  - Octopus.Client.Model.EventResource.Username
+  langs:
+  - csharp
+  - vb
+  name: EventResource
+  nameWithType: EventResource
+  fullName: Octopus.Client.Model.EventResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: EventResource
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nEvents are automatically created when significant actions take place within Octopus by users. Examples are adding\nenvironments, modifying projects,\ndeploying releases, canceling tasks, and so on. Events can be used to provide an audit trail of what has happened\nin the system. The HTTP API *cannot*\nbe used to add, modify or delete events.\n"
+  example: []
+  syntax:
+    content: 'public class EventResource : Resource, IResource, IAuditedResource, IHaveSpaceResource'
+    content.vb: >-
+      Public Class EventResource
+          Inherits Resource
+          Implements IResource, IAuditedResource, IHaveSpaceResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  - Octopus.Client.Extensibility.IHaveSpaceResource
+  inheritedMembers:
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.EventResource.RelatedDocumentIds
+  commentId: P:Octopus.Client.Model.EventResource.RelatedDocumentIds
+  id: RelatedDocumentIds
+  parent: Octopus.Client.Model.EventResource
+  langs:
+  - csharp
+  - vb
+  name: RelatedDocumentIds
+  nameWithType: EventResource.RelatedDocumentIds
+  fullName: Octopus.Client.Model.EventResource.RelatedDocumentIds
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RelatedDocumentIds
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets a collection of document ID&apos;s that this event relates to. Note that the document ID&apos;s may no longer\nexist.\n"
+  example: []
+  syntax:
+    content: public ReferenceCollection RelatedDocumentIds { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property RelatedDocumentIds As ReferenceCollection
+  overload: Octopus.Client.Model.EventResource.RelatedDocumentIds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventResource.Category
+  commentId: P:Octopus.Client.Model.EventResource.Category
+  id: Category
+  parent: Octopus.Client.Model.EventResource
+  langs:
+  - csharp
+  - vb
+  name: Category
+  nameWithType: EventResource.Category
+  fullName: Octopus.Client.Model.EventResource.Category
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Category
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 24
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the event category.\n"
+  example: []
+  syntax:
+    content: public string Category { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Category As String
+  overload: Octopus.Client.Model.EventResource.Category*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventResource.UserId
+  commentId: P:Octopus.Client.Model.EventResource.UserId
+  id: UserId
+  parent: Octopus.Client.Model.EventResource
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: EventResource.UserId
+  fullName: Octopus.Client.Model.EventResource.UserId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: UserId
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 29
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the ID of the user who created the event.\n"
+  example: []
+  syntax:
+    content: public string UserId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UserId As String
+  overload: Octopus.Client.Model.EventResource.UserId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventResource.Username
+  commentId: P:Octopus.Client.Model.EventResource.Username
+  id: Username
+  parent: Octopus.Client.Model.EventResource
+  langs:
+  - csharp
+  - vb
+  name: Username
+  nameWithType: EventResource.Username
+  fullName: Octopus.Client.Model.EventResource.Username
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Username
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 34
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the name of the user who created the event.\n"
+  example: []
+  syntax:
+    content: public string Username { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Username As String
+  overload: Octopus.Client.Model.EventResource.Username*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventResource.IsService
+  commentId: P:Octopus.Client.Model.EventResource.IsService
+  id: IsService
+  parent: Octopus.Client.Model.EventResource
+  langs:
+  - csharp
+  - vb
+  name: IsService
+  nameWithType: EventResource.IsService
+  fullName: Octopus.Client.Model.EventResource.IsService
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsService
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 39
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets whether the user who created the event is a service user or an interactive user.\n"
+  example: []
+  syntax:
+    content: public bool IsService { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsService As Boolean
+  overload: Octopus.Client.Model.EventResource.IsService*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventResource.IdentityEstablishedWith
+  commentId: P:Octopus.Client.Model.EventResource.IdentityEstablishedWith
+  id: IdentityEstablishedWith
+  parent: Octopus.Client.Model.EventResource
+  langs:
+  - csharp
+  - vb
+  name: IdentityEstablishedWith
+  nameWithType: EventResource.IdentityEstablishedWith
+  fullName: Octopus.Client.Model.EventResource.IdentityEstablishedWith
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IdentityEstablishedWith
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 45
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets a description of how the user performing the event\nidentified themselves to Octopus.\n"
+  example: []
+  syntax:
+    content: public string IdentityEstablishedWith { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IdentityEstablishedWith As String
+  overload: Octopus.Client.Model.EventResource.IdentityEstablishedWith*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventResource.UserAgent
+  commentId: P:Octopus.Client.Model.EventResource.UserAgent
+  id: UserAgent
+  parent: Octopus.Client.Model.EventResource
+  langs:
+  - csharp
+  - vb
+  name: UserAgent
+  nameWithType: EventResource.UserAgent
+  fullName: Octopus.Client.Model.EventResource.UserAgent
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: UserAgent
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 50
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the user agent header value from the request that triggered the event\n"
+  example: []
+  syntax:
+    content: public string UserAgent { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UserAgent As String
+  overload: Octopus.Client.Model.EventResource.UserAgent*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventResource.Occurred
+  commentId: P:Octopus.Client.Model.EventResource.Occurred
+  id: Occurred
+  parent: Octopus.Client.Model.EventResource
+  langs:
+  - csharp
+  - vb
+  name: Occurred
+  nameWithType: EventResource.Occurred
+  fullName: Octopus.Client.Model.EventResource.Occurred
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Occurred
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 55
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the date/time that the event took place.\n"
+  example: []
+  syntax:
+    content: public DateTimeOffset Occurred { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property Occurred As DateTimeOffset
+  overload: Octopus.Client.Model.EventResource.Occurred*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventResource.Message
+  commentId: P:Octopus.Client.Model.EventResource.Message
+  id: Message
+  parent: Octopus.Client.Model.EventResource
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: EventResource.Message
+  fullName: Octopus.Client.Model.EventResource.Message
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Message
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 60
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the message text that summarizes the event.\n"
+  example: []
+  syntax:
+    content: public string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: Octopus.Client.Model.EventResource.Message*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventResource.MessageHtml
+  commentId: P:Octopus.Client.Model.EventResource.MessageHtml
+  id: MessageHtml
+  parent: Octopus.Client.Model.EventResource
+  langs:
+  - csharp
+  - vb
+  name: MessageHtml
+  nameWithType: EventResource.MessageHtml
+  fullName: Octopus.Client.Model.EventResource.MessageHtml
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: MessageHtml
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 65
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the message text that summarizes the event, HTML formatted with links to the related documents.\n"
+  example: []
+  syntax:
+    content: public string MessageHtml { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MessageHtml As String
+  overload: Octopus.Client.Model.EventResource.MessageHtml*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventResource.MessageReferences
+  commentId: P:Octopus.Client.Model.EventResource.MessageReferences
+  id: MessageReferences
+  parent: Octopus.Client.Model.EventResource
+  langs:
+  - csharp
+  - vb
+  name: MessageReferences
+  nameWithType: EventResource.MessageReferences
+  fullName: Octopus.Client.Model.EventResource.MessageReferences
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: MessageReferences
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 70
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets an array of document ID&apos;s and indexes where they are mentioned in the message text.\n"
+  example: []
+  syntax:
+    content: public List<EventReference> MessageReferences { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.EventReference}
+    content.vb: Public Property MessageReferences As List(Of EventReference)
+  overload: Octopus.Client.Model.EventResource.MessageReferences*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventResource.Comments
+  commentId: P:Octopus.Client.Model.EventResource.Comments
+  id: Comments
+  parent: Octopus.Client.Model.EventResource
+  langs:
+  - csharp
+  - vb
+  name: Comments
+  nameWithType: EventResource.Comments
+  fullName: Octopus.Client.Model.EventResource.Comments
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Comments
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 75
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets any user-provided comments that were recorded with the event.\n"
+  example: []
+  syntax:
+    content: public string Comments { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Comments As String
+  overload: Octopus.Client.Model.EventResource.Comments*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventResource.Details
+  commentId: P:Octopus.Client.Model.EventResource.Details
+  id: Details
+  parent: Octopus.Client.Model.EventResource
+  langs:
+  - csharp
+  - vb
+  name: Details
+  nameWithType: EventResource.Details
+  fullName: Octopus.Client.Model.EventResource.Details
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Details
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 81
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the details of the event. For events representing a modification to a document this will provide a\nHTML-formatted diff of the original and new document.\n"
+  example: []
+  syntax:
+    content: public string Details { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Details As String
+  overload: Octopus.Client.Model.EventResource.Details*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventResource.SpaceId
+  commentId: P:Octopus.Client.Model.EventResource.SpaceId
+  id: SpaceId
+  parent: Octopus.Client.Model.EventResource
+  langs:
+  - csharp
+  - vb
+  name: SpaceId
+  nameWithType: EventResource.SpaceId
+  fullName: Octopus.Client.Model.EventResource.SpaceId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SpaceId
+    path: ../source/Octopus.Client/Model/EventResource.cs
+    startLine: 83
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string SpaceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SpaceId As String
+  overload: Octopus.Client.Model.EventResource.SpaceId*
+  implements:
+  - Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource
+  commentId: T:Octopus.Client.Extensibility.IHaveSpaceResource
+  parent: Octopus.Client.Extensibility
+  name: IHaveSpaceResource
+  nameWithType: IHaveSpaceResource
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.EventResource.RelatedDocumentIds*
+  commentId: Overload:Octopus.Client.Model.EventResource.RelatedDocumentIds
+  name: RelatedDocumentIds
+  nameWithType: EventResource.RelatedDocumentIds
+  fullName: Octopus.Client.Model.EventResource.RelatedDocumentIds
+- uid: Octopus.Client.Model.ReferenceCollection
+  commentId: T:Octopus.Client.Model.ReferenceCollection
+  parent: Octopus.Client.Model
+  name: ReferenceCollection
+  nameWithType: ReferenceCollection
+  fullName: Octopus.Client.Model.ReferenceCollection
+- uid: Octopus.Client.Model.EventResource.Category*
+  commentId: Overload:Octopus.Client.Model.EventResource.Category
+  name: Category
+  nameWithType: EventResource.Category
+  fullName: Octopus.Client.Model.EventResource.Category
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.EventResource.UserId*
+  commentId: Overload:Octopus.Client.Model.EventResource.UserId
+  name: UserId
+  nameWithType: EventResource.UserId
+  fullName: Octopus.Client.Model.EventResource.UserId
+- uid: Octopus.Client.Model.EventResource.Username*
+  commentId: Overload:Octopus.Client.Model.EventResource.Username
+  name: Username
+  nameWithType: EventResource.Username
+  fullName: Octopus.Client.Model.EventResource.Username
+- uid: Octopus.Client.Model.EventResource.IsService*
+  commentId: Overload:Octopus.Client.Model.EventResource.IsService
+  name: IsService
+  nameWithType: EventResource.IsService
+  fullName: Octopus.Client.Model.EventResource.IsService
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.EventResource.IdentityEstablishedWith*
+  commentId: Overload:Octopus.Client.Model.EventResource.IdentityEstablishedWith
+  name: IdentityEstablishedWith
+  nameWithType: EventResource.IdentityEstablishedWith
+  fullName: Octopus.Client.Model.EventResource.IdentityEstablishedWith
+- uid: Octopus.Client.Model.EventResource.UserAgent*
+  commentId: Overload:Octopus.Client.Model.EventResource.UserAgent
+  name: UserAgent
+  nameWithType: EventResource.UserAgent
+  fullName: Octopus.Client.Model.EventResource.UserAgent
+- uid: Octopus.Client.Model.EventResource.Occurred*
+  commentId: Overload:Octopus.Client.Model.EventResource.Occurred
+  name: Occurred
+  nameWithType: EventResource.Occurred
+  fullName: Octopus.Client.Model.EventResource.Occurred
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Octopus.Client.Model.EventResource.Message*
+  commentId: Overload:Octopus.Client.Model.EventResource.Message
+  name: Message
+  nameWithType: EventResource.Message
+  fullName: Octopus.Client.Model.EventResource.Message
+- uid: Octopus.Client.Model.EventResource.MessageHtml*
+  commentId: Overload:Octopus.Client.Model.EventResource.MessageHtml
+  name: MessageHtml
+  nameWithType: EventResource.MessageHtml
+  fullName: Octopus.Client.Model.EventResource.MessageHtml
+- uid: Octopus.Client.Model.EventResource.MessageReferences*
+  commentId: Overload:Octopus.Client.Model.EventResource.MessageReferences
+  name: MessageReferences
+  nameWithType: EventResource.MessageReferences
+  fullName: Octopus.Client.Model.EventResource.MessageReferences
+- uid: System.Collections.Generic.List{Octopus.Client.Model.EventReference}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.EventReference}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<EventReference>
+  nameWithType: List<EventReference>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.EventReference>
+  nameWithType.vb: List(Of EventReference)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.EventReference)
+  name.vb: List(Of EventReference)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.EventReference
+    name: EventReference
+    nameWithType: EventReference
+    fullName: Octopus.Client.Model.EventReference
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.EventReference
+    name: EventReference
+    nameWithType: EventReference
+    fullName: Octopus.Client.Model.EventReference
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.EventResource.Comments*
+  commentId: Overload:Octopus.Client.Model.EventResource.Comments
+  name: Comments
+  nameWithType: EventResource.Comments
+  fullName: Octopus.Client.Model.EventResource.Comments
+- uid: Octopus.Client.Model.EventResource.Details*
+  commentId: Overload:Octopus.Client.Model.EventResource.Details
+  name: Details
+  nameWithType: EventResource.Details
+  fullName: Octopus.Client.Model.EventResource.Details
+- uid: Octopus.Client.Model.EventResource.SpaceId*
+  commentId: Overload:Octopus.Client.Model.EventResource.SpaceId
+  name: SpaceId
+  nameWithType: EventResource.SpaceId
+  fullName: Octopus.Client.Model.EventResource.SpaceId
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  commentId: P:Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  parent: Octopus.Client.Extensibility.IHaveSpaceResource
+  name: SpaceId
+  nameWithType: IHaveSpaceResource.SpaceId
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId

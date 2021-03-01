@@ -1,0 +1,568 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.IUpgradeConfigurationRepository
+  commentId: T:Octopus.Client.Repositories.IUpgradeConfigurationRepository
+  id: IUpgradeConfigurationRepository
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.IUpgradeConfigurationRepository.Get
+  langs:
+  - csharp
+  - vb
+  name: IUpgradeConfigurationRepository
+  nameWithType: IUpgradeConfigurationRepository
+  fullName: Octopus.Client.Repositories.IUpgradeConfigurationRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/UpgradeConfigurationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IUpgradeConfigurationRepository
+    path: ../source/Octopus.Client/Repositories/UpgradeConfigurationRepository.cs
+    startLine: 4
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: 'public interface IUpgradeConfigurationRepository : IGet<UpgradeConfigurationResource>, IModify<UpgradeConfigurationResource>'
+    content.vb: >-
+      Public Interface IUpgradeConfigurationRepository
+          Inherits IGet(Of UpgradeConfigurationResource), IModify(Of UpgradeConfigurationResource)
+  inheritedMembers:
+  - Octopus.Client.Repositories.IGet{Octopus.Client.Model.UpgradeConfigurationResource}.Get(System.String)
+  - Octopus.Client.Repositories.IGet{Octopus.Client.Model.UpgradeConfigurationResource}.Get(System.String[])
+  - Octopus.Client.Repositories.IGet{Octopus.Client.Model.UpgradeConfigurationResource}.Refresh(Octopus.Client.Model.UpgradeConfigurationResource)
+  - Octopus.Client.Repositories.IModify{Octopus.Client.Model.UpgradeConfigurationResource}.Modify(Octopus.Client.Model.UpgradeConfigurationResource)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.IUpgradeConfigurationRepository.Get
+  commentId: M:Octopus.Client.Repositories.IUpgradeConfigurationRepository.Get
+  id: Get
+  parent: Octopus.Client.Repositories.IUpgradeConfigurationRepository
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: IUpgradeConfigurationRepository.Get()
+  fullName: Octopus.Client.Repositories.IUpgradeConfigurationRepository.Get()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/UpgradeConfigurationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Get
+    path: ../source/Octopus.Client/Repositories/UpgradeConfigurationRepository.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: UpgradeConfigurationResource Get()
+    return:
+      type: Octopus.Client.Model.UpgradeConfigurationResource
+    content.vb: Function Get As UpgradeConfigurationResource
+  overload: Octopus.Client.Repositories.IUpgradeConfigurationRepository.Get*
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Repositories.IGet{Octopus.Client.Model.UpgradeConfigurationResource}.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.IGet{Octopus.Client.Model.UpgradeConfigurationResource}.Get(System.String)
+  parent: Octopus.Client.Repositories.IGet{Octopus.Client.Model.UpgradeConfigurationResource}
+  definition: Octopus.Client.Repositories.IGet`1.Get(System.String)
+  name: Get(String)
+  nameWithType: IGet<UpgradeConfigurationResource>.Get(String)
+  fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.UpgradeConfigurationResource>.Get(System.String)
+  nameWithType.vb: IGet(Of UpgradeConfigurationResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.UpgradeConfigurationResource).Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet<UpgradeConfigurationResource>.Get
+    fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.UpgradeConfigurationResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet(Of UpgradeConfigurationResource).Get
+    fullName: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.UpgradeConfigurationResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet{Octopus.Client.Model.UpgradeConfigurationResource}.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.IGet{Octopus.Client.Model.UpgradeConfigurationResource}.Get(System.String[])
+  parent: Octopus.Client.Repositories.IGet{Octopus.Client.Model.UpgradeConfigurationResource}
+  definition: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+  name: Get(String[])
+  nameWithType: IGet<UpgradeConfigurationResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.UpgradeConfigurationResource>.Get(System.String[])
+  nameWithType.vb: IGet(Of UpgradeConfigurationResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.UpgradeConfigurationResource).Get(System.String())
+  name.vb: Get(String())
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet<UpgradeConfigurationResource>.Get
+    fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.UpgradeConfigurationResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet(Of UpgradeConfigurationResource).Get
+    fullName: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.UpgradeConfigurationResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet{Octopus.Client.Model.UpgradeConfigurationResource}.Refresh(Octopus.Client.Model.UpgradeConfigurationResource)
+  commentId: M:Octopus.Client.Repositories.IGet{Octopus.Client.Model.UpgradeConfigurationResource}.Refresh(Octopus.Client.Model.UpgradeConfigurationResource)
+  parent: Octopus.Client.Repositories.IGet{Octopus.Client.Model.UpgradeConfigurationResource}
+  definition: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+  name: Refresh(UpgradeConfigurationResource)
+  nameWithType: IGet<UpgradeConfigurationResource>.Refresh(UpgradeConfigurationResource)
+  fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.UpgradeConfigurationResource>.Refresh(Octopus.Client.Model.UpgradeConfigurationResource)
+  nameWithType.vb: IGet(Of UpgradeConfigurationResource).Refresh(UpgradeConfigurationResource)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.UpgradeConfigurationResource).Refresh(Octopus.Client.Model.UpgradeConfigurationResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet<UpgradeConfigurationResource>.Refresh
+    fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.UpgradeConfigurationResource>.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.UpgradeConfigurationResource
+    name: UpgradeConfigurationResource
+    nameWithType: UpgradeConfigurationResource
+    fullName: Octopus.Client.Model.UpgradeConfigurationResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet(Of UpgradeConfigurationResource).Refresh
+    fullName: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.UpgradeConfigurationResource).Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.UpgradeConfigurationResource
+    name: UpgradeConfigurationResource
+    nameWithType: UpgradeConfigurationResource
+    fullName: Octopus.Client.Model.UpgradeConfigurationResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IModify{Octopus.Client.Model.UpgradeConfigurationResource}.Modify(Octopus.Client.Model.UpgradeConfigurationResource)
+  commentId: M:Octopus.Client.Repositories.IModify{Octopus.Client.Model.UpgradeConfigurationResource}.Modify(Octopus.Client.Model.UpgradeConfigurationResource)
+  parent: Octopus.Client.Repositories.IModify{Octopus.Client.Model.UpgradeConfigurationResource}
+  definition: Octopus.Client.Repositories.IModify`1.Modify(`0)
+  name: Modify(UpgradeConfigurationResource)
+  nameWithType: IModify<UpgradeConfigurationResource>.Modify(UpgradeConfigurationResource)
+  fullName: Octopus.Client.Repositories.IModify<Octopus.Client.Model.UpgradeConfigurationResource>.Modify(Octopus.Client.Model.UpgradeConfigurationResource)
+  nameWithType.vb: IModify(Of UpgradeConfigurationResource).Modify(UpgradeConfigurationResource)
+  fullName.vb: Octopus.Client.Repositories.IModify(Of Octopus.Client.Model.UpgradeConfigurationResource).Modify(Octopus.Client.Model.UpgradeConfigurationResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify<UpgradeConfigurationResource>.Modify
+    fullName: Octopus.Client.Repositories.IModify<Octopus.Client.Model.UpgradeConfigurationResource>.Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.UpgradeConfigurationResource
+    name: UpgradeConfigurationResource
+    nameWithType: UpgradeConfigurationResource
+    fullName: Octopus.Client.Model.UpgradeConfigurationResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify(Of UpgradeConfigurationResource).Modify
+    fullName: Octopus.Client.Repositories.IModify(Of Octopus.Client.Model.UpgradeConfigurationResource).Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.UpgradeConfigurationResource
+    name: UpgradeConfigurationResource
+    nameWithType: UpgradeConfigurationResource
+    fullName: Octopus.Client.Model.UpgradeConfigurationResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.IGet`1.Get(System.String)
+  isExternal: true
+  name: Get(String)
+  nameWithType: IGet<TResource>.Get(String)
+  fullName: Octopus.Client.Repositories.IGet<TResource>.Get(System.String)
+  nameWithType.vb: IGet(Of TResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource).Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet<TResource>.Get
+    fullName: Octopus.Client.Repositories.IGet<TResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet(Of TResource).Get
+    fullName: Octopus.Client.Repositories.IGet(Of TResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet{Octopus.Client.Model.UpgradeConfigurationResource}
+  commentId: T:Octopus.Client.Repositories.IGet{Octopus.Client.Model.UpgradeConfigurationResource}
+  parent: Octopus.Client.Repositories
+  definition: Octopus.Client.Repositories.IGet`1
+  name: IGet<UpgradeConfigurationResource>
+  nameWithType: IGet<UpgradeConfigurationResource>
+  fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.UpgradeConfigurationResource>
+  nameWithType.vb: IGet(Of UpgradeConfigurationResource)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.UpgradeConfigurationResource)
+  name.vb: IGet(Of UpgradeConfigurationResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.IGet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.UpgradeConfigurationResource
+    name: UpgradeConfigurationResource
+    nameWithType: UpgradeConfigurationResource
+    fullName: Octopus.Client.Model.UpgradeConfigurationResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.IGet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.UpgradeConfigurationResource
+    name: UpgradeConfigurationResource
+    nameWithType: UpgradeConfigurationResource
+    fullName: Octopus.Client.Model.UpgradeConfigurationResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.IGet`1.Get(System.String[])
+  isExternal: true
+  name: Get(String[])
+  nameWithType: IGet<TResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.IGet<TResource>.Get(System.String[])
+  nameWithType.vb: IGet(Of TResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource).Get(System.String())
+  name.vb: Get(String())
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet<TResource>.Get
+    fullName: Octopus.Client.Repositories.IGet<TResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet(Of TResource).Get
+    fullName: Octopus.Client.Repositories.IGet(Of TResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+  commentId: M:Octopus.Client.Repositories.IGet`1.Refresh(`0)
+  name: Refresh(TResource)
+  nameWithType: IGet<TResource>.Refresh(TResource)
+  fullName: Octopus.Client.Repositories.IGet<TResource>.Refresh(TResource)
+  nameWithType.vb: IGet(Of TResource).Refresh(TResource)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource).Refresh(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet<TResource>.Refresh
+    fullName: Octopus.Client.Repositories.IGet<TResource>.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet(Of TResource).Refresh
+    fullName: Octopus.Client.Repositories.IGet(Of TResource).Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+  commentId: M:Octopus.Client.Repositories.IModify`1.Modify(`0)
+  name: Modify(TResource)
+  nameWithType: IModify<TResource>.Modify(TResource)
+  fullName: Octopus.Client.Repositories.IModify<TResource>.Modify(TResource)
+  nameWithType.vb: IModify(Of TResource).Modify(TResource)
+  fullName.vb: Octopus.Client.Repositories.IModify(Of TResource).Modify(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify<TResource>.Modify
+    fullName: Octopus.Client.Repositories.IModify<TResource>.Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify(Of TResource).Modify
+    fullName: Octopus.Client.Repositories.IModify(Of TResource).Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IModify{Octopus.Client.Model.UpgradeConfigurationResource}
+  commentId: T:Octopus.Client.Repositories.IModify{Octopus.Client.Model.UpgradeConfigurationResource}
+  parent: Octopus.Client.Repositories
+  definition: Octopus.Client.Repositories.IModify`1
+  name: IModify<UpgradeConfigurationResource>
+  nameWithType: IModify<UpgradeConfigurationResource>
+  fullName: Octopus.Client.Repositories.IModify<Octopus.Client.Model.UpgradeConfigurationResource>
+  nameWithType.vb: IModify(Of UpgradeConfigurationResource)
+  fullName.vb: Octopus.Client.Repositories.IModify(Of Octopus.Client.Model.UpgradeConfigurationResource)
+  name.vb: IModify(Of UpgradeConfigurationResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.IModify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.UpgradeConfigurationResource
+    name: UpgradeConfigurationResource
+    nameWithType: UpgradeConfigurationResource
+    fullName: Octopus.Client.Model.UpgradeConfigurationResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.IModify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.UpgradeConfigurationResource
+    name: UpgradeConfigurationResource
+    nameWithType: UpgradeConfigurationResource
+    fullName: Octopus.Client.Model.UpgradeConfigurationResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet`1
+  commentId: T:Octopus.Client.Repositories.IGet`1
+  name: IGet<TResource>
+  nameWithType: IGet<TResource>
+  fullName: Octopus.Client.Repositories.IGet<TResource>
+  nameWithType.vb: IGet(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource)
+  name.vb: IGet(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.IGet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.IGet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IModify`1
+  commentId: T:Octopus.Client.Repositories.IModify`1
+  name: IModify<TResource>
+  nameWithType: IModify<TResource>
+  fullName: Octopus.Client.Repositories.IModify<TResource>
+  nameWithType.vb: IModify(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.IModify(Of TResource)
+  name.vb: IModify(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.IModify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.IModify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IUpgradeConfigurationRepository.Get*
+  commentId: Overload:Octopus.Client.Repositories.IUpgradeConfigurationRepository.Get
+  name: Get
+  nameWithType: IUpgradeConfigurationRepository.Get
+  fullName: Octopus.Client.Repositories.IUpgradeConfigurationRepository.Get
+- uid: Octopus.Client.Model.UpgradeConfigurationResource
+  commentId: T:Octopus.Client.Model.UpgradeConfigurationResource
+  parent: Octopus.Client.Model
+  name: UpgradeConfigurationResource
+  nameWithType: UpgradeConfigurationResource
+  fullName: Octopus.Client.Model.UpgradeConfigurationResource
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model

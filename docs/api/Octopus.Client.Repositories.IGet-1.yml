@@ -1,0 +1,296 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.IGet`1
+  commentId: T:Octopus.Client.Repositories.IGet`1
+  id: IGet`1
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.IGet`1.Get(System.String)
+  - Octopus.Client.Repositories.IGet`1.Get(System.String[])
+  - Octopus.Client.Repositories.IGet`1.Refresh(`0)
+  langs:
+  - csharp
+  - vb
+  name: IGet<TResource>
+  nameWithType: IGet<TResource>
+  fullName: Octopus.Client.Repositories.IGet<TResource>
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/IGet.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IGet
+    path: ../source/Octopus.Client/Repositories/IGet.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public interface IGet<TResource>
+    typeParameters:
+    - id: TResource
+    content.vb: Public Interface IGet(Of TResource)
+  nameWithType.vb: IGet(Of TResource)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource)
+  name.vb: IGet(Of TResource)
+- uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.IGet`1.Get(System.String)
+  id: Get(System.String)
+  parent: Octopus.Client.Repositories.IGet`1
+  langs:
+  - csharp
+  - vb
+  name: Get(String)
+  nameWithType: IGet<TResource>.Get(String)
+  fullName: Octopus.Client.Repositories.IGet<TResource>.Get(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/IGet.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Get
+    path: ../source/Octopus.Client/Repositories/IGet.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: TResource Get(string idOrHref)
+    parameters:
+    - id: idOrHref
+      type: System.String
+    return:
+      type: '{TResource}'
+    content.vb: Function Get(idOrHref As String) As TResource
+  overload: Octopus.Client.Repositories.IGet`1.Get*
+  nameWithType.vb: IGet(Of TResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource).Get(System.String)
+- uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.IGet`1.Get(System.String[])
+  id: Get(System.String[])
+  parent: Octopus.Client.Repositories.IGet`1
+  langs:
+  - csharp
+  - vb
+  name: Get(String[])
+  nameWithType: IGet<TResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.IGet<TResource>.Get(System.String[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/IGet.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Get
+    path: ../source/Octopus.Client/Repositories/IGet.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: List<TResource> Get(params string[] ids)
+    parameters:
+    - id: ids
+      type: System.String[]
+    return:
+      type: System.Collections.Generic.List{{TResource}}
+    content.vb: Function Get(ParamArray ids As String()) As List(Of TResource)
+  overload: Octopus.Client.Repositories.IGet`1.Get*
+  nameWithType.vb: IGet(Of TResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource).Get(System.String())
+  name.vb: Get(String())
+- uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+  commentId: M:Octopus.Client.Repositories.IGet`1.Refresh(`0)
+  id: Refresh(`0)
+  parent: Octopus.Client.Repositories.IGet`1
+  langs:
+  - csharp
+  - vb
+  name: Refresh(TResource)
+  nameWithType: IGet<TResource>.Refresh(TResource)
+  fullName: Octopus.Client.Repositories.IGet<TResource>.Refresh(TResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/IGet.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Refresh
+    path: ../source/Octopus.Client/Repositories/IGet.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: TResource Refresh(TResource resource)
+    parameters:
+    - id: resource
+      type: '{TResource}'
+    return:
+      type: '{TResource}'
+    content.vb: Function Refresh(resource As TResource) As TResource
+  overload: Octopus.Client.Repositories.IGet`1.Refresh*
+  nameWithType.vb: IGet(Of TResource).Refresh(TResource)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource).Refresh(TResource)
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Repositories.IGet`1.Get*
+  commentId: Overload:Octopus.Client.Repositories.IGet`1.Get
+  name: Get
+  nameWithType: IGet<TResource>.Get
+  fullName: Octopus.Client.Repositories.IGet<TResource>.Get
+  nameWithType.vb: IGet(Of TResource).Get
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource).Get
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{TResource}'
+  commentId: '!:TResource'
+  definition: TResource
+  name: TResource
+  nameWithType: TResource
+  fullName: TResource
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TResource
+  name: TResource
+  nameWithType: TResource
+  fullName: TResource
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.List{{TResource}}
+  commentId: T:System.Collections.Generic.List{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<TResource>
+  nameWithType: List<TResource>
+  fullName: System.Collections.Generic.List<TResource>
+  nameWithType.vb: List(Of TResource)
+  fullName.vb: System.Collections.Generic.List(Of TResource)
+  name.vb: List(Of TResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Repositories.IGet`1.Refresh*
+  commentId: Overload:Octopus.Client.Repositories.IGet`1.Refresh
+  name: Refresh
+  nameWithType: IGet<TResource>.Refresh
+  fullName: Octopus.Client.Repositories.IGet<TResource>.Refresh
+  nameWithType.vb: IGet(Of TResource).Refresh
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource).Refresh

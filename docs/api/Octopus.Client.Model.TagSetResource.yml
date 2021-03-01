@@ -1,0 +1,952 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.TagSetResource
+  commentId: T:Octopus.Client.Model.TagSetResource
+  id: TagSetResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.TagSetResource.#ctor
+  - Octopus.Client.Model.TagSetResource.AddOrUpdateTag(System.String,System.String,System.String)
+  - Octopus.Client.Model.TagSetResource.Description
+  - Octopus.Client.Model.TagSetResource.Name
+  - Octopus.Client.Model.TagSetResource.RemoveTag(System.String)
+  - Octopus.Client.Model.TagSetResource.SortOrder
+  - Octopus.Client.Model.TagSetResource.SpaceId
+  - Octopus.Client.Model.TagSetResource.Tags
+  langs:
+  - csharp
+  - vb
+  name: TagSetResource
+  nameWithType: TagSetResource
+  fullName: Octopus.Client.Model.TagSetResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TagSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TagSetResource
+    path: ../source/Octopus.Client/Model/TagSetResource.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class TagSetResource : Resource, IResource, IAuditedResource, INamedResource, IHaveSpaceResource'
+    content.vb: >-
+      Public Class TagSetResource
+          Inherits Resource
+          Implements IResource, IAuditedResource, INamedResource, IHaveSpaceResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  - Octopus.Client.Extensibility.INamedResource
+  - Octopus.Client.Extensibility.IHaveSpaceResource
+  inheritedMembers:
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.TagSetResource.#ctor
+  commentId: M:Octopus.Client.Model.TagSetResource.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.TagSetResource
+  langs:
+  - csharp
+  - vb
+  name: TagSetResource()
+  nameWithType: TagSetResource.TagSetResource()
+  fullName: Octopus.Client.Model.TagSetResource.TagSetResource()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TagSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/TagSetResource.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public TagSetResource()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.TagSetResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TagSetResource.Name
+  commentId: P:Octopus.Client.Model.TagSetResource.Name
+  id: Name
+  parent: Octopus.Client.Model.TagSetResource
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: TagSetResource.Name
+  fullName: Octopus.Client.Model.TagSetResource.Name
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TagSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Name
+    path: ../source/Octopus.Client/Model/TagSetResource.cs
+    startLine: 18
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the name of this tag set.\n"
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Octopus.Client.Model.TagSetResource.Name*
+  implements:
+  - Octopus.Client.Extensibility.INamedResource.Name
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TagSetResource.Description
+  commentId: P:Octopus.Client.Model.TagSetResource.Description
+  id: Description
+  parent: Octopus.Client.Model.TagSetResource
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: TagSetResource.Description
+  fullName: Octopus.Client.Model.TagSetResource.Description
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TagSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Description
+    path: ../source/Octopus.Client/Model/TagSetResource.cs
+    startLine: 25
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the description of this tag set.\n"
+  example: []
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Octopus.Client.Model.TagSetResource.Description*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TagSetResource.SortOrder
+  commentId: P:Octopus.Client.Model.TagSetResource.SortOrder
+  id: SortOrder
+  parent: Octopus.Client.Model.TagSetResource
+  langs:
+  - csharp
+  - vb
+  name: SortOrder
+  nameWithType: TagSetResource.SortOrder
+  fullName: Octopus.Client.Model.TagSetResource.SortOrder
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TagSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SortOrder
+    path: ../source/Octopus.Client/Model/TagSetResource.cs
+    startLine: 32
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the sort order of this tag set.\n"
+  example: []
+  syntax:
+    content: public int SortOrder { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SortOrder As Integer
+  overload: Octopus.Client.Model.TagSetResource.SortOrder*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TagSetResource.Tags
+  commentId: P:Octopus.Client.Model.TagSetResource.Tags
+  id: Tags
+  parent: Octopus.Client.Model.TagSetResource
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: TagSetResource.Tags
+  fullName: Octopus.Client.Model.TagSetResource.Tags
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TagSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Tags
+    path: ../source/Octopus.Client/Model/TagSetResource.cs
+    startLine: 38
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nThe tags that make up this tag set\n"
+  example: []
+  syntax:
+    content: public IList<TagResource> Tags { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Octopus.Client.Model.TagResource}
+    content.vb: Public Property Tags As IList(Of TagResource)
+  overload: Octopus.Client.Model.TagSetResource.Tags*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TagSetResource.AddOrUpdateTag(System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.TagSetResource.AddOrUpdateTag(System.String,System.String,System.String)
+  id: AddOrUpdateTag(System.String,System.String,System.String)
+  parent: Octopus.Client.Model.TagSetResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateTag(String, String, String)
+  nameWithType: TagSetResource.AddOrUpdateTag(String, String, String)
+  fullName: Octopus.Client.Model.TagSetResource.AddOrUpdateTag(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TagSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateTag
+    path: ../source/Octopus.Client/Model/TagSetResource.cs
+    startLine: 41
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public TagSetResource AddOrUpdateTag(string name, string description = null, string color = "#6e6e6e")
+    parameters:
+    - id: name
+      type: System.String
+    - id: description
+      type: System.String
+    - id: color
+      type: System.String
+    return:
+      type: Octopus.Client.Model.TagSetResource
+    content.vb: Public Function AddOrUpdateTag(name As String, description As String = Nothing, color As String = "#6e6e6e") As TagSetResource
+  overload: Octopus.Client.Model.TagSetResource.AddOrUpdateTag*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TagSetResource.RemoveTag(System.String)
+  commentId: M:Octopus.Client.Model.TagSetResource.RemoveTag(System.String)
+  id: RemoveTag(System.String)
+  parent: Octopus.Client.Model.TagSetResource
+  langs:
+  - csharp
+  - vb
+  name: RemoveTag(String)
+  nameWithType: TagSetResource.RemoveTag(String)
+  fullName: Octopus.Client.Model.TagSetResource.RemoveTag(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TagSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RemoveTag
+    path: ../source/Octopus.Client/Model/TagSetResource.cs
+    startLine: 66
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public TagSetResource RemoveTag(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Octopus.Client.Model.TagSetResource
+    content.vb: Public Function RemoveTag(name As String) As TagSetResource
+  overload: Octopus.Client.Model.TagSetResource.RemoveTag*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TagSetResource.SpaceId
+  commentId: P:Octopus.Client.Model.TagSetResource.SpaceId
+  id: SpaceId
+  parent: Octopus.Client.Model.TagSetResource
+  langs:
+  - csharp
+  - vb
+  name: SpaceId
+  nameWithType: TagSetResource.SpaceId
+  fullName: Octopus.Client.Model.TagSetResource.SpaceId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TagSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SpaceId
+    path: ../source/Octopus.Client/Model/TagSetResource.cs
+    startLine: 73
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string SpaceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SpaceId As String
+  overload: Octopus.Client.Model.TagSetResource.SpaceId*
+  implements:
+  - Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Extensibility.INamedResource
+  commentId: T:Octopus.Client.Extensibility.INamedResource
+  parent: Octopus.Client.Extensibility
+  name: INamedResource
+  nameWithType: INamedResource
+  fullName: Octopus.Client.Extensibility.INamedResource
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource
+  commentId: T:Octopus.Client.Extensibility.IHaveSpaceResource
+  parent: Octopus.Client.Extensibility
+  name: IHaveSpaceResource
+  nameWithType: IHaveSpaceResource
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.TagSetResource.#ctor*
+  commentId: Overload:Octopus.Client.Model.TagSetResource.#ctor
+  name: TagSetResource
+  nameWithType: TagSetResource.TagSetResource
+  fullName: Octopus.Client.Model.TagSetResource.TagSetResource
+- uid: Octopus.Client.Model.TagSetResource.Name*
+  commentId: Overload:Octopus.Client.Model.TagSetResource.Name
+  name: Name
+  nameWithType: TagSetResource.Name
+  fullName: Octopus.Client.Model.TagSetResource.Name
+- uid: Octopus.Client.Extensibility.INamedResource.Name
+  commentId: P:Octopus.Client.Extensibility.INamedResource.Name
+  parent: Octopus.Client.Extensibility.INamedResource
+  name: Name
+  nameWithType: INamedResource.Name
+  fullName: Octopus.Client.Extensibility.INamedResource.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.TagSetResource.Description*
+  commentId: Overload:Octopus.Client.Model.TagSetResource.Description
+  name: Description
+  nameWithType: TagSetResource.Description
+  fullName: Octopus.Client.Model.TagSetResource.Description
+- uid: Octopus.Client.Model.TagSetResource.SortOrder*
+  commentId: Overload:Octopus.Client.Model.TagSetResource.SortOrder
+  name: SortOrder
+  nameWithType: TagSetResource.SortOrder
+  fullName: Octopus.Client.Model.TagSetResource.SortOrder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Octopus.Client.Model.TagSetResource.Tags*
+  commentId: Overload:Octopus.Client.Model.TagSetResource.Tags
+  name: Tags
+  nameWithType: TagSetResource.Tags
+  fullName: Octopus.Client.Model.TagSetResource.Tags
+- uid: System.Collections.Generic.IList{Octopus.Client.Model.TagResource}
+  commentId: T:System.Collections.Generic.IList{Octopus.Client.Model.TagResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<TagResource>
+  nameWithType: IList<TagResource>
+  fullName: System.Collections.Generic.IList<Octopus.Client.Model.TagResource>
+  nameWithType.vb: IList(Of TagResource)
+  fullName.vb: System.Collections.Generic.IList(Of Octopus.Client.Model.TagResource)
+  name.vb: IList(Of TagResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TagResource
+    name: TagResource
+    nameWithType: TagResource
+    fullName: Octopus.Client.Model.TagResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TagResource
+    name: TagResource
+    nameWithType: TagResource
+    fullName: Octopus.Client.Model.TagResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.TagSetResource.AddOrUpdateTag*
+  commentId: Overload:Octopus.Client.Model.TagSetResource.AddOrUpdateTag
+  name: AddOrUpdateTag
+  nameWithType: TagSetResource.AddOrUpdateTag
+  fullName: Octopus.Client.Model.TagSetResource.AddOrUpdateTag
+- uid: Octopus.Client.Model.TagSetResource
+  commentId: T:Octopus.Client.Model.TagSetResource
+  parent: Octopus.Client.Model
+  name: TagSetResource
+  nameWithType: TagSetResource
+  fullName: Octopus.Client.Model.TagSetResource
+- uid: Octopus.Client.Model.TagSetResource.RemoveTag*
+  commentId: Overload:Octopus.Client.Model.TagSetResource.RemoveTag
+  name: RemoveTag
+  nameWithType: TagSetResource.RemoveTag
+  fullName: Octopus.Client.Model.TagSetResource.RemoveTag
+- uid: Octopus.Client.Model.TagSetResource.SpaceId*
+  commentId: Overload:Octopus.Client.Model.TagSetResource.SpaceId
+  name: SpaceId
+  nameWithType: TagSetResource.SpaceId
+  fullName: Octopus.Client.Model.TagSetResource.SpaceId
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  commentId: P:Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  parent: Octopus.Client.Extensibility.IHaveSpaceResource
+  name: SpaceId
+  nameWithType: IHaveSpaceResource.SpaceId
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId

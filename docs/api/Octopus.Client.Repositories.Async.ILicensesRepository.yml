@@ -1,0 +1,285 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.ILicensesRepository
+  commentId: T:Octopus.Client.Repositories.Async.ILicensesRepository
+  id: ILicensesRepository
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.ILicensesRepository.GetCurrent
+  - Octopus.Client.Repositories.Async.ILicensesRepository.GetStatus
+  - Octopus.Client.Repositories.Async.ILicensesRepository.UpdateCurrent(Octopus.Client.Model.LicenseResource)
+  langs:
+  - csharp
+  - vb
+  name: ILicensesRepository
+  nameWithType: ILicensesRepository
+  fullName: Octopus.Client.Repositories.Async.ILicensesRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/LicensesRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ILicensesRepository
+    path: ../source/Octopus.Client/Repositories/Async/LicensesRepository.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: public interface ILicensesRepository
+    content.vb: Public Interface ILicensesRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.Async.ILicensesRepository.GetCurrent
+  commentId: M:Octopus.Client.Repositories.Async.ILicensesRepository.GetCurrent
+  id: GetCurrent
+  parent: Octopus.Client.Repositories.Async.ILicensesRepository
+  langs:
+  - csharp
+  - vb
+  name: GetCurrent()
+  nameWithType: ILicensesRepository.GetCurrent()
+  fullName: Octopus.Client.Repositories.Async.ILicensesRepository.GetCurrent()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/LicensesRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetCurrent
+    path: ../source/Octopus.Client/Repositories/Async/LicensesRepository.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<LicenseResource> GetCurrent()
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.LicenseResource}
+    content.vb: Function GetCurrent As Task(Of LicenseResource)
+  overload: Octopus.Client.Repositories.Async.ILicensesRepository.GetCurrent*
+- uid: Octopus.Client.Repositories.Async.ILicensesRepository.UpdateCurrent(Octopus.Client.Model.LicenseResource)
+  commentId: M:Octopus.Client.Repositories.Async.ILicensesRepository.UpdateCurrent(Octopus.Client.Model.LicenseResource)
+  id: UpdateCurrent(Octopus.Client.Model.LicenseResource)
+  parent: Octopus.Client.Repositories.Async.ILicensesRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateCurrent(LicenseResource)
+  nameWithType: ILicensesRepository.UpdateCurrent(LicenseResource)
+  fullName: Octopus.Client.Repositories.Async.ILicensesRepository.UpdateCurrent(Octopus.Client.Model.LicenseResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/LicensesRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: UpdateCurrent
+    path: ../source/Octopus.Client/Repositories/Async/LicensesRepository.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<LicenseResource> UpdateCurrent(LicenseResource resource)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.LicenseResource
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.LicenseResource}
+    content.vb: Function UpdateCurrent(resource As LicenseResource) As Task(Of LicenseResource)
+  overload: Octopus.Client.Repositories.Async.ILicensesRepository.UpdateCurrent*
+- uid: Octopus.Client.Repositories.Async.ILicensesRepository.GetStatus
+  commentId: M:Octopus.Client.Repositories.Async.ILicensesRepository.GetStatus
+  id: GetStatus
+  parent: Octopus.Client.Repositories.Async.ILicensesRepository
+  langs:
+  - csharp
+  - vb
+  name: GetStatus()
+  nameWithType: ILicensesRepository.GetStatus()
+  fullName: Octopus.Client.Repositories.Async.ILicensesRepository.GetStatus()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/LicensesRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetStatus
+    path: ../source/Octopus.Client/Repositories/Async/LicensesRepository.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<LicenseStatusResource> GetStatus()
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.LicenseStatusResource}
+    content.vb: Function GetStatus As Task(Of LicenseStatusResource)
+  overload: Octopus.Client.Repositories.Async.ILicensesRepository.GetStatus*
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.ILicensesRepository.GetCurrent*
+  commentId: Overload:Octopus.Client.Repositories.Async.ILicensesRepository.GetCurrent
+  name: GetCurrent
+  nameWithType: ILicensesRepository.GetCurrent
+  fullName: Octopus.Client.Repositories.Async.ILicensesRepository.GetCurrent
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.LicenseResource}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.LicenseResource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<LicenseResource>
+  nameWithType: Task<LicenseResource>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.LicenseResource>
+  nameWithType.vb: Task(Of LicenseResource)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.LicenseResource)
+  name.vb: Task(Of LicenseResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.LicenseResource
+    name: LicenseResource
+    nameWithType: LicenseResource
+    fullName: Octopus.Client.Model.LicenseResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.LicenseResource
+    name: LicenseResource
+    nameWithType: LicenseResource
+    fullName: Octopus.Client.Model.LicenseResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Octopus.Client.Repositories.Async.ILicensesRepository.UpdateCurrent*
+  commentId: Overload:Octopus.Client.Repositories.Async.ILicensesRepository.UpdateCurrent
+  name: UpdateCurrent
+  nameWithType: ILicensesRepository.UpdateCurrent
+  fullName: Octopus.Client.Repositories.Async.ILicensesRepository.UpdateCurrent
+- uid: Octopus.Client.Model.LicenseResource
+  commentId: T:Octopus.Client.Model.LicenseResource
+  parent: Octopus.Client.Model
+  name: LicenseResource
+  nameWithType: LicenseResource
+  fullName: Octopus.Client.Model.LicenseResource
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Repositories.Async.ILicensesRepository.GetStatus*
+  commentId: Overload:Octopus.Client.Repositories.Async.ILicensesRepository.GetStatus
+  name: GetStatus
+  nameWithType: ILicensesRepository.GetStatus
+  fullName: Octopus.Client.Repositories.Async.ILicensesRepository.GetStatus
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.LicenseStatusResource}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.LicenseStatusResource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<LicenseStatusResource>
+  nameWithType: Task<LicenseStatusResource>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.LicenseStatusResource>
+  nameWithType.vb: Task(Of LicenseStatusResource)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.LicenseStatusResource)
+  name.vb: Task(Of LicenseStatusResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.LicenseStatusResource
+    name: LicenseStatusResource
+    nameWithType: LicenseStatusResource
+    fullName: Octopus.Client.Model.LicenseStatusResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.LicenseStatusResource
+    name: LicenseStatusResource
+    nameWithType: LicenseStatusResource
+    fullName: Octopus.Client.Model.LicenseStatusResource
+  - name: )
+    nameWithType: )
+    fullName: )

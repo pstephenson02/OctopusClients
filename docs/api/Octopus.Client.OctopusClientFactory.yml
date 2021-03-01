@@ -1,0 +1,648 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.OctopusClientFactory
+  commentId: T:Octopus.Client.OctopusClientFactory
+  id: OctopusClientFactory
+  parent: Octopus.Client
+  children:
+  - Octopus.Client.OctopusClientFactory.CreateAsyncClient(Octopus.Client.OctopusServerEndpoint,Octopus.Client.OctopusClientOptions)
+  - Octopus.Client.OctopusClientFactory.CreateClient(Octopus.Client.OctopusServerEndpoint)
+  langs:
+  - csharp
+  - vb
+  name: OctopusClientFactory
+  nameWithType: OctopusClientFactory
+  fullName: Octopus.Client.OctopusClientFactory
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusClientFactory.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: OctopusClientFactory
+    path: ../source/Octopus.Client/OctopusClientFactory.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nCreates instances of the <xref href=\"Octopus.Client.IOctopusAsyncClient\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: 'public class OctopusClientFactory : IOctopusClientFactory'
+    content.vb: >-
+      Public Class OctopusClientFactory
+          Implements IOctopusClientFactory
+  inheritance:
+  - System.Object
+  implements:
+  - Octopus.Client.IOctopusClientFactory
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.OctopusClientFactory.CreateClient(Octopus.Client.OctopusServerEndpoint)
+  commentId: M:Octopus.Client.OctopusClientFactory.CreateClient(Octopus.Client.OctopusServerEndpoint)
+  id: CreateClient(Octopus.Client.OctopusServerEndpoint)
+  parent: Octopus.Client.OctopusClientFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateClient(OctopusServerEndpoint)
+  nameWithType: OctopusClientFactory.CreateClient(OctopusServerEndpoint)
+  fullName: Octopus.Client.OctopusClientFactory.CreateClient(Octopus.Client.OctopusServerEndpoint)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusClientFactory.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CreateClient
+    path: ../source/Octopus.Client/OctopusClientFactory.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nCreates an instance of the client.\n"
+  example: []
+  syntax:
+    content: public IOctopusClient CreateClient(OctopusServerEndpoint serverEndpoint)
+    parameters:
+    - id: serverEndpoint
+      type: Octopus.Client.OctopusServerEndpoint
+      description: The server endpoint.
+    return:
+      type: Octopus.Client.IOctopusClient
+      description: The <xref href="Octopus.Client.IOctopusClient" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Function CreateClient(serverEndpoint As OctopusServerEndpoint) As IOctopusClient
+  overload: Octopus.Client.OctopusClientFactory.CreateClient*
+  implements:
+  - Octopus.Client.IOctopusClientFactory.CreateClient(Octopus.Client.OctopusServerEndpoint)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.OctopusClientFactory.CreateAsyncClient(Octopus.Client.OctopusServerEndpoint,Octopus.Client.OctopusClientOptions)
+  commentId: M:Octopus.Client.OctopusClientFactory.CreateAsyncClient(Octopus.Client.OctopusServerEndpoint,Octopus.Client.OctopusClientOptions)
+  id: CreateAsyncClient(Octopus.Client.OctopusServerEndpoint,Octopus.Client.OctopusClientOptions)
+  parent: Octopus.Client.OctopusClientFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateAsyncClient(OctopusServerEndpoint, OctopusClientOptions)
+  nameWithType: OctopusClientFactory.CreateAsyncClient(OctopusServerEndpoint, OctopusClientOptions)
+  fullName: Octopus.Client.OctopusClientFactory.CreateAsyncClient(Octopus.Client.OctopusServerEndpoint, Octopus.Client.OctopusClientOptions)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusClientFactory.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CreateAsyncClient
+    path: ../source/Octopus.Client/OctopusClientFactory.cs
+    startLine: 29
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nCreates an instance of the client.\n"
+  example: []
+  syntax:
+    content: public Task<IOctopusAsyncClient> CreateAsyncClient(OctopusServerEndpoint serverEndpoint, OctopusClientOptions octopusClientOptions = null)
+    parameters:
+    - id: serverEndpoint
+      type: Octopus.Client.OctopusServerEndpoint
+      description: The server endpoint.
+    - id: octopusClientOptions
+      type: Octopus.Client.OctopusClientOptions
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.IOctopusAsyncClient}
+      description: The <xref href="Octopus.Client.IOctopusAsyncClient" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Function CreateAsyncClient(serverEndpoint As OctopusServerEndpoint, octopusClientOptions As OctopusClientOptions = Nothing) As Task(Of IOctopusAsyncClient)
+  overload: Octopus.Client.OctopusClientFactory.CreateAsyncClient*
+  implements:
+  - Octopus.Client.IOctopusClientFactory.CreateAsyncClient(Octopus.Client.OctopusServerEndpoint,Octopus.Client.OctopusClientOptions)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.IOctopusAsyncClient
+  commentId: T:Octopus.Client.IOctopusAsyncClient
+  parent: Octopus.Client
+  name: IOctopusAsyncClient
+  nameWithType: IOctopusAsyncClient
+  fullName: Octopus.Client.IOctopusAsyncClient
+- uid: Octopus.Client
+  commentId: N:Octopus.Client
+  name: Octopus.Client
+  nameWithType: Octopus.Client
+  fullName: Octopus.Client
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.IOctopusClientFactory
+  commentId: T:Octopus.Client.IOctopusClientFactory
+  parent: Octopus.Client
+  name: IOctopusClientFactory
+  nameWithType: IOctopusClientFactory
+  fullName: Octopus.Client.IOctopusClientFactory
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.IOctopusClient
+  commentId: T:Octopus.Client.IOctopusClient
+  parent: Octopus.Client
+  name: IOctopusClient
+  nameWithType: IOctopusClient
+  fullName: Octopus.Client.IOctopusClient
+- uid: Octopus.Client.OctopusClientFactory.CreateClient*
+  commentId: Overload:Octopus.Client.OctopusClientFactory.CreateClient
+  name: CreateClient
+  nameWithType: OctopusClientFactory.CreateClient
+  fullName: Octopus.Client.OctopusClientFactory.CreateClient
+- uid: Octopus.Client.IOctopusClientFactory.CreateClient(Octopus.Client.OctopusServerEndpoint)
+  commentId: M:Octopus.Client.IOctopusClientFactory.CreateClient(Octopus.Client.OctopusServerEndpoint)
+  parent: Octopus.Client.IOctopusClientFactory
+  name: CreateClient(OctopusServerEndpoint)
+  nameWithType: IOctopusClientFactory.CreateClient(OctopusServerEndpoint)
+  fullName: Octopus.Client.IOctopusClientFactory.CreateClient(Octopus.Client.OctopusServerEndpoint)
+  spec.csharp:
+  - uid: Octopus.Client.IOctopusClientFactory.CreateClient(Octopus.Client.OctopusServerEndpoint)
+    name: CreateClient
+    nameWithType: IOctopusClientFactory.CreateClient
+    fullName: Octopus.Client.IOctopusClientFactory.CreateClient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.OctopusServerEndpoint
+    name: OctopusServerEndpoint
+    nameWithType: OctopusServerEndpoint
+    fullName: Octopus.Client.OctopusServerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.IOctopusClientFactory.CreateClient(Octopus.Client.OctopusServerEndpoint)
+    name: CreateClient
+    nameWithType: IOctopusClientFactory.CreateClient
+    fullName: Octopus.Client.IOctopusClientFactory.CreateClient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.OctopusServerEndpoint
+    name: OctopusServerEndpoint
+    nameWithType: OctopusServerEndpoint
+    fullName: Octopus.Client.OctopusServerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.OctopusServerEndpoint
+  commentId: T:Octopus.Client.OctopusServerEndpoint
+  parent: Octopus.Client
+  name: OctopusServerEndpoint
+  nameWithType: OctopusServerEndpoint
+  fullName: Octopus.Client.OctopusServerEndpoint
+- uid: Octopus.Client.OctopusClientFactory.CreateAsyncClient*
+  commentId: Overload:Octopus.Client.OctopusClientFactory.CreateAsyncClient
+  name: CreateAsyncClient
+  nameWithType: OctopusClientFactory.CreateAsyncClient
+  fullName: Octopus.Client.OctopusClientFactory.CreateAsyncClient
+- uid: Octopus.Client.IOctopusClientFactory.CreateAsyncClient(Octopus.Client.OctopusServerEndpoint,Octopus.Client.OctopusClientOptions)
+  commentId: M:Octopus.Client.IOctopusClientFactory.CreateAsyncClient(Octopus.Client.OctopusServerEndpoint,Octopus.Client.OctopusClientOptions)
+  parent: Octopus.Client.IOctopusClientFactory
+  name: CreateAsyncClient(OctopusServerEndpoint, OctopusClientOptions)
+  nameWithType: IOctopusClientFactory.CreateAsyncClient(OctopusServerEndpoint, OctopusClientOptions)
+  fullName: Octopus.Client.IOctopusClientFactory.CreateAsyncClient(Octopus.Client.OctopusServerEndpoint, Octopus.Client.OctopusClientOptions)
+  spec.csharp:
+  - uid: Octopus.Client.IOctopusClientFactory.CreateAsyncClient(Octopus.Client.OctopusServerEndpoint,Octopus.Client.OctopusClientOptions)
+    name: CreateAsyncClient
+    nameWithType: IOctopusClientFactory.CreateAsyncClient
+    fullName: Octopus.Client.IOctopusClientFactory.CreateAsyncClient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.OctopusServerEndpoint
+    name: OctopusServerEndpoint
+    nameWithType: OctopusServerEndpoint
+    fullName: Octopus.Client.OctopusServerEndpoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.OctopusClientOptions
+    name: OctopusClientOptions
+    nameWithType: OctopusClientOptions
+    fullName: Octopus.Client.OctopusClientOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.IOctopusClientFactory.CreateAsyncClient(Octopus.Client.OctopusServerEndpoint,Octopus.Client.OctopusClientOptions)
+    name: CreateAsyncClient
+    nameWithType: IOctopusClientFactory.CreateAsyncClient
+    fullName: Octopus.Client.IOctopusClientFactory.CreateAsyncClient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.OctopusServerEndpoint
+    name: OctopusServerEndpoint
+    nameWithType: OctopusServerEndpoint
+    fullName: Octopus.Client.OctopusServerEndpoint
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.OctopusClientOptions
+    name: OctopusClientOptions
+    nameWithType: OctopusClientOptions
+    fullName: Octopus.Client.OctopusClientOptions
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.OctopusClientOptions
+  commentId: T:Octopus.Client.OctopusClientOptions
+  parent: Octopus.Client
+  name: OctopusClientOptions
+  nameWithType: OctopusClientOptions
+  fullName: Octopus.Client.OctopusClientOptions
+- uid: System.Threading.Tasks.Task{Octopus.Client.IOctopusAsyncClient}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.IOctopusAsyncClient}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IOctopusAsyncClient>
+  nameWithType: Task<IOctopusAsyncClient>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.IOctopusAsyncClient>
+  nameWithType.vb: Task(Of IOctopusAsyncClient)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.IOctopusAsyncClient)
+  name.vb: Task(Of IOctopusAsyncClient)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.IOctopusAsyncClient
+    name: IOctopusAsyncClient
+    nameWithType: IOctopusAsyncClient
+    fullName: Octopus.Client.IOctopusAsyncClient
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.IOctopusAsyncClient
+    name: IOctopusAsyncClient
+    nameWithType: IOctopusAsyncClient
+    fullName: Octopus.Client.IOctopusAsyncClient
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

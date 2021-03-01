@@ -1,0 +1,1517 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Operations.RegisterMachineOperation
+  commentId: T:Octopus.Client.Operations.RegisterMachineOperation
+  id: RegisterMachineOperation
+  parent: Octopus.Client.Operations
+  children:
+  - Octopus.Client.Operations.RegisterMachineOperation.#ctor
+  - Octopus.Client.Operations.RegisterMachineOperation.#ctor(Octopus.Client.IOctopusClientFactory)
+  - Octopus.Client.Operations.RegisterMachineOperation.EnvironmentNames
+  - Octopus.Client.Operations.RegisterMachineOperation.Execute(Octopus.Client.IOctopusSpaceRepository)
+  - Octopus.Client.Operations.RegisterMachineOperation.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+  - Octopus.Client.Operations.RegisterMachineOperation.Roles
+  - Octopus.Client.Operations.RegisterMachineOperation.TenantedDeploymentParticipation
+  - Octopus.Client.Operations.RegisterMachineOperation.Tenants
+  - Octopus.Client.Operations.RegisterMachineOperation.TenantTags
+  langs:
+  - csharp
+  - vb
+  name: RegisterMachineOperation
+  nameWithType: RegisterMachineOperation
+  fullName: Octopus.Client.Operations.RegisterMachineOperation
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Operations/RegisterMachineOperation.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RegisterMachineOperation
+    path: ../source/Octopus.Client/Operations/RegisterMachineOperation.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Operations
+  summary: "\nEncapsulates the operation for registering machines.\n"
+  example: []
+  syntax:
+    content: 'public class RegisterMachineOperation : RegisterMachineOperationBase, IRegisterMachineOperation, IRegisterMachineOperationBase'
+    content.vb: >-
+      Public Class RegisterMachineOperation
+          Inherits RegisterMachineOperationBase
+          Implements IRegisterMachineOperation, IRegisterMachineOperationBase
+  inheritance:
+  - System.Object
+  - Octopus.Client.Operations.RegisterMachineOperationBase
+  implements:
+  - Octopus.Client.Operations.IRegisterMachineOperation
+  - Octopus.Client.Operations.IRegisterMachineOperationBase
+  inheritedMembers:
+  - Octopus.Client.Operations.RegisterMachineOperationBase.MachineName
+  - Octopus.Client.Operations.RegisterMachineOperationBase.MachinePolicy
+  - Octopus.Client.Operations.RegisterMachineOperationBase.TentacleHostname
+  - Octopus.Client.Operations.RegisterMachineOperationBase.TentaclePort
+  - Octopus.Client.Operations.RegisterMachineOperationBase.TentacleThumbprint
+  - Octopus.Client.Operations.RegisterMachineOperationBase.ProxyName
+  - Octopus.Client.Operations.RegisterMachineOperationBase.AllowOverwrite
+  - Octopus.Client.Operations.RegisterMachineOperationBase.CommunicationStyle
+  - Octopus.Client.Operations.RegisterMachineOperationBase.SubscriptionId
+  - Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.OctopusServerEndpoint)
+  - Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.OctopusRepository)
+  - Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy(Octopus.Client.IOctopusSpaceRepository)
+  - Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy(Octopus.Client.IOctopusSpaceRepository)
+  - Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.OctopusServerEndpoint)
+  - Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.OctopusAsyncRepository)
+  - Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy(Octopus.Client.IOctopusSpaceAsyncRepository)
+  - Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy(Octopus.Client.IOctopusSpaceAsyncRepository)
+  - Octopus.Client.Operations.RegisterMachineOperationBase.ApplyBaseChanges(Octopus.Client.Model.MachineBasedResource,Octopus.Client.Model.MachinePolicyResource,Octopus.Client.Model.ProxyResource)
+  - Octopus.Client.Operations.RegisterMachineOperationBase.CouldNotFindMessage(System.String,System.String[])
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Operations.RegisterMachineOperation.#ctor
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperation.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Operations.RegisterMachineOperation
+  langs:
+  - csharp
+  - vb
+  name: RegisterMachineOperation()
+  nameWithType: RegisterMachineOperation.RegisterMachineOperation()
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.RegisterMachineOperation()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Operations/RegisterMachineOperation.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Operations/RegisterMachineOperation.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Operations
+  summary: "\nInitializes a new instance of the <xref href=\"Octopus.Client.Operations.RegisterMachineOperation\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public RegisterMachineOperation()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Operations.RegisterMachineOperation.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Operations.RegisterMachineOperation.#ctor(Octopus.Client.IOctopusClientFactory)
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperation.#ctor(Octopus.Client.IOctopusClientFactory)
+  id: '#ctor(Octopus.Client.IOctopusClientFactory)'
+  parent: Octopus.Client.Operations.RegisterMachineOperation
+  langs:
+  - csharp
+  - vb
+  name: RegisterMachineOperation(IOctopusClientFactory)
+  nameWithType: RegisterMachineOperation.RegisterMachineOperation(IOctopusClientFactory)
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.RegisterMachineOperation(Octopus.Client.IOctopusClientFactory)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Operations/RegisterMachineOperation.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Operations/RegisterMachineOperation.cs
+    startLine: 27
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Operations
+  summary: "\nInitializes a new instance of the <xref href=\"Octopus.Client.Operations.RegisterMachineOperation\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public RegisterMachineOperation(IOctopusClientFactory clientFactory)
+    parameters:
+    - id: clientFactory
+      type: Octopus.Client.IOctopusClientFactory
+      description: The client factory.
+    content.vb: Public Sub New(clientFactory As IOctopusClientFactory)
+  overload: Octopus.Client.Operations.RegisterMachineOperation.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Operations.RegisterMachineOperation.EnvironmentNames
+  commentId: P:Octopus.Client.Operations.RegisterMachineOperation.EnvironmentNames
+  id: EnvironmentNames
+  parent: Octopus.Client.Operations.RegisterMachineOperation
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentNames
+  nameWithType: RegisterMachineOperation.EnvironmentNames
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.EnvironmentNames
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Operations/RegisterMachineOperation.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: EnvironmentNames
+    path: ../source/Octopus.Client/Operations/RegisterMachineOperation.cs
+    startLine: 35
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Operations
+  summary: "\nGets or sets the environments that this machine should be added to.\n"
+  example: []
+  syntax:
+    content: public string[] EnvironmentNames { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property EnvironmentNames As String()
+  overload: Octopus.Client.Operations.RegisterMachineOperation.EnvironmentNames*
+  implements:
+  - Octopus.Client.Operations.IRegisterMachineOperation.EnvironmentNames
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Operations.RegisterMachineOperation.Roles
+  commentId: P:Octopus.Client.Operations.RegisterMachineOperation.Roles
+  id: Roles
+  parent: Octopus.Client.Operations.RegisterMachineOperation
+  langs:
+  - csharp
+  - vb
+  name: Roles
+  nameWithType: RegisterMachineOperation.Roles
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.Roles
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Operations/RegisterMachineOperation.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Roles
+    path: ../source/Octopus.Client/Operations/RegisterMachineOperation.cs
+    startLine: 40
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Operations
+  summary: "\nGets or sets the roles that this machine belongs to.\n"
+  example: []
+  syntax:
+    content: public string[] Roles { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property Roles As String()
+  overload: Octopus.Client.Operations.RegisterMachineOperation.Roles*
+  implements:
+  - Octopus.Client.Operations.IRegisterMachineOperation.Roles
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Operations.RegisterMachineOperation.Tenants
+  commentId: P:Octopus.Client.Operations.RegisterMachineOperation.Tenants
+  id: Tenants
+  parent: Octopus.Client.Operations.RegisterMachineOperation
+  langs:
+  - csharp
+  - vb
+  name: Tenants
+  nameWithType: RegisterMachineOperation.Tenants
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.Tenants
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Operations/RegisterMachineOperation.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Tenants
+    path: ../source/Octopus.Client/Operations/RegisterMachineOperation.cs
+    startLine: 45
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Operations
+  summary: "\nGets or sets the tenants that this machine is linked to.\n"
+  example: []
+  syntax:
+    content: public string[] Tenants { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property Tenants As String()
+  overload: Octopus.Client.Operations.RegisterMachineOperation.Tenants*
+  implements:
+  - Octopus.Client.Operations.IRegisterMachineOperation.Tenants
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Operations.RegisterMachineOperation.TenantTags
+  commentId: P:Octopus.Client.Operations.RegisterMachineOperation.TenantTags
+  id: TenantTags
+  parent: Octopus.Client.Operations.RegisterMachineOperation
+  langs:
+  - csharp
+  - vb
+  name: TenantTags
+  nameWithType: RegisterMachineOperation.TenantTags
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.TenantTags
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Operations/RegisterMachineOperation.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TenantTags
+    path: ../source/Octopus.Client/Operations/RegisterMachineOperation.cs
+    startLine: 50
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Operations
+  summary: "\nGets or sets the tenant tags that this machine is linked to.\n"
+  example: []
+  syntax:
+    content: public string[] TenantTags { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property TenantTags As String()
+  overload: Octopus.Client.Operations.RegisterMachineOperation.TenantTags*
+  implements:
+  - Octopus.Client.Operations.IRegisterMachineOperation.TenantTags
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Operations.RegisterMachineOperation.TenantedDeploymentParticipation
+  commentId: P:Octopus.Client.Operations.RegisterMachineOperation.TenantedDeploymentParticipation
+  id: TenantedDeploymentParticipation
+  parent: Octopus.Client.Operations.RegisterMachineOperation
+  langs:
+  - csharp
+  - vb
+  name: TenantedDeploymentParticipation
+  nameWithType: RegisterMachineOperation.TenantedDeploymentParticipation
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.TenantedDeploymentParticipation
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Operations/RegisterMachineOperation.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TenantedDeploymentParticipation
+    path: ../source/Octopus.Client/Operations/RegisterMachineOperation.cs
+    startLine: 57
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Operations
+  summary: "\nHow the machine should participate in Tenanted Deployments.\nAllowed values are Untenanted, TenantedOrUntenanted or Tenanted\n"
+  example: []
+  syntax:
+    content: public TenantedDeploymentMode TenantedDeploymentParticipation { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.TenantedDeploymentMode
+    content.vb: Public Property TenantedDeploymentParticipation As TenantedDeploymentMode
+  overload: Octopus.Client.Operations.RegisterMachineOperation.TenantedDeploymentParticipation*
+  implements:
+  - Octopus.Client.Operations.IRegisterMachineOperation.TenantedDeploymentParticipation
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Operations.RegisterMachineOperation.Execute(Octopus.Client.IOctopusSpaceRepository)
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperation.Execute(Octopus.Client.IOctopusSpaceRepository)
+  id: Execute(Octopus.Client.IOctopusSpaceRepository)
+  parent: Octopus.Client.Operations.RegisterMachineOperation
+  langs:
+  - csharp
+  - vb
+  name: Execute(IOctopusSpaceRepository)
+  nameWithType: RegisterMachineOperation.Execute(IOctopusSpaceRepository)
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.Execute(Octopus.Client.IOctopusSpaceRepository)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Operations/RegisterMachineOperation.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Execute
+    path: ../source/Octopus.Client/Operations/RegisterMachineOperation.cs
+    startLine: 65
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Operations
+  summary: "\nExecutes the operation against the specified Octopus Deploy server.\n"
+  example: []
+  syntax:
+    content: public override void Execute(IOctopusSpaceRepository repository)
+    parameters:
+    - id: repository
+      type: Octopus.Client.IOctopusSpaceRepository
+      description: The Octopus Deploy server repository.
+    content.vb: Public Overrides Sub Execute(repository As IOctopusSpaceRepository)
+  overridden: Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.IOctopusSpaceRepository)
+  overload: Octopus.Client.Operations.RegisterMachineOperation.Execute*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n"
+  implements:
+  - Octopus.Client.Operations.IRegisterMachineOperationBase.Execute(Octopus.Client.IOctopusSpaceRepository)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Octopus.Client.Operations.RegisterMachineOperation.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperation.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+  id: ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+  parent: Octopus.Client.Operations.RegisterMachineOperation
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(IOctopusSpaceAsyncRepository)
+  nameWithType: RegisterMachineOperation.ExecuteAsync(IOctopusSpaceAsyncRepository)
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Operations/RegisterMachineOperation.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ExecuteAsync
+    path: ../source/Octopus.Client/Operations/RegisterMachineOperation.cs
+    startLine: 147
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Operations
+  summary: "\nExecutes the operation against the specified Octopus Deploy server.\n"
+  example: []
+  syntax:
+    content: public override Task ExecuteAsync(IOctopusSpaceAsyncRepository repository)
+    parameters:
+    - id: repository
+      type: Octopus.Client.IOctopusSpaceAsyncRepository
+      description: The Octopus Deploy server repository.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function ExecuteAsync(repository As IOctopusSpaceAsyncRepository) As Task
+  overridden: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+  overload: Octopus.Client.Operations.RegisterMachineOperation.ExecuteAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n"
+  implements:
+  - Octopus.Client.Operations.IRegisterMachineOperationBase.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Octopus.Client.Operations
+  commentId: N:Octopus.Client.Operations
+  name: Octopus.Client.Operations
+  nameWithType: Octopus.Client.Operations
+  fullName: Octopus.Client.Operations
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase
+  commentId: T:Octopus.Client.Operations.RegisterMachineOperationBase
+  parent: Octopus.Client.Operations
+  name: RegisterMachineOperationBase
+  nameWithType: RegisterMachineOperationBase
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase
+- uid: Octopus.Client.Operations.IRegisterMachineOperation
+  commentId: T:Octopus.Client.Operations.IRegisterMachineOperation
+  parent: Octopus.Client.Operations
+  name: IRegisterMachineOperation
+  nameWithType: IRegisterMachineOperation
+  fullName: Octopus.Client.Operations.IRegisterMachineOperation
+- uid: Octopus.Client.Operations.IRegisterMachineOperationBase
+  commentId: T:Octopus.Client.Operations.IRegisterMachineOperationBase
+  parent: Octopus.Client.Operations
+  name: IRegisterMachineOperationBase
+  nameWithType: IRegisterMachineOperationBase
+  fullName: Octopus.Client.Operations.IRegisterMachineOperationBase
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.MachineName
+  commentId: P:Octopus.Client.Operations.RegisterMachineOperationBase.MachineName
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: MachineName
+  nameWithType: RegisterMachineOperationBase.MachineName
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.MachineName
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.MachinePolicy
+  commentId: P:Octopus.Client.Operations.RegisterMachineOperationBase.MachinePolicy
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: MachinePolicy
+  nameWithType: RegisterMachineOperationBase.MachinePolicy
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.MachinePolicy
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.TentacleHostname
+  commentId: P:Octopus.Client.Operations.RegisterMachineOperationBase.TentacleHostname
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: TentacleHostname
+  nameWithType: RegisterMachineOperationBase.TentacleHostname
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.TentacleHostname
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.TentaclePort
+  commentId: P:Octopus.Client.Operations.RegisterMachineOperationBase.TentaclePort
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: TentaclePort
+  nameWithType: RegisterMachineOperationBase.TentaclePort
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.TentaclePort
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.TentacleThumbprint
+  commentId: P:Octopus.Client.Operations.RegisterMachineOperationBase.TentacleThumbprint
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: TentacleThumbprint
+  nameWithType: RegisterMachineOperationBase.TentacleThumbprint
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.TentacleThumbprint
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.ProxyName
+  commentId: P:Octopus.Client.Operations.RegisterMachineOperationBase.ProxyName
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: ProxyName
+  nameWithType: RegisterMachineOperationBase.ProxyName
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.ProxyName
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.AllowOverwrite
+  commentId: P:Octopus.Client.Operations.RegisterMachineOperationBase.AllowOverwrite
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: AllowOverwrite
+  nameWithType: RegisterMachineOperationBase.AllowOverwrite
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.AllowOverwrite
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.CommunicationStyle
+  commentId: P:Octopus.Client.Operations.RegisterMachineOperationBase.CommunicationStyle
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: CommunicationStyle
+  nameWithType: RegisterMachineOperationBase.CommunicationStyle
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.CommunicationStyle
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.SubscriptionId
+  commentId: P:Octopus.Client.Operations.RegisterMachineOperationBase.SubscriptionId
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: SubscriptionId
+  nameWithType: RegisterMachineOperationBase.SubscriptionId
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.SubscriptionId
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.OctopusServerEndpoint)
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.OctopusServerEndpoint)
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: Execute(OctopusServerEndpoint)
+  nameWithType: RegisterMachineOperationBase.Execute(OctopusServerEndpoint)
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.OctopusServerEndpoint)
+  spec.csharp:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.OctopusServerEndpoint)
+    name: Execute
+    nameWithType: RegisterMachineOperationBase.Execute
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.OctopusServerEndpoint
+    name: OctopusServerEndpoint
+    nameWithType: OctopusServerEndpoint
+    fullName: Octopus.Client.OctopusServerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.OctopusServerEndpoint)
+    name: Execute
+    nameWithType: RegisterMachineOperationBase.Execute
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.OctopusServerEndpoint
+    name: OctopusServerEndpoint
+    nameWithType: OctopusServerEndpoint
+    fullName: Octopus.Client.OctopusServerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.OctopusRepository)
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.OctopusRepository)
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: Execute(OctopusRepository)
+  nameWithType: RegisterMachineOperationBase.Execute(OctopusRepository)
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.OctopusRepository)
+  spec.csharp:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.OctopusRepository)
+    name: Execute
+    nameWithType: RegisterMachineOperationBase.Execute
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.OctopusRepository
+    name: OctopusRepository
+    nameWithType: OctopusRepository
+    fullName: Octopus.Client.OctopusRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.OctopusRepository)
+    name: Execute
+    nameWithType: RegisterMachineOperationBase.Execute
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.OctopusRepository
+    name: OctopusRepository
+    nameWithType: OctopusRepository
+    fullName: Octopus.Client.OctopusRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy(Octopus.Client.IOctopusSpaceRepository)
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy(Octopus.Client.IOctopusSpaceRepository)
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: GetMachinePolicy(IOctopusSpaceRepository)
+  nameWithType: RegisterMachineOperationBase.GetMachinePolicy(IOctopusSpaceRepository)
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy(Octopus.Client.IOctopusSpaceRepository)
+  spec.csharp:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy(Octopus.Client.IOctopusSpaceRepository)
+    name: GetMachinePolicy
+    nameWithType: RegisterMachineOperationBase.GetMachinePolicy
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceRepository
+    name: IOctopusSpaceRepository
+    nameWithType: IOctopusSpaceRepository
+    fullName: Octopus.Client.IOctopusSpaceRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy(Octopus.Client.IOctopusSpaceRepository)
+    name: GetMachinePolicy
+    nameWithType: RegisterMachineOperationBase.GetMachinePolicy
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceRepository
+    name: IOctopusSpaceRepository
+    nameWithType: IOctopusSpaceRepository
+    fullName: Octopus.Client.IOctopusSpaceRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy(Octopus.Client.IOctopusSpaceRepository)
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy(Octopus.Client.IOctopusSpaceRepository)
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: GetProxy(IOctopusSpaceRepository)
+  nameWithType: RegisterMachineOperationBase.GetProxy(IOctopusSpaceRepository)
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy(Octopus.Client.IOctopusSpaceRepository)
+  spec.csharp:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy(Octopus.Client.IOctopusSpaceRepository)
+    name: GetProxy
+    nameWithType: RegisterMachineOperationBase.GetProxy
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceRepository
+    name: IOctopusSpaceRepository
+    nameWithType: IOctopusSpaceRepository
+    fullName: Octopus.Client.IOctopusSpaceRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy(Octopus.Client.IOctopusSpaceRepository)
+    name: GetProxy
+    nameWithType: RegisterMachineOperationBase.GetProxy
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceRepository
+    name: IOctopusSpaceRepository
+    nameWithType: IOctopusSpaceRepository
+    fullName: Octopus.Client.IOctopusSpaceRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.OctopusServerEndpoint)
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.OctopusServerEndpoint)
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: ExecuteAsync(OctopusServerEndpoint)
+  nameWithType: RegisterMachineOperationBase.ExecuteAsync(OctopusServerEndpoint)
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.OctopusServerEndpoint)
+  spec.csharp:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.OctopusServerEndpoint)
+    name: ExecuteAsync
+    nameWithType: RegisterMachineOperationBase.ExecuteAsync
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.OctopusServerEndpoint
+    name: OctopusServerEndpoint
+    nameWithType: OctopusServerEndpoint
+    fullName: Octopus.Client.OctopusServerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.OctopusServerEndpoint)
+    name: ExecuteAsync
+    nameWithType: RegisterMachineOperationBase.ExecuteAsync
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.OctopusServerEndpoint
+    name: OctopusServerEndpoint
+    nameWithType: OctopusServerEndpoint
+    fullName: Octopus.Client.OctopusServerEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.OctopusAsyncRepository)
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.OctopusAsyncRepository)
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: ExecuteAsync(OctopusAsyncRepository)
+  nameWithType: RegisterMachineOperationBase.ExecuteAsync(OctopusAsyncRepository)
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.OctopusAsyncRepository)
+  spec.csharp:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.OctopusAsyncRepository)
+    name: ExecuteAsync
+    nameWithType: RegisterMachineOperationBase.ExecuteAsync
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.OctopusAsyncRepository
+    name: OctopusAsyncRepository
+    nameWithType: OctopusAsyncRepository
+    fullName: Octopus.Client.OctopusAsyncRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.OctopusAsyncRepository)
+    name: ExecuteAsync
+    nameWithType: RegisterMachineOperationBase.ExecuteAsync
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.OctopusAsyncRepository
+    name: OctopusAsyncRepository
+    nameWithType: OctopusAsyncRepository
+    fullName: Octopus.Client.OctopusAsyncRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy(Octopus.Client.IOctopusSpaceAsyncRepository)
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy(Octopus.Client.IOctopusSpaceAsyncRepository)
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: GetMachinePolicy(IOctopusSpaceAsyncRepository)
+  nameWithType: RegisterMachineOperationBase.GetMachinePolicy(IOctopusSpaceAsyncRepository)
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy(Octopus.Client.IOctopusSpaceAsyncRepository)
+  spec.csharp:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy(Octopus.Client.IOctopusSpaceAsyncRepository)
+    name: GetMachinePolicy
+    nameWithType: RegisterMachineOperationBase.GetMachinePolicy
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceAsyncRepository
+    name: IOctopusSpaceAsyncRepository
+    nameWithType: IOctopusSpaceAsyncRepository
+    fullName: Octopus.Client.IOctopusSpaceAsyncRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy(Octopus.Client.IOctopusSpaceAsyncRepository)
+    name: GetMachinePolicy
+    nameWithType: RegisterMachineOperationBase.GetMachinePolicy
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.GetMachinePolicy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceAsyncRepository
+    name: IOctopusSpaceAsyncRepository
+    nameWithType: IOctopusSpaceAsyncRepository
+    fullName: Octopus.Client.IOctopusSpaceAsyncRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy(Octopus.Client.IOctopusSpaceAsyncRepository)
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy(Octopus.Client.IOctopusSpaceAsyncRepository)
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: GetProxy(IOctopusSpaceAsyncRepository)
+  nameWithType: RegisterMachineOperationBase.GetProxy(IOctopusSpaceAsyncRepository)
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy(Octopus.Client.IOctopusSpaceAsyncRepository)
+  spec.csharp:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy(Octopus.Client.IOctopusSpaceAsyncRepository)
+    name: GetProxy
+    nameWithType: RegisterMachineOperationBase.GetProxy
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceAsyncRepository
+    name: IOctopusSpaceAsyncRepository
+    nameWithType: IOctopusSpaceAsyncRepository
+    fullName: Octopus.Client.IOctopusSpaceAsyncRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy(Octopus.Client.IOctopusSpaceAsyncRepository)
+    name: GetProxy
+    nameWithType: RegisterMachineOperationBase.GetProxy
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.GetProxy
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceAsyncRepository
+    name: IOctopusSpaceAsyncRepository
+    nameWithType: IOctopusSpaceAsyncRepository
+    fullName: Octopus.Client.IOctopusSpaceAsyncRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.ApplyBaseChanges(Octopus.Client.Model.MachineBasedResource,Octopus.Client.Model.MachinePolicyResource,Octopus.Client.Model.ProxyResource)
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperationBase.ApplyBaseChanges(Octopus.Client.Model.MachineBasedResource,Octopus.Client.Model.MachinePolicyResource,Octopus.Client.Model.ProxyResource)
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: ApplyBaseChanges(MachineBasedResource, MachinePolicyResource, ProxyResource)
+  nameWithType: RegisterMachineOperationBase.ApplyBaseChanges(MachineBasedResource, MachinePolicyResource, ProxyResource)
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.ApplyBaseChanges(Octopus.Client.Model.MachineBasedResource, Octopus.Client.Model.MachinePolicyResource, Octopus.Client.Model.ProxyResource)
+  spec.csharp:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.ApplyBaseChanges(Octopus.Client.Model.MachineBasedResource,Octopus.Client.Model.MachinePolicyResource,Octopus.Client.Model.ProxyResource)
+    name: ApplyBaseChanges
+    nameWithType: RegisterMachineOperationBase.ApplyBaseChanges
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.ApplyBaseChanges
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.MachineBasedResource
+    name: MachineBasedResource
+    nameWithType: MachineBasedResource
+    fullName: Octopus.Client.Model.MachineBasedResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.MachinePolicyResource
+    name: MachinePolicyResource
+    nameWithType: MachinePolicyResource
+    fullName: Octopus.Client.Model.MachinePolicyResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.ProxyResource
+    name: ProxyResource
+    nameWithType: ProxyResource
+    fullName: Octopus.Client.Model.ProxyResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.ApplyBaseChanges(Octopus.Client.Model.MachineBasedResource,Octopus.Client.Model.MachinePolicyResource,Octopus.Client.Model.ProxyResource)
+    name: ApplyBaseChanges
+    nameWithType: RegisterMachineOperationBase.ApplyBaseChanges
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.ApplyBaseChanges
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.MachineBasedResource
+    name: MachineBasedResource
+    nameWithType: MachineBasedResource
+    fullName: Octopus.Client.Model.MachineBasedResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.MachinePolicyResource
+    name: MachinePolicyResource
+    nameWithType: MachinePolicyResource
+    fullName: Octopus.Client.Model.MachinePolicyResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.ProxyResource
+    name: ProxyResource
+    nameWithType: ProxyResource
+    fullName: Octopus.Client.Model.ProxyResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.CouldNotFindMessage(System.String,System.String[])
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperationBase.CouldNotFindMessage(System.String,System.String[])
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  isExternal: true
+  name: CouldNotFindMessage(String, String[])
+  nameWithType: RegisterMachineOperationBase.CouldNotFindMessage(String, String[])
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.CouldNotFindMessage(System.String, System.String[])
+  nameWithType.vb: RegisterMachineOperationBase.CouldNotFindMessage(String, String())
+  fullName.vb: Octopus.Client.Operations.RegisterMachineOperationBase.CouldNotFindMessage(System.String, System.String())
+  name.vb: CouldNotFindMessage(String, String())
+  spec.csharp:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.CouldNotFindMessage(System.String,System.String[])
+    name: CouldNotFindMessage
+    nameWithType: RegisterMachineOperationBase.CouldNotFindMessage
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.CouldNotFindMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.CouldNotFindMessage(System.String,System.String[])
+    name: CouldNotFindMessage
+    nameWithType: RegisterMachineOperationBase.CouldNotFindMessage
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.CouldNotFindMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Operations.RegisterMachineOperation
+  commentId: T:Octopus.Client.Operations.RegisterMachineOperation
+  name: RegisterMachineOperation
+  nameWithType: RegisterMachineOperation
+  fullName: Octopus.Client.Operations.RegisterMachineOperation
+- uid: Octopus.Client.Operations.RegisterMachineOperation.#ctor*
+  commentId: Overload:Octopus.Client.Operations.RegisterMachineOperation.#ctor
+  name: RegisterMachineOperation
+  nameWithType: RegisterMachineOperation.RegisterMachineOperation
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.RegisterMachineOperation
+- uid: Octopus.Client.IOctopusClientFactory
+  commentId: T:Octopus.Client.IOctopusClientFactory
+  parent: Octopus.Client
+  name: IOctopusClientFactory
+  nameWithType: IOctopusClientFactory
+  fullName: Octopus.Client.IOctopusClientFactory
+- uid: Octopus.Client
+  commentId: N:Octopus.Client
+  name: Octopus.Client
+  nameWithType: Octopus.Client
+  fullName: Octopus.Client
+- uid: Octopus.Client.Operations.RegisterMachineOperation.EnvironmentNames*
+  commentId: Overload:Octopus.Client.Operations.RegisterMachineOperation.EnvironmentNames
+  name: EnvironmentNames
+  nameWithType: RegisterMachineOperation.EnvironmentNames
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.EnvironmentNames
+- uid: Octopus.Client.Operations.IRegisterMachineOperation.EnvironmentNames
+  commentId: P:Octopus.Client.Operations.IRegisterMachineOperation.EnvironmentNames
+  parent: Octopus.Client.Operations.IRegisterMachineOperation
+  name: EnvironmentNames
+  nameWithType: IRegisterMachineOperation.EnvironmentNames
+  fullName: Octopus.Client.Operations.IRegisterMachineOperation.EnvironmentNames
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Octopus.Client.Operations.RegisterMachineOperation.Roles*
+  commentId: Overload:Octopus.Client.Operations.RegisterMachineOperation.Roles
+  name: Roles
+  nameWithType: RegisterMachineOperation.Roles
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.Roles
+- uid: Octopus.Client.Operations.IRegisterMachineOperation.Roles
+  commentId: P:Octopus.Client.Operations.IRegisterMachineOperation.Roles
+  parent: Octopus.Client.Operations.IRegisterMachineOperation
+  name: Roles
+  nameWithType: IRegisterMachineOperation.Roles
+  fullName: Octopus.Client.Operations.IRegisterMachineOperation.Roles
+- uid: Octopus.Client.Operations.RegisterMachineOperation.Tenants*
+  commentId: Overload:Octopus.Client.Operations.RegisterMachineOperation.Tenants
+  name: Tenants
+  nameWithType: RegisterMachineOperation.Tenants
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.Tenants
+- uid: Octopus.Client.Operations.IRegisterMachineOperation.Tenants
+  commentId: P:Octopus.Client.Operations.IRegisterMachineOperation.Tenants
+  parent: Octopus.Client.Operations.IRegisterMachineOperation
+  name: Tenants
+  nameWithType: IRegisterMachineOperation.Tenants
+  fullName: Octopus.Client.Operations.IRegisterMachineOperation.Tenants
+- uid: Octopus.Client.Operations.RegisterMachineOperation.TenantTags*
+  commentId: Overload:Octopus.Client.Operations.RegisterMachineOperation.TenantTags
+  name: TenantTags
+  nameWithType: RegisterMachineOperation.TenantTags
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.TenantTags
+- uid: Octopus.Client.Operations.IRegisterMachineOperation.TenantTags
+  commentId: P:Octopus.Client.Operations.IRegisterMachineOperation.TenantTags
+  parent: Octopus.Client.Operations.IRegisterMachineOperation
+  name: TenantTags
+  nameWithType: IRegisterMachineOperation.TenantTags
+  fullName: Octopus.Client.Operations.IRegisterMachineOperation.TenantTags
+- uid: Octopus.Client.Operations.RegisterMachineOperation.TenantedDeploymentParticipation*
+  commentId: Overload:Octopus.Client.Operations.RegisterMachineOperation.TenantedDeploymentParticipation
+  name: TenantedDeploymentParticipation
+  nameWithType: RegisterMachineOperation.TenantedDeploymentParticipation
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.TenantedDeploymentParticipation
+- uid: Octopus.Client.Operations.IRegisterMachineOperation.TenantedDeploymentParticipation
+  commentId: P:Octopus.Client.Operations.IRegisterMachineOperation.TenantedDeploymentParticipation
+  parent: Octopus.Client.Operations.IRegisterMachineOperation
+  name: TenantedDeploymentParticipation
+  nameWithType: IRegisterMachineOperation.TenantedDeploymentParticipation
+  fullName: Octopus.Client.Operations.IRegisterMachineOperation.TenantedDeploymentParticipation
+- uid: Octopus.Client.Model.TenantedDeploymentMode
+  commentId: T:Octopus.Client.Model.TenantedDeploymentMode
+  parent: Octopus.Client.Model
+  name: TenantedDeploymentMode
+  nameWithType: TenantedDeploymentMode
+  fullName: Octopus.Client.Model.TenantedDeploymentMode
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.IOctopusSpaceRepository)
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.IOctopusSpaceRepository)
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: Execute(IOctopusSpaceRepository)
+  nameWithType: RegisterMachineOperationBase.Execute(IOctopusSpaceRepository)
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.IOctopusSpaceRepository)
+  spec.csharp:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.IOctopusSpaceRepository)
+    name: Execute
+    nameWithType: RegisterMachineOperationBase.Execute
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceRepository
+    name: IOctopusSpaceRepository
+    nameWithType: IOctopusSpaceRepository
+    fullName: Octopus.Client.IOctopusSpaceRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.Execute(Octopus.Client.IOctopusSpaceRepository)
+    name: Execute
+    nameWithType: RegisterMachineOperationBase.Execute
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceRepository
+    name: IOctopusSpaceRepository
+    nameWithType: IOctopusSpaceRepository
+    fullName: Octopus.Client.IOctopusSpaceRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Operations.RegisterMachineOperation.Execute*
+  commentId: Overload:Octopus.Client.Operations.RegisterMachineOperation.Execute
+  name: Execute
+  nameWithType: RegisterMachineOperation.Execute
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.Execute
+- uid: Octopus.Client.Operations.IRegisterMachineOperationBase.Execute(Octopus.Client.IOctopusSpaceRepository)
+  commentId: M:Octopus.Client.Operations.IRegisterMachineOperationBase.Execute(Octopus.Client.IOctopusSpaceRepository)
+  parent: Octopus.Client.Operations.IRegisterMachineOperationBase
+  name: Execute(IOctopusSpaceRepository)
+  nameWithType: IRegisterMachineOperationBase.Execute(IOctopusSpaceRepository)
+  fullName: Octopus.Client.Operations.IRegisterMachineOperationBase.Execute(Octopus.Client.IOctopusSpaceRepository)
+  spec.csharp:
+  - uid: Octopus.Client.Operations.IRegisterMachineOperationBase.Execute(Octopus.Client.IOctopusSpaceRepository)
+    name: Execute
+    nameWithType: IRegisterMachineOperationBase.Execute
+    fullName: Octopus.Client.Operations.IRegisterMachineOperationBase.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceRepository
+    name: IOctopusSpaceRepository
+    nameWithType: IOctopusSpaceRepository
+    fullName: Octopus.Client.IOctopusSpaceRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Operations.IRegisterMachineOperationBase.Execute(Octopus.Client.IOctopusSpaceRepository)
+    name: Execute
+    nameWithType: IRegisterMachineOperationBase.Execute
+    fullName: Octopus.Client.Operations.IRegisterMachineOperationBase.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceRepository
+    name: IOctopusSpaceRepository
+    nameWithType: IOctopusSpaceRepository
+    fullName: Octopus.Client.IOctopusSpaceRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.IOctopusSpaceRepository
+  commentId: T:Octopus.Client.IOctopusSpaceRepository
+  parent: Octopus.Client
+  name: IOctopusSpaceRepository
+  nameWithType: IOctopusSpaceRepository
+  fullName: Octopus.Client.IOctopusSpaceRepository
+- uid: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+  commentId: M:Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+  parent: Octopus.Client.Operations.RegisterMachineOperationBase
+  name: ExecuteAsync(IOctopusSpaceAsyncRepository)
+  nameWithType: RegisterMachineOperationBase.ExecuteAsync(IOctopusSpaceAsyncRepository)
+  fullName: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+  spec.csharp:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+    name: ExecuteAsync
+    nameWithType: RegisterMachineOperationBase.ExecuteAsync
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceAsyncRepository
+    name: IOctopusSpaceAsyncRepository
+    nameWithType: IOctopusSpaceAsyncRepository
+    fullName: Octopus.Client.IOctopusSpaceAsyncRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+    name: ExecuteAsync
+    nameWithType: RegisterMachineOperationBase.ExecuteAsync
+    fullName: Octopus.Client.Operations.RegisterMachineOperationBase.ExecuteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceAsyncRepository
+    name: IOctopusSpaceAsyncRepository
+    nameWithType: IOctopusSpaceAsyncRepository
+    fullName: Octopus.Client.IOctopusSpaceAsyncRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Operations.RegisterMachineOperation.ExecuteAsync*
+  commentId: Overload:Octopus.Client.Operations.RegisterMachineOperation.ExecuteAsync
+  name: ExecuteAsync
+  nameWithType: RegisterMachineOperation.ExecuteAsync
+  fullName: Octopus.Client.Operations.RegisterMachineOperation.ExecuteAsync
+- uid: Octopus.Client.Operations.IRegisterMachineOperationBase.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+  commentId: M:Octopus.Client.Operations.IRegisterMachineOperationBase.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+  parent: Octopus.Client.Operations.IRegisterMachineOperationBase
+  name: ExecuteAsync(IOctopusSpaceAsyncRepository)
+  nameWithType: IRegisterMachineOperationBase.ExecuteAsync(IOctopusSpaceAsyncRepository)
+  fullName: Octopus.Client.Operations.IRegisterMachineOperationBase.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+  spec.csharp:
+  - uid: Octopus.Client.Operations.IRegisterMachineOperationBase.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+    name: ExecuteAsync
+    nameWithType: IRegisterMachineOperationBase.ExecuteAsync
+    fullName: Octopus.Client.Operations.IRegisterMachineOperationBase.ExecuteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceAsyncRepository
+    name: IOctopusSpaceAsyncRepository
+    nameWithType: IOctopusSpaceAsyncRepository
+    fullName: Octopus.Client.IOctopusSpaceAsyncRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Operations.IRegisterMachineOperationBase.ExecuteAsync(Octopus.Client.IOctopusSpaceAsyncRepository)
+    name: ExecuteAsync
+    nameWithType: IRegisterMachineOperationBase.ExecuteAsync
+    fullName: Octopus.Client.Operations.IRegisterMachineOperationBase.ExecuteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusSpaceAsyncRepository
+    name: IOctopusSpaceAsyncRepository
+    nameWithType: IOctopusSpaceAsyncRepository
+    fullName: Octopus.Client.IOctopusSpaceAsyncRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.IOctopusSpaceAsyncRepository
+  commentId: T:Octopus.Client.IOctopusSpaceAsyncRepository
+  parent: Octopus.Client
+  name: IOctopusSpaceAsyncRepository
+  nameWithType: IOctopusSpaceAsyncRepository
+  fullName: Octopus.Client.IOctopusSpaceAsyncRepository
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

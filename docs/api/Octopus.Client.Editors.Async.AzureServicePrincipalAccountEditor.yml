@@ -1,0 +1,1518 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+  commentId: T:Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+  id: AzureServicePrincipalAccountEditor
+  parent: Octopus.Client.Editors.Async
+  children:
+  - Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.#ctor(Octopus.Client.Repositories.Async.IAccountRepository)
+  - Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.ResourceGroups
+  - Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.StorageAccounts
+  - Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSites
+  - Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSlots(Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite)
+  langs:
+  - csharp
+  - vb
+  name: AzureServicePrincipalAccountEditor
+  nameWithType: AzureServicePrincipalAccountEditor
+  fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/AzureServicePrincipalAccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AzureServicePrincipalAccountEditor
+    path: ../source/Octopus.Client/Editors/Async/AzureServicePrincipalAccountEditor.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: 'public class AzureServicePrincipalAccountEditor : AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>, IResourceEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>, IResourceBuilder'
+    content.vb: >-
+      Public Class AzureServicePrincipalAccountEditor
+          Inherits AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor)
+          Implements IResourceEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor), IResourceBuilder
+  inheritance:
+  - System.Object
+  - Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}
+  implements:
+  - Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}
+  - Octopus.Client.Editors.Async.IResourceBuilder
+  inheritedMembers:
+  - Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Repository
+  - Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Instance
+  - Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.CreateOrModify(System.String)
+  - Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.FindByName(System.String)
+  - Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Customize(System.Action{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource})
+  - Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Save
+  - Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Usages
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.#ctor(Octopus.Client.Repositories.Async.IAccountRepository)
+  commentId: M:Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.#ctor(Octopus.Client.Repositories.Async.IAccountRepository)
+  id: '#ctor(Octopus.Client.Repositories.Async.IAccountRepository)'
+  parent: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+  langs:
+  - csharp
+  - vb
+  name: AzureServicePrincipalAccountEditor(IAccountRepository)
+  nameWithType: AzureServicePrincipalAccountEditor.AzureServicePrincipalAccountEditor(IAccountRepository)
+  fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.AzureServicePrincipalAccountEditor(Octopus.Client.Repositories.Async.IAccountRepository)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/AzureServicePrincipalAccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Editors/Async/AzureServicePrincipalAccountEditor.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public AzureServicePrincipalAccountEditor(IAccountRepository repository)
+    parameters:
+    - id: repository
+      type: Octopus.Client.Repositories.Async.IAccountRepository
+    content.vb: Public Sub New(repository As IAccountRepository)
+  overload: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.ResourceGroups
+  commentId: M:Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.ResourceGroups
+  id: ResourceGroups
+  parent: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+  langs:
+  - csharp
+  - vb
+  name: ResourceGroups()
+  nameWithType: AzureServicePrincipalAccountEditor.ResourceGroups()
+  fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.ResourceGroups()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/AzureServicePrincipalAccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ResourceGroups
+    path: ../source/Octopus.Client/Editors/Async/AzureServicePrincipalAccountEditor.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public Task<List<AzureServicePrincipalAccountResource.ResourceGroup>> ResourceGroups()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.ResourceGroup}}
+    content.vb: Public Function ResourceGroups As Task(Of List(Of AzureServicePrincipalAccountResource.ResourceGroup))
+  overload: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.ResourceGroups*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSites
+  commentId: M:Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSites
+  id: WebSites
+  parent: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+  langs:
+  - csharp
+  - vb
+  name: WebSites()
+  nameWithType: AzureServicePrincipalAccountEditor.WebSites()
+  fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSites()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/AzureServicePrincipalAccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WebSites
+    path: ../source/Octopus.Client/Editors/Async/AzureServicePrincipalAccountEditor.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public Task<List<AzureServicePrincipalAccountResource.WebSite>> WebSites()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite}}
+    content.vb: Public Function WebSites As Task(Of List(Of AzureServicePrincipalAccountResource.WebSite))
+  overload: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSites*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSlots(Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite)
+  commentId: M:Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSlots(Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite)
+  id: WebSlots(Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite)
+  parent: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+  langs:
+  - csharp
+  - vb
+  name: WebSlots(AzureServicePrincipalAccountResource.WebSite)
+  nameWithType: AzureServicePrincipalAccountEditor.WebSlots(AzureServicePrincipalAccountResource.WebSite)
+  fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSlots(Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/AzureServicePrincipalAccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WebSlots
+    path: ../source/Octopus.Client/Editors/Async/AzureServicePrincipalAccountEditor.cs
+    startLine: 24
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public Task<List<AzureServicePrincipalAccountResource.WebSlot>> WebSlots(AzureServicePrincipalAccountResource.WebSite site)
+    parameters:
+    - id: site
+      type: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSlot}}
+    content.vb: Public Function WebSlots(site As AzureServicePrincipalAccountResource.WebSite) As Task(Of List(Of AzureServicePrincipalAccountResource.WebSlot))
+  overload: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSlots*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.StorageAccounts
+  commentId: M:Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.StorageAccounts
+  id: StorageAccounts
+  parent: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+  langs:
+  - csharp
+  - vb
+  name: StorageAccounts()
+  nameWithType: AzureServicePrincipalAccountEditor.StorageAccounts()
+  fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.StorageAccounts()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/AzureServicePrincipalAccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: StorageAccounts
+    path: ../source/Octopus.Client/Editors/Async/AzureServicePrincipalAccountEditor.cs
+    startLine: 30
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public Task<List<AzureStorageAccount>> StorageAccounts()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.Accounts.AzureStorageAccount}}
+    content.vb: Public Function StorageAccounts As Task(Of List(Of AzureStorageAccount))
+  overload: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.StorageAccounts*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Editors.Async
+  commentId: N:Octopus.Client.Editors.Async
+  name: Octopus.Client.Editors.Async
+  nameWithType: Octopus.Client.Editors.Async
+  fullName: Octopus.Client.Editors.Async
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}
+  commentId: T:Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}
+  parent: Octopus.Client.Editors.Async
+  definition: Octopus.Client.Editors.Async.AccountEditor`2
+  name: AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>
+  nameWithType: AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>
+  fullName: Octopus.Client.Editors.Async.AccountEditor<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor>
+  nameWithType.vb: AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor)
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor)
+  name.vb: AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2
+    name: AccountEditor
+    nameWithType: AccountEditor
+    fullName: Octopus.Client.Editors.Async.AccountEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource
+    name: AzureServicePrincipalAccountResource
+    nameWithType: AzureServicePrincipalAccountResource
+    fullName: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+    name: AzureServicePrincipalAccountEditor
+    nameWithType: AzureServicePrincipalAccountEditor
+    fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2
+    name: AccountEditor
+    nameWithType: AccountEditor
+    fullName: Octopus.Client.Editors.Async.AccountEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource
+    name: AzureServicePrincipalAccountResource
+    nameWithType: AzureServicePrincipalAccountResource
+    fullName: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+    name: AzureServicePrincipalAccountEditor
+    nameWithType: AzureServicePrincipalAccountEditor
+    fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}
+  commentId: T:Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}
+  parent: Octopus.Client.Editors.Async
+  definition: Octopus.Client.Editors.Async.IResourceEditor`2
+  name: IResourceEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>
+  nameWithType: IResourceEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>
+  fullName: Octopus.Client.Editors.Async.IResourceEditor<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor>
+  nameWithType.vb: IResourceEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor)
+  fullName.vb: Octopus.Client.Editors.Async.IResourceEditor(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor)
+  name.vb: IResourceEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.Async.IResourceEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource
+    name: AzureServicePrincipalAccountResource
+    nameWithType: AzureServicePrincipalAccountResource
+    fullName: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+    name: AzureServicePrincipalAccountEditor
+    nameWithType: AzureServicePrincipalAccountEditor
+    fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.Async.IResourceEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource
+    name: AzureServicePrincipalAccountResource
+    nameWithType: AzureServicePrincipalAccountResource
+    fullName: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+    name: AzureServicePrincipalAccountEditor
+    nameWithType: AzureServicePrincipalAccountEditor
+    fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.IResourceBuilder
+  commentId: T:Octopus.Client.Editors.Async.IResourceBuilder
+  parent: Octopus.Client.Editors.Async
+  name: IResourceBuilder
+  nameWithType: IResourceBuilder
+  fullName: Octopus.Client.Editors.Async.IResourceBuilder
+- uid: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Repository
+  commentId: F:Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Repository
+  parent: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}
+  definition: Octopus.Client.Editors.Async.AccountEditor`2.Repository
+  name: Repository
+  nameWithType: AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>.Repository
+  fullName: Octopus.Client.Editors.Async.AccountEditor<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor>.Repository
+  nameWithType.vb: AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor).Repository
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor).Repository
+- uid: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Instance
+  commentId: P:Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Instance
+  parent: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}
+  definition: Octopus.Client.Editors.Async.AccountEditor`2.Instance
+  name: Instance
+  nameWithType: AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>.Instance
+  fullName: Octopus.Client.Editors.Async.AccountEditor<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor>.Instance
+  nameWithType.vb: AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor).Instance
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor).Instance
+- uid: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.CreateOrModify(System.String)
+  commentId: M:Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.CreateOrModify(System.String)
+  parent: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}
+  definition: Octopus.Client.Editors.Async.AccountEditor`2.CreateOrModify(System.String)
+  name: CreateOrModify(String)
+  nameWithType: AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>.CreateOrModify(String)
+  fullName: Octopus.Client.Editors.Async.AccountEditor<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor>.CreateOrModify(System.String)
+  nameWithType.vb: AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor).CreateOrModify(String)
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor).CreateOrModify(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.CreateOrModify(System.String)
+    name: CreateOrModify
+    nameWithType: AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>.CreateOrModify
+    fullName: Octopus.Client.Editors.Async.AccountEditor<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor>.CreateOrModify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.CreateOrModify(System.String)
+    name: CreateOrModify
+    nameWithType: AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor).CreateOrModify
+    fullName: Octopus.Client.Editors.Async.AccountEditor(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor).CreateOrModify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.FindByName(System.String)
+  commentId: M:Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.FindByName(System.String)
+  parent: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}
+  definition: Octopus.Client.Editors.Async.AccountEditor`2.FindByName(System.String)
+  name: FindByName(String)
+  nameWithType: AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>.FindByName(String)
+  fullName: Octopus.Client.Editors.Async.AccountEditor<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor>.FindByName(System.String)
+  nameWithType.vb: AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor).FindByName(String)
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor).FindByName(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.FindByName(System.String)
+    name: FindByName
+    nameWithType: AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>.FindByName
+    fullName: Octopus.Client.Editors.Async.AccountEditor<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor>.FindByName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.FindByName(System.String)
+    name: FindByName
+    nameWithType: AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor).FindByName
+    fullName: Octopus.Client.Editors.Async.AccountEditor(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor).FindByName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Customize(System.Action{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource})
+  commentId: M:Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Customize(System.Action{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource})
+  parent: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}
+  definition: Octopus.Client.Editors.Async.AccountEditor`2.Customize(System.Action{`0})
+  name: Customize(Action<AzureServicePrincipalAccountResource>)
+  nameWithType: AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>.Customize(Action<AzureServicePrincipalAccountResource>)
+  fullName: Octopus.Client.Editors.Async.AccountEditor<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor>.Customize(System.Action<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource>)
+  nameWithType.vb: AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor).Customize(Action(Of AzureServicePrincipalAccountResource))
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor).Customize(System.Action(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource))
+  name.vb: Customize(Action(Of AzureServicePrincipalAccountResource))
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>.Customize
+    fullName: Octopus.Client.Editors.Async.AccountEditor<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor>.Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource
+    name: AzureServicePrincipalAccountResource
+    nameWithType: AzureServicePrincipalAccountResource
+    fullName: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor).Customize
+    fullName: Octopus.Client.Editors.Async.AccountEditor(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor).Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource
+    name: AzureServicePrincipalAccountResource
+    nameWithType: AzureServicePrincipalAccountResource
+    fullName: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Save
+  commentId: M:Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Save
+  parent: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}
+  definition: Octopus.Client.Editors.Async.AccountEditor`2.Save
+  name: Save()
+  nameWithType: AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>.Save()
+  fullName: Octopus.Client.Editors.Async.AccountEditor<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor>.Save()
+  nameWithType.vb: AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor).Save()
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor).Save()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.Save
+    name: Save
+    nameWithType: AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>.Save
+    fullName: Octopus.Client.Editors.Async.AccountEditor<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor>.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.Save
+    name: Save
+    nameWithType: AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor).Save
+    fullName: Octopus.Client.Editors.Async.AccountEditor(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor).Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Usages
+  commentId: M:Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}.Usages
+  parent: Octopus.Client.Editors.Async.AccountEditor{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource,Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor}
+  definition: Octopus.Client.Editors.Async.AccountEditor`2.Usages
+  name: Usages()
+  nameWithType: AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>.Usages()
+  fullName: Octopus.Client.Editors.Async.AccountEditor<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor>.Usages()
+  nameWithType.vb: AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor).Usages()
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor).Usages()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.Usages
+    name: Usages
+    nameWithType: AccountEditor<AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor>.Usages
+    fullName: Octopus.Client.Editors.Async.AccountEditor<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor>.Usages
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.Usages
+    name: Usages
+    nameWithType: AccountEditor(Of AzureServicePrincipalAccountResource, AzureServicePrincipalAccountEditor).Usages
+    fullName: Octopus.Client.Editors.Async.AccountEditor(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource, Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor).Usages
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Editors.Async.AccountEditor`2
+  commentId: T:Octopus.Client.Editors.Async.AccountEditor`2
+  name: AccountEditor<TAccountResource, TAccountEditor>
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>
+  fullName: Octopus.Client.Editors.Async.AccountEditor<TAccountResource, TAccountEditor>
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor)
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of TAccountResource, TAccountEditor)
+  name.vb: AccountEditor(Of TAccountResource, TAccountEditor)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2
+    name: AccountEditor
+    nameWithType: AccountEditor
+    fullName: Octopus.Client.Editors.Async.AccountEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TAccountResource
+    nameWithType: TAccountResource
+    fullName: TAccountResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TAccountEditor
+    nameWithType: TAccountEditor
+    fullName: TAccountEditor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2
+    name: AccountEditor
+    nameWithType: AccountEditor
+    fullName: Octopus.Client.Editors.Async.AccountEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TAccountResource
+    nameWithType: TAccountResource
+    fullName: TAccountResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TAccountEditor
+    nameWithType: TAccountEditor
+    fullName: TAccountEditor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.IResourceEditor`2
+  commentId: T:Octopus.Client.Editors.Async.IResourceEditor`2
+  name: IResourceEditor<TResource, TResourceBuilder>
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>
+  fullName: Octopus.Client.Editors.Async.IResourceEditor<TResource, TResourceBuilder>
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  fullName.vb: Octopus.Client.Editors.Async.IResourceEditor(Of TResource, TResourceBuilder)
+  name.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.Async.IResourceEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResourceBuilder
+    nameWithType: TResourceBuilder
+    fullName: TResourceBuilder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.Async.IResourceEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResourceBuilder
+    nameWithType: TResourceBuilder
+    fullName: TResourceBuilder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.AccountEditor`2.Repository
+  commentId: F:Octopus.Client.Editors.Async.AccountEditor`2.Repository
+  name: Repository
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Repository
+  fullName: Octopus.Client.Editors.Async.AccountEditor<TAccountResource, TAccountEditor>.Repository
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).Repository
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of TAccountResource, TAccountEditor).Repository
+- uid: Octopus.Client.Editors.Async.AccountEditor`2.Instance
+  commentId: P:Octopus.Client.Editors.Async.AccountEditor`2.Instance
+  name: Instance
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Instance
+  fullName: Octopus.Client.Editors.Async.AccountEditor<TAccountResource, TAccountEditor>.Instance
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).Instance
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of TAccountResource, TAccountEditor).Instance
+- uid: Octopus.Client.Editors.Async.AccountEditor`2.CreateOrModify(System.String)
+  commentId: M:Octopus.Client.Editors.Async.AccountEditor`2.CreateOrModify(System.String)
+  isExternal: true
+  name: CreateOrModify(String)
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.CreateOrModify(String)
+  fullName: Octopus.Client.Editors.Async.AccountEditor<TAccountResource, TAccountEditor>.CreateOrModify(System.String)
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).CreateOrModify(String)
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of TAccountResource, TAccountEditor).CreateOrModify(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.CreateOrModify(System.String)
+    name: CreateOrModify
+    nameWithType: AccountEditor<TAccountResource, TAccountEditor>.CreateOrModify
+    fullName: Octopus.Client.Editors.Async.AccountEditor<TAccountResource, TAccountEditor>.CreateOrModify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.CreateOrModify(System.String)
+    name: CreateOrModify
+    nameWithType: AccountEditor(Of TAccountResource, TAccountEditor).CreateOrModify
+    fullName: Octopus.Client.Editors.Async.AccountEditor(Of TAccountResource, TAccountEditor).CreateOrModify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.AccountEditor`2.FindByName(System.String)
+  commentId: M:Octopus.Client.Editors.Async.AccountEditor`2.FindByName(System.String)
+  isExternal: true
+  name: FindByName(String)
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.FindByName(String)
+  fullName: Octopus.Client.Editors.Async.AccountEditor<TAccountResource, TAccountEditor>.FindByName(System.String)
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).FindByName(String)
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of TAccountResource, TAccountEditor).FindByName(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.FindByName(System.String)
+    name: FindByName
+    nameWithType: AccountEditor<TAccountResource, TAccountEditor>.FindByName
+    fullName: Octopus.Client.Editors.Async.AccountEditor<TAccountResource, TAccountEditor>.FindByName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.FindByName(System.String)
+    name: FindByName
+    nameWithType: AccountEditor(Of TAccountResource, TAccountEditor).FindByName
+    fullName: Octopus.Client.Editors.Async.AccountEditor(Of TAccountResource, TAccountEditor).FindByName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.AccountEditor`2.Customize(System.Action{`0})
+  commentId: M:Octopus.Client.Editors.Async.AccountEditor`2.Customize(System.Action{`0})
+  isExternal: true
+  name: Customize(Action<TAccountResource>)
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Customize(Action<TAccountResource>)
+  fullName: Octopus.Client.Editors.Async.AccountEditor<TAccountResource, TAccountEditor>.Customize(System.Action<TAccountResource>)
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).Customize(Action(Of TAccountResource))
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of TAccountResource, TAccountEditor).Customize(System.Action(Of TAccountResource))
+  name.vb: Customize(Action(Of TAccountResource))
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Customize
+    fullName: Octopus.Client.Editors.Async.AccountEditor<TAccountResource, TAccountEditor>.Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TAccountResource
+    nameWithType: TAccountResource
+    fullName: TAccountResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: AccountEditor(Of TAccountResource, TAccountEditor).Customize
+    fullName: Octopus.Client.Editors.Async.AccountEditor(Of TAccountResource, TAccountEditor).Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TAccountResource
+    nameWithType: TAccountResource
+    fullName: TAccountResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.AccountEditor`2.Save
+  commentId: M:Octopus.Client.Editors.Async.AccountEditor`2.Save
+  name: Save()
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Save()
+  fullName: Octopus.Client.Editors.Async.AccountEditor<TAccountResource, TAccountEditor>.Save()
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).Save()
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of TAccountResource, TAccountEditor).Save()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.Save
+    name: Save
+    nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Save
+    fullName: Octopus.Client.Editors.Async.AccountEditor<TAccountResource, TAccountEditor>.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.Save
+    name: Save
+    nameWithType: AccountEditor(Of TAccountResource, TAccountEditor).Save
+    fullName: Octopus.Client.Editors.Async.AccountEditor(Of TAccountResource, TAccountEditor).Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.AccountEditor`2.Usages
+  commentId: M:Octopus.Client.Editors.Async.AccountEditor`2.Usages
+  name: Usages()
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Usages()
+  fullName: Octopus.Client.Editors.Async.AccountEditor<TAccountResource, TAccountEditor>.Usages()
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).Usages()
+  fullName.vb: Octopus.Client.Editors.Async.AccountEditor(Of TAccountResource, TAccountEditor).Usages()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.Usages
+    name: Usages
+    nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Usages
+    fullName: Octopus.Client.Editors.Async.AccountEditor<TAccountResource, TAccountEditor>.Usages
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.AccountEditor`2.Usages
+    name: Usages
+    nameWithType: AccountEditor(Of TAccountResource, TAccountEditor).Usages
+    fullName: Octopus.Client.Editors.Async.AccountEditor(Of TAccountResource, TAccountEditor).Usages
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.#ctor*
+  commentId: Overload:Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.#ctor
+  name: AzureServicePrincipalAccountEditor
+  nameWithType: AzureServicePrincipalAccountEditor.AzureServicePrincipalAccountEditor
+  fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.AzureServicePrincipalAccountEditor
+- uid: Octopus.Client.Repositories.Async.IAccountRepository
+  commentId: T:Octopus.Client.Repositories.Async.IAccountRepository
+  parent: Octopus.Client.Repositories.Async
+  name: IAccountRepository
+  nameWithType: IAccountRepository
+  fullName: Octopus.Client.Repositories.Async.IAccountRepository
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.ResourceGroups*
+  commentId: Overload:Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.ResourceGroups
+  name: ResourceGroups
+  nameWithType: AzureServicePrincipalAccountEditor.ResourceGroups
+  fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.ResourceGroups
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.ResourceGroup}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.ResourceGroup}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<AzureServicePrincipalAccountResource.ResourceGroup>>
+  nameWithType: Task<List<AzureServicePrincipalAccountResource.ResourceGroup>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.ResourceGroup>>
+  nameWithType.vb: Task(Of List(Of AzureServicePrincipalAccountResource.ResourceGroup))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.ResourceGroup))
+  name.vb: Task(Of List(Of AzureServicePrincipalAccountResource.ResourceGroup))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.ResourceGroup
+    name: AzureServicePrincipalAccountResource.ResourceGroup
+    nameWithType: AzureServicePrincipalAccountResource.ResourceGroup
+    fullName: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.ResourceGroup
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.ResourceGroup
+    name: AzureServicePrincipalAccountResource.ResourceGroup
+    nameWithType: AzureServicePrincipalAccountResource.ResourceGroup
+    fullName: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.ResourceGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSites*
+  commentId: Overload:Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSites
+  name: WebSites
+  nameWithType: AzureServicePrincipalAccountEditor.WebSites
+  fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSites
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<AzureServicePrincipalAccountResource.WebSite>>
+  nameWithType: Task<List<AzureServicePrincipalAccountResource.WebSite>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite>>
+  nameWithType.vb: Task(Of List(Of AzureServicePrincipalAccountResource.WebSite))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite))
+  name.vb: Task(Of List(Of AzureServicePrincipalAccountResource.WebSite))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite
+    name: AzureServicePrincipalAccountResource.WebSite
+    nameWithType: AzureServicePrincipalAccountResource.WebSite
+    fullName: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite
+    name: AzureServicePrincipalAccountResource.WebSite
+    nameWithType: AzureServicePrincipalAccountResource.WebSite
+    fullName: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSlots*
+  commentId: Overload:Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSlots
+  name: WebSlots
+  nameWithType: AzureServicePrincipalAccountEditor.WebSlots
+  fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.WebSlots
+- uid: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite
+  commentId: T:Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite
+  parent: Octopus.Client.Model.Accounts
+  name: AzureServicePrincipalAccountResource.WebSite
+  nameWithType: AzureServicePrincipalAccountResource.WebSite
+  fullName: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSite
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSlot}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSlot}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<AzureServicePrincipalAccountResource.WebSlot>>
+  nameWithType: Task<List<AzureServicePrincipalAccountResource.WebSlot>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSlot>>
+  nameWithType.vb: Task(Of List(Of AzureServicePrincipalAccountResource.WebSlot))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSlot))
+  name.vb: Task(Of List(Of AzureServicePrincipalAccountResource.WebSlot))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSlot
+    name: AzureServicePrincipalAccountResource.WebSlot
+    nameWithType: AzureServicePrincipalAccountResource.WebSlot
+    fullName: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSlot
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSlot
+    name: AzureServicePrincipalAccountResource.WebSlot
+    nameWithType: AzureServicePrincipalAccountResource.WebSlot
+    fullName: Octopus.Client.Model.Accounts.AzureServicePrincipalAccountResource.WebSlot
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Accounts
+  commentId: N:Octopus.Client.Model.Accounts
+  name: Octopus.Client.Model.Accounts
+  nameWithType: Octopus.Client.Model.Accounts
+  fullName: Octopus.Client.Model.Accounts
+- uid: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.StorageAccounts*
+  commentId: Overload:Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.StorageAccounts
+  name: StorageAccounts
+  nameWithType: AzureServicePrincipalAccountEditor.StorageAccounts
+  fullName: Octopus.Client.Editors.Async.AzureServicePrincipalAccountEditor.StorageAccounts
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.Accounts.AzureStorageAccount}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.Accounts.AzureStorageAccount}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<AzureStorageAccount>>
+  nameWithType: Task<List<AzureStorageAccount>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Octopus.Client.Model.Accounts.AzureStorageAccount>>
+  nameWithType.vb: Task(Of List(Of AzureStorageAccount))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Octopus.Client.Model.Accounts.AzureStorageAccount))
+  name.vb: Task(Of List(Of AzureStorageAccount))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Accounts.AzureStorageAccount
+    name: AzureStorageAccount
+    nameWithType: AzureStorageAccount
+    fullName: Octopus.Client.Model.Accounts.AzureStorageAccount
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Accounts.AzureStorageAccount
+    name: AzureStorageAccount
+    nameWithType: AzureStorageAccount
+    fullName: Octopus.Client.Model.Accounts.AzureStorageAccount
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )

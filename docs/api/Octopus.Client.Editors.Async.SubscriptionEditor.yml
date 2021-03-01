@@ -1,0 +1,1081 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Editors.Async.SubscriptionEditor
+  commentId: T:Octopus.Client.Editors.Async.SubscriptionEditor
+  id: SubscriptionEditor
+  parent: Octopus.Client.Editors.Async
+  children:
+  - Octopus.Client.Editors.Async.SubscriptionEditor.#ctor(Octopus.Client.Repositories.Async.ISubscriptionRepository)
+  - Octopus.Client.Editors.Async.SubscriptionEditor.CreateOrModify(System.String,Octopus.Client.Model.EventNotificationSubscription,System.Boolean)
+  - Octopus.Client.Editors.Async.SubscriptionEditor.Customize(System.Action{Octopus.Client.Model.SubscriptionResource})
+  - Octopus.Client.Editors.Async.SubscriptionEditor.Instance
+  - Octopus.Client.Editors.Async.SubscriptionEditor.Save
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionEditor
+  nameWithType: SubscriptionEditor
+  fullName: Octopus.Client.Editors.Async.SubscriptionEditor
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/SubscriptionEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SubscriptionEditor
+    path: ../source/Octopus.Client/Editors/Async/SubscriptionEditor.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: 'public class SubscriptionEditor : IResourceEditor<SubscriptionResource, SubscriptionEditor>, IResourceBuilder'
+    content.vb: >-
+      Public Class SubscriptionEditor
+          Implements IResourceEditor(Of SubscriptionResource, SubscriptionEditor), IResourceBuilder
+  inheritance:
+  - System.Object
+  implements:
+  - Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}
+  - Octopus.Client.Editors.Async.IResourceBuilder
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Editors.Async.SubscriptionEditor.#ctor(Octopus.Client.Repositories.Async.ISubscriptionRepository)
+  commentId: M:Octopus.Client.Editors.Async.SubscriptionEditor.#ctor(Octopus.Client.Repositories.Async.ISubscriptionRepository)
+  id: '#ctor(Octopus.Client.Repositories.Async.ISubscriptionRepository)'
+  parent: Octopus.Client.Editors.Async.SubscriptionEditor
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionEditor(ISubscriptionRepository)
+  nameWithType: SubscriptionEditor.SubscriptionEditor(ISubscriptionRepository)
+  fullName: Octopus.Client.Editors.Async.SubscriptionEditor.SubscriptionEditor(Octopus.Client.Repositories.Async.ISubscriptionRepository)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/SubscriptionEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Editors/Async/SubscriptionEditor.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public SubscriptionEditor(ISubscriptionRepository repository)
+    parameters:
+    - id: repository
+      type: Octopus.Client.Repositories.Async.ISubscriptionRepository
+    content.vb: Public Sub New(repository As ISubscriptionRepository)
+  overload: Octopus.Client.Editors.Async.SubscriptionEditor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.Async.SubscriptionEditor.Instance
+  commentId: P:Octopus.Client.Editors.Async.SubscriptionEditor.Instance
+  id: Instance
+  parent: Octopus.Client.Editors.Async.SubscriptionEditor
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: SubscriptionEditor.Instance
+  fullName: Octopus.Client.Editors.Async.SubscriptionEditor.Instance
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/SubscriptionEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Instance
+    path: ../source/Octopus.Client/Editors/Async/SubscriptionEditor.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public SubscriptionResource Instance { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.SubscriptionResource
+    content.vb: Public ReadOnly Property Instance As SubscriptionResource
+  overload: Octopus.Client.Editors.Async.SubscriptionEditor.Instance*
+  implements:
+  - Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}.Instance
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Editors.Async.SubscriptionEditor.CreateOrModify(System.String,Octopus.Client.Model.EventNotificationSubscription,System.Boolean)
+  commentId: M:Octopus.Client.Editors.Async.SubscriptionEditor.CreateOrModify(System.String,Octopus.Client.Model.EventNotificationSubscription,System.Boolean)
+  id: CreateOrModify(System.String,Octopus.Client.Model.EventNotificationSubscription,System.Boolean)
+  parent: Octopus.Client.Editors.Async.SubscriptionEditor
+  langs:
+  - csharp
+  - vb
+  name: CreateOrModify(String, EventNotificationSubscription, Boolean)
+  nameWithType: SubscriptionEditor.CreateOrModify(String, EventNotificationSubscription, Boolean)
+  fullName: Octopus.Client.Editors.Async.SubscriptionEditor.CreateOrModify(System.String, Octopus.Client.Model.EventNotificationSubscription, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/SubscriptionEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CreateOrModify
+    path: ../source/Octopus.Client/Editors/Async/SubscriptionEditor.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public Task<SubscriptionEditor> CreateOrModify(string name, EventNotificationSubscription eventNotificationSubscription, bool isDisabled)
+    parameters:
+    - id: name
+      type: System.String
+    - id: eventNotificationSubscription
+      type: Octopus.Client.Model.EventNotificationSubscription
+    - id: isDisabled
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Editors.Async.SubscriptionEditor}
+    content.vb: Public Function CreateOrModify(name As String, eventNotificationSubscription As EventNotificationSubscription, isDisabled As Boolean) As Task(Of SubscriptionEditor)
+  overload: Octopus.Client.Editors.Async.SubscriptionEditor.CreateOrModify*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.Async.SubscriptionEditor.Customize(System.Action{Octopus.Client.Model.SubscriptionResource})
+  commentId: M:Octopus.Client.Editors.Async.SubscriptionEditor.Customize(System.Action{Octopus.Client.Model.SubscriptionResource})
+  id: Customize(System.Action{Octopus.Client.Model.SubscriptionResource})
+  parent: Octopus.Client.Editors.Async.SubscriptionEditor
+  langs:
+  - csharp
+  - vb
+  name: Customize(Action<SubscriptionResource>)
+  nameWithType: SubscriptionEditor.Customize(Action<SubscriptionResource>)
+  fullName: Octopus.Client.Editors.Async.SubscriptionEditor.Customize(System.Action<Octopus.Client.Model.SubscriptionResource>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/SubscriptionEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Customize
+    path: ../source/Octopus.Client/Editors/Async/SubscriptionEditor.cs
+    startLine: 46
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public SubscriptionEditor Customize(Action<SubscriptionResource> customize)
+    parameters:
+    - id: customize
+      type: System.Action{Octopus.Client.Model.SubscriptionResource}
+    return:
+      type: Octopus.Client.Editors.Async.SubscriptionEditor
+    content.vb: Public Function Customize(customize As Action(Of SubscriptionResource)) As SubscriptionEditor
+  overload: Octopus.Client.Editors.Async.SubscriptionEditor.Customize*
+  implements:
+  - Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}.Customize(System.Action{Octopus.Client.Model.SubscriptionResource})
+  nameWithType.vb: SubscriptionEditor.Customize(Action(Of SubscriptionResource))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Editors.Async.SubscriptionEditor.Customize(System.Action(Of Octopus.Client.Model.SubscriptionResource))
+  name.vb: Customize(Action(Of SubscriptionResource))
+- uid: Octopus.Client.Editors.Async.SubscriptionEditor.Save
+  commentId: M:Octopus.Client.Editors.Async.SubscriptionEditor.Save
+  id: Save
+  parent: Octopus.Client.Editors.Async.SubscriptionEditor
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: SubscriptionEditor.Save()
+  fullName: Octopus.Client.Editors.Async.SubscriptionEditor.Save()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/SubscriptionEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Save
+    path: ../source/Octopus.Client/Editors/Async/SubscriptionEditor.cs
+    startLine: 52
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public Task<SubscriptionEditor> Save()
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Editors.Async.SubscriptionEditor}
+    content.vb: Public Function Save As Task(Of SubscriptionEditor)
+  overload: Octopus.Client.Editors.Async.SubscriptionEditor.Save*
+  implements:
+  - Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}.Save
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Editors.Async
+  commentId: N:Octopus.Client.Editors.Async
+  name: Octopus.Client.Editors.Async
+  nameWithType: Octopus.Client.Editors.Async
+  fullName: Octopus.Client.Editors.Async
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}
+  commentId: T:Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}
+  parent: Octopus.Client.Editors.Async
+  definition: Octopus.Client.Editors.Async.IResourceEditor`2
+  name: IResourceEditor<SubscriptionResource, SubscriptionEditor>
+  nameWithType: IResourceEditor<SubscriptionResource, SubscriptionEditor>
+  fullName: Octopus.Client.Editors.Async.IResourceEditor<Octopus.Client.Model.SubscriptionResource, Octopus.Client.Editors.Async.SubscriptionEditor>
+  nameWithType.vb: IResourceEditor(Of SubscriptionResource, SubscriptionEditor)
+  fullName.vb: Octopus.Client.Editors.Async.IResourceEditor(Of Octopus.Client.Model.SubscriptionResource, Octopus.Client.Editors.Async.SubscriptionEditor)
+  name.vb: IResourceEditor(Of SubscriptionResource, SubscriptionEditor)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.Async.IResourceEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.SubscriptionResource
+    name: SubscriptionResource
+    nameWithType: SubscriptionResource
+    fullName: Octopus.Client.Model.SubscriptionResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Editors.Async.SubscriptionEditor
+    name: SubscriptionEditor
+    nameWithType: SubscriptionEditor
+    fullName: Octopus.Client.Editors.Async.SubscriptionEditor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.Async.IResourceEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.SubscriptionResource
+    name: SubscriptionResource
+    nameWithType: SubscriptionResource
+    fullName: Octopus.Client.Model.SubscriptionResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Editors.Async.SubscriptionEditor
+    name: SubscriptionEditor
+    nameWithType: SubscriptionEditor
+    fullName: Octopus.Client.Editors.Async.SubscriptionEditor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.IResourceBuilder
+  commentId: T:Octopus.Client.Editors.Async.IResourceBuilder
+  parent: Octopus.Client.Editors.Async
+  name: IResourceBuilder
+  nameWithType: IResourceBuilder
+  fullName: Octopus.Client.Editors.Async.IResourceBuilder
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Editors.Async.IResourceEditor`2
+  commentId: T:Octopus.Client.Editors.Async.IResourceEditor`2
+  name: IResourceEditor<TResource, TResourceBuilder>
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>
+  fullName: Octopus.Client.Editors.Async.IResourceEditor<TResource, TResourceBuilder>
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  fullName.vb: Octopus.Client.Editors.Async.IResourceEditor(Of TResource, TResourceBuilder)
+  name.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.Async.IResourceEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResourceBuilder
+    nameWithType: TResourceBuilder
+    fullName: TResourceBuilder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.Async.IResourceEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResourceBuilder
+    nameWithType: TResourceBuilder
+    fullName: TResourceBuilder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.SubscriptionEditor.#ctor*
+  commentId: Overload:Octopus.Client.Editors.Async.SubscriptionEditor.#ctor
+  name: SubscriptionEditor
+  nameWithType: SubscriptionEditor.SubscriptionEditor
+  fullName: Octopus.Client.Editors.Async.SubscriptionEditor.SubscriptionEditor
+- uid: Octopus.Client.Repositories.Async.ISubscriptionRepository
+  commentId: T:Octopus.Client.Repositories.Async.ISubscriptionRepository
+  parent: Octopus.Client.Repositories.Async
+  name: ISubscriptionRepository
+  nameWithType: ISubscriptionRepository
+  fullName: Octopus.Client.Repositories.Async.ISubscriptionRepository
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Editors.Async.SubscriptionEditor.Instance*
+  commentId: Overload:Octopus.Client.Editors.Async.SubscriptionEditor.Instance
+  name: Instance
+  nameWithType: SubscriptionEditor.Instance
+  fullName: Octopus.Client.Editors.Async.SubscriptionEditor.Instance
+- uid: Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}.Instance
+  commentId: P:Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}.Instance
+  parent: Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}
+  definition: Octopus.Client.Editors.Async.IResourceEditor`2.Instance
+  name: Instance
+  nameWithType: IResourceEditor<SubscriptionResource, SubscriptionEditor>.Instance
+  fullName: Octopus.Client.Editors.Async.IResourceEditor<Octopus.Client.Model.SubscriptionResource, Octopus.Client.Editors.Async.SubscriptionEditor>.Instance
+  nameWithType.vb: IResourceEditor(Of SubscriptionResource, SubscriptionEditor).Instance
+  fullName.vb: Octopus.Client.Editors.Async.IResourceEditor(Of Octopus.Client.Model.SubscriptionResource, Octopus.Client.Editors.Async.SubscriptionEditor).Instance
+- uid: Octopus.Client.Model.SubscriptionResource
+  commentId: T:Octopus.Client.Model.SubscriptionResource
+  parent: Octopus.Client.Model
+  name: SubscriptionResource
+  nameWithType: SubscriptionResource
+  fullName: Octopus.Client.Model.SubscriptionResource
+- uid: Octopus.Client.Editors.Async.IResourceEditor`2.Instance
+  commentId: P:Octopus.Client.Editors.Async.IResourceEditor`2.Instance
+  name: Instance
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Instance
+  fullName: Octopus.Client.Editors.Async.IResourceEditor<TResource, TResourceBuilder>.Instance
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Instance
+  fullName.vb: Octopus.Client.Editors.Async.IResourceEditor(Of TResource, TResourceBuilder).Instance
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Editors.Async.SubscriptionEditor.CreateOrModify*
+  commentId: Overload:Octopus.Client.Editors.Async.SubscriptionEditor.CreateOrModify
+  name: CreateOrModify
+  nameWithType: SubscriptionEditor.CreateOrModify
+  fullName: Octopus.Client.Editors.Async.SubscriptionEditor.CreateOrModify
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.EventNotificationSubscription
+  commentId: T:Octopus.Client.Model.EventNotificationSubscription
+  parent: Octopus.Client.Model
+  name: EventNotificationSubscription
+  nameWithType: EventNotificationSubscription
+  fullName: Octopus.Client.Model.EventNotificationSubscription
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.Tasks.Task{Octopus.Client.Editors.Async.SubscriptionEditor}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Editors.Async.SubscriptionEditor}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SubscriptionEditor>
+  nameWithType: Task<SubscriptionEditor>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Editors.Async.SubscriptionEditor>
+  nameWithType.vb: Task(Of SubscriptionEditor)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Editors.Async.SubscriptionEditor)
+  name.vb: Task(Of SubscriptionEditor)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Editors.Async.SubscriptionEditor
+    name: SubscriptionEditor
+    nameWithType: SubscriptionEditor
+    fullName: Octopus.Client.Editors.Async.SubscriptionEditor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Editors.Async.SubscriptionEditor
+    name: SubscriptionEditor
+    nameWithType: SubscriptionEditor
+    fullName: Octopus.Client.Editors.Async.SubscriptionEditor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Octopus.Client.Editors.Async.SubscriptionEditor.Customize*
+  commentId: Overload:Octopus.Client.Editors.Async.SubscriptionEditor.Customize
+  name: Customize
+  nameWithType: SubscriptionEditor.Customize
+  fullName: Octopus.Client.Editors.Async.SubscriptionEditor.Customize
+- uid: Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}.Customize(System.Action{Octopus.Client.Model.SubscriptionResource})
+  commentId: M:Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}.Customize(System.Action{Octopus.Client.Model.SubscriptionResource})
+  parent: Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}
+  definition: Octopus.Client.Editors.Async.IResourceEditor`2.Customize(System.Action{`0})
+  name: Customize(Action<SubscriptionResource>)
+  nameWithType: IResourceEditor<SubscriptionResource, SubscriptionEditor>.Customize(Action<SubscriptionResource>)
+  fullName: Octopus.Client.Editors.Async.IResourceEditor<Octopus.Client.Model.SubscriptionResource, Octopus.Client.Editors.Async.SubscriptionEditor>.Customize(System.Action<Octopus.Client.Model.SubscriptionResource>)
+  nameWithType.vb: IResourceEditor(Of SubscriptionResource, SubscriptionEditor).Customize(Action(Of SubscriptionResource))
+  fullName.vb: Octopus.Client.Editors.Async.IResourceEditor(Of Octopus.Client.Model.SubscriptionResource, Octopus.Client.Editors.Async.SubscriptionEditor).Customize(System.Action(Of Octopus.Client.Model.SubscriptionResource))
+  name.vb: Customize(Action(Of SubscriptionResource))
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor<SubscriptionResource, SubscriptionEditor>.Customize
+    fullName: Octopus.Client.Editors.Async.IResourceEditor<Octopus.Client.Model.SubscriptionResource, Octopus.Client.Editors.Async.SubscriptionEditor>.Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.SubscriptionResource
+    name: SubscriptionResource
+    nameWithType: SubscriptionResource
+    fullName: Octopus.Client.Model.SubscriptionResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor(Of SubscriptionResource, SubscriptionEditor).Customize
+    fullName: Octopus.Client.Editors.Async.IResourceEditor(Of Octopus.Client.Model.SubscriptionResource, Octopus.Client.Editors.Async.SubscriptionEditor).Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.SubscriptionResource
+    name: SubscriptionResource
+    nameWithType: SubscriptionResource
+    fullName: Octopus.Client.Model.SubscriptionResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{Octopus.Client.Model.SubscriptionResource}
+  commentId: T:System.Action{Octopus.Client.Model.SubscriptionResource}
+  parent: System
+  definition: System.Action`1
+  name: Action<SubscriptionResource>
+  nameWithType: Action<SubscriptionResource>
+  fullName: System.Action<Octopus.Client.Model.SubscriptionResource>
+  nameWithType.vb: Action(Of SubscriptionResource)
+  fullName.vb: System.Action(Of Octopus.Client.Model.SubscriptionResource)
+  name.vb: Action(Of SubscriptionResource)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.SubscriptionResource
+    name: SubscriptionResource
+    nameWithType: SubscriptionResource
+    fullName: Octopus.Client.Model.SubscriptionResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.SubscriptionResource
+    name: SubscriptionResource
+    nameWithType: SubscriptionResource
+    fullName: Octopus.Client.Model.SubscriptionResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.SubscriptionEditor
+  commentId: T:Octopus.Client.Editors.Async.SubscriptionEditor
+  parent: Octopus.Client.Editors.Async
+  name: SubscriptionEditor
+  nameWithType: SubscriptionEditor
+  fullName: Octopus.Client.Editors.Async.SubscriptionEditor
+- uid: Octopus.Client.Editors.Async.IResourceEditor`2.Customize(System.Action{`0})
+  commentId: M:Octopus.Client.Editors.Async.IResourceEditor`2.Customize(System.Action{`0})
+  isExternal: true
+  name: Customize(Action<TResource>)
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Customize(Action<TResource>)
+  fullName: Octopus.Client.Editors.Async.IResourceEditor<TResource, TResourceBuilder>.Customize(System.Action<TResource>)
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Customize(Action(Of TResource))
+  fullName.vb: Octopus.Client.Editors.Async.IResourceEditor(Of TResource, TResourceBuilder).Customize(System.Action(Of TResource))
+  name.vb: Customize(Action(Of TResource))
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor<TResource, TResourceBuilder>.Customize
+    fullName: Octopus.Client.Editors.Async.IResourceEditor<TResource, TResourceBuilder>.Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor(Of TResource, TResourceBuilder).Customize
+    fullName: Octopus.Client.Editors.Async.IResourceEditor(Of TResource, TResourceBuilder).Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.SubscriptionEditor.Save*
+  commentId: Overload:Octopus.Client.Editors.Async.SubscriptionEditor.Save
+  name: Save
+  nameWithType: SubscriptionEditor.Save
+  fullName: Octopus.Client.Editors.Async.SubscriptionEditor.Save
+- uid: Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}.Save
+  commentId: M:Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}.Save
+  parent: Octopus.Client.Editors.Async.IResourceEditor{Octopus.Client.Model.SubscriptionResource,Octopus.Client.Editors.Async.SubscriptionEditor}
+  definition: Octopus.Client.Editors.Async.IResourceEditor`2.Save
+  name: Save()
+  nameWithType: IResourceEditor<SubscriptionResource, SubscriptionEditor>.Save()
+  fullName: Octopus.Client.Editors.Async.IResourceEditor<Octopus.Client.Model.SubscriptionResource, Octopus.Client.Editors.Async.SubscriptionEditor>.Save()
+  nameWithType.vb: IResourceEditor(Of SubscriptionResource, SubscriptionEditor).Save()
+  fullName.vb: Octopus.Client.Editors.Async.IResourceEditor(Of Octopus.Client.Model.SubscriptionResource, Octopus.Client.Editors.Async.SubscriptionEditor).Save()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor<SubscriptionResource, SubscriptionEditor>.Save
+    fullName: Octopus.Client.Editors.Async.IResourceEditor<Octopus.Client.Model.SubscriptionResource, Octopus.Client.Editors.Async.SubscriptionEditor>.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor(Of SubscriptionResource, SubscriptionEditor).Save
+    fullName: Octopus.Client.Editors.Async.IResourceEditor(Of Octopus.Client.Model.SubscriptionResource, Octopus.Client.Editors.Async.SubscriptionEditor).Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.IResourceEditor`2.Save
+  commentId: M:Octopus.Client.Editors.Async.IResourceEditor`2.Save
+  name: Save()
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Save()
+  fullName: Octopus.Client.Editors.Async.IResourceEditor<TResource, TResourceBuilder>.Save()
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Save()
+  fullName.vb: Octopus.Client.Editors.Async.IResourceEditor(Of TResource, TResourceBuilder).Save()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor<TResource, TResourceBuilder>.Save
+    fullName: Octopus.Client.Editors.Async.IResourceEditor<TResource, TResourceBuilder>.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.Async.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor(Of TResource, TResourceBuilder).Save
+    fullName: Octopus.Client.Editors.Async.IResourceEditor(Of TResource, TResourceBuilder).Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

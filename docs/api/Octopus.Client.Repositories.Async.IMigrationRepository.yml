@@ -1,0 +1,260 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.IMigrationRepository
+  commentId: T:Octopus.Client.Repositories.Async.IMigrationRepository
+  id: IMigrationRepository
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.IMigrationRepository.Import(Octopus.Client.Model.Migrations.MigrationImportResource)
+  - Octopus.Client.Repositories.Async.IMigrationRepository.PartialExport(Octopus.Client.Model.Migrations.MigrationPartialExportResource)
+  langs:
+  - csharp
+  - vb
+  name: IMigrationRepository
+  nameWithType: IMigrationRepository
+  fullName: Octopus.Client.Repositories.Async.IMigrationRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/MigrationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IMigrationRepository
+    path: ../source/Octopus.Client/Repositories/Async/MigrationRepository.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: public interface IMigrationRepository
+    content.vb: Public Interface IMigrationRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.Async.IMigrationRepository.PartialExport(Octopus.Client.Model.Migrations.MigrationPartialExportResource)
+  commentId: M:Octopus.Client.Repositories.Async.IMigrationRepository.PartialExport(Octopus.Client.Model.Migrations.MigrationPartialExportResource)
+  id: PartialExport(Octopus.Client.Model.Migrations.MigrationPartialExportResource)
+  parent: Octopus.Client.Repositories.Async.IMigrationRepository
+  langs:
+  - csharp
+  - vb
+  name: PartialExport(MigrationPartialExportResource)
+  nameWithType: IMigrationRepository.PartialExport(MigrationPartialExportResource)
+  fullName: Octopus.Client.Repositories.Async.IMigrationRepository.PartialExport(Octopus.Client.Model.Migrations.MigrationPartialExportResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/MigrationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: PartialExport
+    path: ../source/Octopus.Client/Repositories/Async/MigrationRepository.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<MigrationPartialExportResource> PartialExport(MigrationPartialExportResource resource)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.Migrations.MigrationPartialExportResource
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.Migrations.MigrationPartialExportResource}
+    content.vb: Function PartialExport(resource As MigrationPartialExportResource) As Task(Of MigrationPartialExportResource)
+  overload: Octopus.Client.Repositories.Async.IMigrationRepository.PartialExport*
+- uid: Octopus.Client.Repositories.Async.IMigrationRepository.Import(Octopus.Client.Model.Migrations.MigrationImportResource)
+  commentId: M:Octopus.Client.Repositories.Async.IMigrationRepository.Import(Octopus.Client.Model.Migrations.MigrationImportResource)
+  id: Import(Octopus.Client.Model.Migrations.MigrationImportResource)
+  parent: Octopus.Client.Repositories.Async.IMigrationRepository
+  langs:
+  - csharp
+  - vb
+  name: Import(MigrationImportResource)
+  nameWithType: IMigrationRepository.Import(MigrationImportResource)
+  fullName: Octopus.Client.Repositories.Async.IMigrationRepository.Import(Octopus.Client.Model.Migrations.MigrationImportResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/MigrationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Import
+    path: ../source/Octopus.Client/Repositories/Async/MigrationRepository.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<MigrationImportResource> Import(MigrationImportResource resource)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.Migrations.MigrationImportResource
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.Migrations.MigrationImportResource}
+    content.vb: Function Import(resource As MigrationImportResource) As Task(Of MigrationImportResource)
+  overload: Octopus.Client.Repositories.Async.IMigrationRepository.Import*
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.IMigrationRepository.PartialExport*
+  commentId: Overload:Octopus.Client.Repositories.Async.IMigrationRepository.PartialExport
+  name: PartialExport
+  nameWithType: IMigrationRepository.PartialExport
+  fullName: Octopus.Client.Repositories.Async.IMigrationRepository.PartialExport
+- uid: Octopus.Client.Model.Migrations.MigrationPartialExportResource
+  commentId: T:Octopus.Client.Model.Migrations.MigrationPartialExportResource
+  parent: Octopus.Client.Model.Migrations
+  name: MigrationPartialExportResource
+  nameWithType: MigrationPartialExportResource
+  fullName: Octopus.Client.Model.Migrations.MigrationPartialExportResource
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.Migrations.MigrationPartialExportResource}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.Migrations.MigrationPartialExportResource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<MigrationPartialExportResource>
+  nameWithType: Task<MigrationPartialExportResource>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.Migrations.MigrationPartialExportResource>
+  nameWithType.vb: Task(Of MigrationPartialExportResource)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.Migrations.MigrationPartialExportResource)
+  name.vb: Task(Of MigrationPartialExportResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Migrations.MigrationPartialExportResource
+    name: MigrationPartialExportResource
+    nameWithType: MigrationPartialExportResource
+    fullName: Octopus.Client.Model.Migrations.MigrationPartialExportResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Migrations.MigrationPartialExportResource
+    name: MigrationPartialExportResource
+    nameWithType: MigrationPartialExportResource
+    fullName: Octopus.Client.Model.Migrations.MigrationPartialExportResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Migrations
+  commentId: N:Octopus.Client.Model.Migrations
+  name: Octopus.Client.Model.Migrations
+  nameWithType: Octopus.Client.Model.Migrations
+  fullName: Octopus.Client.Model.Migrations
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Octopus.Client.Repositories.Async.IMigrationRepository.Import*
+  commentId: Overload:Octopus.Client.Repositories.Async.IMigrationRepository.Import
+  name: Import
+  nameWithType: IMigrationRepository.Import
+  fullName: Octopus.Client.Repositories.Async.IMigrationRepository.Import
+- uid: Octopus.Client.Model.Migrations.MigrationImportResource
+  commentId: T:Octopus.Client.Model.Migrations.MigrationImportResource
+  parent: Octopus.Client.Model.Migrations
+  name: MigrationImportResource
+  nameWithType: MigrationImportResource
+  fullName: Octopus.Client.Model.Migrations.MigrationImportResource
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.Migrations.MigrationImportResource}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.Migrations.MigrationImportResource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<MigrationImportResource>
+  nameWithType: Task<MigrationImportResource>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.Migrations.MigrationImportResource>
+  nameWithType.vb: Task(Of MigrationImportResource)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.Migrations.MigrationImportResource)
+  name.vb: Task(Of MigrationImportResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Migrations.MigrationImportResource
+    name: MigrationImportResource
+    nameWithType: MigrationImportResource
+    fullName: Octopus.Client.Model.Migrations.MigrationImportResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Migrations.MigrationImportResource
+    name: MigrationImportResource
+    nameWithType: MigrationImportResource
+    fullName: Octopus.Client.Model.Migrations.MigrationImportResource
+  - name: )
+    nameWithType: )
+    fullName: )

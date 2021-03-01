@@ -1,0 +1,1018 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.PhaseResource
+  commentId: T:Octopus.Client.Model.PhaseResource
+  id: PhaseResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.PhaseResource.#ctor
+  - Octopus.Client.Model.PhaseResource.AutomaticDeploymentTargets
+  - Octopus.Client.Model.PhaseResource.Clear
+  - Octopus.Client.Model.PhaseResource.Id
+  - Octopus.Client.Model.PhaseResource.IsOptionalPhase
+  - Octopus.Client.Model.PhaseResource.MinimumEnvironmentsBeforePromotion
+  - Octopus.Client.Model.PhaseResource.Name
+  - Octopus.Client.Model.PhaseResource.OptionalDeploymentTargets
+  - Octopus.Client.Model.PhaseResource.ReleaseRetentionPolicy
+  - Octopus.Client.Model.PhaseResource.TentacleRetentionPolicy
+  - Octopus.Client.Model.PhaseResource.WithAutomaticDeploymentTargets(Octopus.Client.Model.EnvironmentResource[])
+  - Octopus.Client.Model.PhaseResource.WithMinimumEnvironmentsBeforePromotion(System.Int32)
+  - Octopus.Client.Model.PhaseResource.WithOptionalDeploymentTargets(Octopus.Client.Model.EnvironmentResource[])
+  - Octopus.Client.Model.PhaseResource.WithReleaseRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  - Octopus.Client.Model.PhaseResource.WithTentacleRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  langs:
+  - csharp
+  - vb
+  name: PhaseResource
+  nameWithType: PhaseResource
+  fullName: Octopus.Client.Model.PhaseResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: PhaseResource
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 4
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public class PhaseResource
+    content.vb: Public Class PhaseResource
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.PhaseResource.#ctor
+  commentId: M:Octopus.Client.Model.PhaseResource.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: PhaseResource()
+  nameWithType: PhaseResource.PhaseResource()
+  fullName: Octopus.Client.Model.PhaseResource.PhaseResource()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public PhaseResource()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.PhaseResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.PhaseResource.Id
+  commentId: P:Octopus.Client.Model.PhaseResource.Id
+  id: Id
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: PhaseResource.Id
+  fullName: Octopus.Client.Model.PhaseResource.Id
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Id
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 12
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Octopus.Client.Model.PhaseResource.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.PhaseResource.Name
+  commentId: P:Octopus.Client.Model.PhaseResource.Name
+  id: Name
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: PhaseResource.Name
+  fullName: Octopus.Client.Model.PhaseResource.Name
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Name
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Octopus.Client.Model.PhaseResource.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.PhaseResource.AutomaticDeploymentTargets
+  commentId: P:Octopus.Client.Model.PhaseResource.AutomaticDeploymentTargets
+  id: AutomaticDeploymentTargets
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: AutomaticDeploymentTargets
+  nameWithType: PhaseResource.AutomaticDeploymentTargets
+  fullName: Octopus.Client.Model.PhaseResource.AutomaticDeploymentTargets
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AutomaticDeploymentTargets
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ReferenceCollection AutomaticDeploymentTargets { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property AutomaticDeploymentTargets As ReferenceCollection
+  overload: Octopus.Client.Model.PhaseResource.AutomaticDeploymentTargets*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.PhaseResource.OptionalDeploymentTargets
+  commentId: P:Octopus.Client.Model.PhaseResource.OptionalDeploymentTargets
+  id: OptionalDeploymentTargets
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: OptionalDeploymentTargets
+  nameWithType: PhaseResource.OptionalDeploymentTargets
+  fullName: Octopus.Client.Model.PhaseResource.OptionalDeploymentTargets
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: OptionalDeploymentTargets
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 18
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ReferenceCollection OptionalDeploymentTargets { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property OptionalDeploymentTargets As ReferenceCollection
+  overload: Octopus.Client.Model.PhaseResource.OptionalDeploymentTargets*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.PhaseResource.MinimumEnvironmentsBeforePromotion
+  commentId: P:Octopus.Client.Model.PhaseResource.MinimumEnvironmentsBeforePromotion
+  id: MinimumEnvironmentsBeforePromotion
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: MinimumEnvironmentsBeforePromotion
+  nameWithType: PhaseResource.MinimumEnvironmentsBeforePromotion
+  fullName: Octopus.Client.Model.PhaseResource.MinimumEnvironmentsBeforePromotion
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: MinimumEnvironmentsBeforePromotion
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public int MinimumEnvironmentsBeforePromotion { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MinimumEnvironmentsBeforePromotion As Integer
+  overload: Octopus.Client.Model.PhaseResource.MinimumEnvironmentsBeforePromotion*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.PhaseResource.IsOptionalPhase
+  commentId: P:Octopus.Client.Model.PhaseResource.IsOptionalPhase
+  id: IsOptionalPhase
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: IsOptionalPhase
+  nameWithType: PhaseResource.IsOptionalPhase
+  fullName: Octopus.Client.Model.PhaseResource.IsOptionalPhase
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsOptionalPhase
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 20
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public bool IsOptionalPhase { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsOptionalPhase As Boolean
+  overload: Octopus.Client.Model.PhaseResource.IsOptionalPhase*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.PhaseResource.ReleaseRetentionPolicy
+  commentId: P:Octopus.Client.Model.PhaseResource.ReleaseRetentionPolicy
+  id: ReleaseRetentionPolicy
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: ReleaseRetentionPolicy
+  nameWithType: PhaseResource.ReleaseRetentionPolicy
+  fullName: Octopus.Client.Model.PhaseResource.ReleaseRetentionPolicy
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ReleaseRetentionPolicy
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 21
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public RetentionPeriod ReleaseRetentionPolicy { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.RetentionPeriod
+    content.vb: Public Property ReleaseRetentionPolicy As RetentionPeriod
+  overload: Octopus.Client.Model.PhaseResource.ReleaseRetentionPolicy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.PhaseResource.TentacleRetentionPolicy
+  commentId: P:Octopus.Client.Model.PhaseResource.TentacleRetentionPolicy
+  id: TentacleRetentionPolicy
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: TentacleRetentionPolicy
+  nameWithType: PhaseResource.TentacleRetentionPolicy
+  fullName: Octopus.Client.Model.PhaseResource.TentacleRetentionPolicy
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TentacleRetentionPolicy
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 22
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public RetentionPeriod TentacleRetentionPolicy { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.RetentionPeriod
+    content.vb: Public Property TentacleRetentionPolicy As RetentionPeriod
+  overload: Octopus.Client.Model.PhaseResource.TentacleRetentionPolicy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.PhaseResource.Clear
+  commentId: M:Octopus.Client.Model.PhaseResource.Clear
+  id: Clear
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: PhaseResource.Clear()
+  fullName: Octopus.Client.Model.PhaseResource.Clear()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Clear
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 24
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public PhaseResource Clear()
+    return:
+      type: Octopus.Client.Model.PhaseResource
+    content.vb: Public Function Clear As PhaseResource
+  overload: Octopus.Client.Model.PhaseResource.Clear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.PhaseResource.WithAutomaticDeploymentTargets(Octopus.Client.Model.EnvironmentResource[])
+  commentId: M:Octopus.Client.Model.PhaseResource.WithAutomaticDeploymentTargets(Octopus.Client.Model.EnvironmentResource[])
+  id: WithAutomaticDeploymentTargets(Octopus.Client.Model.EnvironmentResource[])
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: WithAutomaticDeploymentTargets(EnvironmentResource[])
+  nameWithType: PhaseResource.WithAutomaticDeploymentTargets(EnvironmentResource[])
+  fullName: Octopus.Client.Model.PhaseResource.WithAutomaticDeploymentTargets(Octopus.Client.Model.EnvironmentResource[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WithAutomaticDeploymentTargets
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 35
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public PhaseResource WithAutomaticDeploymentTargets(params EnvironmentResource[] environments)
+    parameters:
+    - id: environments
+      type: Octopus.Client.Model.EnvironmentResource[]
+    return:
+      type: Octopus.Client.Model.PhaseResource
+    content.vb: Public Function WithAutomaticDeploymentTargets(ParamArray environments As EnvironmentResource()) As PhaseResource
+  overload: Octopus.Client.Model.PhaseResource.WithAutomaticDeploymentTargets*
+  nameWithType.vb: PhaseResource.WithAutomaticDeploymentTargets(EnvironmentResource())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.PhaseResource.WithAutomaticDeploymentTargets(Octopus.Client.Model.EnvironmentResource())
+  name.vb: WithAutomaticDeploymentTargets(EnvironmentResource())
+- uid: Octopus.Client.Model.PhaseResource.WithOptionalDeploymentTargets(Octopus.Client.Model.EnvironmentResource[])
+  commentId: M:Octopus.Client.Model.PhaseResource.WithOptionalDeploymentTargets(Octopus.Client.Model.EnvironmentResource[])
+  id: WithOptionalDeploymentTargets(Octopus.Client.Model.EnvironmentResource[])
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: WithOptionalDeploymentTargets(EnvironmentResource[])
+  nameWithType: PhaseResource.WithOptionalDeploymentTargets(EnvironmentResource[])
+  fullName: Octopus.Client.Model.PhaseResource.WithOptionalDeploymentTargets(Octopus.Client.Model.EnvironmentResource[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WithOptionalDeploymentTargets
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 44
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public PhaseResource WithOptionalDeploymentTargets(params EnvironmentResource[] environments)
+    parameters:
+    - id: environments
+      type: Octopus.Client.Model.EnvironmentResource[]
+    return:
+      type: Octopus.Client.Model.PhaseResource
+    content.vb: Public Function WithOptionalDeploymentTargets(ParamArray environments As EnvironmentResource()) As PhaseResource
+  overload: Octopus.Client.Model.PhaseResource.WithOptionalDeploymentTargets*
+  nameWithType.vb: PhaseResource.WithOptionalDeploymentTargets(EnvironmentResource())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.PhaseResource.WithOptionalDeploymentTargets(Octopus.Client.Model.EnvironmentResource())
+  name.vb: WithOptionalDeploymentTargets(EnvironmentResource())
+- uid: Octopus.Client.Model.PhaseResource.WithMinimumEnvironmentsBeforePromotion(System.Int32)
+  commentId: M:Octopus.Client.Model.PhaseResource.WithMinimumEnvironmentsBeforePromotion(System.Int32)
+  id: WithMinimumEnvironmentsBeforePromotion(System.Int32)
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: WithMinimumEnvironmentsBeforePromotion(Int32)
+  nameWithType: PhaseResource.WithMinimumEnvironmentsBeforePromotion(Int32)
+  fullName: Octopus.Client.Model.PhaseResource.WithMinimumEnvironmentsBeforePromotion(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WithMinimumEnvironmentsBeforePromotion
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 53
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public PhaseResource WithMinimumEnvironmentsBeforePromotion(int minimumEnvironmentsBeforePromotion)
+    parameters:
+    - id: minimumEnvironmentsBeforePromotion
+      type: System.Int32
+    return:
+      type: Octopus.Client.Model.PhaseResource
+    content.vb: Public Function WithMinimumEnvironmentsBeforePromotion(minimumEnvironmentsBeforePromotion As Integer) As PhaseResource
+  overload: Octopus.Client.Model.PhaseResource.WithMinimumEnvironmentsBeforePromotion*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.PhaseResource.WithReleaseRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  commentId: M:Octopus.Client.Model.PhaseResource.WithReleaseRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  id: WithReleaseRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: WithReleaseRetentionPolicy(RetentionPeriod)
+  nameWithType: PhaseResource.WithReleaseRetentionPolicy(RetentionPeriod)
+  fullName: Octopus.Client.Model.PhaseResource.WithReleaseRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WithReleaseRetentionPolicy
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 59
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public PhaseResource WithReleaseRetentionPolicy(RetentionPeriod period)
+    parameters:
+    - id: period
+      type: Octopus.Client.Model.RetentionPeriod
+    return:
+      type: Octopus.Client.Model.PhaseResource
+    content.vb: Public Function WithReleaseRetentionPolicy(period As RetentionPeriod) As PhaseResource
+  overload: Octopus.Client.Model.PhaseResource.WithReleaseRetentionPolicy*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.PhaseResource.WithTentacleRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  commentId: M:Octopus.Client.Model.PhaseResource.WithTentacleRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  id: WithTentacleRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  parent: Octopus.Client.Model.PhaseResource
+  langs:
+  - csharp
+  - vb
+  name: WithTentacleRetentionPolicy(RetentionPeriod)
+  nameWithType: PhaseResource.WithTentacleRetentionPolicy(RetentionPeriod)
+  fullName: Octopus.Client.Model.PhaseResource.WithTentacleRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/PhaseResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WithTentacleRetentionPolicy
+    path: ../source/Octopus.Client/Model/PhaseResource.cs
+    startLine: 65
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public PhaseResource WithTentacleRetentionPolicy(RetentionPeriod period)
+    parameters:
+    - id: period
+      type: Octopus.Client.Model.RetentionPeriod
+    return:
+      type: Octopus.Client.Model.PhaseResource
+    content.vb: Public Function WithTentacleRetentionPolicy(period As RetentionPeriod) As PhaseResource
+  overload: Octopus.Client.Model.PhaseResource.WithTentacleRetentionPolicy*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.PhaseResource.#ctor*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.#ctor
+  name: PhaseResource
+  nameWithType: PhaseResource.PhaseResource
+  fullName: Octopus.Client.Model.PhaseResource.PhaseResource
+- uid: Octopus.Client.Model.PhaseResource.Id*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.Id
+  name: Id
+  nameWithType: PhaseResource.Id
+  fullName: Octopus.Client.Model.PhaseResource.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.PhaseResource.Name*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.Name
+  name: Name
+  nameWithType: PhaseResource.Name
+  fullName: Octopus.Client.Model.PhaseResource.Name
+- uid: Octopus.Client.Model.PhaseResource.AutomaticDeploymentTargets*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.AutomaticDeploymentTargets
+  name: AutomaticDeploymentTargets
+  nameWithType: PhaseResource.AutomaticDeploymentTargets
+  fullName: Octopus.Client.Model.PhaseResource.AutomaticDeploymentTargets
+- uid: Octopus.Client.Model.ReferenceCollection
+  commentId: T:Octopus.Client.Model.ReferenceCollection
+  parent: Octopus.Client.Model
+  name: ReferenceCollection
+  nameWithType: ReferenceCollection
+  fullName: Octopus.Client.Model.ReferenceCollection
+- uid: Octopus.Client.Model.PhaseResource.OptionalDeploymentTargets*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.OptionalDeploymentTargets
+  name: OptionalDeploymentTargets
+  nameWithType: PhaseResource.OptionalDeploymentTargets
+  fullName: Octopus.Client.Model.PhaseResource.OptionalDeploymentTargets
+- uid: Octopus.Client.Model.PhaseResource.MinimumEnvironmentsBeforePromotion*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.MinimumEnvironmentsBeforePromotion
+  name: MinimumEnvironmentsBeforePromotion
+  nameWithType: PhaseResource.MinimumEnvironmentsBeforePromotion
+  fullName: Octopus.Client.Model.PhaseResource.MinimumEnvironmentsBeforePromotion
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Octopus.Client.Model.PhaseResource.IsOptionalPhase*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.IsOptionalPhase
+  name: IsOptionalPhase
+  nameWithType: PhaseResource.IsOptionalPhase
+  fullName: Octopus.Client.Model.PhaseResource.IsOptionalPhase
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.PhaseResource.ReleaseRetentionPolicy*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.ReleaseRetentionPolicy
+  name: ReleaseRetentionPolicy
+  nameWithType: PhaseResource.ReleaseRetentionPolicy
+  fullName: Octopus.Client.Model.PhaseResource.ReleaseRetentionPolicy
+- uid: Octopus.Client.Model.RetentionPeriod
+  commentId: T:Octopus.Client.Model.RetentionPeriod
+  parent: Octopus.Client.Model
+  name: RetentionPeriod
+  nameWithType: RetentionPeriod
+  fullName: Octopus.Client.Model.RetentionPeriod
+- uid: Octopus.Client.Model.PhaseResource.TentacleRetentionPolicy*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.TentacleRetentionPolicy
+  name: TentacleRetentionPolicy
+  nameWithType: PhaseResource.TentacleRetentionPolicy
+  fullName: Octopus.Client.Model.PhaseResource.TentacleRetentionPolicy
+- uid: Octopus.Client.Model.PhaseResource.Clear*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.Clear
+  name: Clear
+  nameWithType: PhaseResource.Clear
+  fullName: Octopus.Client.Model.PhaseResource.Clear
+- uid: Octopus.Client.Model.PhaseResource
+  commentId: T:Octopus.Client.Model.PhaseResource
+  parent: Octopus.Client.Model
+  name: PhaseResource
+  nameWithType: PhaseResource
+  fullName: Octopus.Client.Model.PhaseResource
+- uid: Octopus.Client.Model.PhaseResource.WithAutomaticDeploymentTargets*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.WithAutomaticDeploymentTargets
+  name: WithAutomaticDeploymentTargets
+  nameWithType: PhaseResource.WithAutomaticDeploymentTargets
+  fullName: Octopus.Client.Model.PhaseResource.WithAutomaticDeploymentTargets
+- uid: Octopus.Client.Model.EnvironmentResource[]
+  isExternal: true
+  name: EnvironmentResource[]
+  nameWithType: EnvironmentResource[]
+  fullName: Octopus.Client.Model.EnvironmentResource[]
+  nameWithType.vb: EnvironmentResource()
+  fullName.vb: Octopus.Client.Model.EnvironmentResource()
+  name.vb: EnvironmentResource()
+  spec.csharp:
+  - uid: Octopus.Client.Model.EnvironmentResource
+    name: EnvironmentResource
+    nameWithType: EnvironmentResource
+    fullName: Octopus.Client.Model.EnvironmentResource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Octopus.Client.Model.EnvironmentResource
+    name: EnvironmentResource
+    nameWithType: EnvironmentResource
+    fullName: Octopus.Client.Model.EnvironmentResource
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Octopus.Client.Model.PhaseResource.WithOptionalDeploymentTargets*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.WithOptionalDeploymentTargets
+  name: WithOptionalDeploymentTargets
+  nameWithType: PhaseResource.WithOptionalDeploymentTargets
+  fullName: Octopus.Client.Model.PhaseResource.WithOptionalDeploymentTargets
+- uid: Octopus.Client.Model.PhaseResource.WithMinimumEnvironmentsBeforePromotion*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.WithMinimumEnvironmentsBeforePromotion
+  name: WithMinimumEnvironmentsBeforePromotion
+  nameWithType: PhaseResource.WithMinimumEnvironmentsBeforePromotion
+  fullName: Octopus.Client.Model.PhaseResource.WithMinimumEnvironmentsBeforePromotion
+- uid: Octopus.Client.Model.PhaseResource.WithReleaseRetentionPolicy*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.WithReleaseRetentionPolicy
+  name: WithReleaseRetentionPolicy
+  nameWithType: PhaseResource.WithReleaseRetentionPolicy
+  fullName: Octopus.Client.Model.PhaseResource.WithReleaseRetentionPolicy
+- uid: Octopus.Client.Model.PhaseResource.WithTentacleRetentionPolicy*
+  commentId: Overload:Octopus.Client.Model.PhaseResource.WithTentacleRetentionPolicy
+  name: WithTentacleRetentionPolicy
+  nameWithType: PhaseResource.WithTentacleRetentionPolicy
+  fullName: Octopus.Client.Model.PhaseResource.WithTentacleRetentionPolicy

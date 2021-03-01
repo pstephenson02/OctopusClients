@@ -1,0 +1,185 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.IMachineRoleRepository
+  commentId: T:Octopus.Client.Repositories.Async.IMachineRoleRepository
+  id: IMachineRoleRepository
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.IMachineRoleRepository.GetAllRoleNames
+  langs:
+  - csharp
+  - vb
+  name: IMachineRoleRepository
+  nameWithType: IMachineRoleRepository
+  fullName: Octopus.Client.Repositories.Async.IMachineRoleRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/MachineRoleRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IMachineRoleRepository
+    path: ../source/Octopus.Client/Repositories/Async/MachineRoleRepository.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: public interface IMachineRoleRepository
+    content.vb: Public Interface IMachineRoleRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.Async.IMachineRoleRepository.GetAllRoleNames
+  commentId: M:Octopus.Client.Repositories.Async.IMachineRoleRepository.GetAllRoleNames
+  id: GetAllRoleNames
+  parent: Octopus.Client.Repositories.Async.IMachineRoleRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllRoleNames()
+  nameWithType: IMachineRoleRepository.GetAllRoleNames()
+  fullName: Octopus.Client.Repositories.Async.IMachineRoleRepository.GetAllRoleNames()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/MachineRoleRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetAllRoleNames
+    path: ../source/Octopus.Client/Repositories/Async/MachineRoleRepository.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<List<string>> GetAllRoleNames()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{System.String}}
+    content.vb: Function GetAllRoleNames As Task(Of List(Of String))
+  overload: Octopus.Client.Repositories.Async.IMachineRoleRepository.GetAllRoleNames*
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.IMachineRoleRepository.GetAllRoleNames*
+  commentId: Overload:Octopus.Client.Repositories.Async.IMachineRoleRepository.GetAllRoleNames
+  name: GetAllRoleNames
+  nameWithType: IMachineRoleRepository.GetAllRoleNames
+  fullName: Octopus.Client.Repositories.Async.IMachineRoleRepository.GetAllRoleNames
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{System.String}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{System.String}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<String>>
+  nameWithType: Task<List<String>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<System.String>>
+  nameWithType.vb: Task(Of List(Of String))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of System.String))
+  name.vb: Task(Of List(Of String))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

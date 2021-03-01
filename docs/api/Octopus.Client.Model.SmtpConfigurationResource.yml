@@ -1,0 +1,935 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.SmtpConfigurationResource
+  commentId: T:Octopus.Client.Model.SmtpConfigurationResource
+  id: SmtpConfigurationResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.SmtpConfigurationResource.EnableSsl
+  - Octopus.Client.Model.SmtpConfigurationResource.NewSmtpPassword
+  - Octopus.Client.Model.SmtpConfigurationResource.SendEmailFrom
+  - Octopus.Client.Model.SmtpConfigurationResource.SmtpHost
+  - Octopus.Client.Model.SmtpConfigurationResource.SmtpLogin
+  - Octopus.Client.Model.SmtpConfigurationResource.SmtpPassword
+  - Octopus.Client.Model.SmtpConfigurationResource.SmtpPort
+  - Octopus.Client.Model.SmtpConfigurationResource.Timeout
+  langs:
+  - csharp
+  - vb
+  name: SmtpConfigurationResource
+  nameWithType: SmtpConfigurationResource
+  fullName: Octopus.Client.Model.SmtpConfigurationResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SmtpConfigurationResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SmtpConfigurationResource
+    path: ../source/Octopus.Client/Model/SmtpConfigurationResource.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class SmtpConfigurationResource : Resource, IResource, IAuditedResource'
+    content.vb: >-
+      Public Class SmtpConfigurationResource
+          Inherits Resource
+          Implements IResource, IAuditedResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  inheritedMembers:
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.SmtpConfigurationResource.SmtpHost
+  commentId: P:Octopus.Client.Model.SmtpConfigurationResource.SmtpHost
+  id: SmtpHost
+  parent: Octopus.Client.Model.SmtpConfigurationResource
+  langs:
+  - csharp
+  - vb
+  name: SmtpHost
+  nameWithType: SmtpConfigurationResource.SmtpHost
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.SmtpHost
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SmtpConfigurationResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SmtpHost
+    path: ../source/Octopus.Client/Model/SmtpConfigurationResource.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string SmtpHost { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SmtpHost As String
+  overload: Octopus.Client.Model.SmtpConfigurationResource.SmtpHost*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SmtpConfigurationResource.SmtpPort
+  commentId: P:Octopus.Client.Model.SmtpConfigurationResource.SmtpPort
+  id: SmtpPort
+  parent: Octopus.Client.Model.SmtpConfigurationResource
+  langs:
+  - csharp
+  - vb
+  name: SmtpPort
+  nameWithType: SmtpConfigurationResource.SmtpPort
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.SmtpPort
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SmtpConfigurationResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SmtpPort
+    path: ../source/Octopus.Client/Model/SmtpConfigurationResource.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Required]
+
+      public int? SmtpPort { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: >-
+      <Required>
+
+      Public Property SmtpPort As Integer?
+  overload: Octopus.Client.Model.SmtpConfigurationResource.SmtpPort*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SmtpConfigurationResource.SendEmailFrom
+  commentId: P:Octopus.Client.Model.SmtpConfigurationResource.SendEmailFrom
+  id: SendEmailFrom
+  parent: Octopus.Client.Model.SmtpConfigurationResource
+  langs:
+  - csharp
+  - vb
+  name: SendEmailFrom
+  nameWithType: SmtpConfigurationResource.SendEmailFrom
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.SendEmailFrom
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SmtpConfigurationResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SendEmailFrom
+    path: ../source/Octopus.Client/Model/SmtpConfigurationResource.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string SendEmailFrom { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SendEmailFrom As String
+  overload: Octopus.Client.Model.SmtpConfigurationResource.SendEmailFrom*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SmtpConfigurationResource.SmtpLogin
+  commentId: P:Octopus.Client.Model.SmtpConfigurationResource.SmtpLogin
+  id: SmtpLogin
+  parent: Octopus.Client.Model.SmtpConfigurationResource
+  langs:
+  - csharp
+  - vb
+  name: SmtpLogin
+  nameWithType: SmtpConfigurationResource.SmtpLogin
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.SmtpLogin
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SmtpConfigurationResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SmtpLogin
+    path: ../source/Octopus.Client/Model/SmtpConfigurationResource.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string SmtpLogin { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SmtpLogin As String
+  overload: Octopus.Client.Model.SmtpConfigurationResource.SmtpLogin*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SmtpConfigurationResource.EnableSsl
+  commentId: P:Octopus.Client.Model.SmtpConfigurationResource.EnableSsl
+  id: EnableSsl
+  parent: Octopus.Client.Model.SmtpConfigurationResource
+  langs:
+  - csharp
+  - vb
+  name: EnableSsl
+  nameWithType: SmtpConfigurationResource.EnableSsl
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.EnableSsl
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SmtpConfigurationResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: EnableSsl
+    path: ../source/Octopus.Client/Model/SmtpConfigurationResource.cs
+    startLine: 20
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public bool EnableSsl { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property EnableSsl As Boolean
+  overload: Octopus.Client.Model.SmtpConfigurationResource.EnableSsl*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SmtpConfigurationResource.Timeout
+  commentId: P:Octopus.Client.Model.SmtpConfigurationResource.Timeout
+  id: Timeout
+  parent: Octopus.Client.Model.SmtpConfigurationResource
+  langs:
+  - csharp
+  - vb
+  name: Timeout
+  nameWithType: SmtpConfigurationResource.Timeout
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.Timeout
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SmtpConfigurationResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Timeout
+    path: ../source/Octopus.Client/Model/SmtpConfigurationResource.cs
+    startLine: 23
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public int? Timeout { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property Timeout As Integer?
+  overload: Octopus.Client.Model.SmtpConfigurationResource.Timeout*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SmtpConfigurationResource.SmtpPassword
+  commentId: P:Octopus.Client.Model.SmtpConfigurationResource.SmtpPassword
+  id: SmtpPassword
+  parent: Octopus.Client.Model.SmtpConfigurationResource
+  langs:
+  - csharp
+  - vb
+  name: SmtpPassword
+  nameWithType: SmtpConfigurationResource.SmtpPassword
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.SmtpPassword
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SmtpConfigurationResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SmtpPassword
+    path: ../source/Octopus.Client/Model/SmtpConfigurationResource.cs
+    startLine: 26
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public SensitiveValue SmtpPassword { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.SensitiveValue
+    content.vb: Public Property SmtpPassword As SensitiveValue
+  overload: Octopus.Client.Model.SmtpConfigurationResource.SmtpPassword*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SmtpConfigurationResource.NewSmtpPassword
+  commentId: P:Octopus.Client.Model.SmtpConfigurationResource.NewSmtpPassword
+  id: NewSmtpPassword
+  parent: Octopus.Client.Model.SmtpConfigurationResource
+  langs:
+  - csharp
+  - vb
+  name: NewSmtpPassword
+  nameWithType: SmtpConfigurationResource.NewSmtpPassword
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.NewSmtpPassword
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SmtpConfigurationResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: NewSmtpPassword
+    path: ../source/Octopus.Client/Model/SmtpConfigurationResource.cs
+    startLine: 29
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Obsolete("Use 'SmtpPassword' instead. Will be removed in version 5.0.0.", false)]
+
+      public string NewSmtpPassword { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Obsolete("Use 'SmtpPassword' instead. Will be removed in version 5.0.0.", False)>
+
+      Public Property NewSmtpPassword As String
+  overload: Octopus.Client.Model.SmtpConfigurationResource.NewSmtpPassword*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: Use 'SmtpPassword' instead. Will be removed in version 5.0.0.
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.SmtpConfigurationResource.SmtpHost*
+  commentId: Overload:Octopus.Client.Model.SmtpConfigurationResource.SmtpHost
+  name: SmtpHost
+  nameWithType: SmtpConfigurationResource.SmtpHost
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.SmtpHost
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.SmtpConfigurationResource.SmtpPort*
+  commentId: Overload:Octopus.Client.Model.SmtpConfigurationResource.SmtpPort
+  name: SmtpPort
+  nameWithType: SmtpConfigurationResource.SmtpPort
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.SmtpPort
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.SmtpConfigurationResource.SendEmailFrom*
+  commentId: Overload:Octopus.Client.Model.SmtpConfigurationResource.SendEmailFrom
+  name: SendEmailFrom
+  nameWithType: SmtpConfigurationResource.SendEmailFrom
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.SendEmailFrom
+- uid: Octopus.Client.Model.SmtpConfigurationResource.SmtpLogin*
+  commentId: Overload:Octopus.Client.Model.SmtpConfigurationResource.SmtpLogin
+  name: SmtpLogin
+  nameWithType: SmtpConfigurationResource.SmtpLogin
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.SmtpLogin
+- uid: Octopus.Client.Model.SmtpConfigurationResource.EnableSsl*
+  commentId: Overload:Octopus.Client.Model.SmtpConfigurationResource.EnableSsl
+  name: EnableSsl
+  nameWithType: SmtpConfigurationResource.EnableSsl
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.EnableSsl
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.SmtpConfigurationResource.Timeout*
+  commentId: Overload:Octopus.Client.Model.SmtpConfigurationResource.Timeout
+  name: Timeout
+  nameWithType: SmtpConfigurationResource.Timeout
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.Timeout
+- uid: Octopus.Client.Model.SmtpConfigurationResource.SmtpPassword*
+  commentId: Overload:Octopus.Client.Model.SmtpConfigurationResource.SmtpPassword
+  name: SmtpPassword
+  nameWithType: SmtpConfigurationResource.SmtpPassword
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.SmtpPassword
+- uid: Octopus.Client.Model.SensitiveValue
+  commentId: T:Octopus.Client.Model.SensitiveValue
+  parent: Octopus.Client.Model
+  name: SensitiveValue
+  nameWithType: SensitiveValue
+  fullName: Octopus.Client.Model.SensitiveValue
+- uid: Octopus.Client.Model.SmtpConfigurationResource.NewSmtpPassword*
+  commentId: Overload:Octopus.Client.Model.SmtpConfigurationResource.NewSmtpPassword
+  name: NewSmtpPassword
+  nameWithType: SmtpConfigurationResource.NewSmtpPassword
+  fullName: Octopus.Client.Model.SmtpConfigurationResource.NewSmtpPassword

@@ -1,0 +1,528 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.WorkerPoolsSummaryResource
+  commentId: T:Octopus.Client.Model.WorkerPoolsSummaryResource
+  id: WorkerPoolsSummaryResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.WorkerPoolsSummaryResource.WorkerPoolSummaries
+  langs:
+  - csharp
+  - vb
+  name: WorkerPoolsSummaryResource
+  nameWithType: WorkerPoolsSummaryResource
+  fullName: Octopus.Client.Model.WorkerPoolsSummaryResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/WorkerPoolsSummaryResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WorkerPoolsSummaryResource
+    path: ../source/Octopus.Client/Model/WorkerPoolsSummaryResource.cs
+    startLine: 4
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class WorkerPoolsSummaryResource : SummaryResourcesCombined'
+    content.vb: >-
+      Public Class WorkerPoolsSummaryResource
+          Inherits SummaryResourcesCombined
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.SummaryResourcesCombined
+  inheritedMembers:
+  - Octopus.Client.Model.SummaryResourcesCombined.TotalMachines
+  - Octopus.Client.Model.SummaryResourcesCombined.TotalDisabledMachines
+  - Octopus.Client.Model.SummaryResourcesCombined.MachineHealthStatusSummaries
+  - Octopus.Client.Model.SummaryResourcesCombined.MachineEndpointSummaries
+  - Octopus.Client.Model.SummaryResourcesCombined.TentacleUpgradesRequired
+  - Octopus.Client.Model.SummaryResourcesCombined.MachineIdsForCalamariUpgrade
+  - Octopus.Client.Model.SummaryResourcesCombined.MachineIdsForTentacleUpgrade
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.WorkerPoolsSummaryResource.WorkerPoolSummaries
+  commentId: P:Octopus.Client.Model.WorkerPoolsSummaryResource.WorkerPoolSummaries
+  id: WorkerPoolSummaries
+  parent: Octopus.Client.Model.WorkerPoolsSummaryResource
+  langs:
+  - csharp
+  - vb
+  name: WorkerPoolSummaries
+  nameWithType: WorkerPoolsSummaryResource.WorkerPoolSummaries
+  fullName: Octopus.Client.Model.WorkerPoolsSummaryResource.WorkerPoolSummaries
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/WorkerPoolsSummaryResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WorkerPoolSummaries
+    path: ../source/Octopus.Client/Model/WorkerPoolsSummaryResource.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<WorkerPoolSummaryResource> WorkerPoolSummaries { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.WorkerPoolSummaryResource}
+    content.vb: Public Property WorkerPoolSummaries As List(Of WorkerPoolSummaryResource)
+  overload: Octopus.Client.Model.WorkerPoolsSummaryResource.WorkerPoolSummaries*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.SummaryResourcesCombined
+  commentId: T:Octopus.Client.Model.SummaryResourcesCombined
+  parent: Octopus.Client.Model
+  name: SummaryResourcesCombined
+  nameWithType: SummaryResourcesCombined
+  fullName: Octopus.Client.Model.SummaryResourcesCombined
+- uid: Octopus.Client.Model.SummaryResourcesCombined.TotalMachines
+  commentId: P:Octopus.Client.Model.SummaryResourcesCombined.TotalMachines
+  parent: Octopus.Client.Model.SummaryResourcesCombined
+  name: TotalMachines
+  nameWithType: SummaryResourcesCombined.TotalMachines
+  fullName: Octopus.Client.Model.SummaryResourcesCombined.TotalMachines
+- uid: Octopus.Client.Model.SummaryResourcesCombined.TotalDisabledMachines
+  commentId: P:Octopus.Client.Model.SummaryResourcesCombined.TotalDisabledMachines
+  parent: Octopus.Client.Model.SummaryResourcesCombined
+  name: TotalDisabledMachines
+  nameWithType: SummaryResourcesCombined.TotalDisabledMachines
+  fullName: Octopus.Client.Model.SummaryResourcesCombined.TotalDisabledMachines
+- uid: Octopus.Client.Model.SummaryResourcesCombined.MachineHealthStatusSummaries
+  commentId: P:Octopus.Client.Model.SummaryResourcesCombined.MachineHealthStatusSummaries
+  parent: Octopus.Client.Model.SummaryResourcesCombined
+  name: MachineHealthStatusSummaries
+  nameWithType: SummaryResourcesCombined.MachineHealthStatusSummaries
+  fullName: Octopus.Client.Model.SummaryResourcesCombined.MachineHealthStatusSummaries
+- uid: Octopus.Client.Model.SummaryResourcesCombined.MachineEndpointSummaries
+  commentId: P:Octopus.Client.Model.SummaryResourcesCombined.MachineEndpointSummaries
+  parent: Octopus.Client.Model.SummaryResourcesCombined
+  name: MachineEndpointSummaries
+  nameWithType: SummaryResourcesCombined.MachineEndpointSummaries
+  fullName: Octopus.Client.Model.SummaryResourcesCombined.MachineEndpointSummaries
+- uid: Octopus.Client.Model.SummaryResourcesCombined.TentacleUpgradesRequired
+  commentId: P:Octopus.Client.Model.SummaryResourcesCombined.TentacleUpgradesRequired
+  parent: Octopus.Client.Model.SummaryResourcesCombined
+  name: TentacleUpgradesRequired
+  nameWithType: SummaryResourcesCombined.TentacleUpgradesRequired
+  fullName: Octopus.Client.Model.SummaryResourcesCombined.TentacleUpgradesRequired
+- uid: Octopus.Client.Model.SummaryResourcesCombined.MachineIdsForCalamariUpgrade
+  commentId: P:Octopus.Client.Model.SummaryResourcesCombined.MachineIdsForCalamariUpgrade
+  parent: Octopus.Client.Model.SummaryResourcesCombined
+  name: MachineIdsForCalamariUpgrade
+  nameWithType: SummaryResourcesCombined.MachineIdsForCalamariUpgrade
+  fullName: Octopus.Client.Model.SummaryResourcesCombined.MachineIdsForCalamariUpgrade
+- uid: Octopus.Client.Model.SummaryResourcesCombined.MachineIdsForTentacleUpgrade
+  commentId: P:Octopus.Client.Model.SummaryResourcesCombined.MachineIdsForTentacleUpgrade
+  parent: Octopus.Client.Model.SummaryResourcesCombined
+  name: MachineIdsForTentacleUpgrade
+  nameWithType: SummaryResourcesCombined.MachineIdsForTentacleUpgrade
+  fullName: Octopus.Client.Model.SummaryResourcesCombined.MachineIdsForTentacleUpgrade
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.WorkerPoolsSummaryResource.WorkerPoolSummaries*
+  commentId: Overload:Octopus.Client.Model.WorkerPoolsSummaryResource.WorkerPoolSummaries
+  name: WorkerPoolSummaries
+  nameWithType: WorkerPoolsSummaryResource.WorkerPoolSummaries
+  fullName: Octopus.Client.Model.WorkerPoolsSummaryResource.WorkerPoolSummaries
+- uid: System.Collections.Generic.List{Octopus.Client.Model.WorkerPoolSummaryResource}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.WorkerPoolSummaryResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<WorkerPoolSummaryResource>
+  nameWithType: List<WorkerPoolSummaryResource>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.WorkerPoolSummaryResource>
+  nameWithType.vb: List(Of WorkerPoolSummaryResource)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.WorkerPoolSummaryResource)
+  name.vb: List(Of WorkerPoolSummaryResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.WorkerPoolSummaryResource
+    name: WorkerPoolSummaryResource
+    nameWithType: WorkerPoolSummaryResource
+    fullName: Octopus.Client.Model.WorkerPoolSummaryResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.WorkerPoolSummaryResource
+    name: WorkerPoolSummaryResource
+    nameWithType: WorkerPoolSummaryResource
+    fullName: Octopus.Client.Model.WorkerPoolSummaryResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

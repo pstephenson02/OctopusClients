@@ -1,0 +1,774 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.LibraryVariableSetUsageResource
+  commentId: T:Octopus.Client.Model.LibraryVariableSetUsageResource
+  id: LibraryVariableSetUsageResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.LibraryVariableSetUsageResource.#ctor
+  - Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfProjectsUserCannotSee
+  - Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfReleasesUserCannotSee
+  - Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfRunbookSnapshotsUserCannotSee
+  - Octopus.Client.Model.LibraryVariableSetUsageResource.Projects
+  langs:
+  - csharp
+  - vb
+  name: LibraryVariableSetUsageResource
+  nameWithType: LibraryVariableSetUsageResource
+  fullName: Octopus.Client.Model.LibraryVariableSetUsageResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LibraryVariableSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: LibraryVariableSetUsageResource
+    path: ../source/Octopus.Client/Model/LibraryVariableSetResource.cs
+    startLine: 109
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class LibraryVariableSetUsageResource : Resource, IResource, IAuditedResource'
+    content.vb: >-
+      Public Class LibraryVariableSetUsageResource
+          Inherits Resource
+          Implements IResource, IAuditedResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  inheritedMembers:
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.LibraryVariableSetUsageResource.#ctor
+  commentId: M:Octopus.Client.Model.LibraryVariableSetUsageResource.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.LibraryVariableSetUsageResource
+  langs:
+  - csharp
+  - vb
+  name: LibraryVariableSetUsageResource()
+  nameWithType: LibraryVariableSetUsageResource.LibraryVariableSetUsageResource()
+  fullName: Octopus.Client.Model.LibraryVariableSetUsageResource.LibraryVariableSetUsageResource()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LibraryVariableSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/LibraryVariableSetResource.cs
+    startLine: 111
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public LibraryVariableSetUsageResource()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.LibraryVariableSetUsageResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LibraryVariableSetUsageResource.Projects
+  commentId: P:Octopus.Client.Model.LibraryVariableSetUsageResource.Projects
+  id: Projects
+  parent: Octopus.Client.Model.LibraryVariableSetUsageResource
+  langs:
+  - csharp
+  - vb
+  name: Projects
+  nameWithType: LibraryVariableSetUsageResource.Projects
+  fullName: Octopus.Client.Model.LibraryVariableSetUsageResource.Projects
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LibraryVariableSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Projects
+    path: ../source/Octopus.Client/Model/LibraryVariableSetResource.cs
+    startLine: 116
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ICollection<LibraryVariableSetProjectUsage> Projects { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{Octopus.Client.Model.LibraryVariableSetProjectUsage}
+    content.vb: Public Property Projects As ICollection(Of LibraryVariableSetProjectUsage)
+  overload: Octopus.Client.Model.LibraryVariableSetUsageResource.Projects*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfProjectsUserCannotSee
+  commentId: P:Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfProjectsUserCannotSee
+  id: CountOfProjectsUserCannotSee
+  parent: Octopus.Client.Model.LibraryVariableSetUsageResource
+  langs:
+  - csharp
+  - vb
+  name: CountOfProjectsUserCannotSee
+  nameWithType: LibraryVariableSetUsageResource.CountOfProjectsUserCannotSee
+  fullName: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfProjectsUserCannotSee
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LibraryVariableSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CountOfProjectsUserCannotSee
+    path: ../source/Octopus.Client/Model/LibraryVariableSetResource.cs
+    startLine: 117
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public int CountOfProjectsUserCannotSee { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CountOfProjectsUserCannotSee As Integer
+  overload: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfProjectsUserCannotSee*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfReleasesUserCannotSee
+  commentId: P:Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfReleasesUserCannotSee
+  id: CountOfReleasesUserCannotSee
+  parent: Octopus.Client.Model.LibraryVariableSetUsageResource
+  langs:
+  - csharp
+  - vb
+  name: CountOfReleasesUserCannotSee
+  nameWithType: LibraryVariableSetUsageResource.CountOfReleasesUserCannotSee
+  fullName: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfReleasesUserCannotSee
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LibraryVariableSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CountOfReleasesUserCannotSee
+    path: ../source/Octopus.Client/Model/LibraryVariableSetResource.cs
+    startLine: 118
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public int CountOfReleasesUserCannotSee { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CountOfReleasesUserCannotSee As Integer
+  overload: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfReleasesUserCannotSee*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfRunbookSnapshotsUserCannotSee
+  commentId: P:Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfRunbookSnapshotsUserCannotSee
+  id: CountOfRunbookSnapshotsUserCannotSee
+  parent: Octopus.Client.Model.LibraryVariableSetUsageResource
+  langs:
+  - csharp
+  - vb
+  name: CountOfRunbookSnapshotsUserCannotSee
+  nameWithType: LibraryVariableSetUsageResource.CountOfRunbookSnapshotsUserCannotSee
+  fullName: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfRunbookSnapshotsUserCannotSee
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LibraryVariableSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CountOfRunbookSnapshotsUserCannotSee
+    path: ../source/Octopus.Client/Model/LibraryVariableSetResource.cs
+    startLine: 119
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public int CountOfRunbookSnapshotsUserCannotSee { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CountOfRunbookSnapshotsUserCannotSee As Integer
+  overload: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfRunbookSnapshotsUserCannotSee*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.LibraryVariableSetUsageResource.#ctor*
+  commentId: Overload:Octopus.Client.Model.LibraryVariableSetUsageResource.#ctor
+  name: LibraryVariableSetUsageResource
+  nameWithType: LibraryVariableSetUsageResource.LibraryVariableSetUsageResource
+  fullName: Octopus.Client.Model.LibraryVariableSetUsageResource.LibraryVariableSetUsageResource
+- uid: Octopus.Client.Model.LibraryVariableSetUsageResource.Projects*
+  commentId: Overload:Octopus.Client.Model.LibraryVariableSetUsageResource.Projects
+  name: Projects
+  nameWithType: LibraryVariableSetUsageResource.Projects
+  fullName: Octopus.Client.Model.LibraryVariableSetUsageResource.Projects
+- uid: System.Collections.Generic.ICollection{Octopus.Client.Model.LibraryVariableSetProjectUsage}
+  commentId: T:System.Collections.Generic.ICollection{Octopus.Client.Model.LibraryVariableSetProjectUsage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<LibraryVariableSetProjectUsage>
+  nameWithType: ICollection<LibraryVariableSetProjectUsage>
+  fullName: System.Collections.Generic.ICollection<Octopus.Client.Model.LibraryVariableSetProjectUsage>
+  nameWithType.vb: ICollection(Of LibraryVariableSetProjectUsage)
+  fullName.vb: System.Collections.Generic.ICollection(Of Octopus.Client.Model.LibraryVariableSetProjectUsage)
+  name.vb: ICollection(Of LibraryVariableSetProjectUsage)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.LibraryVariableSetProjectUsage
+    name: LibraryVariableSetProjectUsage
+    nameWithType: LibraryVariableSetProjectUsage
+    fullName: Octopus.Client.Model.LibraryVariableSetProjectUsage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.LibraryVariableSetProjectUsage
+    name: LibraryVariableSetProjectUsage
+    nameWithType: LibraryVariableSetProjectUsage
+    fullName: Octopus.Client.Model.LibraryVariableSetProjectUsage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfProjectsUserCannotSee*
+  commentId: Overload:Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfProjectsUserCannotSee
+  name: CountOfProjectsUserCannotSee
+  nameWithType: LibraryVariableSetUsageResource.CountOfProjectsUserCannotSee
+  fullName: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfProjectsUserCannotSee
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfReleasesUserCannotSee*
+  commentId: Overload:Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfReleasesUserCannotSee
+  name: CountOfReleasesUserCannotSee
+  nameWithType: LibraryVariableSetUsageResource.CountOfReleasesUserCannotSee
+  fullName: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfReleasesUserCannotSee
+- uid: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfRunbookSnapshotsUserCannotSee*
+  commentId: Overload:Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfRunbookSnapshotsUserCannotSee
+  name: CountOfRunbookSnapshotsUserCannotSee
+  nameWithType: LibraryVariableSetUsageResource.CountOfRunbookSnapshotsUserCannotSee
+  fullName: Octopus.Client.Model.LibraryVariableSetUsageResource.CountOfRunbookSnapshotsUserCannotSee

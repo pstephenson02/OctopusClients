@@ -1,0 +1,1111 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.EventNotificationSubscription
+  commentId: T:Octopus.Client.Model.EventNotificationSubscription
+  id: EventNotificationSubscription
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.EventNotificationSubscription.#ctor
+  - Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessed
+  - Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessedEventAutoId
+  - Octopus.Client.Model.EventNotificationSubscription.EmailFrequencyPeriod
+  - Octopus.Client.Model.EventNotificationSubscription.EmailPriority
+  - Octopus.Client.Model.EventNotificationSubscription.EmailShowDatesInTimeZoneId
+  - Octopus.Client.Model.EventNotificationSubscription.EmailTeams
+  - Octopus.Client.Model.EventNotificationSubscription.Filter
+  - Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderKey
+  - Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderValue
+  - Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessed
+  - Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessedEventAutoId
+  - Octopus.Client.Model.EventNotificationSubscription.WebhookTeams
+  - Octopus.Client.Model.EventNotificationSubscription.WebhookTimeout
+  - Octopus.Client.Model.EventNotificationSubscription.WebhookURI
+  langs:
+  - csharp
+  - vb
+  name: EventNotificationSubscription
+  nameWithType: EventNotificationSubscription
+  fullName: Octopus.Client.Model.EventNotificationSubscription
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: EventNotificationSubscription
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public class EventNotificationSubscription
+    content.vb: Public Class EventNotificationSubscription
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.EventNotificationSubscription.#ctor
+  commentId: M:Octopus.Client.Model.EventNotificationSubscription.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: EventNotificationSubscription()
+  nameWithType: EventNotificationSubscription.EventNotificationSubscription()
+  fullName: Octopus.Client.Model.EventNotificationSubscription.EventNotificationSubscription()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public EventNotificationSubscription()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.EventNotificationSubscription.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventNotificationSubscription.Filter
+  commentId: P:Octopus.Client.Model.EventNotificationSubscription.Filter
+  id: Filter
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: Filter
+  nameWithType: EventNotificationSubscription.Filter
+  fullName: Octopus.Client.Model.EventNotificationSubscription.Filter
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Filter
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public EventNotificationSubscriptionFilter Filter { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.EventNotificationSubscriptionFilter
+    content.vb: Public Property Filter As EventNotificationSubscriptionFilter
+  overload: Octopus.Client.Model.EventNotificationSubscription.Filter*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventNotificationSubscription.EmailTeams
+  commentId: P:Octopus.Client.Model.EventNotificationSubscription.EmailTeams
+  id: EmailTeams
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: EmailTeams
+  nameWithType: EventNotificationSubscription.EmailTeams
+  fullName: Octopus.Client.Model.EventNotificationSubscription.EmailTeams
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: EmailTeams
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ReferenceCollection EmailTeams { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property EmailTeams As ReferenceCollection
+  overload: Octopus.Client.Model.EventNotificationSubscription.EmailTeams*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventNotificationSubscription.EmailFrequencyPeriod
+  commentId: P:Octopus.Client.Model.EventNotificationSubscription.EmailFrequencyPeriod
+  id: EmailFrequencyPeriod
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: EmailFrequencyPeriod
+  nameWithType: EventNotificationSubscription.EmailFrequencyPeriod
+  fullName: Octopus.Client.Model.EventNotificationSubscription.EmailFrequencyPeriod
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: EmailFrequencyPeriod
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public TimeSpan EmailFrequencyPeriod { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property EmailFrequencyPeriod As TimeSpan
+  overload: Octopus.Client.Model.EventNotificationSubscription.EmailFrequencyPeriod*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventNotificationSubscription.EmailPriority
+  commentId: P:Octopus.Client.Model.EventNotificationSubscription.EmailPriority
+  id: EmailPriority
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: EmailPriority
+  nameWithType: EventNotificationSubscription.EmailPriority
+  fullName: Octopus.Client.Model.EventNotificationSubscription.EmailPriority
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: EmailPriority
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 21
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public EmailPriority EmailPriority { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.EmailPriority
+    content.vb: Public Property EmailPriority As EmailPriority
+  overload: Octopus.Client.Model.EventNotificationSubscription.EmailPriority*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessed
+  commentId: P:Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessed
+  id: EmailDigestLastProcessed
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: EmailDigestLastProcessed
+  nameWithType: EventNotificationSubscription.EmailDigestLastProcessed
+  fullName: Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessed
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: EmailDigestLastProcessed
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 23
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public DateTimeOffset? EmailDigestLastProcessed { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property EmailDigestLastProcessed As DateTimeOffset?
+  overload: Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessed*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessedEventAutoId
+  commentId: P:Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessedEventAutoId
+  id: EmailDigestLastProcessedEventAutoId
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: EmailDigestLastProcessedEventAutoId
+  nameWithType: EventNotificationSubscription.EmailDigestLastProcessedEventAutoId
+  fullName: Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessedEventAutoId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: EmailDigestLastProcessedEventAutoId
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 25
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public long? EmailDigestLastProcessedEventAutoId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: Public Property EmailDigestLastProcessedEventAutoId As Long?
+  overload: Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessedEventAutoId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventNotificationSubscription.EmailShowDatesInTimeZoneId
+  commentId: P:Octopus.Client.Model.EventNotificationSubscription.EmailShowDatesInTimeZoneId
+  id: EmailShowDatesInTimeZoneId
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: EmailShowDatesInTimeZoneId
+  nameWithType: EventNotificationSubscription.EmailShowDatesInTimeZoneId
+  fullName: Octopus.Client.Model.EventNotificationSubscription.EmailShowDatesInTimeZoneId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: EmailShowDatesInTimeZoneId
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 27
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string EmailShowDatesInTimeZoneId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EmailShowDatesInTimeZoneId As String
+  overload: Octopus.Client.Model.EventNotificationSubscription.EmailShowDatesInTimeZoneId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventNotificationSubscription.WebhookURI
+  commentId: P:Octopus.Client.Model.EventNotificationSubscription.WebhookURI
+  id: WebhookURI
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: WebhookURI
+  nameWithType: EventNotificationSubscription.WebhookURI
+  fullName: Octopus.Client.Model.EventNotificationSubscription.WebhookURI
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WebhookURI
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 30
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string WebhookURI { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property WebhookURI As String
+  overload: Octopus.Client.Model.EventNotificationSubscription.WebhookURI*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventNotificationSubscription.WebhookTeams
+  commentId: P:Octopus.Client.Model.EventNotificationSubscription.WebhookTeams
+  id: WebhookTeams
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: WebhookTeams
+  nameWithType: EventNotificationSubscription.WebhookTeams
+  fullName: Octopus.Client.Model.EventNotificationSubscription.WebhookTeams
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WebhookTeams
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 32
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ReferenceCollection WebhookTeams { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property WebhookTeams As ReferenceCollection
+  overload: Octopus.Client.Model.EventNotificationSubscription.WebhookTeams*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventNotificationSubscription.WebhookTimeout
+  commentId: P:Octopus.Client.Model.EventNotificationSubscription.WebhookTimeout
+  id: WebhookTimeout
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: WebhookTimeout
+  nameWithType: EventNotificationSubscription.WebhookTimeout
+  fullName: Octopus.Client.Model.EventNotificationSubscription.WebhookTimeout
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WebhookTimeout
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 34
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public TimeSpan WebhookTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property WebhookTimeout As TimeSpan
+  overload: Octopus.Client.Model.EventNotificationSubscription.WebhookTimeout*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderKey
+  commentId: P:Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderKey
+  id: WebhookHeaderKey
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: WebhookHeaderKey
+  nameWithType: EventNotificationSubscription.WebhookHeaderKey
+  fullName: Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderKey
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WebhookHeaderKey
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 35
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string WebhookHeaderKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property WebhookHeaderKey As String
+  overload: Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderValue
+  commentId: P:Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderValue
+  id: WebhookHeaderValue
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: WebhookHeaderValue
+  nameWithType: EventNotificationSubscription.WebhookHeaderValue
+  fullName: Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderValue
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WebhookHeaderValue
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 36
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string WebhookHeaderValue { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property WebhookHeaderValue As String
+  overload: Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderValue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessed
+  commentId: P:Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessed
+  id: WebhookLastProcessed
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: WebhookLastProcessed
+  nameWithType: EventNotificationSubscription.WebhookLastProcessed
+  fullName: Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessed
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WebhookLastProcessed
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 38
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public DateTimeOffset? WebhookLastProcessed { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property WebhookLastProcessed As DateTimeOffset?
+  overload: Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessed*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessedEventAutoId
+  commentId: P:Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessedEventAutoId
+  id: WebhookLastProcessedEventAutoId
+  parent: Octopus.Client.Model.EventNotificationSubscription
+  langs:
+  - csharp
+  - vb
+  name: WebhookLastProcessedEventAutoId
+  nameWithType: EventNotificationSubscription.WebhookLastProcessedEventAutoId
+  fullName: Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessedEventAutoId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/EventNotificationSubscription.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WebhookLastProcessedEventAutoId
+    path: ../source/Octopus.Client/Model/EventNotificationSubscription.cs
+    startLine: 40
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public long? WebhookLastProcessedEventAutoId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: Public Property WebhookLastProcessedEventAutoId As Long?
+  overload: Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessedEventAutoId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.EventNotificationSubscription.#ctor*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.#ctor
+  name: EventNotificationSubscription
+  nameWithType: EventNotificationSubscription.EventNotificationSubscription
+  fullName: Octopus.Client.Model.EventNotificationSubscription.EventNotificationSubscription
+- uid: Octopus.Client.Model.EventNotificationSubscription.Filter*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.Filter
+  name: Filter
+  nameWithType: EventNotificationSubscription.Filter
+  fullName: Octopus.Client.Model.EventNotificationSubscription.Filter
+- uid: Octopus.Client.Model.EventNotificationSubscriptionFilter
+  commentId: T:Octopus.Client.Model.EventNotificationSubscriptionFilter
+  parent: Octopus.Client.Model
+  name: EventNotificationSubscriptionFilter
+  nameWithType: EventNotificationSubscriptionFilter
+  fullName: Octopus.Client.Model.EventNotificationSubscriptionFilter
+- uid: Octopus.Client.Model.EventNotificationSubscription.EmailTeams*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.EmailTeams
+  name: EmailTeams
+  nameWithType: EventNotificationSubscription.EmailTeams
+  fullName: Octopus.Client.Model.EventNotificationSubscription.EmailTeams
+- uid: Octopus.Client.Model.ReferenceCollection
+  commentId: T:Octopus.Client.Model.ReferenceCollection
+  parent: Octopus.Client.Model
+  name: ReferenceCollection
+  nameWithType: ReferenceCollection
+  fullName: Octopus.Client.Model.ReferenceCollection
+- uid: Octopus.Client.Model.EventNotificationSubscription.EmailFrequencyPeriod*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.EmailFrequencyPeriod
+  name: EmailFrequencyPeriod
+  nameWithType: EventNotificationSubscription.EmailFrequencyPeriod
+  fullName: Octopus.Client.Model.EventNotificationSubscription.EmailFrequencyPeriod
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Octopus.Client.Model.EventNotificationSubscription.EmailPriority*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.EmailPriority
+  name: EmailPriority
+  nameWithType: EventNotificationSubscription.EmailPriority
+  fullName: Octopus.Client.Model.EventNotificationSubscription.EmailPriority
+- uid: Octopus.Client.Model.EmailPriority
+  commentId: T:Octopus.Client.Model.EmailPriority
+  parent: Octopus.Client.Model
+  name: EmailPriority
+  nameWithType: EmailPriority
+  fullName: Octopus.Client.Model.EmailPriority
+- uid: Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessed*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessed
+  name: EmailDigestLastProcessed
+  nameWithType: EventNotificationSubscription.EmailDigestLastProcessed
+  fullName: Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessed
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  nameWithType: Nullable<DateTimeOffset>
+  fullName: System.Nullable<System.DateTimeOffset>
+  nameWithType.vb: Nullable(Of DateTimeOffset)
+  fullName.vb: System.Nullable(Of System.DateTimeOffset)
+  name.vb: Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessedEventAutoId*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessedEventAutoId
+  name: EmailDigestLastProcessedEventAutoId
+  nameWithType: EventNotificationSubscription.EmailDigestLastProcessedEventAutoId
+  fullName: Octopus.Client.Model.EventNotificationSubscription.EmailDigestLastProcessedEventAutoId
+- uid: System.Nullable{System.Int64}
+  commentId: T:System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int64>
+  nameWithType: Nullable<Int64>
+  fullName: System.Nullable<System.Int64>
+  nameWithType.vb: Nullable(Of Int64)
+  fullName.vb: System.Nullable(Of System.Int64)
+  name.vb: Nullable(Of Int64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.EventNotificationSubscription.EmailShowDatesInTimeZoneId*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.EmailShowDatesInTimeZoneId
+  name: EmailShowDatesInTimeZoneId
+  nameWithType: EventNotificationSubscription.EmailShowDatesInTimeZoneId
+  fullName: Octopus.Client.Model.EventNotificationSubscription.EmailShowDatesInTimeZoneId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.EventNotificationSubscription.WebhookURI*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.WebhookURI
+  name: WebhookURI
+  nameWithType: EventNotificationSubscription.WebhookURI
+  fullName: Octopus.Client.Model.EventNotificationSubscription.WebhookURI
+- uid: Octopus.Client.Model.EventNotificationSubscription.WebhookTeams*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.WebhookTeams
+  name: WebhookTeams
+  nameWithType: EventNotificationSubscription.WebhookTeams
+  fullName: Octopus.Client.Model.EventNotificationSubscription.WebhookTeams
+- uid: Octopus.Client.Model.EventNotificationSubscription.WebhookTimeout*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.WebhookTimeout
+  name: WebhookTimeout
+  nameWithType: EventNotificationSubscription.WebhookTimeout
+  fullName: Octopus.Client.Model.EventNotificationSubscription.WebhookTimeout
+- uid: Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderKey*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderKey
+  name: WebhookHeaderKey
+  nameWithType: EventNotificationSubscription.WebhookHeaderKey
+  fullName: Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderKey
+- uid: Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderValue*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderValue
+  name: WebhookHeaderValue
+  nameWithType: EventNotificationSubscription.WebhookHeaderValue
+  fullName: Octopus.Client.Model.EventNotificationSubscription.WebhookHeaderValue
+- uid: Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessed*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessed
+  name: WebhookLastProcessed
+  nameWithType: EventNotificationSubscription.WebhookLastProcessed
+  fullName: Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessed
+- uid: Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessedEventAutoId*
+  commentId: Overload:Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessedEventAutoId
+  name: WebhookLastProcessedEventAutoId
+  nameWithType: EventNotificationSubscription.WebhookLastProcessedEventAutoId
+  fullName: Octopus.Client.Model.EventNotificationSubscription.WebhookLastProcessedEventAutoId

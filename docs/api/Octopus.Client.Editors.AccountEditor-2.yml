@@ -1,0 +1,1142 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Editors.AccountEditor`2
+  commentId: T:Octopus.Client.Editors.AccountEditor`2
+  id: AccountEditor`2
+  parent: Octopus.Client.Editors
+  children:
+  - Octopus.Client.Editors.AccountEditor`2.#ctor(Octopus.Client.Repositories.IAccountRepository)
+  - Octopus.Client.Editors.AccountEditor`2.CreateOrModify(System.String)
+  - Octopus.Client.Editors.AccountEditor`2.Customize(System.Action{`0})
+  - Octopus.Client.Editors.AccountEditor`2.FindByName(System.String)
+  - Octopus.Client.Editors.AccountEditor`2.Instance
+  - Octopus.Client.Editors.AccountEditor`2.Repository
+  - Octopus.Client.Editors.AccountEditor`2.Save
+  - Octopus.Client.Editors.AccountEditor`2.Usages
+  langs:
+  - csharp
+  - vb
+  name: AccountEditor<TAccountResource, TAccountEditor>
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/AccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AccountEditor
+    path: ../source/Octopus.Client/Editors/AccountEditor.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: >-
+      public class AccountEditor<TAccountResource, TAccountEditor> : IResourceEditor<TAccountResource, TAccountEditor>, IResourceBuilder where TAccountResource : AccountResource, new()
+          where TAccountEditor : AccountEditor<TAccountResource, TAccountEditor>
+    typeParameters:
+    - id: TAccountResource
+    - id: TAccountEditor
+    content.vb: >-
+      Public Class AccountEditor(Of TAccountResource As {AccountResource, New}, TAccountEditor As AccountEditor(Of TAccountResource, TAccountEditor))
+          Implements IResourceEditor(Of TAccountResource, TAccountEditor), IResourceBuilder
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Octopus.Client.Editors.AmazonWebServicesAccountEditor
+  - Octopus.Client.Editors.AzureServicePrincipalAccountEditor
+  - Octopus.Client.Editors.AzureSubscriptionAccountEditor
+  - Octopus.Client.Editors.SshKeyPairAccountEditor
+  - Octopus.Client.Editors.UsernamePasswordAccountEditor
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{{TAccountResource},{TAccountEditor}}
+  - Octopus.Client.Editors.IResourceBuilder
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor)
+  name.vb: AccountEditor(Of TAccountResource, TAccountEditor)
+- uid: Octopus.Client.Editors.AccountEditor`2.Repository
+  commentId: F:Octopus.Client.Editors.AccountEditor`2.Repository
+  id: Repository
+  parent: Octopus.Client.Editors.AccountEditor`2
+  langs:
+  - csharp
+  - vb
+  name: Repository
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Repository
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.Repository
+  type: Field
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/AccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Repository
+    path: ../source/Octopus.Client/Editors/AccountEditor.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: protected readonly IAccountRepository Repository
+    return:
+      type: Octopus.Client.Repositories.IAccountRepository
+    content.vb: Protected ReadOnly Repository As IAccountRepository
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).Repository
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).Repository
+- uid: Octopus.Client.Editors.AccountEditor`2.#ctor(Octopus.Client.Repositories.IAccountRepository)
+  commentId: M:Octopus.Client.Editors.AccountEditor`2.#ctor(Octopus.Client.Repositories.IAccountRepository)
+  id: '#ctor(Octopus.Client.Repositories.IAccountRepository)'
+  parent: Octopus.Client.Editors.AccountEditor`2
+  langs:
+  - csharp
+  - vb
+  name: AccountEditor(IAccountRepository)
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.AccountEditor(IAccountRepository)
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.AccountEditor(Octopus.Client.Repositories.IAccountRepository)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/AccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Editors/AccountEditor.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public AccountEditor(IAccountRepository repository)
+    parameters:
+    - id: repository
+      type: Octopus.Client.Repositories.IAccountRepository
+    content.vb: Public Sub New(repository As IAccountRepository)
+  overload: Octopus.Client.Editors.AccountEditor`2.#ctor*
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).AccountEditor(IAccountRepository)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).AccountEditor(Octopus.Client.Repositories.IAccountRepository)
+- uid: Octopus.Client.Editors.AccountEditor`2.Instance
+  commentId: P:Octopus.Client.Editors.AccountEditor`2.Instance
+  id: Instance
+  parent: Octopus.Client.Editors.AccountEditor`2
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Instance
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.Instance
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/AccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Instance
+    path: ../source/Octopus.Client/Editors/AccountEditor.cs
+    startLine: 18
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public TAccountResource Instance { get; }
+    parameters: []
+    return:
+      type: '{TAccountResource}'
+    content.vb: Public ReadOnly Property Instance As TAccountResource
+  overload: Octopus.Client.Editors.AccountEditor`2.Instance*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{{TAccountResource},{TAccountEditor}}.Instance
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).Instance
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).Instance
+- uid: Octopus.Client.Editors.AccountEditor`2.CreateOrModify(System.String)
+  commentId: M:Octopus.Client.Editors.AccountEditor`2.CreateOrModify(System.String)
+  id: CreateOrModify(System.String)
+  parent: Octopus.Client.Editors.AccountEditor`2
+  langs:
+  - csharp
+  - vb
+  name: CreateOrModify(String)
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.CreateOrModify(String)
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.CreateOrModify(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/AccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CreateOrModify
+    path: ../source/Octopus.Client/Editors/AccountEditor.cs
+    startLine: 20
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public TAccountEditor CreateOrModify(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: '{TAccountEditor}'
+    content.vb: Public Function CreateOrModify(name As String) As TAccountEditor
+  overload: Octopus.Client.Editors.AccountEditor`2.CreateOrModify*
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).CreateOrModify(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).CreateOrModify(System.String)
+- uid: Octopus.Client.Editors.AccountEditor`2.FindByName(System.String)
+  commentId: M:Octopus.Client.Editors.AccountEditor`2.FindByName(System.String)
+  id: FindByName(System.String)
+  parent: Octopus.Client.Editors.AccountEditor`2
+  langs:
+  - csharp
+  - vb
+  name: FindByName(String)
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.FindByName(String)
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.FindByName(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/AccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: FindByName
+    path: ../source/Octopus.Client/Editors/AccountEditor.cs
+    startLine: 44
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public TAccountEditor FindByName(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: '{TAccountEditor}'
+    content.vb: Public Function FindByName(name As String) As TAccountEditor
+  overload: Octopus.Client.Editors.AccountEditor`2.FindByName*
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).FindByName(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).FindByName(System.String)
+- uid: Octopus.Client.Editors.AccountEditor`2.Customize(System.Action{`0})
+  commentId: M:Octopus.Client.Editors.AccountEditor`2.Customize(System.Action{`0})
+  id: Customize(System.Action{`0})
+  parent: Octopus.Client.Editors.AccountEditor`2
+  langs:
+  - csharp
+  - vb
+  name: Customize(Action<TAccountResource>)
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Customize(Action<TAccountResource>)
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.Customize(System.Action<TAccountResource>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/AccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Customize
+    path: ../source/Octopus.Client/Editors/AccountEditor.cs
+    startLine: 64
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public virtual TAccountEditor Customize(Action<TAccountResource> customize)
+    parameters:
+    - id: customize
+      type: System.Action{{TAccountResource}}
+    return:
+      type: '{TAccountEditor}'
+    content.vb: Public Overridable Function Customize(customize As Action(Of TAccountResource)) As TAccountEditor
+  overload: Octopus.Client.Editors.AccountEditor`2.Customize*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{{TAccountResource},{TAccountEditor}}.Customize(System.Action{{TAccountResource}})
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).Customize(Action(Of TAccountResource))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).Customize(System.Action(Of TAccountResource))
+  name.vb: Customize(Action(Of TAccountResource))
+- uid: Octopus.Client.Editors.AccountEditor`2.Save
+  commentId: M:Octopus.Client.Editors.AccountEditor`2.Save
+  id: Save
+  parent: Octopus.Client.Editors.AccountEditor`2
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Save()
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.Save()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/AccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Save
+    path: ../source/Octopus.Client/Editors/AccountEditor.cs
+    startLine: 70
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public virtual TAccountEditor Save()
+    return:
+      type: '{TAccountEditor}'
+    content.vb: Public Overridable Function Save As TAccountEditor
+  overload: Octopus.Client.Editors.AccountEditor`2.Save*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{{TAccountResource},{TAccountEditor}}.Save
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).Save()
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).Save()
+- uid: Octopus.Client.Editors.AccountEditor`2.Usages
+  commentId: M:Octopus.Client.Editors.AccountEditor`2.Usages
+  id: Usages
+  parent: Octopus.Client.Editors.AccountEditor`2
+  langs:
+  - csharp
+  - vb
+  name: Usages()
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Usages()
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.Usages()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/AccountEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Usages
+    path: ../source/Octopus.Client/Editors/AccountEditor.cs
+    startLine: 76
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public AccountUsageResource Usages()
+    return:
+      type: Octopus.Client.Model.Accounts.Usages.AccountUsageResource
+    content.vb: Public Function Usages As AccountUsageResource
+  overload: Octopus.Client.Editors.AccountEditor`2.Usages*
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).Usages()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).Usages()
+references:
+- uid: Octopus.Client.Editors
+  commentId: N:Octopus.Client.Editors
+  name: Octopus.Client.Editors
+  nameWithType: Octopus.Client.Editors
+  fullName: Octopus.Client.Editors
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Editors.IResourceEditor{{TAccountResource},{TAccountEditor}}
+  commentId: T:Octopus.Client.Editors.IResourceEditor{`0,`1}
+  parent: Octopus.Client.Editors
+  definition: Octopus.Client.Editors.IResourceEditor`2
+  name: IResourceEditor<TAccountResource, TAccountEditor>
+  nameWithType: IResourceEditor<TAccountResource, TAccountEditor>
+  fullName: Octopus.Client.Editors.IResourceEditor<TAccountResource, TAccountEditor>
+  nameWithType.vb: IResourceEditor(Of TAccountResource, TAccountEditor)
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TAccountResource, TAccountEditor)
+  name.vb: IResourceEditor(Of TAccountResource, TAccountEditor)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TAccountResource
+    nameWithType: TAccountResource
+    fullName: TAccountResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TAccountEditor
+    nameWithType: TAccountEditor
+    fullName: TAccountEditor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TAccountResource
+    nameWithType: TAccountResource
+    fullName: TAccountResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TAccountEditor
+    nameWithType: TAccountEditor
+    fullName: TAccountEditor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceBuilder
+  commentId: T:Octopus.Client.Editors.IResourceBuilder
+  parent: Octopus.Client.Editors
+  name: IResourceBuilder
+  nameWithType: IResourceBuilder
+  fullName: Octopus.Client.Editors.IResourceBuilder
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Editors.IResourceEditor`2
+  commentId: T:Octopus.Client.Editors.IResourceEditor`2
+  name: IResourceEditor<TResource, TResourceBuilder>
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder)
+  name.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResourceBuilder
+    nameWithType: TResourceBuilder
+    fullName: TResourceBuilder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResourceBuilder
+    nameWithType: TResourceBuilder
+    fullName: TResourceBuilder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IAccountRepository
+  commentId: T:Octopus.Client.Repositories.IAccountRepository
+  parent: Octopus.Client.Repositories
+  name: IAccountRepository
+  nameWithType: IAccountRepository
+  fullName: Octopus.Client.Repositories.IAccountRepository
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Editors.AccountEditor`2.#ctor*
+  commentId: Overload:Octopus.Client.Editors.AccountEditor`2.#ctor
+  name: AccountEditor
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.AccountEditor
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.AccountEditor
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).AccountEditor
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).AccountEditor
+- uid: Octopus.Client.Editors.AccountEditor`2.Instance*
+  commentId: Overload:Octopus.Client.Editors.AccountEditor`2.Instance
+  name: Instance
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Instance
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.Instance
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).Instance
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).Instance
+- uid: Octopus.Client.Editors.IResourceEditor{{TAccountResource},{TAccountEditor}}.Instance
+  commentId: P:Octopus.Client.Editors.IResourceEditor{`0,`1}.Instance
+  parent: Octopus.Client.Editors.IResourceEditor{{TAccountResource},{TAccountEditor}}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Instance
+  name: Instance
+  nameWithType: IResourceEditor<TAccountResource, TAccountEditor>.Instance
+  fullName: Octopus.Client.Editors.IResourceEditor<TAccountResource, TAccountEditor>.Instance
+  nameWithType.vb: IResourceEditor(Of TAccountResource, TAccountEditor).Instance
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TAccountResource, TAccountEditor).Instance
+- uid: '{TAccountResource}'
+  commentId: '!:TAccountResource'
+  definition: TAccountResource
+  name: TAccountResource
+  nameWithType: TAccountResource
+  fullName: TAccountResource
+- uid: Octopus.Client.Editors.IResourceEditor`2.Instance
+  commentId: P:Octopus.Client.Editors.IResourceEditor`2.Instance
+  name: Instance
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Instance
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Instance
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Instance
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Instance
+- uid: TAccountResource
+  name: TAccountResource
+  nameWithType: TAccountResource
+  fullName: TAccountResource
+- uid: Octopus.Client.Editors.AccountEditor`2.CreateOrModify*
+  commentId: Overload:Octopus.Client.Editors.AccountEditor`2.CreateOrModify
+  name: CreateOrModify
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.CreateOrModify
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.CreateOrModify
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).CreateOrModify
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).CreateOrModify
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{TAccountEditor}'
+  commentId: '!:TAccountEditor'
+  definition: TAccountEditor
+  name: TAccountEditor
+  nameWithType: TAccountEditor
+  fullName: TAccountEditor
+- uid: TAccountEditor
+  name: TAccountEditor
+  nameWithType: TAccountEditor
+  fullName: TAccountEditor
+- uid: Octopus.Client.Editors.AccountEditor`2.FindByName*
+  commentId: Overload:Octopus.Client.Editors.AccountEditor`2.FindByName
+  name: FindByName
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.FindByName
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.FindByName
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).FindByName
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).FindByName
+- uid: Octopus.Client.Editors.AccountEditor`2.Customize*
+  commentId: Overload:Octopus.Client.Editors.AccountEditor`2.Customize
+  name: Customize
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Customize
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.Customize
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).Customize
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).Customize
+- uid: Octopus.Client.Editors.IResourceEditor{{TAccountResource},{TAccountEditor}}.Customize(System.Action{{TAccountResource}})
+  commentId: M:Octopus.Client.Editors.IResourceEditor{`0,`1}.Customize(System.Action{`0})
+  parent: Octopus.Client.Editors.IResourceEditor{{TAccountResource},{TAccountEditor}}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  name: Customize(Action<TAccountResource>)
+  nameWithType: IResourceEditor<TAccountResource, TAccountEditor>.Customize(Action<TAccountResource>)
+  fullName: Octopus.Client.Editors.IResourceEditor<TAccountResource, TAccountEditor>.Customize(System.Action<TAccountResource>)
+  nameWithType.vb: IResourceEditor(Of TAccountResource, TAccountEditor).Customize(Action(Of TAccountResource))
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TAccountResource, TAccountEditor).Customize(System.Action(Of TAccountResource))
+  name.vb: Customize(Action(Of TAccountResource))
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor<TAccountResource, TAccountEditor>.Customize
+    fullName: Octopus.Client.Editors.IResourceEditor<TAccountResource, TAccountEditor>.Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TAccountResource
+    nameWithType: TAccountResource
+    fullName: TAccountResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor(Of TAccountResource, TAccountEditor).Customize
+    fullName: Octopus.Client.Editors.IResourceEditor(Of TAccountResource, TAccountEditor).Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TAccountResource
+    nameWithType: TAccountResource
+    fullName: TAccountResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{{TAccountResource}}
+  commentId: T:System.Action{`0}
+  parent: System
+  definition: System.Action`1
+  name: Action<TAccountResource>
+  nameWithType: Action<TAccountResource>
+  fullName: System.Action<TAccountResource>
+  nameWithType.vb: Action(Of TAccountResource)
+  fullName.vb: System.Action(Of TAccountResource)
+  name.vb: Action(Of TAccountResource)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TAccountResource
+    nameWithType: TAccountResource
+    fullName: TAccountResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TAccountResource
+    nameWithType: TAccountResource
+    fullName: TAccountResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  commentId: M:Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  isExternal: true
+  name: Customize(Action<TResource>)
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Customize(Action<TResource>)
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Customize(System.Action<TResource>)
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Customize(Action(Of TResource))
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Customize(System.Action(Of TResource))
+  name.vb: Customize(Action(Of TResource))
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor<TResource, TResourceBuilder>.Customize
+    fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor(Of TResource, TResourceBuilder).Customize
+    fullName: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.AccountEditor`2.Save*
+  commentId: Overload:Octopus.Client.Editors.AccountEditor`2.Save
+  name: Save
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Save
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.Save
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).Save
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).Save
+- uid: Octopus.Client.Editors.IResourceEditor{{TAccountResource},{TAccountEditor}}.Save
+  commentId: M:Octopus.Client.Editors.IResourceEditor{`0,`1}.Save
+  parent: Octopus.Client.Editors.IResourceEditor{{TAccountResource},{TAccountEditor}}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Save
+  name: Save()
+  nameWithType: IResourceEditor<TAccountResource, TAccountEditor>.Save()
+  fullName: Octopus.Client.Editors.IResourceEditor<TAccountResource, TAccountEditor>.Save()
+  nameWithType.vb: IResourceEditor(Of TAccountResource, TAccountEditor).Save()
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TAccountResource, TAccountEditor).Save()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor<TAccountResource, TAccountEditor>.Save
+    fullName: Octopus.Client.Editors.IResourceEditor<TAccountResource, TAccountEditor>.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor(Of TAccountResource, TAccountEditor).Save
+    fullName: Octopus.Client.Editors.IResourceEditor(Of TAccountResource, TAccountEditor).Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceEditor`2.Save
+  commentId: M:Octopus.Client.Editors.IResourceEditor`2.Save
+  name: Save()
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Save()
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Save()
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Save()
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Save()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor<TResource, TResourceBuilder>.Save
+    fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor(Of TResource, TResourceBuilder).Save
+    fullName: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.AccountEditor`2.Usages*
+  commentId: Overload:Octopus.Client.Editors.AccountEditor`2.Usages
+  name: Usages
+  nameWithType: AccountEditor<TAccountResource, TAccountEditor>.Usages
+  fullName: Octopus.Client.Editors.AccountEditor<TAccountResource, TAccountEditor>.Usages
+  nameWithType.vb: AccountEditor(Of TAccountResource, TAccountEditor).Usages
+  fullName.vb: Octopus.Client.Editors.AccountEditor(Of TAccountResource, TAccountEditor).Usages
+- uid: Octopus.Client.Model.Accounts.Usages.AccountUsageResource
+  commentId: T:Octopus.Client.Model.Accounts.Usages.AccountUsageResource
+  parent: Octopus.Client.Model.Accounts.Usages
+  name: AccountUsageResource
+  nameWithType: AccountUsageResource
+  fullName: Octopus.Client.Model.Accounts.Usages.AccountUsageResource
+- uid: Octopus.Client.Model.Accounts.Usages
+  commentId: N:Octopus.Client.Model.Accounts.Usages
+  name: Octopus.Client.Model.Accounts.Usages
+  nameWithType: Octopus.Client.Model.Accounts.Usages
+  fullName: Octopus.Client.Model.Accounts.Usages

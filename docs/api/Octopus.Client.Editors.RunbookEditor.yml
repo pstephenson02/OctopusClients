@@ -1,0 +1,1083 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Editors.RunbookEditor
+  commentId: T:Octopus.Client.Editors.RunbookEditor
+  id: RunbookEditor
+  parent: Octopus.Client.Editors
+  children:
+  - Octopus.Client.Editors.RunbookEditor.#ctor(Octopus.Client.Repositories.IRunbookRepository,Octopus.Client.Repositories.IRunbookProcessRepository)
+  - Octopus.Client.Editors.RunbookEditor.CreateOrModify(Octopus.Client.Model.ProjectResource,System.String,System.String)
+  - Octopus.Client.Editors.RunbookEditor.Customize(System.Action{Octopus.Client.Model.RunbookResource})
+  - Octopus.Client.Editors.RunbookEditor.Instance
+  - Octopus.Client.Editors.RunbookEditor.Load(System.String)
+  - Octopus.Client.Editors.RunbookEditor.RunbookProcess
+  - Octopus.Client.Editors.RunbookEditor.Save
+  langs:
+  - csharp
+  - vb
+  name: RunbookEditor
+  nameWithType: RunbookEditor
+  fullName: Octopus.Client.Editors.RunbookEditor
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/RunbookEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RunbookEditor
+    path: ../source/Octopus.Client/Editors/RunbookEditor.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: 'public class RunbookEditor : IResourceEditor<RunbookResource, RunbookEditor>, IResourceBuilder'
+    content.vb: >-
+      Public Class RunbookEditor
+          Implements IResourceEditor(Of RunbookResource, RunbookEditor), IResourceBuilder
+  inheritance:
+  - System.Object
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}
+  - Octopus.Client.Editors.IResourceBuilder
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Editors.RunbookEditor.#ctor(Octopus.Client.Repositories.IRunbookRepository,Octopus.Client.Repositories.IRunbookProcessRepository)
+  commentId: M:Octopus.Client.Editors.RunbookEditor.#ctor(Octopus.Client.Repositories.IRunbookRepository,Octopus.Client.Repositories.IRunbookProcessRepository)
+  id: '#ctor(Octopus.Client.Repositories.IRunbookRepository,Octopus.Client.Repositories.IRunbookProcessRepository)'
+  parent: Octopus.Client.Editors.RunbookEditor
+  langs:
+  - csharp
+  - vb
+  name: RunbookEditor(IRunbookRepository, IRunbookProcessRepository)
+  nameWithType: RunbookEditor.RunbookEditor(IRunbookRepository, IRunbookProcessRepository)
+  fullName: Octopus.Client.Editors.RunbookEditor.RunbookEditor(Octopus.Client.Repositories.IRunbookRepository, Octopus.Client.Repositories.IRunbookProcessRepository)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/RunbookEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Editors/RunbookEditor.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public RunbookEditor(IRunbookRepository repository, IRunbookProcessRepository runbookProcessRepository)
+    parameters:
+    - id: repository
+      type: Octopus.Client.Repositories.IRunbookRepository
+    - id: runbookProcessRepository
+      type: Octopus.Client.Repositories.IRunbookProcessRepository
+    content.vb: Public Sub New(repository As IRunbookRepository, runbookProcessRepository As IRunbookProcessRepository)
+  overload: Octopus.Client.Editors.RunbookEditor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.RunbookEditor.Instance
+  commentId: P:Octopus.Client.Editors.RunbookEditor.Instance
+  id: Instance
+  parent: Octopus.Client.Editors.RunbookEditor
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: RunbookEditor.Instance
+  fullName: Octopus.Client.Editors.RunbookEditor.Instance
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/RunbookEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Instance
+    path: ../source/Octopus.Client/Editors/RunbookEditor.cs
+    startLine: 18
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public RunbookResource Instance { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.RunbookResource
+    content.vb: Public ReadOnly Property Instance As RunbookResource
+  overload: Octopus.Client.Editors.RunbookEditor.Instance*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}.Instance
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Editors.RunbookEditor.RunbookProcess
+  commentId: P:Octopus.Client.Editors.RunbookEditor.RunbookProcess
+  id: RunbookProcess
+  parent: Octopus.Client.Editors.RunbookEditor
+  langs:
+  - csharp
+  - vb
+  name: RunbookProcess
+  nameWithType: RunbookEditor.RunbookProcess
+  fullName: Octopus.Client.Editors.RunbookEditor.RunbookProcess
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/RunbookEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RunbookProcess
+    path: ../source/Octopus.Client/Editors/RunbookEditor.cs
+    startLine: 20
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public RunbookProcessEditor RunbookProcess { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Editors.RunbookProcessEditor
+    content.vb: Public ReadOnly Property RunbookProcess As RunbookProcessEditor
+  overload: Octopus.Client.Editors.RunbookEditor.RunbookProcess*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Editors.RunbookEditor.CreateOrModify(Octopus.Client.Model.ProjectResource,System.String,System.String)
+  commentId: M:Octopus.Client.Editors.RunbookEditor.CreateOrModify(Octopus.Client.Model.ProjectResource,System.String,System.String)
+  id: CreateOrModify(Octopus.Client.Model.ProjectResource,System.String,System.String)
+  parent: Octopus.Client.Editors.RunbookEditor
+  langs:
+  - csharp
+  - vb
+  name: CreateOrModify(ProjectResource, String, String)
+  nameWithType: RunbookEditor.CreateOrModify(ProjectResource, String, String)
+  fullName: Octopus.Client.Editors.RunbookEditor.CreateOrModify(Octopus.Client.Model.ProjectResource, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/RunbookEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CreateOrModify
+    path: ../source/Octopus.Client/Editors/RunbookEditor.cs
+    startLine: 22
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public RunbookEditor CreateOrModify(ProjectResource project, string name, string description)
+    parameters:
+    - id: project
+      type: Octopus.Client.Model.ProjectResource
+    - id: name
+      type: System.String
+    - id: description
+      type: System.String
+    return:
+      type: Octopus.Client.Editors.RunbookEditor
+    content.vb: Public Function CreateOrModify(project As ProjectResource, name As String, description As String) As RunbookEditor
+  overload: Octopus.Client.Editors.RunbookEditor.CreateOrModify*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.RunbookEditor.Load(System.String)
+  commentId: M:Octopus.Client.Editors.RunbookEditor.Load(System.String)
+  id: Load(System.String)
+  parent: Octopus.Client.Editors.RunbookEditor
+  langs:
+  - csharp
+  - vb
+  name: Load(String)
+  nameWithType: RunbookEditor.Load(String)
+  fullName: Octopus.Client.Editors.RunbookEditor.Load(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/RunbookEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Load
+    path: ../source/Octopus.Client/Editors/RunbookEditor.cs
+    startLine: 49
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public RunbookEditor Load(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: Octopus.Client.Editors.RunbookEditor
+    content.vb: Public Function Load(id As String) As RunbookEditor
+  overload: Octopus.Client.Editors.RunbookEditor.Load*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.RunbookEditor.Customize(System.Action{Octopus.Client.Model.RunbookResource})
+  commentId: M:Octopus.Client.Editors.RunbookEditor.Customize(System.Action{Octopus.Client.Model.RunbookResource})
+  id: Customize(System.Action{Octopus.Client.Model.RunbookResource})
+  parent: Octopus.Client.Editors.RunbookEditor
+  langs:
+  - csharp
+  - vb
+  name: Customize(Action<RunbookResource>)
+  nameWithType: RunbookEditor.Customize(Action<RunbookResource>)
+  fullName: Octopus.Client.Editors.RunbookEditor.Customize(System.Action<Octopus.Client.Model.RunbookResource>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/RunbookEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Customize
+    path: ../source/Octopus.Client/Editors/RunbookEditor.cs
+    startLine: 55
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public RunbookEditor Customize(Action<RunbookResource> customize)
+    parameters:
+    - id: customize
+      type: System.Action{Octopus.Client.Model.RunbookResource}
+    return:
+      type: Octopus.Client.Editors.RunbookEditor
+    content.vb: Public Function Customize(customize As Action(Of RunbookResource)) As RunbookEditor
+  overload: Octopus.Client.Editors.RunbookEditor.Customize*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}.Customize(System.Action{Octopus.Client.Model.RunbookResource})
+  nameWithType.vb: RunbookEditor.Customize(Action(Of RunbookResource))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Editors.RunbookEditor.Customize(System.Action(Of Octopus.Client.Model.RunbookResource))
+  name.vb: Customize(Action(Of RunbookResource))
+- uid: Octopus.Client.Editors.RunbookEditor.Save
+  commentId: M:Octopus.Client.Editors.RunbookEditor.Save
+  id: Save
+  parent: Octopus.Client.Editors.RunbookEditor
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: RunbookEditor.Save()
+  fullName: Octopus.Client.Editors.RunbookEditor.Save()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/RunbookEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Save
+    path: ../source/Octopus.Client/Editors/RunbookEditor.cs
+    startLine: 61
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public RunbookEditor Save()
+    return:
+      type: Octopus.Client.Editors.RunbookEditor
+    content.vb: Public Function Save As RunbookEditor
+  overload: Octopus.Client.Editors.RunbookEditor.Save*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}.Save
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Editors
+  commentId: N:Octopus.Client.Editors
+  name: Octopus.Client.Editors
+  nameWithType: Octopus.Client.Editors
+  fullName: Octopus.Client.Editors
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}
+  commentId: T:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}
+  parent: Octopus.Client.Editors
+  definition: Octopus.Client.Editors.IResourceEditor`2
+  name: IResourceEditor<RunbookResource, RunbookEditor>
+  nameWithType: IResourceEditor<RunbookResource, RunbookEditor>
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.RunbookResource, Octopus.Client.Editors.RunbookEditor>
+  nameWithType.vb: IResourceEditor(Of RunbookResource, RunbookEditor)
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.RunbookResource, Octopus.Client.Editors.RunbookEditor)
+  name.vb: IResourceEditor(Of RunbookResource, RunbookEditor)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.RunbookResource
+    name: RunbookResource
+    nameWithType: RunbookResource
+    fullName: Octopus.Client.Model.RunbookResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Editors.RunbookEditor
+    name: RunbookEditor
+    nameWithType: RunbookEditor
+    fullName: Octopus.Client.Editors.RunbookEditor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.RunbookResource
+    name: RunbookResource
+    nameWithType: RunbookResource
+    fullName: Octopus.Client.Model.RunbookResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Editors.RunbookEditor
+    name: RunbookEditor
+    nameWithType: RunbookEditor
+    fullName: Octopus.Client.Editors.RunbookEditor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceBuilder
+  commentId: T:Octopus.Client.Editors.IResourceBuilder
+  parent: Octopus.Client.Editors
+  name: IResourceBuilder
+  nameWithType: IResourceBuilder
+  fullName: Octopus.Client.Editors.IResourceBuilder
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Editors.IResourceEditor`2
+  commentId: T:Octopus.Client.Editors.IResourceEditor`2
+  name: IResourceEditor<TResource, TResourceBuilder>
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder)
+  name.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResourceBuilder
+    nameWithType: TResourceBuilder
+    fullName: TResourceBuilder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResourceBuilder
+    nameWithType: TResourceBuilder
+    fullName: TResourceBuilder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.RunbookEditor.#ctor*
+  commentId: Overload:Octopus.Client.Editors.RunbookEditor.#ctor
+  name: RunbookEditor
+  nameWithType: RunbookEditor.RunbookEditor
+  fullName: Octopus.Client.Editors.RunbookEditor.RunbookEditor
+- uid: Octopus.Client.Repositories.IRunbookRepository
+  commentId: T:Octopus.Client.Repositories.IRunbookRepository
+  parent: Octopus.Client.Repositories
+  name: IRunbookRepository
+  nameWithType: IRunbookRepository
+  fullName: Octopus.Client.Repositories.IRunbookRepository
+- uid: Octopus.Client.Repositories.IRunbookProcessRepository
+  commentId: T:Octopus.Client.Repositories.IRunbookProcessRepository
+  parent: Octopus.Client.Repositories
+  name: IRunbookProcessRepository
+  nameWithType: IRunbookProcessRepository
+  fullName: Octopus.Client.Repositories.IRunbookProcessRepository
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Editors.RunbookEditor.Instance*
+  commentId: Overload:Octopus.Client.Editors.RunbookEditor.Instance
+  name: Instance
+  nameWithType: RunbookEditor.Instance
+  fullName: Octopus.Client.Editors.RunbookEditor.Instance
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}.Instance
+  commentId: P:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}.Instance
+  parent: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Instance
+  name: Instance
+  nameWithType: IResourceEditor<RunbookResource, RunbookEditor>.Instance
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.RunbookResource, Octopus.Client.Editors.RunbookEditor>.Instance
+  nameWithType.vb: IResourceEditor(Of RunbookResource, RunbookEditor).Instance
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.RunbookResource, Octopus.Client.Editors.RunbookEditor).Instance
+- uid: Octopus.Client.Model.RunbookResource
+  commentId: T:Octopus.Client.Model.RunbookResource
+  parent: Octopus.Client.Model
+  name: RunbookResource
+  nameWithType: RunbookResource
+  fullName: Octopus.Client.Model.RunbookResource
+- uid: Octopus.Client.Editors.IResourceEditor`2.Instance
+  commentId: P:Octopus.Client.Editors.IResourceEditor`2.Instance
+  name: Instance
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Instance
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Instance
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Instance
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Instance
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Editors.RunbookEditor.RunbookProcess*
+  commentId: Overload:Octopus.Client.Editors.RunbookEditor.RunbookProcess
+  name: RunbookProcess
+  nameWithType: RunbookEditor.RunbookProcess
+  fullName: Octopus.Client.Editors.RunbookEditor.RunbookProcess
+- uid: Octopus.Client.Editors.RunbookProcessEditor
+  commentId: T:Octopus.Client.Editors.RunbookProcessEditor
+  parent: Octopus.Client.Editors
+  name: RunbookProcessEditor
+  nameWithType: RunbookProcessEditor
+  fullName: Octopus.Client.Editors.RunbookProcessEditor
+- uid: Octopus.Client.Editors.RunbookEditor.CreateOrModify*
+  commentId: Overload:Octopus.Client.Editors.RunbookEditor.CreateOrModify
+  name: CreateOrModify
+  nameWithType: RunbookEditor.CreateOrModify
+  fullName: Octopus.Client.Editors.RunbookEditor.CreateOrModify
+- uid: Octopus.Client.Model.ProjectResource
+  commentId: T:Octopus.Client.Model.ProjectResource
+  parent: Octopus.Client.Model
+  name: ProjectResource
+  nameWithType: ProjectResource
+  fullName: Octopus.Client.Model.ProjectResource
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Editors.RunbookEditor
+  commentId: T:Octopus.Client.Editors.RunbookEditor
+  parent: Octopus.Client.Editors
+  name: RunbookEditor
+  nameWithType: RunbookEditor
+  fullName: Octopus.Client.Editors.RunbookEditor
+- uid: Octopus.Client.Editors.RunbookEditor.Load*
+  commentId: Overload:Octopus.Client.Editors.RunbookEditor.Load
+  name: Load
+  nameWithType: RunbookEditor.Load
+  fullName: Octopus.Client.Editors.RunbookEditor.Load
+- uid: Octopus.Client.Editors.RunbookEditor.Customize*
+  commentId: Overload:Octopus.Client.Editors.RunbookEditor.Customize
+  name: Customize
+  nameWithType: RunbookEditor.Customize
+  fullName: Octopus.Client.Editors.RunbookEditor.Customize
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}.Customize(System.Action{Octopus.Client.Model.RunbookResource})
+  commentId: M:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}.Customize(System.Action{Octopus.Client.Model.RunbookResource})
+  parent: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  name: Customize(Action<RunbookResource>)
+  nameWithType: IResourceEditor<RunbookResource, RunbookEditor>.Customize(Action<RunbookResource>)
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.RunbookResource, Octopus.Client.Editors.RunbookEditor>.Customize(System.Action<Octopus.Client.Model.RunbookResource>)
+  nameWithType.vb: IResourceEditor(Of RunbookResource, RunbookEditor).Customize(Action(Of RunbookResource))
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.RunbookResource, Octopus.Client.Editors.RunbookEditor).Customize(System.Action(Of Octopus.Client.Model.RunbookResource))
+  name.vb: Customize(Action(Of RunbookResource))
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor<RunbookResource, RunbookEditor>.Customize
+    fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.RunbookResource, Octopus.Client.Editors.RunbookEditor>.Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.RunbookResource
+    name: RunbookResource
+    nameWithType: RunbookResource
+    fullName: Octopus.Client.Model.RunbookResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor(Of RunbookResource, RunbookEditor).Customize
+    fullName: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.RunbookResource, Octopus.Client.Editors.RunbookEditor).Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.RunbookResource
+    name: RunbookResource
+    nameWithType: RunbookResource
+    fullName: Octopus.Client.Model.RunbookResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{Octopus.Client.Model.RunbookResource}
+  commentId: T:System.Action{Octopus.Client.Model.RunbookResource}
+  parent: System
+  definition: System.Action`1
+  name: Action<RunbookResource>
+  nameWithType: Action<RunbookResource>
+  fullName: System.Action<Octopus.Client.Model.RunbookResource>
+  nameWithType.vb: Action(Of RunbookResource)
+  fullName.vb: System.Action(Of Octopus.Client.Model.RunbookResource)
+  name.vb: Action(Of RunbookResource)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.RunbookResource
+    name: RunbookResource
+    nameWithType: RunbookResource
+    fullName: Octopus.Client.Model.RunbookResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.RunbookResource
+    name: RunbookResource
+    nameWithType: RunbookResource
+    fullName: Octopus.Client.Model.RunbookResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  commentId: M:Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  isExternal: true
+  name: Customize(Action<TResource>)
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Customize(Action<TResource>)
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Customize(System.Action<TResource>)
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Customize(Action(Of TResource))
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Customize(System.Action(Of TResource))
+  name.vb: Customize(Action(Of TResource))
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor<TResource, TResourceBuilder>.Customize
+    fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor(Of TResource, TResourceBuilder).Customize
+    fullName: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.RunbookEditor.Save*
+  commentId: Overload:Octopus.Client.Editors.RunbookEditor.Save
+  name: Save
+  nameWithType: RunbookEditor.Save
+  fullName: Octopus.Client.Editors.RunbookEditor.Save
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}.Save
+  commentId: M:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}.Save
+  parent: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.RunbookResource,Octopus.Client.Editors.RunbookEditor}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Save
+  name: Save()
+  nameWithType: IResourceEditor<RunbookResource, RunbookEditor>.Save()
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.RunbookResource, Octopus.Client.Editors.RunbookEditor>.Save()
+  nameWithType.vb: IResourceEditor(Of RunbookResource, RunbookEditor).Save()
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.RunbookResource, Octopus.Client.Editors.RunbookEditor).Save()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor<RunbookResource, RunbookEditor>.Save
+    fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.RunbookResource, Octopus.Client.Editors.RunbookEditor>.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor(Of RunbookResource, RunbookEditor).Save
+    fullName: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.RunbookResource, Octopus.Client.Editors.RunbookEditor).Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceEditor`2.Save
+  commentId: M:Octopus.Client.Editors.IResourceEditor`2.Save
+  name: Save()
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Save()
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Save()
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Save()
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Save()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor<TResource, TResourceBuilder>.Save
+    fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor(Of TResource, TResourceBuilder).Save
+    fullName: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

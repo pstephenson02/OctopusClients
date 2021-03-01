@@ -1,0 +1,1114 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.VcsRunbookRepository
+  commentId: T:Octopus.Client.Repositories.VcsRunbookRepository
+  id: VcsRunbookRepository
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.VcsRunbookRepository.#ctor(Octopus.Client.IOctopusRepository,Octopus.Client.Model.VersionControlBranchResource)
+  - Octopus.Client.Repositories.VcsRunbookRepository.Create(Octopus.Client.Model.VcsRunbookResource,System.String)
+  - Octopus.Client.Repositories.VcsRunbookRepository.Delete(Octopus.Client.Model.VcsRunbookResource,System.String)
+  - Octopus.Client.Repositories.VcsRunbookRepository.Get(System.String)
+  - Octopus.Client.Repositories.VcsRunbookRepository.List(System.String,System.Int32,System.Nullable{System.Int32})
+  - Octopus.Client.Repositories.VcsRunbookRepository.Modify(Octopus.Client.Model.VcsRunbookResource,System.String)
+  langs:
+  - csharp
+  - vb
+  name: VcsRunbookRepository
+  nameWithType: VcsRunbookRepository
+  fullName: Octopus.Client.Repositories.VcsRunbookRepository
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/VcsRunbookRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: VcsRunbookRepository
+    path: ../source/Octopus.Client/Repositories/VcsRunbookRepository.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: 'public class VcsRunbookRepository : IVcsRunbookRepository'
+    content.vb: >-
+      Public Class VcsRunbookRepository
+          Implements IVcsRunbookRepository
+  inheritance:
+  - System.Object
+  implements:
+  - Octopus.Client.Repositories.IVcsRunbookRepository
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Repositories.VcsRunbookRepository.#ctor(Octopus.Client.IOctopusRepository,Octopus.Client.Model.VersionControlBranchResource)
+  commentId: M:Octopus.Client.Repositories.VcsRunbookRepository.#ctor(Octopus.Client.IOctopusRepository,Octopus.Client.Model.VersionControlBranchResource)
+  id: '#ctor(Octopus.Client.IOctopusRepository,Octopus.Client.Model.VersionControlBranchResource)'
+  parent: Octopus.Client.Repositories.VcsRunbookRepository
+  langs:
+  - csharp
+  - vb
+  name: VcsRunbookRepository(IOctopusRepository, VersionControlBranchResource)
+  nameWithType: VcsRunbookRepository.VcsRunbookRepository(IOctopusRepository, VersionControlBranchResource)
+  fullName: Octopus.Client.Repositories.VcsRunbookRepository.VcsRunbookRepository(Octopus.Client.IOctopusRepository, Octopus.Client.Model.VersionControlBranchResource)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/VcsRunbookRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Repositories/VcsRunbookRepository.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public VcsRunbookRepository(IOctopusRepository repository, VersionControlBranchResource branch)
+    parameters:
+    - id: repository
+      type: Octopus.Client.IOctopusRepository
+    - id: branch
+      type: Octopus.Client.Model.VersionControlBranchResource
+    content.vb: Public Sub New(repository As IOctopusRepository, branch As VersionControlBranchResource)
+  overload: Octopus.Client.Repositories.VcsRunbookRepository.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Repositories.VcsRunbookRepository.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.VcsRunbookRepository.Get(System.String)
+  id: Get(System.String)
+  parent: Octopus.Client.Repositories.VcsRunbookRepository
+  langs:
+  - csharp
+  - vb
+  name: Get(String)
+  nameWithType: VcsRunbookRepository.Get(String)
+  fullName: Octopus.Client.Repositories.VcsRunbookRepository.Get(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/VcsRunbookRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Get
+    path: ../source/Octopus.Client/Repositories/VcsRunbookRepository.cs
+    startLine: 25
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public VcsRunbookResource Get(string runbookId)
+    parameters:
+    - id: runbookId
+      type: System.String
+    return:
+      type: Octopus.Client.Model.VcsRunbookResource
+    content.vb: Public Function Get(runbookId As String) As VcsRunbookResource
+  overload: Octopus.Client.Repositories.VcsRunbookRepository.Get*
+  implements:
+  - Octopus.Client.Repositories.IVcsRunbookRepository.Get(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Repositories.VcsRunbookRepository.Modify(Octopus.Client.Model.VcsRunbookResource,System.String)
+  commentId: M:Octopus.Client.Repositories.VcsRunbookRepository.Modify(Octopus.Client.Model.VcsRunbookResource,System.String)
+  id: Modify(Octopus.Client.Model.VcsRunbookResource,System.String)
+  parent: Octopus.Client.Repositories.VcsRunbookRepository
+  langs:
+  - csharp
+  - vb
+  name: Modify(VcsRunbookResource, String)
+  nameWithType: VcsRunbookRepository.Modify(VcsRunbookResource, String)
+  fullName: Octopus.Client.Repositories.VcsRunbookRepository.Modify(Octopus.Client.Model.VcsRunbookResource, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/VcsRunbookRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Modify
+    path: ../source/Octopus.Client/Repositories/VcsRunbookRepository.cs
+    startLine: 31
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public VcsRunbookResource Modify(VcsRunbookResource resource, string commitMessage = null)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.VcsRunbookResource
+    - id: commitMessage
+      type: System.String
+    return:
+      type: Octopus.Client.Model.VcsRunbookResource
+    content.vb: Public Function Modify(resource As VcsRunbookResource, commitMessage As String = Nothing) As VcsRunbookResource
+  overload: Octopus.Client.Repositories.VcsRunbookRepository.Modify*
+  implements:
+  - Octopus.Client.Repositories.IVcsRunbookRepository.Modify(Octopus.Client.Model.VcsRunbookResource,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Repositories.VcsRunbookRepository.Create(Octopus.Client.Model.VcsRunbookResource,System.String)
+  commentId: M:Octopus.Client.Repositories.VcsRunbookRepository.Create(Octopus.Client.Model.VcsRunbookResource,System.String)
+  id: Create(Octopus.Client.Model.VcsRunbookResource,System.String)
+  parent: Octopus.Client.Repositories.VcsRunbookRepository
+  langs:
+  - csharp
+  - vb
+  name: Create(VcsRunbookResource, String)
+  nameWithType: VcsRunbookRepository.Create(VcsRunbookResource, String)
+  fullName: Octopus.Client.Repositories.VcsRunbookRepository.Create(Octopus.Client.Model.VcsRunbookResource, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/VcsRunbookRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Create
+    path: ../source/Octopus.Client/Repositories/VcsRunbookRepository.cs
+    startLine: 43
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public VcsRunbookResource Create(VcsRunbookResource resource, string commitMessage = null)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.VcsRunbookResource
+    - id: commitMessage
+      type: System.String
+    return:
+      type: Octopus.Client.Model.VcsRunbookResource
+    content.vb: Public Function Create(resource As VcsRunbookResource, commitMessage As String = Nothing) As VcsRunbookResource
+  overload: Octopus.Client.Repositories.VcsRunbookRepository.Create*
+  implements:
+  - Octopus.Client.Repositories.IVcsRunbookRepository.Create(Octopus.Client.Model.VcsRunbookResource,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Repositories.VcsRunbookRepository.Delete(Octopus.Client.Model.VcsRunbookResource,System.String)
+  commentId: M:Octopus.Client.Repositories.VcsRunbookRepository.Delete(Octopus.Client.Model.VcsRunbookResource,System.String)
+  id: Delete(Octopus.Client.Model.VcsRunbookResource,System.String)
+  parent: Octopus.Client.Repositories.VcsRunbookRepository
+  langs:
+  - csharp
+  - vb
+  name: Delete(VcsRunbookResource, String)
+  nameWithType: VcsRunbookRepository.Delete(VcsRunbookResource, String)
+  fullName: Octopus.Client.Repositories.VcsRunbookRepository.Delete(Octopus.Client.Model.VcsRunbookResource, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/VcsRunbookRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Delete
+    path: ../source/Octopus.Client/Repositories/VcsRunbookRepository.cs
+    startLine: 54
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public void Delete(VcsRunbookResource resource, string commitMessage = null)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.VcsRunbookResource
+    - id: commitMessage
+      type: System.String
+    content.vb: Public Sub Delete(resource As VcsRunbookResource, commitMessage As String = Nothing)
+  overload: Octopus.Client.Repositories.VcsRunbookRepository.Delete*
+  implements:
+  - Octopus.Client.Repositories.IVcsRunbookRepository.Delete(Octopus.Client.Model.VcsRunbookResource,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Repositories.VcsRunbookRepository.List(System.String,System.Int32,System.Nullable{System.Int32})
+  commentId: M:Octopus.Client.Repositories.VcsRunbookRepository.List(System.String,System.Int32,System.Nullable{System.Int32})
+  id: List(System.String,System.Int32,System.Nullable{System.Int32})
+  parent: Octopus.Client.Repositories.VcsRunbookRepository
+  langs:
+  - csharp
+  - vb
+  name: List(String, Int32, Nullable<Int32>)
+  nameWithType: VcsRunbookRepository.List(String, Int32, Nullable<Int32>)
+  fullName: Octopus.Client.Repositories.VcsRunbookRepository.List(System.String, System.Int32, System.Nullable<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/VcsRunbookRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: List
+    path: ../source/Octopus.Client/Repositories/VcsRunbookRepository.cs
+    startLine: 64
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public ResourceCollection<VcsRunbookResource> List(string partialName = null, int skip = 0, int? take = default(int? ))
+    parameters:
+    - id: partialName
+      type: System.String
+    - id: skip
+      type: System.Int32
+    - id: take
+      type: System.Nullable{System.Int32}
+    return:
+      type: Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.VcsRunbookResource}
+    content.vb: Public Function List(partialName As String = Nothing, skip As Integer = 0, take As Integer? = Nothing) As ResourceCollection(Of VcsRunbookResource)
+  overload: Octopus.Client.Repositories.VcsRunbookRepository.List*
+  implements:
+  - Octopus.Client.Repositories.IVcsRunbookRepository.List(System.String,System.Int32,System.Nullable{System.Int32})
+  nameWithType.vb: VcsRunbookRepository.List(String, Int32, Nullable(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Repositories.VcsRunbookRepository.List(System.String, System.Int32, System.Nullable(Of System.Int32))
+  name.vb: List(String, Int32, Nullable(Of Int32))
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Repositories.IVcsRunbookRepository
+  commentId: T:Octopus.Client.Repositories.IVcsRunbookRepository
+  parent: Octopus.Client.Repositories
+  name: IVcsRunbookRepository
+  nameWithType: IVcsRunbookRepository
+  fullName: Octopus.Client.Repositories.IVcsRunbookRepository
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Repositories.VcsRunbookRepository.#ctor*
+  commentId: Overload:Octopus.Client.Repositories.VcsRunbookRepository.#ctor
+  name: VcsRunbookRepository
+  nameWithType: VcsRunbookRepository.VcsRunbookRepository
+  fullName: Octopus.Client.Repositories.VcsRunbookRepository.VcsRunbookRepository
+- uid: Octopus.Client.IOctopusRepository
+  commentId: T:Octopus.Client.IOctopusRepository
+  parent: Octopus.Client
+  name: IOctopusRepository
+  nameWithType: IOctopusRepository
+  fullName: Octopus.Client.IOctopusRepository
+- uid: Octopus.Client.Model.VersionControlBranchResource
+  commentId: T:Octopus.Client.Model.VersionControlBranchResource
+  parent: Octopus.Client.Model
+  name: VersionControlBranchResource
+  nameWithType: VersionControlBranchResource
+  fullName: Octopus.Client.Model.VersionControlBranchResource
+- uid: Octopus.Client
+  commentId: N:Octopus.Client
+  name: Octopus.Client
+  nameWithType: Octopus.Client
+  fullName: Octopus.Client
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Repositories.VcsRunbookRepository.Get*
+  commentId: Overload:Octopus.Client.Repositories.VcsRunbookRepository.Get
+  name: Get
+  nameWithType: VcsRunbookRepository.Get
+  fullName: Octopus.Client.Repositories.VcsRunbookRepository.Get
+- uid: Octopus.Client.Repositories.IVcsRunbookRepository.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.IVcsRunbookRepository.Get(System.String)
+  parent: Octopus.Client.Repositories.IVcsRunbookRepository
+  isExternal: true
+  name: Get(String)
+  nameWithType: IVcsRunbookRepository.Get(String)
+  fullName: Octopus.Client.Repositories.IVcsRunbookRepository.Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IVcsRunbookRepository.Get(System.String)
+    name: Get
+    nameWithType: IVcsRunbookRepository.Get
+    fullName: Octopus.Client.Repositories.IVcsRunbookRepository.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IVcsRunbookRepository.Get(System.String)
+    name: Get
+    nameWithType: IVcsRunbookRepository.Get
+    fullName: Octopus.Client.Repositories.IVcsRunbookRepository.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.VcsRunbookResource
+  commentId: T:Octopus.Client.Model.VcsRunbookResource
+  parent: Octopus.Client.Model
+  name: VcsRunbookResource
+  nameWithType: VcsRunbookResource
+  fullName: Octopus.Client.Model.VcsRunbookResource
+- uid: Octopus.Client.Repositories.VcsRunbookRepository.Modify*
+  commentId: Overload:Octopus.Client.Repositories.VcsRunbookRepository.Modify
+  name: Modify
+  nameWithType: VcsRunbookRepository.Modify
+  fullName: Octopus.Client.Repositories.VcsRunbookRepository.Modify
+- uid: Octopus.Client.Repositories.IVcsRunbookRepository.Modify(Octopus.Client.Model.VcsRunbookResource,System.String)
+  commentId: M:Octopus.Client.Repositories.IVcsRunbookRepository.Modify(Octopus.Client.Model.VcsRunbookResource,System.String)
+  parent: Octopus.Client.Repositories.IVcsRunbookRepository
+  isExternal: true
+  name: Modify(VcsRunbookResource, String)
+  nameWithType: IVcsRunbookRepository.Modify(VcsRunbookResource, String)
+  fullName: Octopus.Client.Repositories.IVcsRunbookRepository.Modify(Octopus.Client.Model.VcsRunbookResource, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IVcsRunbookRepository.Modify(Octopus.Client.Model.VcsRunbookResource,System.String)
+    name: Modify
+    nameWithType: IVcsRunbookRepository.Modify
+    fullName: Octopus.Client.Repositories.IVcsRunbookRepository.Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.VcsRunbookResource
+    name: VcsRunbookResource
+    nameWithType: VcsRunbookResource
+    fullName: Octopus.Client.Model.VcsRunbookResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IVcsRunbookRepository.Modify(Octopus.Client.Model.VcsRunbookResource,System.String)
+    name: Modify
+    nameWithType: IVcsRunbookRepository.Modify
+    fullName: Octopus.Client.Repositories.IVcsRunbookRepository.Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.VcsRunbookResource
+    name: VcsRunbookResource
+    nameWithType: VcsRunbookResource
+    fullName: Octopus.Client.Model.VcsRunbookResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.VcsRunbookRepository.Create*
+  commentId: Overload:Octopus.Client.Repositories.VcsRunbookRepository.Create
+  name: Create
+  nameWithType: VcsRunbookRepository.Create
+  fullName: Octopus.Client.Repositories.VcsRunbookRepository.Create
+- uid: Octopus.Client.Repositories.IVcsRunbookRepository.Create(Octopus.Client.Model.VcsRunbookResource,System.String)
+  commentId: M:Octopus.Client.Repositories.IVcsRunbookRepository.Create(Octopus.Client.Model.VcsRunbookResource,System.String)
+  parent: Octopus.Client.Repositories.IVcsRunbookRepository
+  isExternal: true
+  name: Create(VcsRunbookResource, String)
+  nameWithType: IVcsRunbookRepository.Create(VcsRunbookResource, String)
+  fullName: Octopus.Client.Repositories.IVcsRunbookRepository.Create(Octopus.Client.Model.VcsRunbookResource, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IVcsRunbookRepository.Create(Octopus.Client.Model.VcsRunbookResource,System.String)
+    name: Create
+    nameWithType: IVcsRunbookRepository.Create
+    fullName: Octopus.Client.Repositories.IVcsRunbookRepository.Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.VcsRunbookResource
+    name: VcsRunbookResource
+    nameWithType: VcsRunbookResource
+    fullName: Octopus.Client.Model.VcsRunbookResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IVcsRunbookRepository.Create(Octopus.Client.Model.VcsRunbookResource,System.String)
+    name: Create
+    nameWithType: IVcsRunbookRepository.Create
+    fullName: Octopus.Client.Repositories.IVcsRunbookRepository.Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.VcsRunbookResource
+    name: VcsRunbookResource
+    nameWithType: VcsRunbookResource
+    fullName: Octopus.Client.Model.VcsRunbookResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.VcsRunbookRepository.Delete*
+  commentId: Overload:Octopus.Client.Repositories.VcsRunbookRepository.Delete
+  name: Delete
+  nameWithType: VcsRunbookRepository.Delete
+  fullName: Octopus.Client.Repositories.VcsRunbookRepository.Delete
+- uid: Octopus.Client.Repositories.IVcsRunbookRepository.Delete(Octopus.Client.Model.VcsRunbookResource,System.String)
+  commentId: M:Octopus.Client.Repositories.IVcsRunbookRepository.Delete(Octopus.Client.Model.VcsRunbookResource,System.String)
+  parent: Octopus.Client.Repositories.IVcsRunbookRepository
+  isExternal: true
+  name: Delete(VcsRunbookResource, String)
+  nameWithType: IVcsRunbookRepository.Delete(VcsRunbookResource, String)
+  fullName: Octopus.Client.Repositories.IVcsRunbookRepository.Delete(Octopus.Client.Model.VcsRunbookResource, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IVcsRunbookRepository.Delete(Octopus.Client.Model.VcsRunbookResource,System.String)
+    name: Delete
+    nameWithType: IVcsRunbookRepository.Delete
+    fullName: Octopus.Client.Repositories.IVcsRunbookRepository.Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.VcsRunbookResource
+    name: VcsRunbookResource
+    nameWithType: VcsRunbookResource
+    fullName: Octopus.Client.Model.VcsRunbookResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IVcsRunbookRepository.Delete(Octopus.Client.Model.VcsRunbookResource,System.String)
+    name: Delete
+    nameWithType: IVcsRunbookRepository.Delete
+    fullName: Octopus.Client.Repositories.IVcsRunbookRepository.Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.VcsRunbookResource
+    name: VcsRunbookResource
+    nameWithType: VcsRunbookResource
+    fullName: Octopus.Client.Model.VcsRunbookResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.VcsRunbookRepository.List*
+  commentId: Overload:Octopus.Client.Repositories.VcsRunbookRepository.List
+  name: List
+  nameWithType: VcsRunbookRepository.List
+  fullName: Octopus.Client.Repositories.VcsRunbookRepository.List
+- uid: Octopus.Client.Repositories.IVcsRunbookRepository.List(System.String,System.Int32,System.Nullable{System.Int32})
+  commentId: M:Octopus.Client.Repositories.IVcsRunbookRepository.List(System.String,System.Int32,System.Nullable{System.Int32})
+  parent: Octopus.Client.Repositories.IVcsRunbookRepository
+  isExternal: true
+  name: List(String, Int32, Nullable<Int32>)
+  nameWithType: IVcsRunbookRepository.List(String, Int32, Nullable<Int32>)
+  fullName: Octopus.Client.Repositories.IVcsRunbookRepository.List(System.String, System.Int32, System.Nullable<System.Int32>)
+  nameWithType.vb: IVcsRunbookRepository.List(String, Int32, Nullable(Of Int32))
+  fullName.vb: Octopus.Client.Repositories.IVcsRunbookRepository.List(System.String, System.Int32, System.Nullable(Of System.Int32))
+  name.vb: List(String, Int32, Nullable(Of Int32))
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IVcsRunbookRepository.List(System.String,System.Int32,System.Nullable{System.Int32})
+    name: List
+    nameWithType: IVcsRunbookRepository.List
+    fullName: Octopus.Client.Repositories.IVcsRunbookRepository.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IVcsRunbookRepository.List(System.String,System.Int32,System.Nullable{System.Int32})
+    name: List
+    nameWithType: IVcsRunbookRepository.List
+    fullName: Octopus.Client.Repositories.IVcsRunbookRepository.List
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.VcsRunbookResource}
+  commentId: T:Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.VcsRunbookResource}
+  parent: Octopus.Client.Model
+  definition: Octopus.Client.Model.ResourceCollection`1
+  name: ResourceCollection<VcsRunbookResource>
+  nameWithType: ResourceCollection<VcsRunbookResource>
+  fullName: Octopus.Client.Model.ResourceCollection<Octopus.Client.Model.VcsRunbookResource>
+  nameWithType.vb: ResourceCollection(Of VcsRunbookResource)
+  fullName.vb: Octopus.Client.Model.ResourceCollection(Of Octopus.Client.Model.VcsRunbookResource)
+  name.vb: ResourceCollection(Of VcsRunbookResource)
+  spec.csharp:
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.VcsRunbookResource
+    name: VcsRunbookResource
+    nameWithType: VcsRunbookResource
+    fullName: Octopus.Client.Model.VcsRunbookResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.VcsRunbookResource
+    name: VcsRunbookResource
+    nameWithType: VcsRunbookResource
+    fullName: Octopus.Client.Model.VcsRunbookResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ResourceCollection`1
+  commentId: T:Octopus.Client.Model.ResourceCollection`1
+  name: ResourceCollection<TResource>
+  nameWithType: ResourceCollection<TResource>
+  fullName: Octopus.Client.Model.ResourceCollection<TResource>
+  nameWithType.vb: ResourceCollection(Of TResource)
+  fullName.vb: Octopus.Client.Model.ResourceCollection(Of TResource)
+  name.vb: ResourceCollection(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )

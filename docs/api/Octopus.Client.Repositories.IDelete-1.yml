@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.IDelete`1
+  commentId: T:Octopus.Client.Repositories.IDelete`1
+  id: IDelete`1
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.IDelete`1.Delete(`0)
+  langs:
+  - csharp
+  - vb
+  name: IDelete<TResource>
+  nameWithType: IDelete<TResource>
+  fullName: Octopus.Client.Repositories.IDelete<TResource>
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/IDelete.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IDelete
+    path: ../source/Octopus.Client/Repositories/IDelete.cs
+    startLine: 4
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public interface IDelete<in TResource>
+    typeParameters:
+    - id: TResource
+    content.vb: Public Interface IDelete(Of In TResource)
+  nameWithType.vb: IDelete(Of TResource)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Octopus.Client.Repositories.IDelete(Of TResource)
+  name.vb: IDelete(Of TResource)
+- uid: Octopus.Client.Repositories.IDelete`1.Delete(`0)
+  commentId: M:Octopus.Client.Repositories.IDelete`1.Delete(`0)
+  id: Delete(`0)
+  parent: Octopus.Client.Repositories.IDelete`1
+  langs:
+  - csharp
+  - vb
+  name: Delete(TResource)
+  nameWithType: IDelete<TResource>.Delete(TResource)
+  fullName: Octopus.Client.Repositories.IDelete<TResource>.Delete(TResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/IDelete.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Delete
+    path: ../source/Octopus.Client/Repositories/IDelete.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: void Delete(TResource resource)
+    parameters:
+    - id: resource
+      type: '{TResource}'
+    content.vb: Sub Delete(resource As TResource)
+  overload: Octopus.Client.Repositories.IDelete`1.Delete*
+  nameWithType.vb: IDelete(Of TResource).Delete(TResource)
+  fullName.vb: Octopus.Client.Repositories.IDelete(Of TResource).Delete(TResource)
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Repositories.IDelete`1.Delete*
+  commentId: Overload:Octopus.Client.Repositories.IDelete`1.Delete
+  name: Delete
+  nameWithType: IDelete<TResource>.Delete
+  fullName: Octopus.Client.Repositories.IDelete<TResource>.Delete
+  nameWithType.vb: IDelete(Of TResource).Delete
+  fullName.vb: Octopus.Client.Repositories.IDelete(Of TResource).Delete
+- uid: '{TResource}'
+  commentId: '!:TResource'
+  definition: TResource
+  name: TResource
+  nameWithType: TResource
+  fullName: TResource
+- uid: TResource
+  name: TResource
+  nameWithType: TResource
+  fullName: TResource

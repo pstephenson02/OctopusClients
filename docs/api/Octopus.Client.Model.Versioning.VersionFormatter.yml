@@ -1,0 +1,579 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.Versioning.VersionFormatter
+  commentId: T:Octopus.Client.Model.Versioning.VersionFormatter
+  id: VersionFormatter
+  parent: Octopus.Client.Model.Versioning
+  children:
+  - Octopus.Client.Model.Versioning.VersionFormatter.Format(System.String,System.Object,System.IFormatProvider)
+  - Octopus.Client.Model.Versioning.VersionFormatter.GetFormat(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: VersionFormatter
+  nameWithType: VersionFormatter
+  fullName: Octopus.Client.Model.Versioning.VersionFormatter
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/VersionFormatter.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: VersionFormatter
+    path: ../source/Octopus.Client/Model/Versioning/VersionFormatter.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Versioning
+  syntax:
+    content: 'public class VersionFormatter : IFormatProvider, ICustomFormatter'
+    content.vb: >-
+      Public Class VersionFormatter
+          Implements IFormatProvider, ICustomFormatter
+  inheritance:
+  - System.Object
+  implements:
+  - System.IFormatProvider
+  - System.ICustomFormatter
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.Versioning.VersionFormatter.Format(System.String,System.Object,System.IFormatProvider)
+  commentId: M:Octopus.Client.Model.Versioning.VersionFormatter.Format(System.String,System.Object,System.IFormatProvider)
+  id: Format(System.String,System.Object,System.IFormatProvider)
+  parent: Octopus.Client.Model.Versioning.VersionFormatter
+  langs:
+  - csharp
+  - vb
+  name: Format(String, Object, IFormatProvider)
+  nameWithType: VersionFormatter.Format(String, Object, IFormatProvider)
+  fullName: Octopus.Client.Model.Versioning.VersionFormatter.Format(System.String, System.Object, System.IFormatProvider)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/VersionFormatter.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Format
+    path: ../source/Octopus.Client/Model/Versioning/VersionFormatter.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Versioning
+  syntax:
+    content: public string Format(string format, object arg, IFormatProvider formatProvider)
+    parameters:
+    - id: format
+      type: System.String
+    - id: arg
+      type: System.Object
+    - id: formatProvider
+      type: System.IFormatProvider
+    return:
+      type: System.String
+    content.vb: Public Function Format(format As String, arg As Object, formatProvider As IFormatProvider) As String
+  overload: Octopus.Client.Model.Versioning.VersionFormatter.Format*
+  implements:
+  - System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.Versioning.VersionFormatter.GetFormat(System.Type)
+  commentId: M:Octopus.Client.Model.Versioning.VersionFormatter.GetFormat(System.Type)
+  id: GetFormat(System.Type)
+  parent: Octopus.Client.Model.Versioning.VersionFormatter
+  langs:
+  - csharp
+  - vb
+  name: GetFormat(Type)
+  nameWithType: VersionFormatter.GetFormat(Type)
+  fullName: Octopus.Client.Model.Versioning.VersionFormatter.GetFormat(System.Type)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/VersionFormatter.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetFormat
+    path: ../source/Octopus.Client/Model/Versioning/VersionFormatter.cs
+    startLine: 62
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Versioning
+  syntax:
+    content: public object GetFormat(Type formatType)
+    parameters:
+    - id: formatType
+      type: System.Type
+    return:
+      type: System.Object
+    content.vb: Public Function GetFormat(formatType As Type) As Object
+  overload: Octopus.Client.Model.Versioning.VersionFormatter.GetFormat*
+  implements:
+  - System.IFormatProvider.GetFormat(System.Type)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model.Versioning
+  commentId: N:Octopus.Client.Model.Versioning
+  name: Octopus.Client.Model.Versioning
+  nameWithType: Octopus.Client.Model.Versioning
+  fullName: Octopus.Client.Model.Versioning
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: System.ICustomFormatter
+  commentId: T:System.ICustomFormatter
+  parent: System
+  isExternal: true
+  name: ICustomFormatter
+  nameWithType: ICustomFormatter
+  fullName: System.ICustomFormatter
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.Versioning.VersionFormatter.Format*
+  commentId: Overload:Octopus.Client.Model.Versioning.VersionFormatter.Format
+  name: Format
+  nameWithType: VersionFormatter.Format
+  fullName: Octopus.Client.Model.Versioning.VersionFormatter.Format
+- uid: System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)
+  commentId: M:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)
+  parent: System.ICustomFormatter
+  isExternal: true
+  name: Format(String, Object, IFormatProvider)
+  nameWithType: ICustomFormatter.Format(String, Object, IFormatProvider)
+  fullName: System.ICustomFormatter.Format(System.String, System.Object, System.IFormatProvider)
+  spec.csharp:
+  - uid: System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)
+    name: Format
+    nameWithType: ICustomFormatter.Format
+    fullName: System.ICustomFormatter.Format
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)
+    name: Format
+    nameWithType: ICustomFormatter.Format
+    fullName: System.ICustomFormatter.Format
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.Versioning.VersionFormatter.GetFormat*
+  commentId: Overload:Octopus.Client.Model.Versioning.VersionFormatter.GetFormat
+  name: GetFormat
+  nameWithType: VersionFormatter.GetFormat
+  fullName: Octopus.Client.Model.Versioning.VersionFormatter.GetFormat
+- uid: System.IFormatProvider.GetFormat(System.Type)
+  commentId: M:System.IFormatProvider.GetFormat(System.Type)
+  parent: System.IFormatProvider
+  isExternal: true
+  name: GetFormat(Type)
+  nameWithType: IFormatProvider.GetFormat(Type)
+  fullName: System.IFormatProvider.GetFormat(System.Type)
+  spec.csharp:
+  - uid: System.IFormatProvider.GetFormat(System.Type)
+    name: GetFormat
+    nameWithType: IFormatProvider.GetFormat
+    fullName: System.IFormatProvider.GetFormat
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IFormatProvider.GetFormat(System.Type)
+    name: GetFormat
+    nameWithType: IFormatProvider.GetFormat
+    fullName: System.IFormatProvider.GetFormat
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

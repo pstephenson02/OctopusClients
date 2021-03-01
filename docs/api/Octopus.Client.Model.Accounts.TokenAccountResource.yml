@@ -1,0 +1,708 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.Accounts.TokenAccountResource
+  commentId: T:Octopus.Client.Model.Accounts.TokenAccountResource
+  id: TokenAccountResource
+  parent: Octopus.Client.Model.Accounts
+  children:
+  - Octopus.Client.Model.Accounts.TokenAccountResource.#ctor
+  - Octopus.Client.Model.Accounts.TokenAccountResource.AccountType
+  - Octopus.Client.Model.Accounts.TokenAccountResource.Token
+  langs:
+  - csharp
+  - vb
+  name: TokenAccountResource
+  nameWithType: TokenAccountResource
+  fullName: Octopus.Client.Model.Accounts.TokenAccountResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Accounts/TokenAccountResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TokenAccountResource
+    path: ../source/Octopus.Client/Model/Accounts/TokenAccountResource.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Accounts
+  syntax:
+    content: 'public class TokenAccountResource : AccountResource, IResource, IAuditedResource, INamedResource, IHaveSpaceResource'
+    content.vb: >-
+      Public Class TokenAccountResource
+          Inherits AccountResource
+          Implements IResource, IAuditedResource, INamedResource, IHaveSpaceResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  - Octopus.Client.Model.Accounts.AccountResource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  - Octopus.Client.Extensibility.INamedResource
+  - Octopus.Client.Extensibility.IHaveSpaceResource
+  inheritedMembers:
+  - Octopus.Client.Model.Accounts.AccountResource.Name
+  - Octopus.Client.Model.Accounts.AccountResource.Description
+  - Octopus.Client.Model.Accounts.AccountResource.EnvironmentIds
+  - Octopus.Client.Model.Accounts.AccountResource.TenantedDeploymentParticipation
+  - Octopus.Client.Model.Accounts.AccountResource.TenantIds
+  - Octopus.Client.Model.Accounts.AccountResource.TenantTags
+  - Octopus.Client.Model.Accounts.AccountResource.SpaceId
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.Accounts.TokenAccountResource.#ctor
+  commentId: M:Octopus.Client.Model.Accounts.TokenAccountResource.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.Accounts.TokenAccountResource
+  langs:
+  - csharp
+  - vb
+  name: TokenAccountResource()
+  nameWithType: TokenAccountResource.TokenAccountResource()
+  fullName: Octopus.Client.Model.Accounts.TokenAccountResource.TokenAccountResource()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Accounts/TokenAccountResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Accounts/TokenAccountResource.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Accounts
+  syntax:
+    content: public TokenAccountResource()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.Accounts.TokenAccountResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.Accounts.TokenAccountResource.AccountType
+  commentId: P:Octopus.Client.Model.Accounts.TokenAccountResource.AccountType
+  id: AccountType
+  parent: Octopus.Client.Model.Accounts.TokenAccountResource
+  langs:
+  - csharp
+  - vb
+  name: AccountType
+  nameWithType: TokenAccountResource.AccountType
+  fullName: Octopus.Client.Model.Accounts.TokenAccountResource.AccountType
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Accounts/TokenAccountResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AccountType
+    path: ../source/Octopus.Client/Model/Accounts/TokenAccountResource.cs
+    startLine: 12
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Accounts
+  syntax:
+    content: public override AccountType AccountType { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.Accounts.AccountType
+    content.vb: Public Overrides ReadOnly Property AccountType As AccountType
+  overridden: Octopus.Client.Model.Accounts.AccountResource.AccountType
+  overload: Octopus.Client.Model.Accounts.TokenAccountResource.AccountType*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Octopus.Client.Model.Accounts.TokenAccountResource.Token
+  commentId: P:Octopus.Client.Model.Accounts.TokenAccountResource.Token
+  id: Token
+  parent: Octopus.Client.Model.Accounts.TokenAccountResource
+  langs:
+  - csharp
+  - vb
+  name: Token
+  nameWithType: TokenAccountResource.Token
+  fullName: Octopus.Client.Model.Accounts.TokenAccountResource.Token
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Accounts/TokenAccountResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Token
+    path: ../source/Octopus.Client/Model/Accounts/TokenAccountResource.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Accounts
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "Please provide a token.")]
+
+      public SensitiveValue Token { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.SensitiveValue
+    content.vb: >-
+      <Required(ErrorMessage:="Please provide a token.")>
+
+      Public Property Token As SensitiveValue
+  overload: Octopus.Client.Model.Accounts.TokenAccountResource.Token*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Please provide a token.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model.Accounts
+  commentId: N:Octopus.Client.Model.Accounts
+  name: Octopus.Client.Model.Accounts
+  nameWithType: Octopus.Client.Model.Accounts
+  fullName: Octopus.Client.Model.Accounts
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Model.Accounts.AccountResource
+  commentId: T:Octopus.Client.Model.Accounts.AccountResource
+  parent: Octopus.Client.Model.Accounts
+  name: AccountResource
+  nameWithType: AccountResource
+  fullName: Octopus.Client.Model.Accounts.AccountResource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Extensibility.INamedResource
+  commentId: T:Octopus.Client.Extensibility.INamedResource
+  parent: Octopus.Client.Extensibility
+  name: INamedResource
+  nameWithType: INamedResource
+  fullName: Octopus.Client.Extensibility.INamedResource
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource
+  commentId: T:Octopus.Client.Extensibility.IHaveSpaceResource
+  parent: Octopus.Client.Extensibility
+  name: IHaveSpaceResource
+  nameWithType: IHaveSpaceResource
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource
+- uid: Octopus.Client.Model.Accounts.AccountResource.Name
+  commentId: P:Octopus.Client.Model.Accounts.AccountResource.Name
+  parent: Octopus.Client.Model.Accounts.AccountResource
+  name: Name
+  nameWithType: AccountResource.Name
+  fullName: Octopus.Client.Model.Accounts.AccountResource.Name
+- uid: Octopus.Client.Model.Accounts.AccountResource.Description
+  commentId: P:Octopus.Client.Model.Accounts.AccountResource.Description
+  parent: Octopus.Client.Model.Accounts.AccountResource
+  name: Description
+  nameWithType: AccountResource.Description
+  fullName: Octopus.Client.Model.Accounts.AccountResource.Description
+- uid: Octopus.Client.Model.Accounts.AccountResource.EnvironmentIds
+  commentId: P:Octopus.Client.Model.Accounts.AccountResource.EnvironmentIds
+  parent: Octopus.Client.Model.Accounts.AccountResource
+  name: EnvironmentIds
+  nameWithType: AccountResource.EnvironmentIds
+  fullName: Octopus.Client.Model.Accounts.AccountResource.EnvironmentIds
+- uid: Octopus.Client.Model.Accounts.AccountResource.TenantedDeploymentParticipation
+  commentId: P:Octopus.Client.Model.Accounts.AccountResource.TenantedDeploymentParticipation
+  parent: Octopus.Client.Model.Accounts.AccountResource
+  name: TenantedDeploymentParticipation
+  nameWithType: AccountResource.TenantedDeploymentParticipation
+  fullName: Octopus.Client.Model.Accounts.AccountResource.TenantedDeploymentParticipation
+- uid: Octopus.Client.Model.Accounts.AccountResource.TenantIds
+  commentId: P:Octopus.Client.Model.Accounts.AccountResource.TenantIds
+  parent: Octopus.Client.Model.Accounts.AccountResource
+  name: TenantIds
+  nameWithType: AccountResource.TenantIds
+  fullName: Octopus.Client.Model.Accounts.AccountResource.TenantIds
+- uid: Octopus.Client.Model.Accounts.AccountResource.TenantTags
+  commentId: P:Octopus.Client.Model.Accounts.AccountResource.TenantTags
+  parent: Octopus.Client.Model.Accounts.AccountResource
+  name: TenantTags
+  nameWithType: AccountResource.TenantTags
+  fullName: Octopus.Client.Model.Accounts.AccountResource.TenantTags
+- uid: Octopus.Client.Model.Accounts.AccountResource.SpaceId
+  commentId: P:Octopus.Client.Model.Accounts.AccountResource.SpaceId
+  parent: Octopus.Client.Model.Accounts.AccountResource
+  name: SpaceId
+  nameWithType: AccountResource.SpaceId
+  fullName: Octopus.Client.Model.Accounts.AccountResource.SpaceId
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.Accounts.TokenAccountResource.#ctor*
+  commentId: Overload:Octopus.Client.Model.Accounts.TokenAccountResource.#ctor
+  name: TokenAccountResource
+  nameWithType: TokenAccountResource.TokenAccountResource
+  fullName: Octopus.Client.Model.Accounts.TokenAccountResource.TokenAccountResource
+- uid: Octopus.Client.Model.Accounts.AccountResource.AccountType
+  commentId: P:Octopus.Client.Model.Accounts.AccountResource.AccountType
+  parent: Octopus.Client.Model.Accounts.AccountResource
+  name: AccountType
+  nameWithType: AccountResource.AccountType
+  fullName: Octopus.Client.Model.Accounts.AccountResource.AccountType
+- uid: Octopus.Client.Model.Accounts.TokenAccountResource.AccountType*
+  commentId: Overload:Octopus.Client.Model.Accounts.TokenAccountResource.AccountType
+  name: AccountType
+  nameWithType: TokenAccountResource.AccountType
+  fullName: Octopus.Client.Model.Accounts.TokenAccountResource.AccountType
+- uid: Octopus.Client.Model.Accounts.AccountType
+  commentId: T:Octopus.Client.Model.Accounts.AccountType
+  parent: Octopus.Client.Model.Accounts
+  name: AccountType
+  nameWithType: AccountType
+  fullName: Octopus.Client.Model.Accounts.AccountType
+- uid: Octopus.Client.Model.Accounts.TokenAccountResource.Token*
+  commentId: Overload:Octopus.Client.Model.Accounts.TokenAccountResource.Token
+  name: Token
+  nameWithType: TokenAccountResource.Token
+  fullName: Octopus.Client.Model.Accounts.TokenAccountResource.Token
+- uid: Octopus.Client.Model.SensitiveValue
+  commentId: T:Octopus.Client.Model.SensitiveValue
+  parent: Octopus.Client.Model
+  name: SensitiveValue
+  nameWithType: SensitiveValue
+  fullName: Octopus.Client.Model.SensitiveValue

@@ -1,0 +1,337 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.ITenantVariablesRepository
+  commentId: T:Octopus.Client.Repositories.Async.ITenantVariablesRepository
+  id: ITenantVariablesRepository
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.ITenantVariablesRepository.GetAll(Octopus.Client.Model.ProjectResource)
+  langs:
+  - csharp
+  - vb
+  name: ITenantVariablesRepository
+  nameWithType: ITenantVariablesRepository
+  fullName: Octopus.Client.Repositories.Async.ITenantVariablesRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TenantVariablesRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ITenantVariablesRepository
+    path: ../source/Octopus.Client/Repositories/Async/TenantVariablesRepository.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: 'public interface ITenantVariablesRepository : IGetAll<TenantVariableResource>'
+    content.vb: >-
+      Public Interface ITenantVariablesRepository
+          Inherits IGetAll(Of TenantVariableResource)
+  inheritedMembers:
+  - Octopus.Client.Repositories.Async.IGetAll{Octopus.Client.Model.TenantVariableResource}.GetAll
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.Async.ITenantVariablesRepository.GetAll(Octopus.Client.Model.ProjectResource)
+  commentId: M:Octopus.Client.Repositories.Async.ITenantVariablesRepository.GetAll(Octopus.Client.Model.ProjectResource)
+  id: GetAll(Octopus.Client.Model.ProjectResource)
+  parent: Octopus.Client.Repositories.Async.ITenantVariablesRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAll(ProjectResource)
+  nameWithType: ITenantVariablesRepository.GetAll(ProjectResource)
+  fullName: Octopus.Client.Repositories.Async.ITenantVariablesRepository.GetAll(Octopus.Client.Model.ProjectResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TenantVariablesRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetAll
+    path: ../source/Octopus.Client/Repositories/Async/TenantVariablesRepository.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<List<TenantVariableResource>> GetAll(ProjectResource projectResource)
+    parameters:
+    - id: projectResource
+      type: Octopus.Client.Model.ProjectResource
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.TenantVariableResource}}
+    content.vb: Function GetAll(projectResource As ProjectResource) As Task(Of List(Of TenantVariableResource))
+  overload: Octopus.Client.Repositories.Async.ITenantVariablesRepository.GetAll*
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.IGetAll{Octopus.Client.Model.TenantVariableResource}.GetAll
+  commentId: M:Octopus.Client.Repositories.Async.IGetAll{Octopus.Client.Model.TenantVariableResource}.GetAll
+  parent: Octopus.Client.Repositories.Async.IGetAll{Octopus.Client.Model.TenantVariableResource}
+  definition: Octopus.Client.Repositories.Async.IGetAll`1.GetAll
+  name: GetAll()
+  nameWithType: IGetAll<TenantVariableResource>.GetAll()
+  fullName: Octopus.Client.Repositories.Async.IGetAll<Octopus.Client.Model.TenantVariableResource>.GetAll()
+  nameWithType.vb: IGetAll(Of TenantVariableResource).GetAll()
+  fullName.vb: Octopus.Client.Repositories.Async.IGetAll(Of Octopus.Client.Model.TenantVariableResource).GetAll()
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGetAll`1.GetAll
+    name: GetAll
+    nameWithType: IGetAll<TenantVariableResource>.GetAll
+    fullName: Octopus.Client.Repositories.Async.IGetAll<Octopus.Client.Model.TenantVariableResource>.GetAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGetAll`1.GetAll
+    name: GetAll
+    nameWithType: IGetAll(Of TenantVariableResource).GetAll
+    fullName: Octopus.Client.Repositories.Async.IGetAll(Of Octopus.Client.Model.TenantVariableResource).GetAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGetAll`1.GetAll
+  commentId: M:Octopus.Client.Repositories.Async.IGetAll`1.GetAll
+  name: GetAll()
+  nameWithType: IGetAll<TResource>.GetAll()
+  fullName: Octopus.Client.Repositories.Async.IGetAll<TResource>.GetAll()
+  nameWithType.vb: IGetAll(Of TResource).GetAll()
+  fullName.vb: Octopus.Client.Repositories.Async.IGetAll(Of TResource).GetAll()
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGetAll`1.GetAll
+    name: GetAll
+    nameWithType: IGetAll<TResource>.GetAll
+    fullName: Octopus.Client.Repositories.Async.IGetAll<TResource>.GetAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGetAll`1.GetAll
+    name: GetAll
+    nameWithType: IGetAll(Of TResource).GetAll
+    fullName: Octopus.Client.Repositories.Async.IGetAll(Of TResource).GetAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGetAll{Octopus.Client.Model.TenantVariableResource}
+  commentId: T:Octopus.Client.Repositories.Async.IGetAll{Octopus.Client.Model.TenantVariableResource}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.IGetAll`1
+  name: IGetAll<TenantVariableResource>
+  nameWithType: IGetAll<TenantVariableResource>
+  fullName: Octopus.Client.Repositories.Async.IGetAll<Octopus.Client.Model.TenantVariableResource>
+  nameWithType.vb: IGetAll(Of TenantVariableResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGetAll(Of Octopus.Client.Model.TenantVariableResource)
+  name.vb: IGetAll(Of TenantVariableResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGetAll`1
+    name: IGetAll
+    nameWithType: IGetAll
+    fullName: Octopus.Client.Repositories.Async.IGetAll
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TenantVariableResource
+    name: TenantVariableResource
+    nameWithType: TenantVariableResource
+    fullName: Octopus.Client.Model.TenantVariableResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGetAll`1
+    name: IGetAll
+    nameWithType: IGetAll
+    fullName: Octopus.Client.Repositories.Async.IGetAll
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TenantVariableResource
+    name: TenantVariableResource
+    nameWithType: TenantVariableResource
+    fullName: Octopus.Client.Model.TenantVariableResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGetAll`1
+  commentId: T:Octopus.Client.Repositories.Async.IGetAll`1
+  name: IGetAll<TResource>
+  nameWithType: IGetAll<TResource>
+  fullName: Octopus.Client.Repositories.Async.IGetAll<TResource>
+  nameWithType.vb: IGetAll(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGetAll(Of TResource)
+  name.vb: IGetAll(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGetAll`1
+    name: IGetAll
+    nameWithType: IGetAll
+    fullName: Octopus.Client.Repositories.Async.IGetAll
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGetAll`1
+    name: IGetAll
+    nameWithType: IGetAll
+    fullName: Octopus.Client.Repositories.Async.IGetAll
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ITenantVariablesRepository.GetAll*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITenantVariablesRepository.GetAll
+  name: GetAll
+  nameWithType: ITenantVariablesRepository.GetAll
+  fullName: Octopus.Client.Repositories.Async.ITenantVariablesRepository.GetAll
+- uid: Octopus.Client.Model.ProjectResource
+  commentId: T:Octopus.Client.Model.ProjectResource
+  parent: Octopus.Client.Model
+  name: ProjectResource
+  nameWithType: ProjectResource
+  fullName: Octopus.Client.Model.ProjectResource
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.TenantVariableResource}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.TenantVariableResource}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<TenantVariableResource>>
+  nameWithType: Task<List<TenantVariableResource>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Octopus.Client.Model.TenantVariableResource>>
+  nameWithType.vb: Task(Of List(Of TenantVariableResource))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Octopus.Client.Model.TenantVariableResource))
+  name.vb: Task(Of List(Of TenantVariableResource))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TenantVariableResource
+    name: TenantVariableResource
+    nameWithType: TenantVariableResource
+    fullName: Octopus.Client.Model.TenantVariableResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TenantVariableResource
+    name: TenantVariableResource
+    nameWithType: TenantVariableResource
+    fullName: Octopus.Client.Model.TenantVariableResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

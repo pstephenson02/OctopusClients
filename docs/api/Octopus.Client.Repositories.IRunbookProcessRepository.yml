@@ -1,0 +1,577 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.IRunbookProcessRepository
+  commentId: T:Octopus.Client.Repositories.IRunbookProcessRepository
+  id: IRunbookProcessRepository
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.IRunbookProcessRepository.GetTemplate(Octopus.Client.Model.RunbookProcessResource)
+  langs:
+  - csharp
+  - vb
+  name: IRunbookProcessRepository
+  nameWithType: IRunbookProcessRepository
+  fullName: Octopus.Client.Repositories.IRunbookProcessRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/RunbookProcessRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IRunbookProcessRepository
+    path: ../source/Octopus.Client/Repositories/RunbookProcessRepository.cs
+    startLine: 4
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: 'public interface IRunbookProcessRepository : IGet<RunbookProcessResource>, IModify<RunbookProcessResource>'
+    content.vb: >-
+      Public Interface IRunbookProcessRepository
+          Inherits IGet(Of RunbookProcessResource), IModify(Of RunbookProcessResource)
+  inheritedMembers:
+  - Octopus.Client.Repositories.IGet{Octopus.Client.Model.RunbookProcessResource}.Get(System.String)
+  - Octopus.Client.Repositories.IGet{Octopus.Client.Model.RunbookProcessResource}.Get(System.String[])
+  - Octopus.Client.Repositories.IGet{Octopus.Client.Model.RunbookProcessResource}.Refresh(Octopus.Client.Model.RunbookProcessResource)
+  - Octopus.Client.Repositories.IModify{Octopus.Client.Model.RunbookProcessResource}.Modify(Octopus.Client.Model.RunbookProcessResource)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.IRunbookProcessRepository.GetTemplate(Octopus.Client.Model.RunbookProcessResource)
+  commentId: M:Octopus.Client.Repositories.IRunbookProcessRepository.GetTemplate(Octopus.Client.Model.RunbookProcessResource)
+  id: GetTemplate(Octopus.Client.Model.RunbookProcessResource)
+  parent: Octopus.Client.Repositories.IRunbookProcessRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTemplate(RunbookProcessResource)
+  nameWithType: IRunbookProcessRepository.GetTemplate(RunbookProcessResource)
+  fullName: Octopus.Client.Repositories.IRunbookProcessRepository.GetTemplate(Octopus.Client.Model.RunbookProcessResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/RunbookProcessRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetTemplate
+    path: ../source/Octopus.Client/Repositories/RunbookProcessRepository.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: RunbookSnapshotTemplateResource GetTemplate(RunbookProcessResource runbookProcess)
+    parameters:
+    - id: runbookProcess
+      type: Octopus.Client.Model.RunbookProcessResource
+    return:
+      type: Octopus.Client.Model.RunbookSnapshotTemplateResource
+    content.vb: Function GetTemplate(runbookProcess As RunbookProcessResource) As RunbookSnapshotTemplateResource
+  overload: Octopus.Client.Repositories.IRunbookProcessRepository.GetTemplate*
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Repositories.IGet{Octopus.Client.Model.RunbookProcessResource}.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.IGet{Octopus.Client.Model.RunbookProcessResource}.Get(System.String)
+  parent: Octopus.Client.Repositories.IGet{Octopus.Client.Model.RunbookProcessResource}
+  definition: Octopus.Client.Repositories.IGet`1.Get(System.String)
+  name: Get(String)
+  nameWithType: IGet<RunbookProcessResource>.Get(String)
+  fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.RunbookProcessResource>.Get(System.String)
+  nameWithType.vb: IGet(Of RunbookProcessResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.RunbookProcessResource).Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet<RunbookProcessResource>.Get
+    fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.RunbookProcessResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet(Of RunbookProcessResource).Get
+    fullName: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.RunbookProcessResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet{Octopus.Client.Model.RunbookProcessResource}.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.IGet{Octopus.Client.Model.RunbookProcessResource}.Get(System.String[])
+  parent: Octopus.Client.Repositories.IGet{Octopus.Client.Model.RunbookProcessResource}
+  definition: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+  name: Get(String[])
+  nameWithType: IGet<RunbookProcessResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.RunbookProcessResource>.Get(System.String[])
+  nameWithType.vb: IGet(Of RunbookProcessResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.RunbookProcessResource).Get(System.String())
+  name.vb: Get(String())
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet<RunbookProcessResource>.Get
+    fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.RunbookProcessResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet(Of RunbookProcessResource).Get
+    fullName: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.RunbookProcessResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet{Octopus.Client.Model.RunbookProcessResource}.Refresh(Octopus.Client.Model.RunbookProcessResource)
+  commentId: M:Octopus.Client.Repositories.IGet{Octopus.Client.Model.RunbookProcessResource}.Refresh(Octopus.Client.Model.RunbookProcessResource)
+  parent: Octopus.Client.Repositories.IGet{Octopus.Client.Model.RunbookProcessResource}
+  definition: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+  name: Refresh(RunbookProcessResource)
+  nameWithType: IGet<RunbookProcessResource>.Refresh(RunbookProcessResource)
+  fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.RunbookProcessResource>.Refresh(Octopus.Client.Model.RunbookProcessResource)
+  nameWithType.vb: IGet(Of RunbookProcessResource).Refresh(RunbookProcessResource)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.RunbookProcessResource).Refresh(Octopus.Client.Model.RunbookProcessResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet<RunbookProcessResource>.Refresh
+    fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.RunbookProcessResource>.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.RunbookProcessResource
+    name: RunbookProcessResource
+    nameWithType: RunbookProcessResource
+    fullName: Octopus.Client.Model.RunbookProcessResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet(Of RunbookProcessResource).Refresh
+    fullName: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.RunbookProcessResource).Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.RunbookProcessResource
+    name: RunbookProcessResource
+    nameWithType: RunbookProcessResource
+    fullName: Octopus.Client.Model.RunbookProcessResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IModify{Octopus.Client.Model.RunbookProcessResource}.Modify(Octopus.Client.Model.RunbookProcessResource)
+  commentId: M:Octopus.Client.Repositories.IModify{Octopus.Client.Model.RunbookProcessResource}.Modify(Octopus.Client.Model.RunbookProcessResource)
+  parent: Octopus.Client.Repositories.IModify{Octopus.Client.Model.RunbookProcessResource}
+  definition: Octopus.Client.Repositories.IModify`1.Modify(`0)
+  name: Modify(RunbookProcessResource)
+  nameWithType: IModify<RunbookProcessResource>.Modify(RunbookProcessResource)
+  fullName: Octopus.Client.Repositories.IModify<Octopus.Client.Model.RunbookProcessResource>.Modify(Octopus.Client.Model.RunbookProcessResource)
+  nameWithType.vb: IModify(Of RunbookProcessResource).Modify(RunbookProcessResource)
+  fullName.vb: Octopus.Client.Repositories.IModify(Of Octopus.Client.Model.RunbookProcessResource).Modify(Octopus.Client.Model.RunbookProcessResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify<RunbookProcessResource>.Modify
+    fullName: Octopus.Client.Repositories.IModify<Octopus.Client.Model.RunbookProcessResource>.Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.RunbookProcessResource
+    name: RunbookProcessResource
+    nameWithType: RunbookProcessResource
+    fullName: Octopus.Client.Model.RunbookProcessResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify(Of RunbookProcessResource).Modify
+    fullName: Octopus.Client.Repositories.IModify(Of Octopus.Client.Model.RunbookProcessResource).Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.RunbookProcessResource
+    name: RunbookProcessResource
+    nameWithType: RunbookProcessResource
+    fullName: Octopus.Client.Model.RunbookProcessResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.IGet`1.Get(System.String)
+  isExternal: true
+  name: Get(String)
+  nameWithType: IGet<TResource>.Get(String)
+  fullName: Octopus.Client.Repositories.IGet<TResource>.Get(System.String)
+  nameWithType.vb: IGet(Of TResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource).Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet<TResource>.Get
+    fullName: Octopus.Client.Repositories.IGet<TResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet(Of TResource).Get
+    fullName: Octopus.Client.Repositories.IGet(Of TResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet{Octopus.Client.Model.RunbookProcessResource}
+  commentId: T:Octopus.Client.Repositories.IGet{Octopus.Client.Model.RunbookProcessResource}
+  parent: Octopus.Client.Repositories
+  definition: Octopus.Client.Repositories.IGet`1
+  name: IGet<RunbookProcessResource>
+  nameWithType: IGet<RunbookProcessResource>
+  fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.RunbookProcessResource>
+  nameWithType.vb: IGet(Of RunbookProcessResource)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.RunbookProcessResource)
+  name.vb: IGet(Of RunbookProcessResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.IGet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.RunbookProcessResource
+    name: RunbookProcessResource
+    nameWithType: RunbookProcessResource
+    fullName: Octopus.Client.Model.RunbookProcessResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.IGet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.RunbookProcessResource
+    name: RunbookProcessResource
+    nameWithType: RunbookProcessResource
+    fullName: Octopus.Client.Model.RunbookProcessResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.IGet`1.Get(System.String[])
+  isExternal: true
+  name: Get(String[])
+  nameWithType: IGet<TResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.IGet<TResource>.Get(System.String[])
+  nameWithType.vb: IGet(Of TResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource).Get(System.String())
+  name.vb: Get(String())
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet<TResource>.Get
+    fullName: Octopus.Client.Repositories.IGet<TResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet(Of TResource).Get
+    fullName: Octopus.Client.Repositories.IGet(Of TResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+  commentId: M:Octopus.Client.Repositories.IGet`1.Refresh(`0)
+  name: Refresh(TResource)
+  nameWithType: IGet<TResource>.Refresh(TResource)
+  fullName: Octopus.Client.Repositories.IGet<TResource>.Refresh(TResource)
+  nameWithType.vb: IGet(Of TResource).Refresh(TResource)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource).Refresh(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet<TResource>.Refresh
+    fullName: Octopus.Client.Repositories.IGet<TResource>.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet(Of TResource).Refresh
+    fullName: Octopus.Client.Repositories.IGet(Of TResource).Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+  commentId: M:Octopus.Client.Repositories.IModify`1.Modify(`0)
+  name: Modify(TResource)
+  nameWithType: IModify<TResource>.Modify(TResource)
+  fullName: Octopus.Client.Repositories.IModify<TResource>.Modify(TResource)
+  nameWithType.vb: IModify(Of TResource).Modify(TResource)
+  fullName.vb: Octopus.Client.Repositories.IModify(Of TResource).Modify(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify<TResource>.Modify
+    fullName: Octopus.Client.Repositories.IModify<TResource>.Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify(Of TResource).Modify
+    fullName: Octopus.Client.Repositories.IModify(Of TResource).Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IModify{Octopus.Client.Model.RunbookProcessResource}
+  commentId: T:Octopus.Client.Repositories.IModify{Octopus.Client.Model.RunbookProcessResource}
+  parent: Octopus.Client.Repositories
+  definition: Octopus.Client.Repositories.IModify`1
+  name: IModify<RunbookProcessResource>
+  nameWithType: IModify<RunbookProcessResource>
+  fullName: Octopus.Client.Repositories.IModify<Octopus.Client.Model.RunbookProcessResource>
+  nameWithType.vb: IModify(Of RunbookProcessResource)
+  fullName.vb: Octopus.Client.Repositories.IModify(Of Octopus.Client.Model.RunbookProcessResource)
+  name.vb: IModify(Of RunbookProcessResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.IModify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.RunbookProcessResource
+    name: RunbookProcessResource
+    nameWithType: RunbookProcessResource
+    fullName: Octopus.Client.Model.RunbookProcessResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.IModify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.RunbookProcessResource
+    name: RunbookProcessResource
+    nameWithType: RunbookProcessResource
+    fullName: Octopus.Client.Model.RunbookProcessResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet`1
+  commentId: T:Octopus.Client.Repositories.IGet`1
+  name: IGet<TResource>
+  nameWithType: IGet<TResource>
+  fullName: Octopus.Client.Repositories.IGet<TResource>
+  nameWithType.vb: IGet(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource)
+  name.vb: IGet(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.IGet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.IGet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IModify`1
+  commentId: T:Octopus.Client.Repositories.IModify`1
+  name: IModify<TResource>
+  nameWithType: IModify<TResource>
+  fullName: Octopus.Client.Repositories.IModify<TResource>
+  nameWithType.vb: IModify(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.IModify(Of TResource)
+  name.vb: IModify(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.IModify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.IModify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IRunbookProcessRepository.GetTemplate*
+  commentId: Overload:Octopus.Client.Repositories.IRunbookProcessRepository.GetTemplate
+  name: GetTemplate
+  nameWithType: IRunbookProcessRepository.GetTemplate
+  fullName: Octopus.Client.Repositories.IRunbookProcessRepository.GetTemplate
+- uid: Octopus.Client.Model.RunbookProcessResource
+  commentId: T:Octopus.Client.Model.RunbookProcessResource
+  parent: Octopus.Client.Model
+  name: RunbookProcessResource
+  nameWithType: RunbookProcessResource
+  fullName: Octopus.Client.Model.RunbookProcessResource
+- uid: Octopus.Client.Model.RunbookSnapshotTemplateResource
+  commentId: T:Octopus.Client.Model.RunbookSnapshotTemplateResource
+  parent: Octopus.Client.Model
+  name: RunbookSnapshotTemplateResource
+  nameWithType: RunbookSnapshotTemplateResource
+  fullName: Octopus.Client.Model.RunbookSnapshotTemplateResource
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model

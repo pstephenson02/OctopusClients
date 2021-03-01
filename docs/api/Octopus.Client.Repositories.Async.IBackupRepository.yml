@@ -1,0 +1,209 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.IBackupRepository
+  commentId: T:Octopus.Client.Repositories.Async.IBackupRepository
+  id: IBackupRepository
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.IBackupRepository.GetConfiguration
+  - Octopus.Client.Repositories.Async.IBackupRepository.ModifyConfiguration(Octopus.Client.Model.BackupConfigurationResource)
+  langs:
+  - csharp
+  - vb
+  name: IBackupRepository
+  nameWithType: IBackupRepository
+  fullName: Octopus.Client.Repositories.Async.IBackupRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/BackupRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IBackupRepository
+    path: ../source/Octopus.Client/Repositories/Async/BackupRepository.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: public interface IBackupRepository
+    content.vb: Public Interface IBackupRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.Async.IBackupRepository.GetConfiguration
+  commentId: M:Octopus.Client.Repositories.Async.IBackupRepository.GetConfiguration
+  id: GetConfiguration
+  parent: Octopus.Client.Repositories.Async.IBackupRepository
+  langs:
+  - csharp
+  - vb
+  name: GetConfiguration()
+  nameWithType: IBackupRepository.GetConfiguration()
+  fullName: Octopus.Client.Repositories.Async.IBackupRepository.GetConfiguration()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/BackupRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetConfiguration
+    path: ../source/Octopus.Client/Repositories/Async/BackupRepository.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<BackupConfigurationResource> GetConfiguration()
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.BackupConfigurationResource}
+    content.vb: Function GetConfiguration As Task(Of BackupConfigurationResource)
+  overload: Octopus.Client.Repositories.Async.IBackupRepository.GetConfiguration*
+- uid: Octopus.Client.Repositories.Async.IBackupRepository.ModifyConfiguration(Octopus.Client.Model.BackupConfigurationResource)
+  commentId: M:Octopus.Client.Repositories.Async.IBackupRepository.ModifyConfiguration(Octopus.Client.Model.BackupConfigurationResource)
+  id: ModifyConfiguration(Octopus.Client.Model.BackupConfigurationResource)
+  parent: Octopus.Client.Repositories.Async.IBackupRepository
+  langs:
+  - csharp
+  - vb
+  name: ModifyConfiguration(BackupConfigurationResource)
+  nameWithType: IBackupRepository.ModifyConfiguration(BackupConfigurationResource)
+  fullName: Octopus.Client.Repositories.Async.IBackupRepository.ModifyConfiguration(Octopus.Client.Model.BackupConfigurationResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/BackupRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ModifyConfiguration
+    path: ../source/Octopus.Client/Repositories/Async/BackupRepository.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<BackupConfigurationResource> ModifyConfiguration(BackupConfigurationResource backupConfiguration)
+    parameters:
+    - id: backupConfiguration
+      type: Octopus.Client.Model.BackupConfigurationResource
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.BackupConfigurationResource}
+    content.vb: Function ModifyConfiguration(backupConfiguration As BackupConfigurationResource) As Task(Of BackupConfigurationResource)
+  overload: Octopus.Client.Repositories.Async.IBackupRepository.ModifyConfiguration*
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.IBackupRepository.GetConfiguration*
+  commentId: Overload:Octopus.Client.Repositories.Async.IBackupRepository.GetConfiguration
+  name: GetConfiguration
+  nameWithType: IBackupRepository.GetConfiguration
+  fullName: Octopus.Client.Repositories.Async.IBackupRepository.GetConfiguration
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.BackupConfigurationResource}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.BackupConfigurationResource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<BackupConfigurationResource>
+  nameWithType: Task<BackupConfigurationResource>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.BackupConfigurationResource>
+  nameWithType.vb: Task(Of BackupConfigurationResource)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.BackupConfigurationResource)
+  name.vb: Task(Of BackupConfigurationResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.BackupConfigurationResource
+    name: BackupConfigurationResource
+    nameWithType: BackupConfigurationResource
+    fullName: Octopus.Client.Model.BackupConfigurationResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.BackupConfigurationResource
+    name: BackupConfigurationResource
+    nameWithType: BackupConfigurationResource
+    fullName: Octopus.Client.Model.BackupConfigurationResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Octopus.Client.Repositories.Async.IBackupRepository.ModifyConfiguration*
+  commentId: Overload:Octopus.Client.Repositories.Async.IBackupRepository.ModifyConfiguration
+  name: ModifyConfiguration
+  nameWithType: IBackupRepository.ModifyConfiguration
+  fullName: Octopus.Client.Repositories.Async.IBackupRepository.ModifyConfiguration
+- uid: Octopus.Client.Model.BackupConfigurationResource
+  commentId: T:Octopus.Client.Model.BackupConfigurationResource
+  parent: Octopus.Client.Model
+  name: BackupConfigurationResource
+  nameWithType: BackupConfigurationResource
+  fullName: Octopus.Client.Model.BackupConfigurationResource
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model

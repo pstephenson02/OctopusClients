@@ -1,0 +1,462 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.ProcessReferenceDataItem
+  commentId: T:Octopus.Client.Model.ProcessReferenceDataItem
+  id: ProcessReferenceDataItem
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.ProcessReferenceDataItem.#ctor(System.String,System.String,Octopus.Client.Model.ProcessType)
+  - Octopus.Client.Model.ProcessReferenceDataItem.ProcessType
+  langs:
+  - csharp
+  - vb
+  name: ProcessReferenceDataItem
+  nameWithType: ProcessReferenceDataItem
+  fullName: Octopus.Client.Model.ProcessReferenceDataItem
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProcessReferenceDataItem.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProcessReferenceDataItem
+    path: ../source/Octopus.Client/Model/ProcessReferenceDataItem.cs
+    startLine: 2
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class ProcessReferenceDataItem : ReferenceDataItem'
+    content.vb: >-
+      Public Class ProcessReferenceDataItem
+          Inherits ReferenceDataItem
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.ReferenceDataItem
+  inheritedMembers:
+  - Octopus.Client.Model.ReferenceDataItem.Id
+  - Octopus.Client.Model.ReferenceDataItem.Name
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.ProcessReferenceDataItem.ProcessType
+  commentId: P:Octopus.Client.Model.ProcessReferenceDataItem.ProcessType
+  id: ProcessType
+  parent: Octopus.Client.Model.ProcessReferenceDataItem
+  langs:
+  - csharp
+  - vb
+  name: ProcessType
+  nameWithType: ProcessReferenceDataItem.ProcessType
+  fullName: Octopus.Client.Model.ProcessReferenceDataItem.ProcessType
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProcessReferenceDataItem.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProcessType
+    path: ../source/Octopus.Client/Model/ProcessReferenceDataItem.cs
+    startLine: 3
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProcessType ProcessType { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ProcessType
+    content.vb: Public Property ProcessType As ProcessType
+  overload: Octopus.Client.Model.ProcessReferenceDataItem.ProcessType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProcessReferenceDataItem.#ctor(System.String,System.String,Octopus.Client.Model.ProcessType)
+  commentId: M:Octopus.Client.Model.ProcessReferenceDataItem.#ctor(System.String,System.String,Octopus.Client.Model.ProcessType)
+  id: '#ctor(System.String,System.String,Octopus.Client.Model.ProcessType)'
+  parent: Octopus.Client.Model.ProcessReferenceDataItem
+  langs:
+  - csharp
+  - vb
+  name: ProcessReferenceDataItem(String, String, ProcessType)
+  nameWithType: ProcessReferenceDataItem.ProcessReferenceDataItem(String, String, ProcessType)
+  fullName: Octopus.Client.Model.ProcessReferenceDataItem.ProcessReferenceDataItem(System.String, System.String, Octopus.Client.Model.ProcessType)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProcessReferenceDataItem.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/ProcessReferenceDataItem.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProcessReferenceDataItem(string id, string name, ProcessType processType)
+    parameters:
+    - id: id
+      type: System.String
+    - id: name
+      type: System.String
+    - id: processType
+      type: Octopus.Client.Model.ProcessType
+    content.vb: Public Sub New(id As String, name As String, processType As ProcessType)
+  overload: Octopus.Client.Model.ProcessReferenceDataItem.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.ReferenceDataItem
+  commentId: T:Octopus.Client.Model.ReferenceDataItem
+  parent: Octopus.Client.Model
+  name: ReferenceDataItem
+  nameWithType: ReferenceDataItem
+  fullName: Octopus.Client.Model.ReferenceDataItem
+- uid: Octopus.Client.Model.ReferenceDataItem.Id
+  commentId: P:Octopus.Client.Model.ReferenceDataItem.Id
+  parent: Octopus.Client.Model.ReferenceDataItem
+  name: Id
+  nameWithType: ReferenceDataItem.Id
+  fullName: Octopus.Client.Model.ReferenceDataItem.Id
+- uid: Octopus.Client.Model.ReferenceDataItem.Name
+  commentId: P:Octopus.Client.Model.ReferenceDataItem.Name
+  parent: Octopus.Client.Model.ReferenceDataItem
+  name: Name
+  nameWithType: ReferenceDataItem.Name
+  fullName: Octopus.Client.Model.ReferenceDataItem.Name
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.ProcessReferenceDataItem.ProcessType*
+  commentId: Overload:Octopus.Client.Model.ProcessReferenceDataItem.ProcessType
+  name: ProcessType
+  nameWithType: ProcessReferenceDataItem.ProcessType
+  fullName: Octopus.Client.Model.ProcessReferenceDataItem.ProcessType
+- uid: Octopus.Client.Model.ProcessType
+  commentId: T:Octopus.Client.Model.ProcessType
+  parent: Octopus.Client.Model
+  name: ProcessType
+  nameWithType: ProcessType
+  fullName: Octopus.Client.Model.ProcessType
+- uid: Octopus.Client.Model.ProcessReferenceDataItem.#ctor*
+  commentId: Overload:Octopus.Client.Model.ProcessReferenceDataItem.#ctor
+  name: ProcessReferenceDataItem
+  nameWithType: ProcessReferenceDataItem.ProcessReferenceDataItem
+  fullName: Octopus.Client.Model.ProcessReferenceDataItem.ProcessReferenceDataItem
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

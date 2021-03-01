@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.IGetAll`1
+  commentId: T:Octopus.Client.Repositories.Async.IGetAll`1
+  id: IGetAll`1
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.IGetAll`1.GetAll
+  langs:
+  - csharp
+  - vb
+  name: IGetAll<TResource>
+  nameWithType: IGetAll<TResource>
+  fullName: Octopus.Client.Repositories.Async.IGetAll<TResource>
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/IGetAll.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IGetAll
+    path: ../source/Octopus.Client/Repositories/Async/IGetAll.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: public interface IGetAll<TResource>
+    typeParameters:
+    - id: TResource
+    content.vb: Public Interface IGetAll(Of TResource)
+  nameWithType.vb: IGetAll(Of TResource)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Octopus.Client.Repositories.Async.IGetAll(Of TResource)
+  name.vb: IGetAll(Of TResource)
+- uid: Octopus.Client.Repositories.Async.IGetAll`1.GetAll
+  commentId: M:Octopus.Client.Repositories.Async.IGetAll`1.GetAll
+  id: GetAll
+  parent: Octopus.Client.Repositories.Async.IGetAll`1
+  langs:
+  - csharp
+  - vb
+  name: GetAll()
+  nameWithType: IGetAll<TResource>.GetAll()
+  fullName: Octopus.Client.Repositories.Async.IGetAll<TResource>.GetAll()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/IGetAll.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetAll
+    path: ../source/Octopus.Client/Repositories/Async/IGetAll.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<List<TResource>> GetAll()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{{TResource}}}
+    content.vb: Function GetAll As Task(Of List(Of TResource))
+  overload: Octopus.Client.Repositories.Async.IGetAll`1.GetAll*
+  nameWithType.vb: IGetAll(Of TResource).GetAll()
+  fullName.vb: Octopus.Client.Repositories.Async.IGetAll(Of TResource).GetAll()
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.IGetAll`1.GetAll*
+  commentId: Overload:Octopus.Client.Repositories.Async.IGetAll`1.GetAll
+  name: GetAll
+  nameWithType: IGetAll<TResource>.GetAll
+  fullName: Octopus.Client.Repositories.Async.IGetAll<TResource>.GetAll
+  nameWithType.vb: IGetAll(Of TResource).GetAll
+  fullName.vb: Octopus.Client.Repositories.Async.IGetAll(Of TResource).GetAll
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{{TResource}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{`0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<TResource>>
+  nameWithType: Task<List<TResource>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<TResource>>
+  nameWithType.vb: Task(Of List(Of TResource))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of TResource))
+  name.vb: Task(Of List(Of TResource))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

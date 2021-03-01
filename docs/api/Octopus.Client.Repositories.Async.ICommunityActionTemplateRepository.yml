@@ -1,0 +1,588 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository
+  commentId: T:Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository
+  id: ICommunityActionTemplateRepository
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.GetInstalledTemplate(Octopus.Client.Model.CommunityActionTemplateResource)
+  - Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.Install(Octopus.Client.Model.CommunityActionTemplateResource)
+  - Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.UpdateInstallation(Octopus.Client.Model.CommunityActionTemplateResource)
+  langs:
+  - csharp
+  - vb
+  name: ICommunityActionTemplateRepository
+  nameWithType: ICommunityActionTemplateRepository
+  fullName: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/CommunityActionTemplateRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ICommunityActionTemplateRepository
+    path: ../source/Octopus.Client/Repositories/Async/CommunityActionTemplateRepository.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: 'public interface ICommunityActionTemplateRepository : IGet<CommunityActionTemplateResource>'
+    content.vb: >-
+      Public Interface ICommunityActionTemplateRepository
+          Inherits IGet(Of CommunityActionTemplateResource)
+  inheritedMembers:
+  - Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.CommunityActionTemplateResource}.Get(System.String)
+  - Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.CommunityActionTemplateResource}.Get(System.String[])
+  - Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.CommunityActionTemplateResource}.Refresh(Octopus.Client.Model.CommunityActionTemplateResource)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.GetInstalledTemplate(Octopus.Client.Model.CommunityActionTemplateResource)
+  commentId: M:Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.GetInstalledTemplate(Octopus.Client.Model.CommunityActionTemplateResource)
+  id: GetInstalledTemplate(Octopus.Client.Model.CommunityActionTemplateResource)
+  parent: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository
+  langs:
+  - csharp
+  - vb
+  name: GetInstalledTemplate(CommunityActionTemplateResource)
+  nameWithType: ICommunityActionTemplateRepository.GetInstalledTemplate(CommunityActionTemplateResource)
+  fullName: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.GetInstalledTemplate(Octopus.Client.Model.CommunityActionTemplateResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/CommunityActionTemplateRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetInstalledTemplate
+    path: ../source/Octopus.Client/Repositories/Async/CommunityActionTemplateRepository.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<ActionTemplateResource> GetInstalledTemplate(CommunityActionTemplateResource resource)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.CommunityActionTemplateResource
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.ActionTemplateResource}
+    content.vb: Function GetInstalledTemplate(resource As CommunityActionTemplateResource) As Task(Of ActionTemplateResource)
+  overload: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.GetInstalledTemplate*
+- uid: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.Install(Octopus.Client.Model.CommunityActionTemplateResource)
+  commentId: M:Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.Install(Octopus.Client.Model.CommunityActionTemplateResource)
+  id: Install(Octopus.Client.Model.CommunityActionTemplateResource)
+  parent: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository
+  langs:
+  - csharp
+  - vb
+  name: Install(CommunityActionTemplateResource)
+  nameWithType: ICommunityActionTemplateRepository.Install(CommunityActionTemplateResource)
+  fullName: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.Install(Octopus.Client.Model.CommunityActionTemplateResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/CommunityActionTemplateRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Install
+    path: ../source/Octopus.Client/Repositories/Async/CommunityActionTemplateRepository.cs
+    startLine: 12
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task Install(CommunityActionTemplateResource resource)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.CommunityActionTemplateResource
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function Install(resource As CommunityActionTemplateResource) As Task
+  overload: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.Install*
+- uid: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.UpdateInstallation(Octopus.Client.Model.CommunityActionTemplateResource)
+  commentId: M:Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.UpdateInstallation(Octopus.Client.Model.CommunityActionTemplateResource)
+  id: UpdateInstallation(Octopus.Client.Model.CommunityActionTemplateResource)
+  parent: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository
+  langs:
+  - csharp
+  - vb
+  name: UpdateInstallation(CommunityActionTemplateResource)
+  nameWithType: ICommunityActionTemplateRepository.UpdateInstallation(CommunityActionTemplateResource)
+  fullName: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.UpdateInstallation(Octopus.Client.Model.CommunityActionTemplateResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/CommunityActionTemplateRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: UpdateInstallation
+    path: ../source/Octopus.Client/Repositories/Async/CommunityActionTemplateRepository.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task UpdateInstallation(CommunityActionTemplateResource resource)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.CommunityActionTemplateResource
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdateInstallation(resource As CommunityActionTemplateResource) As Task
+  overload: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.UpdateInstallation*
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.CommunityActionTemplateResource}.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.CommunityActionTemplateResource}.Get(System.String)
+  parent: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.CommunityActionTemplateResource}
+  definition: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+  name: Get(String)
+  nameWithType: IGet<CommunityActionTemplateResource>.Get(String)
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.CommunityActionTemplateResource>.Get(System.String)
+  nameWithType.vb: IGet(Of CommunityActionTemplateResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.CommunityActionTemplateResource).Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet<CommunityActionTemplateResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.CommunityActionTemplateResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet(Of CommunityActionTemplateResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.CommunityActionTemplateResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.CommunityActionTemplateResource}.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.CommunityActionTemplateResource}.Get(System.String[])
+  parent: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.CommunityActionTemplateResource}
+  definition: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+  name: Get(String[])
+  nameWithType: IGet<CommunityActionTemplateResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.CommunityActionTemplateResource>.Get(System.String[])
+  nameWithType.vb: IGet(Of CommunityActionTemplateResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.CommunityActionTemplateResource).Get(System.String())
+  name.vb: Get(String())
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet<CommunityActionTemplateResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.CommunityActionTemplateResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet(Of CommunityActionTemplateResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.CommunityActionTemplateResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.CommunityActionTemplateResource}.Refresh(Octopus.Client.Model.CommunityActionTemplateResource)
+  commentId: M:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.CommunityActionTemplateResource}.Refresh(Octopus.Client.Model.CommunityActionTemplateResource)
+  parent: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.CommunityActionTemplateResource}
+  definition: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+  name: Refresh(CommunityActionTemplateResource)
+  nameWithType: IGet<CommunityActionTemplateResource>.Refresh(CommunityActionTemplateResource)
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.CommunityActionTemplateResource>.Refresh(Octopus.Client.Model.CommunityActionTemplateResource)
+  nameWithType.vb: IGet(Of CommunityActionTemplateResource).Refresh(CommunityActionTemplateResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.CommunityActionTemplateResource).Refresh(Octopus.Client.Model.CommunityActionTemplateResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet<CommunityActionTemplateResource>.Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.CommunityActionTemplateResource>.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.CommunityActionTemplateResource
+    name: CommunityActionTemplateResource
+    nameWithType: CommunityActionTemplateResource
+    fullName: Octopus.Client.Model.CommunityActionTemplateResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet(Of CommunityActionTemplateResource).Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.CommunityActionTemplateResource).Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.CommunityActionTemplateResource
+    name: CommunityActionTemplateResource
+    nameWithType: CommunityActionTemplateResource
+    fullName: Octopus.Client.Model.CommunityActionTemplateResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+  isExternal: true
+  name: Get(String)
+  nameWithType: IGet<TResource>.Get(String)
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get(System.String)
+  nameWithType.vb: IGet(Of TResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource).Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet<TResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet(Of TResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of TResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.CommunityActionTemplateResource}
+  commentId: T:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.CommunityActionTemplateResource}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.IGet`1
+  name: IGet<CommunityActionTemplateResource>
+  nameWithType: IGet<CommunityActionTemplateResource>
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.CommunityActionTemplateResource>
+  nameWithType.vb: IGet(Of CommunityActionTemplateResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.CommunityActionTemplateResource)
+  name.vb: IGet(Of CommunityActionTemplateResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.CommunityActionTemplateResource
+    name: CommunityActionTemplateResource
+    nameWithType: CommunityActionTemplateResource
+    fullName: Octopus.Client.Model.CommunityActionTemplateResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.CommunityActionTemplateResource
+    name: CommunityActionTemplateResource
+    nameWithType: CommunityActionTemplateResource
+    fullName: Octopus.Client.Model.CommunityActionTemplateResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+  isExternal: true
+  name: Get(String[])
+  nameWithType: IGet<TResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get(System.String[])
+  nameWithType.vb: IGet(Of TResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource).Get(System.String())
+  name.vb: Get(String())
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet<TResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet(Of TResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of TResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+  commentId: M:Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+  name: Refresh(TResource)
+  nameWithType: IGet<TResource>.Refresh(TResource)
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Refresh(TResource)
+  nameWithType.vb: IGet(Of TResource).Refresh(TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource).Refresh(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet<TResource>.Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet(Of TResource).Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet(Of TResource).Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1
+  commentId: T:Octopus.Client.Repositories.Async.IGet`1
+  name: IGet<TResource>
+  nameWithType: IGet<TResource>
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>
+  nameWithType.vb: IGet(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource)
+  name.vb: IGet(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.GetInstalledTemplate*
+  commentId: Overload:Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.GetInstalledTemplate
+  name: GetInstalledTemplate
+  nameWithType: ICommunityActionTemplateRepository.GetInstalledTemplate
+  fullName: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.GetInstalledTemplate
+- uid: Octopus.Client.Model.CommunityActionTemplateResource
+  commentId: T:Octopus.Client.Model.CommunityActionTemplateResource
+  parent: Octopus.Client.Model
+  name: CommunityActionTemplateResource
+  nameWithType: CommunityActionTemplateResource
+  fullName: Octopus.Client.Model.CommunityActionTemplateResource
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.ActionTemplateResource}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.ActionTemplateResource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ActionTemplateResource>
+  nameWithType: Task<ActionTemplateResource>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.ActionTemplateResource>
+  nameWithType.vb: Task(Of ActionTemplateResource)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.ActionTemplateResource)
+  name.vb: Task(Of ActionTemplateResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ActionTemplateResource
+    name: ActionTemplateResource
+    nameWithType: ActionTemplateResource
+    fullName: Octopus.Client.Model.ActionTemplateResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ActionTemplateResource
+    name: ActionTemplateResource
+    nameWithType: ActionTemplateResource
+    fullName: Octopus.Client.Model.ActionTemplateResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.Install*
+  commentId: Overload:Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.Install
+  name: Install
+  nameWithType: ICommunityActionTemplateRepository.Install
+  fullName: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.Install
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.UpdateInstallation*
+  commentId: Overload:Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.UpdateInstallation
+  name: UpdateInstallation
+  nameWithType: ICommunityActionTemplateRepository.UpdateInstallation
+  fullName: Octopus.Client.Repositories.Async.ICommunityActionTemplateRepository.UpdateInstallation

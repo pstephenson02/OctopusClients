@@ -1,0 +1,1350 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Serialization.AccountConverter
+  commentId: T:Octopus.Client.Serialization.AccountConverter
+  id: AccountConverter
+  parent: Octopus.Client.Serialization
+  children:
+  - Octopus.Client.Serialization.AccountConverter.DerivedTypeMappings
+  - Octopus.Client.Serialization.AccountConverter.TypeDesignatingPropertyName
+  langs:
+  - csharp
+  - vb
+  name: AccountConverter
+  nameWithType: AccountConverter
+  fullName: Octopus.Client.Serialization.AccountConverter
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Serialization/AccountConverter.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AccountConverter
+    path: ../source/Octopus.Client/Serialization/AccountConverter.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Serialization
+  syntax:
+    content: 'public class AccountConverter : InheritedClassConverter<AccountResource, AccountType>'
+    content.vb: >-
+      Public Class AccountConverter
+          Inherits InheritedClassConverter(Of AccountResource, AccountType)
+  inheritance:
+  - System.Object
+  - Newtonsoft.Json.JsonConverter
+  - Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}
+  inheritedMembers:
+  - Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  - Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.DefaultType
+  - Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  - Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.CanConvert(System.Type)
+  - Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.DerivedTypeMappings
+  - Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.TypeDesignatingPropertyName
+  - Newtonsoft.Json.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  - Newtonsoft.Json.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  - Newtonsoft.Json.JsonConverter.CanConvert(System.Type)
+  - Newtonsoft.Json.JsonConverter.CanRead
+  - Newtonsoft.Json.JsonConverter.CanWrite
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Serialization.AccountConverter.DerivedTypeMappings
+  commentId: P:Octopus.Client.Serialization.AccountConverter.DerivedTypeMappings
+  id: DerivedTypeMappings
+  parent: Octopus.Client.Serialization.AccountConverter
+  langs:
+  - csharp
+  - vb
+  name: DerivedTypeMappings
+  nameWithType: AccountConverter.DerivedTypeMappings
+  fullName: Octopus.Client.Serialization.AccountConverter.DerivedTypeMappings
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Serialization/AccountConverter.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DerivedTypeMappings
+    path: ../source/Octopus.Client/Serialization/AccountConverter.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Serialization
+  syntax:
+    content: protected override IDictionary<AccountType, Type> DerivedTypeMappings { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{Octopus.Client.Model.Accounts.AccountType,System.Type}
+    content.vb: Protected Overrides ReadOnly Property DerivedTypeMappings As IDictionary(Of AccountType, Type)
+  overridden: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.DerivedTypeMappings
+  overload: Octopus.Client.Serialization.AccountConverter.DerivedTypeMappings*
+  modifiers.csharp:
+  - protected
+  - override
+  - get
+  modifiers.vb:
+  - Protected
+  - Overrides
+  - ReadOnly
+- uid: Octopus.Client.Serialization.AccountConverter.TypeDesignatingPropertyName
+  commentId: P:Octopus.Client.Serialization.AccountConverter.TypeDesignatingPropertyName
+  id: TypeDesignatingPropertyName
+  parent: Octopus.Client.Serialization.AccountConverter
+  langs:
+  - csharp
+  - vb
+  name: TypeDesignatingPropertyName
+  nameWithType: AccountConverter.TypeDesignatingPropertyName
+  fullName: Octopus.Client.Serialization.AccountConverter.TypeDesignatingPropertyName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Serialization/AccountConverter.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TypeDesignatingPropertyName
+    path: ../source/Octopus.Client/Serialization/AccountConverter.cs
+    startLine: 20
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Serialization
+  syntax:
+    content: protected override string TypeDesignatingPropertyName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Protected Overrides ReadOnly Property TypeDesignatingPropertyName As String
+  overridden: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.TypeDesignatingPropertyName
+  overload: Octopus.Client.Serialization.AccountConverter.TypeDesignatingPropertyName*
+  modifiers.csharp:
+  - protected
+  - override
+  - get
+  modifiers.vb:
+  - Protected
+  - Overrides
+  - ReadOnly
+references:
+- uid: Octopus.Client.Serialization
+  commentId: N:Octopus.Client.Serialization
+  name: Octopus.Client.Serialization
+  nameWithType: Octopus.Client.Serialization
+  fullName: Octopus.Client.Serialization
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Newtonsoft.Json.JsonConverter
+  commentId: T:Newtonsoft.Json.JsonConverter
+  parent: Newtonsoft.Json
+  isExternal: true
+  name: JsonConverter
+  nameWithType: JsonConverter
+  fullName: Newtonsoft.Json.JsonConverter
+- uid: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}
+  commentId: T:Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}
+  parent: Octopus.Client.Serialization
+  definition: Octopus.Client.Serialization.InheritedClassConverter`2
+  name: InheritedClassConverter<AccountResource, AccountType>
+  nameWithType: InheritedClassConverter<AccountResource, AccountType>
+  fullName: Octopus.Client.Serialization.InheritedClassConverter<Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType>
+  nameWithType.vb: InheritedClassConverter(Of AccountResource, AccountType)
+  fullName.vb: Octopus.Client.Serialization.InheritedClassConverter(Of Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType)
+  name.vb: InheritedClassConverter(Of AccountResource, AccountType)
+  spec.csharp:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2
+    name: InheritedClassConverter
+    nameWithType: InheritedClassConverter
+    fullName: Octopus.Client.Serialization.InheritedClassConverter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Accounts.AccountResource
+    name: AccountResource
+    nameWithType: AccountResource
+    fullName: Octopus.Client.Model.Accounts.AccountResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Accounts.AccountType
+    name: AccountType
+    nameWithType: AccountType
+    fullName: Octopus.Client.Model.Accounts.AccountType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2
+    name: InheritedClassConverter
+    nameWithType: InheritedClassConverter
+    fullName: Octopus.Client.Serialization.InheritedClassConverter
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Accounts.AccountResource
+    name: AccountResource
+    nameWithType: AccountResource
+    fullName: Octopus.Client.Model.Accounts.AccountResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Accounts.AccountType
+    name: AccountType
+    nameWithType: AccountType
+    fullName: Octopus.Client.Model.Accounts.AccountType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  commentId: M:Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  parent: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}
+  definition: Octopus.Client.Serialization.InheritedClassConverter`2.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  nameWithType: InheritedClassConverter<AccountResource, AccountType>.WriteJson(JsonWriter, Object, JsonSerializer)
+  fullName: Octopus.Client.Serialization.InheritedClassConverter<Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType>.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType.vb: InheritedClassConverter(Of AccountResource, AccountType).WriteJson(JsonWriter, Object, JsonSerializer)
+  fullName.vb: Octopus.Client.Serialization.InheritedClassConverter(Of Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType).WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  spec.csharp:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+    name: WriteJson
+    nameWithType: InheritedClassConverter<AccountResource, AccountType>.WriteJson
+    fullName: Octopus.Client.Serialization.InheritedClassConverter<Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType>.WriteJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Newtonsoft.Json.JsonWriter
+    name: JsonWriter
+    nameWithType: JsonWriter
+    fullName: Newtonsoft.Json.JsonWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Newtonsoft.Json.JsonSerializer
+    name: JsonSerializer
+    nameWithType: JsonSerializer
+    fullName: Newtonsoft.Json.JsonSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+    name: WriteJson
+    nameWithType: InheritedClassConverter(Of AccountResource, AccountType).WriteJson
+    fullName: Octopus.Client.Serialization.InheritedClassConverter(Of Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType).WriteJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Newtonsoft.Json.JsonWriter
+    name: JsonWriter
+    nameWithType: JsonWriter
+    fullName: Newtonsoft.Json.JsonWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Newtonsoft.Json.JsonSerializer
+    name: JsonSerializer
+    nameWithType: JsonSerializer
+    fullName: Newtonsoft.Json.JsonSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.DefaultType
+  commentId: P:Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.DefaultType
+  parent: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}
+  definition: Octopus.Client.Serialization.InheritedClassConverter`2.DefaultType
+  name: DefaultType
+  nameWithType: InheritedClassConverter<AccountResource, AccountType>.DefaultType
+  fullName: Octopus.Client.Serialization.InheritedClassConverter<Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType>.DefaultType
+  nameWithType.vb: InheritedClassConverter(Of AccountResource, AccountType).DefaultType
+  fullName.vb: Octopus.Client.Serialization.InheritedClassConverter(Of Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType).DefaultType
+- uid: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  commentId: M:Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  parent: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}
+  definition: Octopus.Client.Serialization.InheritedClassConverter`2.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  nameWithType: InheritedClassConverter<AccountResource, AccountType>.ReadJson(JsonReader, Type, Object, JsonSerializer)
+  fullName: Octopus.Client.Serialization.InheritedClassConverter<Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType>.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType.vb: InheritedClassConverter(Of AccountResource, AccountType).ReadJson(JsonReader, Type, Object, JsonSerializer)
+  fullName.vb: Octopus.Client.Serialization.InheritedClassConverter(Of Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType).ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  spec.csharp:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+    name: ReadJson
+    nameWithType: InheritedClassConverter<AccountResource, AccountType>.ReadJson
+    fullName: Octopus.Client.Serialization.InheritedClassConverter<Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType>.ReadJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Newtonsoft.Json.JsonReader
+    name: JsonReader
+    nameWithType: JsonReader
+    fullName: Newtonsoft.Json.JsonReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Newtonsoft.Json.JsonSerializer
+    name: JsonSerializer
+    nameWithType: JsonSerializer
+    fullName: Newtonsoft.Json.JsonSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+    name: ReadJson
+    nameWithType: InheritedClassConverter(Of AccountResource, AccountType).ReadJson
+    fullName: Octopus.Client.Serialization.InheritedClassConverter(Of Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType).ReadJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Newtonsoft.Json.JsonReader
+    name: JsonReader
+    nameWithType: JsonReader
+    fullName: Newtonsoft.Json.JsonReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Newtonsoft.Json.JsonSerializer
+    name: JsonSerializer
+    nameWithType: JsonSerializer
+    fullName: Newtonsoft.Json.JsonSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.CanConvert(System.Type)
+  commentId: M:Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.CanConvert(System.Type)
+  parent: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}
+  definition: Octopus.Client.Serialization.InheritedClassConverter`2.CanConvert(System.Type)
+  name: CanConvert(Type)
+  nameWithType: InheritedClassConverter<AccountResource, AccountType>.CanConvert(Type)
+  fullName: Octopus.Client.Serialization.InheritedClassConverter<Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType>.CanConvert(System.Type)
+  nameWithType.vb: InheritedClassConverter(Of AccountResource, AccountType).CanConvert(Type)
+  fullName.vb: Octopus.Client.Serialization.InheritedClassConverter(Of Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType).CanConvert(System.Type)
+  spec.csharp:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2.CanConvert(System.Type)
+    name: CanConvert
+    nameWithType: InheritedClassConverter<AccountResource, AccountType>.CanConvert
+    fullName: Octopus.Client.Serialization.InheritedClassConverter<Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType>.CanConvert
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2.CanConvert(System.Type)
+    name: CanConvert
+    nameWithType: InheritedClassConverter(Of AccountResource, AccountType).CanConvert
+    fullName: Octopus.Client.Serialization.InheritedClassConverter(Of Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType).CanConvert
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.DerivedTypeMappings
+  commentId: P:Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.DerivedTypeMappings
+  parent: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}
+  definition: Octopus.Client.Serialization.InheritedClassConverter`2.DerivedTypeMappings
+  name: DerivedTypeMappings
+  nameWithType: InheritedClassConverter<AccountResource, AccountType>.DerivedTypeMappings
+  fullName: Octopus.Client.Serialization.InheritedClassConverter<Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType>.DerivedTypeMappings
+  nameWithType.vb: InheritedClassConverter(Of AccountResource, AccountType).DerivedTypeMappings
+  fullName.vb: Octopus.Client.Serialization.InheritedClassConverter(Of Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType).DerivedTypeMappings
+- uid: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.TypeDesignatingPropertyName
+  commentId: P:Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}.TypeDesignatingPropertyName
+  parent: Octopus.Client.Serialization.InheritedClassConverter{Octopus.Client.Model.Accounts.AccountResource,Octopus.Client.Model.Accounts.AccountType}
+  definition: Octopus.Client.Serialization.InheritedClassConverter`2.TypeDesignatingPropertyName
+  name: TypeDesignatingPropertyName
+  nameWithType: InheritedClassConverter<AccountResource, AccountType>.TypeDesignatingPropertyName
+  fullName: Octopus.Client.Serialization.InheritedClassConverter<Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType>.TypeDesignatingPropertyName
+  nameWithType.vb: InheritedClassConverter(Of AccountResource, AccountType).TypeDesignatingPropertyName
+  fullName.vb: Octopus.Client.Serialization.InheritedClassConverter(Of Octopus.Client.Model.Accounts.AccountResource, Octopus.Client.Model.Accounts.AccountType).TypeDesignatingPropertyName
+- uid: Newtonsoft.Json.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  commentId: M:Newtonsoft.Json.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  parent: Newtonsoft.Json.JsonConverter
+  isExternal: true
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  nameWithType: JsonConverter.WriteJson(JsonWriter, Object, JsonSerializer)
+  fullName: Newtonsoft.Json.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  spec.csharp:
+  - uid: Newtonsoft.Json.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+    name: WriteJson
+    nameWithType: JsonConverter.WriteJson
+    fullName: Newtonsoft.Json.JsonConverter.WriteJson
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Newtonsoft.Json.JsonWriter
+    name: JsonWriter
+    nameWithType: JsonWriter
+    fullName: Newtonsoft.Json.JsonWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Newtonsoft.Json.JsonSerializer
+    name: JsonSerializer
+    nameWithType: JsonSerializer
+    fullName: Newtonsoft.Json.JsonSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Newtonsoft.Json.JsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+    name: WriteJson
+    nameWithType: JsonConverter.WriteJson
+    fullName: Newtonsoft.Json.JsonConverter.WriteJson
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Newtonsoft.Json.JsonWriter
+    name: JsonWriter
+    nameWithType: JsonWriter
+    fullName: Newtonsoft.Json.JsonWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Newtonsoft.Json.JsonSerializer
+    name: JsonSerializer
+    nameWithType: JsonSerializer
+    fullName: Newtonsoft.Json.JsonSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Newtonsoft.Json.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  commentId: M:Newtonsoft.Json.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  parent: Newtonsoft.Json.JsonConverter
+  isExternal: true
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  nameWithType: JsonConverter.ReadJson(JsonReader, Type, Object, JsonSerializer)
+  fullName: Newtonsoft.Json.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  spec.csharp:
+  - uid: Newtonsoft.Json.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+    name: ReadJson
+    nameWithType: JsonConverter.ReadJson
+    fullName: Newtonsoft.Json.JsonConverter.ReadJson
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Newtonsoft.Json.JsonReader
+    name: JsonReader
+    nameWithType: JsonReader
+    fullName: Newtonsoft.Json.JsonReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Newtonsoft.Json.JsonSerializer
+    name: JsonSerializer
+    nameWithType: JsonSerializer
+    fullName: Newtonsoft.Json.JsonSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Newtonsoft.Json.JsonConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+    name: ReadJson
+    nameWithType: JsonConverter.ReadJson
+    fullName: Newtonsoft.Json.JsonConverter.ReadJson
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Newtonsoft.Json.JsonReader
+    name: JsonReader
+    nameWithType: JsonReader
+    fullName: Newtonsoft.Json.JsonReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Newtonsoft.Json.JsonSerializer
+    name: JsonSerializer
+    nameWithType: JsonSerializer
+    fullName: Newtonsoft.Json.JsonSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Newtonsoft.Json.JsonConverter.CanConvert(System.Type)
+  commentId: M:Newtonsoft.Json.JsonConverter.CanConvert(System.Type)
+  parent: Newtonsoft.Json.JsonConverter
+  isExternal: true
+  name: CanConvert(Type)
+  nameWithType: JsonConverter.CanConvert(Type)
+  fullName: Newtonsoft.Json.JsonConverter.CanConvert(System.Type)
+  spec.csharp:
+  - uid: Newtonsoft.Json.JsonConverter.CanConvert(System.Type)
+    name: CanConvert
+    nameWithType: JsonConverter.CanConvert
+    fullName: Newtonsoft.Json.JsonConverter.CanConvert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Newtonsoft.Json.JsonConverter.CanConvert(System.Type)
+    name: CanConvert
+    nameWithType: JsonConverter.CanConvert
+    fullName: Newtonsoft.Json.JsonConverter.CanConvert
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Newtonsoft.Json.JsonConverter.CanRead
+  commentId: P:Newtonsoft.Json.JsonConverter.CanRead
+  parent: Newtonsoft.Json.JsonConverter
+  isExternal: true
+  name: CanRead
+  nameWithType: JsonConverter.CanRead
+  fullName: Newtonsoft.Json.JsonConverter.CanRead
+- uid: Newtonsoft.Json.JsonConverter.CanWrite
+  commentId: P:Newtonsoft.Json.JsonConverter.CanWrite
+  parent: Newtonsoft.Json.JsonConverter
+  isExternal: true
+  name: CanWrite
+  nameWithType: JsonConverter.CanWrite
+  fullName: Newtonsoft.Json.JsonConverter.CanWrite
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Newtonsoft.Json
+  commentId: N:Newtonsoft.Json
+  isExternal: true
+  name: Newtonsoft.Json
+  nameWithType: Newtonsoft.Json
+  fullName: Newtonsoft.Json
+- uid: Octopus.Client.Serialization.InheritedClassConverter`2
+  commentId: T:Octopus.Client.Serialization.InheritedClassConverter`2
+  name: InheritedClassConverter<TBaseResource, TEnumType>
+  nameWithType: InheritedClassConverter<TBaseResource, TEnumType>
+  fullName: Octopus.Client.Serialization.InheritedClassConverter<TBaseResource, TEnumType>
+  nameWithType.vb: InheritedClassConverter(Of TBaseResource, TEnumType)
+  fullName.vb: Octopus.Client.Serialization.InheritedClassConverter(Of TBaseResource, TEnumType)
+  name.vb: InheritedClassConverter(Of TBaseResource, TEnumType)
+  spec.csharp:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2
+    name: InheritedClassConverter
+    nameWithType: InheritedClassConverter
+    fullName: Octopus.Client.Serialization.InheritedClassConverter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TBaseResource
+    nameWithType: TBaseResource
+    fullName: TBaseResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEnumType
+    nameWithType: TEnumType
+    fullName: TEnumType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2
+    name: InheritedClassConverter
+    nameWithType: InheritedClassConverter
+    fullName: Octopus.Client.Serialization.InheritedClassConverter
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TBaseResource
+    nameWithType: TBaseResource
+    fullName: TBaseResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEnumType
+    nameWithType: TEnumType
+    fullName: TEnumType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Serialization.InheritedClassConverter`2.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  commentId: M:Octopus.Client.Serialization.InheritedClassConverter`2.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+  isExternal: true
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  nameWithType: InheritedClassConverter<TBaseResource, TEnumType>.WriteJson(JsonWriter, Object, JsonSerializer)
+  fullName: Octopus.Client.Serialization.InheritedClassConverter<TBaseResource, TEnumType>.WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType.vb: InheritedClassConverter(Of TBaseResource, TEnumType).WriteJson(JsonWriter, Object, JsonSerializer)
+  fullName.vb: Octopus.Client.Serialization.InheritedClassConverter(Of TBaseResource, TEnumType).WriteJson(Newtonsoft.Json.JsonWriter, System.Object, Newtonsoft.Json.JsonSerializer)
+  spec.csharp:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+    name: WriteJson
+    nameWithType: InheritedClassConverter<TBaseResource, TEnumType>.WriteJson
+    fullName: Octopus.Client.Serialization.InheritedClassConverter<TBaseResource, TEnumType>.WriteJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Newtonsoft.Json.JsonWriter
+    name: JsonWriter
+    nameWithType: JsonWriter
+    fullName: Newtonsoft.Json.JsonWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Newtonsoft.Json.JsonSerializer
+    name: JsonSerializer
+    nameWithType: JsonSerializer
+    fullName: Newtonsoft.Json.JsonSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)
+    name: WriteJson
+    nameWithType: InheritedClassConverter(Of TBaseResource, TEnumType).WriteJson
+    fullName: Octopus.Client.Serialization.InheritedClassConverter(Of TBaseResource, TEnumType).WriteJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Newtonsoft.Json.JsonWriter
+    name: JsonWriter
+    nameWithType: JsonWriter
+    fullName: Newtonsoft.Json.JsonWriter
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Newtonsoft.Json.JsonSerializer
+    name: JsonSerializer
+    nameWithType: JsonSerializer
+    fullName: Newtonsoft.Json.JsonSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Serialization.InheritedClassConverter`2.DefaultType
+  commentId: P:Octopus.Client.Serialization.InheritedClassConverter`2.DefaultType
+  name: DefaultType
+  nameWithType: InheritedClassConverter<TBaseResource, TEnumType>.DefaultType
+  fullName: Octopus.Client.Serialization.InheritedClassConverter<TBaseResource, TEnumType>.DefaultType
+  nameWithType.vb: InheritedClassConverter(Of TBaseResource, TEnumType).DefaultType
+  fullName.vb: Octopus.Client.Serialization.InheritedClassConverter(Of TBaseResource, TEnumType).DefaultType
+- uid: Octopus.Client.Serialization.InheritedClassConverter`2.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  commentId: M:Octopus.Client.Serialization.InheritedClassConverter`2.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+  isExternal: true
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  nameWithType: InheritedClassConverter<TBaseResource, TEnumType>.ReadJson(JsonReader, Type, Object, JsonSerializer)
+  fullName: Octopus.Client.Serialization.InheritedClassConverter<TBaseResource, TEnumType>.ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  nameWithType.vb: InheritedClassConverter(Of TBaseResource, TEnumType).ReadJson(JsonReader, Type, Object, JsonSerializer)
+  fullName.vb: Octopus.Client.Serialization.InheritedClassConverter(Of TBaseResource, TEnumType).ReadJson(Newtonsoft.Json.JsonReader, System.Type, System.Object, Newtonsoft.Json.JsonSerializer)
+  spec.csharp:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+    name: ReadJson
+    nameWithType: InheritedClassConverter<TBaseResource, TEnumType>.ReadJson
+    fullName: Octopus.Client.Serialization.InheritedClassConverter<TBaseResource, TEnumType>.ReadJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Newtonsoft.Json.JsonReader
+    name: JsonReader
+    nameWithType: JsonReader
+    fullName: Newtonsoft.Json.JsonReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Newtonsoft.Json.JsonSerializer
+    name: JsonSerializer
+    nameWithType: JsonSerializer
+    fullName: Newtonsoft.Json.JsonSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)
+    name: ReadJson
+    nameWithType: InheritedClassConverter(Of TBaseResource, TEnumType).ReadJson
+    fullName: Octopus.Client.Serialization.InheritedClassConverter(Of TBaseResource, TEnumType).ReadJson
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Newtonsoft.Json.JsonReader
+    name: JsonReader
+    nameWithType: JsonReader
+    fullName: Newtonsoft.Json.JsonReader
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Newtonsoft.Json.JsonSerializer
+    name: JsonSerializer
+    nameWithType: JsonSerializer
+    fullName: Newtonsoft.Json.JsonSerializer
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Serialization.InheritedClassConverter`2.CanConvert(System.Type)
+  commentId: M:Octopus.Client.Serialization.InheritedClassConverter`2.CanConvert(System.Type)
+  isExternal: true
+  name: CanConvert(Type)
+  nameWithType: InheritedClassConverter<TBaseResource, TEnumType>.CanConvert(Type)
+  fullName: Octopus.Client.Serialization.InheritedClassConverter<TBaseResource, TEnumType>.CanConvert(System.Type)
+  nameWithType.vb: InheritedClassConverter(Of TBaseResource, TEnumType).CanConvert(Type)
+  fullName.vb: Octopus.Client.Serialization.InheritedClassConverter(Of TBaseResource, TEnumType).CanConvert(System.Type)
+  spec.csharp:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2.CanConvert(System.Type)
+    name: CanConvert
+    nameWithType: InheritedClassConverter<TBaseResource, TEnumType>.CanConvert
+    fullName: Octopus.Client.Serialization.InheritedClassConverter<TBaseResource, TEnumType>.CanConvert
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Serialization.InheritedClassConverter`2.CanConvert(System.Type)
+    name: CanConvert
+    nameWithType: InheritedClassConverter(Of TBaseResource, TEnumType).CanConvert
+    fullName: Octopus.Client.Serialization.InheritedClassConverter(Of TBaseResource, TEnumType).CanConvert
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Serialization.InheritedClassConverter`2.DerivedTypeMappings
+  commentId: P:Octopus.Client.Serialization.InheritedClassConverter`2.DerivedTypeMappings
+  name: DerivedTypeMappings
+  nameWithType: InheritedClassConverter<TBaseResource, TEnumType>.DerivedTypeMappings
+  fullName: Octopus.Client.Serialization.InheritedClassConverter<TBaseResource, TEnumType>.DerivedTypeMappings
+  nameWithType.vb: InheritedClassConverter(Of TBaseResource, TEnumType).DerivedTypeMappings
+  fullName.vb: Octopus.Client.Serialization.InheritedClassConverter(Of TBaseResource, TEnumType).DerivedTypeMappings
+- uid: Octopus.Client.Serialization.InheritedClassConverter`2.TypeDesignatingPropertyName
+  commentId: P:Octopus.Client.Serialization.InheritedClassConverter`2.TypeDesignatingPropertyName
+  name: TypeDesignatingPropertyName
+  nameWithType: InheritedClassConverter<TBaseResource, TEnumType>.TypeDesignatingPropertyName
+  fullName: Octopus.Client.Serialization.InheritedClassConverter<TBaseResource, TEnumType>.TypeDesignatingPropertyName
+  nameWithType.vb: InheritedClassConverter(Of TBaseResource, TEnumType).TypeDesignatingPropertyName
+  fullName.vb: Octopus.Client.Serialization.InheritedClassConverter(Of TBaseResource, TEnumType).TypeDesignatingPropertyName
+- uid: Octopus.Client.Serialization.AccountConverter.DerivedTypeMappings*
+  commentId: Overload:Octopus.Client.Serialization.AccountConverter.DerivedTypeMappings
+  name: DerivedTypeMappings
+  nameWithType: AccountConverter.DerivedTypeMappings
+  fullName: Octopus.Client.Serialization.AccountConverter.DerivedTypeMappings
+- uid: System.Collections.Generic.IDictionary{Octopus.Client.Model.Accounts.AccountType,System.Type}
+  commentId: T:System.Collections.Generic.IDictionary{Octopus.Client.Model.Accounts.AccountType,System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<AccountType, Type>
+  nameWithType: IDictionary<AccountType, Type>
+  fullName: System.Collections.Generic.IDictionary<Octopus.Client.Model.Accounts.AccountType, System.Type>
+  nameWithType.vb: IDictionary(Of AccountType, Type)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Octopus.Client.Model.Accounts.AccountType, System.Type)
+  name.vb: IDictionary(Of AccountType, Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Accounts.AccountType
+    name: AccountType
+    nameWithType: AccountType
+    fullName: Octopus.Client.Model.Accounts.AccountType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Accounts.AccountType
+    name: AccountType
+    nameWithType: AccountType
+    fullName: Octopus.Client.Model.Accounts.AccountType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Serialization.AccountConverter.TypeDesignatingPropertyName*
+  commentId: Overload:Octopus.Client.Serialization.AccountConverter.TypeDesignatingPropertyName
+  name: TypeDesignatingPropertyName
+  nameWithType: AccountConverter.TypeDesignatingPropertyName
+  fullName: Octopus.Client.Serialization.AccountConverter.TypeDesignatingPropertyName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

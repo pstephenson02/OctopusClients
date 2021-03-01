@@ -1,0 +1,2273 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.IOctopusAsyncClient
+  commentId: T:Octopus.Client.IOctopusAsyncClient
+  id: IOctopusAsyncClient
+  parent: Octopus.Client
+  children:
+  - Octopus.Client.IOctopusAsyncClient.AfterReceivedHttpResponse
+  - Octopus.Client.IOctopusAsyncClient.BeforeSendingHttpRequest
+  - Octopus.Client.IOctopusAsyncClient.Create``1(System.String,``0,System.Object)
+  - Octopus.Client.IOctopusAsyncClient.Delete(System.String,System.Object,System.Object)
+  - Octopus.Client.IOctopusAsyncClient.ForSpace(Octopus.Client.Model.SpaceResource)
+  - Octopus.Client.IOctopusAsyncClient.ForSystem
+  - Octopus.Client.IOctopusAsyncClient.Get``1(System.String,System.Object)
+  - Octopus.Client.IOctopusAsyncClient.GetContent(System.String,System.Object)
+  - Octopus.Client.IOctopusAsyncClient.IsUsingSecureConnection
+  - Octopus.Client.IOctopusAsyncClient.List``1(System.String,System.Object)
+  - Octopus.Client.IOctopusAsyncClient.ListAll``1(System.String,System.Object)
+  - Octopus.Client.IOctopusAsyncClient.Paginate``1(System.String,System.Func{Octopus.Client.Model.ResourceCollection{``0},System.Boolean})
+  - Octopus.Client.IOctopusAsyncClient.Paginate``1(System.String,System.Object,System.Func{Octopus.Client.Model.ResourceCollection{``0},System.Boolean})
+  - Octopus.Client.IOctopusAsyncClient.Post(System.String)
+  - Octopus.Client.IOctopusAsyncClient.Post``1(System.String,``0,System.Object)
+  - Octopus.Client.IOctopusAsyncClient.Post``2(System.String,``0,System.Object)
+  - Octopus.Client.IOctopusAsyncClient.Put(System.String)
+  - Octopus.Client.IOctopusAsyncClient.Put``1(System.String,``0)
+  - Octopus.Client.IOctopusAsyncClient.Put``1(System.String,``0,System.Object)
+  - Octopus.Client.IOctopusAsyncClient.PutContent(System.String,System.IO.Stream)
+  - Octopus.Client.IOctopusAsyncClient.QualifyUri(System.String,System.Object)
+  - Octopus.Client.IOctopusAsyncClient.ReceivedOctopusResponse
+  - Octopus.Client.IOctopusAsyncClient.Repository
+  - Octopus.Client.IOctopusAsyncClient.SendingOctopusRequest
+  - Octopus.Client.IOctopusAsyncClient.SignIn(Octopus.Client.Model.LoginCommand)
+  - Octopus.Client.IOctopusAsyncClient.SignOut
+  - Octopus.Client.IOctopusAsyncClient.Update``1(System.String,``0,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IOctopusAsyncClient
+  nameWithType: IOctopusAsyncClient
+  fullName: Octopus.Client.IOctopusAsyncClient
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IOctopusAsyncClient
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nContract for a client to the Octopus Deploy HTTP API.\n"
+  example: []
+  syntax:
+    content: 'public interface IOctopusAsyncClient : IDisposable'
+    content.vb: >-
+      Public Interface IOctopusAsyncClient
+          Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - Octopus.Client.IOctopusAsyncClient.Octopus.Client.OctopusRepositoryExtensions.CreateRepository(Octopus.Client.RepositoryScope)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.IOctopusAsyncClient.SendingOctopusRequest
+  commentId: E:Octopus.Client.IOctopusAsyncClient.SendingOctopusRequest
+  id: SendingOctopusRequest
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: SendingOctopusRequest
+  nameWithType: IOctopusAsyncClient.SendingOctopusRequest
+  fullName: Octopus.Client.IOctopusAsyncClient.SendingOctopusRequest
+  type: Event
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SendingOctopusRequest
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 41
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nOccurs when a request is about to be sent.\n"
+  example: []
+  syntax:
+    content: event Action<OctopusRequest> SendingOctopusRequest
+    return:
+      type: System.Action{Octopus.Client.OctopusRequest}
+    content.vb: Event SendingOctopusRequest As Action(Of OctopusRequest)
+- uid: Octopus.Client.IOctopusAsyncClient.ReceivedOctopusResponse
+  commentId: E:Octopus.Client.IOctopusAsyncClient.ReceivedOctopusResponse
+  id: ReceivedOctopusResponse
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: ReceivedOctopusResponse
+  nameWithType: IOctopusAsyncClient.ReceivedOctopusResponse
+  fullName: Octopus.Client.IOctopusAsyncClient.ReceivedOctopusResponse
+  type: Event
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ReceivedOctopusResponse
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 46
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nOccurs when a response is received from the Octopus Server.\n"
+  example: []
+  syntax:
+    content: event Action<OctopusResponse> ReceivedOctopusResponse
+    return:
+      type: System.Action{Octopus.Client.OctopusResponse}
+    content.vb: Event ReceivedOctopusResponse As Action(Of OctopusResponse)
+- uid: Octopus.Client.IOctopusAsyncClient.BeforeSendingHttpRequest
+  commentId: E:Octopus.Client.IOctopusAsyncClient.BeforeSendingHttpRequest
+  id: BeforeSendingHttpRequest
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: BeforeSendingHttpRequest
+  nameWithType: IOctopusAsyncClient.BeforeSendingHttpRequest
+  fullName: Octopus.Client.IOctopusAsyncClient.BeforeSendingHttpRequest
+  type: Event
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: BeforeSendingHttpRequest
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 51
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nOccurs when a request is about to be sent.\n"
+  example: []
+  syntax:
+    content: event Action<HttpRequestMessage> BeforeSendingHttpRequest
+    return:
+      type: System.Action{System.Net.Http.HttpRequestMessage}
+    content.vb: Event BeforeSendingHttpRequest As Action(Of HttpRequestMessage)
+- uid: Octopus.Client.IOctopusAsyncClient.AfterReceivedHttpResponse
+  commentId: E:Octopus.Client.IOctopusAsyncClient.AfterReceivedHttpResponse
+  id: AfterReceivedHttpResponse
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: AfterReceivedHttpResponse
+  nameWithType: IOctopusAsyncClient.AfterReceivedHttpResponse
+  fullName: Octopus.Client.IOctopusAsyncClient.AfterReceivedHttpResponse
+  type: Event
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AfterReceivedHttpResponse
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 56
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nOccurs when a response has been received.\n"
+  example: []
+  syntax:
+    content: event Action<HttpResponseMessage> AfterReceivedHttpResponse
+    return:
+      type: System.Action{System.Net.Http.HttpResponseMessage}
+    content.vb: Event AfterReceivedHttpResponse As Action(Of HttpResponseMessage)
+- uid: Octopus.Client.IOctopusAsyncClient.Repository
+  commentId: P:Octopus.Client.IOctopusAsyncClient.Repository
+  id: Repository
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: Repository
+  nameWithType: IOctopusAsyncClient.Repository
+  fullName: Octopus.Client.IOctopusAsyncClient.Repository
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Repository
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 61
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nA simplified interface to commonly-used parts of the API.\n"
+  example: []
+  syntax:
+    content: IOctopusAsyncRepository Repository { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.IOctopusAsyncRepository
+    content.vb: ReadOnly Property Repository As IOctopusAsyncRepository
+  overload: Octopus.Client.IOctopusAsyncClient.Repository*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Octopus.Client.IOctopusAsyncClient.IsUsingSecureConnection
+  commentId: P:Octopus.Client.IOctopusAsyncClient.IsUsingSecureConnection
+  id: IsUsingSecureConnection
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: IsUsingSecureConnection
+  nameWithType: IOctopusAsyncClient.IsUsingSecureConnection
+  fullName: Octopus.Client.IOctopusAsyncClient.IsUsingSecureConnection
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsUsingSecureConnection
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 66
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nIndicates whether a secure (SSL) connection is being used to communicate with the server.\n"
+  example: []
+  syntax:
+    content: bool IsUsingSecureConnection { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsUsingSecureConnection As Boolean
+  overload: Octopus.Client.IOctopusAsyncClient.IsUsingSecureConnection*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Octopus.Client.IOctopusAsyncClient.List``1(System.String,System.Object)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.List``1(System.String,System.Object)
+  id: List``1(System.String,System.Object)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: List<TResource>(String, Object)
+  nameWithType: IOctopusAsyncClient.List<TResource>(String, Object)
+  fullName: Octopus.Client.IOctopusAsyncClient.List<TResource>(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: List
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 86
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nFetches a collection of resources from the server using the HTTP GET verb. The collection itself will usually be\nlimited in size (pagination) and links to the next page of data is available in the <xref href=\"Octopus.Client.Model.Resource.Links\" data-throw-if-not-resolved=\"false\"></xref>\nproperty.\n"
+  example: []
+  syntax:
+    content: Task<ResourceCollection<TResource>> List<TResource>(string path, object pathParameters = null)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path from which to fetch the resources.
+    - id: pathParameters
+      type: System.Object
+      description: If the <code>path</code> is a URI template, parameters to use for substitution.
+    typeParameters:
+    - id: TResource
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.ResourceCollection{{TResource}}}
+      description: The collection of resources from the server.
+    content.vb: Function List(Of TResource)(path As String, pathParameters As Object = Nothing) As Task(Of ResourceCollection(Of TResource))
+  overload: Octopus.Client.IOctopusAsyncClient.List*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+  nameWithType.vb: IOctopusAsyncClient.List(Of TResource)(String, Object)
+  fullName.vb: Octopus.Client.IOctopusAsyncClient.List(Of TResource)(System.String, System.Object)
+  name.vb: List(Of TResource)(String, Object)
+- uid: Octopus.Client.IOctopusAsyncClient.ListAll``1(System.String,System.Object)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.ListAll``1(System.String,System.Object)
+  id: ListAll``1(System.String,System.Object)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: ListAll<TResource>(String, Object)
+  nameWithType: IOctopusAsyncClient.ListAll<TResource>(String, Object)
+  fullName: Octopus.Client.IOctopusAsyncClient.ListAll<TResource>(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ListAll
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 104
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nFetches a collection of resources from the server using the HTTP GET verb. All result pages will be retrieved.\n"
+  example: []
+  syntax:
+    content: Task<IReadOnlyList<TResource>> ListAll<TResource>(string path, object pathParameters = null)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path from which to fetch the resources.
+    - id: pathParameters
+      type: System.Object
+      description: If the <code>path</code> is a URI template, parameters to use for substitution.
+    typeParameters:
+    - id: TResource
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{{TResource}}}
+      description: The collection of resources from the server.
+    content.vb: Function ListAll(Of TResource)(path As String, pathParameters As Object = Nothing) As Task(Of IReadOnlyList(Of TResource))
+  overload: Octopus.Client.IOctopusAsyncClient.ListAll*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+  nameWithType.vb: IOctopusAsyncClient.ListAll(Of TResource)(String, Object)
+  fullName.vb: Octopus.Client.IOctopusAsyncClient.ListAll(Of TResource)(System.String, System.Object)
+  name.vb: ListAll(Of TResource)(String, Object)
+- uid: Octopus.Client.IOctopusAsyncClient.Paginate``1(System.String,System.Func{Octopus.Client.Model.ResourceCollection{``0},System.Boolean})
+  commentId: M:Octopus.Client.IOctopusAsyncClient.Paginate``1(System.String,System.Func{Octopus.Client.Model.ResourceCollection{``0},System.Boolean})
+  id: Paginate``1(System.String,System.Func{Octopus.Client.Model.ResourceCollection{``0},System.Boolean})
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: Paginate<TResource>(String, Func<ResourceCollection<TResource>, Boolean>)
+  nameWithType: IOctopusAsyncClient.Paginate<TResource>(String, Func<ResourceCollection<TResource>, Boolean>)
+  fullName: Octopus.Client.IOctopusAsyncClient.Paginate<TResource>(System.String, System.Func<Octopus.Client.Model.ResourceCollection<TResource>, System.Boolean>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Paginate
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 125
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nFetches a collection of resources from the server one page at a time using the HTTP GET verb.\n"
+  example: []
+  syntax:
+    content: Task Paginate<TResource>(string path, Func<ResourceCollection<TResource>, bool> getNextPage)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path from which to fetch the resources.
+    - id: getNextPage
+      type: System.Func{Octopus.Client.Model.ResourceCollection{{TResource}},System.Boolean}
+      description: "\nA callback invoked for each page of data found. If the callback returns <code>true</code>, the next\npage will also be requested.\n"
+    typeParameters:
+    - id: TResource
+    return:
+      type: System.Threading.Tasks.Task
+      description: The collection of resources from the server.
+    content.vb: Function Paginate(Of TResource)(path As String, getNextPage As Func(Of ResourceCollection(Of TResource), Boolean)) As Task
+  overload: Octopus.Client.IOctopusAsyncClient.Paginate*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+  nameWithType.vb: IOctopusAsyncClient.Paginate(Of TResource)(String, Func(Of ResourceCollection(Of TResource), Boolean))
+  fullName.vb: Octopus.Client.IOctopusAsyncClient.Paginate(Of TResource)(System.String, System.Func(Of Octopus.Client.Model.ResourceCollection(Of TResource), System.Boolean))
+  name.vb: Paginate(Of TResource)(String, Func(Of ResourceCollection(Of TResource), Boolean))
+- uid: Octopus.Client.IOctopusAsyncClient.Paginate``1(System.String,System.Object,System.Func{Octopus.Client.Model.ResourceCollection{``0},System.Boolean})
+  commentId: M:Octopus.Client.IOctopusAsyncClient.Paginate``1(System.String,System.Object,System.Func{Octopus.Client.Model.ResourceCollection{``0},System.Boolean})
+  id: Paginate``1(System.String,System.Object,System.Func{Octopus.Client.Model.ResourceCollection{``0},System.Boolean})
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: Paginate<TResource>(String, Object, Func<ResourceCollection<TResource>, Boolean>)
+  nameWithType: IOctopusAsyncClient.Paginate<TResource>(String, Object, Func<ResourceCollection<TResource>, Boolean>)
+  fullName: Octopus.Client.IOctopusAsyncClient.Paginate<TResource>(System.String, System.Object, System.Func<Octopus.Client.Model.ResourceCollection<TResource>, System.Boolean>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Paginate
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 147
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nFetches a collection of resources from the server one page at a time using the HTTP GET verb.\n"
+  example: []
+  syntax:
+    content: Task Paginate<TResource>(string path, object pathParameters, Func<ResourceCollection<TResource>, bool> getNextPage)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path from which to fetch the resources.
+    - id: pathParameters
+      type: System.Object
+      description: If the <code>path</code> is a URI template, parameters to use for substitution.
+    - id: getNextPage
+      type: System.Func{Octopus.Client.Model.ResourceCollection{{TResource}},System.Boolean}
+      description: "\nA callback invoked for each page of data found. If the callback returns <code>true</code>, the next\npage will also be requested.\n"
+    typeParameters:
+    - id: TResource
+    return:
+      type: System.Threading.Tasks.Task
+      description: The collection of resources from the server.
+    content.vb: Function Paginate(Of TResource)(path As String, pathParameters As Object, getNextPage As Func(Of ResourceCollection(Of TResource), Boolean)) As Task
+  overload: Octopus.Client.IOctopusAsyncClient.Paginate*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+  nameWithType.vb: IOctopusAsyncClient.Paginate(Of TResource)(String, Object, Func(Of ResourceCollection(Of TResource), Boolean))
+  fullName.vb: Octopus.Client.IOctopusAsyncClient.Paginate(Of TResource)(System.String, System.Object, System.Func(Of Octopus.Client.Model.ResourceCollection(Of TResource), System.Boolean))
+  name.vb: Paginate(Of TResource)(String, Object, Func(Of ResourceCollection(Of TResource), Boolean))
+- uid: Octopus.Client.IOctopusAsyncClient.Get``1(System.String,System.Object)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.Get``1(System.String,System.Object)
+  id: Get``1(System.String,System.Object)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: Get<TResource>(String, Object)
+  nameWithType: IOctopusAsyncClient.Get<TResource>(String, Object)
+  fullName: Octopus.Client.IOctopusAsyncClient.Get<TResource>(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Get
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 165
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nFetches a single resource from the server using the HTTP GET verb.\n"
+  example: []
+  syntax:
+    content: Task<TResource> Get<TResource>(string path, object pathParameters = null)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path from which to fetch the resource.
+    - id: pathParameters
+      type: System.Object
+      description: If the <code>path</code> is a URI template, parameters to use for substitution.
+    typeParameters:
+    - id: TResource
+    return:
+      type: System.Threading.Tasks.Task{{TResource}}
+      description: The resource from the server.
+    content.vb: Function Get(Of TResource)(path As String, pathParameters As Object = Nothing) As Task(Of TResource)
+  overload: Octopus.Client.IOctopusAsyncClient.Get*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+  nameWithType.vb: IOctopusAsyncClient.Get(Of TResource)(String, Object)
+  fullName.vb: Octopus.Client.IOctopusAsyncClient.Get(Of TResource)(System.String, System.Object)
+  name.vb: Get(Of TResource)(String, Object)
+- uid: Octopus.Client.IOctopusAsyncClient.Create``1(System.String,``0,System.Object)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.Create``1(System.String,``0,System.Object)
+  id: Create``1(System.String,``0,System.Object)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: Create<TResource>(String, TResource, Object)
+  nameWithType: IOctopusAsyncClient.Create<TResource>(String, TResource, Object)
+  fullName: Octopus.Client.IOctopusAsyncClient.Create<TResource>(System.String, TResource, System.Object)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Create
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 185
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nCreates a resource at the given URI on the server using the POST verb, then performs a fresh GET request to fetch\nthe created item.\n"
+  example: []
+  syntax:
+    content: Task<TResource> Create<TResource>(string path, TResource resource, object pathParameters = null)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the container resource.
+    - id: resource
+      type: '{TResource}'
+      description: The resource to create.
+    - id: pathParameters
+      type: System.Object
+      description: If the <code>path</code> is a URI template, parameters to use for substitution.
+    typeParameters:
+    - id: TResource
+    return:
+      type: System.Threading.Tasks.Task{{TResource}}
+      description: The latest copy of the resource from the server.
+    content.vb: Function Create(Of TResource)(path As String, resource As TResource, pathParameters As Object = Nothing) As Task(Of TResource)
+  overload: Octopus.Client.IOctopusAsyncClient.Create*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+  nameWithType.vb: IOctopusAsyncClient.Create(Of TResource)(String, TResource, Object)
+  fullName.vb: Octopus.Client.IOctopusAsyncClient.Create(Of TResource)(System.String, TResource, System.Object)
+  name.vb: Create(Of TResource)(String, TResource, Object)
+- uid: Octopus.Client.IOctopusAsyncClient.Post``1(System.String,``0,System.Object)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.Post``1(System.String,``0,System.Object)
+  id: Post``1(System.String,``0,System.Object)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: Post<TResource>(String, TResource, Object)
+  nameWithType: IOctopusAsyncClient.Post<TResource>(String, TResource, Object)
+  fullName: Octopus.Client.IOctopusAsyncClient.Post<TResource>(System.String, TResource, System.Object)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Post
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 203
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nSends a command to a resource at the given URI on the server using the POST verb.\n"
+  example: []
+  syntax:
+    content: Task Post<TResource>(string path, TResource resource, object pathParameters = null)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the container resource.
+    - id: resource
+      type: '{TResource}'
+      description: The resource to create.
+    - id: pathParameters
+      type: System.Object
+      description: If the <code>path</code> is a URI template, parameters to use for substitution.
+    typeParameters:
+    - id: TResource
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function Post(Of TResource)(path As String, resource As TResource, pathParameters As Object = Nothing) As Task
+  overload: Octopus.Client.IOctopusAsyncClient.Post*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+  nameWithType.vb: IOctopusAsyncClient.Post(Of TResource)(String, TResource, Object)
+  fullName.vb: Octopus.Client.IOctopusAsyncClient.Post(Of TResource)(System.String, TResource, System.Object)
+  name.vb: Post(Of TResource)(String, TResource, Object)
+- uid: Octopus.Client.IOctopusAsyncClient.Post``2(System.String,``0,System.Object)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.Post``2(System.String,``0,System.Object)
+  id: Post``2(System.String,``0,System.Object)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: Post<TResource, TResponse>(String, TResource, Object)
+  nameWithType: IOctopusAsyncClient.Post<TResource, TResponse>(String, TResource, Object)
+  fullName: Octopus.Client.IOctopusAsyncClient.Post<TResource, TResponse>(System.String, TResource, System.Object)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Post
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 221
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nSends a command to a resource at the given URI on the server using the POST verb, and retrieve the response.\n"
+  example: []
+  syntax:
+    content: Task<TResponse> Post<TResource, TResponse>(string path, TResource resource, object pathParameters = null)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the container resource.
+    - id: resource
+      type: '{TResource}'
+      description: The resource to create.
+    - id: pathParameters
+      type: System.Object
+      description: If the <code>path</code> is a URI template, parameters to use for substitution.
+    typeParameters:
+    - id: TResource
+    - id: TResponse
+    return:
+      type: System.Threading.Tasks.Task{{TResponse}}
+    content.vb: Function Post(Of TResource, TResponse)(path As String, resource As TResource, pathParameters As Object = Nothing) As Task(Of TResponse)
+  overload: Octopus.Client.IOctopusAsyncClient.Post*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+  nameWithType.vb: IOctopusAsyncClient.Post(Of TResource, TResponse)(String, TResource, Object)
+  fullName.vb: Octopus.Client.IOctopusAsyncClient.Post(Of TResource, TResponse)(System.String, TResource, System.Object)
+  name.vb: Post(Of TResource, TResponse)(String, TResource, Object)
+- uid: Octopus.Client.IOctopusAsyncClient.Post(System.String)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.Post(System.String)
+  id: Post(System.String)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: Post(String)
+  nameWithType: IOctopusAsyncClient.Post(String)
+  fullName: Octopus.Client.IOctopusAsyncClient.Post(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Post
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 237
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nSends a command to a resource at the given URI on the server using the POST verb.\n"
+  example: []
+  syntax:
+    content: Task Post(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the container resource.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function Post(path As String) As Task
+  overload: Octopus.Client.IOctopusAsyncClient.Post*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+- uid: Octopus.Client.IOctopusAsyncClient.Put``1(System.String,``0)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.Put``1(System.String,``0)
+  id: Put``1(System.String,``0)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: Put<TResource>(String, TResource)
+  nameWithType: IOctopusAsyncClient.Put<TResource>(String, TResource)
+  fullName: Octopus.Client.IOctopusAsyncClient.Put<TResource>(System.String, TResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Put
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 254
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nSends a command to a resource at the given URI on the server using the PUT verb.\n"
+  example: []
+  syntax:
+    content: Task Put<TResource>(string path, TResource resource)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the container resource.
+    - id: resource
+      type: '{TResource}'
+      description: The resource to create.
+    typeParameters:
+    - id: TResource
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function Put(Of TResource)(path As String, resource As TResource) As Task
+  overload: Octopus.Client.IOctopusAsyncClient.Put*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+  nameWithType.vb: IOctopusAsyncClient.Put(Of TResource)(String, TResource)
+  fullName.vb: Octopus.Client.IOctopusAsyncClient.Put(Of TResource)(System.String, TResource)
+  name.vb: Put(Of TResource)(String, TResource)
+- uid: Octopus.Client.IOctopusAsyncClient.Put(System.String)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.Put(System.String)
+  id: Put(System.String)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: Put(String)
+  nameWithType: IOctopusAsyncClient.Put(String)
+  fullName: Octopus.Client.IOctopusAsyncClient.Put(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Put
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 270
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nSends a command to a resource at the given URI on the server using the PUT verb.\n"
+  example: []
+  syntax:
+    content: Task Put(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the container resource.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function Put(path As String) As Task
+  overload: Octopus.Client.IOctopusAsyncClient.Put*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+- uid: Octopus.Client.IOctopusAsyncClient.Put``1(System.String,``0,System.Object)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.Put``1(System.String,``0,System.Object)
+  id: Put``1(System.String,``0,System.Object)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: Put<TResource>(String, TResource, Object)
+  nameWithType: IOctopusAsyncClient.Put<TResource>(String, TResource, Object)
+  fullName: Octopus.Client.IOctopusAsyncClient.Put<TResource>(System.String, TResource, System.Object)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Put
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 288
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nSends a command to a resource at the given URI on the server using the PUT verb.\n"
+  example: []
+  syntax:
+    content: Task Put<TResource>(string path, TResource resource, object pathParameters = null)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the container resource.
+    - id: resource
+      type: '{TResource}'
+      description: The resource to create.
+    - id: pathParameters
+      type: System.Object
+      description: If the <code>path</code> is a URI template, parameters to use for substitution.
+    typeParameters:
+    - id: TResource
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function Put(Of TResource)(path As String, resource As TResource, pathParameters As Object = Nothing) As Task
+  overload: Octopus.Client.IOctopusAsyncClient.Put*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+  nameWithType.vb: IOctopusAsyncClient.Put(Of TResource)(String, TResource, Object)
+  fullName.vb: Octopus.Client.IOctopusAsyncClient.Put(Of TResource)(System.String, TResource, System.Object)
+  name.vb: Put(Of TResource)(String, TResource, Object)
+- uid: Octopus.Client.IOctopusAsyncClient.Update``1(System.String,``0,System.Object)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.Update``1(System.String,``0,System.Object)
+  id: Update``1(System.String,``0,System.Object)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: Update<TResource>(String, TResource, Object)
+  nameWithType: IOctopusAsyncClient.Update<TResource>(String, TResource, Object)
+  fullName: Octopus.Client.IOctopusAsyncClient.Update<TResource>(System.String, TResource, System.Object)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Update
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 308
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nUpdates the resource at the given URI on the server using the PUT verb, then performs a fresh GET request to reload\nthe data.\n"
+  example: []
+  syntax:
+    content: Task<TResource> Update<TResource>(string path, TResource resource, object pathParameters = null)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the resource to update.
+    - id: resource
+      type: '{TResource}'
+      description: The resource to update.
+    - id: pathParameters
+      type: System.Object
+      description: If the <code>path</code> is a URI template, parameters to use for substitution.
+    typeParameters:
+    - id: TResource
+    return:
+      type: System.Threading.Tasks.Task{{TResource}}
+      description: The latest copy of the resource from the server.
+    content.vb: Function Update(Of TResource)(path As String, resource As TResource, pathParameters As Object = Nothing) As Task(Of TResource)
+  overload: Octopus.Client.IOctopusAsyncClient.Update*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+  nameWithType.vb: IOctopusAsyncClient.Update(Of TResource)(String, TResource, Object)
+  fullName.vb: Octopus.Client.IOctopusAsyncClient.Update(Of TResource)(System.String, TResource, System.Object)
+  name.vb: Update(Of TResource)(String, TResource, Object)
+- uid: Octopus.Client.IOctopusAsyncClient.Delete(System.String,System.Object,System.Object)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.Delete(System.String,System.Object,System.Object)
+  id: Delete(System.String,System.Object,System.Object)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: Delete(String, Object, Object)
+  nameWithType: IOctopusAsyncClient.Delete(String, Object, Object)
+  fullName: Octopus.Client.IOctopusAsyncClient.Delete(System.String, System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Delete
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 330
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nDeletes the resource at the given URI from the server using a the DELETE verb. Deletes in Octopus happen\nasynchronously via a background task\nthat is executed by the Octopus Server. The payload returned by delete will be the task that was created on the\nserver.\n"
+  example: []
+  syntax:
+    content: Task Delete(string path, object pathParameters = null, object resource = null)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the resource to delete.
+    - id: pathParameters
+      type: System.Object
+      description: If the <code>path</code> is a URI template, parameters to use for substitution.
+    - id: resource
+      type: System.Object
+      description: An optional resource to pass as the body of the request.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task resource that provides details about the background task that deletes the specified resource.
+    content.vb: Function Delete(path As String, pathParameters As Object = Nothing, resource As Object = Nothing) As Task
+  overload: Octopus.Client.IOctopusAsyncClient.Delete*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+- uid: Octopus.Client.IOctopusAsyncClient.GetContent(System.String,System.Object)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.GetContent(System.String,System.Object)
+  id: GetContent(System.String,System.Object)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: GetContent(String, Object)
+  nameWithType: IOctopusAsyncClient.GetContent(String, Object)
+  fullName: Octopus.Client.IOctopusAsyncClient.GetContent(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetContent
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 348
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nFetches raw content from the resource at the specified path, using the GET verb.\n"
+  example: []
+  syntax:
+    content: Task<Stream> GetContent(string path, object pathParameters = null)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the resource to fetch.
+    - id: pathParameters
+      type: System.Object
+      description: If the <code>path</code> is a URI template, parameters to use for substitution.
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+      description: A stream containing the content of the resource.
+    content.vb: Function GetContent(path As String, pathParameters As Object = Nothing) As Task(Of Stream)
+  overload: Octopus.Client.IOctopusAsyncClient.GetContent*
+  exceptions:
+  - type: Octopus.Client.Exceptions.OctopusSecurityException
+    commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+    description: "\nHTTP 401 or 403: Thrown when the current user&apos;s API key was not valid, their\naccount is disabled, or they don&apos;t have permission to perform the specified action.\n"
+  - type: Octopus.Client.Exceptions.OctopusServerException
+    commentId: T:Octopus.Client.Exceptions.OctopusServerException
+    description: "\nIf any other error is successfully returned from the server (e.g., a 500\nserver error).\n"
+  - type: Octopus.Client.Exceptions.OctopusValidationException
+    commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+    description: 'HTTP 400: If there was a problem with the request provided by the user.'
+  - type: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+    description: 'HTTP 404: If the specified resource does not exist on the server.'
+- uid: Octopus.Client.IOctopusAsyncClient.PutContent(System.String,System.IO.Stream)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.PutContent(System.String,System.IO.Stream)
+  id: PutContent(System.String,System.IO.Stream)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: PutContent(String, Stream)
+  nameWithType: IOctopusAsyncClient.PutContent(String, Stream)
+  fullName: Octopus.Client.IOctopusAsyncClient.PutContent(System.String, System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: PutContent
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 355
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nCreates or updates the raw content of the resource at the specified path, using the PUT verb.\n"
+  example: []
+  syntax:
+    content: Task PutContent(string path, Stream contentStream)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to the resource to create or update.
+    - id: contentStream
+      type: System.IO.Stream
+      description: A stream containing content of the resource.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function PutContent(path As String, contentStream As Stream) As Task
+  overload: Octopus.Client.IOctopusAsyncClient.PutContent*
+- uid: Octopus.Client.IOctopusAsyncClient.QualifyUri(System.String,System.Object)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.QualifyUri(System.String,System.Object)
+  id: QualifyUri(System.String,System.Object)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: QualifyUri(String, Object)
+  nameWithType: IOctopusAsyncClient.QualifyUri(String, Object)
+  fullName: Octopus.Client.IOctopusAsyncClient.QualifyUri(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: QualifyUri
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 357
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: Uri QualifyUri(string path, object parameters = null)
+    parameters:
+    - id: path
+      type: System.String
+    - id: parameters
+      type: System.Object
+    return:
+      type: System.Uri
+    content.vb: Function QualifyUri(path As String, parameters As Object = Nothing) As Uri
+  overload: Octopus.Client.IOctopusAsyncClient.QualifyUri*
+- uid: Octopus.Client.IOctopusAsyncClient.SignIn(Octopus.Client.Model.LoginCommand)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.SignIn(Octopus.Client.Model.LoginCommand)
+  id: SignIn(Octopus.Client.Model.LoginCommand)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: SignIn(LoginCommand)
+  nameWithType: IOctopusAsyncClient.SignIn(LoginCommand)
+  fullName: Octopus.Client.IOctopusAsyncClient.SignIn(Octopus.Client.Model.LoginCommand)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SignIn
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 364
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nSign in\n"
+  example: []
+  syntax:
+    content: Task SignIn(LoginCommand loginCommand)
+    parameters:
+    - id: loginCommand
+      type: Octopus.Client.Model.LoginCommand
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function SignIn(loginCommand As LoginCommand) As Task
+  overload: Octopus.Client.IOctopusAsyncClient.SignIn*
+- uid: Octopus.Client.IOctopusAsyncClient.SignOut
+  commentId: M:Octopus.Client.IOctopusAsyncClient.SignOut
+  id: SignOut
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: SignOut()
+  nameWithType: IOctopusAsyncClient.SignOut()
+  fullName: Octopus.Client.IOctopusAsyncClient.SignOut()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SignOut
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 370
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nSign out\n"
+  example: []
+  syntax:
+    content: Task SignOut()
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function SignOut As Task
+  overload: Octopus.Client.IOctopusAsyncClient.SignOut*
+- uid: Octopus.Client.IOctopusAsyncClient.ForSpace(Octopus.Client.Model.SpaceResource)
+  commentId: M:Octopus.Client.IOctopusAsyncClient.ForSpace(Octopus.Client.Model.SpaceResource)
+  id: ForSpace(Octopus.Client.Model.SpaceResource)
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: ForSpace(SpaceResource)
+  nameWithType: IOctopusAsyncClient.ForSpace(SpaceResource)
+  fullName: Octopus.Client.IOctopusAsyncClient.ForSpace(Octopus.Client.Model.SpaceResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ForSpace
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 377
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nGet a repository for the given space\n"
+  example: []
+  syntax:
+    content: IOctopusSpaceAsyncRepository ForSpace(SpaceResource space)
+    parameters:
+    - id: space
+      type: Octopus.Client.Model.SpaceResource
+      description: ''
+    return:
+      type: Octopus.Client.IOctopusSpaceAsyncRepository
+      description: ''
+    content.vb: Function ForSpace(space As SpaceResource) As IOctopusSpaceAsyncRepository
+  overload: Octopus.Client.IOctopusAsyncClient.ForSpace*
+- uid: Octopus.Client.IOctopusAsyncClient.ForSystem
+  commentId: M:Octopus.Client.IOctopusAsyncClient.ForSystem
+  id: ForSystem
+  parent: Octopus.Client.IOctopusAsyncClient
+  langs:
+  - csharp
+  - vb
+  name: ForSystem()
+  nameWithType: IOctopusAsyncClient.ForSystem()
+  fullName: Octopus.Client.IOctopusAsyncClient.ForSystem()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/IOctopusAsyncClient.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ForSystem
+    path: ../source/Octopus.Client/IOctopusAsyncClient.cs
+    startLine: 383
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nGet a repository for system only\n"
+  example: []
+  syntax:
+    content: IOctopusSystemAsyncRepository ForSystem()
+    return:
+      type: Octopus.Client.IOctopusSystemAsyncRepository
+      description: ''
+    content.vb: Function ForSystem As IOctopusSystemAsyncRepository
+  overload: Octopus.Client.IOctopusAsyncClient.ForSystem*
+references:
+- uid: Octopus.Client
+  commentId: N:Octopus.Client
+  name: Octopus.Client
+  nameWithType: Octopus.Client
+  fullName: Octopus.Client
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.IOctopusAsyncClient.Octopus.Client.OctopusRepositoryExtensions.CreateRepository(Octopus.Client.RepositoryScope)
+  commentId: M:Octopus.Client.OctopusRepositoryExtensions.CreateRepository(Octopus.Client.IOctopusAsyncClient,Octopus.Client.RepositoryScope)
+  parent: Octopus.Client.OctopusRepositoryExtensions
+  definition: Octopus.Client.OctopusRepositoryExtensions.CreateRepository(Octopus.Client.IOctopusAsyncClient,Octopus.Client.RepositoryScope)
+  name: CreateRepository(RepositoryScope)
+  nameWithType: OctopusRepositoryExtensions.CreateRepository(RepositoryScope)
+  fullName: Octopus.Client.OctopusRepositoryExtensions.CreateRepository(Octopus.Client.RepositoryScope)
+  spec.csharp:
+  - uid: Octopus.Client.OctopusRepositoryExtensions.CreateRepository(Octopus.Client.RepositoryScope)
+    name: CreateRepository
+    nameWithType: OctopusRepositoryExtensions.CreateRepository
+    fullName: Octopus.Client.OctopusRepositoryExtensions.CreateRepository
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.RepositoryScope
+    name: RepositoryScope
+    nameWithType: RepositoryScope
+    fullName: Octopus.Client.RepositoryScope
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.OctopusRepositoryExtensions.CreateRepository(Octopus.Client.RepositoryScope)
+    name: CreateRepository
+    nameWithType: OctopusRepositoryExtensions.CreateRepository
+    fullName: Octopus.Client.OctopusRepositoryExtensions.CreateRepository
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.RepositoryScope
+    name: RepositoryScope
+    nameWithType: RepositoryScope
+    fullName: Octopus.Client.RepositoryScope
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Octopus.Client.OctopusRepositoryExtensions.CreateRepository(Octopus.Client.IOctopusAsyncClient,Octopus.Client.RepositoryScope)
+  commentId: M:Octopus.Client.OctopusRepositoryExtensions.CreateRepository(Octopus.Client.IOctopusAsyncClient,Octopus.Client.RepositoryScope)
+  name: CreateRepository(IOctopusAsyncClient, RepositoryScope)
+  nameWithType: OctopusRepositoryExtensions.CreateRepository(IOctopusAsyncClient, RepositoryScope)
+  fullName: Octopus.Client.OctopusRepositoryExtensions.CreateRepository(Octopus.Client.IOctopusAsyncClient, Octopus.Client.RepositoryScope)
+  spec.csharp:
+  - uid: Octopus.Client.OctopusRepositoryExtensions.CreateRepository(Octopus.Client.IOctopusAsyncClient,Octopus.Client.RepositoryScope)
+    name: CreateRepository
+    nameWithType: OctopusRepositoryExtensions.CreateRepository
+    fullName: Octopus.Client.OctopusRepositoryExtensions.CreateRepository
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusAsyncClient
+    name: IOctopusAsyncClient
+    nameWithType: IOctopusAsyncClient
+    fullName: Octopus.Client.IOctopusAsyncClient
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.RepositoryScope
+    name: RepositoryScope
+    nameWithType: RepositoryScope
+    fullName: Octopus.Client.RepositoryScope
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.OctopusRepositoryExtensions.CreateRepository(Octopus.Client.IOctopusAsyncClient,Octopus.Client.RepositoryScope)
+    name: CreateRepository
+    nameWithType: OctopusRepositoryExtensions.CreateRepository
+    fullName: Octopus.Client.OctopusRepositoryExtensions.CreateRepository
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusAsyncClient
+    name: IOctopusAsyncClient
+    nameWithType: IOctopusAsyncClient
+    fullName: Octopus.Client.IOctopusAsyncClient
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.RepositoryScope
+    name: RepositoryScope
+    nameWithType: RepositoryScope
+    fullName: Octopus.Client.RepositoryScope
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.OctopusRepositoryExtensions
+  commentId: T:Octopus.Client.OctopusRepositoryExtensions
+  parent: Octopus.Client
+  name: OctopusRepositoryExtensions
+  nameWithType: OctopusRepositoryExtensions
+  fullName: Octopus.Client.OctopusRepositoryExtensions
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Action{Octopus.Client.OctopusRequest}
+  commentId: T:System.Action{Octopus.Client.OctopusRequest}
+  parent: System
+  definition: System.Action`1
+  name: Action<OctopusRequest>
+  nameWithType: Action<OctopusRequest>
+  fullName: System.Action<Octopus.Client.OctopusRequest>
+  nameWithType.vb: Action(Of OctopusRequest)
+  fullName.vb: System.Action(Of Octopus.Client.OctopusRequest)
+  name.vb: Action(Of OctopusRequest)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.OctopusRequest
+    name: OctopusRequest
+    nameWithType: OctopusRequest
+    fullName: Octopus.Client.OctopusRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.OctopusRequest
+    name: OctopusRequest
+    nameWithType: OctopusRequest
+    fullName: Octopus.Client.OctopusRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{Octopus.Client.OctopusResponse}
+  commentId: T:System.Action{Octopus.Client.OctopusResponse}
+  parent: System
+  definition: System.Action`1
+  name: Action<OctopusResponse>
+  nameWithType: Action<OctopusResponse>
+  fullName: System.Action<Octopus.Client.OctopusResponse>
+  nameWithType.vb: Action(Of OctopusResponse)
+  fullName.vb: System.Action(Of Octopus.Client.OctopusResponse)
+  name.vb: Action(Of OctopusResponse)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.OctopusResponse
+    name: OctopusResponse
+    nameWithType: OctopusResponse
+    fullName: Octopus.Client.OctopusResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.OctopusResponse
+    name: OctopusResponse
+    nameWithType: OctopusResponse
+    fullName: Octopus.Client.OctopusResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{System.Net.Http.HttpRequestMessage}
+  commentId: T:System.Action{System.Net.Http.HttpRequestMessage}
+  parent: System
+  definition: System.Action`1
+  name: Action<HttpRequestMessage>
+  nameWithType: Action<HttpRequestMessage>
+  fullName: System.Action<System.Net.Http.HttpRequestMessage>
+  nameWithType.vb: Action(Of HttpRequestMessage)
+  fullName.vb: System.Action(Of System.Net.Http.HttpRequestMessage)
+  name.vb: Action(Of HttpRequestMessage)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    nameWithType: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    nameWithType: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{System.Net.Http.HttpResponseMessage}
+  commentId: T:System.Action{System.Net.Http.HttpResponseMessage}
+  parent: System
+  definition: System.Action`1
+  name: Action<HttpResponseMessage>
+  nameWithType: Action<HttpResponseMessage>
+  fullName: System.Action<System.Net.Http.HttpResponseMessage>
+  nameWithType.vb: Action(Of HttpResponseMessage)
+  fullName.vb: System.Action(Of System.Net.Http.HttpResponseMessage)
+  name.vb: Action(Of HttpResponseMessage)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.IOctopusAsyncClient.Repository*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.Repository
+  name: Repository
+  nameWithType: IOctopusAsyncClient.Repository
+  fullName: Octopus.Client.IOctopusAsyncClient.Repository
+- uid: Octopus.Client.IOctopusAsyncRepository
+  commentId: T:Octopus.Client.IOctopusAsyncRepository
+  parent: Octopus.Client
+  name: IOctopusAsyncRepository
+  nameWithType: IOctopusAsyncRepository
+  fullName: Octopus.Client.IOctopusAsyncRepository
+- uid: Octopus.Client.IOctopusAsyncClient.IsUsingSecureConnection*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.IsUsingSecureConnection
+  name: IsUsingSecureConnection
+  nameWithType: IOctopusAsyncClient.IsUsingSecureConnection
+  fullName: Octopus.Client.IOctopusAsyncClient.IsUsingSecureConnection
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Exceptions.OctopusSecurityException
+  commentId: T:Octopus.Client.Exceptions.OctopusSecurityException
+  name: OctopusSecurityException
+  nameWithType: OctopusSecurityException
+  fullName: Octopus.Client.Exceptions.OctopusSecurityException
+- uid: Octopus.Client.Exceptions.OctopusServerException
+  commentId: T:Octopus.Client.Exceptions.OctopusServerException
+  name: OctopusServerException
+  nameWithType: OctopusServerException
+  fullName: Octopus.Client.Exceptions.OctopusServerException
+- uid: Octopus.Client.Exceptions.OctopusValidationException
+  commentId: T:Octopus.Client.Exceptions.OctopusValidationException
+  name: OctopusValidationException
+  nameWithType: OctopusValidationException
+  fullName: Octopus.Client.Exceptions.OctopusValidationException
+- uid: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+  commentId: T:Octopus.Client.Exceptions.OctopusResourceNotFoundException
+  name: OctopusResourceNotFoundException
+  nameWithType: OctopusResourceNotFoundException
+  fullName: Octopus.Client.Exceptions.OctopusResourceNotFoundException
+- uid: Octopus.Client.IOctopusAsyncClient.List*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.List
+  name: List
+  nameWithType: IOctopusAsyncClient.List
+  fullName: Octopus.Client.IOctopusAsyncClient.List
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.ResourceCollection{{TResource}}}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.ResourceCollection{``0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ResourceCollection<TResource>>
+  nameWithType: Task<ResourceCollection<TResource>>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.ResourceCollection<TResource>>
+  nameWithType.vb: Task(Of ResourceCollection(Of TResource))
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.ResourceCollection(Of TResource))
+  name.vb: Task(Of ResourceCollection(Of TResource))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.IOctopusAsyncClient.ListAll*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.ListAll
+  name: ListAll
+  nameWithType: IOctopusAsyncClient.ListAll
+  fullName: Octopus.Client.IOctopusAsyncClient.ListAll
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{{TResource}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{``0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IReadOnlyList<TResource>>
+  nameWithType: Task<IReadOnlyList<TResource>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<TResource>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of TResource))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyList(Of TResource))
+  name.vb: Task(Of IReadOnlyList(Of TResource))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.IOctopusAsyncClient.Paginate*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.Paginate
+  name: Paginate
+  nameWithType: IOctopusAsyncClient.Paginate
+  fullName: Octopus.Client.IOctopusAsyncClient.Paginate
+- uid: System.Func{Octopus.Client.Model.ResourceCollection{{TResource}},System.Boolean}
+  commentId: T:System.Func{Octopus.Client.Model.ResourceCollection{``0},System.Boolean}
+  parent: System
+  definition: System.Func`2
+  name: Func<ResourceCollection<TResource>, Boolean>
+  nameWithType: Func<ResourceCollection<TResource>, Boolean>
+  fullName: System.Func<Octopus.Client.Model.ResourceCollection<TResource>, System.Boolean>
+  nameWithType.vb: Func(Of ResourceCollection(Of TResource), Boolean)
+  fullName.vb: System.Func(Of Octopus.Client.Model.ResourceCollection(Of TResource), System.Boolean)
+  name.vb: Func(Of ResourceCollection(Of TResource), Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.IOctopusAsyncClient.Get*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.Get
+  name: Get
+  nameWithType: IOctopusAsyncClient.Get
+  fullName: Octopus.Client.IOctopusAsyncClient.Get
+- uid: System.Threading.Tasks.Task{{TResource}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TResource>
+  nameWithType: Task<TResource>
+  fullName: System.Threading.Tasks.Task<TResource>
+  nameWithType.vb: Task(Of TResource)
+  fullName.vb: System.Threading.Tasks.Task(Of TResource)
+  name.vb: Task(Of TResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.IOctopusAsyncClient.Create*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.Create
+  name: Create
+  nameWithType: IOctopusAsyncClient.Create
+  fullName: Octopus.Client.IOctopusAsyncClient.Create
+- uid: '{TResource}'
+  commentId: '!:TResource'
+  definition: TResource
+  name: TResource
+  nameWithType: TResource
+  fullName: TResource
+- uid: TResource
+  name: TResource
+  nameWithType: TResource
+  fullName: TResource
+- uid: Octopus.Client.IOctopusAsyncClient.Post*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.Post
+  name: Post
+  nameWithType: IOctopusAsyncClient.Post
+  fullName: Octopus.Client.IOctopusAsyncClient.Post
+- uid: System.Threading.Tasks.Task{{TResponse}}
+  commentId: T:System.Threading.Tasks.Task{``1}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TResponse>
+  nameWithType: Task<TResponse>
+  fullName: System.Threading.Tasks.Task<TResponse>
+  nameWithType.vb: Task(Of TResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of TResponse)
+  name.vb: Task(Of TResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResponse
+    nameWithType: TResponse
+    fullName: TResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResponse
+    nameWithType: TResponse
+    fullName: TResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.IOctopusAsyncClient.Put*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.Put
+  name: Put
+  nameWithType: IOctopusAsyncClient.Put
+  fullName: Octopus.Client.IOctopusAsyncClient.Put
+- uid: Octopus.Client.IOctopusAsyncClient.Update*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.Update
+  name: Update
+  nameWithType: IOctopusAsyncClient.Update
+  fullName: Octopus.Client.IOctopusAsyncClient.Update
+- uid: Octopus.Client.IOctopusAsyncClient.Delete*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.Delete
+  name: Delete
+  nameWithType: IOctopusAsyncClient.Delete
+  fullName: Octopus.Client.IOctopusAsyncClient.Delete
+- uid: Octopus.Client.IOctopusAsyncClient.GetContent*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.GetContent
+  name: GetContent
+  nameWithType: IOctopusAsyncClient.GetContent
+  fullName: Octopus.Client.IOctopusAsyncClient.GetContent
+- uid: System.Threading.Tasks.Task{System.IO.Stream}
+  commentId: T:System.Threading.Tasks.Task{System.IO.Stream}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Stream>
+  nameWithType: Task<Stream>
+  fullName: System.Threading.Tasks.Task<System.IO.Stream>
+  nameWithType.vb: Task(Of Stream)
+  fullName.vb: System.Threading.Tasks.Task(Of System.IO.Stream)
+  name.vb: Task(Of Stream)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.IOctopusAsyncClient.PutContent*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.PutContent
+  name: PutContent
+  nameWithType: IOctopusAsyncClient.PutContent
+  fullName: Octopus.Client.IOctopusAsyncClient.PutContent
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: Octopus.Client.IOctopusAsyncClient.QualifyUri*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.QualifyUri
+  name: QualifyUri
+  nameWithType: IOctopusAsyncClient.QualifyUri
+  fullName: Octopus.Client.IOctopusAsyncClient.QualifyUri
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Octopus.Client.IOctopusAsyncClient.SignIn*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.SignIn
+  name: SignIn
+  nameWithType: IOctopusAsyncClient.SignIn
+  fullName: Octopus.Client.IOctopusAsyncClient.SignIn
+- uid: Octopus.Client.Model.LoginCommand
+  commentId: T:Octopus.Client.Model.LoginCommand
+  parent: Octopus.Client.Model
+  name: LoginCommand
+  nameWithType: LoginCommand
+  fullName: Octopus.Client.Model.LoginCommand
+- uid: Octopus.Client.IOctopusAsyncClient.SignOut*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.SignOut
+  name: SignOut
+  nameWithType: IOctopusAsyncClient.SignOut
+  fullName: Octopus.Client.IOctopusAsyncClient.SignOut
+- uid: Octopus.Client.IOctopusAsyncClient.ForSpace*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.ForSpace
+  name: ForSpace
+  nameWithType: IOctopusAsyncClient.ForSpace
+  fullName: Octopus.Client.IOctopusAsyncClient.ForSpace
+- uid: Octopus.Client.Model.SpaceResource
+  commentId: T:Octopus.Client.Model.SpaceResource
+  parent: Octopus.Client.Model
+  name: SpaceResource
+  nameWithType: SpaceResource
+  fullName: Octopus.Client.Model.SpaceResource
+- uid: Octopus.Client.IOctopusSpaceAsyncRepository
+  commentId: T:Octopus.Client.IOctopusSpaceAsyncRepository
+  parent: Octopus.Client
+  name: IOctopusSpaceAsyncRepository
+  nameWithType: IOctopusSpaceAsyncRepository
+  fullName: Octopus.Client.IOctopusSpaceAsyncRepository
+- uid: Octopus.Client.IOctopusAsyncClient.ForSystem*
+  commentId: Overload:Octopus.Client.IOctopusAsyncClient.ForSystem
+  name: ForSystem
+  nameWithType: IOctopusAsyncClient.ForSystem
+  fullName: Octopus.Client.IOctopusAsyncClient.ForSystem
+- uid: Octopus.Client.IOctopusSystemAsyncRepository
+  commentId: T:Octopus.Client.IOctopusSystemAsyncRepository
+  parent: Octopus.Client
+  name: IOctopusSystemAsyncRepository
+  nameWithType: IOctopusSystemAsyncRepository
+  fullName: Octopus.Client.IOctopusSystemAsyncRepository

@@ -1,0 +1,1153 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.DashboardResource
+  commentId: T:Octopus.Client.Model.DashboardResource
+  id: DashboardResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.DashboardResource.Environments
+  - Octopus.Client.Model.DashboardResource.IsFiltered
+  - Octopus.Client.Model.DashboardResource.Items
+  - Octopus.Client.Model.DashboardResource.PreviousItems
+  - Octopus.Client.Model.DashboardResource.ProjectGroups
+  - Octopus.Client.Model.DashboardResource.ProjectLimit
+  - Octopus.Client.Model.DashboardResource.Projects
+  - Octopus.Client.Model.DashboardResource.Tenants
+  langs:
+  - csharp
+  - vb
+  name: DashboardResource
+  nameWithType: DashboardResource
+  fullName: Octopus.Client.Model.DashboardResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DashboardResource
+    path: ../source/Octopus.Client/Model/DashboardResource.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class DashboardResource : Resource, IResource, IAuditedResource'
+    content.vb: >-
+      Public Class DashboardResource
+          Inherits Resource
+          Implements IResource, IAuditedResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  inheritedMembers:
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.DashboardResource.Projects
+  commentId: P:Octopus.Client.Model.DashboardResource.Projects
+  id: Projects
+  parent: Octopus.Client.Model.DashboardResource
+  langs:
+  - csharp
+  - vb
+  name: Projects
+  nameWithType: DashboardResource.Projects
+  fullName: Octopus.Client.Model.DashboardResource.Projects
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Projects
+    path: ../source/Octopus.Client/Model/DashboardResource.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<DashboardProjectResource> Projects { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.DashboardProjectResource}
+    content.vb: Public Property Projects As List(Of DashboardProjectResource)
+  overload: Octopus.Client.Model.DashboardResource.Projects*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardResource.ProjectGroups
+  commentId: P:Octopus.Client.Model.DashboardResource.ProjectGroups
+  id: ProjectGroups
+  parent: Octopus.Client.Model.DashboardResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectGroups
+  nameWithType: DashboardResource.ProjectGroups
+  fullName: Octopus.Client.Model.DashboardResource.ProjectGroups
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectGroups
+    path: ../source/Octopus.Client/Model/DashboardResource.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<DashboardProjectGroupResource> ProjectGroups { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.DashboardProjectGroupResource}
+    content.vb: Public Property ProjectGroups As List(Of DashboardProjectGroupResource)
+  overload: Octopus.Client.Model.DashboardResource.ProjectGroups*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardResource.Environments
+  commentId: P:Octopus.Client.Model.DashboardResource.Environments
+  id: Environments
+  parent: Octopus.Client.Model.DashboardResource
+  langs:
+  - csharp
+  - vb
+  name: Environments
+  nameWithType: DashboardResource.Environments
+  fullName: Octopus.Client.Model.DashboardResource.Environments
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Environments
+    path: ../source/Octopus.Client/Model/DashboardResource.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<DashboardEnvironmentResource> Environments { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.DashboardEnvironmentResource}
+    content.vb: Public Property Environments As List(Of DashboardEnvironmentResource)
+  overload: Octopus.Client.Model.DashboardResource.Environments*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardResource.Tenants
+  commentId: P:Octopus.Client.Model.DashboardResource.Tenants
+  id: Tenants
+  parent: Octopus.Client.Model.DashboardResource
+  langs:
+  - csharp
+  - vb
+  name: Tenants
+  nameWithType: DashboardResource.Tenants
+  fullName: Octopus.Client.Model.DashboardResource.Tenants
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Tenants
+    path: ../source/Octopus.Client/Model/DashboardResource.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<DashboardTenantResource> Tenants { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.DashboardTenantResource}
+    content.vb: Public Property Tenants As List(Of DashboardTenantResource)
+  overload: Octopus.Client.Model.DashboardResource.Tenants*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardResource.Items
+  commentId: P:Octopus.Client.Model.DashboardResource.Items
+  id: Items
+  parent: Octopus.Client.Model.DashboardResource
+  langs:
+  - csharp
+  - vb
+  name: Items
+  nameWithType: DashboardResource.Items
+  fullName: Octopus.Client.Model.DashboardResource.Items
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Items
+    path: ../source/Octopus.Client/Model/DashboardResource.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<DashboardItemResource> Items { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.DashboardItemResource}
+    content.vb: Public Property Items As List(Of DashboardItemResource)
+  overload: Octopus.Client.Model.DashboardResource.Items*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardResource.PreviousItems
+  commentId: P:Octopus.Client.Model.DashboardResource.PreviousItems
+  id: PreviousItems
+  parent: Octopus.Client.Model.DashboardResource
+  langs:
+  - csharp
+  - vb
+  name: PreviousItems
+  nameWithType: DashboardResource.PreviousItems
+  fullName: Octopus.Client.Model.DashboardResource.PreviousItems
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: PreviousItems
+    path: ../source/Octopus.Client/Model/DashboardResource.cs
+    startLine: 12
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<DashboardItemResource> PreviousItems { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.DashboardItemResource}
+    content.vb: Public Property PreviousItems As List(Of DashboardItemResource)
+  overload: Octopus.Client.Model.DashboardResource.PreviousItems*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardResource.ProjectLimit
+  commentId: P:Octopus.Client.Model.DashboardResource.ProjectLimit
+  id: ProjectLimit
+  parent: Octopus.Client.Model.DashboardResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectLimit
+  nameWithType: DashboardResource.ProjectLimit
+  fullName: Octopus.Client.Model.DashboardResource.ProjectLimit
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectLimit
+    path: ../source/Octopus.Client/Model/DashboardResource.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public int? ProjectLimit { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property ProjectLimit As Integer?
+  overload: Octopus.Client.Model.DashboardResource.ProjectLimit*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardResource.IsFiltered
+  commentId: P:Octopus.Client.Model.DashboardResource.IsFiltered
+  id: IsFiltered
+  parent: Octopus.Client.Model.DashboardResource
+  langs:
+  - csharp
+  - vb
+  name: IsFiltered
+  nameWithType: DashboardResource.IsFiltered
+  fullName: Octopus.Client.Model.DashboardResource.IsFiltered
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsFiltered
+    path: ../source/Octopus.Client/Model/DashboardResource.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public bool IsFiltered { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsFiltered As Boolean
+  overload: Octopus.Client.Model.DashboardResource.IsFiltered*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.DashboardResource.Projects*
+  commentId: Overload:Octopus.Client.Model.DashboardResource.Projects
+  name: Projects
+  nameWithType: DashboardResource.Projects
+  fullName: Octopus.Client.Model.DashboardResource.Projects
+- uid: System.Collections.Generic.List{Octopus.Client.Model.DashboardProjectResource}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.DashboardProjectResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<DashboardProjectResource>
+  nameWithType: List<DashboardProjectResource>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.DashboardProjectResource>
+  nameWithType.vb: List(Of DashboardProjectResource)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.DashboardProjectResource)
+  name.vb: List(Of DashboardProjectResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.DashboardProjectResource
+    name: DashboardProjectResource
+    nameWithType: DashboardProjectResource
+    fullName: Octopus.Client.Model.DashboardProjectResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.DashboardProjectResource
+    name: DashboardProjectResource
+    nameWithType: DashboardProjectResource
+    fullName: Octopus.Client.Model.DashboardProjectResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.DashboardResource.ProjectGroups*
+  commentId: Overload:Octopus.Client.Model.DashboardResource.ProjectGroups
+  name: ProjectGroups
+  nameWithType: DashboardResource.ProjectGroups
+  fullName: Octopus.Client.Model.DashboardResource.ProjectGroups
+- uid: System.Collections.Generic.List{Octopus.Client.Model.DashboardProjectGroupResource}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.DashboardProjectGroupResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<DashboardProjectGroupResource>
+  nameWithType: List<DashboardProjectGroupResource>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.DashboardProjectGroupResource>
+  nameWithType.vb: List(Of DashboardProjectGroupResource)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.DashboardProjectGroupResource)
+  name.vb: List(Of DashboardProjectGroupResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.DashboardProjectGroupResource
+    name: DashboardProjectGroupResource
+    nameWithType: DashboardProjectGroupResource
+    fullName: Octopus.Client.Model.DashboardProjectGroupResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.DashboardProjectGroupResource
+    name: DashboardProjectGroupResource
+    nameWithType: DashboardProjectGroupResource
+    fullName: Octopus.Client.Model.DashboardProjectGroupResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.DashboardResource.Environments*
+  commentId: Overload:Octopus.Client.Model.DashboardResource.Environments
+  name: Environments
+  nameWithType: DashboardResource.Environments
+  fullName: Octopus.Client.Model.DashboardResource.Environments
+- uid: System.Collections.Generic.List{Octopus.Client.Model.DashboardEnvironmentResource}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.DashboardEnvironmentResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<DashboardEnvironmentResource>
+  nameWithType: List<DashboardEnvironmentResource>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.DashboardEnvironmentResource>
+  nameWithType.vb: List(Of DashboardEnvironmentResource)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.DashboardEnvironmentResource)
+  name.vb: List(Of DashboardEnvironmentResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.DashboardEnvironmentResource
+    name: DashboardEnvironmentResource
+    nameWithType: DashboardEnvironmentResource
+    fullName: Octopus.Client.Model.DashboardEnvironmentResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.DashboardEnvironmentResource
+    name: DashboardEnvironmentResource
+    nameWithType: DashboardEnvironmentResource
+    fullName: Octopus.Client.Model.DashboardEnvironmentResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.DashboardResource.Tenants*
+  commentId: Overload:Octopus.Client.Model.DashboardResource.Tenants
+  name: Tenants
+  nameWithType: DashboardResource.Tenants
+  fullName: Octopus.Client.Model.DashboardResource.Tenants
+- uid: System.Collections.Generic.List{Octopus.Client.Model.DashboardTenantResource}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.DashboardTenantResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<DashboardTenantResource>
+  nameWithType: List<DashboardTenantResource>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.DashboardTenantResource>
+  nameWithType.vb: List(Of DashboardTenantResource)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.DashboardTenantResource)
+  name.vb: List(Of DashboardTenantResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.DashboardTenantResource
+    name: DashboardTenantResource
+    nameWithType: DashboardTenantResource
+    fullName: Octopus.Client.Model.DashboardTenantResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.DashboardTenantResource
+    name: DashboardTenantResource
+    nameWithType: DashboardTenantResource
+    fullName: Octopus.Client.Model.DashboardTenantResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.DashboardResource.Items*
+  commentId: Overload:Octopus.Client.Model.DashboardResource.Items
+  name: Items
+  nameWithType: DashboardResource.Items
+  fullName: Octopus.Client.Model.DashboardResource.Items
+- uid: System.Collections.Generic.List{Octopus.Client.Model.DashboardItemResource}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.DashboardItemResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<DashboardItemResource>
+  nameWithType: List<DashboardItemResource>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.DashboardItemResource>
+  nameWithType.vb: List(Of DashboardItemResource)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.DashboardItemResource)
+  name.vb: List(Of DashboardItemResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.DashboardItemResource
+    name: DashboardItemResource
+    nameWithType: DashboardItemResource
+    fullName: Octopus.Client.Model.DashboardItemResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.DashboardItemResource
+    name: DashboardItemResource
+    nameWithType: DashboardItemResource
+    fullName: Octopus.Client.Model.DashboardItemResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.DashboardResource.PreviousItems*
+  commentId: Overload:Octopus.Client.Model.DashboardResource.PreviousItems
+  name: PreviousItems
+  nameWithType: DashboardResource.PreviousItems
+  fullName: Octopus.Client.Model.DashboardResource.PreviousItems
+- uid: Octopus.Client.Model.DashboardResource.ProjectLimit*
+  commentId: Overload:Octopus.Client.Model.DashboardResource.ProjectLimit
+  name: ProjectLimit
+  nameWithType: DashboardResource.ProjectLimit
+  fullName: Octopus.Client.Model.DashboardResource.ProjectLimit
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.DashboardResource.IsFiltered*
+  commentId: Overload:Octopus.Client.Model.DashboardResource.IsFiltered
+  name: IsFiltered
+  nameWithType: DashboardResource.IsFiltered
+  fullName: Octopus.Client.Model.DashboardResource.IsFiltered
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

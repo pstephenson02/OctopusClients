@@ -1,0 +1,586 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.SemanticVersionMask
+  commentId: T:Octopus.Client.Model.SemanticVersionMask
+  id: SemanticVersionMask
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.SemanticVersionMask.ApplyMask(System.String,Octopus.Client.Model.SemanticVersion)
+  - Octopus.Client.Model.SemanticVersionMask.GetLatestMaskedVersion(System.String,System.Collections.Generic.List{Octopus.Client.Model.SemanticVersion})
+  - Octopus.Client.Model.SemanticVersionMask.IsMask(System.String)
+  langs:
+  - csharp
+  - vb
+  name: SemanticVersionMask
+  nameWithType: SemanticVersionMask
+  fullName: Octopus.Client.Model.SemanticVersionMask
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SemanticVersionMask.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SemanticVersionMask
+    path: ../source/Octopus.Client/Model/SemanticVersionMask.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public static class SemanticVersionMask
+    content.vb: Public Module SemanticVersionMask
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Octopus.Client.Model.SemanticVersionMask.IsMask(System.String)
+  commentId: M:Octopus.Client.Model.SemanticVersionMask.IsMask(System.String)
+  id: IsMask(System.String)
+  parent: Octopus.Client.Model.SemanticVersionMask
+  langs:
+  - csharp
+  - vb
+  name: IsMask(String)
+  nameWithType: SemanticVersionMask.IsMask(String)
+  fullName: Octopus.Client.Model.SemanticVersionMask.IsMask(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SemanticVersionMask.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsMask
+    path: ../source/Octopus.Client/Model/SemanticVersionMask.cs
+    startLine: 23
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public static bool IsMask(string versionString)
+    parameters:
+    - id: versionString
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsMask(versionString As String) As Boolean
+  overload: Octopus.Client.Model.SemanticVersionMask.IsMask*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Octopus.Client.Model.SemanticVersionMask.GetLatestMaskedVersion(System.String,System.Collections.Generic.List{Octopus.Client.Model.SemanticVersion})
+  commentId: M:Octopus.Client.Model.SemanticVersionMask.GetLatestMaskedVersion(System.String,System.Collections.Generic.List{Octopus.Client.Model.SemanticVersion})
+  id: GetLatestMaskedVersion(System.String,System.Collections.Generic.List{Octopus.Client.Model.SemanticVersion})
+  parent: Octopus.Client.Model.SemanticVersionMask
+  langs:
+  - csharp
+  - vb
+  name: GetLatestMaskedVersion(String, List<SemanticVersion>)
+  nameWithType: SemanticVersionMask.GetLatestMaskedVersion(String, List<SemanticVersion>)
+  fullName: Octopus.Client.Model.SemanticVersionMask.GetLatestMaskedVersion(System.String, System.Collections.Generic.List<Octopus.Client.Model.SemanticVersion>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SemanticVersionMask.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetLatestMaskedVersion
+    path: ../source/Octopus.Client/Model/SemanticVersionMask.cs
+    startLine: 39
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public static SemanticVersion GetLatestMaskedVersion(string mask, List<SemanticVersion> versions)
+    parameters:
+    - id: mask
+      type: System.String
+    - id: versions
+      type: System.Collections.Generic.List{Octopus.Client.Model.SemanticVersion}
+    return:
+      type: Octopus.Client.Model.SemanticVersion
+    content.vb: Public Shared Function GetLatestMaskedVersion(mask As String, versions As List(Of SemanticVersion)) As SemanticVersion
+  overload: Octopus.Client.Model.SemanticVersionMask.GetLatestMaskedVersion*
+  nameWithType.vb: SemanticVersionMask.GetLatestMaskedVersion(String, List(Of SemanticVersion))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Octopus.Client.Model.SemanticVersionMask.GetLatestMaskedVersion(System.String, System.Collections.Generic.List(Of Octopus.Client.Model.SemanticVersion))
+  name.vb: GetLatestMaskedVersion(String, List(Of SemanticVersion))
+- uid: Octopus.Client.Model.SemanticVersionMask.ApplyMask(System.String,Octopus.Client.Model.SemanticVersion)
+  commentId: M:Octopus.Client.Model.SemanticVersionMask.ApplyMask(System.String,Octopus.Client.Model.SemanticVersion)
+  id: ApplyMask(System.String,Octopus.Client.Model.SemanticVersion)
+  parent: Octopus.Client.Model.SemanticVersionMask
+  langs:
+  - csharp
+  - vb
+  name: ApplyMask(String, SemanticVersion)
+  nameWithType: SemanticVersionMask.ApplyMask(String, SemanticVersion)
+  fullName: Octopus.Client.Model.SemanticVersionMask.ApplyMask(System.String, Octopus.Client.Model.SemanticVersion)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SemanticVersionMask.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ApplyMask
+    path: ../source/Octopus.Client/Model/SemanticVersionMask.cs
+    startLine: 79
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public static SemanticVersion ApplyMask(string mask, SemanticVersion currentVersion)
+    parameters:
+    - id: mask
+      type: System.String
+    - id: currentVersion
+      type: Octopus.Client.Model.SemanticVersion
+    return:
+      type: Octopus.Client.Model.SemanticVersion
+    content.vb: Public Shared Function ApplyMask(mask As String, currentVersion As SemanticVersion) As SemanticVersion
+  overload: Octopus.Client.Model.SemanticVersionMask.ApplyMask*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.SemanticVersionMask.IsMask*
+  commentId: Overload:Octopus.Client.Model.SemanticVersionMask.IsMask
+  name: IsMask
+  nameWithType: SemanticVersionMask.IsMask
+  fullName: Octopus.Client.Model.SemanticVersionMask.IsMask
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.SemanticVersionMask.GetLatestMaskedVersion*
+  commentId: Overload:Octopus.Client.Model.SemanticVersionMask.GetLatestMaskedVersion
+  name: GetLatestMaskedVersion
+  nameWithType: SemanticVersionMask.GetLatestMaskedVersion
+  fullName: Octopus.Client.Model.SemanticVersionMask.GetLatestMaskedVersion
+- uid: System.Collections.Generic.List{Octopus.Client.Model.SemanticVersion}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.SemanticVersion}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<SemanticVersion>
+  nameWithType: List<SemanticVersion>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.SemanticVersion>
+  nameWithType.vb: List(Of SemanticVersion)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.SemanticVersion)
+  name.vb: List(Of SemanticVersion)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.SemanticVersion
+    name: SemanticVersion
+    nameWithType: SemanticVersion
+    fullName: Octopus.Client.Model.SemanticVersion
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.SemanticVersion
+    name: SemanticVersion
+    nameWithType: SemanticVersion
+    fullName: Octopus.Client.Model.SemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.SemanticVersion
+  commentId: T:Octopus.Client.Model.SemanticVersion
+  parent: Octopus.Client.Model
+  name: SemanticVersion
+  nameWithType: SemanticVersion
+  fullName: Octopus.Client.Model.SemanticVersion
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.SemanticVersionMask.ApplyMask*
+  commentId: Overload:Octopus.Client.Model.SemanticVersionMask.ApplyMask
+  name: ApplyMask
+  nameWithType: SemanticVersionMask.ApplyMask
+  fullName: Octopus.Client.Model.SemanticVersionMask.ApplyMask

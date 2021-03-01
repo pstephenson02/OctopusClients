@@ -1,0 +1,469 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource
+  commentId: T:Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource
+  id: KubernetesAwsAuthenticationResource
+  parent: Octopus.Client.Model.Endpoints
+  children:
+  - Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.AuthenticationType
+  - Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.ClusterName
+  langs:
+  - csharp
+  - vb
+  name: KubernetesAwsAuthenticationResource
+  nameWithType: KubernetesAwsAuthenticationResource
+  fullName: Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Endpoints/KubernetesAwsAuthenticationResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: KubernetesAwsAuthenticationResource
+    path: ../source/Octopus.Client/Model/Endpoints/KubernetesAwsAuthenticationResource.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Endpoints
+  syntax:
+    content: 'public class KubernetesAwsAuthenticationResource : KubernetesStandardAccountAuthenticationResource, IEndpointWithMultipleAuthenticationResource'
+    content.vb: >-
+      Public Class KubernetesAwsAuthenticationResource
+          Inherits KubernetesStandardAccountAuthenticationResource
+          Implements IEndpointWithMultipleAuthenticationResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Endpoints.KubernetesStandardAccountAuthenticationResource
+  implements:
+  - Octopus.Client.Model.Endpoints.IEndpointWithMultipleAuthenticationResource
+  inheritedMembers:
+  - Octopus.Client.Model.Endpoints.KubernetesStandardAccountAuthenticationResource.AccountId
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.ClusterName
+  commentId: P:Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.ClusterName
+  id: ClusterName
+  parent: Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource
+  langs:
+  - csharp
+  - vb
+  name: ClusterName
+  nameWithType: KubernetesAwsAuthenticationResource.ClusterName
+  fullName: Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.ClusterName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Endpoints/KubernetesAwsAuthenticationResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ClusterName
+    path: ../source/Octopus.Client/Model/Endpoints/KubernetesAwsAuthenticationResource.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Endpoints
+  summary: "\nThe name of the EKS cluster\n"
+  example: []
+  syntax:
+    content: public string ClusterName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClusterName As String
+  overload: Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.ClusterName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.AuthenticationType
+  commentId: P:Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.AuthenticationType
+  id: AuthenticationType
+  parent: Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationType
+  nameWithType: KubernetesAwsAuthenticationResource.AuthenticationType
+  fullName: Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.AuthenticationType
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Endpoints/KubernetesAwsAuthenticationResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AuthenticationType
+    path: ../source/Octopus.Client/Model/Endpoints/KubernetesAwsAuthenticationResource.cs
+    startLine: 22
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Endpoints
+  summary: "\nSet the &quot;Type&quot; field to this to ensure nevermore deserialises a\nKubernetesAwsAuthentication\n"
+  example: []
+  syntax:
+    content: public override string AuthenticationType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property AuthenticationType As String
+  overridden: Octopus.Client.Model.Endpoints.KubernetesStandardAccountAuthenticationResource.AuthenticationType
+  overload: Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.AuthenticationType*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+references:
+- uid: Octopus.Client.Model.Endpoints
+  commentId: N:Octopus.Client.Model.Endpoints
+  name: Octopus.Client.Model.Endpoints
+  nameWithType: Octopus.Client.Model.Endpoints
+  fullName: Octopus.Client.Model.Endpoints
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Endpoints.KubernetesStandardAccountAuthenticationResource
+  commentId: T:Octopus.Client.Model.Endpoints.KubernetesStandardAccountAuthenticationResource
+  parent: Octopus.Client.Model.Endpoints
+  name: KubernetesStandardAccountAuthenticationResource
+  nameWithType: KubernetesStandardAccountAuthenticationResource
+  fullName: Octopus.Client.Model.Endpoints.KubernetesStandardAccountAuthenticationResource
+- uid: Octopus.Client.Model.Endpoints.IEndpointWithMultipleAuthenticationResource
+  commentId: T:Octopus.Client.Model.Endpoints.IEndpointWithMultipleAuthenticationResource
+  parent: Octopus.Client.Model.Endpoints
+  name: IEndpointWithMultipleAuthenticationResource
+  nameWithType: IEndpointWithMultipleAuthenticationResource
+  fullName: Octopus.Client.Model.Endpoints.IEndpointWithMultipleAuthenticationResource
+- uid: Octopus.Client.Model.Endpoints.KubernetesStandardAccountAuthenticationResource.AccountId
+  commentId: P:Octopus.Client.Model.Endpoints.KubernetesStandardAccountAuthenticationResource.AccountId
+  parent: Octopus.Client.Model.Endpoints.KubernetesStandardAccountAuthenticationResource
+  name: AccountId
+  nameWithType: KubernetesStandardAccountAuthenticationResource.AccountId
+  fullName: Octopus.Client.Model.Endpoints.KubernetesStandardAccountAuthenticationResource.AccountId
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.ClusterName*
+  commentId: Overload:Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.ClusterName
+  name: ClusterName
+  nameWithType: KubernetesAwsAuthenticationResource.ClusterName
+  fullName: Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.ClusterName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.Endpoints.KubernetesStandardAccountAuthenticationResource.AuthenticationType
+  commentId: P:Octopus.Client.Model.Endpoints.KubernetesStandardAccountAuthenticationResource.AuthenticationType
+  parent: Octopus.Client.Model.Endpoints.KubernetesStandardAccountAuthenticationResource
+  name: AuthenticationType
+  nameWithType: KubernetesStandardAccountAuthenticationResource.AuthenticationType
+  fullName: Octopus.Client.Model.Endpoints.KubernetesStandardAccountAuthenticationResource.AuthenticationType
+- uid: Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.AuthenticationType*
+  commentId: Overload:Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.AuthenticationType
+  name: AuthenticationType
+  nameWithType: KubernetesAwsAuthenticationResource.AuthenticationType
+  fullName: Octopus.Client.Model.Endpoints.KubernetesAwsAuthenticationResource.AuthenticationType

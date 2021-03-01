@@ -1,0 +1,1249 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.Versioning.VersionComparer
+  commentId: T:Octopus.Client.Model.Versioning.VersionComparer
+  id: VersionComparer
+  parent: Octopus.Client.Model.Versioning
+  children:
+  - Octopus.Client.Model.Versioning.VersionComparer.#ctor
+  - Octopus.Client.Model.Versioning.VersionComparer.#ctor(Octopus.Client.Model.Versioning.VersionComparison)
+  - Octopus.Client.Model.Versioning.VersionComparer.Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  - Octopus.Client.Model.Versioning.VersionComparer.Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)
+  - Octopus.Client.Model.Versioning.VersionComparer.Default
+  - Octopus.Client.Model.Versioning.VersionComparer.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  - Octopus.Client.Model.Versioning.VersionComparer.GetHashCode(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  - Octopus.Client.Model.Versioning.VersionComparer.Version
+  - Octopus.Client.Model.Versioning.VersionComparer.VersionRelease
+  - Octopus.Client.Model.Versioning.VersionComparer.VersionReleaseMetadata
+  langs:
+  - csharp
+  - vb
+  name: VersionComparer
+  nameWithType: VersionComparer
+  fullName: Octopus.Client.Model.Versioning.VersionComparer
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/VersionComparer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: VersionComparer
+    path: ../source/Octopus.Client/Model/Versioning/VersionComparer.cs
+    startLine: 12
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Versioning
+  summary: "\nAn IVersionComparer for NuGetVersion and NuGetVersion types.\n"
+  example: []
+  syntax:
+    content: 'public sealed class VersionComparer : IVersionComparer, IEqualityComparer<StrictSemanticVersion>, IComparer<StrictSemanticVersion>'
+    content.vb: >-
+      Public NotInheritable Class VersionComparer
+          Implements IVersionComparer, IEqualityComparer(Of StrictSemanticVersion), IComparer(Of StrictSemanticVersion)
+  inheritance:
+  - System.Object
+  implements:
+  - Octopus.Client.Model.Versioning.IVersionComparer
+  - System.Collections.Generic.IEqualityComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  - System.Collections.Generic.IComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Octopus.Client.Model.Versioning.VersionComparer.#ctor
+  commentId: M:Octopus.Client.Model.Versioning.VersionComparer.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.Versioning.VersionComparer
+  langs:
+  - csharp
+  - vb
+  name: VersionComparer()
+  nameWithType: VersionComparer.VersionComparer()
+  fullName: Octopus.Client.Model.Versioning.VersionComparer.VersionComparer()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/VersionComparer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Versioning/VersionComparer.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Versioning
+  summary: "\nCreates a VersionComparer using the default mode.\n"
+  example: []
+  syntax:
+    content: public VersionComparer()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.Versioning.VersionComparer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.Versioning.VersionComparer.#ctor(Octopus.Client.Model.Versioning.VersionComparison)
+  commentId: M:Octopus.Client.Model.Versioning.VersionComparer.#ctor(Octopus.Client.Model.Versioning.VersionComparison)
+  id: '#ctor(Octopus.Client.Model.Versioning.VersionComparison)'
+  parent: Octopus.Client.Model.Versioning.VersionComparer
+  langs:
+  - csharp
+  - vb
+  name: VersionComparer(VersionComparison)
+  nameWithType: VersionComparer.VersionComparer(VersionComparison)
+  fullName: Octopus.Client.Model.Versioning.VersionComparer.VersionComparer(Octopus.Client.Model.Versioning.VersionComparison)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/VersionComparer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Versioning/VersionComparer.cs
+    startLine: 28
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Versioning
+  summary: "\nCreates a VersionComparer that respects the given comparison mode.\n"
+  example: []
+  syntax:
+    content: public VersionComparer(VersionComparison versionComparison)
+    parameters:
+    - id: versionComparison
+      type: Octopus.Client.Model.Versioning.VersionComparison
+      description: comparison mode
+    content.vb: Public Sub New(versionComparison As VersionComparison)
+  overload: Octopus.Client.Model.Versioning.VersionComparer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.Versioning.VersionComparer.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  commentId: M:Octopus.Client.Model.Versioning.VersionComparer.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  id: Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  parent: Octopus.Client.Model.Versioning.VersionComparer
+  langs:
+  - csharp
+  - vb
+  name: Equals(StrictSemanticVersion, StrictSemanticVersion)
+  nameWithType: VersionComparer.Equals(StrictSemanticVersion, StrictSemanticVersion)
+  fullName: Octopus.Client.Model.Versioning.VersionComparer.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion, Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/VersionComparer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Equals
+    path: ../source/Octopus.Client/Model/Versioning/VersionComparer.cs
+    startLine: 36
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Versioning
+  summary: "\nDetermines if both versions are equal.\n"
+  example: []
+  syntax:
+    content: public bool Equals(StrictSemanticVersion x, StrictSemanticVersion y)
+    parameters:
+    - id: x
+      type: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    - id: y
+      type: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(x As StrictSemanticVersion, y As StrictSemanticVersion) As Boolean
+  overload: Octopus.Client.Model.Versioning.VersionComparer.Equals*
+  implements:
+  - System.Collections.Generic.IEqualityComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.Versioning.VersionComparer.Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)
+  commentId: M:Octopus.Client.Model.Versioning.VersionComparer.Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)
+  id: Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)
+  parent: Octopus.Client.Model.Versioning.VersionComparer
+  langs:
+  - csharp
+  - vb
+  name: Compare(StrictSemanticVersion, StrictSemanticVersion, VersionComparison)
+  nameWithType: VersionComparer.Compare(StrictSemanticVersion, StrictSemanticVersion, VersionComparison)
+  fullName: Octopus.Client.Model.Versioning.VersionComparer.Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion, Octopus.Client.Model.Versioning.StrictSemanticVersion, Octopus.Client.Model.Versioning.VersionComparison)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/VersionComparer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Compare
+    path: ../source/Octopus.Client/Model/Versioning/VersionComparer.cs
+    startLine: 44
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Versioning
+  summary: "\nCompares the given versions using the VersionComparison mode.\n"
+  example: []
+  syntax:
+    content: public static int Compare(StrictSemanticVersion version1, StrictSemanticVersion version2, VersionComparison versionComparison)
+    parameters:
+    - id: version1
+      type: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    - id: version2
+      type: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    - id: versionComparison
+      type: Octopus.Client.Model.Versioning.VersionComparison
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Compare(version1 As StrictSemanticVersion, version2 As StrictSemanticVersion, versionComparison As VersionComparison) As Integer
+  overload: Octopus.Client.Model.Versioning.VersionComparer.Compare*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Octopus.Client.Model.Versioning.VersionComparer.GetHashCode(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  commentId: M:Octopus.Client.Model.Versioning.VersionComparer.GetHashCode(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  id: GetHashCode(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  parent: Octopus.Client.Model.Versioning.VersionComparer
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode(StrictSemanticVersion)
+  nameWithType: VersionComparer.GetHashCode(StrictSemanticVersion)
+  fullName: Octopus.Client.Model.Versioning.VersionComparer.GetHashCode(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/VersionComparer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetHashCode
+    path: ../source/Octopus.Client/Model/Versioning/VersionComparer.cs
+    startLine: 53
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Versioning
+  summary: "\nGives a hash code based on the normalized version string.\n"
+  example: []
+  syntax:
+    content: public int GetHashCode(StrictSemanticVersion version)
+    parameters:
+    - id: version
+      type: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    return:
+      type: System.Int32
+    content.vb: Public Function GetHashCode(version As StrictSemanticVersion) As Integer
+  overload: Octopus.Client.Model.Versioning.VersionComparer.GetHashCode*
+  implements:
+  - System.Collections.Generic.IEqualityComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}.GetHashCode(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.Versioning.VersionComparer.Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  commentId: M:Octopus.Client.Model.Versioning.VersionComparer.Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  id: Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  parent: Octopus.Client.Model.Versioning.VersionComparer
+  langs:
+  - csharp
+  - vb
+  name: Compare(StrictSemanticVersion, StrictSemanticVersion)
+  nameWithType: VersionComparer.Compare(StrictSemanticVersion, StrictSemanticVersion)
+  fullName: Octopus.Client.Model.Versioning.VersionComparer.Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion, Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/VersionComparer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Compare
+    path: ../source/Octopus.Client/Model/Versioning/VersionComparer.cs
+    startLine: 97
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Versioning
+  summary: "\nCompare versions.\n"
+  example: []
+  syntax:
+    content: public int Compare(StrictSemanticVersion x, StrictSemanticVersion y)
+    parameters:
+    - id: x
+      type: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    - id: y
+      type: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    return:
+      type: System.Int32
+    content.vb: Public Function Compare(x As StrictSemanticVersion, y As StrictSemanticVersion) As Integer
+  overload: Octopus.Client.Model.Versioning.VersionComparer.Compare*
+  implements:
+  - System.Collections.Generic.IComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}.Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.Versioning.VersionComparer.Default
+  commentId: F:Octopus.Client.Model.Versioning.VersionComparer.Default
+  id: Default
+  parent: Octopus.Client.Model.Versioning.VersionComparer
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: VersionComparer.Default
+  fullName: Octopus.Client.Model.Versioning.VersionComparer.Default
+  type: Field
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/VersionComparer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Default
+    path: ../source/Octopus.Client/Model/Versioning/VersionComparer.cs
+    startLine: 211
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Versioning
+  summary: "\nA default comparer that compares metadata as strings.\n"
+  example: []
+  syntax:
+    content: public static readonly IVersionComparer Default
+    return:
+      type: Octopus.Client.Model.Versioning.IVersionComparer
+    content.vb: Public Shared ReadOnly Default As IVersionComparer
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Octopus.Client.Model.Versioning.VersionComparer.Version
+  commentId: F:Octopus.Client.Model.Versioning.VersionComparer.Version
+  id: Version
+  parent: Octopus.Client.Model.Versioning.VersionComparer
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: VersionComparer.Version
+  fullName: Octopus.Client.Model.Versioning.VersionComparer.Version
+  type: Field
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/VersionComparer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Version
+    path: ../source/Octopus.Client/Model/Versioning/VersionComparer.cs
+    startLine: 216
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Versioning
+  summary: "\nA comparer that uses only the version numbers.\n"
+  example: []
+  syntax:
+    content: public static readonly IVersionComparer Version
+    return:
+      type: Octopus.Client.Model.Versioning.IVersionComparer
+    content.vb: Public Shared ReadOnly Version As IVersionComparer
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Octopus.Client.Model.Versioning.VersionComparer.VersionRelease
+  commentId: F:Octopus.Client.Model.Versioning.VersionComparer.VersionRelease
+  id: VersionRelease
+  parent: Octopus.Client.Model.Versioning.VersionComparer
+  langs:
+  - csharp
+  - vb
+  name: VersionRelease
+  nameWithType: VersionComparer.VersionRelease
+  fullName: Octopus.Client.Model.Versioning.VersionComparer.VersionRelease
+  type: Field
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/VersionComparer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: VersionRelease
+    path: ../source/Octopus.Client/Model/Versioning/VersionComparer.cs
+    startLine: 221
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Versioning
+  summary: "\nCompares versions without comparing the metadata.\n"
+  example: []
+  syntax:
+    content: public static readonly IVersionComparer VersionRelease
+    return:
+      type: Octopus.Client.Model.Versioning.IVersionComparer
+    content.vb: Public Shared ReadOnly VersionRelease As IVersionComparer
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Octopus.Client.Model.Versioning.VersionComparer.VersionReleaseMetadata
+  commentId: F:Octopus.Client.Model.Versioning.VersionComparer.VersionReleaseMetadata
+  id: VersionReleaseMetadata
+  parent: Octopus.Client.Model.Versioning.VersionComparer
+  langs:
+  - csharp
+  - vb
+  name: VersionReleaseMetadata
+  nameWithType: VersionComparer.VersionReleaseMetadata
+  fullName: Octopus.Client.Model.Versioning.VersionComparer.VersionReleaseMetadata
+  type: Field
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/VersionComparer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: VersionReleaseMetadata
+    path: ../source/Octopus.Client/Model/Versioning/VersionComparer.cs
+    startLine: 226
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Versioning
+  summary: "\nA version comparer that follows SemVer 2.0.0 rules.\n"
+  example: []
+  syntax:
+    content: public static IVersionComparer VersionReleaseMetadata
+    return:
+      type: Octopus.Client.Model.Versioning.IVersionComparer
+    content.vb: Public Shared VersionReleaseMetadata As IVersionComparer
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Octopus.Client.Model.Versioning
+  commentId: N:Octopus.Client.Model.Versioning
+  name: Octopus.Client.Model.Versioning
+  nameWithType: Octopus.Client.Model.Versioning
+  fullName: Octopus.Client.Model.Versioning
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Versioning.IVersionComparer
+  commentId: T:Octopus.Client.Model.Versioning.IVersionComparer
+  parent: Octopus.Client.Model.Versioning
+  name: IVersionComparer
+  nameWithType: IVersionComparer
+  fullName: Octopus.Client.Model.Versioning.IVersionComparer
+- uid: System.Collections.Generic.IEqualityComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  commentId: T:System.Collections.Generic.IEqualityComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEqualityComparer`1
+  name: IEqualityComparer<StrictSemanticVersion>
+  nameWithType: IEqualityComparer<StrictSemanticVersion>
+  fullName: System.Collections.Generic.IEqualityComparer<Octopus.Client.Model.Versioning.StrictSemanticVersion>
+  nameWithType.vb: IEqualityComparer(Of StrictSemanticVersion)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  name.vb: IEqualityComparer(Of StrictSemanticVersion)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  commentId: T:System.Collections.Generic.IComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IComparer`1
+  name: IComparer<StrictSemanticVersion>
+  nameWithType: IComparer<StrictSemanticVersion>
+  fullName: System.Collections.Generic.IComparer<Octopus.Client.Model.Versioning.StrictSemanticVersion>
+  nameWithType.vb: IComparer(Of StrictSemanticVersion)
+  fullName.vb: System.Collections.Generic.IComparer(Of Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  name.vb: IComparer(Of StrictSemanticVersion)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEqualityComparer`1
+  commentId: T:System.Collections.Generic.IEqualityComparer`1
+  isExternal: true
+  name: IEqualityComparer<T>
+  nameWithType: IEqualityComparer<T>
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  nameWithType.vb: IEqualityComparer(Of T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  name.vb: IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IComparer`1
+  commentId: T:System.Collections.Generic.IComparer`1
+  isExternal: true
+  name: IComparer<T>
+  nameWithType: IComparer<T>
+  fullName: System.Collections.Generic.IComparer<T>
+  nameWithType.vb: IComparer(Of T)
+  fullName.vb: System.Collections.Generic.IComparer(Of T)
+  name.vb: IComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1
+    name: IComparer
+    nameWithType: IComparer
+    fullName: System.Collections.Generic.IComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.VersionComparer.#ctor*
+  commentId: Overload:Octopus.Client.Model.Versioning.VersionComparer.#ctor
+  name: VersionComparer
+  nameWithType: VersionComparer.VersionComparer
+  fullName: Octopus.Client.Model.Versioning.VersionComparer.VersionComparer
+- uid: Octopus.Client.Model.Versioning.VersionComparison
+  commentId: T:Octopus.Client.Model.Versioning.VersionComparison
+  parent: Octopus.Client.Model.Versioning
+  name: VersionComparison
+  nameWithType: VersionComparison
+  fullName: Octopus.Client.Model.Versioning.VersionComparison
+- uid: Octopus.Client.Model.Versioning.VersionComparer.Equals*
+  commentId: Overload:Octopus.Client.Model.Versioning.VersionComparer.Equals
+  name: Equals
+  nameWithType: VersionComparer.Equals
+  fullName: Octopus.Client.Model.Versioning.VersionComparer.Equals
+- uid: System.Collections.Generic.IEqualityComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  commentId: M:System.Collections.Generic.IEqualityComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  parent: System.Collections.Generic.IEqualityComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  definition: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  name: Equals(StrictSemanticVersion, StrictSemanticVersion)
+  nameWithType: IEqualityComparer<StrictSemanticVersion>.Equals(StrictSemanticVersion, StrictSemanticVersion)
+  fullName: System.Collections.Generic.IEqualityComparer<Octopus.Client.Model.Versioning.StrictSemanticVersion>.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion, Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  nameWithType.vb: IEqualityComparer(Of StrictSemanticVersion).Equals(StrictSemanticVersion, StrictSemanticVersion)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of Octopus.Client.Model.Versioning.StrictSemanticVersion).Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion, Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+    name: Equals
+    nameWithType: IEqualityComparer<StrictSemanticVersion>.Equals
+    fullName: System.Collections.Generic.IEqualityComparer<Octopus.Client.Model.Versioning.StrictSemanticVersion>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+    name: Equals
+    nameWithType: IEqualityComparer(Of StrictSemanticVersion).Equals
+    fullName: System.Collections.Generic.IEqualityComparer(Of Octopus.Client.Model.Versioning.StrictSemanticVersion).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  commentId: T:Octopus.Client.Model.Versioning.StrictSemanticVersion
+  parent: Octopus.Client.Model.Versioning
+  name: StrictSemanticVersion
+  nameWithType: StrictSemanticVersion
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  commentId: M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  isExternal: true
+  name: Equals(T, T)
+  nameWithType: IEqualityComparer<T>.Equals(T, T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>.Equals(T, T)
+  nameWithType.vb: IEqualityComparer(Of T).Equals(T, T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T).Equals(T, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+    name: Equals
+    nameWithType: IEqualityComparer<T>.Equals
+    fullName: System.Collections.Generic.IEqualityComparer<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+    name: Equals
+    nameWithType: IEqualityComparer(Of T).Equals
+    fullName: System.Collections.Generic.IEqualityComparer(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.VersionComparer.Compare*
+  commentId: Overload:Octopus.Client.Model.Versioning.VersionComparer.Compare
+  name: Compare
+  nameWithType: VersionComparer.Compare
+  fullName: Octopus.Client.Model.Versioning.VersionComparer.Compare
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Octopus.Client.Model.Versioning.VersionComparer.GetHashCode*
+  commentId: Overload:Octopus.Client.Model.Versioning.VersionComparer.GetHashCode
+  name: GetHashCode
+  nameWithType: VersionComparer.GetHashCode
+  fullName: Octopus.Client.Model.Versioning.VersionComparer.GetHashCode
+- uid: System.Collections.Generic.IEqualityComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}.GetHashCode(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  commentId: M:System.Collections.Generic.IEqualityComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}.GetHashCode(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  parent: System.Collections.Generic.IEqualityComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  definition: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  name: GetHashCode(StrictSemanticVersion)
+  nameWithType: IEqualityComparer<StrictSemanticVersion>.GetHashCode(StrictSemanticVersion)
+  fullName: System.Collections.Generic.IEqualityComparer<Octopus.Client.Model.Versioning.StrictSemanticVersion>.GetHashCode(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  nameWithType.vb: IEqualityComparer(Of StrictSemanticVersion).GetHashCode(StrictSemanticVersion)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of Octopus.Client.Model.Versioning.StrictSemanticVersion).GetHashCode(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+    name: GetHashCode
+    nameWithType: IEqualityComparer<StrictSemanticVersion>.GetHashCode
+    fullName: System.Collections.Generic.IEqualityComparer<Octopus.Client.Model.Versioning.StrictSemanticVersion>.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+    name: GetHashCode
+    nameWithType: IEqualityComparer(Of StrictSemanticVersion).GetHashCode
+    fullName: System.Collections.Generic.IEqualityComparer(Of Octopus.Client.Model.Versioning.StrictSemanticVersion).GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  commentId: M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  isExternal: true
+  name: GetHashCode(T)
+  nameWithType: IEqualityComparer<T>.GetHashCode(T)
+  fullName: System.Collections.Generic.IEqualityComparer<T>.GetHashCode(T)
+  nameWithType.vb: IEqualityComparer(Of T).GetHashCode(T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T).GetHashCode(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+    name: GetHashCode
+    nameWithType: IEqualityComparer<T>.GetHashCode
+    fullName: System.Collections.Generic.IEqualityComparer<T>.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+    name: GetHashCode
+    nameWithType: IEqualityComparer(Of T).GetHashCode
+    fullName: System.Collections.Generic.IEqualityComparer(Of T).GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}.Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  commentId: M:System.Collections.Generic.IComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}.Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  parent: System.Collections.Generic.IComparer{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  definition: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+  name: Compare(StrictSemanticVersion, StrictSemanticVersion)
+  nameWithType: IComparer<StrictSemanticVersion>.Compare(StrictSemanticVersion, StrictSemanticVersion)
+  fullName: System.Collections.Generic.IComparer<Octopus.Client.Model.Versioning.StrictSemanticVersion>.Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion, Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  nameWithType.vb: IComparer(Of StrictSemanticVersion).Compare(StrictSemanticVersion, StrictSemanticVersion)
+  fullName.vb: System.Collections.Generic.IComparer(Of Octopus.Client.Model.Versioning.StrictSemanticVersion).Compare(Octopus.Client.Model.Versioning.StrictSemanticVersion, Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+    name: Compare
+    nameWithType: IComparer<StrictSemanticVersion>.Compare
+    fullName: System.Collections.Generic.IComparer<Octopus.Client.Model.Versioning.StrictSemanticVersion>.Compare
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+    name: Compare
+    nameWithType: IComparer(Of StrictSemanticVersion).Compare
+    fullName: System.Collections.Generic.IComparer(Of Octopus.Client.Model.Versioning.StrictSemanticVersion).Compare
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+  commentId: M:System.Collections.Generic.IComparer`1.Compare(`0,`0)
+  isExternal: true
+  name: Compare(T, T)
+  nameWithType: IComparer<T>.Compare(T, T)
+  fullName: System.Collections.Generic.IComparer<T>.Compare(T, T)
+  nameWithType.vb: IComparer(Of T).Compare(T, T)
+  fullName.vb: System.Collections.Generic.IComparer(Of T).Compare(T, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+    name: Compare
+    nameWithType: IComparer<T>.Compare
+    fullName: System.Collections.Generic.IComparer<T>.Compare
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IComparer`1.Compare(`0,`0)
+    name: Compare
+    nameWithType: IComparer(Of T).Compare
+    fullName: System.Collections.Generic.IComparer(Of T).Compare
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

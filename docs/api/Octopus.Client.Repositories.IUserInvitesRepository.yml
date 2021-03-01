@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.IUserInvitesRepository
+  commentId: T:Octopus.Client.Repositories.IUserInvitesRepository
+  id: IUserInvitesRepository
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.IUserInvitesRepository.Invite(Octopus.Client.Model.ReferenceCollection)
+  - Octopus.Client.Repositories.IUserInvitesRepository.Invite(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IUserInvitesRepository
+  nameWithType: IUserInvitesRepository
+  fullName: Octopus.Client.Repositories.IUserInvitesRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/UserInvitesRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IUserInvitesRepository
+    path: ../source/Octopus.Client/Repositories/UserInvitesRepository.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public interface IUserInvitesRepository
+    content.vb: Public Interface IUserInvitesRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.IUserInvitesRepository.Invite(System.String)
+  commentId: M:Octopus.Client.Repositories.IUserInvitesRepository.Invite(System.String)
+  id: Invite(System.String)
+  parent: Octopus.Client.Repositories.IUserInvitesRepository
+  langs:
+  - csharp
+  - vb
+  name: Invite(String)
+  nameWithType: IUserInvitesRepository.Invite(String)
+  fullName: Octopus.Client.Repositories.IUserInvitesRepository.Invite(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/UserInvitesRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Invite
+    path: ../source/Octopus.Client/Repositories/UserInvitesRepository.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: InvitationResource Invite(string addToTeamId)
+    parameters:
+    - id: addToTeamId
+      type: System.String
+    return:
+      type: Octopus.Client.Model.InvitationResource
+    content.vb: Function Invite(addToTeamId As String) As InvitationResource
+  overload: Octopus.Client.Repositories.IUserInvitesRepository.Invite*
+- uid: Octopus.Client.Repositories.IUserInvitesRepository.Invite(Octopus.Client.Model.ReferenceCollection)
+  commentId: M:Octopus.Client.Repositories.IUserInvitesRepository.Invite(Octopus.Client.Model.ReferenceCollection)
+  id: Invite(Octopus.Client.Model.ReferenceCollection)
+  parent: Octopus.Client.Repositories.IUserInvitesRepository
+  langs:
+  - csharp
+  - vb
+  name: Invite(ReferenceCollection)
+  nameWithType: IUserInvitesRepository.Invite(ReferenceCollection)
+  fullName: Octopus.Client.Repositories.IUserInvitesRepository.Invite(Octopus.Client.Model.ReferenceCollection)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/UserInvitesRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Invite
+    path: ../source/Octopus.Client/Repositories/UserInvitesRepository.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: InvitationResource Invite(ReferenceCollection addToTeamIds)
+    parameters:
+    - id: addToTeamIds
+      type: Octopus.Client.Model.ReferenceCollection
+    return:
+      type: Octopus.Client.Model.InvitationResource
+    content.vb: Function Invite(addToTeamIds As ReferenceCollection) As InvitationResource
+  overload: Octopus.Client.Repositories.IUserInvitesRepository.Invite*
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Repositories.IUserInvitesRepository.Invite*
+  commentId: Overload:Octopus.Client.Repositories.IUserInvitesRepository.Invite
+  name: Invite
+  nameWithType: IUserInvitesRepository.Invite
+  fullName: Octopus.Client.Repositories.IUserInvitesRepository.Invite
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.InvitationResource
+  commentId: T:Octopus.Client.Model.InvitationResource
+  parent: Octopus.Client.Model
+  name: InvitationResource
+  nameWithType: InvitationResource
+  fullName: Octopus.Client.Model.InvitationResource
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Model.ReferenceCollection
+  commentId: T:Octopus.Client.Model.ReferenceCollection
+  parent: Octopus.Client.Model
+  name: ReferenceCollection
+  nameWithType: ReferenceCollection
+  fullName: Octopus.Client.Model.ReferenceCollection

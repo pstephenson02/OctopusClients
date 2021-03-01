@@ -1,0 +1,843 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.ScopedUserRoleResource
+  commentId: T:Octopus.Client.Model.ScopedUserRoleResource
+  id: ScopedUserRoleResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.ScopedUserRoleResource.#ctor
+  - Octopus.Client.Model.ScopedUserRoleResource.EnvironmentIds
+  - Octopus.Client.Model.ScopedUserRoleResource.ProjectGroupIds
+  - Octopus.Client.Model.ScopedUserRoleResource.ProjectIds
+  - Octopus.Client.Model.ScopedUserRoleResource.SpaceId
+  - Octopus.Client.Model.ScopedUserRoleResource.TeamId
+  - Octopus.Client.Model.ScopedUserRoleResource.TenantIds
+  - Octopus.Client.Model.ScopedUserRoleResource.UserRoleId
+  langs:
+  - csharp
+  - vb
+  name: ScopedUserRoleResource
+  nameWithType: ScopedUserRoleResource
+  fullName: Octopus.Client.Model.ScopedUserRoleResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TeamResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ScopedUserRoleResource
+    path: ../source/Octopus.Client/Model/TeamResource.cs
+    startLine: 71
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nThe set of roles and scopes that this team will have\n"
+  example: []
+  syntax:
+    content: 'public class ScopedUserRoleResource : Resource, IResource, IAuditedResource, IHaveSpaceResource'
+    content.vb: >-
+      Public Class ScopedUserRoleResource
+          Inherits Resource
+          Implements IResource, IAuditedResource, IHaveSpaceResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  - Octopus.Client.Extensibility.IHaveSpaceResource
+  inheritedMembers:
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.ScopedUserRoleResource.#ctor
+  commentId: M:Octopus.Client.Model.ScopedUserRoleResource.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.ScopedUserRoleResource
+  langs:
+  - csharp
+  - vb
+  name: ScopedUserRoleResource()
+  nameWithType: ScopedUserRoleResource.ScopedUserRoleResource()
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.ScopedUserRoleResource()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TeamResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/TeamResource.cs
+    startLine: 73
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ScopedUserRoleResource()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.ScopedUserRoleResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ScopedUserRoleResource.UserRoleId
+  commentId: P:Octopus.Client.Model.ScopedUserRoleResource.UserRoleId
+  id: UserRoleId
+  parent: Octopus.Client.Model.ScopedUserRoleResource
+  langs:
+  - csharp
+  - vb
+  name: UserRoleId
+  nameWithType: ScopedUserRoleResource.UserRoleId
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.UserRoleId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TeamResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: UserRoleId
+    path: ../source/Octopus.Client/Model/TeamResource.cs
+    startLine: 84
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nThe role for which scoping will apply\n"
+  example: []
+  syntax:
+    content: public string UserRoleId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UserRoleId As String
+  overload: Octopus.Client.Model.ScopedUserRoleResource.UserRoleId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ScopedUserRoleResource.TeamId
+  commentId: P:Octopus.Client.Model.ScopedUserRoleResource.TeamId
+  id: TeamId
+  parent: Octopus.Client.Model.ScopedUserRoleResource
+  langs:
+  - csharp
+  - vb
+  name: TeamId
+  nameWithType: ScopedUserRoleResource.TeamId
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.TeamId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TeamResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TeamId
+    path: ../source/Octopus.Client/Model/TeamResource.cs
+    startLine: 87
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string TeamId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TeamId As String
+  overload: Octopus.Client.Model.ScopedUserRoleResource.TeamId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ScopedUserRoleResource.ProjectGroupIds
+  commentId: P:Octopus.Client.Model.ScopedUserRoleResource.ProjectGroupIds
+  id: ProjectGroupIds
+  parent: Octopus.Client.Model.ScopedUserRoleResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectGroupIds
+  nameWithType: ScopedUserRoleResource.ProjectGroupIds
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.ProjectGroupIds
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TeamResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectGroupIds
+    path: ../source/Octopus.Client/Model/TeamResource.cs
+    startLine: 93
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nThe project groups that the team can exercise its roles for. Includes all projects in the groups.\n"
+  example: []
+  syntax:
+    content: public ReferenceCollection ProjectGroupIds { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property ProjectGroupIds As ReferenceCollection
+  overload: Octopus.Client.Model.ScopedUserRoleResource.ProjectGroupIds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ScopedUserRoleResource.ProjectIds
+  commentId: P:Octopus.Client.Model.ScopedUserRoleResource.ProjectIds
+  id: ProjectIds
+  parent: Octopus.Client.Model.ScopedUserRoleResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectIds
+  nameWithType: ScopedUserRoleResource.ProjectIds
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.ProjectIds
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TeamResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectIds
+    path: ../source/Octopus.Client/Model/TeamResource.cs
+    startLine: 100
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nThe projects that the team can exercise its roles in. If empty,\nthe team can exercise its roles in all projects.\n"
+  example: []
+  syntax:
+    content: public ReferenceCollection ProjectIds { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property ProjectIds As ReferenceCollection
+  overload: Octopus.Client.Model.ScopedUserRoleResource.ProjectIds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ScopedUserRoleResource.EnvironmentIds
+  commentId: P:Octopus.Client.Model.ScopedUserRoleResource.EnvironmentIds
+  id: EnvironmentIds
+  parent: Octopus.Client.Model.ScopedUserRoleResource
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentIds
+  nameWithType: ScopedUserRoleResource.EnvironmentIds
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.EnvironmentIds
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TeamResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: EnvironmentIds
+    path: ../source/Octopus.Client/Model/TeamResource.cs
+    startLine: 107
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nThe environments that the team can exercise its roles in. If empty,\nthe team can exercise its roles in all environments.\n"
+  example: []
+  syntax:
+    content: public ReferenceCollection EnvironmentIds { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property EnvironmentIds As ReferenceCollection
+  overload: Octopus.Client.Model.ScopedUserRoleResource.EnvironmentIds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ScopedUserRoleResource.TenantIds
+  commentId: P:Octopus.Client.Model.ScopedUserRoleResource.TenantIds
+  id: TenantIds
+  parent: Octopus.Client.Model.ScopedUserRoleResource
+  langs:
+  - csharp
+  - vb
+  name: TenantIds
+  nameWithType: ScopedUserRoleResource.TenantIds
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.TenantIds
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TeamResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TenantIds
+    path: ../source/Octopus.Client/Model/TeamResource.cs
+    startLine: 114
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nThe tenants that the team can exercise its roles for. If empty,\nthe team can exercise its roles for all tenants.\n"
+  example: []
+  syntax:
+    content: public ReferenceCollection TenantIds { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property TenantIds As ReferenceCollection
+  overload: Octopus.Client.Model.ScopedUserRoleResource.TenantIds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ScopedUserRoleResource.SpaceId
+  commentId: P:Octopus.Client.Model.ScopedUserRoleResource.SpaceId
+  id: SpaceId
+  parent: Octopus.Client.Model.ScopedUserRoleResource
+  langs:
+  - csharp
+  - vb
+  name: SpaceId
+  nameWithType: ScopedUserRoleResource.SpaceId
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.SpaceId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TeamResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SpaceId
+    path: ../source/Octopus.Client/Model/TeamResource.cs
+    startLine: 117
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string SpaceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SpaceId As String
+  overload: Octopus.Client.Model.ScopedUserRoleResource.SpaceId*
+  implements:
+  - Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource
+  commentId: T:Octopus.Client.Extensibility.IHaveSpaceResource
+  parent: Octopus.Client.Extensibility
+  name: IHaveSpaceResource
+  nameWithType: IHaveSpaceResource
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.ScopedUserRoleResource.#ctor*
+  commentId: Overload:Octopus.Client.Model.ScopedUserRoleResource.#ctor
+  name: ScopedUserRoleResource
+  nameWithType: ScopedUserRoleResource.ScopedUserRoleResource
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.ScopedUserRoleResource
+- uid: Octopus.Client.Model.ScopedUserRoleResource.UserRoleId*
+  commentId: Overload:Octopus.Client.Model.ScopedUserRoleResource.UserRoleId
+  name: UserRoleId
+  nameWithType: ScopedUserRoleResource.UserRoleId
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.UserRoleId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.ScopedUserRoleResource.TeamId*
+  commentId: Overload:Octopus.Client.Model.ScopedUserRoleResource.TeamId
+  name: TeamId
+  nameWithType: ScopedUserRoleResource.TeamId
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.TeamId
+- uid: Octopus.Client.Model.ScopedUserRoleResource.ProjectGroupIds*
+  commentId: Overload:Octopus.Client.Model.ScopedUserRoleResource.ProjectGroupIds
+  name: ProjectGroupIds
+  nameWithType: ScopedUserRoleResource.ProjectGroupIds
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.ProjectGroupIds
+- uid: Octopus.Client.Model.ReferenceCollection
+  commentId: T:Octopus.Client.Model.ReferenceCollection
+  parent: Octopus.Client.Model
+  name: ReferenceCollection
+  nameWithType: ReferenceCollection
+  fullName: Octopus.Client.Model.ReferenceCollection
+- uid: Octopus.Client.Model.ScopedUserRoleResource.ProjectIds*
+  commentId: Overload:Octopus.Client.Model.ScopedUserRoleResource.ProjectIds
+  name: ProjectIds
+  nameWithType: ScopedUserRoleResource.ProjectIds
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.ProjectIds
+- uid: Octopus.Client.Model.ScopedUserRoleResource.EnvironmentIds*
+  commentId: Overload:Octopus.Client.Model.ScopedUserRoleResource.EnvironmentIds
+  name: EnvironmentIds
+  nameWithType: ScopedUserRoleResource.EnvironmentIds
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.EnvironmentIds
+- uid: Octopus.Client.Model.ScopedUserRoleResource.TenantIds*
+  commentId: Overload:Octopus.Client.Model.ScopedUserRoleResource.TenantIds
+  name: TenantIds
+  nameWithType: ScopedUserRoleResource.TenantIds
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.TenantIds
+- uid: Octopus.Client.Model.ScopedUserRoleResource.SpaceId*
+  commentId: Overload:Octopus.Client.Model.ScopedUserRoleResource.SpaceId
+  name: SpaceId
+  nameWithType: ScopedUserRoleResource.SpaceId
+  fullName: Octopus.Client.Model.ScopedUserRoleResource.SpaceId
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  commentId: P:Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  parent: Octopus.Client.Extensibility.IHaveSpaceResource
+  name: SpaceId
+  nameWithType: IHaveSpaceResource.SpaceId
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId

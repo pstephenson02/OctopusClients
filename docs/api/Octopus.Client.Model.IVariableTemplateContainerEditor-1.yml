@@ -1,0 +1,652 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  commentId: T:Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  id: IVariableTemplateContainerEditor`1
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+  - Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+  - Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  - Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  - Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String)
+  - Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+  - Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+  - Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+  - Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  - Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  - Octopus.Client.Model.IVariableTemplateContainerEditor`1.Clear
+  langs:
+  - csharp
+  - vb
+  name: IVariableTemplateContainerEditor<TContainer>
+  nameWithType: IVariableTemplateContainerEditor<TContainer>
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IVariableTemplateContainerEditor
+    path: ../source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      public interface IVariableTemplateContainerEditor<out TContainer>
+          where TContainer : IVariableTemplateContainer, IVariableTemplateContainerEditor<TContainer>
+    typeParameters:
+    - id: TContainer
+    content.vb: Public Interface IVariableTemplateContainerEditor(Of Out TContainer As {IVariableTemplateContainer, IVariableTemplateContainerEditor(Of TContainer)})
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer)
+  name.vb: IVariableTemplateContainerEditor(Of TContainer)
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.Clear
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.Clear
+  id: Clear
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.Clear()
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.Clear()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Clear
+    path: ../source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: TContainer Clear()
+    return:
+      type: '{TContainer}'
+    content.vb: Function Clear As TContainer
+  overload: Octopus.Client.Model.IVariableTemplateContainerEditor`1.Clear*
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).Clear()
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).Clear()
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  id: AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateVariableTemplate
+    path: ../source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: TContainer AddOrUpdateVariableTemplate(string name, string label, IDictionary<string, string> displaySettings)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    - id: displaySettings
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    return:
+      type: '{TContainer}'
+    content.vb: Function AddOrUpdateVariableTemplate(name As String, label As String, displaySettings As IDictionary(Of String, String)) As TContainer
+  overload: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate*
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String))
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String))
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  id: AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>, String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateVariableTemplate
+    path: ../source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: TContainer AddOrUpdateVariableTemplate(string name, string label, IDictionary<string, string> displaySettings, string defaultValue, string helpText)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    - id: displaySettings
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    - id: defaultValue
+      type: System.String
+    - id: helpText
+      type: System.String
+    return:
+      type: '{TContainer}'
+    content.vb: Function AddOrUpdateVariableTemplate(name As String, label As String, displaySettings As IDictionary(Of String, String), defaultValue As String, helpText As String) As TContainer
+  overload: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate*
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String), String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String), System.String, System.String)
+  name.vb: AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String), String, String)
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+  id: AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateSingleLineTextTemplate(String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSingleLineTextTemplate(String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSingleLineTextTemplate(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateSingleLineTextTemplate
+    path: ../source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: TContainer AddOrUpdateSingleLineTextTemplate(string name, string label)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    return:
+      type: '{TContainer}'
+    content.vb: Function AddOrUpdateSingleLineTextTemplate(name As String, label As String) As TContainer
+  overload: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate*
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSingleLineTextTemplate(String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSingleLineTextTemplate(System.String, System.String)
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+  id: AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateSingleLineTextTemplate(String, String, String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSingleLineTextTemplate(String, String, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSingleLineTextTemplate(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateSingleLineTextTemplate
+    path: ../source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+    startLine: 12
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: TContainer AddOrUpdateSingleLineTextTemplate(string name, string label, string defaultValue, string helpText)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    - id: defaultValue
+      type: System.String
+    - id: helpText
+      type: System.String
+    return:
+      type: '{TContainer}'
+    content.vb: Function AddOrUpdateSingleLineTextTemplate(name As String, label As String, defaultValue As String, helpText As String) As TContainer
+  overload: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate*
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSingleLineTextTemplate(String, String, String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSingleLineTextTemplate(System.String, System.String, System.String, System.String)
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+  id: AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateMultiLineTextTemplate(String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateMultiLineTextTemplate(String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateMultiLineTextTemplate(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateMultiLineTextTemplate
+    path: ../source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: TContainer AddOrUpdateMultiLineTextTemplate(string name, string label)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    return:
+      type: '{TContainer}'
+    content.vb: Function AddOrUpdateMultiLineTextTemplate(name As String, label As String) As TContainer
+  overload: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate*
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateMultiLineTextTemplate(String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateMultiLineTextTemplate(System.String, System.String)
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+  id: AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateMultiLineTextTemplate(String, String, String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateMultiLineTextTemplate(String, String, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateMultiLineTextTemplate(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateMultiLineTextTemplate
+    path: ../source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: TContainer AddOrUpdateMultiLineTextTemplate(string name, string label, string defaultValue, string helpText)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    - id: defaultValue
+      type: System.String
+    - id: helpText
+      type: System.String
+    return:
+      type: '{TContainer}'
+    content.vb: Function AddOrUpdateMultiLineTextTemplate(name As String, label As String, defaultValue As String, helpText As String) As TContainer
+  overload: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate*
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateMultiLineTextTemplate(String, String, String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateMultiLineTextTemplate(System.String, System.String, System.String, System.String)
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String)
+  id: AddOrUpdateSensitiveTemplate(System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateSensitiveTemplate(String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSensitiveTemplate(String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSensitiveTemplate(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateSensitiveTemplate
+    path: ../source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: TContainer AddOrUpdateSensitiveTemplate(string name, string label)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    return:
+      type: '{TContainer}'
+    content.vb: Function AddOrUpdateSensitiveTemplate(name As String, label As String) As TContainer
+  overload: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate*
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSensitiveTemplate(String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSensitiveTemplate(System.String, System.String)
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+  id: AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateSensitiveTemplate(String, String, String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSensitiveTemplate(String, String, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSensitiveTemplate(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateSensitiveTemplate
+    path: ../source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+    startLine: 16
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: TContainer AddOrUpdateSensitiveTemplate(string name, string label, string defaultValue, string helpText)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    - id: defaultValue
+      type: System.String
+    - id: helpText
+      type: System.String
+    return:
+      type: '{TContainer}'
+    content.vb: Function AddOrUpdateSensitiveTemplate(name As String, label As String, defaultValue As String, helpText As String) As TContainer
+  overload: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate*
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSensitiveTemplate(String, String, String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSensitiveTemplate(System.String, System.String, System.String, System.String)
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  id: AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateSelectTemplate
+    path: ../source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: TContainer AddOrUpdateSelectTemplate(string name, string label, IDictionary<string, string> options)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    - id: options
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    return:
+      type: '{TContainer}'
+    content.vb: Function AddOrUpdateSelectTemplate(name As String, label As String, options As IDictionary(Of String, String)) As TContainer
+  overload: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate*
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String))
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String))
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  id: AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>, String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateSelectTemplate
+    path: ../source/Octopus.Client/Model/IVariableTemplateContainerEditor.cs
+    startLine: 18
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: TContainer AddOrUpdateSelectTemplate(string name, string label, IDictionary<string, string> options, string defaultValue, string helpText)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    - id: options
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    - id: defaultValue
+      type: System.String
+    - id: helpText
+      type: System.String
+    return:
+      type: '{TContainer}'
+    content.vb: Function AddOrUpdateSelectTemplate(name As String, label As String, options As IDictionary(Of String, String), defaultValue As String, helpText As String) As TContainer
+  overload: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate*
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String), String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String), System.String, System.String)
+  name.vb: AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String), String, String)
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.Clear*
+  commentId: Overload:Octopus.Client.Model.IVariableTemplateContainerEditor`1.Clear
+  name: Clear
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.Clear
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.Clear
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).Clear
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).Clear
+- uid: '{TContainer}'
+  commentId: '!:TContainer'
+  definition: TContainer
+  name: TContainer
+  nameWithType: TContainer
+  fullName: TContainer
+- uid: TContainer
+  name: TContainer
+  nameWithType: TContainer
+  fullName: TContainer
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate*
+  commentId: Overload:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate
+  name: AddOrUpdateVariableTemplate
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateVariableTemplate
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateVariableTemplate
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateVariableTemplate
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateVariableTemplate
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, String>
+  nameWithType: IDictionary<String, String>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate*
+  commentId: Overload:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate
+  name: AddOrUpdateSingleLineTextTemplate
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSingleLineTextTemplate
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSingleLineTextTemplate
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSingleLineTextTemplate
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSingleLineTextTemplate
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate*
+  commentId: Overload:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate
+  name: AddOrUpdateMultiLineTextTemplate
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateMultiLineTextTemplate
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateMultiLineTextTemplate
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateMultiLineTextTemplate
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateMultiLineTextTemplate
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate*
+  commentId: Overload:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate
+  name: AddOrUpdateSensitiveTemplate
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSensitiveTemplate
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSensitiveTemplate
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSensitiveTemplate
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSensitiveTemplate
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate*
+  commentId: Overload:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate
+  name: AddOrUpdateSelectTemplate
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSelectTemplate
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSelectTemplate
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSelectTemplate
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSelectTemplate

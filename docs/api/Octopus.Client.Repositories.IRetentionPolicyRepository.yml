@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.IRetentionPolicyRepository
+  commentId: T:Octopus.Client.Repositories.IRetentionPolicyRepository
+  id: IRetentionPolicyRepository
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.IRetentionPolicyRepository.ApplyNow(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IRetentionPolicyRepository
+  nameWithType: IRetentionPolicyRepository
+  fullName: Octopus.Client.Repositories.IRetentionPolicyRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/RetentionPolicyRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IRetentionPolicyRepository
+    path: ../source/Octopus.Client/Repositories/RetentionPolicyRepository.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public interface IRetentionPolicyRepository
+    content.vb: Public Interface IRetentionPolicyRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.IRetentionPolicyRepository.ApplyNow(System.String)
+  commentId: M:Octopus.Client.Repositories.IRetentionPolicyRepository.ApplyNow(System.String)
+  id: ApplyNow(System.String)
+  parent: Octopus.Client.Repositories.IRetentionPolicyRepository
+  langs:
+  - csharp
+  - vb
+  name: ApplyNow(String)
+  nameWithType: IRetentionPolicyRepository.ApplyNow(String)
+  fullName: Octopus.Client.Repositories.IRetentionPolicyRepository.ApplyNow(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/RetentionPolicyRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ApplyNow
+    path: ../source/Octopus.Client/Repositories/RetentionPolicyRepository.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: TaskResource ApplyNow(string spaceId)
+    parameters:
+    - id: spaceId
+      type: System.String
+    return:
+      type: Octopus.Client.Model.TaskResource
+    content.vb: Function ApplyNow(spaceId As String) As TaskResource
+  overload: Octopus.Client.Repositories.IRetentionPolicyRepository.ApplyNow*
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Repositories.IRetentionPolicyRepository.ApplyNow*
+  commentId: Overload:Octopus.Client.Repositories.IRetentionPolicyRepository.ApplyNow
+  name: ApplyNow
+  nameWithType: IRetentionPolicyRepository.ApplyNow
+  fullName: Octopus.Client.Repositories.IRetentionPolicyRepository.ApplyNow
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.TaskResource
+  commentId: T:Octopus.Client.Model.TaskResource
+  parent: Octopus.Client.Model
+  name: TaskResource
+  nameWithType: TaskResource
+  fullName: Octopus.Client.Model.TaskResource
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model

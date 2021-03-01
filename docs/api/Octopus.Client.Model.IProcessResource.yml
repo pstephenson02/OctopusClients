@@ -1,0 +1,485 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.IProcessResource
+  commentId: T:Octopus.Client.Model.IProcessResource
+  id: IProcessResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.IProcessResource.AddOrUpdateStep(System.String)
+  - Octopus.Client.Model.IProcessResource.ClearSteps
+  - Octopus.Client.Model.IProcessResource.FindStep(System.String)
+  - Octopus.Client.Model.IProcessResource.LastSnapshotId
+  - Octopus.Client.Model.IProcessResource.ProjectId
+  - Octopus.Client.Model.IProcessResource.RemoveStep(System.String)
+  - Octopus.Client.Model.IProcessResource.Steps
+  - Octopus.Client.Model.IProcessResource.Version
+  langs:
+  - csharp
+  - vb
+  name: IProcessResource
+  nameWithType: IProcessResource
+  fullName: Octopus.Client.Model.IProcessResource
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IProcessResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IProcessResource
+    path: ../source/Octopus.Client/Model/IProcessResource.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public interface IProcessResource : IResource'
+    content.vb: >-
+      Public Interface IProcessResource
+          Inherits IResource
+  inheritedMembers:
+  - Octopus.Client.Extensibility.IResource.Id
+  - Octopus.Client.Extensibility.IResource.Links
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Model.IProcessResource.ProjectId
+  commentId: P:Octopus.Client.Model.IProcessResource.ProjectId
+  id: ProjectId
+  parent: Octopus.Client.Model.IProcessResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectId
+  nameWithType: IProcessResource.ProjectId
+  fullName: Octopus.Client.Model.IProcessResource.ProjectId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IProcessResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectId
+    path: ../source/Octopus.Client/Model/IProcessResource.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: string ProjectId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property ProjectId As String
+  overload: Octopus.Client.Model.IProcessResource.ProjectId*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Octopus.Client.Model.IProcessResource.Steps
+  commentId: P:Octopus.Client.Model.IProcessResource.Steps
+  id: Steps
+  parent: Octopus.Client.Model.IProcessResource
+  langs:
+  - csharp
+  - vb
+  name: Steps
+  nameWithType: IProcessResource.Steps
+  fullName: Octopus.Client.Model.IProcessResource.Steps
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IProcessResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Steps
+    path: ../source/Octopus.Client/Model/IProcessResource.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: IList<DeploymentStepResource> Steps { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Octopus.Client.Model.DeploymentStepResource}
+    content.vb: ReadOnly Property Steps As IList(Of DeploymentStepResource)
+  overload: Octopus.Client.Model.IProcessResource.Steps*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Octopus.Client.Model.IProcessResource.Version
+  commentId: P:Octopus.Client.Model.IProcessResource.Version
+  id: Version
+  parent: Octopus.Client.Model.IProcessResource
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: IProcessResource.Version
+  fullName: Octopus.Client.Model.IProcessResource.Version
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IProcessResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Version
+    path: ../source/Octopus.Client/Model/IProcessResource.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: int Version { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property Version As Integer
+  overload: Octopus.Client.Model.IProcessResource.Version*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Octopus.Client.Model.IProcessResource.LastSnapshotId
+  commentId: P:Octopus.Client.Model.IProcessResource.LastSnapshotId
+  id: LastSnapshotId
+  parent: Octopus.Client.Model.IProcessResource
+  langs:
+  - csharp
+  - vb
+  name: LastSnapshotId
+  nameWithType: IProcessResource.LastSnapshotId
+  fullName: Octopus.Client.Model.IProcessResource.LastSnapshotId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IProcessResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: LastSnapshotId
+    path: ../source/Octopus.Client/Model/IProcessResource.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: string LastSnapshotId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property LastSnapshotId As String
+  overload: Octopus.Client.Model.IProcessResource.LastSnapshotId*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Octopus.Client.Model.IProcessResource.FindStep(System.String)
+  commentId: M:Octopus.Client.Model.IProcessResource.FindStep(System.String)
+  id: FindStep(System.String)
+  parent: Octopus.Client.Model.IProcessResource
+  langs:
+  - csharp
+  - vb
+  name: FindStep(String)
+  nameWithType: IProcessResource.FindStep(String)
+  fullName: Octopus.Client.Model.IProcessResource.FindStep(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IProcessResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: FindStep
+    path: ../source/Octopus.Client/Model/IProcessResource.cs
+    startLine: 12
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: DeploymentStepResource FindStep(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Octopus.Client.Model.DeploymentStepResource
+    content.vb: Function FindStep(name As String) As DeploymentStepResource
+  overload: Octopus.Client.Model.IProcessResource.FindStep*
+- uid: Octopus.Client.Model.IProcessResource.AddOrUpdateStep(System.String)
+  commentId: M:Octopus.Client.Model.IProcessResource.AddOrUpdateStep(System.String)
+  id: AddOrUpdateStep(System.String)
+  parent: Octopus.Client.Model.IProcessResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateStep(String)
+  nameWithType: IProcessResource.AddOrUpdateStep(String)
+  fullName: Octopus.Client.Model.IProcessResource.AddOrUpdateStep(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IProcessResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateStep
+    path: ../source/Octopus.Client/Model/IProcessResource.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: DeploymentStepResource AddOrUpdateStep(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Octopus.Client.Model.DeploymentStepResource
+    content.vb: Function AddOrUpdateStep(name As String) As DeploymentStepResource
+  overload: Octopus.Client.Model.IProcessResource.AddOrUpdateStep*
+- uid: Octopus.Client.Model.IProcessResource.RemoveStep(System.String)
+  commentId: M:Octopus.Client.Model.IProcessResource.RemoveStep(System.String)
+  id: RemoveStep(System.String)
+  parent: Octopus.Client.Model.IProcessResource
+  langs:
+  - csharp
+  - vb
+  name: RemoveStep(String)
+  nameWithType: IProcessResource.RemoveStep(String)
+  fullName: Octopus.Client.Model.IProcessResource.RemoveStep(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IProcessResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RemoveStep
+    path: ../source/Octopus.Client/Model/IProcessResource.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: IProcessResource RemoveStep(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Octopus.Client.Model.IProcessResource
+    content.vb: Function RemoveStep(name As String) As IProcessResource
+  overload: Octopus.Client.Model.IProcessResource.RemoveStep*
+- uid: Octopus.Client.Model.IProcessResource.ClearSteps
+  commentId: M:Octopus.Client.Model.IProcessResource.ClearSteps
+  id: ClearSteps
+  parent: Octopus.Client.Model.IProcessResource
+  langs:
+  - csharp
+  - vb
+  name: ClearSteps()
+  nameWithType: IProcessResource.ClearSteps()
+  fullName: Octopus.Client.Model.IProcessResource.ClearSteps()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/IProcessResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ClearSteps
+    path: ../source/Octopus.Client/Model/IProcessResource.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: IProcessResource ClearSteps()
+    return:
+      type: Octopus.Client.Model.IProcessResource
+    content.vb: Function ClearSteps As IProcessResource
+  overload: Octopus.Client.Model.IProcessResource.ClearSteps*
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Extensibility.IResource.Id
+  commentId: P:Octopus.Client.Extensibility.IResource.Id
+  parent: Octopus.Client.Extensibility.IResource
+  name: Id
+  nameWithType: IResource.Id
+  fullName: Octopus.Client.Extensibility.IResource.Id
+- uid: Octopus.Client.Extensibility.IResource.Links
+  commentId: P:Octopus.Client.Extensibility.IResource.Links
+  parent: Octopus.Client.Extensibility.IResource
+  name: Links
+  nameWithType: IResource.Links
+  fullName: Octopus.Client.Extensibility.IResource.Links
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.IProcessResource.ProjectId*
+  commentId: Overload:Octopus.Client.Model.IProcessResource.ProjectId
+  name: ProjectId
+  nameWithType: IProcessResource.ProjectId
+  fullName: Octopus.Client.Model.IProcessResource.ProjectId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.IProcessResource.Steps*
+  commentId: Overload:Octopus.Client.Model.IProcessResource.Steps
+  name: Steps
+  nameWithType: IProcessResource.Steps
+  fullName: Octopus.Client.Model.IProcessResource.Steps
+- uid: System.Collections.Generic.IList{Octopus.Client.Model.DeploymentStepResource}
+  commentId: T:System.Collections.Generic.IList{Octopus.Client.Model.DeploymentStepResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<DeploymentStepResource>
+  nameWithType: IList<DeploymentStepResource>
+  fullName: System.Collections.Generic.IList<Octopus.Client.Model.DeploymentStepResource>
+  nameWithType.vb: IList(Of DeploymentStepResource)
+  fullName.vb: System.Collections.Generic.IList(Of Octopus.Client.Model.DeploymentStepResource)
+  name.vb: IList(Of DeploymentStepResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.DeploymentStepResource
+    name: DeploymentStepResource
+    nameWithType: DeploymentStepResource
+    fullName: Octopus.Client.Model.DeploymentStepResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.DeploymentStepResource
+    name: DeploymentStepResource
+    nameWithType: DeploymentStepResource
+    fullName: Octopus.Client.Model.DeploymentStepResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.IProcessResource.Version*
+  commentId: Overload:Octopus.Client.Model.IProcessResource.Version
+  name: Version
+  nameWithType: IProcessResource.Version
+  fullName: Octopus.Client.Model.IProcessResource.Version
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Octopus.Client.Model.IProcessResource.LastSnapshotId*
+  commentId: Overload:Octopus.Client.Model.IProcessResource.LastSnapshotId
+  name: LastSnapshotId
+  nameWithType: IProcessResource.LastSnapshotId
+  fullName: Octopus.Client.Model.IProcessResource.LastSnapshotId
+- uid: Octopus.Client.Model.IProcessResource.FindStep*
+  commentId: Overload:Octopus.Client.Model.IProcessResource.FindStep
+  name: FindStep
+  nameWithType: IProcessResource.FindStep
+  fullName: Octopus.Client.Model.IProcessResource.FindStep
+- uid: Octopus.Client.Model.DeploymentStepResource
+  commentId: T:Octopus.Client.Model.DeploymentStepResource
+  parent: Octopus.Client.Model
+  name: DeploymentStepResource
+  nameWithType: DeploymentStepResource
+  fullName: Octopus.Client.Model.DeploymentStepResource
+- uid: Octopus.Client.Model.IProcessResource.AddOrUpdateStep*
+  commentId: Overload:Octopus.Client.Model.IProcessResource.AddOrUpdateStep
+  name: AddOrUpdateStep
+  nameWithType: IProcessResource.AddOrUpdateStep
+  fullName: Octopus.Client.Model.IProcessResource.AddOrUpdateStep
+- uid: Octopus.Client.Model.IProcessResource.RemoveStep*
+  commentId: Overload:Octopus.Client.Model.IProcessResource.RemoveStep
+  name: RemoveStep
+  nameWithType: IProcessResource.RemoveStep
+  fullName: Octopus.Client.Model.IProcessResource.RemoveStep
+- uid: Octopus.Client.Model.IProcessResource
+  commentId: T:Octopus.Client.Model.IProcessResource
+  parent: Octopus.Client.Model
+  name: IProcessResource
+  nameWithType: IProcessResource
+  fullName: Octopus.Client.Model.IProcessResource
+- uid: Octopus.Client.Model.IProcessResource.ClearSteps*
+  commentId: Overload:Octopus.Client.Model.IProcessResource.ClearSteps
+  name: ClearSteps
+  nameWithType: IProcessResource.ClearSteps
+  fullName: Octopus.Client.Model.IProcessResource.ClearSteps

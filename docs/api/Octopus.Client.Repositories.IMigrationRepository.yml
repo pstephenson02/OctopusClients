@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.IMigrationRepository
+  commentId: T:Octopus.Client.Repositories.IMigrationRepository
+  id: IMigrationRepository
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.IMigrationRepository.Import(Octopus.Client.Model.Migrations.MigrationImportResource)
+  - Octopus.Client.Repositories.IMigrationRepository.PartialExport(Octopus.Client.Model.Migrations.MigrationPartialExportResource)
+  langs:
+  - csharp
+  - vb
+  name: IMigrationRepository
+  nameWithType: IMigrationRepository
+  fullName: Octopus.Client.Repositories.IMigrationRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/MigrationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IMigrationRepository
+    path: ../source/Octopus.Client/Repositories/MigrationRepository.cs
+    startLine: 4
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public interface IMigrationRepository
+    content.vb: Public Interface IMigrationRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.IMigrationRepository.PartialExport(Octopus.Client.Model.Migrations.MigrationPartialExportResource)
+  commentId: M:Octopus.Client.Repositories.IMigrationRepository.PartialExport(Octopus.Client.Model.Migrations.MigrationPartialExportResource)
+  id: PartialExport(Octopus.Client.Model.Migrations.MigrationPartialExportResource)
+  parent: Octopus.Client.Repositories.IMigrationRepository
+  langs:
+  - csharp
+  - vb
+  name: PartialExport(MigrationPartialExportResource)
+  nameWithType: IMigrationRepository.PartialExport(MigrationPartialExportResource)
+  fullName: Octopus.Client.Repositories.IMigrationRepository.PartialExport(Octopus.Client.Model.Migrations.MigrationPartialExportResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/MigrationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: PartialExport
+    path: ../source/Octopus.Client/Repositories/MigrationRepository.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: MigrationPartialExportResource PartialExport(MigrationPartialExportResource resource)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.Migrations.MigrationPartialExportResource
+    return:
+      type: Octopus.Client.Model.Migrations.MigrationPartialExportResource
+    content.vb: Function PartialExport(resource As MigrationPartialExportResource) As MigrationPartialExportResource
+  overload: Octopus.Client.Repositories.IMigrationRepository.PartialExport*
+- uid: Octopus.Client.Repositories.IMigrationRepository.Import(Octopus.Client.Model.Migrations.MigrationImportResource)
+  commentId: M:Octopus.Client.Repositories.IMigrationRepository.Import(Octopus.Client.Model.Migrations.MigrationImportResource)
+  id: Import(Octopus.Client.Model.Migrations.MigrationImportResource)
+  parent: Octopus.Client.Repositories.IMigrationRepository
+  langs:
+  - csharp
+  - vb
+  name: Import(MigrationImportResource)
+  nameWithType: IMigrationRepository.Import(MigrationImportResource)
+  fullName: Octopus.Client.Repositories.IMigrationRepository.Import(Octopus.Client.Model.Migrations.MigrationImportResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/MigrationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Import
+    path: ../source/Octopus.Client/Repositories/MigrationRepository.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: MigrationImportResource Import(MigrationImportResource resource)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.Migrations.MigrationImportResource
+    return:
+      type: Octopus.Client.Model.Migrations.MigrationImportResource
+    content.vb: Function Import(resource As MigrationImportResource) As MigrationImportResource
+  overload: Octopus.Client.Repositories.IMigrationRepository.Import*
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Repositories.IMigrationRepository.PartialExport*
+  commentId: Overload:Octopus.Client.Repositories.IMigrationRepository.PartialExport
+  name: PartialExport
+  nameWithType: IMigrationRepository.PartialExport
+  fullName: Octopus.Client.Repositories.IMigrationRepository.PartialExport
+- uid: Octopus.Client.Model.Migrations.MigrationPartialExportResource
+  commentId: T:Octopus.Client.Model.Migrations.MigrationPartialExportResource
+  parent: Octopus.Client.Model.Migrations
+  name: MigrationPartialExportResource
+  nameWithType: MigrationPartialExportResource
+  fullName: Octopus.Client.Model.Migrations.MigrationPartialExportResource
+- uid: Octopus.Client.Model.Migrations
+  commentId: N:Octopus.Client.Model.Migrations
+  name: Octopus.Client.Model.Migrations
+  nameWithType: Octopus.Client.Model.Migrations
+  fullName: Octopus.Client.Model.Migrations
+- uid: Octopus.Client.Repositories.IMigrationRepository.Import*
+  commentId: Overload:Octopus.Client.Repositories.IMigrationRepository.Import
+  name: Import
+  nameWithType: IMigrationRepository.Import
+  fullName: Octopus.Client.Repositories.IMigrationRepository.Import
+- uid: Octopus.Client.Model.Migrations.MigrationImportResource
+  commentId: T:Octopus.Client.Model.Migrations.MigrationImportResource
+  parent: Octopus.Client.Model.Migrations
+  name: MigrationImportResource
+  nameWithType: MigrationImportResource
+  fullName: Octopus.Client.Model.Migrations.MigrationImportResource

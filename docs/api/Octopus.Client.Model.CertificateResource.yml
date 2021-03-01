@@ -1,0 +1,2265 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.CertificateResource
+  commentId: T:Octopus.Client.Model.CertificateResource
+  id: CertificateResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.CertificateResource.#ctor
+  - Octopus.Client.Model.CertificateResource.#ctor(System.String,System.String)
+  - Octopus.Client.Model.CertificateResource.#ctor(System.String,System.String,System.String)
+  - Octopus.Client.Model.CertificateResource.Archived
+  - Octopus.Client.Model.CertificateResource.CertificateChain
+  - Octopus.Client.Model.CertificateResource.CertificateData
+  - Octopus.Client.Model.CertificateResource.CertificateDataFormat
+  - Octopus.Client.Model.CertificateResource.EnvironmentIds
+  - Octopus.Client.Model.CertificateResource.HasPrivateKey
+  - Octopus.Client.Model.CertificateResource.IsExpired
+  - Octopus.Client.Model.CertificateResource.IssuerCommonName
+  - Octopus.Client.Model.CertificateResource.IssuerDistinguishedName
+  - Octopus.Client.Model.CertificateResource.IssuerOrganization
+  - Octopus.Client.Model.CertificateResource.Name
+  - Octopus.Client.Model.CertificateResource.NotAfter
+  - Octopus.Client.Model.CertificateResource.NotBefore
+  - Octopus.Client.Model.CertificateResource.Notes
+  - Octopus.Client.Model.CertificateResource.Password
+  - Octopus.Client.Model.CertificateResource.ReplacedBy
+  - Octopus.Client.Model.CertificateResource.SelfSigned
+  - Octopus.Client.Model.CertificateResource.SerialNumber
+  - Octopus.Client.Model.CertificateResource.SignatureAlgorithmName
+  - Octopus.Client.Model.CertificateResource.SpaceId
+  - Octopus.Client.Model.CertificateResource.SubjectAlternativeNames
+  - Octopus.Client.Model.CertificateResource.SubjectCommonName
+  - Octopus.Client.Model.CertificateResource.SubjectDistinguishedName
+  - Octopus.Client.Model.CertificateResource.SubjectOrganization
+  - Octopus.Client.Model.CertificateResource.TenantedDeploymentParticipation
+  - Octopus.Client.Model.CertificateResource.TenantIds
+  - Octopus.Client.Model.CertificateResource.TenantTags
+  - Octopus.Client.Model.CertificateResource.Thumbprint
+  - Octopus.Client.Model.CertificateResource.Version
+  langs:
+  - csharp
+  - vb
+  name: CertificateResource
+  nameWithType: CertificateResource
+  fullName: Octopus.Client.Model.CertificateResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CertificateResource
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class CertificateResource : Resource, IResource, IAuditedResource, INamedResource, IHaveSpaceResource'
+    content.vb: >-
+      Public Class CertificateResource
+          Inherits Resource
+          Implements IResource, IAuditedResource, INamedResource, IHaveSpaceResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  - Octopus.Client.Extensibility.INamedResource
+  - Octopus.Client.Extensibility.IHaveSpaceResource
+  inheritedMembers:
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.CertificateResource.#ctor
+  commentId: M:Octopus.Client.Model.CertificateResource.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: CertificateResource()
+  nameWithType: CertificateResource.CertificateResource()
+  fullName: Octopus.Client.Model.CertificateResource.CertificateResource()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonConstructor]
+
+      protected CertificateResource()
+    content.vb: >-
+      <JsonConstructor>
+
+      Protected Sub New
+  overload: Octopus.Client.Model.CertificateResource.#ctor*
+  attributes:
+  - type: Newtonsoft.Json.JsonConstructorAttribute
+    ctor: Newtonsoft.Json.JsonConstructorAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Octopus.Client.Model.CertificateResource.#ctor(System.String,System.String)
+  commentId: M:Octopus.Client.Model.CertificateResource.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: CertificateResource(String, String)
+  nameWithType: CertificateResource.CertificateResource(String, String)
+  fullName: Octopus.Client.Model.CertificateResource.CertificateResource(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 21
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public CertificateResource(string name, string certificateData)
+    parameters:
+    - id: name
+      type: System.String
+    - id: certificateData
+      type: System.String
+    content.vb: Public Sub New(name As String, certificateData As String)
+  overload: Octopus.Client.Model.CertificateResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.CertificateResource.#ctor(System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.CertificateResource.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: CertificateResource(String, String, String)
+  nameWithType: CertificateResource.CertificateResource(String, String, String)
+  fullName: Octopus.Client.Model.CertificateResource.CertificateResource(System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 28
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public CertificateResource(string name, string certificateData, string password)
+    parameters:
+    - id: name
+      type: System.String
+    - id: certificateData
+      type: System.String
+    - id: password
+      type: System.String
+    content.vb: Public Sub New(name As String, certificateData As String, password As String)
+  overload: Octopus.Client.Model.CertificateResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.CertificateResource.Name
+  commentId: P:Octopus.Client.Model.CertificateResource.Name
+  id: Name
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: CertificateResource.Name
+  fullName: Octopus.Client.Model.CertificateResource.Name
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Name
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 36
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Octopus.Client.Model.CertificateResource.Name*
+  implements:
+  - Octopus.Client.Extensibility.INamedResource.Name
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.CertificateResource.Notes
+  commentId: P:Octopus.Client.Model.CertificateResource.Notes
+  id: Notes
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: Notes
+  nameWithType: CertificateResource.Notes
+  fullName: Octopus.Client.Model.CertificateResource.Notes
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Notes
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 39
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string Notes { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Notes As String
+  overload: Octopus.Client.Model.CertificateResource.Notes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.CertificateResource.CertificateData
+  commentId: P:Octopus.Client.Model.CertificateResource.CertificateData
+  id: CertificateData
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: CertificateData
+  nameWithType: CertificateResource.CertificateData
+  fullName: Octopus.Client.Model.CertificateResource.CertificateData
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CertificateData
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 42
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public SensitiveValue CertificateData { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.SensitiveValue
+    content.vb: Public Property CertificateData As SensitiveValue
+  overload: Octopus.Client.Model.CertificateResource.CertificateData*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.CertificateResource.Password
+  commentId: P:Octopus.Client.Model.CertificateResource.Password
+  id: Password
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: CertificateResource.Password
+  fullName: Octopus.Client.Model.CertificateResource.Password
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Password
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 45
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public SensitiveValue Password { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.SensitiveValue
+    content.vb: Public Property Password As SensitiveValue
+  overload: Octopus.Client.Model.CertificateResource.Password*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.CertificateResource.EnvironmentIds
+  commentId: P:Octopus.Client.Model.CertificateResource.EnvironmentIds
+  id: EnvironmentIds
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentIds
+  nameWithType: CertificateResource.EnvironmentIds
+  fullName: Octopus.Client.Model.CertificateResource.EnvironmentIds
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: EnvironmentIds
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 48
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ReferenceCollection EnvironmentIds { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property EnvironmentIds As ReferenceCollection
+  overload: Octopus.Client.Model.CertificateResource.EnvironmentIds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.CertificateResource.TenantedDeploymentParticipation
+  commentId: P:Octopus.Client.Model.CertificateResource.TenantedDeploymentParticipation
+  id: TenantedDeploymentParticipation
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: TenantedDeploymentParticipation
+  nameWithType: CertificateResource.TenantedDeploymentParticipation
+  fullName: Octopus.Client.Model.CertificateResource.TenantedDeploymentParticipation
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TenantedDeploymentParticipation
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 54
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public TenantedDeploymentMode TenantedDeploymentParticipation { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.TenantedDeploymentMode
+    content.vb: Public Property TenantedDeploymentParticipation As TenantedDeploymentMode
+  overload: Octopus.Client.Model.CertificateResource.TenantedDeploymentParticipation*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.CertificateResource.TenantIds
+  commentId: P:Octopus.Client.Model.CertificateResource.TenantIds
+  id: TenantIds
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: TenantIds
+  nameWithType: CertificateResource.TenantIds
+  fullName: Octopus.Client.Model.CertificateResource.TenantIds
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TenantIds
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 72
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ReferenceCollection TenantIds { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property TenantIds As ReferenceCollection
+  overload: Octopus.Client.Model.CertificateResource.TenantIds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.CertificateResource.TenantTags
+  commentId: P:Octopus.Client.Model.CertificateResource.TenantTags
+  id: TenantTags
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: TenantTags
+  nameWithType: CertificateResource.TenantTags
+  fullName: Octopus.Client.Model.CertificateResource.TenantTags
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TenantTags
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 75
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ReferenceCollection TenantTags { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property TenantTags As ReferenceCollection
+  overload: Octopus.Client.Model.CertificateResource.TenantTags*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.CertificateResource.Archived
+  commentId: P:Octopus.Client.Model.CertificateResource.Archived
+  id: Archived
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: Archived
+  nameWithType: CertificateResource.Archived
+  fullName: Octopus.Client.Model.CertificateResource.Archived
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Archived
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 78
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public DateTimeOffset? Archived { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property Archived As DateTimeOffset?
+  overload: Octopus.Client.Model.CertificateResource.Archived*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.ReplacedBy
+  commentId: P:Octopus.Client.Model.CertificateResource.ReplacedBy
+  id: ReplacedBy
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: ReplacedBy
+  nameWithType: CertificateResource.ReplacedBy
+  fullName: Octopus.Client.Model.CertificateResource.ReplacedBy
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ReplacedBy
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 81
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public string ReplacedBy { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property ReplacedBy As String
+  overload: Octopus.Client.Model.CertificateResource.ReplacedBy*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.CertificateDataFormat
+  commentId: P:Octopus.Client.Model.CertificateResource.CertificateDataFormat
+  id: CertificateDataFormat
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: CertificateDataFormat
+  nameWithType: CertificateResource.CertificateDataFormat
+  fullName: Octopus.Client.Model.CertificateResource.CertificateDataFormat
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CertificateDataFormat
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 84
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public CertificateFormat CertificateDataFormat { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.CertificateFormat
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property CertificateDataFormat As CertificateFormat
+  overload: Octopus.Client.Model.CertificateResource.CertificateDataFormat*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.SubjectDistinguishedName
+  commentId: P:Octopus.Client.Model.CertificateResource.SubjectDistinguishedName
+  id: SubjectDistinguishedName
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: SubjectDistinguishedName
+  nameWithType: CertificateResource.SubjectDistinguishedName
+  fullName: Octopus.Client.Model.CertificateResource.SubjectDistinguishedName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SubjectDistinguishedName
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 87
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public string SubjectDistinguishedName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property SubjectDistinguishedName As String
+  overload: Octopus.Client.Model.CertificateResource.SubjectDistinguishedName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.SubjectCommonName
+  commentId: P:Octopus.Client.Model.CertificateResource.SubjectCommonName
+  id: SubjectCommonName
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: SubjectCommonName
+  nameWithType: CertificateResource.SubjectCommonName
+  fullName: Octopus.Client.Model.CertificateResource.SubjectCommonName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SubjectCommonName
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 90
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public string SubjectCommonName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property SubjectCommonName As String
+  overload: Octopus.Client.Model.CertificateResource.SubjectCommonName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.SubjectOrganization
+  commentId: P:Octopus.Client.Model.CertificateResource.SubjectOrganization
+  id: SubjectOrganization
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: SubjectOrganization
+  nameWithType: CertificateResource.SubjectOrganization
+  fullName: Octopus.Client.Model.CertificateResource.SubjectOrganization
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SubjectOrganization
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 93
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public string SubjectOrganization { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property SubjectOrganization As String
+  overload: Octopus.Client.Model.CertificateResource.SubjectOrganization*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.IssuerDistinguishedName
+  commentId: P:Octopus.Client.Model.CertificateResource.IssuerDistinguishedName
+  id: IssuerDistinguishedName
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: IssuerDistinguishedName
+  nameWithType: CertificateResource.IssuerDistinguishedName
+  fullName: Octopus.Client.Model.CertificateResource.IssuerDistinguishedName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IssuerDistinguishedName
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 96
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public string IssuerDistinguishedName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property IssuerDistinguishedName As String
+  overload: Octopus.Client.Model.CertificateResource.IssuerDistinguishedName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.IssuerCommonName
+  commentId: P:Octopus.Client.Model.CertificateResource.IssuerCommonName
+  id: IssuerCommonName
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: IssuerCommonName
+  nameWithType: CertificateResource.IssuerCommonName
+  fullName: Octopus.Client.Model.CertificateResource.IssuerCommonName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IssuerCommonName
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 99
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public string IssuerCommonName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property IssuerCommonName As String
+  overload: Octopus.Client.Model.CertificateResource.IssuerCommonName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.IssuerOrganization
+  commentId: P:Octopus.Client.Model.CertificateResource.IssuerOrganization
+  id: IssuerOrganization
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: IssuerOrganization
+  nameWithType: CertificateResource.IssuerOrganization
+  fullName: Octopus.Client.Model.CertificateResource.IssuerOrganization
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IssuerOrganization
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 102
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public string IssuerOrganization { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property IssuerOrganization As String
+  overload: Octopus.Client.Model.CertificateResource.IssuerOrganization*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.SelfSigned
+  commentId: P:Octopus.Client.Model.CertificateResource.SelfSigned
+  id: SelfSigned
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: SelfSigned
+  nameWithType: CertificateResource.SelfSigned
+  fullName: Octopus.Client.Model.CertificateResource.SelfSigned
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SelfSigned
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 105
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public bool SelfSigned { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property SelfSigned As Boolean
+  overload: Octopus.Client.Model.CertificateResource.SelfSigned*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.Thumbprint
+  commentId: P:Octopus.Client.Model.CertificateResource.Thumbprint
+  id: Thumbprint
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: Thumbprint
+  nameWithType: CertificateResource.Thumbprint
+  fullName: Octopus.Client.Model.CertificateResource.Thumbprint
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Thumbprint
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 108
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public string Thumbprint { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property Thumbprint As String
+  overload: Octopus.Client.Model.CertificateResource.Thumbprint*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.NotAfter
+  commentId: P:Octopus.Client.Model.CertificateResource.NotAfter
+  id: NotAfter
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: NotAfter
+  nameWithType: CertificateResource.NotAfter
+  fullName: Octopus.Client.Model.CertificateResource.NotAfter
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: NotAfter
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 111
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public DateTimeOffset NotAfter { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property NotAfter As DateTimeOffset
+  overload: Octopus.Client.Model.CertificateResource.NotAfter*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.NotBefore
+  commentId: P:Octopus.Client.Model.CertificateResource.NotBefore
+  id: NotBefore
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: NotBefore
+  nameWithType: CertificateResource.NotBefore
+  fullName: Octopus.Client.Model.CertificateResource.NotBefore
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: NotBefore
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 114
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public DateTimeOffset NotBefore { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property NotBefore As DateTimeOffset
+  overload: Octopus.Client.Model.CertificateResource.NotBefore*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.IsExpired
+  commentId: P:Octopus.Client.Model.CertificateResource.IsExpired
+  id: IsExpired
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: IsExpired
+  nameWithType: CertificateResource.IsExpired
+  fullName: Octopus.Client.Model.CertificateResource.IsExpired
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsExpired
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 117
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public bool IsExpired { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property IsExpired As Boolean
+  overload: Octopus.Client.Model.CertificateResource.IsExpired*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.HasPrivateKey
+  commentId: P:Octopus.Client.Model.CertificateResource.HasPrivateKey
+  id: HasPrivateKey
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: HasPrivateKey
+  nameWithType: CertificateResource.HasPrivateKey
+  fullName: Octopus.Client.Model.CertificateResource.HasPrivateKey
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: HasPrivateKey
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 120
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public bool HasPrivateKey { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property HasPrivateKey As Boolean
+  overload: Octopus.Client.Model.CertificateResource.HasPrivateKey*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.Version
+  commentId: P:Octopus.Client.Model.CertificateResource.Version
+  id: Version
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: CertificateResource.Version
+  fullName: Octopus.Client.Model.CertificateResource.Version
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Version
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 123
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public int Version { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property Version As Integer
+  overload: Octopus.Client.Model.CertificateResource.Version*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.SerialNumber
+  commentId: P:Octopus.Client.Model.CertificateResource.SerialNumber
+  id: SerialNumber
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: SerialNumber
+  nameWithType: CertificateResource.SerialNumber
+  fullName: Octopus.Client.Model.CertificateResource.SerialNumber
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SerialNumber
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 126
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public string SerialNumber { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property SerialNumber As String
+  overload: Octopus.Client.Model.CertificateResource.SerialNumber*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.SignatureAlgorithmName
+  commentId: P:Octopus.Client.Model.CertificateResource.SignatureAlgorithmName
+  id: SignatureAlgorithmName
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: SignatureAlgorithmName
+  nameWithType: CertificateResource.SignatureAlgorithmName
+  fullName: Octopus.Client.Model.CertificateResource.SignatureAlgorithmName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SignatureAlgorithmName
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 129
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty]
+
+      public string SignatureAlgorithmName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty>
+
+      Public ReadOnly Property SignatureAlgorithmName As String
+  overload: Octopus.Client.Model.CertificateResource.SignatureAlgorithmName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.CertificateResource.SubjectAlternativeNames
+  commentId: P:Octopus.Client.Model.CertificateResource.SubjectAlternativeNames
+  id: SubjectAlternativeNames
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: SubjectAlternativeNames
+  nameWithType: CertificateResource.SubjectAlternativeNames
+  fullName: Octopus.Client.Model.CertificateResource.SubjectAlternativeNames
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SubjectAlternativeNames
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 132
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public IList<string> SubjectAlternativeNames { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.String}
+    content.vb: Public Property SubjectAlternativeNames As IList(Of String)
+  overload: Octopus.Client.Model.CertificateResource.SubjectAlternativeNames*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.CertificateResource.CertificateChain
+  commentId: P:Octopus.Client.Model.CertificateResource.CertificateChain
+  id: CertificateChain
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: CertificateChain
+  nameWithType: CertificateResource.CertificateChain
+  fullName: Octopus.Client.Model.CertificateResource.CertificateChain
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CertificateChain
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 134
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public IList<CertificateResource.X509Certificate> CertificateChain { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Octopus.Client.Model.CertificateResource.X509Certificate}
+    content.vb: Public Property CertificateChain As IList(Of CertificateResource.X509Certificate)
+  overload: Octopus.Client.Model.CertificateResource.CertificateChain*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.CertificateResource.SpaceId
+  commentId: P:Octopus.Client.Model.CertificateResource.SpaceId
+  id: SpaceId
+  parent: Octopus.Client.Model.CertificateResource
+  langs:
+  - csharp
+  - vb
+  name: SpaceId
+  nameWithType: CertificateResource.SpaceId
+  fullName: Octopus.Client.Model.CertificateResource.SpaceId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/CertificateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SpaceId
+    path: ../source/Octopus.Client/Model/CertificateResource.cs
+    startLine: 155
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string SpaceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SpaceId As String
+  overload: Octopus.Client.Model.CertificateResource.SpaceId*
+  implements:
+  - Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Extensibility.INamedResource
+  commentId: T:Octopus.Client.Extensibility.INamedResource
+  parent: Octopus.Client.Extensibility
+  name: INamedResource
+  nameWithType: INamedResource
+  fullName: Octopus.Client.Extensibility.INamedResource
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource
+  commentId: T:Octopus.Client.Extensibility.IHaveSpaceResource
+  parent: Octopus.Client.Extensibility
+  name: IHaveSpaceResource
+  nameWithType: IHaveSpaceResource
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.CertificateResource.#ctor*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.#ctor
+  name: CertificateResource
+  nameWithType: CertificateResource.CertificateResource
+  fullName: Octopus.Client.Model.CertificateResource.CertificateResource
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.CertificateResource.Name*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.Name
+  name: Name
+  nameWithType: CertificateResource.Name
+  fullName: Octopus.Client.Model.CertificateResource.Name
+- uid: Octopus.Client.Extensibility.INamedResource.Name
+  commentId: P:Octopus.Client.Extensibility.INamedResource.Name
+  parent: Octopus.Client.Extensibility.INamedResource
+  name: Name
+  nameWithType: INamedResource.Name
+  fullName: Octopus.Client.Extensibility.INamedResource.Name
+- uid: Octopus.Client.Model.CertificateResource.Notes*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.Notes
+  name: Notes
+  nameWithType: CertificateResource.Notes
+  fullName: Octopus.Client.Model.CertificateResource.Notes
+- uid: Octopus.Client.Model.CertificateResource.CertificateData*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.CertificateData
+  name: CertificateData
+  nameWithType: CertificateResource.CertificateData
+  fullName: Octopus.Client.Model.CertificateResource.CertificateData
+- uid: Octopus.Client.Model.SensitiveValue
+  commentId: T:Octopus.Client.Model.SensitiveValue
+  parent: Octopus.Client.Model
+  name: SensitiveValue
+  nameWithType: SensitiveValue
+  fullName: Octopus.Client.Model.SensitiveValue
+- uid: Octopus.Client.Model.CertificateResource.Password*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.Password
+  name: Password
+  nameWithType: CertificateResource.Password
+  fullName: Octopus.Client.Model.CertificateResource.Password
+- uid: Octopus.Client.Model.CertificateResource.EnvironmentIds*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.EnvironmentIds
+  name: EnvironmentIds
+  nameWithType: CertificateResource.EnvironmentIds
+  fullName: Octopus.Client.Model.CertificateResource.EnvironmentIds
+- uid: Octopus.Client.Model.ReferenceCollection
+  commentId: T:Octopus.Client.Model.ReferenceCollection
+  parent: Octopus.Client.Model
+  name: ReferenceCollection
+  nameWithType: ReferenceCollection
+  fullName: Octopus.Client.Model.ReferenceCollection
+- uid: Octopus.Client.Model.CertificateResource.TenantedDeploymentParticipation*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.TenantedDeploymentParticipation
+  name: TenantedDeploymentParticipation
+  nameWithType: CertificateResource.TenantedDeploymentParticipation
+  fullName: Octopus.Client.Model.CertificateResource.TenantedDeploymentParticipation
+- uid: Octopus.Client.Model.TenantedDeploymentMode
+  commentId: T:Octopus.Client.Model.TenantedDeploymentMode
+  parent: Octopus.Client.Model
+  name: TenantedDeploymentMode
+  nameWithType: TenantedDeploymentMode
+  fullName: Octopus.Client.Model.TenantedDeploymentMode
+- uid: Octopus.Client.Model.CertificateResource.TenantIds*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.TenantIds
+  name: TenantIds
+  nameWithType: CertificateResource.TenantIds
+  fullName: Octopus.Client.Model.CertificateResource.TenantIds
+- uid: Octopus.Client.Model.CertificateResource.TenantTags*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.TenantTags
+  name: TenantTags
+  nameWithType: CertificateResource.TenantTags
+  fullName: Octopus.Client.Model.CertificateResource.TenantTags
+- uid: Octopus.Client.Model.CertificateResource.Archived*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.Archived
+  name: Archived
+  nameWithType: CertificateResource.Archived
+  fullName: Octopus.Client.Model.CertificateResource.Archived
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  nameWithType: Nullable<DateTimeOffset>
+  fullName: System.Nullable<System.DateTimeOffset>
+  nameWithType.vb: Nullable(Of DateTimeOffset)
+  fullName.vb: System.Nullable(Of System.DateTimeOffset)
+  name.vb: Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.CertificateResource.ReplacedBy*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.ReplacedBy
+  name: ReplacedBy
+  nameWithType: CertificateResource.ReplacedBy
+  fullName: Octopus.Client.Model.CertificateResource.ReplacedBy
+- uid: Octopus.Client.Model.CertificateResource.CertificateDataFormat*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.CertificateDataFormat
+  name: CertificateDataFormat
+  nameWithType: CertificateResource.CertificateDataFormat
+  fullName: Octopus.Client.Model.CertificateResource.CertificateDataFormat
+- uid: Octopus.Client.Model.CertificateFormat
+  commentId: T:Octopus.Client.Model.CertificateFormat
+  parent: Octopus.Client.Model
+  name: CertificateFormat
+  nameWithType: CertificateFormat
+  fullName: Octopus.Client.Model.CertificateFormat
+- uid: Octopus.Client.Model.CertificateResource.SubjectDistinguishedName*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.SubjectDistinguishedName
+  name: SubjectDistinguishedName
+  nameWithType: CertificateResource.SubjectDistinguishedName
+  fullName: Octopus.Client.Model.CertificateResource.SubjectDistinguishedName
+- uid: Octopus.Client.Model.CertificateResource.SubjectCommonName*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.SubjectCommonName
+  name: SubjectCommonName
+  nameWithType: CertificateResource.SubjectCommonName
+  fullName: Octopus.Client.Model.CertificateResource.SubjectCommonName
+- uid: Octopus.Client.Model.CertificateResource.SubjectOrganization*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.SubjectOrganization
+  name: SubjectOrganization
+  nameWithType: CertificateResource.SubjectOrganization
+  fullName: Octopus.Client.Model.CertificateResource.SubjectOrganization
+- uid: Octopus.Client.Model.CertificateResource.IssuerDistinguishedName*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.IssuerDistinguishedName
+  name: IssuerDistinguishedName
+  nameWithType: CertificateResource.IssuerDistinguishedName
+  fullName: Octopus.Client.Model.CertificateResource.IssuerDistinguishedName
+- uid: Octopus.Client.Model.CertificateResource.IssuerCommonName*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.IssuerCommonName
+  name: IssuerCommonName
+  nameWithType: CertificateResource.IssuerCommonName
+  fullName: Octopus.Client.Model.CertificateResource.IssuerCommonName
+- uid: Octopus.Client.Model.CertificateResource.IssuerOrganization*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.IssuerOrganization
+  name: IssuerOrganization
+  nameWithType: CertificateResource.IssuerOrganization
+  fullName: Octopus.Client.Model.CertificateResource.IssuerOrganization
+- uid: Octopus.Client.Model.CertificateResource.SelfSigned*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.SelfSigned
+  name: SelfSigned
+  nameWithType: CertificateResource.SelfSigned
+  fullName: Octopus.Client.Model.CertificateResource.SelfSigned
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.CertificateResource.Thumbprint*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.Thumbprint
+  name: Thumbprint
+  nameWithType: CertificateResource.Thumbprint
+  fullName: Octopus.Client.Model.CertificateResource.Thumbprint
+- uid: Octopus.Client.Model.CertificateResource.NotAfter*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.NotAfter
+  name: NotAfter
+  nameWithType: CertificateResource.NotAfter
+  fullName: Octopus.Client.Model.CertificateResource.NotAfter
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Octopus.Client.Model.CertificateResource.NotBefore*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.NotBefore
+  name: NotBefore
+  nameWithType: CertificateResource.NotBefore
+  fullName: Octopus.Client.Model.CertificateResource.NotBefore
+- uid: Octopus.Client.Model.CertificateResource.IsExpired*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.IsExpired
+  name: IsExpired
+  nameWithType: CertificateResource.IsExpired
+  fullName: Octopus.Client.Model.CertificateResource.IsExpired
+- uid: Octopus.Client.Model.CertificateResource.HasPrivateKey*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.HasPrivateKey
+  name: HasPrivateKey
+  nameWithType: CertificateResource.HasPrivateKey
+  fullName: Octopus.Client.Model.CertificateResource.HasPrivateKey
+- uid: Octopus.Client.Model.CertificateResource.Version*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.Version
+  name: Version
+  nameWithType: CertificateResource.Version
+  fullName: Octopus.Client.Model.CertificateResource.Version
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Octopus.Client.Model.CertificateResource.SerialNumber*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.SerialNumber
+  name: SerialNumber
+  nameWithType: CertificateResource.SerialNumber
+  fullName: Octopus.Client.Model.CertificateResource.SerialNumber
+- uid: Octopus.Client.Model.CertificateResource.SignatureAlgorithmName*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.SignatureAlgorithmName
+  name: SignatureAlgorithmName
+  nameWithType: CertificateResource.SignatureAlgorithmName
+  fullName: Octopus.Client.Model.CertificateResource.SignatureAlgorithmName
+- uid: Octopus.Client.Model.CertificateResource.SubjectAlternativeNames*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.SubjectAlternativeNames
+  name: SubjectAlternativeNames
+  nameWithType: CertificateResource.SubjectAlternativeNames
+  fullName: Octopus.Client.Model.CertificateResource.SubjectAlternativeNames
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<String>
+  nameWithType: IList<String>
+  fullName: System.Collections.Generic.IList<System.String>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of System.String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.CertificateResource.CertificateChain*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.CertificateChain
+  name: CertificateChain
+  nameWithType: CertificateResource.CertificateChain
+  fullName: Octopus.Client.Model.CertificateResource.CertificateChain
+- uid: System.Collections.Generic.IList{Octopus.Client.Model.CertificateResource.X509Certificate}
+  commentId: T:System.Collections.Generic.IList{Octopus.Client.Model.CertificateResource.X509Certificate}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<CertificateResource.X509Certificate>
+  nameWithType: IList<CertificateResource.X509Certificate>
+  fullName: System.Collections.Generic.IList<Octopus.Client.Model.CertificateResource.X509Certificate>
+  nameWithType.vb: IList(Of CertificateResource.X509Certificate)
+  fullName.vb: System.Collections.Generic.IList(Of Octopus.Client.Model.CertificateResource.X509Certificate)
+  name.vb: IList(Of CertificateResource.X509Certificate)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.CertificateResource.X509Certificate
+    name: CertificateResource.X509Certificate
+    nameWithType: CertificateResource.X509Certificate
+    fullName: Octopus.Client.Model.CertificateResource.X509Certificate
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.CertificateResource.X509Certificate
+    name: CertificateResource.X509Certificate
+    nameWithType: CertificateResource.X509Certificate
+    fullName: Octopus.Client.Model.CertificateResource.X509Certificate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.CertificateResource.SpaceId*
+  commentId: Overload:Octopus.Client.Model.CertificateResource.SpaceId
+  name: SpaceId
+  nameWithType: CertificateResource.SpaceId
+  fullName: Octopus.Client.Model.CertificateResource.SpaceId
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  commentId: P:Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  parent: Octopus.Client.Extensibility.IHaveSpaceResource
+  name: SpaceId
+  nameWithType: IHaveSpaceResource.SpaceId
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId

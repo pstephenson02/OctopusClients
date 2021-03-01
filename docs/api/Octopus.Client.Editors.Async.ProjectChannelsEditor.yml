@@ -1,0 +1,699 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Editors.Async.ProjectChannelsEditor
+  commentId: T:Octopus.Client.Editors.Async.ProjectChannelsEditor
+  id: ProjectChannelsEditor
+  parent: Octopus.Client.Editors.Async
+  children:
+  - Octopus.Client.Editors.Async.ProjectChannelsEditor.#ctor(Octopus.Client.Repositories.Async.IChannelRepository,Octopus.Client.Model.ProjectResource)
+  - Octopus.Client.Editors.Async.ProjectChannelsEditor.CreateOrModify(System.String)
+  - Octopus.Client.Editors.Async.ProjectChannelsEditor.CreateOrModify(System.String,System.String)
+  - Octopus.Client.Editors.Async.ProjectChannelsEditor.Delete(System.String)
+  - Octopus.Client.Editors.Async.ProjectChannelsEditor.SaveAll
+  langs:
+  - csharp
+  - vb
+  name: ProjectChannelsEditor
+  nameWithType: ProjectChannelsEditor
+  fullName: Octopus.Client.Editors.Async.ProjectChannelsEditor
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/ProjectChannelsEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectChannelsEditor
+    path: ../source/Octopus.Client/Editors/Async/ProjectChannelsEditor.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public class ProjectChannelsEditor
+    content.vb: Public Class ProjectChannelsEditor
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Editors.Async.ProjectChannelsEditor.#ctor(Octopus.Client.Repositories.Async.IChannelRepository,Octopus.Client.Model.ProjectResource)
+  commentId: M:Octopus.Client.Editors.Async.ProjectChannelsEditor.#ctor(Octopus.Client.Repositories.Async.IChannelRepository,Octopus.Client.Model.ProjectResource)
+  id: '#ctor(Octopus.Client.Repositories.Async.IChannelRepository,Octopus.Client.Model.ProjectResource)'
+  parent: Octopus.Client.Editors.Async.ProjectChannelsEditor
+  langs:
+  - csharp
+  - vb
+  name: ProjectChannelsEditor(IChannelRepository, ProjectResource)
+  nameWithType: ProjectChannelsEditor.ProjectChannelsEditor(IChannelRepository, ProjectResource)
+  fullName: Octopus.Client.Editors.Async.ProjectChannelsEditor.ProjectChannelsEditor(Octopus.Client.Repositories.Async.IChannelRepository, Octopus.Client.Model.ProjectResource)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/ProjectChannelsEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Editors/Async/ProjectChannelsEditor.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public ProjectChannelsEditor(IChannelRepository repository, ProjectResource owner)
+    parameters:
+    - id: repository
+      type: Octopus.Client.Repositories.Async.IChannelRepository
+    - id: owner
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public Sub New(repository As IChannelRepository, owner As ProjectResource)
+  overload: Octopus.Client.Editors.Async.ProjectChannelsEditor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.Async.ProjectChannelsEditor.CreateOrModify(System.String)
+  commentId: M:Octopus.Client.Editors.Async.ProjectChannelsEditor.CreateOrModify(System.String)
+  id: CreateOrModify(System.String)
+  parent: Octopus.Client.Editors.Async.ProjectChannelsEditor
+  langs:
+  - csharp
+  - vb
+  name: CreateOrModify(String)
+  nameWithType: ProjectChannelsEditor.CreateOrModify(String)
+  fullName: Octopus.Client.Editors.Async.ProjectChannelsEditor.CreateOrModify(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/ProjectChannelsEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CreateOrModify
+    path: ../source/Octopus.Client/Editors/Async/ProjectChannelsEditor.cs
+    startLine: 21
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public Task<ChannelEditor> CreateOrModify(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Editors.Async.ChannelEditor}
+    content.vb: Public Function CreateOrModify(name As String) As Task(Of ChannelEditor)
+  overload: Octopus.Client.Editors.Async.ProjectChannelsEditor.CreateOrModify*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.Async.ProjectChannelsEditor.CreateOrModify(System.String,System.String)
+  commentId: M:Octopus.Client.Editors.Async.ProjectChannelsEditor.CreateOrModify(System.String,System.String)
+  id: CreateOrModify(System.String,System.String)
+  parent: Octopus.Client.Editors.Async.ProjectChannelsEditor
+  langs:
+  - csharp
+  - vb
+  name: CreateOrModify(String, String)
+  nameWithType: ProjectChannelsEditor.CreateOrModify(String, String)
+  fullName: Octopus.Client.Editors.Async.ProjectChannelsEditor.CreateOrModify(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/ProjectChannelsEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CreateOrModify
+    path: ../source/Octopus.Client/Editors/Async/ProjectChannelsEditor.cs
+    startLine: 28
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public Task<ChannelEditor> CreateOrModify(string name, string description)
+    parameters:
+    - id: name
+      type: System.String
+    - id: description
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Editors.Async.ChannelEditor}
+    content.vb: Public Function CreateOrModify(name As String, description As String) As Task(Of ChannelEditor)
+  overload: Octopus.Client.Editors.Async.ProjectChannelsEditor.CreateOrModify*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.Async.ProjectChannelsEditor.Delete(System.String)
+  commentId: M:Octopus.Client.Editors.Async.ProjectChannelsEditor.Delete(System.String)
+  id: Delete(System.String)
+  parent: Octopus.Client.Editors.Async.ProjectChannelsEditor
+  langs:
+  - csharp
+  - vb
+  name: Delete(String)
+  nameWithType: ProjectChannelsEditor.Delete(String)
+  fullName: Octopus.Client.Editors.Async.ProjectChannelsEditor.Delete(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/ProjectChannelsEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Delete
+    path: ../source/Octopus.Client/Editors/Async/ProjectChannelsEditor.cs
+    startLine: 35
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public Task<ProjectChannelsEditor> Delete(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Editors.Async.ProjectChannelsEditor}
+    content.vb: Public Function Delete(name As String) As Task(Of ProjectChannelsEditor)
+  overload: Octopus.Client.Editors.Async.ProjectChannelsEditor.Delete*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.Async.ProjectChannelsEditor.SaveAll
+  commentId: M:Octopus.Client.Editors.Async.ProjectChannelsEditor.SaveAll
+  id: SaveAll
+  parent: Octopus.Client.Editors.Async.ProjectChannelsEditor
+  langs:
+  - csharp
+  - vb
+  name: SaveAll()
+  nameWithType: ProjectChannelsEditor.SaveAll()
+  fullName: Octopus.Client.Editors.Async.ProjectChannelsEditor.SaveAll()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/Async/ProjectChannelsEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SaveAll
+    path: ../source/Octopus.Client/Editors/Async/ProjectChannelsEditor.cs
+    startLine: 43
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors.Async
+  syntax:
+    content: public Task<ProjectChannelsEditor> SaveAll()
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Editors.Async.ProjectChannelsEditor}
+    content.vb: Public Function SaveAll As Task(Of ProjectChannelsEditor)
+  overload: Octopus.Client.Editors.Async.ProjectChannelsEditor.SaveAll*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Editors.Async
+  commentId: N:Octopus.Client.Editors.Async
+  name: Octopus.Client.Editors.Async
+  nameWithType: Octopus.Client.Editors.Async
+  fullName: Octopus.Client.Editors.Async
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Editors.Async.ProjectChannelsEditor.#ctor*
+  commentId: Overload:Octopus.Client.Editors.Async.ProjectChannelsEditor.#ctor
+  name: ProjectChannelsEditor
+  nameWithType: ProjectChannelsEditor.ProjectChannelsEditor
+  fullName: Octopus.Client.Editors.Async.ProjectChannelsEditor.ProjectChannelsEditor
+- uid: Octopus.Client.Repositories.Async.IChannelRepository
+  commentId: T:Octopus.Client.Repositories.Async.IChannelRepository
+  parent: Octopus.Client.Repositories.Async
+  name: IChannelRepository
+  nameWithType: IChannelRepository
+  fullName: Octopus.Client.Repositories.Async.IChannelRepository
+- uid: Octopus.Client.Model.ProjectResource
+  commentId: T:Octopus.Client.Model.ProjectResource
+  parent: Octopus.Client.Model
+  name: ProjectResource
+  nameWithType: ProjectResource
+  fullName: Octopus.Client.Model.ProjectResource
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Editors.Async.ProjectChannelsEditor.CreateOrModify*
+  commentId: Overload:Octopus.Client.Editors.Async.ProjectChannelsEditor.CreateOrModify
+  name: CreateOrModify
+  nameWithType: ProjectChannelsEditor.CreateOrModify
+  fullName: Octopus.Client.Editors.Async.ProjectChannelsEditor.CreateOrModify
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{Octopus.Client.Editors.Async.ChannelEditor}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Editors.Async.ChannelEditor}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ChannelEditor>
+  nameWithType: Task<ChannelEditor>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Editors.Async.ChannelEditor>
+  nameWithType.vb: Task(Of ChannelEditor)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Editors.Async.ChannelEditor)
+  name.vb: Task(Of ChannelEditor)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Editors.Async.ChannelEditor
+    name: ChannelEditor
+    nameWithType: ChannelEditor
+    fullName: Octopus.Client.Editors.Async.ChannelEditor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Editors.Async.ChannelEditor
+    name: ChannelEditor
+    nameWithType: ChannelEditor
+    fullName: Octopus.Client.Editors.Async.ChannelEditor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Octopus.Client.Editors.Async.ProjectChannelsEditor.Delete*
+  commentId: Overload:Octopus.Client.Editors.Async.ProjectChannelsEditor.Delete
+  name: Delete
+  nameWithType: ProjectChannelsEditor.Delete
+  fullName: Octopus.Client.Editors.Async.ProjectChannelsEditor.Delete
+- uid: System.Threading.Tasks.Task{Octopus.Client.Editors.Async.ProjectChannelsEditor}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Editors.Async.ProjectChannelsEditor}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ProjectChannelsEditor>
+  nameWithType: Task<ProjectChannelsEditor>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Editors.Async.ProjectChannelsEditor>
+  nameWithType.vb: Task(Of ProjectChannelsEditor)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Editors.Async.ProjectChannelsEditor)
+  name.vb: Task(Of ProjectChannelsEditor)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Editors.Async.ProjectChannelsEditor
+    name: ProjectChannelsEditor
+    nameWithType: ProjectChannelsEditor
+    fullName: Octopus.Client.Editors.Async.ProjectChannelsEditor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Editors.Async.ProjectChannelsEditor
+    name: ProjectChannelsEditor
+    nameWithType: ProjectChannelsEditor
+    fullName: Octopus.Client.Editors.Async.ProjectChannelsEditor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.Async.ProjectChannelsEditor.SaveAll*
+  commentId: Overload:Octopus.Client.Editors.Async.ProjectChannelsEditor.SaveAll
+  name: SaveAll
+  nameWithType: ProjectChannelsEditor.SaveAll
+  fullName: Octopus.Client.Editors.Async.ProjectChannelsEditor.SaveAll

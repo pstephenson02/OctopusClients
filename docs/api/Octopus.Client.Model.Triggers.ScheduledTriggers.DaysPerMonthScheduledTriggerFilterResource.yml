@@ -1,0 +1,873 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource
+  commentId: T:Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource
+  id: DaysPerMonthScheduledTriggerFilterResource
+  parent: Octopus.Client.Model.Triggers.ScheduledTriggers
+  children:
+  - Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DateOfMonth
+  - Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayNumberOfMonth
+  - Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayOfWeek
+  - Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.FilterType
+  - Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.MonthlyScheduleType
+  - Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.StartTime
+  langs:
+  - csharp
+  - vb
+  name: DaysPerMonthScheduledTriggerFilterResource
+  nameWithType: DaysPerMonthScheduledTriggerFilterResource
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Triggers/ScheduledTriggers/DaysPerMonthScheduledTriggerFilterResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DaysPerMonthScheduledTriggerFilterResource
+    path: ../source/Octopus.Client/Model/Triggers/ScheduledTriggers/DaysPerMonthScheduledTriggerFilterResource.cs
+    startLine: 22
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Triggers.ScheduledTriggers
+  syntax:
+    content: 'public class DaysPerMonthScheduledTriggerFilterResource : ScheduledTriggerFilterResource, IResource, IAuditedResource'
+    content.vb: >-
+      Public Class DaysPerMonthScheduledTriggerFilterResource
+          Inherits ScheduledTriggerFilterResource
+          Implements IResource, IAuditedResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  - Octopus.Client.Model.Triggers.TriggerFilterResource
+  - Octopus.Client.Model.Triggers.ScheduledTriggers.ScheduledTriggerFilterResource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  inheritedMembers:
+  - Octopus.Client.Model.Triggers.ScheduledTriggers.ScheduledTriggerFilterResource.Timezone
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.FilterType
+  commentId: P:Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.FilterType
+  id: FilterType
+  parent: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource
+  langs:
+  - csharp
+  - vb
+  name: FilterType
+  nameWithType: DaysPerMonthScheduledTriggerFilterResource.FilterType
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.FilterType
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Triggers/ScheduledTriggers/DaysPerMonthScheduledTriggerFilterResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: FilterType
+    path: ../source/Octopus.Client/Model/Triggers/ScheduledTriggers/DaysPerMonthScheduledTriggerFilterResource.cs
+    startLine: 24
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Triggers.ScheduledTriggers
+  syntax:
+    content: public override TriggerFilterType FilterType { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.Triggers.TriggerFilterType
+    content.vb: Public Overrides ReadOnly Property FilterType As TriggerFilterType
+  overridden: Octopus.Client.Model.Triggers.TriggerFilterResource.FilterType
+  overload: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.FilterType*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.StartTime
+  commentId: P:Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.StartTime
+  id: StartTime
+  parent: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource
+  langs:
+  - csharp
+  - vb
+  name: StartTime
+  nameWithType: DaysPerMonthScheduledTriggerFilterResource.StartTime
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.StartTime
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Triggers/ScheduledTriggers/DaysPerMonthScheduledTriggerFilterResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: StartTime
+    path: ../source/Octopus.Client/Model/Triggers/ScheduledTriggers/DaysPerMonthScheduledTriggerFilterResource.cs
+    startLine: 26
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Triggers.ScheduledTriggers
+  syntax:
+    content: public DateTime StartTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property StartTime As Date
+  overload: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.StartTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.MonthlyScheduleType
+  commentId: P:Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.MonthlyScheduleType
+  id: MonthlyScheduleType
+  parent: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource
+  langs:
+  - csharp
+  - vb
+  name: MonthlyScheduleType
+  nameWithType: DaysPerMonthScheduledTriggerFilterResource.MonthlyScheduleType
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.MonthlyScheduleType
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Triggers/ScheduledTriggers/DaysPerMonthScheduledTriggerFilterResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: MonthlyScheduleType
+    path: ../source/Octopus.Client/Model/Triggers/ScheduledTriggers/DaysPerMonthScheduledTriggerFilterResource.cs
+    startLine: 29
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Triggers.ScheduledTriggers
+  syntax:
+    content: public MonthlyScheduleType MonthlyScheduleType { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.Triggers.ScheduledTriggers.MonthlyScheduleType
+    content.vb: Public Property MonthlyScheduleType As MonthlyScheduleType
+  overload: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.MonthlyScheduleType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DateOfMonth
+  commentId: P:Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DateOfMonth
+  id: DateOfMonth
+  parent: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource
+  langs:
+  - csharp
+  - vb
+  name: DateOfMonth
+  nameWithType: DaysPerMonthScheduledTriggerFilterResource.DateOfMonth
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DateOfMonth
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Triggers/ScheduledTriggers/DaysPerMonthScheduledTriggerFilterResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DateOfMonth
+    path: ../source/Octopus.Client/Model/Triggers/ScheduledTriggers/DaysPerMonthScheduledTriggerFilterResource.cs
+    startLine: 32
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Triggers.ScheduledTriggers
+  syntax:
+    content: public string DateOfMonth { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DateOfMonth As String
+  overload: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DateOfMonth*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayNumberOfMonth
+  commentId: P:Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayNumberOfMonth
+  id: DayNumberOfMonth
+  parent: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource
+  langs:
+  - csharp
+  - vb
+  name: DayNumberOfMonth
+  nameWithType: DaysPerMonthScheduledTriggerFilterResource.DayNumberOfMonth
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayNumberOfMonth
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Triggers/ScheduledTriggers/DaysPerMonthScheduledTriggerFilterResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DayNumberOfMonth
+    path: ../source/Octopus.Client/Model/Triggers/ScheduledTriggers/DaysPerMonthScheduledTriggerFilterResource.cs
+    startLine: 35
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Triggers.ScheduledTriggers
+  syntax:
+    content: public string DayNumberOfMonth { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DayNumberOfMonth As String
+  overload: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayNumberOfMonth*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayOfWeek
+  commentId: P:Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayOfWeek
+  id: DayOfWeek
+  parent: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource
+  langs:
+  - csharp
+  - vb
+  name: DayOfWeek
+  nameWithType: DaysPerMonthScheduledTriggerFilterResource.DayOfWeek
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayOfWeek
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Triggers/ScheduledTriggers/DaysPerMonthScheduledTriggerFilterResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DayOfWeek
+    path: ../source/Octopus.Client/Model/Triggers/ScheduledTriggers/DaysPerMonthScheduledTriggerFilterResource.cs
+    startLine: 38
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Triggers.ScheduledTriggers
+  syntax:
+    content: public DayOfWeek? DayOfWeek { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Octopus.Client.Model.Triggers.ScheduledTriggers.DayOfWeek}
+    content.vb: Public Property DayOfWeek As DayOfWeek?
+  overload: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayOfWeek*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers
+  commentId: N:Octopus.Client.Model.Triggers.ScheduledTriggers
+  name: Octopus.Client.Model.Triggers.ScheduledTriggers
+  nameWithType: Octopus.Client.Model.Triggers.ScheduledTriggers
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Model.Triggers.TriggerFilterResource
+  commentId: T:Octopus.Client.Model.Triggers.TriggerFilterResource
+  parent: Octopus.Client.Model.Triggers
+  name: TriggerFilterResource
+  nameWithType: TriggerFilterResource
+  fullName: Octopus.Client.Model.Triggers.TriggerFilterResource
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.ScheduledTriggerFilterResource
+  commentId: T:Octopus.Client.Model.Triggers.ScheduledTriggers.ScheduledTriggerFilterResource
+  parent: Octopus.Client.Model.Triggers.ScheduledTriggers
+  name: ScheduledTriggerFilterResource
+  nameWithType: ScheduledTriggerFilterResource
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.ScheduledTriggerFilterResource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.ScheduledTriggerFilterResource.Timezone
+  commentId: P:Octopus.Client.Model.Triggers.ScheduledTriggers.ScheduledTriggerFilterResource.Timezone
+  parent: Octopus.Client.Model.Triggers.ScheduledTriggers.ScheduledTriggerFilterResource
+  name: Timezone
+  nameWithType: ScheduledTriggerFilterResource.Timezone
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.ScheduledTriggerFilterResource.Timezone
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Model.Triggers
+  commentId: N:Octopus.Client.Model.Triggers
+  name: Octopus.Client.Model.Triggers
+  nameWithType: Octopus.Client.Model.Triggers
+  fullName: Octopus.Client.Model.Triggers
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.Triggers.TriggerFilterResource.FilterType
+  commentId: P:Octopus.Client.Model.Triggers.TriggerFilterResource.FilterType
+  parent: Octopus.Client.Model.Triggers.TriggerFilterResource
+  name: FilterType
+  nameWithType: TriggerFilterResource.FilterType
+  fullName: Octopus.Client.Model.Triggers.TriggerFilterResource.FilterType
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.FilterType*
+  commentId: Overload:Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.FilterType
+  name: FilterType
+  nameWithType: DaysPerMonthScheduledTriggerFilterResource.FilterType
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.FilterType
+- uid: Octopus.Client.Model.Triggers.TriggerFilterType
+  commentId: T:Octopus.Client.Model.Triggers.TriggerFilterType
+  parent: Octopus.Client.Model.Triggers
+  name: TriggerFilterType
+  nameWithType: TriggerFilterType
+  fullName: Octopus.Client.Model.Triggers.TriggerFilterType
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.StartTime*
+  commentId: Overload:Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.StartTime
+  name: StartTime
+  nameWithType: DaysPerMonthScheduledTriggerFilterResource.StartTime
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.StartTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.MonthlyScheduleType*
+  commentId: Overload:Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.MonthlyScheduleType
+  name: MonthlyScheduleType
+  nameWithType: DaysPerMonthScheduledTriggerFilterResource.MonthlyScheduleType
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.MonthlyScheduleType
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.MonthlyScheduleType
+  commentId: T:Octopus.Client.Model.Triggers.ScheduledTriggers.MonthlyScheduleType
+  parent: Octopus.Client.Model.Triggers.ScheduledTriggers
+  name: MonthlyScheduleType
+  nameWithType: MonthlyScheduleType
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.MonthlyScheduleType
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DateOfMonth*
+  commentId: Overload:Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DateOfMonth
+  name: DateOfMonth
+  nameWithType: DaysPerMonthScheduledTriggerFilterResource.DateOfMonth
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DateOfMonth
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayNumberOfMonth*
+  commentId: Overload:Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayNumberOfMonth
+  name: DayNumberOfMonth
+  nameWithType: DaysPerMonthScheduledTriggerFilterResource.DayNumberOfMonth
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayNumberOfMonth
+- uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayOfWeek*
+  commentId: Overload:Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayOfWeek
+  name: DayOfWeek
+  nameWithType: DaysPerMonthScheduledTriggerFilterResource.DayOfWeek
+  fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DaysPerMonthScheduledTriggerFilterResource.DayOfWeek
+- uid: System.Nullable{Octopus.Client.Model.Triggers.ScheduledTriggers.DayOfWeek}
+  commentId: T:System.Nullable{Octopus.Client.Model.Triggers.ScheduledTriggers.DayOfWeek}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DayOfWeek>
+  nameWithType: Nullable<DayOfWeek>
+  fullName: System.Nullable<Octopus.Client.Model.Triggers.ScheduledTriggers.DayOfWeek>
+  nameWithType.vb: Nullable(Of DayOfWeek)
+  fullName.vb: System.Nullable(Of Octopus.Client.Model.Triggers.ScheduledTriggers.DayOfWeek)
+  name.vb: Nullable(Of DayOfWeek)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DayOfWeek
+    name: DayOfWeek
+    nameWithType: DayOfWeek
+    fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DayOfWeek
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Triggers.ScheduledTriggers.DayOfWeek
+    name: DayOfWeek
+    nameWithType: DayOfWeek
+    fullName: Octopus.Client.Model.Triggers.ScheduledTriggers.DayOfWeek
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

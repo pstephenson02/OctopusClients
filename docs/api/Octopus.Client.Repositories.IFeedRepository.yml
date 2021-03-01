@@ -1,0 +1,2322 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.IFeedRepository
+  commentId: T:Octopus.Client.Repositories.IFeedRepository
+  id: IFeedRepository
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.IFeedRepository.GetVersions(Octopus.Client.Model.FeedResource,System.String[])
+  langs:
+  - csharp
+  - vb
+  name: IFeedRepository
+  nameWithType: IFeedRepository
+  fullName: Octopus.Client.Repositories.IFeedRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/FeedRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IFeedRepository
+    path: ../source/Octopus.Client/Repositories/FeedRepository.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: 'public interface IFeedRepository : ICreate<FeedResource>, IModify<FeedResource>, IDelete<FeedResource>, IGet<FeedResource>, IFindByName<FeedResource>, IPaginate<FeedResource>'
+    content.vb: >-
+      Public Interface IFeedRepository
+          Inherits ICreate(Of FeedResource), IModify(Of FeedResource), IDelete(Of FeedResource), IGet(Of FeedResource), IFindByName(Of FeedResource)
+  inheritedMembers:
+  - Octopus.Client.Repositories.ICreate{Octopus.Client.Model.FeedResource}.Create(Octopus.Client.Model.FeedResource,System.Object)
+  - Octopus.Client.Repositories.IModify{Octopus.Client.Model.FeedResource}.Modify(Octopus.Client.Model.FeedResource)
+  - Octopus.Client.Repositories.IDelete{Octopus.Client.Model.FeedResource}.Delete(Octopus.Client.Model.FeedResource)
+  - Octopus.Client.Repositories.IGet{Octopus.Client.Model.FeedResource}.Get(System.String)
+  - Octopus.Client.Repositories.IGet{Octopus.Client.Model.FeedResource}.Get(System.String[])
+  - Octopus.Client.Repositories.IGet{Octopus.Client.Model.FeedResource}.Refresh(Octopus.Client.Model.FeedResource)
+  - Octopus.Client.Repositories.IFindByName{Octopus.Client.Model.FeedResource}.FindByName(System.String,System.String,System.Object)
+  - Octopus.Client.Repositories.IFindByName{Octopus.Client.Model.FeedResource}.FindByNames(System.Collections.Generic.IEnumerable{System.String},System.String,System.Object)
+  - Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.FeedResource},System.Boolean},System.String,System.Object)
+  - Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}.FindOne(System.Func{Octopus.Client.Model.FeedResource,System.Boolean},System.String,System.Object)
+  - Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}.FindMany(System.Func{Octopus.Client.Model.FeedResource,System.Boolean},System.String,System.Object)
+  - Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}.FindAll(System.String,System.Object)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.IFeedRepository.GetVersions(Octopus.Client.Model.FeedResource,System.String[])
+  commentId: M:Octopus.Client.Repositories.IFeedRepository.GetVersions(Octopus.Client.Model.FeedResource,System.String[])
+  id: GetVersions(Octopus.Client.Model.FeedResource,System.String[])
+  parent: Octopus.Client.Repositories.IFeedRepository
+  langs:
+  - csharp
+  - vb
+  name: GetVersions(FeedResource, String[])
+  nameWithType: IFeedRepository.GetVersions(FeedResource, String[])
+  fullName: Octopus.Client.Repositories.IFeedRepository.GetVersions(Octopus.Client.Model.FeedResource, System.String[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/FeedRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetVersions
+    path: ../source/Octopus.Client/Repositories/FeedRepository.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: List<PackageResource> GetVersions(FeedResource feed, string[] packageIds)
+    parameters:
+    - id: feed
+      type: Octopus.Client.Model.FeedResource
+    - id: packageIds
+      type: System.String[]
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.PackageResource}
+    content.vb: Function GetVersions(feed As FeedResource, packageIds As String()) As List(Of PackageResource)
+  overload: Octopus.Client.Repositories.IFeedRepository.GetVersions*
+  nameWithType.vb: IFeedRepository.GetVersions(FeedResource, String())
+  fullName.vb: Octopus.Client.Repositories.IFeedRepository.GetVersions(Octopus.Client.Model.FeedResource, System.String())
+  name.vb: GetVersions(FeedResource, String())
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Repositories.ICreate{Octopus.Client.Model.FeedResource}.Create(Octopus.Client.Model.FeedResource,System.Object)
+  commentId: M:Octopus.Client.Repositories.ICreate{Octopus.Client.Model.FeedResource}.Create(Octopus.Client.Model.FeedResource,System.Object)
+  parent: Octopus.Client.Repositories.ICreate{Octopus.Client.Model.FeedResource}
+  definition: Octopus.Client.Repositories.ICreate`1.Create(`0,System.Object)
+  name: Create(FeedResource, Object)
+  nameWithType: ICreate<FeedResource>.Create(FeedResource, Object)
+  fullName: Octopus.Client.Repositories.ICreate<Octopus.Client.Model.FeedResource>.Create(Octopus.Client.Model.FeedResource, System.Object)
+  nameWithType.vb: ICreate(Of FeedResource).Create(FeedResource, Object)
+  fullName.vb: Octopus.Client.Repositories.ICreate(Of Octopus.Client.Model.FeedResource).Create(Octopus.Client.Model.FeedResource, System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate<FeedResource>.Create
+    fullName: Octopus.Client.Repositories.ICreate<Octopus.Client.Model.FeedResource>.Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate(Of FeedResource).Create
+    fullName: Octopus.Client.Repositories.ICreate(Of Octopus.Client.Model.FeedResource).Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IModify{Octopus.Client.Model.FeedResource}.Modify(Octopus.Client.Model.FeedResource)
+  commentId: M:Octopus.Client.Repositories.IModify{Octopus.Client.Model.FeedResource}.Modify(Octopus.Client.Model.FeedResource)
+  parent: Octopus.Client.Repositories.IModify{Octopus.Client.Model.FeedResource}
+  definition: Octopus.Client.Repositories.IModify`1.Modify(`0)
+  name: Modify(FeedResource)
+  nameWithType: IModify<FeedResource>.Modify(FeedResource)
+  fullName: Octopus.Client.Repositories.IModify<Octopus.Client.Model.FeedResource>.Modify(Octopus.Client.Model.FeedResource)
+  nameWithType.vb: IModify(Of FeedResource).Modify(FeedResource)
+  fullName.vb: Octopus.Client.Repositories.IModify(Of Octopus.Client.Model.FeedResource).Modify(Octopus.Client.Model.FeedResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify<FeedResource>.Modify
+    fullName: Octopus.Client.Repositories.IModify<Octopus.Client.Model.FeedResource>.Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify(Of FeedResource).Modify
+    fullName: Octopus.Client.Repositories.IModify(Of Octopus.Client.Model.FeedResource).Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IDelete{Octopus.Client.Model.FeedResource}.Delete(Octopus.Client.Model.FeedResource)
+  commentId: M:Octopus.Client.Repositories.IDelete{Octopus.Client.Model.FeedResource}.Delete(Octopus.Client.Model.FeedResource)
+  parent: Octopus.Client.Repositories.IDelete{Octopus.Client.Model.FeedResource}
+  definition: Octopus.Client.Repositories.IDelete`1.Delete(`0)
+  name: Delete(FeedResource)
+  nameWithType: IDelete<FeedResource>.Delete(FeedResource)
+  fullName: Octopus.Client.Repositories.IDelete<Octopus.Client.Model.FeedResource>.Delete(Octopus.Client.Model.FeedResource)
+  nameWithType.vb: IDelete(Of FeedResource).Delete(FeedResource)
+  fullName.vb: Octopus.Client.Repositories.IDelete(Of Octopus.Client.Model.FeedResource).Delete(Octopus.Client.Model.FeedResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IDelete`1.Delete(`0)
+    name: Delete
+    nameWithType: IDelete<FeedResource>.Delete
+    fullName: Octopus.Client.Repositories.IDelete<Octopus.Client.Model.FeedResource>.Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IDelete`1.Delete(`0)
+    name: Delete
+    nameWithType: IDelete(Of FeedResource).Delete
+    fullName: Octopus.Client.Repositories.IDelete(Of Octopus.Client.Model.FeedResource).Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet{Octopus.Client.Model.FeedResource}.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.IGet{Octopus.Client.Model.FeedResource}.Get(System.String)
+  parent: Octopus.Client.Repositories.IGet{Octopus.Client.Model.FeedResource}
+  definition: Octopus.Client.Repositories.IGet`1.Get(System.String)
+  name: Get(String)
+  nameWithType: IGet<FeedResource>.Get(String)
+  fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.FeedResource>.Get(System.String)
+  nameWithType.vb: IGet(Of FeedResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.FeedResource).Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet<FeedResource>.Get
+    fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.FeedResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet(Of FeedResource).Get
+    fullName: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.FeedResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet{Octopus.Client.Model.FeedResource}.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.IGet{Octopus.Client.Model.FeedResource}.Get(System.String[])
+  parent: Octopus.Client.Repositories.IGet{Octopus.Client.Model.FeedResource}
+  definition: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+  name: Get(String[])
+  nameWithType: IGet<FeedResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.FeedResource>.Get(System.String[])
+  nameWithType.vb: IGet(Of FeedResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.FeedResource).Get(System.String())
+  name.vb: Get(String())
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet<FeedResource>.Get
+    fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.FeedResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet(Of FeedResource).Get
+    fullName: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.FeedResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet{Octopus.Client.Model.FeedResource}.Refresh(Octopus.Client.Model.FeedResource)
+  commentId: M:Octopus.Client.Repositories.IGet{Octopus.Client.Model.FeedResource}.Refresh(Octopus.Client.Model.FeedResource)
+  parent: Octopus.Client.Repositories.IGet{Octopus.Client.Model.FeedResource}
+  definition: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+  name: Refresh(FeedResource)
+  nameWithType: IGet<FeedResource>.Refresh(FeedResource)
+  fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.FeedResource>.Refresh(Octopus.Client.Model.FeedResource)
+  nameWithType.vb: IGet(Of FeedResource).Refresh(FeedResource)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.FeedResource).Refresh(Octopus.Client.Model.FeedResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet<FeedResource>.Refresh
+    fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.FeedResource>.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet(Of FeedResource).Refresh
+    fullName: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.FeedResource).Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IFindByName{Octopus.Client.Model.FeedResource}.FindByName(System.String,System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.IFindByName{Octopus.Client.Model.FeedResource}.FindByName(System.String,System.String,System.Object)
+  parent: Octopus.Client.Repositories.IFindByName{Octopus.Client.Model.FeedResource}
+  definition: Octopus.Client.Repositories.IFindByName`1.FindByName(System.String,System.String,System.Object)
+  name: FindByName(String, String, Object)
+  nameWithType: IFindByName<FeedResource>.FindByName(String, String, Object)
+  fullName: Octopus.Client.Repositories.IFindByName<Octopus.Client.Model.FeedResource>.FindByName(System.String, System.String, System.Object)
+  nameWithType.vb: IFindByName(Of FeedResource).FindByName(String, String, Object)
+  fullName.vb: Octopus.Client.Repositories.IFindByName(Of Octopus.Client.Model.FeedResource).FindByName(System.String, System.String, System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IFindByName`1.FindByName(System.String,System.String,System.Object)
+    name: FindByName
+    nameWithType: IFindByName<FeedResource>.FindByName
+    fullName: Octopus.Client.Repositories.IFindByName<Octopus.Client.Model.FeedResource>.FindByName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IFindByName`1.FindByName(System.String,System.String,System.Object)
+    name: FindByName
+    nameWithType: IFindByName(Of FeedResource).FindByName
+    fullName: Octopus.Client.Repositories.IFindByName(Of Octopus.Client.Model.FeedResource).FindByName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IFindByName{Octopus.Client.Model.FeedResource}.FindByNames(System.Collections.Generic.IEnumerable{System.String},System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.IFindByName{Octopus.Client.Model.FeedResource}.FindByNames(System.Collections.Generic.IEnumerable{System.String},System.String,System.Object)
+  parent: Octopus.Client.Repositories.IFindByName{Octopus.Client.Model.FeedResource}
+  definition: Octopus.Client.Repositories.IFindByName`1.FindByNames(System.Collections.Generic.IEnumerable{System.String},System.String,System.Object)
+  name: FindByNames(IEnumerable<String>, String, Object)
+  nameWithType: IFindByName<FeedResource>.FindByNames(IEnumerable<String>, String, Object)
+  fullName: Octopus.Client.Repositories.IFindByName<Octopus.Client.Model.FeedResource>.FindByNames(System.Collections.Generic.IEnumerable<System.String>, System.String, System.Object)
+  nameWithType.vb: IFindByName(Of FeedResource).FindByNames(IEnumerable(Of String), String, Object)
+  fullName.vb: Octopus.Client.Repositories.IFindByName(Of Octopus.Client.Model.FeedResource).FindByNames(System.Collections.Generic.IEnumerable(Of System.String), System.String, System.Object)
+  name.vb: FindByNames(IEnumerable(Of String), String, Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IFindByName`1.FindByNames(System.Collections.Generic.IEnumerable{System.String},System.String,System.Object)
+    name: FindByNames
+    nameWithType: IFindByName<FeedResource>.FindByNames
+    fullName: Octopus.Client.Repositories.IFindByName<Octopus.Client.Model.FeedResource>.FindByNames
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IFindByName`1.FindByNames(System.Collections.Generic.IEnumerable{System.String},System.String,System.Object)
+    name: FindByNames
+    nameWithType: IFindByName(Of FeedResource).FindByNames
+    fullName: Octopus.Client.Repositories.IFindByName(Of Octopus.Client.Model.FeedResource).FindByNames
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.FeedResource},System.Boolean},System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.FeedResource},System.Boolean},System.String,System.Object)
+  parent: Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}
+  definition: Octopus.Client.Repositories.IPaginate`1.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{`0},System.Boolean},System.String,System.Object)
+  name: Paginate(Func<ResourceCollection<FeedResource>, Boolean>, String, Object)
+  nameWithType: IPaginate<FeedResource>.Paginate(Func<ResourceCollection<FeedResource>, Boolean>, String, Object)
+  fullName: Octopus.Client.Repositories.IPaginate<Octopus.Client.Model.FeedResource>.Paginate(System.Func<Octopus.Client.Model.ResourceCollection<Octopus.Client.Model.FeedResource>, System.Boolean>, System.String, System.Object)
+  nameWithType.vb: IPaginate(Of FeedResource).Paginate(Func(Of ResourceCollection(Of FeedResource), Boolean), String, Object)
+  fullName.vb: Octopus.Client.Repositories.IPaginate(Of Octopus.Client.Model.FeedResource).Paginate(System.Func(Of Octopus.Client.Model.ResourceCollection(Of Octopus.Client.Model.FeedResource), System.Boolean), System.String, System.Object)
+  name.vb: Paginate(Func(Of ResourceCollection(Of FeedResource), Boolean), String, Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IPaginate`1.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{`0},System.Boolean},System.String,System.Object)
+    name: Paginate
+    nameWithType: IPaginate<FeedResource>.Paginate
+    fullName: Octopus.Client.Repositories.IPaginate<Octopus.Client.Model.FeedResource>.Paginate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IPaginate`1.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{`0},System.Boolean},System.String,System.Object)
+    name: Paginate
+    nameWithType: IPaginate(Of FeedResource).Paginate
+    fullName: Octopus.Client.Repositories.IPaginate(Of Octopus.Client.Model.FeedResource).Paginate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}.FindOne(System.Func{Octopus.Client.Model.FeedResource,System.Boolean},System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}.FindOne(System.Func{Octopus.Client.Model.FeedResource,System.Boolean},System.String,System.Object)
+  parent: Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}
+  definition: Octopus.Client.Repositories.IPaginate`1.FindOne(System.Func{`0,System.Boolean},System.String,System.Object)
+  name: FindOne(Func<FeedResource, Boolean>, String, Object)
+  nameWithType: IPaginate<FeedResource>.FindOne(Func<FeedResource, Boolean>, String, Object)
+  fullName: Octopus.Client.Repositories.IPaginate<Octopus.Client.Model.FeedResource>.FindOne(System.Func<Octopus.Client.Model.FeedResource, System.Boolean>, System.String, System.Object)
+  nameWithType.vb: IPaginate(Of FeedResource).FindOne(Func(Of FeedResource, Boolean), String, Object)
+  fullName.vb: Octopus.Client.Repositories.IPaginate(Of Octopus.Client.Model.FeedResource).FindOne(System.Func(Of Octopus.Client.Model.FeedResource, System.Boolean), System.String, System.Object)
+  name.vb: FindOne(Func(Of FeedResource, Boolean), String, Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IPaginate`1.FindOne(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindOne
+    nameWithType: IPaginate<FeedResource>.FindOne
+    fullName: Octopus.Client.Repositories.IPaginate<Octopus.Client.Model.FeedResource>.FindOne
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IPaginate`1.FindOne(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindOne
+    nameWithType: IPaginate(Of FeedResource).FindOne
+    fullName: Octopus.Client.Repositories.IPaginate(Of Octopus.Client.Model.FeedResource).FindOne
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}.FindMany(System.Func{Octopus.Client.Model.FeedResource,System.Boolean},System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}.FindMany(System.Func{Octopus.Client.Model.FeedResource,System.Boolean},System.String,System.Object)
+  parent: Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}
+  definition: Octopus.Client.Repositories.IPaginate`1.FindMany(System.Func{`0,System.Boolean},System.String,System.Object)
+  name: FindMany(Func<FeedResource, Boolean>, String, Object)
+  nameWithType: IPaginate<FeedResource>.FindMany(Func<FeedResource, Boolean>, String, Object)
+  fullName: Octopus.Client.Repositories.IPaginate<Octopus.Client.Model.FeedResource>.FindMany(System.Func<Octopus.Client.Model.FeedResource, System.Boolean>, System.String, System.Object)
+  nameWithType.vb: IPaginate(Of FeedResource).FindMany(Func(Of FeedResource, Boolean), String, Object)
+  fullName.vb: Octopus.Client.Repositories.IPaginate(Of Octopus.Client.Model.FeedResource).FindMany(System.Func(Of Octopus.Client.Model.FeedResource, System.Boolean), System.String, System.Object)
+  name.vb: FindMany(Func(Of FeedResource, Boolean), String, Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IPaginate`1.FindMany(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindMany
+    nameWithType: IPaginate<FeedResource>.FindMany
+    fullName: Octopus.Client.Repositories.IPaginate<Octopus.Client.Model.FeedResource>.FindMany
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IPaginate`1.FindMany(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindMany
+    nameWithType: IPaginate(Of FeedResource).FindMany
+    fullName: Octopus.Client.Repositories.IPaginate(Of Octopus.Client.Model.FeedResource).FindMany
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}.FindAll(System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}.FindAll(System.String,System.Object)
+  parent: Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}
+  definition: Octopus.Client.Repositories.IPaginate`1.FindAll(System.String,System.Object)
+  name: FindAll(String, Object)
+  nameWithType: IPaginate<FeedResource>.FindAll(String, Object)
+  fullName: Octopus.Client.Repositories.IPaginate<Octopus.Client.Model.FeedResource>.FindAll(System.String, System.Object)
+  nameWithType.vb: IPaginate(Of FeedResource).FindAll(String, Object)
+  fullName.vb: Octopus.Client.Repositories.IPaginate(Of Octopus.Client.Model.FeedResource).FindAll(System.String, System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IPaginate`1.FindAll(System.String,System.Object)
+    name: FindAll
+    nameWithType: IPaginate<FeedResource>.FindAll
+    fullName: Octopus.Client.Repositories.IPaginate<Octopus.Client.Model.FeedResource>.FindAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IPaginate`1.FindAll(System.String,System.Object)
+    name: FindAll
+    nameWithType: IPaginate(Of FeedResource).FindAll
+    fullName: Octopus.Client.Repositories.IPaginate(Of Octopus.Client.Model.FeedResource).FindAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.ICreate`1.Create(`0,System.Object)
+  commentId: M:Octopus.Client.Repositories.ICreate`1.Create(`0,System.Object)
+  isExternal: true
+  name: Create(TResource, Object)
+  nameWithType: ICreate<TResource>.Create(TResource, Object)
+  fullName: Octopus.Client.Repositories.ICreate<TResource>.Create(TResource, System.Object)
+  nameWithType.vb: ICreate(Of TResource).Create(TResource, Object)
+  fullName.vb: Octopus.Client.Repositories.ICreate(Of TResource).Create(TResource, System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate<TResource>.Create
+    fullName: Octopus.Client.Repositories.ICreate<TResource>.Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate(Of TResource).Create
+    fullName: Octopus.Client.Repositories.ICreate(Of TResource).Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.ICreate{Octopus.Client.Model.FeedResource}
+  commentId: T:Octopus.Client.Repositories.ICreate{Octopus.Client.Model.FeedResource}
+  parent: Octopus.Client.Repositories
+  definition: Octopus.Client.Repositories.ICreate`1
+  name: ICreate<FeedResource>
+  nameWithType: ICreate<FeedResource>
+  fullName: Octopus.Client.Repositories.ICreate<Octopus.Client.Model.FeedResource>
+  nameWithType.vb: ICreate(Of FeedResource)
+  fullName.vb: Octopus.Client.Repositories.ICreate(Of Octopus.Client.Model.FeedResource)
+  name.vb: ICreate(Of FeedResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.ICreate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.ICreate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+  commentId: M:Octopus.Client.Repositories.IModify`1.Modify(`0)
+  name: Modify(TResource)
+  nameWithType: IModify<TResource>.Modify(TResource)
+  fullName: Octopus.Client.Repositories.IModify<TResource>.Modify(TResource)
+  nameWithType.vb: IModify(Of TResource).Modify(TResource)
+  fullName.vb: Octopus.Client.Repositories.IModify(Of TResource).Modify(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify<TResource>.Modify
+    fullName: Octopus.Client.Repositories.IModify<TResource>.Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify(Of TResource).Modify
+    fullName: Octopus.Client.Repositories.IModify(Of TResource).Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IModify{Octopus.Client.Model.FeedResource}
+  commentId: T:Octopus.Client.Repositories.IModify{Octopus.Client.Model.FeedResource}
+  parent: Octopus.Client.Repositories
+  definition: Octopus.Client.Repositories.IModify`1
+  name: IModify<FeedResource>
+  nameWithType: IModify<FeedResource>
+  fullName: Octopus.Client.Repositories.IModify<Octopus.Client.Model.FeedResource>
+  nameWithType.vb: IModify(Of FeedResource)
+  fullName.vb: Octopus.Client.Repositories.IModify(Of Octopus.Client.Model.FeedResource)
+  name.vb: IModify(Of FeedResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.IModify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.IModify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IDelete`1.Delete(`0)
+  commentId: M:Octopus.Client.Repositories.IDelete`1.Delete(`0)
+  name: Delete(TResource)
+  nameWithType: IDelete<TResource>.Delete(TResource)
+  fullName: Octopus.Client.Repositories.IDelete<TResource>.Delete(TResource)
+  nameWithType.vb: IDelete(Of TResource).Delete(TResource)
+  fullName.vb: Octopus.Client.Repositories.IDelete(Of TResource).Delete(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IDelete`1.Delete(`0)
+    name: Delete
+    nameWithType: IDelete<TResource>.Delete
+    fullName: Octopus.Client.Repositories.IDelete<TResource>.Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IDelete`1.Delete(`0)
+    name: Delete
+    nameWithType: IDelete(Of TResource).Delete
+    fullName: Octopus.Client.Repositories.IDelete(Of TResource).Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IDelete{Octopus.Client.Model.FeedResource}
+  commentId: T:Octopus.Client.Repositories.IDelete{Octopus.Client.Model.FeedResource}
+  parent: Octopus.Client.Repositories
+  definition: Octopus.Client.Repositories.IDelete`1
+  name: IDelete<FeedResource>
+  nameWithType: IDelete<FeedResource>
+  fullName: Octopus.Client.Repositories.IDelete<Octopus.Client.Model.FeedResource>
+  nameWithType.vb: IDelete(Of FeedResource)
+  fullName.vb: Octopus.Client.Repositories.IDelete(Of Octopus.Client.Model.FeedResource)
+  name.vb: IDelete(Of FeedResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IDelete`1
+    name: IDelete
+    nameWithType: IDelete
+    fullName: Octopus.Client.Repositories.IDelete
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IDelete`1
+    name: IDelete
+    nameWithType: IDelete
+    fullName: Octopus.Client.Repositories.IDelete
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.IGet`1.Get(System.String)
+  isExternal: true
+  name: Get(String)
+  nameWithType: IGet<TResource>.Get(String)
+  fullName: Octopus.Client.Repositories.IGet<TResource>.Get(System.String)
+  nameWithType.vb: IGet(Of TResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource).Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet<TResource>.Get
+    fullName: Octopus.Client.Repositories.IGet<TResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet(Of TResource).Get
+    fullName: Octopus.Client.Repositories.IGet(Of TResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet{Octopus.Client.Model.FeedResource}
+  commentId: T:Octopus.Client.Repositories.IGet{Octopus.Client.Model.FeedResource}
+  parent: Octopus.Client.Repositories
+  definition: Octopus.Client.Repositories.IGet`1
+  name: IGet<FeedResource>
+  nameWithType: IGet<FeedResource>
+  fullName: Octopus.Client.Repositories.IGet<Octopus.Client.Model.FeedResource>
+  nameWithType.vb: IGet(Of FeedResource)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of Octopus.Client.Model.FeedResource)
+  name.vb: IGet(Of FeedResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.IGet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.IGet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.IGet`1.Get(System.String[])
+  isExternal: true
+  name: Get(String[])
+  nameWithType: IGet<TResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.IGet<TResource>.Get(System.String[])
+  nameWithType.vb: IGet(Of TResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource).Get(System.String())
+  name.vb: Get(String())
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet<TResource>.Get
+    fullName: Octopus.Client.Repositories.IGet<TResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet(Of TResource).Get
+    fullName: Octopus.Client.Repositories.IGet(Of TResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+  commentId: M:Octopus.Client.Repositories.IGet`1.Refresh(`0)
+  name: Refresh(TResource)
+  nameWithType: IGet<TResource>.Refresh(TResource)
+  fullName: Octopus.Client.Repositories.IGet<TResource>.Refresh(TResource)
+  nameWithType.vb: IGet(Of TResource).Refresh(TResource)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource).Refresh(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet<TResource>.Refresh
+    fullName: Octopus.Client.Repositories.IGet<TResource>.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet(Of TResource).Refresh
+    fullName: Octopus.Client.Repositories.IGet(Of TResource).Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IFindByName`1.FindByName(System.String,System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.IFindByName`1.FindByName(System.String,System.String,System.Object)
+  isExternal: true
+  name: FindByName(String, String, Object)
+  nameWithType: IFindByName<TResource>.FindByName(String, String, Object)
+  fullName: Octopus.Client.Repositories.IFindByName<TResource>.FindByName(System.String, System.String, System.Object)
+  nameWithType.vb: IFindByName(Of TResource).FindByName(String, String, Object)
+  fullName.vb: Octopus.Client.Repositories.IFindByName(Of TResource).FindByName(System.String, System.String, System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IFindByName`1.FindByName(System.String,System.String,System.Object)
+    name: FindByName
+    nameWithType: IFindByName<TResource>.FindByName
+    fullName: Octopus.Client.Repositories.IFindByName<TResource>.FindByName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IFindByName`1.FindByName(System.String,System.String,System.Object)
+    name: FindByName
+    nameWithType: IFindByName(Of TResource).FindByName
+    fullName: Octopus.Client.Repositories.IFindByName(Of TResource).FindByName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IFindByName{Octopus.Client.Model.FeedResource}
+  commentId: T:Octopus.Client.Repositories.IFindByName{Octopus.Client.Model.FeedResource}
+  parent: Octopus.Client.Repositories
+  definition: Octopus.Client.Repositories.IFindByName`1
+  name: IFindByName<FeedResource>
+  nameWithType: IFindByName<FeedResource>
+  fullName: Octopus.Client.Repositories.IFindByName<Octopus.Client.Model.FeedResource>
+  nameWithType.vb: IFindByName(Of FeedResource)
+  fullName.vb: Octopus.Client.Repositories.IFindByName(Of Octopus.Client.Model.FeedResource)
+  name.vb: IFindByName(Of FeedResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IFindByName`1
+    name: IFindByName
+    nameWithType: IFindByName
+    fullName: Octopus.Client.Repositories.IFindByName
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IFindByName`1
+    name: IFindByName
+    nameWithType: IFindByName
+    fullName: Octopus.Client.Repositories.IFindByName
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IFindByName`1.FindByNames(System.Collections.Generic.IEnumerable{System.String},System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.IFindByName`1.FindByNames(System.Collections.Generic.IEnumerable{System.String},System.String,System.Object)
+  isExternal: true
+  name: FindByNames(IEnumerable<String>, String, Object)
+  nameWithType: IFindByName<TResource>.FindByNames(IEnumerable<String>, String, Object)
+  fullName: Octopus.Client.Repositories.IFindByName<TResource>.FindByNames(System.Collections.Generic.IEnumerable<System.String>, System.String, System.Object)
+  nameWithType.vb: IFindByName(Of TResource).FindByNames(IEnumerable(Of String), String, Object)
+  fullName.vb: Octopus.Client.Repositories.IFindByName(Of TResource).FindByNames(System.Collections.Generic.IEnumerable(Of System.String), System.String, System.Object)
+  name.vb: FindByNames(IEnumerable(Of String), String, Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IFindByName`1.FindByNames(System.Collections.Generic.IEnumerable{System.String},System.String,System.Object)
+    name: FindByNames
+    nameWithType: IFindByName<TResource>.FindByNames
+    fullName: Octopus.Client.Repositories.IFindByName<TResource>.FindByNames
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IFindByName`1.FindByNames(System.Collections.Generic.IEnumerable{System.String},System.String,System.Object)
+    name: FindByNames
+    nameWithType: IFindByName(Of TResource).FindByNames
+    fullName: Octopus.Client.Repositories.IFindByName(Of TResource).FindByNames
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IPaginate`1.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{`0},System.Boolean},System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.IPaginate`1.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{`0},System.Boolean},System.String,System.Object)
+  isExternal: true
+  name: Paginate(Func<ResourceCollection<TResource>, Boolean>, String, Object)
+  nameWithType: IPaginate<TResource>.Paginate(Func<ResourceCollection<TResource>, Boolean>, String, Object)
+  fullName: Octopus.Client.Repositories.IPaginate<TResource>.Paginate(System.Func<Octopus.Client.Model.ResourceCollection<TResource>, System.Boolean>, System.String, System.Object)
+  nameWithType.vb: IPaginate(Of TResource).Paginate(Func(Of ResourceCollection(Of TResource), Boolean), String, Object)
+  fullName.vb: Octopus.Client.Repositories.IPaginate(Of TResource).Paginate(System.Func(Of Octopus.Client.Model.ResourceCollection(Of TResource), System.Boolean), System.String, System.Object)
+  name.vb: Paginate(Func(Of ResourceCollection(Of TResource), Boolean), String, Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IPaginate`1.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{`0},System.Boolean},System.String,System.Object)
+    name: Paginate
+    nameWithType: IPaginate<TResource>.Paginate
+    fullName: Octopus.Client.Repositories.IPaginate<TResource>.Paginate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IPaginate`1.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{`0},System.Boolean},System.String,System.Object)
+    name: Paginate
+    nameWithType: IPaginate(Of TResource).Paginate
+    fullName: Octopus.Client.Repositories.IPaginate(Of TResource).Paginate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}
+  commentId: T:Octopus.Client.Repositories.IPaginate{Octopus.Client.Model.FeedResource}
+  parent: Octopus.Client.Repositories
+  definition: Octopus.Client.Repositories.IPaginate`1
+  name: IPaginate<FeedResource>
+  nameWithType: IPaginate<FeedResource>
+  fullName: Octopus.Client.Repositories.IPaginate<Octopus.Client.Model.FeedResource>
+  nameWithType.vb: IPaginate(Of FeedResource)
+  fullName.vb: Octopus.Client.Repositories.IPaginate(Of Octopus.Client.Model.FeedResource)
+  name.vb: IPaginate(Of FeedResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IPaginate`1
+    name: IPaginate
+    nameWithType: IPaginate
+    fullName: Octopus.Client.Repositories.IPaginate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IPaginate`1
+    name: IPaginate
+    nameWithType: IPaginate
+    fullName: Octopus.Client.Repositories.IPaginate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.FeedResource
+    name: FeedResource
+    nameWithType: FeedResource
+    fullName: Octopus.Client.Model.FeedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IPaginate`1.FindOne(System.Func{`0,System.Boolean},System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.IPaginate`1.FindOne(System.Func{`0,System.Boolean},System.String,System.Object)
+  isExternal: true
+  name: FindOne(Func<TResource, Boolean>, String, Object)
+  nameWithType: IPaginate<TResource>.FindOne(Func<TResource, Boolean>, String, Object)
+  fullName: Octopus.Client.Repositories.IPaginate<TResource>.FindOne(System.Func<TResource, System.Boolean>, System.String, System.Object)
+  nameWithType.vb: IPaginate(Of TResource).FindOne(Func(Of TResource, Boolean), String, Object)
+  fullName.vb: Octopus.Client.Repositories.IPaginate(Of TResource).FindOne(System.Func(Of TResource, System.Boolean), System.String, System.Object)
+  name.vb: FindOne(Func(Of TResource, Boolean), String, Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IPaginate`1.FindOne(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindOne
+    nameWithType: IPaginate<TResource>.FindOne
+    fullName: Octopus.Client.Repositories.IPaginate<TResource>.FindOne
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IPaginate`1.FindOne(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindOne
+    nameWithType: IPaginate(Of TResource).FindOne
+    fullName: Octopus.Client.Repositories.IPaginate(Of TResource).FindOne
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IPaginate`1.FindMany(System.Func{`0,System.Boolean},System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.IPaginate`1.FindMany(System.Func{`0,System.Boolean},System.String,System.Object)
+  isExternal: true
+  name: FindMany(Func<TResource, Boolean>, String, Object)
+  nameWithType: IPaginate<TResource>.FindMany(Func<TResource, Boolean>, String, Object)
+  fullName: Octopus.Client.Repositories.IPaginate<TResource>.FindMany(System.Func<TResource, System.Boolean>, System.String, System.Object)
+  nameWithType.vb: IPaginate(Of TResource).FindMany(Func(Of TResource, Boolean), String, Object)
+  fullName.vb: Octopus.Client.Repositories.IPaginate(Of TResource).FindMany(System.Func(Of TResource, System.Boolean), System.String, System.Object)
+  name.vb: FindMany(Func(Of TResource, Boolean), String, Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IPaginate`1.FindMany(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindMany
+    nameWithType: IPaginate<TResource>.FindMany
+    fullName: Octopus.Client.Repositories.IPaginate<TResource>.FindMany
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IPaginate`1.FindMany(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindMany
+    nameWithType: IPaginate(Of TResource).FindMany
+    fullName: Octopus.Client.Repositories.IPaginate(Of TResource).FindMany
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IPaginate`1.FindAll(System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.IPaginate`1.FindAll(System.String,System.Object)
+  isExternal: true
+  name: FindAll(String, Object)
+  nameWithType: IPaginate<TResource>.FindAll(String, Object)
+  fullName: Octopus.Client.Repositories.IPaginate<TResource>.FindAll(System.String, System.Object)
+  nameWithType.vb: IPaginate(Of TResource).FindAll(String, Object)
+  fullName.vb: Octopus.Client.Repositories.IPaginate(Of TResource).FindAll(System.String, System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IPaginate`1.FindAll(System.String,System.Object)
+    name: FindAll
+    nameWithType: IPaginate<TResource>.FindAll
+    fullName: Octopus.Client.Repositories.IPaginate<TResource>.FindAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IPaginate`1.FindAll(System.String,System.Object)
+    name: FindAll
+    nameWithType: IPaginate(Of TResource).FindAll
+    fullName: Octopus.Client.Repositories.IPaginate(Of TResource).FindAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.ICreate`1
+  commentId: T:Octopus.Client.Repositories.ICreate`1
+  name: ICreate<TResource>
+  nameWithType: ICreate<TResource>
+  fullName: Octopus.Client.Repositories.ICreate<TResource>
+  nameWithType.vb: ICreate(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.ICreate(Of TResource)
+  name.vb: ICreate(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.ICreate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.ICreate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IModify`1
+  commentId: T:Octopus.Client.Repositories.IModify`1
+  name: IModify<TResource>
+  nameWithType: IModify<TResource>
+  fullName: Octopus.Client.Repositories.IModify<TResource>
+  nameWithType.vb: IModify(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.IModify(Of TResource)
+  name.vb: IModify(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.IModify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.IModify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IDelete`1
+  commentId: T:Octopus.Client.Repositories.IDelete`1
+  name: IDelete<TResource>
+  nameWithType: IDelete<TResource>
+  fullName: Octopus.Client.Repositories.IDelete<TResource>
+  nameWithType.vb: IDelete(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.IDelete(Of TResource)
+  name.vb: IDelete(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IDelete`1
+    name: IDelete
+    nameWithType: IDelete
+    fullName: Octopus.Client.Repositories.IDelete
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IDelete`1
+    name: IDelete
+    nameWithType: IDelete
+    fullName: Octopus.Client.Repositories.IDelete
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IGet`1
+  commentId: T:Octopus.Client.Repositories.IGet`1
+  name: IGet<TResource>
+  nameWithType: IGet<TResource>
+  fullName: Octopus.Client.Repositories.IGet<TResource>
+  nameWithType.vb: IGet(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.IGet(Of TResource)
+  name.vb: IGet(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.IGet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.IGet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IFindByName`1
+  commentId: T:Octopus.Client.Repositories.IFindByName`1
+  name: IFindByName<TResource>
+  nameWithType: IFindByName<TResource>
+  fullName: Octopus.Client.Repositories.IFindByName<TResource>
+  nameWithType.vb: IFindByName(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.IFindByName(Of TResource)
+  name.vb: IFindByName(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IFindByName`1
+    name: IFindByName
+    nameWithType: IFindByName
+    fullName: Octopus.Client.Repositories.IFindByName
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IFindByName`1
+    name: IFindByName
+    nameWithType: IFindByName
+    fullName: Octopus.Client.Repositories.IFindByName
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IPaginate`1
+  commentId: T:Octopus.Client.Repositories.IPaginate`1
+  name: IPaginate<TResource>
+  nameWithType: IPaginate<TResource>
+  fullName: Octopus.Client.Repositories.IPaginate<TResource>
+  nameWithType.vb: IPaginate(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.IPaginate(Of TResource)
+  name.vb: IPaginate(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IPaginate`1
+    name: IPaginate
+    nameWithType: IPaginate
+    fullName: Octopus.Client.Repositories.IPaginate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IPaginate`1
+    name: IPaginate
+    nameWithType: IPaginate
+    fullName: Octopus.Client.Repositories.IPaginate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.IFeedRepository.GetVersions*
+  commentId: Overload:Octopus.Client.Repositories.IFeedRepository.GetVersions
+  name: GetVersions
+  nameWithType: IFeedRepository.GetVersions
+  fullName: Octopus.Client.Repositories.IFeedRepository.GetVersions
+- uid: Octopus.Client.Model.FeedResource
+  commentId: T:Octopus.Client.Model.FeedResource
+  parent: Octopus.Client.Model
+  name: FeedResource
+  nameWithType: FeedResource
+  fullName: Octopus.Client.Model.FeedResource
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.List{Octopus.Client.Model.PackageResource}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.PackageResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<PackageResource>
+  nameWithType: List<PackageResource>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.PackageResource>
+  nameWithType.vb: List(Of PackageResource)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.PackageResource)
+  name.vb: List(Of PackageResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.PackageResource
+    name: PackageResource
+    nameWithType: PackageResource
+    fullName: Octopus.Client.Model.PackageResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.PackageResource
+    name: PackageResource
+    nameWithType: PackageResource
+    fullName: Octopus.Client.Model.PackageResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

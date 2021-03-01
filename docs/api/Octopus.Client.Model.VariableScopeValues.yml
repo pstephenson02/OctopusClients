@@ -1,0 +1,796 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.VariableScopeValues
+  commentId: T:Octopus.Client.Model.VariableScopeValues
+  id: VariableScopeValues
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.VariableScopeValues.#ctor
+  - Octopus.Client.Model.VariableScopeValues.Actions
+  - Octopus.Client.Model.VariableScopeValues.Channels
+  - Octopus.Client.Model.VariableScopeValues.Environments
+  - Octopus.Client.Model.VariableScopeValues.Machines
+  - Octopus.Client.Model.VariableScopeValues.Processes
+  - Octopus.Client.Model.VariableScopeValues.Roles
+  - Octopus.Client.Model.VariableScopeValues.TenantTags
+  langs:
+  - csharp
+  - vb
+  name: VariableScopeValues
+  nameWithType: VariableScopeValues
+  fullName: Octopus.Client.Model.VariableScopeValues
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/VariableScopeValues.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: VariableScopeValues
+    path: ../source/Octopus.Client/Model/VariableScopeValues.cs
+    startLine: 4
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class VariableScopeValues : IVariableScopeValues'
+    content.vb: >-
+      Public Class VariableScopeValues
+          Implements IVariableScopeValues
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.VariableScopeValues.#ctor
+  commentId: M:Octopus.Client.Model.VariableScopeValues.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.VariableScopeValues
+  langs:
+  - csharp
+  - vb
+  name: VariableScopeValues()
+  nameWithType: VariableScopeValues.VariableScopeValues()
+  fullName: Octopus.Client.Model.VariableScopeValues.VariableScopeValues()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/VariableScopeValues.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/VariableScopeValues.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public VariableScopeValues()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.VariableScopeValues.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.VariableScopeValues.Environments
+  commentId: P:Octopus.Client.Model.VariableScopeValues.Environments
+  id: Environments
+  parent: Octopus.Client.Model.VariableScopeValues
+  langs:
+  - csharp
+  - vb
+  name: Environments
+  nameWithType: VariableScopeValues.Environments
+  fullName: Octopus.Client.Model.VariableScopeValues.Environments
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/VariableScopeValues.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Environments
+    path: ../source/Octopus.Client/Model/VariableScopeValues.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<ReferenceDataItem> Environments { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.ReferenceDataItem}
+    content.vb: Public Property Environments As List(Of ReferenceDataItem)
+  overload: Octopus.Client.Model.VariableScopeValues.Environments*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.VariableScopeValues.Machines
+  commentId: P:Octopus.Client.Model.VariableScopeValues.Machines
+  id: Machines
+  parent: Octopus.Client.Model.VariableScopeValues
+  langs:
+  - csharp
+  - vb
+  name: Machines
+  nameWithType: VariableScopeValues.Machines
+  fullName: Octopus.Client.Model.VariableScopeValues.Machines
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/VariableScopeValues.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Machines
+    path: ../source/Octopus.Client/Model/VariableScopeValues.cs
+    startLine: 18
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<ReferenceDataItem> Machines { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.ReferenceDataItem}
+    content.vb: Public Property Machines As List(Of ReferenceDataItem)
+  overload: Octopus.Client.Model.VariableScopeValues.Machines*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.VariableScopeValues.Actions
+  commentId: P:Octopus.Client.Model.VariableScopeValues.Actions
+  id: Actions
+  parent: Octopus.Client.Model.VariableScopeValues
+  langs:
+  - csharp
+  - vb
+  name: Actions
+  nameWithType: VariableScopeValues.Actions
+  fullName: Octopus.Client.Model.VariableScopeValues.Actions
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/VariableScopeValues.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Actions
+    path: ../source/Octopus.Client/Model/VariableScopeValues.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<ReferenceDataItem> Actions { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.ReferenceDataItem}
+    content.vb: Public Property Actions As List(Of ReferenceDataItem)
+  overload: Octopus.Client.Model.VariableScopeValues.Actions*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.VariableScopeValues.Roles
+  commentId: P:Octopus.Client.Model.VariableScopeValues.Roles
+  id: Roles
+  parent: Octopus.Client.Model.VariableScopeValues
+  langs:
+  - csharp
+  - vb
+  name: Roles
+  nameWithType: VariableScopeValues.Roles
+  fullName: Octopus.Client.Model.VariableScopeValues.Roles
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/VariableScopeValues.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Roles
+    path: ../source/Octopus.Client/Model/VariableScopeValues.cs
+    startLine: 20
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<ReferenceDataItem> Roles { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.ReferenceDataItem}
+    content.vb: Public Property Roles As List(Of ReferenceDataItem)
+  overload: Octopus.Client.Model.VariableScopeValues.Roles*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.VariableScopeValues.Channels
+  commentId: P:Octopus.Client.Model.VariableScopeValues.Channels
+  id: Channels
+  parent: Octopus.Client.Model.VariableScopeValues
+  langs:
+  - csharp
+  - vb
+  name: Channels
+  nameWithType: VariableScopeValues.Channels
+  fullName: Octopus.Client.Model.VariableScopeValues.Channels
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/VariableScopeValues.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Channels
+    path: ../source/Octopus.Client/Model/VariableScopeValues.cs
+    startLine: 21
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<ReferenceDataItem> Channels { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.ReferenceDataItem}
+    content.vb: Public Property Channels As List(Of ReferenceDataItem)
+  overload: Octopus.Client.Model.VariableScopeValues.Channels*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.VariableScopeValues.TenantTags
+  commentId: P:Octopus.Client.Model.VariableScopeValues.TenantTags
+  id: TenantTags
+  parent: Octopus.Client.Model.VariableScopeValues
+  langs:
+  - csharp
+  - vb
+  name: TenantTags
+  nameWithType: VariableScopeValues.TenantTags
+  fullName: Octopus.Client.Model.VariableScopeValues.TenantTags
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/VariableScopeValues.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TenantTags
+    path: ../source/Octopus.Client/Model/VariableScopeValues.cs
+    startLine: 22
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<ReferenceDataItem> TenantTags { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.ReferenceDataItem}
+    content.vb: Public Property TenantTags As List(Of ReferenceDataItem)
+  overload: Octopus.Client.Model.VariableScopeValues.TenantTags*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.VariableScopeValues.Processes
+  commentId: P:Octopus.Client.Model.VariableScopeValues.Processes
+  id: Processes
+  parent: Octopus.Client.Model.VariableScopeValues
+  langs:
+  - csharp
+  - vb
+  name: Processes
+  nameWithType: VariableScopeValues.Processes
+  fullName: Octopus.Client.Model.VariableScopeValues.Processes
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/VariableScopeValues.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Processes
+    path: ../source/Octopus.Client/Model/VariableScopeValues.cs
+    startLine: 23
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<ProcessReferenceDataItem> Processes { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.ProcessReferenceDataItem}
+    content.vb: Public Property Processes As List(Of ProcessReferenceDataItem)
+  overload: Octopus.Client.Model.VariableScopeValues.Processes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.VariableScopeValues.#ctor*
+  commentId: Overload:Octopus.Client.Model.VariableScopeValues.#ctor
+  name: VariableScopeValues
+  nameWithType: VariableScopeValues.VariableScopeValues
+  fullName: Octopus.Client.Model.VariableScopeValues.VariableScopeValues
+- uid: Octopus.Client.Model.VariableScopeValues.Environments*
+  commentId: Overload:Octopus.Client.Model.VariableScopeValues.Environments
+  name: Environments
+  nameWithType: VariableScopeValues.Environments
+  fullName: Octopus.Client.Model.VariableScopeValues.Environments
+- uid: System.Collections.Generic.List{Octopus.Client.Model.ReferenceDataItem}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.ReferenceDataItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ReferenceDataItem>
+  nameWithType: List<ReferenceDataItem>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.ReferenceDataItem>
+  nameWithType.vb: List(Of ReferenceDataItem)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.ReferenceDataItem)
+  name.vb: List(Of ReferenceDataItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ReferenceDataItem
+    name: ReferenceDataItem
+    nameWithType: ReferenceDataItem
+    fullName: Octopus.Client.Model.ReferenceDataItem
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ReferenceDataItem
+    name: ReferenceDataItem
+    nameWithType: ReferenceDataItem
+    fullName: Octopus.Client.Model.ReferenceDataItem
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.VariableScopeValues.Machines*
+  commentId: Overload:Octopus.Client.Model.VariableScopeValues.Machines
+  name: Machines
+  nameWithType: VariableScopeValues.Machines
+  fullName: Octopus.Client.Model.VariableScopeValues.Machines
+- uid: Octopus.Client.Model.VariableScopeValues.Actions*
+  commentId: Overload:Octopus.Client.Model.VariableScopeValues.Actions
+  name: Actions
+  nameWithType: VariableScopeValues.Actions
+  fullName: Octopus.Client.Model.VariableScopeValues.Actions
+- uid: Octopus.Client.Model.VariableScopeValues.Roles*
+  commentId: Overload:Octopus.Client.Model.VariableScopeValues.Roles
+  name: Roles
+  nameWithType: VariableScopeValues.Roles
+  fullName: Octopus.Client.Model.VariableScopeValues.Roles
+- uid: Octopus.Client.Model.VariableScopeValues.Channels*
+  commentId: Overload:Octopus.Client.Model.VariableScopeValues.Channels
+  name: Channels
+  nameWithType: VariableScopeValues.Channels
+  fullName: Octopus.Client.Model.VariableScopeValues.Channels
+- uid: Octopus.Client.Model.VariableScopeValues.TenantTags*
+  commentId: Overload:Octopus.Client.Model.VariableScopeValues.TenantTags
+  name: TenantTags
+  nameWithType: VariableScopeValues.TenantTags
+  fullName: Octopus.Client.Model.VariableScopeValues.TenantTags
+- uid: Octopus.Client.Model.VariableScopeValues.Processes*
+  commentId: Overload:Octopus.Client.Model.VariableScopeValues.Processes
+  name: Processes
+  nameWithType: VariableScopeValues.Processes
+  fullName: Octopus.Client.Model.VariableScopeValues.Processes
+- uid: System.Collections.Generic.List{Octopus.Client.Model.ProcessReferenceDataItem}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.ProcessReferenceDataItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ProcessReferenceDataItem>
+  nameWithType: List<ProcessReferenceDataItem>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.ProcessReferenceDataItem>
+  nameWithType.vb: List(Of ProcessReferenceDataItem)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.ProcessReferenceDataItem)
+  name.vb: List(Of ProcessReferenceDataItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ProcessReferenceDataItem
+    name: ProcessReferenceDataItem
+    nameWithType: ProcessReferenceDataItem
+    fullName: Octopus.Client.Model.ProcessReferenceDataItem
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ProcessReferenceDataItem
+    name: ProcessReferenceDataItem
+    nameWithType: ProcessReferenceDataItem
+    fullName: Octopus.Client.Model.ProcessReferenceDataItem
+  - name: )
+    nameWithType: )
+    fullName: )

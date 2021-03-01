@@ -1,0 +1,296 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.DaysOfWeek
+  commentId: T:Octopus.Client.Model.DaysOfWeek
+  id: DaysOfWeek
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.DaysOfWeek.Friday
+  - Octopus.Client.Model.DaysOfWeek.Monday
+  - Octopus.Client.Model.DaysOfWeek.Saturday
+  - Octopus.Client.Model.DaysOfWeek.Sunday
+  - Octopus.Client.Model.DaysOfWeek.Thursday
+  - Octopus.Client.Model.DaysOfWeek.Tuesday
+  - Octopus.Client.Model.DaysOfWeek.Wednesday
+  langs:
+  - csharp
+  - vb
+  name: DaysOfWeek
+  nameWithType: DaysOfWeek
+  fullName: Octopus.Client.Model.DaysOfWeek
+  type: Enum
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DaysOfWeek.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DaysOfWeek
+    path: ../source/Octopus.Client/Model/DaysOfWeek.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Flags]
+
+      [JsonConverter(typeof(DaysOfWeekFlagConverter))]
+
+      public enum DaysOfWeek
+    content.vb: >-
+      <Flags>
+
+      <JsonConverter(GetType(DaysOfWeekFlagConverter))>
+
+      Public Enum DaysOfWeek
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Octopus.Client.Model.DaysOfWeekFlagConverter
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Octopus.Client.Model.DaysOfWeek.Sunday
+  commentId: F:Octopus.Client.Model.DaysOfWeek.Sunday
+  id: Sunday
+  parent: Octopus.Client.Model.DaysOfWeek
+  langs:
+  - csharp
+  - vb
+  name: Sunday
+  nameWithType: DaysOfWeek.Sunday
+  fullName: Octopus.Client.Model.DaysOfWeek.Sunday
+  type: Field
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DaysOfWeek.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Sunday
+    path: ../source/Octopus.Client/Model/DaysOfWeek.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: Sunday = 1
+    return:
+      type: Octopus.Client.Model.DaysOfWeek
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Octopus.Client.Model.DaysOfWeek.Monday
+  commentId: F:Octopus.Client.Model.DaysOfWeek.Monday
+  id: Monday
+  parent: Octopus.Client.Model.DaysOfWeek
+  langs:
+  - csharp
+  - vb
+  name: Monday
+  nameWithType: DaysOfWeek.Monday
+  fullName: Octopus.Client.Model.DaysOfWeek.Monday
+  type: Field
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DaysOfWeek.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Monday
+    path: ../source/Octopus.Client/Model/DaysOfWeek.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: Monday = 2
+    return:
+      type: Octopus.Client.Model.DaysOfWeek
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Octopus.Client.Model.DaysOfWeek.Tuesday
+  commentId: F:Octopus.Client.Model.DaysOfWeek.Tuesday
+  id: Tuesday
+  parent: Octopus.Client.Model.DaysOfWeek
+  langs:
+  - csharp
+  - vb
+  name: Tuesday
+  nameWithType: DaysOfWeek.Tuesday
+  fullName: Octopus.Client.Model.DaysOfWeek.Tuesday
+  type: Field
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DaysOfWeek.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Tuesday
+    path: ../source/Octopus.Client/Model/DaysOfWeek.cs
+    startLine: 12
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: Tuesday = 4
+    return:
+      type: Octopus.Client.Model.DaysOfWeek
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Octopus.Client.Model.DaysOfWeek.Wednesday
+  commentId: F:Octopus.Client.Model.DaysOfWeek.Wednesday
+  id: Wednesday
+  parent: Octopus.Client.Model.DaysOfWeek
+  langs:
+  - csharp
+  - vb
+  name: Wednesday
+  nameWithType: DaysOfWeek.Wednesday
+  fullName: Octopus.Client.Model.DaysOfWeek.Wednesday
+  type: Field
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DaysOfWeek.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Wednesday
+    path: ../source/Octopus.Client/Model/DaysOfWeek.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: Wednesday = 8
+    return:
+      type: Octopus.Client.Model.DaysOfWeek
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Octopus.Client.Model.DaysOfWeek.Thursday
+  commentId: F:Octopus.Client.Model.DaysOfWeek.Thursday
+  id: Thursday
+  parent: Octopus.Client.Model.DaysOfWeek
+  langs:
+  - csharp
+  - vb
+  name: Thursday
+  nameWithType: DaysOfWeek.Thursday
+  fullName: Octopus.Client.Model.DaysOfWeek.Thursday
+  type: Field
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DaysOfWeek.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Thursday
+    path: ../source/Octopus.Client/Model/DaysOfWeek.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: Thursday = 16
+    return:
+      type: Octopus.Client.Model.DaysOfWeek
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Octopus.Client.Model.DaysOfWeek.Friday
+  commentId: F:Octopus.Client.Model.DaysOfWeek.Friday
+  id: Friday
+  parent: Octopus.Client.Model.DaysOfWeek
+  langs:
+  - csharp
+  - vb
+  name: Friday
+  nameWithType: DaysOfWeek.Friday
+  fullName: Octopus.Client.Model.DaysOfWeek.Friday
+  type: Field
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DaysOfWeek.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Friday
+    path: ../source/Octopus.Client/Model/DaysOfWeek.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: Friday = 32
+    return:
+      type: Octopus.Client.Model.DaysOfWeek
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Octopus.Client.Model.DaysOfWeek.Saturday
+  commentId: F:Octopus.Client.Model.DaysOfWeek.Saturday
+  id: Saturday
+  parent: Octopus.Client.Model.DaysOfWeek
+  langs:
+  - csharp
+  - vb
+  name: Saturday
+  nameWithType: DaysOfWeek.Saturday
+  fullName: Octopus.Client.Model.DaysOfWeek.Saturday
+  type: Field
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DaysOfWeek.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Saturday
+    path: ../source/Octopus.Client/Model/DaysOfWeek.cs
+    startLine: 16
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: Saturday = 64
+    return:
+      type: Octopus.Client.Model.DaysOfWeek
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Model.DaysOfWeek
+  commentId: T:Octopus.Client.Model.DaysOfWeek
+  parent: Octopus.Client.Model
+  name: DaysOfWeek
+  nameWithType: DaysOfWeek
+  fullName: Octopus.Client.Model.DaysOfWeek

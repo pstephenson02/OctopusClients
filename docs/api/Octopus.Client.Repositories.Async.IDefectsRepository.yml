@@ -1,0 +1,291 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.IDefectsRepository
+  commentId: T:Octopus.Client.Repositories.Async.IDefectsRepository
+  id: IDefectsRepository
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.IDefectsRepository.GetDefects(Octopus.Client.Model.ReleaseResource)
+  - Octopus.Client.Repositories.Async.IDefectsRepository.RaiseDefect(Octopus.Client.Model.ReleaseResource,System.String)
+  - Octopus.Client.Repositories.Async.IDefectsRepository.ResolveDefect(Octopus.Client.Model.ReleaseResource)
+  langs:
+  - csharp
+  - vb
+  name: IDefectsRepository
+  nameWithType: IDefectsRepository
+  fullName: Octopus.Client.Repositories.Async.IDefectsRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/DefectsRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IDefectsRepository
+    path: ../source/Octopus.Client/Repositories/Async/DefectsRepository.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: public interface IDefectsRepository
+    content.vb: Public Interface IDefectsRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.Async.IDefectsRepository.GetDefects(Octopus.Client.Model.ReleaseResource)
+  commentId: M:Octopus.Client.Repositories.Async.IDefectsRepository.GetDefects(Octopus.Client.Model.ReleaseResource)
+  id: GetDefects(Octopus.Client.Model.ReleaseResource)
+  parent: Octopus.Client.Repositories.Async.IDefectsRepository
+  langs:
+  - csharp
+  - vb
+  name: GetDefects(ReleaseResource)
+  nameWithType: IDefectsRepository.GetDefects(ReleaseResource)
+  fullName: Octopus.Client.Repositories.Async.IDefectsRepository.GetDefects(Octopus.Client.Model.ReleaseResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/DefectsRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetDefects
+    path: ../source/Octopus.Client/Repositories/Async/DefectsRepository.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<ResourceCollection<DefectResource>> GetDefects(ReleaseResource release)
+    parameters:
+    - id: release
+      type: Octopus.Client.Model.ReleaseResource
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.DefectResource}}
+    content.vb: Function GetDefects(release As ReleaseResource) As Task(Of ResourceCollection(Of DefectResource))
+  overload: Octopus.Client.Repositories.Async.IDefectsRepository.GetDefects*
+- uid: Octopus.Client.Repositories.Async.IDefectsRepository.RaiseDefect(Octopus.Client.Model.ReleaseResource,System.String)
+  commentId: M:Octopus.Client.Repositories.Async.IDefectsRepository.RaiseDefect(Octopus.Client.Model.ReleaseResource,System.String)
+  id: RaiseDefect(Octopus.Client.Model.ReleaseResource,System.String)
+  parent: Octopus.Client.Repositories.Async.IDefectsRepository
+  langs:
+  - csharp
+  - vb
+  name: RaiseDefect(ReleaseResource, String)
+  nameWithType: IDefectsRepository.RaiseDefect(ReleaseResource, String)
+  fullName: Octopus.Client.Repositories.Async.IDefectsRepository.RaiseDefect(Octopus.Client.Model.ReleaseResource, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/DefectsRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RaiseDefect
+    path: ../source/Octopus.Client/Repositories/Async/DefectsRepository.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task RaiseDefect(ReleaseResource release, string description)
+    parameters:
+    - id: release
+      type: Octopus.Client.Model.ReleaseResource
+    - id: description
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function RaiseDefect(release As ReleaseResource, description As String) As Task
+  overload: Octopus.Client.Repositories.Async.IDefectsRepository.RaiseDefect*
+- uid: Octopus.Client.Repositories.Async.IDefectsRepository.ResolveDefect(Octopus.Client.Model.ReleaseResource)
+  commentId: M:Octopus.Client.Repositories.Async.IDefectsRepository.ResolveDefect(Octopus.Client.Model.ReleaseResource)
+  id: ResolveDefect(Octopus.Client.Model.ReleaseResource)
+  parent: Octopus.Client.Repositories.Async.IDefectsRepository
+  langs:
+  - csharp
+  - vb
+  name: ResolveDefect(ReleaseResource)
+  nameWithType: IDefectsRepository.ResolveDefect(ReleaseResource)
+  fullName: Octopus.Client.Repositories.Async.IDefectsRepository.ResolveDefect(Octopus.Client.Model.ReleaseResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/DefectsRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ResolveDefect
+    path: ../source/Octopus.Client/Repositories/Async/DefectsRepository.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task ResolveDefect(ReleaseResource release)
+    parameters:
+    - id: release
+      type: Octopus.Client.Model.ReleaseResource
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ResolveDefect(release As ReleaseResource) As Task
+  overload: Octopus.Client.Repositories.Async.IDefectsRepository.ResolveDefect*
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.IDefectsRepository.GetDefects*
+  commentId: Overload:Octopus.Client.Repositories.Async.IDefectsRepository.GetDefects
+  name: GetDefects
+  nameWithType: IDefectsRepository.GetDefects
+  fullName: Octopus.Client.Repositories.Async.IDefectsRepository.GetDefects
+- uid: Octopus.Client.Model.ReleaseResource
+  commentId: T:Octopus.Client.Model.ReleaseResource
+  parent: Octopus.Client.Model
+  name: ReleaseResource
+  nameWithType: ReleaseResource
+  fullName: Octopus.Client.Model.ReleaseResource
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.DefectResource}}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.DefectResource}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ResourceCollection<DefectResource>>
+  nameWithType: Task<ResourceCollection<DefectResource>>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.ResourceCollection<Octopus.Client.Model.DefectResource>>
+  nameWithType.vb: Task(Of ResourceCollection(Of DefectResource))
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.ResourceCollection(Of Octopus.Client.Model.DefectResource))
+  name.vb: Task(Of ResourceCollection(Of DefectResource))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.DefectResource
+    name: DefectResource
+    nameWithType: DefectResource
+    fullName: Octopus.Client.Model.DefectResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.DefectResource
+    name: DefectResource
+    nameWithType: DefectResource
+    fullName: Octopus.Client.Model.DefectResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Octopus.Client.Repositories.Async.IDefectsRepository.RaiseDefect*
+  commentId: Overload:Octopus.Client.Repositories.Async.IDefectsRepository.RaiseDefect
+  name: RaiseDefect
+  nameWithType: IDefectsRepository.RaiseDefect
+  fullName: Octopus.Client.Repositories.Async.IDefectsRepository.RaiseDefect
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Repositories.Async.IDefectsRepository.ResolveDefect*
+  commentId: Overload:Octopus.Client.Repositories.Async.IDefectsRepository.ResolveDefect
+  name: ResolveDefect
+  nameWithType: IDefectsRepository.ResolveDefect
+  fullName: Octopus.Client.Repositories.Async.IDefectsRepository.ResolveDefect

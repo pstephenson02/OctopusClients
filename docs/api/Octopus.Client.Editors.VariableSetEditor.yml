@@ -1,0 +1,1199 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Editors.VariableSetEditor
+  commentId: T:Octopus.Client.Editors.VariableSetEditor
+  id: VariableSetEditor
+  parent: Octopus.Client.Editors
+  children:
+  - Octopus.Client.Editors.VariableSetEditor.#ctor(Octopus.Client.Repositories.IVariableSetRepository)
+  - Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String)
+  - Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification)
+  - Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification,System.Boolean)
+  - Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification,System.Boolean,System.String)
+  - Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String,System.String)
+  - Octopus.Client.Editors.VariableSetEditor.Customize(System.Action{Octopus.Client.Model.VariableSetResource})
+  - Octopus.Client.Editors.VariableSetEditor.Instance
+  - Octopus.Client.Editors.VariableSetEditor.Load(System.String)
+  - Octopus.Client.Editors.VariableSetEditor.Save
+  langs:
+  - csharp
+  - vb
+  name: VariableSetEditor
+  nameWithType: VariableSetEditor
+  fullName: Octopus.Client.Editors.VariableSetEditor
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/VariableSetEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: VariableSetEditor
+    path: ../source/Octopus.Client/Editors/VariableSetEditor.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: 'public class VariableSetEditor : IResourceEditor<VariableSetResource, VariableSetEditor>, IResourceBuilder'
+    content.vb: >-
+      Public Class VariableSetEditor
+          Implements IResourceEditor(Of VariableSetResource, VariableSetEditor), IResourceBuilder
+  inheritance:
+  - System.Object
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}
+  - Octopus.Client.Editors.IResourceBuilder
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Editors.VariableSetEditor.#ctor(Octopus.Client.Repositories.IVariableSetRepository)
+  commentId: M:Octopus.Client.Editors.VariableSetEditor.#ctor(Octopus.Client.Repositories.IVariableSetRepository)
+  id: '#ctor(Octopus.Client.Repositories.IVariableSetRepository)'
+  parent: Octopus.Client.Editors.VariableSetEditor
+  langs:
+  - csharp
+  - vb
+  name: VariableSetEditor(IVariableSetRepository)
+  nameWithType: VariableSetEditor.VariableSetEditor(IVariableSetRepository)
+  fullName: Octopus.Client.Editors.VariableSetEditor.VariableSetEditor(Octopus.Client.Repositories.IVariableSetRepository)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/VariableSetEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Editors/VariableSetEditor.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public VariableSetEditor(IVariableSetRepository repository)
+    parameters:
+    - id: repository
+      type: Octopus.Client.Repositories.IVariableSetRepository
+    content.vb: Public Sub New(repository As IVariableSetRepository)
+  overload: Octopus.Client.Editors.VariableSetEditor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.VariableSetEditor.Instance
+  commentId: P:Octopus.Client.Editors.VariableSetEditor.Instance
+  id: Instance
+  parent: Octopus.Client.Editors.VariableSetEditor
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: VariableSetEditor.Instance
+  fullName: Octopus.Client.Editors.VariableSetEditor.Instance
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/VariableSetEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Instance
+    path: ../source/Octopus.Client/Editors/VariableSetEditor.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public VariableSetResource Instance { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.VariableSetResource
+    content.vb: Public ReadOnly Property Instance As VariableSetResource
+  overload: Octopus.Client.Editors.VariableSetEditor.Instance*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}.Instance
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Editors.VariableSetEditor.Load(System.String)
+  commentId: M:Octopus.Client.Editors.VariableSetEditor.Load(System.String)
+  id: Load(System.String)
+  parent: Octopus.Client.Editors.VariableSetEditor
+  langs:
+  - csharp
+  - vb
+  name: Load(String)
+  nameWithType: VariableSetEditor.Load(String)
+  fullName: Octopus.Client.Editors.VariableSetEditor.Load(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/VariableSetEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Load
+    path: ../source/Octopus.Client/Editors/VariableSetEditor.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public VariableSetEditor Load(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: Octopus.Client.Editors.VariableSetEditor
+    content.vb: Public Function Load(id As String) As VariableSetEditor
+  overload: Octopus.Client.Editors.VariableSetEditor.Load*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification,System.Boolean)
+  commentId: M:Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification,System.Boolean)
+  id: AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification,System.Boolean)
+  parent: Octopus.Client.Editors.VariableSetEditor
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateVariableValue(String, String, ScopeSpecification, Boolean)
+  nameWithType: VariableSetEditor.AddOrUpdateVariableValue(String, String, ScopeSpecification, Boolean)
+  fullName: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String, System.String, Octopus.Client.Model.ScopeSpecification, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/VariableSetEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateVariableValue
+    path: ../source/Octopus.Client/Editors/VariableSetEditor.cs
+    startLine: 23
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public VariableSetEditor AddOrUpdateVariableValue(string name, string value, ScopeSpecification scope, bool isSensitive)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    - id: scope
+      type: Octopus.Client.Model.ScopeSpecification
+    - id: isSensitive
+      type: System.Boolean
+    return:
+      type: Octopus.Client.Editors.VariableSetEditor
+    content.vb: Public Function AddOrUpdateVariableValue(name As String, value As String, scope As ScopeSpecification, isSensitive As Boolean) As VariableSetEditor
+  overload: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification,System.Boolean,System.String)
+  commentId: M:Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification,System.Boolean,System.String)
+  id: AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification,System.Boolean,System.String)
+  parent: Octopus.Client.Editors.VariableSetEditor
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateVariableValue(String, String, ScopeSpecification, Boolean, String)
+  nameWithType: VariableSetEditor.AddOrUpdateVariableValue(String, String, ScopeSpecification, Boolean, String)
+  fullName: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String, System.String, Octopus.Client.Model.ScopeSpecification, System.Boolean, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/VariableSetEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateVariableValue
+    path: ../source/Octopus.Client/Editors/VariableSetEditor.cs
+    startLine: 29
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public VariableSetEditor AddOrUpdateVariableValue(string name, string value, ScopeSpecification scope, bool isSensitive, string description)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    - id: scope
+      type: Octopus.Client.Model.ScopeSpecification
+    - id: isSensitive
+      type: System.Boolean
+    - id: description
+      type: System.String
+    return:
+      type: Octopus.Client.Editors.VariableSetEditor
+    content.vb: Public Function AddOrUpdateVariableValue(name As String, value As String, scope As ScopeSpecification, isSensitive As Boolean, description As String) As VariableSetEditor
+  overload: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification)
+  commentId: M:Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification)
+  id: AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification)
+  parent: Octopus.Client.Editors.VariableSetEditor
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateVariableValue(String, String, ScopeSpecification)
+  nameWithType: VariableSetEditor.AddOrUpdateVariableValue(String, String, ScopeSpecification)
+  fullName: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String, System.String, Octopus.Client.Model.ScopeSpecification)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/VariableSetEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateVariableValue
+    path: ../source/Octopus.Client/Editors/VariableSetEditor.cs
+    startLine: 35
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public VariableSetEditor AddOrUpdateVariableValue(string name, string value, ScopeSpecification scope)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    - id: scope
+      type: Octopus.Client.Model.ScopeSpecification
+    return:
+      type: Octopus.Client.Editors.VariableSetEditor
+    content.vb: Public Function AddOrUpdateVariableValue(name As String, value As String, scope As ScopeSpecification) As VariableSetEditor
+  overload: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String)
+  commentId: M:Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String)
+  id: AddOrUpdateVariableValue(System.String,System.String)
+  parent: Octopus.Client.Editors.VariableSetEditor
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateVariableValue(String, String)
+  nameWithType: VariableSetEditor.AddOrUpdateVariableValue(String, String)
+  fullName: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/VariableSetEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateVariableValue
+    path: ../source/Octopus.Client/Editors/VariableSetEditor.cs
+    startLine: 41
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public VariableSetEditor AddOrUpdateVariableValue(string name, string value)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    return:
+      type: Octopus.Client.Editors.VariableSetEditor
+    content.vb: Public Function AddOrUpdateVariableValue(name As String, value As String) As VariableSetEditor
+  overload: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String,System.String,System.String)
+  id: AddOrUpdateVariableValue(System.String,System.String,System.String)
+  parent: Octopus.Client.Editors.VariableSetEditor
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateVariableValue(String, String, String)
+  nameWithType: VariableSetEditor.AddOrUpdateVariableValue(String, String, String)
+  fullName: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/VariableSetEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateVariableValue
+    path: ../source/Octopus.Client/Editors/VariableSetEditor.cs
+    startLine: 47
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public VariableSetEditor AddOrUpdateVariableValue(string name, string value, string description)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    - id: description
+      type: System.String
+    return:
+      type: Octopus.Client.Editors.VariableSetEditor
+    content.vb: Public Function AddOrUpdateVariableValue(name As String, value As String, description As String) As VariableSetEditor
+  overload: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.VariableSetEditor.Customize(System.Action{Octopus.Client.Model.VariableSetResource})
+  commentId: M:Octopus.Client.Editors.VariableSetEditor.Customize(System.Action{Octopus.Client.Model.VariableSetResource})
+  id: Customize(System.Action{Octopus.Client.Model.VariableSetResource})
+  parent: Octopus.Client.Editors.VariableSetEditor
+  langs:
+  - csharp
+  - vb
+  name: Customize(Action<VariableSetResource>)
+  nameWithType: VariableSetEditor.Customize(Action<VariableSetResource>)
+  fullName: Octopus.Client.Editors.VariableSetEditor.Customize(System.Action<Octopus.Client.Model.VariableSetResource>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/VariableSetEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Customize
+    path: ../source/Octopus.Client/Editors/VariableSetEditor.cs
+    startLine: 53
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public VariableSetEditor Customize(Action<VariableSetResource> customize)
+    parameters:
+    - id: customize
+      type: System.Action{Octopus.Client.Model.VariableSetResource}
+    return:
+      type: Octopus.Client.Editors.VariableSetEditor
+    content.vb: Public Function Customize(customize As Action(Of VariableSetResource)) As VariableSetEditor
+  overload: Octopus.Client.Editors.VariableSetEditor.Customize*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}.Customize(System.Action{Octopus.Client.Model.VariableSetResource})
+  nameWithType.vb: VariableSetEditor.Customize(Action(Of VariableSetResource))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Editors.VariableSetEditor.Customize(System.Action(Of Octopus.Client.Model.VariableSetResource))
+  name.vb: Customize(Action(Of VariableSetResource))
+- uid: Octopus.Client.Editors.VariableSetEditor.Save
+  commentId: M:Octopus.Client.Editors.VariableSetEditor.Save
+  id: Save
+  parent: Octopus.Client.Editors.VariableSetEditor
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: VariableSetEditor.Save()
+  fullName: Octopus.Client.Editors.VariableSetEditor.Save()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/VariableSetEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Save
+    path: ../source/Octopus.Client/Editors/VariableSetEditor.cs
+    startLine: 59
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public VariableSetEditor Save()
+    return:
+      type: Octopus.Client.Editors.VariableSetEditor
+    content.vb: Public Function Save As VariableSetEditor
+  overload: Octopus.Client.Editors.VariableSetEditor.Save*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}.Save
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Editors
+  commentId: N:Octopus.Client.Editors
+  name: Octopus.Client.Editors
+  nameWithType: Octopus.Client.Editors
+  fullName: Octopus.Client.Editors
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}
+  commentId: T:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}
+  parent: Octopus.Client.Editors
+  definition: Octopus.Client.Editors.IResourceEditor`2
+  name: IResourceEditor<VariableSetResource, VariableSetEditor>
+  nameWithType: IResourceEditor<VariableSetResource, VariableSetEditor>
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.VariableSetResource, Octopus.Client.Editors.VariableSetEditor>
+  nameWithType.vb: IResourceEditor(Of VariableSetResource, VariableSetEditor)
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.VariableSetResource, Octopus.Client.Editors.VariableSetEditor)
+  name.vb: IResourceEditor(Of VariableSetResource, VariableSetEditor)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.VariableSetResource
+    name: VariableSetResource
+    nameWithType: VariableSetResource
+    fullName: Octopus.Client.Model.VariableSetResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Editors.VariableSetEditor
+    name: VariableSetEditor
+    nameWithType: VariableSetEditor
+    fullName: Octopus.Client.Editors.VariableSetEditor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.VariableSetResource
+    name: VariableSetResource
+    nameWithType: VariableSetResource
+    fullName: Octopus.Client.Model.VariableSetResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Editors.VariableSetEditor
+    name: VariableSetEditor
+    nameWithType: VariableSetEditor
+    fullName: Octopus.Client.Editors.VariableSetEditor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceBuilder
+  commentId: T:Octopus.Client.Editors.IResourceBuilder
+  parent: Octopus.Client.Editors
+  name: IResourceBuilder
+  nameWithType: IResourceBuilder
+  fullName: Octopus.Client.Editors.IResourceBuilder
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Editors.IResourceEditor`2
+  commentId: T:Octopus.Client.Editors.IResourceEditor`2
+  name: IResourceEditor<TResource, TResourceBuilder>
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder)
+  name.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResourceBuilder
+    nameWithType: TResourceBuilder
+    fullName: TResourceBuilder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResourceBuilder
+    nameWithType: TResourceBuilder
+    fullName: TResourceBuilder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.VariableSetEditor.#ctor*
+  commentId: Overload:Octopus.Client.Editors.VariableSetEditor.#ctor
+  name: VariableSetEditor
+  nameWithType: VariableSetEditor.VariableSetEditor
+  fullName: Octopus.Client.Editors.VariableSetEditor.VariableSetEditor
+- uid: Octopus.Client.Repositories.IVariableSetRepository
+  commentId: T:Octopus.Client.Repositories.IVariableSetRepository
+  parent: Octopus.Client.Repositories
+  name: IVariableSetRepository
+  nameWithType: IVariableSetRepository
+  fullName: Octopus.Client.Repositories.IVariableSetRepository
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Editors.VariableSetEditor.Instance*
+  commentId: Overload:Octopus.Client.Editors.VariableSetEditor.Instance
+  name: Instance
+  nameWithType: VariableSetEditor.Instance
+  fullName: Octopus.Client.Editors.VariableSetEditor.Instance
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}.Instance
+  commentId: P:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}.Instance
+  parent: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Instance
+  name: Instance
+  nameWithType: IResourceEditor<VariableSetResource, VariableSetEditor>.Instance
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.VariableSetResource, Octopus.Client.Editors.VariableSetEditor>.Instance
+  nameWithType.vb: IResourceEditor(Of VariableSetResource, VariableSetEditor).Instance
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.VariableSetResource, Octopus.Client.Editors.VariableSetEditor).Instance
+- uid: Octopus.Client.Model.VariableSetResource
+  commentId: T:Octopus.Client.Model.VariableSetResource
+  parent: Octopus.Client.Model
+  name: VariableSetResource
+  nameWithType: VariableSetResource
+  fullName: Octopus.Client.Model.VariableSetResource
+- uid: Octopus.Client.Editors.IResourceEditor`2.Instance
+  commentId: P:Octopus.Client.Editors.IResourceEditor`2.Instance
+  name: Instance
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Instance
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Instance
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Instance
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Instance
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Editors.VariableSetEditor.Load*
+  commentId: Overload:Octopus.Client.Editors.VariableSetEditor.Load
+  name: Load
+  nameWithType: VariableSetEditor.Load
+  fullName: Octopus.Client.Editors.VariableSetEditor.Load
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Editors.VariableSetEditor
+  commentId: T:Octopus.Client.Editors.VariableSetEditor
+  parent: Octopus.Client.Editors
+  name: VariableSetEditor
+  nameWithType: VariableSetEditor
+  fullName: Octopus.Client.Editors.VariableSetEditor
+- uid: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue*
+  commentId: Overload:Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue
+  name: AddOrUpdateVariableValue
+  nameWithType: VariableSetEditor.AddOrUpdateVariableValue
+  fullName: Octopus.Client.Editors.VariableSetEditor.AddOrUpdateVariableValue
+- uid: Octopus.Client.Model.ScopeSpecification
+  commentId: T:Octopus.Client.Model.ScopeSpecification
+  parent: Octopus.Client.Model
+  name: ScopeSpecification
+  nameWithType: ScopeSpecification
+  fullName: Octopus.Client.Model.ScopeSpecification
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Editors.VariableSetEditor.Customize*
+  commentId: Overload:Octopus.Client.Editors.VariableSetEditor.Customize
+  name: Customize
+  nameWithType: VariableSetEditor.Customize
+  fullName: Octopus.Client.Editors.VariableSetEditor.Customize
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}.Customize(System.Action{Octopus.Client.Model.VariableSetResource})
+  commentId: M:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}.Customize(System.Action{Octopus.Client.Model.VariableSetResource})
+  parent: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  name: Customize(Action<VariableSetResource>)
+  nameWithType: IResourceEditor<VariableSetResource, VariableSetEditor>.Customize(Action<VariableSetResource>)
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.VariableSetResource, Octopus.Client.Editors.VariableSetEditor>.Customize(System.Action<Octopus.Client.Model.VariableSetResource>)
+  nameWithType.vb: IResourceEditor(Of VariableSetResource, VariableSetEditor).Customize(Action(Of VariableSetResource))
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.VariableSetResource, Octopus.Client.Editors.VariableSetEditor).Customize(System.Action(Of Octopus.Client.Model.VariableSetResource))
+  name.vb: Customize(Action(Of VariableSetResource))
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor<VariableSetResource, VariableSetEditor>.Customize
+    fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.VariableSetResource, Octopus.Client.Editors.VariableSetEditor>.Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.VariableSetResource
+    name: VariableSetResource
+    nameWithType: VariableSetResource
+    fullName: Octopus.Client.Model.VariableSetResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor(Of VariableSetResource, VariableSetEditor).Customize
+    fullName: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.VariableSetResource, Octopus.Client.Editors.VariableSetEditor).Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.VariableSetResource
+    name: VariableSetResource
+    nameWithType: VariableSetResource
+    fullName: Octopus.Client.Model.VariableSetResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{Octopus.Client.Model.VariableSetResource}
+  commentId: T:System.Action{Octopus.Client.Model.VariableSetResource}
+  parent: System
+  definition: System.Action`1
+  name: Action<VariableSetResource>
+  nameWithType: Action<VariableSetResource>
+  fullName: System.Action<Octopus.Client.Model.VariableSetResource>
+  nameWithType.vb: Action(Of VariableSetResource)
+  fullName.vb: System.Action(Of Octopus.Client.Model.VariableSetResource)
+  name.vb: Action(Of VariableSetResource)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.VariableSetResource
+    name: VariableSetResource
+    nameWithType: VariableSetResource
+    fullName: Octopus.Client.Model.VariableSetResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.VariableSetResource
+    name: VariableSetResource
+    nameWithType: VariableSetResource
+    fullName: Octopus.Client.Model.VariableSetResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  commentId: M:Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  isExternal: true
+  name: Customize(Action<TResource>)
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Customize(Action<TResource>)
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Customize(System.Action<TResource>)
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Customize(Action(Of TResource))
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Customize(System.Action(Of TResource))
+  name.vb: Customize(Action(Of TResource))
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor<TResource, TResourceBuilder>.Customize
+    fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor(Of TResource, TResourceBuilder).Customize
+    fullName: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.VariableSetEditor.Save*
+  commentId: Overload:Octopus.Client.Editors.VariableSetEditor.Save
+  name: Save
+  nameWithType: VariableSetEditor.Save
+  fullName: Octopus.Client.Editors.VariableSetEditor.Save
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}.Save
+  commentId: M:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}.Save
+  parent: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.VariableSetResource,Octopus.Client.Editors.VariableSetEditor}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Save
+  name: Save()
+  nameWithType: IResourceEditor<VariableSetResource, VariableSetEditor>.Save()
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.VariableSetResource, Octopus.Client.Editors.VariableSetEditor>.Save()
+  nameWithType.vb: IResourceEditor(Of VariableSetResource, VariableSetEditor).Save()
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.VariableSetResource, Octopus.Client.Editors.VariableSetEditor).Save()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor<VariableSetResource, VariableSetEditor>.Save
+    fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.VariableSetResource, Octopus.Client.Editors.VariableSetEditor>.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor(Of VariableSetResource, VariableSetEditor).Save
+    fullName: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.VariableSetResource, Octopus.Client.Editors.VariableSetEditor).Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceEditor`2.Save
+  commentId: M:Octopus.Client.Editors.IResourceEditor`2.Save
+  name: Save()
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Save()
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Save()
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Save()
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Save()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor<TResource, TResourceBuilder>.Save
+    fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor(Of TResource, TResourceBuilder).Save
+    fullName: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

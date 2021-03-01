@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.IOctopusSpaceBetaRepository
+  commentId: T:Octopus.Client.Repositories.IOctopusSpaceBetaRepository
+  id: IOctopusSpaceBetaRepository
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.IOctopusSpaceBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  langs:
+  - csharp
+  - vb
+  name: IOctopusSpaceBetaRepository
+  nameWithType: IOctopusSpaceBetaRepository
+  fullName: Octopus.Client.Repositories.IOctopusSpaceBetaRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/OctopusSpaceBetaRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IOctopusSpaceBetaRepository
+    path: ../source/Octopus.Client/Repositories/OctopusSpaceBetaRepository.cs
+    startLine: 4
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public interface IOctopusSpaceBetaRepository
+    content.vb: Public Interface IOctopusSpaceBetaRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.IOctopusSpaceBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  commentId: M:Octopus.Client.Repositories.IOctopusSpaceBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  id: ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  parent: Octopus.Client.Repositories.IOctopusSpaceBetaRepository
+  langs:
+  - csharp
+  - vb
+  name: ForBranch(VersionControlBranchResource)
+  nameWithType: IOctopusSpaceBetaRepository.ForBranch(VersionControlBranchResource)
+  fullName: Octopus.Client.Repositories.IOctopusSpaceBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/OctopusSpaceBetaRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ForBranch
+    path: ../source/Octopus.Client/Repositories/OctopusSpaceBetaRepository.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: IBranchScopedRepository ForBranch(VersionControlBranchResource branch)
+    parameters:
+    - id: branch
+      type: Octopus.Client.Model.VersionControlBranchResource
+    return:
+      type: Octopus.Client.Repositories.IBranchScopedRepository
+    content.vb: Function ForBranch(branch As VersionControlBranchResource) As IBranchScopedRepository
+  overload: Octopus.Client.Repositories.IOctopusSpaceBetaRepository.ForBranch*
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Repositories.IOctopusSpaceBetaRepository.ForBranch*
+  commentId: Overload:Octopus.Client.Repositories.IOctopusSpaceBetaRepository.ForBranch
+  name: ForBranch
+  nameWithType: IOctopusSpaceBetaRepository.ForBranch
+  fullName: Octopus.Client.Repositories.IOctopusSpaceBetaRepository.ForBranch
+- uid: Octopus.Client.Model.VersionControlBranchResource
+  commentId: T:Octopus.Client.Model.VersionControlBranchResource
+  parent: Octopus.Client.Model
+  name: VersionControlBranchResource
+  nameWithType: VersionControlBranchResource
+  fullName: Octopus.Client.Model.VersionControlBranchResource
+- uid: Octopus.Client.Repositories.IBranchScopedRepository
+  commentId: T:Octopus.Client.Repositories.IBranchScopedRepository
+  parent: Octopus.Client.Repositories
+  name: IBranchScopedRepository
+  nameWithType: IBranchScopedRepository
+  fullName: Octopus.Client.Repositories.IBranchScopedRepository
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model

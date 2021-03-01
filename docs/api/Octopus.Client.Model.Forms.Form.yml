@@ -1,0 +1,1579 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.Forms.Form
+  commentId: T:Octopus.Client.Model.Forms.Form
+  id: Form
+  parent: Octopus.Client.Model.Forms
+  children:
+  - Octopus.Client.Model.Forms.Form.#ctor
+  - Octopus.Client.Model.Forms.Form.#ctor(System.Collections.Generic.IEnumerable{Octopus.Client.Model.Forms.FormElement},System.Collections.Generic.IDictionary{System.String,System.String})
+  - Octopus.Client.Model.Forms.Form.Elements
+  - Octopus.Client.Model.Forms.Form.Values
+  langs:
+  - csharp
+  - vb
+  name: Form
+  nameWithType: Form
+  fullName: Octopus.Client.Model.Forms.Form
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Forms/Form.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Form
+    path: ../source/Octopus.Client/Model/Forms/Form.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Forms
+  summary: "\nA form is a set of form elements, and the values that apply or may be provided for those elements.\n"
+  example: []
+  syntax:
+    content: public class Form
+    content.vb: Public Class Form
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - Octopus.Client.Model.Forms.Form.Octopus.Client.Model.Forms.FormExtensions.AddElement(System.String,Octopus.Client.Model.Forms.Control,System.String,System.Boolean)
+  - Octopus.Client.Model.Forms.Form.Octopus.Client.Model.Forms.FormExtensions.SetValue(System.String,System.String)
+  - Octopus.Client.Model.Forms.Form.Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue(System.String)
+  - Octopus.Client.Model.Forms.Form.Octopus.Client.Model.Forms.FormExtensions.UpdateValues(System.Collections.Generic.IDictionary{System.String,System.String})
+  - Octopus.Client.Model.Forms.Form.Octopus.Client.Model.Forms.FormExtensions.Validate
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.Forms.Form.#ctor
+  commentId: M:Octopus.Client.Model.Forms.Form.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.Forms.Form
+  langs:
+  - csharp
+  - vb
+  name: Form()
+  nameWithType: Form.Form()
+  fullName: Octopus.Client.Model.Forms.Form.Form()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Forms/Form.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Forms/Form.cs
+    startLine: 12
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Forms
+  syntax:
+    content: >-
+      [JsonConstructor]
+
+      public Form()
+    content.vb: >-
+      <JsonConstructor>
+
+      Public Sub New
+  overload: Octopus.Client.Model.Forms.Form.#ctor*
+  attributes:
+  - type: Newtonsoft.Json.JsonConstructorAttribute
+    ctor: Newtonsoft.Json.JsonConstructorAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.Forms.Form.#ctor(System.Collections.Generic.IEnumerable{Octopus.Client.Model.Forms.FormElement},System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Octopus.Client.Model.Forms.Form.#ctor(System.Collections.Generic.IEnumerable{Octopus.Client.Model.Forms.FormElement},System.Collections.Generic.IDictionary{System.String,System.String})
+  id: '#ctor(System.Collections.Generic.IEnumerable{Octopus.Client.Model.Forms.FormElement},System.Collections.Generic.IDictionary{System.String,System.String})'
+  parent: Octopus.Client.Model.Forms.Form
+  langs:
+  - csharp
+  - vb
+  name: Form(IEnumerable<FormElement>, IDictionary<String, String>)
+  nameWithType: Form.Form(IEnumerable<FormElement>, IDictionary<String, String>)
+  fullName: Octopus.Client.Model.Forms.Form.Form(System.Collections.Generic.IEnumerable<Octopus.Client.Model.Forms.FormElement>, System.Collections.Generic.IDictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Forms/Form.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Forms/Form.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Forms
+  syntax:
+    content: public Form(IEnumerable<FormElement> elements = null, IDictionary<string, string> values = null)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{Octopus.Client.Model.Forms.FormElement}
+    - id: values
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    content.vb: Public Sub New(elements As IEnumerable(Of FormElement) = Nothing, values As IDictionary(Of String, String) = Nothing)
+  overload: Octopus.Client.Model.Forms.Form.#ctor*
+  nameWithType.vb: Form.Form(IEnumerable(Of FormElement), IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.Forms.Form.Form(System.Collections.Generic.IEnumerable(Of Octopus.Client.Model.Forms.FormElement), System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: Form(IEnumerable(Of FormElement), IDictionary(Of String, String))
+- uid: Octopus.Client.Model.Forms.Form.Values
+  commentId: P:Octopus.Client.Model.Forms.Form.Values
+  id: Values
+  parent: Octopus.Client.Model.Forms.Form
+  langs:
+  - csharp
+  - vb
+  name: Values
+  nameWithType: Form.Values
+  fullName: Octopus.Client.Model.Forms.Form.Values
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Forms/Form.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Values
+    path: ../source/Octopus.Client/Model/Forms/Form.cs
+    startLine: 31
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Forms
+  summary: "\nValues supplied for the form elements.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(ObjectCreationHandling = ObjectCreationHandling.Reuse)]
+
+      public Dictionary<string, string> Values { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: >-
+      <JsonProperty(ObjectCreationHandling:=ObjectCreationHandling.Reuse)>
+
+      Public ReadOnly Property Values As Dictionary(Of String, String)
+  overload: Octopus.Client.Model.Forms.Form.Values*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ObjectCreationHandling
+      type: Newtonsoft.Json.ObjectCreationHandling
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.Forms.Form.Elements
+  commentId: P:Octopus.Client.Model.Forms.Form.Elements
+  id: Elements
+  parent: Octopus.Client.Model.Forms.Form
+  langs:
+  - csharp
+  - vb
+  name: Elements
+  nameWithType: Form.Elements
+  fullName: Octopus.Client.Model.Forms.Form.Elements
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Forms/Form.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Elements
+    path: ../source/Octopus.Client/Model/Forms/Form.cs
+    startLine: 37
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Forms
+  summary: "\nElements of the form.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(ObjectCreationHandling = ObjectCreationHandling.Reuse)]
+
+      public List<FormElement> Elements { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.Forms.FormElement}
+    content.vb: >-
+      <JsonProperty(ObjectCreationHandling:=ObjectCreationHandling.Reuse)>
+
+      Public ReadOnly Property Elements As List(Of FormElement)
+  overload: Octopus.Client.Model.Forms.Form.Elements*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ObjectCreationHandling
+      type: Newtonsoft.Json.ObjectCreationHandling
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Octopus.Client.Model.Forms
+  commentId: N:Octopus.Client.Model.Forms
+  name: Octopus.Client.Model.Forms
+  nameWithType: Octopus.Client.Model.Forms
+  fullName: Octopus.Client.Model.Forms
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Forms.Form.Octopus.Client.Model.Forms.FormExtensions.AddElement(System.String,Octopus.Client.Model.Forms.Control,System.String,System.Boolean)
+  commentId: M:Octopus.Client.Model.Forms.FormExtensions.AddElement(Octopus.Client.Model.Forms.Form,System.String,Octopus.Client.Model.Forms.Control,System.String,System.Boolean)
+  parent: Octopus.Client.Model.Forms.FormExtensions
+  definition: Octopus.Client.Model.Forms.FormExtensions.AddElement(Octopus.Client.Model.Forms.Form,System.String,Octopus.Client.Model.Forms.Control,System.String,System.Boolean)
+  name: AddElement(String, Control, String, Boolean)
+  nameWithType: FormExtensions.AddElement(String, Control, String, Boolean)
+  fullName: Octopus.Client.Model.Forms.FormExtensions.AddElement(System.String, Octopus.Client.Model.Forms.Control, System.String, System.Boolean)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.AddElement(System.String,Octopus.Client.Model.Forms.Control,System.String,System.Boolean)
+    name: AddElement
+    nameWithType: FormExtensions.AddElement
+    fullName: Octopus.Client.Model.Forms.FormExtensions.AddElement
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Forms.Control
+    name: Control
+    nameWithType: Control
+    fullName: Octopus.Client.Model.Forms.Control
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.AddElement(System.String,Octopus.Client.Model.Forms.Control,System.String,System.Boolean)
+    name: AddElement
+    nameWithType: FormExtensions.AddElement
+    fullName: Octopus.Client.Model.Forms.FormExtensions.AddElement
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Forms.Control
+    name: Control
+    nameWithType: Control
+    fullName: Octopus.Client.Model.Forms.Control
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Forms.Form.Octopus.Client.Model.Forms.FormExtensions.SetValue(System.String,System.String)
+  commentId: M:Octopus.Client.Model.Forms.FormExtensions.SetValue(Octopus.Client.Model.Forms.Form,System.String,System.String)
+  parent: Octopus.Client.Model.Forms.FormExtensions
+  definition: Octopus.Client.Model.Forms.FormExtensions.SetValue(Octopus.Client.Model.Forms.Form,System.String,System.String)
+  name: SetValue(String, String)
+  nameWithType: FormExtensions.SetValue(String, String)
+  fullName: Octopus.Client.Model.Forms.FormExtensions.SetValue(System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.SetValue(System.String,System.String)
+    name: SetValue
+    nameWithType: FormExtensions.SetValue
+    fullName: Octopus.Client.Model.Forms.FormExtensions.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.SetValue(System.String,System.String)
+    name: SetValue
+    nameWithType: FormExtensions.SetValue
+    fullName: Octopus.Client.Model.Forms.FormExtensions.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Forms.Form.Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue(System.String)
+  commentId: M:Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue(Octopus.Client.Model.Forms.Form,System.String)
+  parent: Octopus.Client.Model.Forms.FormExtensions
+  definition: Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue(Octopus.Client.Model.Forms.Form,System.String)
+  name: GetCoercedValue(String)
+  nameWithType: FormExtensions.GetCoercedValue(String)
+  fullName: Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue(System.String)
+    name: GetCoercedValue
+    nameWithType: FormExtensions.GetCoercedValue
+    fullName: Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue(System.String)
+    name: GetCoercedValue
+    nameWithType: FormExtensions.GetCoercedValue
+    fullName: Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Forms.Form.Octopus.Client.Model.Forms.FormExtensions.UpdateValues(System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Octopus.Client.Model.Forms.FormExtensions.UpdateValues(Octopus.Client.Model.Forms.Form,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Octopus.Client.Model.Forms.FormExtensions
+  definition: Octopus.Client.Model.Forms.FormExtensions.UpdateValues(Octopus.Client.Model.Forms.Form,System.Collections.Generic.IDictionary{System.String,System.String})
+  name: UpdateValues(IDictionary<String, String>)
+  nameWithType: FormExtensions.UpdateValues(IDictionary<String, String>)
+  fullName: Octopus.Client.Model.Forms.FormExtensions.UpdateValues(System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: FormExtensions.UpdateValues(IDictionary(Of String, String))
+  fullName.vb: Octopus.Client.Model.Forms.FormExtensions.UpdateValues(System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: UpdateValues(IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.UpdateValues(System.Collections.Generic.IDictionary{System.String,System.String})
+    name: UpdateValues
+    nameWithType: FormExtensions.UpdateValues
+    fullName: Octopus.Client.Model.Forms.FormExtensions.UpdateValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.UpdateValues(System.Collections.Generic.IDictionary{System.String,System.String})
+    name: UpdateValues
+    nameWithType: FormExtensions.UpdateValues
+    fullName: Octopus.Client.Model.Forms.FormExtensions.UpdateValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Forms.Form.Octopus.Client.Model.Forms.FormExtensions.Validate
+  commentId: M:Octopus.Client.Model.Forms.FormExtensions.Validate(Octopus.Client.Model.Forms.Form)
+  parent: Octopus.Client.Model.Forms.FormExtensions
+  definition: Octopus.Client.Model.Forms.FormExtensions.Validate(Octopus.Client.Model.Forms.Form)
+  name: Validate()
+  nameWithType: FormExtensions.Validate()
+  fullName: Octopus.Client.Model.Forms.FormExtensions.Validate()
+  spec.csharp:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.Validate
+    name: Validate
+    nameWithType: FormExtensions.Validate
+    fullName: Octopus.Client.Model.Forms.FormExtensions.Validate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.Validate
+    name: Validate
+    nameWithType: FormExtensions.Validate
+    fullName: Octopus.Client.Model.Forms.FormExtensions.Validate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.Forms.FormExtensions.AddElement(Octopus.Client.Model.Forms.Form,System.String,Octopus.Client.Model.Forms.Control,System.String,System.Boolean)
+  commentId: M:Octopus.Client.Model.Forms.FormExtensions.AddElement(Octopus.Client.Model.Forms.Form,System.String,Octopus.Client.Model.Forms.Control,System.String,System.Boolean)
+  isExternal: true
+  name: AddElement(Form, String, Control, String, Boolean)
+  nameWithType: FormExtensions.AddElement(Form, String, Control, String, Boolean)
+  fullName: Octopus.Client.Model.Forms.FormExtensions.AddElement(Octopus.Client.Model.Forms.Form, System.String, Octopus.Client.Model.Forms.Control, System.String, System.Boolean)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.AddElement(Octopus.Client.Model.Forms.Form,System.String,Octopus.Client.Model.Forms.Control,System.String,System.Boolean)
+    name: AddElement
+    nameWithType: FormExtensions.AddElement
+    fullName: Octopus.Client.Model.Forms.FormExtensions.AddElement
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Forms.Form
+    name: Form
+    nameWithType: Form
+    fullName: Octopus.Client.Model.Forms.Form
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Forms.Control
+    name: Control
+    nameWithType: Control
+    fullName: Octopus.Client.Model.Forms.Control
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.AddElement(Octopus.Client.Model.Forms.Form,System.String,Octopus.Client.Model.Forms.Control,System.String,System.Boolean)
+    name: AddElement
+    nameWithType: FormExtensions.AddElement
+    fullName: Octopus.Client.Model.Forms.FormExtensions.AddElement
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Forms.Form
+    name: Form
+    nameWithType: Form
+    fullName: Octopus.Client.Model.Forms.Form
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Forms.Control
+    name: Control
+    nameWithType: Control
+    fullName: Octopus.Client.Model.Forms.Control
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Forms.FormExtensions
+  commentId: T:Octopus.Client.Model.Forms.FormExtensions
+  parent: Octopus.Client.Model.Forms
+  name: FormExtensions
+  nameWithType: FormExtensions
+  fullName: Octopus.Client.Model.Forms.FormExtensions
+- uid: Octopus.Client.Model.Forms.FormExtensions.SetValue(Octopus.Client.Model.Forms.Form,System.String,System.String)
+  commentId: M:Octopus.Client.Model.Forms.FormExtensions.SetValue(Octopus.Client.Model.Forms.Form,System.String,System.String)
+  isExternal: true
+  name: SetValue(Form, String, String)
+  nameWithType: FormExtensions.SetValue(Form, String, String)
+  fullName: Octopus.Client.Model.Forms.FormExtensions.SetValue(Octopus.Client.Model.Forms.Form, System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.SetValue(Octopus.Client.Model.Forms.Form,System.String,System.String)
+    name: SetValue
+    nameWithType: FormExtensions.SetValue
+    fullName: Octopus.Client.Model.Forms.FormExtensions.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Forms.Form
+    name: Form
+    nameWithType: Form
+    fullName: Octopus.Client.Model.Forms.Form
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.SetValue(Octopus.Client.Model.Forms.Form,System.String,System.String)
+    name: SetValue
+    nameWithType: FormExtensions.SetValue
+    fullName: Octopus.Client.Model.Forms.FormExtensions.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Forms.Form
+    name: Form
+    nameWithType: Form
+    fullName: Octopus.Client.Model.Forms.Form
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue(Octopus.Client.Model.Forms.Form,System.String)
+  commentId: M:Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue(Octopus.Client.Model.Forms.Form,System.String)
+  isExternal: true
+  name: GetCoercedValue(Form, String)
+  nameWithType: FormExtensions.GetCoercedValue(Form, String)
+  fullName: Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue(Octopus.Client.Model.Forms.Form, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue(Octopus.Client.Model.Forms.Form,System.String)
+    name: GetCoercedValue
+    nameWithType: FormExtensions.GetCoercedValue
+    fullName: Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Forms.Form
+    name: Form
+    nameWithType: Form
+    fullName: Octopus.Client.Model.Forms.Form
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue(Octopus.Client.Model.Forms.Form,System.String)
+    name: GetCoercedValue
+    nameWithType: FormExtensions.GetCoercedValue
+    fullName: Octopus.Client.Model.Forms.FormExtensions.GetCoercedValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Forms.Form
+    name: Form
+    nameWithType: Form
+    fullName: Octopus.Client.Model.Forms.Form
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Forms.FormExtensions.UpdateValues(Octopus.Client.Model.Forms.Form,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Octopus.Client.Model.Forms.FormExtensions.UpdateValues(Octopus.Client.Model.Forms.Form,System.Collections.Generic.IDictionary{System.String,System.String})
+  isExternal: true
+  name: UpdateValues(Form, IDictionary<String, String>)
+  nameWithType: FormExtensions.UpdateValues(Form, IDictionary<String, String>)
+  fullName: Octopus.Client.Model.Forms.FormExtensions.UpdateValues(Octopus.Client.Model.Forms.Form, System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: FormExtensions.UpdateValues(Form, IDictionary(Of String, String))
+  fullName.vb: Octopus.Client.Model.Forms.FormExtensions.UpdateValues(Octopus.Client.Model.Forms.Form, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: UpdateValues(Form, IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.UpdateValues(Octopus.Client.Model.Forms.Form,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: UpdateValues
+    nameWithType: FormExtensions.UpdateValues
+    fullName: Octopus.Client.Model.Forms.FormExtensions.UpdateValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Forms.Form
+    name: Form
+    nameWithType: Form
+    fullName: Octopus.Client.Model.Forms.Form
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.UpdateValues(Octopus.Client.Model.Forms.Form,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: UpdateValues
+    nameWithType: FormExtensions.UpdateValues
+    fullName: Octopus.Client.Model.Forms.FormExtensions.UpdateValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Forms.Form
+    name: Form
+    nameWithType: Form
+    fullName: Octopus.Client.Model.Forms.Form
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Forms.FormExtensions.Validate(Octopus.Client.Model.Forms.Form)
+  commentId: M:Octopus.Client.Model.Forms.FormExtensions.Validate(Octopus.Client.Model.Forms.Form)
+  name: Validate(Form)
+  nameWithType: FormExtensions.Validate(Form)
+  fullName: Octopus.Client.Model.Forms.FormExtensions.Validate(Octopus.Client.Model.Forms.Form)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.Validate(Octopus.Client.Model.Forms.Form)
+    name: Validate
+    nameWithType: FormExtensions.Validate
+    fullName: Octopus.Client.Model.Forms.FormExtensions.Validate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Forms.Form
+    name: Form
+    nameWithType: Form
+    fullName: Octopus.Client.Model.Forms.Form
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Forms.FormExtensions.Validate(Octopus.Client.Model.Forms.Form)
+    name: Validate
+    nameWithType: FormExtensions.Validate
+    fullName: Octopus.Client.Model.Forms.FormExtensions.Validate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Forms.Form
+    name: Form
+    nameWithType: Form
+    fullName: Octopus.Client.Model.Forms.Form
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Forms.Form.#ctor*
+  commentId: Overload:Octopus.Client.Model.Forms.Form.#ctor
+  name: Form
+  nameWithType: Form.Form
+  fullName: Octopus.Client.Model.Forms.Form.Form
+- uid: System.Collections.Generic.IEnumerable{Octopus.Client.Model.Forms.FormElement}
+  commentId: T:System.Collections.Generic.IEnumerable{Octopus.Client.Model.Forms.FormElement}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<FormElement>
+  nameWithType: IEnumerable<FormElement>
+  fullName: System.Collections.Generic.IEnumerable<Octopus.Client.Model.Forms.FormElement>
+  nameWithType.vb: IEnumerable(Of FormElement)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Octopus.Client.Model.Forms.FormElement)
+  name.vb: IEnumerable(Of FormElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Forms.FormElement
+    name: FormElement
+    nameWithType: FormElement
+    fullName: Octopus.Client.Model.Forms.FormElement
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Forms.FormElement
+    name: FormElement
+    nameWithType: FormElement
+    fullName: Octopus.Client.Model.Forms.FormElement
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, String>
+  nameWithType: IDictionary<String, String>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Forms.Form.Values*
+  commentId: Overload:Octopus.Client.Model.Forms.Form.Values
+  name: Values
+  nameWithType: Form.Values
+  fullName: Octopus.Client.Model.Forms.Form.Values
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Forms.Form.Elements*
+  commentId: Overload:Octopus.Client.Model.Forms.Form.Elements
+  name: Elements
+  nameWithType: Form.Elements
+  fullName: Octopus.Client.Model.Forms.Form.Elements
+- uid: System.Collections.Generic.List{Octopus.Client.Model.Forms.FormElement}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.Forms.FormElement}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<FormElement>
+  nameWithType: List<FormElement>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.Forms.FormElement>
+  nameWithType.vb: List(Of FormElement)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.Forms.FormElement)
+  name.vb: List(Of FormElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Forms.FormElement
+    name: FormElement
+    nameWithType: FormElement
+    fullName: Octopus.Client.Model.Forms.FormElement
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Forms.FormElement
+    name: FormElement
+    nameWithType: FormElement
+    fullName: Octopus.Client.Model.Forms.FormElement
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

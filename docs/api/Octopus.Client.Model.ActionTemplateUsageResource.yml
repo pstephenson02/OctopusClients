@@ -1,0 +1,1079 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.ActionTemplateUsageResource
+  commentId: T:Octopus.Client.Model.ActionTemplateUsageResource
+  id: ActionTemplateUsageResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.ActionTemplateUsageResource.ActionId
+  - Octopus.Client.Model.ActionTemplateUsageResource.ActionName
+  - Octopus.Client.Model.ActionTemplateUsageResource.ActionTemplateId
+  - Octopus.Client.Model.ActionTemplateUsageResource.DeploymentProcessId
+  - Octopus.Client.Model.ActionTemplateUsageResource.ProcessId
+  - Octopus.Client.Model.ActionTemplateUsageResource.ProcessType
+  - Octopus.Client.Model.ActionTemplateUsageResource.ProjectId
+  - Octopus.Client.Model.ActionTemplateUsageResource.ProjectName
+  - Octopus.Client.Model.ActionTemplateUsageResource.ProjectSlug
+  - Octopus.Client.Model.ActionTemplateUsageResource.RunbookId
+  - Octopus.Client.Model.ActionTemplateUsageResource.RunbookName
+  - Octopus.Client.Model.ActionTemplateUsageResource.StepId
+  - Octopus.Client.Model.ActionTemplateUsageResource.StepName
+  - Octopus.Client.Model.ActionTemplateUsageResource.Version
+  langs:
+  - csharp
+  - vb
+  name: ActionTemplateUsageResource
+  nameWithType: ActionTemplateUsageResource
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ActionTemplateUsageResource
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 4
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class ActionTemplateUsageResource : Resource, IResource, IAuditedResource'
+    content.vb: >-
+      Public Class ActionTemplateUsageResource
+          Inherits Resource
+          Implements IResource, IAuditedResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  inheritedMembers:
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ActionTemplateId
+  commentId: P:Octopus.Client.Model.ActionTemplateUsageResource.ActionTemplateId
+  id: ActionTemplateId
+  parent: Octopus.Client.Model.ActionTemplateUsageResource
+  langs:
+  - csharp
+  - vb
+  name: ActionTemplateId
+  nameWithType: ActionTemplateUsageResource.ActionTemplateId
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ActionTemplateId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ActionTemplateId
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ActionTemplateId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ActionTemplateId As String
+  overload: Octopus.Client.Model.ActionTemplateUsageResource.ActionTemplateId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.RunbookId
+  commentId: P:Octopus.Client.Model.ActionTemplateUsageResource.RunbookId
+  id: RunbookId
+  parent: Octopus.Client.Model.ActionTemplateUsageResource
+  langs:
+  - csharp
+  - vb
+  name: RunbookId
+  nameWithType: ActionTemplateUsageResource.RunbookId
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.RunbookId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RunbookId
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string RunbookId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RunbookId As String
+  overload: Octopus.Client.Model.ActionTemplateUsageResource.RunbookId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ProcessType
+  commentId: P:Octopus.Client.Model.ActionTemplateUsageResource.ProcessType
+  id: ProcessType
+  parent: Octopus.Client.Model.ActionTemplateUsageResource
+  langs:
+  - csharp
+  - vb
+  name: ProcessType
+  nameWithType: ActionTemplateUsageResource.ProcessType
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ProcessType
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProcessType
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProcessType ProcessType { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ProcessType
+    content.vb: Public Property ProcessType As ProcessType
+  overload: Octopus.Client.Model.ActionTemplateUsageResource.ProcessType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ProcessId
+  commentId: P:Octopus.Client.Model.ActionTemplateUsageResource.ProcessId
+  id: ProcessId
+  parent: Octopus.Client.Model.ActionTemplateUsageResource
+  langs:
+  - csharp
+  - vb
+  name: ProcessId
+  nameWithType: ActionTemplateUsageResource.ProcessId
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ProcessId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProcessId
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ProcessId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProcessId As String
+  overload: Octopus.Client.Model.ActionTemplateUsageResource.ProcessId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ActionId
+  commentId: P:Octopus.Client.Model.ActionTemplateUsageResource.ActionId
+  id: ActionId
+  parent: Octopus.Client.Model.ActionTemplateUsageResource
+  langs:
+  - csharp
+  - vb
+  name: ActionId
+  nameWithType: ActionTemplateUsageResource.ActionId
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ActionId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ActionId
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ActionId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ActionId As String
+  overload: Octopus.Client.Model.ActionTemplateUsageResource.ActionId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ActionName
+  commentId: P:Octopus.Client.Model.ActionTemplateUsageResource.ActionName
+  id: ActionName
+  parent: Octopus.Client.Model.ActionTemplateUsageResource
+  langs:
+  - csharp
+  - vb
+  name: ActionName
+  nameWithType: ActionTemplateUsageResource.ActionName
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ActionName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ActionName
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ActionName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ActionName As String
+  overload: Octopus.Client.Model.ActionTemplateUsageResource.ActionName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.RunbookName
+  commentId: P:Octopus.Client.Model.ActionTemplateUsageResource.RunbookName
+  id: RunbookName
+  parent: Octopus.Client.Model.ActionTemplateUsageResource
+  langs:
+  - csharp
+  - vb
+  name: RunbookName
+  nameWithType: ActionTemplateUsageResource.RunbookName
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.RunbookName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RunbookName
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 12
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string RunbookName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RunbookName As String
+  overload: Octopus.Client.Model.ActionTemplateUsageResource.RunbookName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.StepId
+  commentId: P:Octopus.Client.Model.ActionTemplateUsageResource.StepId
+  id: StepId
+  parent: Octopus.Client.Model.ActionTemplateUsageResource
+  langs:
+  - csharp
+  - vb
+  name: StepId
+  nameWithType: ActionTemplateUsageResource.StepId
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.StepId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: StepId
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string StepId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property StepId As String
+  overload: Octopus.Client.Model.ActionTemplateUsageResource.StepId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.StepName
+  commentId: P:Octopus.Client.Model.ActionTemplateUsageResource.StepName
+  id: StepName
+  parent: Octopus.Client.Model.ActionTemplateUsageResource
+  langs:
+  - csharp
+  - vb
+  name: StepName
+  nameWithType: ActionTemplateUsageResource.StepName
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.StepName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: StepName
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string StepName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property StepName As String
+  overload: Octopus.Client.Model.ActionTemplateUsageResource.StepName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ProjectId
+  commentId: P:Octopus.Client.Model.ActionTemplateUsageResource.ProjectId
+  id: ProjectId
+  parent: Octopus.Client.Model.ActionTemplateUsageResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectId
+  nameWithType: ActionTemplateUsageResource.ProjectId
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ProjectId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectId
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ProjectId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProjectId As String
+  overload: Octopus.Client.Model.ActionTemplateUsageResource.ProjectId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ProjectName
+  commentId: P:Octopus.Client.Model.ActionTemplateUsageResource.ProjectName
+  id: ProjectName
+  parent: Octopus.Client.Model.ActionTemplateUsageResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectName
+  nameWithType: ActionTemplateUsageResource.ProjectName
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ProjectName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectName
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 16
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ProjectName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProjectName As String
+  overload: Octopus.Client.Model.ActionTemplateUsageResource.ProjectName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ProjectSlug
+  commentId: P:Octopus.Client.Model.ActionTemplateUsageResource.ProjectSlug
+  id: ProjectSlug
+  parent: Octopus.Client.Model.ActionTemplateUsageResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectSlug
+  nameWithType: ActionTemplateUsageResource.ProjectSlug
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ProjectSlug
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectSlug
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ProjectSlug { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProjectSlug As String
+  overload: Octopus.Client.Model.ActionTemplateUsageResource.ProjectSlug*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.Version
+  commentId: P:Octopus.Client.Model.ActionTemplateUsageResource.Version
+  id: Version
+  parent: Octopus.Client.Model.ActionTemplateUsageResource
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: ActionTemplateUsageResource.Version
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.Version
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Version
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 18
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string Version { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Version As String
+  overload: Octopus.Client.Model.ActionTemplateUsageResource.Version*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.DeploymentProcessId
+  commentId: P:Octopus.Client.Model.ActionTemplateUsageResource.DeploymentProcessId
+  id: DeploymentProcessId
+  parent: Octopus.Client.Model.ActionTemplateUsageResource
+  langs:
+  - csharp
+  - vb
+  name: DeploymentProcessId
+  nameWithType: ActionTemplateUsageResource.DeploymentProcessId
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.DeploymentProcessId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DeploymentProcessId
+    path: ../source/Octopus.Client/Model/ActionTemplateUsageResource.cs
+    startLine: 20
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Obsolete("Use ProcessId with ProcessType instead")]
+
+      public string DeploymentProcessId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Obsolete("Use ProcessId with ProcessType instead")>
+
+      Public Property DeploymentProcessId As String
+  overload: Octopus.Client.Model.ActionTemplateUsageResource.DeploymentProcessId*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use ProcessId with ProcessType instead
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ActionTemplateId*
+  commentId: Overload:Octopus.Client.Model.ActionTemplateUsageResource.ActionTemplateId
+  name: ActionTemplateId
+  nameWithType: ActionTemplateUsageResource.ActionTemplateId
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ActionTemplateId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.RunbookId*
+  commentId: Overload:Octopus.Client.Model.ActionTemplateUsageResource.RunbookId
+  name: RunbookId
+  nameWithType: ActionTemplateUsageResource.RunbookId
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.RunbookId
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ProcessType*
+  commentId: Overload:Octopus.Client.Model.ActionTemplateUsageResource.ProcessType
+  name: ProcessType
+  nameWithType: ActionTemplateUsageResource.ProcessType
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ProcessType
+- uid: Octopus.Client.Model.ProcessType
+  commentId: T:Octopus.Client.Model.ProcessType
+  parent: Octopus.Client.Model
+  name: ProcessType
+  nameWithType: ProcessType
+  fullName: Octopus.Client.Model.ProcessType
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ProcessId*
+  commentId: Overload:Octopus.Client.Model.ActionTemplateUsageResource.ProcessId
+  name: ProcessId
+  nameWithType: ActionTemplateUsageResource.ProcessId
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ProcessId
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ActionId*
+  commentId: Overload:Octopus.Client.Model.ActionTemplateUsageResource.ActionId
+  name: ActionId
+  nameWithType: ActionTemplateUsageResource.ActionId
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ActionId
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ActionName*
+  commentId: Overload:Octopus.Client.Model.ActionTemplateUsageResource.ActionName
+  name: ActionName
+  nameWithType: ActionTemplateUsageResource.ActionName
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ActionName
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.RunbookName*
+  commentId: Overload:Octopus.Client.Model.ActionTemplateUsageResource.RunbookName
+  name: RunbookName
+  nameWithType: ActionTemplateUsageResource.RunbookName
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.RunbookName
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.StepId*
+  commentId: Overload:Octopus.Client.Model.ActionTemplateUsageResource.StepId
+  name: StepId
+  nameWithType: ActionTemplateUsageResource.StepId
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.StepId
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.StepName*
+  commentId: Overload:Octopus.Client.Model.ActionTemplateUsageResource.StepName
+  name: StepName
+  nameWithType: ActionTemplateUsageResource.StepName
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.StepName
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ProjectId*
+  commentId: Overload:Octopus.Client.Model.ActionTemplateUsageResource.ProjectId
+  name: ProjectId
+  nameWithType: ActionTemplateUsageResource.ProjectId
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ProjectId
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ProjectName*
+  commentId: Overload:Octopus.Client.Model.ActionTemplateUsageResource.ProjectName
+  name: ProjectName
+  nameWithType: ActionTemplateUsageResource.ProjectName
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ProjectName
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.ProjectSlug*
+  commentId: Overload:Octopus.Client.Model.ActionTemplateUsageResource.ProjectSlug
+  name: ProjectSlug
+  nameWithType: ActionTemplateUsageResource.ProjectSlug
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.ProjectSlug
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.Version*
+  commentId: Overload:Octopus.Client.Model.ActionTemplateUsageResource.Version
+  name: Version
+  nameWithType: ActionTemplateUsageResource.Version
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.Version
+- uid: Octopus.Client.Model.ActionTemplateUsageResource.DeploymentProcessId*
+  commentId: Overload:Octopus.Client.Model.ActionTemplateUsageResource.DeploymentProcessId
+  name: DeploymentProcessId
+  nameWithType: ActionTemplateUsageResource.DeploymentProcessId
+  fullName: Octopus.Client.Model.ActionTemplateUsageResource.DeploymentProcessId

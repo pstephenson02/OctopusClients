@@ -1,0 +1,565 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Editors.ProjectTriggersEditor
+  commentId: T:Octopus.Client.Editors.ProjectTriggersEditor
+  id: ProjectTriggersEditor
+  parent: Octopus.Client.Editors
+  children:
+  - Octopus.Client.Editors.ProjectTriggersEditor.#ctor(Octopus.Client.Repositories.IProjectTriggerRepository,Octopus.Client.Model.ProjectResource)
+  - Octopus.Client.Editors.ProjectTriggersEditor.CreateOrModify(System.String,Octopus.Client.Model.Triggers.TriggerFilterResource,Octopus.Client.Model.Triggers.TriggerActionResource)
+  - Octopus.Client.Editors.ProjectTriggersEditor.Delete(System.String)
+  - Octopus.Client.Editors.ProjectTriggersEditor.SaveAll
+  langs:
+  - csharp
+  - vb
+  name: ProjectTriggersEditor
+  nameWithType: ProjectTriggersEditor
+  fullName: Octopus.Client.Editors.ProjectTriggersEditor
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectTriggersEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectTriggersEditor
+    path: ../source/Octopus.Client/Editors/ProjectTriggersEditor.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public class ProjectTriggersEditor
+    content.vb: Public Class ProjectTriggersEditor
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Editors.ProjectTriggersEditor.#ctor(Octopus.Client.Repositories.IProjectTriggerRepository,Octopus.Client.Model.ProjectResource)
+  commentId: M:Octopus.Client.Editors.ProjectTriggersEditor.#ctor(Octopus.Client.Repositories.IProjectTriggerRepository,Octopus.Client.Model.ProjectResource)
+  id: '#ctor(Octopus.Client.Repositories.IProjectTriggerRepository,Octopus.Client.Model.ProjectResource)'
+  parent: Octopus.Client.Editors.ProjectTriggersEditor
+  langs:
+  - csharp
+  - vb
+  name: ProjectTriggersEditor(IProjectTriggerRepository, ProjectResource)
+  nameWithType: ProjectTriggersEditor.ProjectTriggersEditor(IProjectTriggerRepository, ProjectResource)
+  fullName: Octopus.Client.Editors.ProjectTriggersEditor.ProjectTriggersEditor(Octopus.Client.Repositories.IProjectTriggerRepository, Octopus.Client.Model.ProjectResource)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectTriggersEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Editors/ProjectTriggersEditor.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public ProjectTriggersEditor(IProjectTriggerRepository repository, ProjectResource owner)
+    parameters:
+    - id: repository
+      type: Octopus.Client.Repositories.IProjectTriggerRepository
+    - id: owner
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public Sub New(repository As IProjectTriggerRepository, owner As ProjectResource)
+  overload: Octopus.Client.Editors.ProjectTriggersEditor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.ProjectTriggersEditor.CreateOrModify(System.String,Octopus.Client.Model.Triggers.TriggerFilterResource,Octopus.Client.Model.Triggers.TriggerActionResource)
+  commentId: M:Octopus.Client.Editors.ProjectTriggersEditor.CreateOrModify(System.String,Octopus.Client.Model.Triggers.TriggerFilterResource,Octopus.Client.Model.Triggers.TriggerActionResource)
+  id: CreateOrModify(System.String,Octopus.Client.Model.Triggers.TriggerFilterResource,Octopus.Client.Model.Triggers.TriggerActionResource)
+  parent: Octopus.Client.Editors.ProjectTriggersEditor
+  langs:
+  - csharp
+  - vb
+  name: CreateOrModify(String, TriggerFilterResource, TriggerActionResource)
+  nameWithType: ProjectTriggersEditor.CreateOrModify(String, TriggerFilterResource, TriggerActionResource)
+  fullName: Octopus.Client.Editors.ProjectTriggersEditor.CreateOrModify(System.String, Octopus.Client.Model.Triggers.TriggerFilterResource, Octopus.Client.Model.Triggers.TriggerActionResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectTriggersEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CreateOrModify
+    path: ../source/Octopus.Client/Editors/ProjectTriggersEditor.cs
+    startLine: 20
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public ProjectTriggerEditor CreateOrModify(string name, TriggerFilterResource filter, TriggerActionResource action)
+    parameters:
+    - id: name
+      type: System.String
+    - id: filter
+      type: Octopus.Client.Model.Triggers.TriggerFilterResource
+    - id: action
+      type: Octopus.Client.Model.Triggers.TriggerActionResource
+    return:
+      type: Octopus.Client.Editors.ProjectTriggerEditor
+    content.vb: Public Function CreateOrModify(name As String, filter As TriggerFilterResource, action As TriggerActionResource) As ProjectTriggerEditor
+  overload: Octopus.Client.Editors.ProjectTriggersEditor.CreateOrModify*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.ProjectTriggersEditor.Delete(System.String)
+  commentId: M:Octopus.Client.Editors.ProjectTriggersEditor.Delete(System.String)
+  id: Delete(System.String)
+  parent: Octopus.Client.Editors.ProjectTriggersEditor
+  langs:
+  - csharp
+  - vb
+  name: Delete(String)
+  nameWithType: ProjectTriggersEditor.Delete(String)
+  fullName: Octopus.Client.Editors.ProjectTriggersEditor.Delete(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectTriggersEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Delete
+    path: ../source/Octopus.Client/Editors/ProjectTriggersEditor.cs
+    startLine: 27
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public ProjectTriggersEditor Delete(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Octopus.Client.Editors.ProjectTriggersEditor
+    content.vb: Public Function Delete(name As String) As ProjectTriggersEditor
+  overload: Octopus.Client.Editors.ProjectTriggersEditor.Delete*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.ProjectTriggersEditor.SaveAll
+  commentId: M:Octopus.Client.Editors.ProjectTriggersEditor.SaveAll
+  id: SaveAll
+  parent: Octopus.Client.Editors.ProjectTriggersEditor
+  langs:
+  - csharp
+  - vb
+  name: SaveAll()
+  nameWithType: ProjectTriggersEditor.SaveAll()
+  fullName: Octopus.Client.Editors.ProjectTriggersEditor.SaveAll()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectTriggersEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SaveAll
+    path: ../source/Octopus.Client/Editors/ProjectTriggersEditor.cs
+    startLine: 34
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public ProjectTriggersEditor SaveAll()
+    return:
+      type: Octopus.Client.Editors.ProjectTriggersEditor
+    content.vb: Public Function SaveAll As ProjectTriggersEditor
+  overload: Octopus.Client.Editors.ProjectTriggersEditor.SaveAll*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Editors
+  commentId: N:Octopus.Client.Editors
+  name: Octopus.Client.Editors
+  nameWithType: Octopus.Client.Editors
+  fullName: Octopus.Client.Editors
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Editors.ProjectTriggersEditor.#ctor*
+  commentId: Overload:Octopus.Client.Editors.ProjectTriggersEditor.#ctor
+  name: ProjectTriggersEditor
+  nameWithType: ProjectTriggersEditor.ProjectTriggersEditor
+  fullName: Octopus.Client.Editors.ProjectTriggersEditor.ProjectTriggersEditor
+- uid: Octopus.Client.Repositories.IProjectTriggerRepository
+  commentId: T:Octopus.Client.Repositories.IProjectTriggerRepository
+  parent: Octopus.Client.Repositories
+  name: IProjectTriggerRepository
+  nameWithType: IProjectTriggerRepository
+  fullName: Octopus.Client.Repositories.IProjectTriggerRepository
+- uid: Octopus.Client.Model.ProjectResource
+  commentId: T:Octopus.Client.Model.ProjectResource
+  parent: Octopus.Client.Model
+  name: ProjectResource
+  nameWithType: ProjectResource
+  fullName: Octopus.Client.Model.ProjectResource
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Editors.ProjectTriggersEditor.CreateOrModify*
+  commentId: Overload:Octopus.Client.Editors.ProjectTriggersEditor.CreateOrModify
+  name: CreateOrModify
+  nameWithType: ProjectTriggersEditor.CreateOrModify
+  fullName: Octopus.Client.Editors.ProjectTriggersEditor.CreateOrModify
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.Triggers.TriggerFilterResource
+  commentId: T:Octopus.Client.Model.Triggers.TriggerFilterResource
+  parent: Octopus.Client.Model.Triggers
+  name: TriggerFilterResource
+  nameWithType: TriggerFilterResource
+  fullName: Octopus.Client.Model.Triggers.TriggerFilterResource
+- uid: Octopus.Client.Model.Triggers.TriggerActionResource
+  commentId: T:Octopus.Client.Model.Triggers.TriggerActionResource
+  parent: Octopus.Client.Model.Triggers
+  name: TriggerActionResource
+  nameWithType: TriggerActionResource
+  fullName: Octopus.Client.Model.Triggers.TriggerActionResource
+- uid: Octopus.Client.Editors.ProjectTriggerEditor
+  commentId: T:Octopus.Client.Editors.ProjectTriggerEditor
+  parent: Octopus.Client.Editors
+  name: ProjectTriggerEditor
+  nameWithType: ProjectTriggerEditor
+  fullName: Octopus.Client.Editors.ProjectTriggerEditor
+- uid: Octopus.Client.Model.Triggers
+  commentId: N:Octopus.Client.Model.Triggers
+  name: Octopus.Client.Model.Triggers
+  nameWithType: Octopus.Client.Model.Triggers
+  fullName: Octopus.Client.Model.Triggers
+- uid: Octopus.Client.Editors.ProjectTriggersEditor.Delete*
+  commentId: Overload:Octopus.Client.Editors.ProjectTriggersEditor.Delete
+  name: Delete
+  nameWithType: ProjectTriggersEditor.Delete
+  fullName: Octopus.Client.Editors.ProjectTriggersEditor.Delete
+- uid: Octopus.Client.Editors.ProjectTriggersEditor
+  commentId: T:Octopus.Client.Editors.ProjectTriggersEditor
+  parent: Octopus.Client.Editors
+  name: ProjectTriggersEditor
+  nameWithType: ProjectTriggersEditor
+  fullName: Octopus.Client.Editors.ProjectTriggersEditor
+- uid: Octopus.Client.Editors.ProjectTriggersEditor.SaveAll*
+  commentId: Overload:Octopus.Client.Editors.ProjectTriggersEditor.SaveAll
+  name: SaveAll
+  nameWithType: ProjectTriggersEditor.SaveAll
+  fullName: Octopus.Client.Editors.ProjectTriggersEditor.SaveAll

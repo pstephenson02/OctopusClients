@@ -1,0 +1,1232 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.RunbookSnapshotResource
+  commentId: T:Octopus.Client.Model.RunbookSnapshotResource
+  id: RunbookSnapshotResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.RunbookSnapshotResource.#ctor
+  - Octopus.Client.Model.RunbookSnapshotResource.#ctor(System.String)
+  - Octopus.Client.Model.RunbookSnapshotResource.Assembled
+  - Octopus.Client.Model.RunbookSnapshotResource.FrozenProjectVariableSetId
+  - Octopus.Client.Model.RunbookSnapshotResource.FrozenRunbookProcessId
+  - Octopus.Client.Model.RunbookSnapshotResource.LibraryVariableSetSnapshotIds
+  - Octopus.Client.Model.RunbookSnapshotResource.Name
+  - Octopus.Client.Model.RunbookSnapshotResource.Notes
+  - Octopus.Client.Model.RunbookSnapshotResource.ProjectId
+  - Octopus.Client.Model.RunbookSnapshotResource.ProjectVariableSetSnapshotId
+  - Octopus.Client.Model.RunbookSnapshotResource.RunbookId
+  - Octopus.Client.Model.RunbookSnapshotResource.SelectedPackages
+  - Octopus.Client.Model.RunbookSnapshotResource.SpaceId
+  langs:
+  - csharp
+  - vb
+  name: RunbookSnapshotResource
+  nameWithType: RunbookSnapshotResource
+  fullName: Octopus.Client.Model.RunbookSnapshotResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/RunbookSnapshotResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RunbookSnapshotResource
+    path: ../source/Octopus.Client/Model/RunbookSnapshotResource.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class RunbookSnapshotResource : Resource, IAuditedResource, ISnapshotResource, IResource, IHaveSpaceResource'
+    content.vb: >-
+      Public Class RunbookSnapshotResource
+          Inherits Resource
+          Implements IAuditedResource, ISnapshotResource, IResource, IHaveSpaceResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  implements:
+  - Octopus.Client.Model.IAuditedResource
+  - Octopus.Client.Model.ISnapshotResource
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Extensibility.IHaveSpaceResource
+  inheritedMembers:
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.RunbookSnapshotResource.#ctor
+  commentId: M:Octopus.Client.Model.RunbookSnapshotResource.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.RunbookSnapshotResource
+  langs:
+  - csharp
+  - vb
+  name: RunbookSnapshotResource()
+  nameWithType: RunbookSnapshotResource.RunbookSnapshotResource()
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.RunbookSnapshotResource()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/RunbookSnapshotResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/RunbookSnapshotResource.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonConstructor]
+
+      public RunbookSnapshotResource()
+    content.vb: >-
+      <JsonConstructor>
+
+      Public Sub New
+  overload: Octopus.Client.Model.RunbookSnapshotResource.#ctor*
+  attributes:
+  - type: Newtonsoft.Json.JsonConstructorAttribute
+    ctor: Newtonsoft.Json.JsonConstructorAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.RunbookSnapshotResource.#ctor(System.String)
+  commentId: M:Octopus.Client.Model.RunbookSnapshotResource.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Octopus.Client.Model.RunbookSnapshotResource
+  langs:
+  - csharp
+  - vb
+  name: RunbookSnapshotResource(String)
+  nameWithType: RunbookSnapshotResource.RunbookSnapshotResource(String)
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.RunbookSnapshotResource(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/RunbookSnapshotResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/RunbookSnapshotResource.cs
+    startLine: 16
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public RunbookSnapshotResource(string projectId)
+    parameters:
+    - id: projectId
+      type: System.String
+    content.vb: Public Sub New(projectId As String)
+  overload: Octopus.Client.Model.RunbookSnapshotResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.RunbookSnapshotResource.Name
+  commentId: P:Octopus.Client.Model.RunbookSnapshotResource.Name
+  id: Name
+  parent: Octopus.Client.Model.RunbookSnapshotResource
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: RunbookSnapshotResource.Name
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.Name
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/RunbookSnapshotResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Name
+    path: ../source/Octopus.Client/Model/RunbookSnapshotResource.cs
+    startLine: 21
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Octopus.Client.Model.RunbookSnapshotResource.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.RunbookSnapshotResource.RunbookId
+  commentId: P:Octopus.Client.Model.RunbookSnapshotResource.RunbookId
+  id: RunbookId
+  parent: Octopus.Client.Model.RunbookSnapshotResource
+  langs:
+  - csharp
+  - vb
+  name: RunbookId
+  nameWithType: RunbookSnapshotResource.RunbookId
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.RunbookId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/RunbookSnapshotResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RunbookId
+    path: ../source/Octopus.Client/Model/RunbookSnapshotResource.cs
+    startLine: 24
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string RunbookId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RunbookId As String
+  overload: Octopus.Client.Model.RunbookSnapshotResource.RunbookId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.RunbookSnapshotResource.Notes
+  commentId: P:Octopus.Client.Model.RunbookSnapshotResource.Notes
+  id: Notes
+  parent: Octopus.Client.Model.RunbookSnapshotResource
+  langs:
+  - csharp
+  - vb
+  name: Notes
+  nameWithType: RunbookSnapshotResource.Notes
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.Notes
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/RunbookSnapshotResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Notes
+    path: ../source/Octopus.Client/Model/RunbookSnapshotResource.cs
+    startLine: 27
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string Notes { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Notes As String
+  overload: Octopus.Client.Model.RunbookSnapshotResource.Notes*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.RunbookSnapshotResource.FrozenRunbookProcessId
+  commentId: P:Octopus.Client.Model.RunbookSnapshotResource.FrozenRunbookProcessId
+  id: FrozenRunbookProcessId
+  parent: Octopus.Client.Model.RunbookSnapshotResource
+  langs:
+  - csharp
+  - vb
+  name: FrozenRunbookProcessId
+  nameWithType: RunbookSnapshotResource.FrozenRunbookProcessId
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.FrozenRunbookProcessId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/RunbookSnapshotResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: FrozenRunbookProcessId
+    path: ../source/Octopus.Client/Model/RunbookSnapshotResource.cs
+    startLine: 30
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string FrozenRunbookProcessId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FrozenRunbookProcessId As String
+  overload: Octopus.Client.Model.RunbookSnapshotResource.FrozenRunbookProcessId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.RunbookSnapshotResource.FrozenProjectVariableSetId
+  commentId: P:Octopus.Client.Model.RunbookSnapshotResource.FrozenProjectVariableSetId
+  id: FrozenProjectVariableSetId
+  parent: Octopus.Client.Model.RunbookSnapshotResource
+  langs:
+  - csharp
+  - vb
+  name: FrozenProjectVariableSetId
+  nameWithType: RunbookSnapshotResource.FrozenProjectVariableSetId
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.FrozenProjectVariableSetId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/RunbookSnapshotResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: FrozenProjectVariableSetId
+    path: ../source/Octopus.Client/Model/RunbookSnapshotResource.cs
+    startLine: 32
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string FrozenProjectVariableSetId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FrozenProjectVariableSetId As String
+  overload: Octopus.Client.Model.RunbookSnapshotResource.FrozenProjectVariableSetId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.RunbookSnapshotResource.Assembled
+  commentId: P:Octopus.Client.Model.RunbookSnapshotResource.Assembled
+  id: Assembled
+  parent: Octopus.Client.Model.RunbookSnapshotResource
+  langs:
+  - csharp
+  - vb
+  name: Assembled
+  nameWithType: RunbookSnapshotResource.Assembled
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.Assembled
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/RunbookSnapshotResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Assembled
+    path: ../source/Octopus.Client/Model/RunbookSnapshotResource.cs
+    startLine: 34
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public DateTimeOffset Assembled { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property Assembled As DateTimeOffset
+  overload: Octopus.Client.Model.RunbookSnapshotResource.Assembled*
+  implements:
+  - Octopus.Client.Model.ISnapshotResource.Assembled
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.RunbookSnapshotResource.ProjectId
+  commentId: P:Octopus.Client.Model.RunbookSnapshotResource.ProjectId
+  id: ProjectId
+  parent: Octopus.Client.Model.RunbookSnapshotResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectId
+  nameWithType: RunbookSnapshotResource.ProjectId
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.ProjectId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/RunbookSnapshotResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectId
+    path: ../source/Octopus.Client/Model/RunbookSnapshotResource.cs
+    startLine: 36
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ProjectId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProjectId As String
+  overload: Octopus.Client.Model.RunbookSnapshotResource.ProjectId*
+  implements:
+  - Octopus.Client.Model.ISnapshotResource.ProjectId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.RunbookSnapshotResource.LibraryVariableSetSnapshotIds
+  commentId: P:Octopus.Client.Model.RunbookSnapshotResource.LibraryVariableSetSnapshotIds
+  id: LibraryVariableSetSnapshotIds
+  parent: Octopus.Client.Model.RunbookSnapshotResource
+  langs:
+  - csharp
+  - vb
+  name: LibraryVariableSetSnapshotIds
+  nameWithType: RunbookSnapshotResource.LibraryVariableSetSnapshotIds
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.LibraryVariableSetSnapshotIds
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/RunbookSnapshotResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: LibraryVariableSetSnapshotIds
+    path: ../source/Octopus.Client/Model/RunbookSnapshotResource.cs
+    startLine: 43
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nSnapshots of the project&apos;s included library variable sets. The\nsnapshots are <xref href=\"Octopus.Client.Model.VariableSetResource\" data-throw-if-not-resolved=\"false\"></xref>s, not <xref href=\"Octopus.Client.Model.LibraryVariableSetResource\" data-throw-if-not-resolved=\"false\"></xref>s.\n"
+  example: []
+  syntax:
+    content: public List<string> LibraryVariableSetSnapshotIds { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Property LibraryVariableSetSnapshotIds As List(Of String)
+  overload: Octopus.Client.Model.RunbookSnapshotResource.LibraryVariableSetSnapshotIds*
+  implements:
+  - Octopus.Client.Model.ISnapshotResource.LibraryVariableSetSnapshotIds
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.RunbookSnapshotResource.SelectedPackages
+  commentId: P:Octopus.Client.Model.RunbookSnapshotResource.SelectedPackages
+  id: SelectedPackages
+  parent: Octopus.Client.Model.RunbookSnapshotResource
+  langs:
+  - csharp
+  - vb
+  name: SelectedPackages
+  nameWithType: RunbookSnapshotResource.SelectedPackages
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.SelectedPackages
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/RunbookSnapshotResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SelectedPackages
+    path: ../source/Octopus.Client/Model/RunbookSnapshotResource.cs
+    startLine: 45
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<SelectedPackage> SelectedPackages { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.SelectedPackage}
+    content.vb: Public Property SelectedPackages As List(Of SelectedPackage)
+  overload: Octopus.Client.Model.RunbookSnapshotResource.SelectedPackages*
+  implements:
+  - Octopus.Client.Model.ISnapshotResource.SelectedPackages
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.RunbookSnapshotResource.ProjectVariableSetSnapshotId
+  commentId: P:Octopus.Client.Model.RunbookSnapshotResource.ProjectVariableSetSnapshotId
+  id: ProjectVariableSetSnapshotId
+  parent: Octopus.Client.Model.RunbookSnapshotResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectVariableSetSnapshotId
+  nameWithType: RunbookSnapshotResource.ProjectVariableSetSnapshotId
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.ProjectVariableSetSnapshotId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/RunbookSnapshotResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectVariableSetSnapshotId
+    path: ../source/Octopus.Client/Model/RunbookSnapshotResource.cs
+    startLine: 47
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ProjectVariableSetSnapshotId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProjectVariableSetSnapshotId As String
+  overload: Octopus.Client.Model.RunbookSnapshotResource.ProjectVariableSetSnapshotId*
+  implements:
+  - Octopus.Client.Model.ISnapshotResource.ProjectVariableSetSnapshotId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.RunbookSnapshotResource.SpaceId
+  commentId: P:Octopus.Client.Model.RunbookSnapshotResource.SpaceId
+  id: SpaceId
+  parent: Octopus.Client.Model.RunbookSnapshotResource
+  langs:
+  - csharp
+  - vb
+  name: SpaceId
+  nameWithType: RunbookSnapshotResource.SpaceId
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.SpaceId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/RunbookSnapshotResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SpaceId
+    path: ../source/Octopus.Client/Model/RunbookSnapshotResource.cs
+    startLine: 49
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string SpaceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SpaceId As String
+  overload: Octopus.Client.Model.RunbookSnapshotResource.SpaceId*
+  implements:
+  - Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Model.ISnapshotResource
+  commentId: T:Octopus.Client.Model.ISnapshotResource
+  parent: Octopus.Client.Model
+  name: ISnapshotResource
+  nameWithType: ISnapshotResource
+  fullName: Octopus.Client.Model.ISnapshotResource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource
+  commentId: T:Octopus.Client.Extensibility.IHaveSpaceResource
+  parent: Octopus.Client.Extensibility
+  name: IHaveSpaceResource
+  nameWithType: IHaveSpaceResource
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.RunbookSnapshotResource.#ctor*
+  commentId: Overload:Octopus.Client.Model.RunbookSnapshotResource.#ctor
+  name: RunbookSnapshotResource
+  nameWithType: RunbookSnapshotResource.RunbookSnapshotResource
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.RunbookSnapshotResource
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.RunbookSnapshotResource.Name*
+  commentId: Overload:Octopus.Client.Model.RunbookSnapshotResource.Name
+  name: Name
+  nameWithType: RunbookSnapshotResource.Name
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.Name
+- uid: Octopus.Client.Model.RunbookSnapshotResource.RunbookId*
+  commentId: Overload:Octopus.Client.Model.RunbookSnapshotResource.RunbookId
+  name: RunbookId
+  nameWithType: RunbookSnapshotResource.RunbookId
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.RunbookId
+- uid: Octopus.Client.Model.RunbookSnapshotResource.Notes*
+  commentId: Overload:Octopus.Client.Model.RunbookSnapshotResource.Notes
+  name: Notes
+  nameWithType: RunbookSnapshotResource.Notes
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.Notes
+- uid: Octopus.Client.Model.RunbookSnapshotResource.FrozenRunbookProcessId*
+  commentId: Overload:Octopus.Client.Model.RunbookSnapshotResource.FrozenRunbookProcessId
+  name: FrozenRunbookProcessId
+  nameWithType: RunbookSnapshotResource.FrozenRunbookProcessId
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.FrozenRunbookProcessId
+- uid: Octopus.Client.Model.RunbookSnapshotResource.FrozenProjectVariableSetId*
+  commentId: Overload:Octopus.Client.Model.RunbookSnapshotResource.FrozenProjectVariableSetId
+  name: FrozenProjectVariableSetId
+  nameWithType: RunbookSnapshotResource.FrozenProjectVariableSetId
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.FrozenProjectVariableSetId
+- uid: Octopus.Client.Model.RunbookSnapshotResource.Assembled*
+  commentId: Overload:Octopus.Client.Model.RunbookSnapshotResource.Assembled
+  name: Assembled
+  nameWithType: RunbookSnapshotResource.Assembled
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.Assembled
+- uid: Octopus.Client.Model.ISnapshotResource.Assembled
+  commentId: P:Octopus.Client.Model.ISnapshotResource.Assembled
+  parent: Octopus.Client.Model.ISnapshotResource
+  name: Assembled
+  nameWithType: ISnapshotResource.Assembled
+  fullName: Octopus.Client.Model.ISnapshotResource.Assembled
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Octopus.Client.Model.RunbookSnapshotResource.ProjectId*
+  commentId: Overload:Octopus.Client.Model.RunbookSnapshotResource.ProjectId
+  name: ProjectId
+  nameWithType: RunbookSnapshotResource.ProjectId
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.ProjectId
+- uid: Octopus.Client.Model.ISnapshotResource.ProjectId
+  commentId: P:Octopus.Client.Model.ISnapshotResource.ProjectId
+  parent: Octopus.Client.Model.ISnapshotResource
+  name: ProjectId
+  nameWithType: ISnapshotResource.ProjectId
+  fullName: Octopus.Client.Model.ISnapshotResource.ProjectId
+- uid: Octopus.Client.Model.VariableSetResource
+  commentId: T:Octopus.Client.Model.VariableSetResource
+  parent: Octopus.Client.Model
+  name: VariableSetResource
+  nameWithType: VariableSetResource
+  fullName: Octopus.Client.Model.VariableSetResource
+- uid: Octopus.Client.Model.LibraryVariableSetResource
+  commentId: T:Octopus.Client.Model.LibraryVariableSetResource
+  parent: Octopus.Client.Model
+  name: LibraryVariableSetResource
+  nameWithType: LibraryVariableSetResource
+  fullName: Octopus.Client.Model.LibraryVariableSetResource
+- uid: Octopus.Client.Model.RunbookSnapshotResource.LibraryVariableSetSnapshotIds*
+  commentId: Overload:Octopus.Client.Model.RunbookSnapshotResource.LibraryVariableSetSnapshotIds
+  name: LibraryVariableSetSnapshotIds
+  nameWithType: RunbookSnapshotResource.LibraryVariableSetSnapshotIds
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.LibraryVariableSetSnapshotIds
+- uid: Octopus.Client.Model.ISnapshotResource.LibraryVariableSetSnapshotIds
+  commentId: P:Octopus.Client.Model.ISnapshotResource.LibraryVariableSetSnapshotIds
+  parent: Octopus.Client.Model.ISnapshotResource
+  name: LibraryVariableSetSnapshotIds
+  nameWithType: ISnapshotResource.LibraryVariableSetSnapshotIds
+  fullName: Octopus.Client.Model.ISnapshotResource.LibraryVariableSetSnapshotIds
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.RunbookSnapshotResource.SelectedPackages*
+  commentId: Overload:Octopus.Client.Model.RunbookSnapshotResource.SelectedPackages
+  name: SelectedPackages
+  nameWithType: RunbookSnapshotResource.SelectedPackages
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.SelectedPackages
+- uid: Octopus.Client.Model.ISnapshotResource.SelectedPackages
+  commentId: P:Octopus.Client.Model.ISnapshotResource.SelectedPackages
+  parent: Octopus.Client.Model.ISnapshotResource
+  name: SelectedPackages
+  nameWithType: ISnapshotResource.SelectedPackages
+  fullName: Octopus.Client.Model.ISnapshotResource.SelectedPackages
+- uid: System.Collections.Generic.List{Octopus.Client.Model.SelectedPackage}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.SelectedPackage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<SelectedPackage>
+  nameWithType: List<SelectedPackage>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.SelectedPackage>
+  nameWithType.vb: List(Of SelectedPackage)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.SelectedPackage)
+  name.vb: List(Of SelectedPackage)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.SelectedPackage
+    name: SelectedPackage
+    nameWithType: SelectedPackage
+    fullName: Octopus.Client.Model.SelectedPackage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.SelectedPackage
+    name: SelectedPackage
+    nameWithType: SelectedPackage
+    fullName: Octopus.Client.Model.SelectedPackage
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.RunbookSnapshotResource.ProjectVariableSetSnapshotId*
+  commentId: Overload:Octopus.Client.Model.RunbookSnapshotResource.ProjectVariableSetSnapshotId
+  name: ProjectVariableSetSnapshotId
+  nameWithType: RunbookSnapshotResource.ProjectVariableSetSnapshotId
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.ProjectVariableSetSnapshotId
+- uid: Octopus.Client.Model.ISnapshotResource.ProjectVariableSetSnapshotId
+  commentId: P:Octopus.Client.Model.ISnapshotResource.ProjectVariableSetSnapshotId
+  parent: Octopus.Client.Model.ISnapshotResource
+  name: ProjectVariableSetSnapshotId
+  nameWithType: ISnapshotResource.ProjectVariableSetSnapshotId
+  fullName: Octopus.Client.Model.ISnapshotResource.ProjectVariableSetSnapshotId
+- uid: Octopus.Client.Model.RunbookSnapshotResource.SpaceId*
+  commentId: Overload:Octopus.Client.Model.RunbookSnapshotResource.SpaceId
+  name: SpaceId
+  nameWithType: RunbookSnapshotResource.SpaceId
+  fullName: Octopus.Client.Model.RunbookSnapshotResource.SpaceId
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  commentId: P:Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  parent: Octopus.Client.Extensibility.IHaveSpaceResource
+  name: SpaceId
+  nameWithType: IHaveSpaceResource.SpaceId
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId

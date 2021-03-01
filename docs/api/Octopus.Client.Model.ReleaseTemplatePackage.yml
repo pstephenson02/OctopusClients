@@ -1,0 +1,863 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.ReleaseTemplatePackage
+  commentId: T:Octopus.Client.Model.ReleaseTemplatePackage
+  id: ReleaseTemplatePackage
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.ReleaseTemplatePackage.ActionName
+  - Octopus.Client.Model.ReleaseTemplatePackage.FeedId
+  - Octopus.Client.Model.ReleaseTemplatePackage.FeedName
+  - Octopus.Client.Model.ReleaseTemplatePackage.IsResolvable
+  - Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedId
+  - Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedName
+  - Octopus.Client.Model.ReleaseTemplatePackage.NuGetPackageId
+  - Octopus.Client.Model.ReleaseTemplatePackage.PackageId
+  - Octopus.Client.Model.ReleaseTemplatePackage.PackageReferenceName
+  - Octopus.Client.Model.ReleaseTemplatePackage.StepName
+  - Octopus.Client.Model.ReleaseTemplatePackage.VersionSelectedLastRelease
+  langs:
+  - csharp
+  - vb
+  name: ReleaseTemplatePackage
+  nameWithType: ReleaseTemplatePackage
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ReleaseTemplatePackage
+    path: ../source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+    startLine: 4
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public class ReleaseTemplatePackage
+    content.vb: Public Class ReleaseTemplatePackage
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.StepName
+  commentId: P:Octopus.Client.Model.ReleaseTemplatePackage.StepName
+  id: StepName
+  parent: Octopus.Client.Model.ReleaseTemplatePackage
+  langs:
+  - csharp
+  - vb
+  name: StepName
+  nameWithType: ReleaseTemplatePackage.StepName
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.StepName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: StepName
+    path: ../source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Obsolete("Replaced by ActionName")]
+
+      public string StepName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Obsolete("Replaced by ActionName")>
+
+      Public Property StepName As String
+  overload: Octopus.Client.Model.ReleaseTemplatePackage.StepName*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Replaced by ActionName
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.ActionName
+  commentId: P:Octopus.Client.Model.ReleaseTemplatePackage.ActionName
+  id: ActionName
+  parent: Octopus.Client.Model.ReleaseTemplatePackage
+  langs:
+  - csharp
+  - vb
+  name: ActionName
+  nameWithType: ReleaseTemplatePackage.ActionName
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.ActionName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ActionName
+    path: ../source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ActionName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ActionName As String
+  overload: Octopus.Client.Model.ReleaseTemplatePackage.ActionName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.NuGetPackageId
+  commentId: P:Octopus.Client.Model.ReleaseTemplatePackage.NuGetPackageId
+  id: NuGetPackageId
+  parent: Octopus.Client.Model.ReleaseTemplatePackage
+  langs:
+  - csharp
+  - vb
+  name: NuGetPackageId
+  nameWithType: ReleaseTemplatePackage.NuGetPackageId
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.NuGetPackageId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: NuGetPackageId
+    path: ../source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Obsolete("Replaced by PackageId")]
+
+      public string NuGetPackageId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Obsolete("Replaced by PackageId")>
+
+      Public Property NuGetPackageId As String
+  overload: Octopus.Client.Model.ReleaseTemplatePackage.NuGetPackageId*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Replaced by PackageId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.PackageId
+  commentId: P:Octopus.Client.Model.ReleaseTemplatePackage.PackageId
+  id: PackageId
+  parent: Octopus.Client.Model.ReleaseTemplatePackage
+  langs:
+  - csharp
+  - vb
+  name: PackageId
+  nameWithType: ReleaseTemplatePackage.PackageId
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.PackageId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: PackageId
+    path: ../source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+    startLine: 22
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string PackageId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PackageId As String
+  overload: Octopus.Client.Model.ReleaseTemplatePackage.PackageId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.PackageReferenceName
+  commentId: P:Octopus.Client.Model.ReleaseTemplatePackage.PackageReferenceName
+  id: PackageReferenceName
+  parent: Octopus.Client.Model.ReleaseTemplatePackage
+  langs:
+  - csharp
+  - vb
+  name: PackageReferenceName
+  nameWithType: ReleaseTemplatePackage.PackageReferenceName
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.PackageReferenceName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: PackageReferenceName
+    path: ../source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+    startLine: 25
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string PackageReferenceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PackageReferenceName As String
+  overload: Octopus.Client.Model.ReleaseTemplatePackage.PackageReferenceName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedId
+  commentId: P:Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedId
+  id: NuGetFeedId
+  parent: Octopus.Client.Model.ReleaseTemplatePackage
+  langs:
+  - csharp
+  - vb
+  name: NuGetFeedId
+  nameWithType: ReleaseTemplatePackage.NuGetFeedId
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: NuGetFeedId
+    path: ../source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+    startLine: 27
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Obsolete("Replaced by FeedId")]
+
+      public string NuGetFeedId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Obsolete("Replaced by FeedId")>
+
+      Public Property NuGetFeedId As String
+  overload: Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedId*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Replaced by FeedId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.FeedId
+  commentId: P:Octopus.Client.Model.ReleaseTemplatePackage.FeedId
+  id: FeedId
+  parent: Octopus.Client.Model.ReleaseTemplatePackage
+  langs:
+  - csharp
+  - vb
+  name: FeedId
+  nameWithType: ReleaseTemplatePackage.FeedId
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.FeedId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: FeedId
+    path: ../source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+    startLine: 34
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string FeedId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FeedId As String
+  overload: Octopus.Client.Model.ReleaseTemplatePackage.FeedId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedName
+  commentId: P:Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedName
+  id: NuGetFeedName
+  parent: Octopus.Client.Model.ReleaseTemplatePackage
+  langs:
+  - csharp
+  - vb
+  name: NuGetFeedName
+  nameWithType: ReleaseTemplatePackage.NuGetFeedName
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: NuGetFeedName
+    path: ../source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+    startLine: 36
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Obsolete("Replaced by FeedName")]
+
+      public string NuGetFeedName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Obsolete("Replaced by FeedName")>
+
+      Public Property NuGetFeedName As String
+  overload: Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedName*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Replaced by FeedName
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.FeedName
+  commentId: P:Octopus.Client.Model.ReleaseTemplatePackage.FeedName
+  id: FeedName
+  parent: Octopus.Client.Model.ReleaseTemplatePackage
+  langs:
+  - csharp
+  - vb
+  name: FeedName
+  nameWithType: ReleaseTemplatePackage.FeedName
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.FeedName
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: FeedName
+    path: ../source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+    startLine: 43
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string FeedName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FeedName As String
+  overload: Octopus.Client.Model.ReleaseTemplatePackage.FeedName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.VersionSelectedLastRelease
+  commentId: P:Octopus.Client.Model.ReleaseTemplatePackage.VersionSelectedLastRelease
+  id: VersionSelectedLastRelease
+  parent: Octopus.Client.Model.ReleaseTemplatePackage
+  langs:
+  - csharp
+  - vb
+  name: VersionSelectedLastRelease
+  nameWithType: ReleaseTemplatePackage.VersionSelectedLastRelease
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.VersionSelectedLastRelease
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: VersionSelectedLastRelease
+    path: ../source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+    startLine: 45
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string VersionSelectedLastRelease { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property VersionSelectedLastRelease As String
+  overload: Octopus.Client.Model.ReleaseTemplatePackage.VersionSelectedLastRelease*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.IsResolvable
+  commentId: P:Octopus.Client.Model.ReleaseTemplatePackage.IsResolvable
+  id: IsResolvable
+  parent: Octopus.Client.Model.ReleaseTemplatePackage
+  langs:
+  - csharp
+  - vb
+  name: IsResolvable
+  nameWithType: ReleaseTemplatePackage.IsResolvable
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.IsResolvable
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsResolvable
+    path: ../source/Octopus.Client/Model/ReleaseTemplatePackage.cs
+    startLine: 53
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets a value indicating whether the <xref href=\"Octopus.Client.Model.ReleaseTemplatePackage.PackageId\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Octopus.Client.Model.ReleaseTemplatePackage.FeedId\" data-throw-if-not-resolved=\"false\"></xref> contain no\nreferences to other variables. Variables can be used to\nselect different NuGet feeds or packages at deployment time, however, this means that it&apos;s not possible to resolve\nwhich feed/package to search when creating a release.\n"
+  example: []
+  syntax:
+    content: public bool IsResolvable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsResolvable As Boolean
+  overload: Octopus.Client.Model.ReleaseTemplatePackage.IsResolvable*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.StepName*
+  commentId: Overload:Octopus.Client.Model.ReleaseTemplatePackage.StepName
+  name: StepName
+  nameWithType: ReleaseTemplatePackage.StepName
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.StepName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.ActionName*
+  commentId: Overload:Octopus.Client.Model.ReleaseTemplatePackage.ActionName
+  name: ActionName
+  nameWithType: ReleaseTemplatePackage.ActionName
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.ActionName
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.NuGetPackageId*
+  commentId: Overload:Octopus.Client.Model.ReleaseTemplatePackage.NuGetPackageId
+  name: NuGetPackageId
+  nameWithType: ReleaseTemplatePackage.NuGetPackageId
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.NuGetPackageId
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.PackageId*
+  commentId: Overload:Octopus.Client.Model.ReleaseTemplatePackage.PackageId
+  name: PackageId
+  nameWithType: ReleaseTemplatePackage.PackageId
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.PackageId
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.PackageReferenceName*
+  commentId: Overload:Octopus.Client.Model.ReleaseTemplatePackage.PackageReferenceName
+  name: PackageReferenceName
+  nameWithType: ReleaseTemplatePackage.PackageReferenceName
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.PackageReferenceName
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedId*
+  commentId: Overload:Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedId
+  name: NuGetFeedId
+  nameWithType: ReleaseTemplatePackage.NuGetFeedId
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedId
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.FeedId*
+  commentId: Overload:Octopus.Client.Model.ReleaseTemplatePackage.FeedId
+  name: FeedId
+  nameWithType: ReleaseTemplatePackage.FeedId
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.FeedId
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedName*
+  commentId: Overload:Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedName
+  name: NuGetFeedName
+  nameWithType: ReleaseTemplatePackage.NuGetFeedName
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.NuGetFeedName
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.FeedName*
+  commentId: Overload:Octopus.Client.Model.ReleaseTemplatePackage.FeedName
+  name: FeedName
+  nameWithType: ReleaseTemplatePackage.FeedName
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.FeedName
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.VersionSelectedLastRelease*
+  commentId: Overload:Octopus.Client.Model.ReleaseTemplatePackage.VersionSelectedLastRelease
+  name: VersionSelectedLastRelease
+  nameWithType: ReleaseTemplatePackage.VersionSelectedLastRelease
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.VersionSelectedLastRelease
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.PackageId
+  commentId: P:Octopus.Client.Model.ReleaseTemplatePackage.PackageId
+  isExternal: true
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.FeedId
+  commentId: P:Octopus.Client.Model.ReleaseTemplatePackage.FeedId
+  isExternal: true
+- uid: Octopus.Client.Model.ReleaseTemplatePackage.IsResolvable*
+  commentId: Overload:Octopus.Client.Model.ReleaseTemplatePackage.IsResolvable
+  name: IsResolvable
+  nameWithType: ReleaseTemplatePackage.IsResolvable
+  fullName: Octopus.Client.Model.ReleaseTemplatePackage.IsResolvable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

@@ -1,0 +1,1011 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.IScopedUserRoleRepository
+  commentId: T:Octopus.Client.Repositories.Async.IScopedUserRoleRepository
+  id: IScopedUserRoleRepository
+  parent: Octopus.Client.Repositories.Async
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IScopedUserRoleRepository
+  nameWithType: IScopedUserRoleRepository
+  fullName: Octopus.Client.Repositories.Async.IScopedUserRoleRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/ScopedUserRoleRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IScopedUserRoleRepository
+    path: ../source/Octopus.Client/Repositories/Async/ScopedUserRoleRepository.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: 'public interface IScopedUserRoleRepository : ICreate<ScopedUserRoleResource>, IModify<ScopedUserRoleResource>, IDelete<ScopedUserRoleResource>, IGet<ScopedUserRoleResource>, ICanExtendSpaceContext<IScopedUserRoleRepository>'
+    content.vb: >-
+      Public Interface IScopedUserRoleRepository
+          Inherits ICreate(Of ScopedUserRoleResource), IModify(Of ScopedUserRoleResource), IDelete(Of ScopedUserRoleResource), IGet(Of ScopedUserRoleResource), ICanExtendSpaceContext(Of IScopedUserRoleRepository)
+  inheritedMembers:
+  - Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.ScopedUserRoleResource}.Create(Octopus.Client.Model.ScopedUserRoleResource,System.Object)
+  - Octopus.Client.Repositories.Async.IModify{Octopus.Client.Model.ScopedUserRoleResource}.Modify(Octopus.Client.Model.ScopedUserRoleResource)
+  - Octopus.Client.Repositories.Async.IDelete{Octopus.Client.Model.ScopedUserRoleResource}.Delete(Octopus.Client.Model.ScopedUserRoleResource)
+  - Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ScopedUserRoleResource}.Get(System.String)
+  - Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ScopedUserRoleResource}.Get(System.String[])
+  - Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ScopedUserRoleResource}.Refresh(Octopus.Client.Model.ScopedUserRoleResource)
+  - Octopus.Client.Repositories.Async.ICanExtendSpaceContext{Octopus.Client.Repositories.Async.IScopedUserRoleRepository}.UsingContext(Octopus.Client.SpaceContext)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.ScopedUserRoleResource}.Create(Octopus.Client.Model.ScopedUserRoleResource,System.Object)
+  commentId: M:Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.ScopedUserRoleResource}.Create(Octopus.Client.Model.ScopedUserRoleResource,System.Object)
+  parent: Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.ScopedUserRoleResource}
+  definition: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+  name: Create(ScopedUserRoleResource, Object)
+  nameWithType: ICreate<ScopedUserRoleResource>.Create(ScopedUserRoleResource, Object)
+  fullName: Octopus.Client.Repositories.Async.ICreate<Octopus.Client.Model.ScopedUserRoleResource>.Create(Octopus.Client.Model.ScopedUserRoleResource, System.Object)
+  nameWithType.vb: ICreate(Of ScopedUserRoleResource).Create(ScopedUserRoleResource, Object)
+  fullName.vb: Octopus.Client.Repositories.Async.ICreate(Of Octopus.Client.Model.ScopedUserRoleResource).Create(Octopus.Client.Model.ScopedUserRoleResource, System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate<ScopedUserRoleResource>.Create
+    fullName: Octopus.Client.Repositories.Async.ICreate<Octopus.Client.Model.ScopedUserRoleResource>.Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate(Of ScopedUserRoleResource).Create
+    fullName: Octopus.Client.Repositories.Async.ICreate(Of Octopus.Client.Model.ScopedUserRoleResource).Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IModify{Octopus.Client.Model.ScopedUserRoleResource}.Modify(Octopus.Client.Model.ScopedUserRoleResource)
+  commentId: M:Octopus.Client.Repositories.Async.IModify{Octopus.Client.Model.ScopedUserRoleResource}.Modify(Octopus.Client.Model.ScopedUserRoleResource)
+  parent: Octopus.Client.Repositories.Async.IModify{Octopus.Client.Model.ScopedUserRoleResource}
+  definition: Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+  name: Modify(ScopedUserRoleResource)
+  nameWithType: IModify<ScopedUserRoleResource>.Modify(ScopedUserRoleResource)
+  fullName: Octopus.Client.Repositories.Async.IModify<Octopus.Client.Model.ScopedUserRoleResource>.Modify(Octopus.Client.Model.ScopedUserRoleResource)
+  nameWithType.vb: IModify(Of ScopedUserRoleResource).Modify(ScopedUserRoleResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IModify(Of Octopus.Client.Model.ScopedUserRoleResource).Modify(Octopus.Client.Model.ScopedUserRoleResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify<ScopedUserRoleResource>.Modify
+    fullName: Octopus.Client.Repositories.Async.IModify<Octopus.Client.Model.ScopedUserRoleResource>.Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify(Of ScopedUserRoleResource).Modify
+    fullName: Octopus.Client.Repositories.Async.IModify(Of Octopus.Client.Model.ScopedUserRoleResource).Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IDelete{Octopus.Client.Model.ScopedUserRoleResource}.Delete(Octopus.Client.Model.ScopedUserRoleResource)
+  commentId: M:Octopus.Client.Repositories.Async.IDelete{Octopus.Client.Model.ScopedUserRoleResource}.Delete(Octopus.Client.Model.ScopedUserRoleResource)
+  parent: Octopus.Client.Repositories.Async.IDelete{Octopus.Client.Model.ScopedUserRoleResource}
+  definition: Octopus.Client.Repositories.Async.IDelete`1.Delete(`0)
+  name: Delete(ScopedUserRoleResource)
+  nameWithType: IDelete<ScopedUserRoleResource>.Delete(ScopedUserRoleResource)
+  fullName: Octopus.Client.Repositories.Async.IDelete<Octopus.Client.Model.ScopedUserRoleResource>.Delete(Octopus.Client.Model.ScopedUserRoleResource)
+  nameWithType.vb: IDelete(Of ScopedUserRoleResource).Delete(ScopedUserRoleResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IDelete(Of Octopus.Client.Model.ScopedUserRoleResource).Delete(Octopus.Client.Model.ScopedUserRoleResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1.Delete(`0)
+    name: Delete
+    nameWithType: IDelete<ScopedUserRoleResource>.Delete
+    fullName: Octopus.Client.Repositories.Async.IDelete<Octopus.Client.Model.ScopedUserRoleResource>.Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1.Delete(`0)
+    name: Delete
+    nameWithType: IDelete(Of ScopedUserRoleResource).Delete
+    fullName: Octopus.Client.Repositories.Async.IDelete(Of Octopus.Client.Model.ScopedUserRoleResource).Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ScopedUserRoleResource}.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ScopedUserRoleResource}.Get(System.String)
+  parent: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ScopedUserRoleResource}
+  definition: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+  name: Get(String)
+  nameWithType: IGet<ScopedUserRoleResource>.Get(String)
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.ScopedUserRoleResource>.Get(System.String)
+  nameWithType.vb: IGet(Of ScopedUserRoleResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.ScopedUserRoleResource).Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet<ScopedUserRoleResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.ScopedUserRoleResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet(Of ScopedUserRoleResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.ScopedUserRoleResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ScopedUserRoleResource}.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ScopedUserRoleResource}.Get(System.String[])
+  parent: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ScopedUserRoleResource}
+  definition: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+  name: Get(String[])
+  nameWithType: IGet<ScopedUserRoleResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.ScopedUserRoleResource>.Get(System.String[])
+  nameWithType.vb: IGet(Of ScopedUserRoleResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.ScopedUserRoleResource).Get(System.String())
+  name.vb: Get(String())
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet<ScopedUserRoleResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.ScopedUserRoleResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet(Of ScopedUserRoleResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.ScopedUserRoleResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ScopedUserRoleResource}.Refresh(Octopus.Client.Model.ScopedUserRoleResource)
+  commentId: M:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ScopedUserRoleResource}.Refresh(Octopus.Client.Model.ScopedUserRoleResource)
+  parent: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ScopedUserRoleResource}
+  definition: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+  name: Refresh(ScopedUserRoleResource)
+  nameWithType: IGet<ScopedUserRoleResource>.Refresh(ScopedUserRoleResource)
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.ScopedUserRoleResource>.Refresh(Octopus.Client.Model.ScopedUserRoleResource)
+  nameWithType.vb: IGet(Of ScopedUserRoleResource).Refresh(ScopedUserRoleResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.ScopedUserRoleResource).Refresh(Octopus.Client.Model.ScopedUserRoleResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet<ScopedUserRoleResource>.Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.ScopedUserRoleResource>.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet(Of ScopedUserRoleResource).Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.ScopedUserRoleResource).Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext{Octopus.Client.Repositories.Async.IScopedUserRoleRepository}.UsingContext(Octopus.Client.SpaceContext)
+  commentId: M:Octopus.Client.Repositories.Async.ICanExtendSpaceContext{Octopus.Client.Repositories.Async.IScopedUserRoleRepository}.UsingContext(Octopus.Client.SpaceContext)
+  parent: Octopus.Client.Repositories.Async.ICanExtendSpaceContext{Octopus.Client.Repositories.Async.IScopedUserRoleRepository}
+  definition: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1.UsingContext(Octopus.Client.SpaceContext)
+  name: UsingContext(SpaceContext)
+  nameWithType: ICanExtendSpaceContext<IScopedUserRoleRepository>.UsingContext(SpaceContext)
+  fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext<Octopus.Client.Repositories.Async.IScopedUserRoleRepository>.UsingContext(Octopus.Client.SpaceContext)
+  nameWithType.vb: ICanExtendSpaceContext(Of IScopedUserRoleRepository).UsingContext(SpaceContext)
+  fullName.vb: Octopus.Client.Repositories.Async.ICanExtendSpaceContext(Of Octopus.Client.Repositories.Async.IScopedUserRoleRepository).UsingContext(Octopus.Client.SpaceContext)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1.UsingContext(Octopus.Client.SpaceContext)
+    name: UsingContext
+    nameWithType: ICanExtendSpaceContext<IScopedUserRoleRepository>.UsingContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext<Octopus.Client.Repositories.Async.IScopedUserRoleRepository>.UsingContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.SpaceContext
+    name: SpaceContext
+    nameWithType: SpaceContext
+    fullName: Octopus.Client.SpaceContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1.UsingContext(Octopus.Client.SpaceContext)
+    name: UsingContext
+    nameWithType: ICanExtendSpaceContext(Of IScopedUserRoleRepository).UsingContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext(Of Octopus.Client.Repositories.Async.IScopedUserRoleRepository).UsingContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.SpaceContext
+    name: SpaceContext
+    nameWithType: SpaceContext
+    fullName: Octopus.Client.SpaceContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+  commentId: M:Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+  isExternal: true
+  name: Create(TResource, Object)
+  nameWithType: ICreate<TResource>.Create(TResource, Object)
+  fullName: Octopus.Client.Repositories.Async.ICreate<TResource>.Create(TResource, System.Object)
+  nameWithType.vb: ICreate(Of TResource).Create(TResource, Object)
+  fullName.vb: Octopus.Client.Repositories.Async.ICreate(Of TResource).Create(TResource, System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate<TResource>.Create
+    fullName: Octopus.Client.Repositories.Async.ICreate<TResource>.Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate(Of TResource).Create
+    fullName: Octopus.Client.Repositories.Async.ICreate(Of TResource).Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.ScopedUserRoleResource}
+  commentId: T:Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.ScopedUserRoleResource}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.ICreate`1
+  name: ICreate<ScopedUserRoleResource>
+  nameWithType: ICreate<ScopedUserRoleResource>
+  fullName: Octopus.Client.Repositories.Async.ICreate<Octopus.Client.Model.ScopedUserRoleResource>
+  nameWithType.vb: ICreate(Of ScopedUserRoleResource)
+  fullName.vb: Octopus.Client.Repositories.Async.ICreate(Of Octopus.Client.Model.ScopedUserRoleResource)
+  name.vb: ICreate(Of ScopedUserRoleResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.Async.ICreate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.Async.ICreate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+  commentId: M:Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+  name: Modify(TResource)
+  nameWithType: IModify<TResource>.Modify(TResource)
+  fullName: Octopus.Client.Repositories.Async.IModify<TResource>.Modify(TResource)
+  nameWithType.vb: IModify(Of TResource).Modify(TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IModify(Of TResource).Modify(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify<TResource>.Modify
+    fullName: Octopus.Client.Repositories.Async.IModify<TResource>.Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify(Of TResource).Modify
+    fullName: Octopus.Client.Repositories.Async.IModify(Of TResource).Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IModify{Octopus.Client.Model.ScopedUserRoleResource}
+  commentId: T:Octopus.Client.Repositories.Async.IModify{Octopus.Client.Model.ScopedUserRoleResource}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.IModify`1
+  name: IModify<ScopedUserRoleResource>
+  nameWithType: IModify<ScopedUserRoleResource>
+  fullName: Octopus.Client.Repositories.Async.IModify<Octopus.Client.Model.ScopedUserRoleResource>
+  nameWithType.vb: IModify(Of ScopedUserRoleResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IModify(Of Octopus.Client.Model.ScopedUserRoleResource)
+  name.vb: IModify(Of ScopedUserRoleResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.Async.IModify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.Async.IModify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IDelete`1.Delete(`0)
+  commentId: M:Octopus.Client.Repositories.Async.IDelete`1.Delete(`0)
+  name: Delete(TResource)
+  nameWithType: IDelete<TResource>.Delete(TResource)
+  fullName: Octopus.Client.Repositories.Async.IDelete<TResource>.Delete(TResource)
+  nameWithType.vb: IDelete(Of TResource).Delete(TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IDelete(Of TResource).Delete(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1.Delete(`0)
+    name: Delete
+    nameWithType: IDelete<TResource>.Delete
+    fullName: Octopus.Client.Repositories.Async.IDelete<TResource>.Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1.Delete(`0)
+    name: Delete
+    nameWithType: IDelete(Of TResource).Delete
+    fullName: Octopus.Client.Repositories.Async.IDelete(Of TResource).Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IDelete{Octopus.Client.Model.ScopedUserRoleResource}
+  commentId: T:Octopus.Client.Repositories.Async.IDelete{Octopus.Client.Model.ScopedUserRoleResource}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.IDelete`1
+  name: IDelete<ScopedUserRoleResource>
+  nameWithType: IDelete<ScopedUserRoleResource>
+  fullName: Octopus.Client.Repositories.Async.IDelete<Octopus.Client.Model.ScopedUserRoleResource>
+  nameWithType.vb: IDelete(Of ScopedUserRoleResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IDelete(Of Octopus.Client.Model.ScopedUserRoleResource)
+  name.vb: IDelete(Of ScopedUserRoleResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1
+    name: IDelete
+    nameWithType: IDelete
+    fullName: Octopus.Client.Repositories.Async.IDelete
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1
+    name: IDelete
+    nameWithType: IDelete
+    fullName: Octopus.Client.Repositories.Async.IDelete
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+  isExternal: true
+  name: Get(String)
+  nameWithType: IGet<TResource>.Get(String)
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get(System.String)
+  nameWithType.vb: IGet(Of TResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource).Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet<TResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet(Of TResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of TResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ScopedUserRoleResource}
+  commentId: T:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ScopedUserRoleResource}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.IGet`1
+  name: IGet<ScopedUserRoleResource>
+  nameWithType: IGet<ScopedUserRoleResource>
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.ScopedUserRoleResource>
+  nameWithType.vb: IGet(Of ScopedUserRoleResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.ScopedUserRoleResource)
+  name.vb: IGet(Of ScopedUserRoleResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ScopedUserRoleResource
+    name: ScopedUserRoleResource
+    nameWithType: ScopedUserRoleResource
+    fullName: Octopus.Client.Model.ScopedUserRoleResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+  isExternal: true
+  name: Get(String[])
+  nameWithType: IGet<TResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get(System.String[])
+  nameWithType.vb: IGet(Of TResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource).Get(System.String())
+  name.vb: Get(String())
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet<TResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet(Of TResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of TResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+  commentId: M:Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+  name: Refresh(TResource)
+  nameWithType: IGet<TResource>.Refresh(TResource)
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Refresh(TResource)
+  nameWithType.vb: IGet(Of TResource).Refresh(TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource).Refresh(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet<TResource>.Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet(Of TResource).Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet(Of TResource).Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1.UsingContext(Octopus.Client.SpaceContext)
+  commentId: M:Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1.UsingContext(Octopus.Client.SpaceContext)
+  name: UsingContext(SpaceContext)
+  nameWithType: ICanExtendSpaceContext<T>.UsingContext(SpaceContext)
+  fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext<T>.UsingContext(Octopus.Client.SpaceContext)
+  nameWithType.vb: ICanExtendSpaceContext(Of T).UsingContext(SpaceContext)
+  fullName.vb: Octopus.Client.Repositories.Async.ICanExtendSpaceContext(Of T).UsingContext(Octopus.Client.SpaceContext)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1.UsingContext(Octopus.Client.SpaceContext)
+    name: UsingContext
+    nameWithType: ICanExtendSpaceContext<T>.UsingContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext<T>.UsingContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.SpaceContext
+    name: SpaceContext
+    nameWithType: SpaceContext
+    fullName: Octopus.Client.SpaceContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1.UsingContext(Octopus.Client.SpaceContext)
+    name: UsingContext
+    nameWithType: ICanExtendSpaceContext(Of T).UsingContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext(Of T).UsingContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.SpaceContext
+    name: SpaceContext
+    nameWithType: SpaceContext
+    fullName: Octopus.Client.SpaceContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext{Octopus.Client.Repositories.Async.IScopedUserRoleRepository}
+  commentId: T:Octopus.Client.Repositories.Async.ICanExtendSpaceContext{Octopus.Client.Repositories.Async.IScopedUserRoleRepository}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1
+  name: ICanExtendSpaceContext<IScopedUserRoleRepository>
+  nameWithType: ICanExtendSpaceContext<IScopedUserRoleRepository>
+  fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext<Octopus.Client.Repositories.Async.IScopedUserRoleRepository>
+  nameWithType.vb: ICanExtendSpaceContext(Of IScopedUserRoleRepository)
+  fullName.vb: Octopus.Client.Repositories.Async.ICanExtendSpaceContext(Of Octopus.Client.Repositories.Async.IScopedUserRoleRepository)
+  name.vb: ICanExtendSpaceContext(Of IScopedUserRoleRepository)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1
+    name: ICanExtendSpaceContext
+    nameWithType: ICanExtendSpaceContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Repositories.Async.IScopedUserRoleRepository
+    name: IScopedUserRoleRepository
+    nameWithType: IScopedUserRoleRepository
+    fullName: Octopus.Client.Repositories.Async.IScopedUserRoleRepository
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1
+    name: ICanExtendSpaceContext
+    nameWithType: ICanExtendSpaceContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Repositories.Async.IScopedUserRoleRepository
+    name: IScopedUserRoleRepository
+    nameWithType: IScopedUserRoleRepository
+    fullName: Octopus.Client.Repositories.Async.IScopedUserRoleRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICreate`1
+  commentId: T:Octopus.Client.Repositories.Async.ICreate`1
+  name: ICreate<TResource>
+  nameWithType: ICreate<TResource>
+  fullName: Octopus.Client.Repositories.Async.ICreate<TResource>
+  nameWithType.vb: ICreate(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.ICreate(Of TResource)
+  name.vb: ICreate(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.Async.ICreate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.Async.ICreate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IModify`1
+  commentId: T:Octopus.Client.Repositories.Async.IModify`1
+  name: IModify<TResource>
+  nameWithType: IModify<TResource>
+  fullName: Octopus.Client.Repositories.Async.IModify<TResource>
+  nameWithType.vb: IModify(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IModify(Of TResource)
+  name.vb: IModify(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.Async.IModify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.Async.IModify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IDelete`1
+  commentId: T:Octopus.Client.Repositories.Async.IDelete`1
+  name: IDelete<TResource>
+  nameWithType: IDelete<TResource>
+  fullName: Octopus.Client.Repositories.Async.IDelete<TResource>
+  nameWithType.vb: IDelete(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IDelete(Of TResource)
+  name.vb: IDelete(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1
+    name: IDelete
+    nameWithType: IDelete
+    fullName: Octopus.Client.Repositories.Async.IDelete
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1
+    name: IDelete
+    nameWithType: IDelete
+    fullName: Octopus.Client.Repositories.Async.IDelete
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1
+  commentId: T:Octopus.Client.Repositories.Async.IGet`1
+  name: IGet<TResource>
+  nameWithType: IGet<TResource>
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>
+  nameWithType.vb: IGet(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource)
+  name.vb: IGet(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1
+  commentId: T:Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1
+  name: ICanExtendSpaceContext<T>
+  nameWithType: ICanExtendSpaceContext<T>
+  fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext<T>
+  nameWithType.vb: ICanExtendSpaceContext(Of T)
+  fullName.vb: Octopus.Client.Repositories.Async.ICanExtendSpaceContext(Of T)
+  name.vb: ICanExtendSpaceContext(Of T)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1
+    name: ICanExtendSpaceContext
+    nameWithType: ICanExtendSpaceContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1
+    name: ICanExtendSpaceContext
+    nameWithType: ICanExtendSpaceContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

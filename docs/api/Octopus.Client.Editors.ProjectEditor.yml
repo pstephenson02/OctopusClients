@@ -1,0 +1,1483 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Editors.ProjectEditor
+  commentId: T:Octopus.Client.Editors.ProjectEditor
+  id: ProjectEditor
+  parent: Octopus.Client.Editors
+  children:
+  - Octopus.Client.Editors.ProjectEditor.#ctor(Octopus.Client.Repositories.IProjectRepository,Octopus.Client.Repositories.IChannelRepository,Octopus.Client.Repositories.IDeploymentProcessRepository,Octopus.Client.Repositories.IProjectTriggerRepository,Octopus.Client.Repositories.IVariableSetRepository)
+  - Octopus.Client.Editors.ProjectEditor.Channels
+  - Octopus.Client.Editors.ProjectEditor.CreateOrModify(System.String,Octopus.Client.Model.ProjectGroupResource,Octopus.Client.Model.LifecycleResource)
+  - Octopus.Client.Editors.ProjectEditor.CreateOrModify(System.String,Octopus.Client.Model.ProjectGroupResource,Octopus.Client.Model.LifecycleResource,System.String,System.String)
+  - Octopus.Client.Editors.ProjectEditor.Customize(System.Action{Octopus.Client.Model.ProjectResource})
+  - Octopus.Client.Editors.ProjectEditor.DeploymentProcess
+  - Octopus.Client.Editors.ProjectEditor.IncludingLibraryVariableSets(Octopus.Client.Model.LibraryVariableSetResource[])
+  - Octopus.Client.Editors.ProjectEditor.Instance
+  - Octopus.Client.Editors.ProjectEditor.Save
+  - Octopus.Client.Editors.ProjectEditor.SetLogo(System.String)
+  - Octopus.Client.Editors.ProjectEditor.Triggers
+  - Octopus.Client.Editors.ProjectEditor.Variables
+  - Octopus.Client.Editors.ProjectEditor.VariableTemplates
+  langs:
+  - csharp
+  - vb
+  name: ProjectEditor
+  nameWithType: ProjectEditor
+  fullName: Octopus.Client.Editors.ProjectEditor
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectEditor
+    path: ../source/Octopus.Client/Editors/ProjectEditor.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: 'public class ProjectEditor : IResourceEditor<ProjectResource, ProjectEditor>, IResourceBuilder'
+    content.vb: >-
+      Public Class ProjectEditor
+          Implements IResourceEditor(Of ProjectResource, ProjectEditor), IResourceBuilder
+  inheritance:
+  - System.Object
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}
+  - Octopus.Client.Editors.IResourceBuilder
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Editors.ProjectEditor.#ctor(Octopus.Client.Repositories.IProjectRepository,Octopus.Client.Repositories.IChannelRepository,Octopus.Client.Repositories.IDeploymentProcessRepository,Octopus.Client.Repositories.IProjectTriggerRepository,Octopus.Client.Repositories.IVariableSetRepository)
+  commentId: M:Octopus.Client.Editors.ProjectEditor.#ctor(Octopus.Client.Repositories.IProjectRepository,Octopus.Client.Repositories.IChannelRepository,Octopus.Client.Repositories.IDeploymentProcessRepository,Octopus.Client.Repositories.IProjectTriggerRepository,Octopus.Client.Repositories.IVariableSetRepository)
+  id: '#ctor(Octopus.Client.Repositories.IProjectRepository,Octopus.Client.Repositories.IChannelRepository,Octopus.Client.Repositories.IDeploymentProcessRepository,Octopus.Client.Repositories.IProjectTriggerRepository,Octopus.Client.Repositories.IVariableSetRepository)'
+  parent: Octopus.Client.Editors.ProjectEditor
+  langs:
+  - csharp
+  - vb
+  name: ProjectEditor(IProjectRepository, IChannelRepository, IDeploymentProcessRepository, IProjectTriggerRepository, IVariableSetRepository)
+  nameWithType: ProjectEditor.ProjectEditor(IProjectRepository, IChannelRepository, IDeploymentProcessRepository, IProjectTriggerRepository, IVariableSetRepository)
+  fullName: Octopus.Client.Editors.ProjectEditor.ProjectEditor(Octopus.Client.Repositories.IProjectRepository, Octopus.Client.Repositories.IChannelRepository, Octopus.Client.Repositories.IDeploymentProcessRepository, Octopus.Client.Repositories.IProjectTriggerRepository, Octopus.Client.Repositories.IVariableSetRepository)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Editors/ProjectEditor.cs
+    startLine: 16
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public ProjectEditor(IProjectRepository repository, IChannelRepository channelRepository, IDeploymentProcessRepository deploymentProcessRepository, IProjectTriggerRepository projectTriggerRepository, IVariableSetRepository variableSetRepository)
+    parameters:
+    - id: repository
+      type: Octopus.Client.Repositories.IProjectRepository
+    - id: channelRepository
+      type: Octopus.Client.Repositories.IChannelRepository
+    - id: deploymentProcessRepository
+      type: Octopus.Client.Repositories.IDeploymentProcessRepository
+    - id: projectTriggerRepository
+      type: Octopus.Client.Repositories.IProjectTriggerRepository
+    - id: variableSetRepository
+      type: Octopus.Client.Repositories.IVariableSetRepository
+    content.vb: Public Sub New(repository As IProjectRepository, channelRepository As IChannelRepository, deploymentProcessRepository As IDeploymentProcessRepository, projectTriggerRepository As IProjectTriggerRepository, variableSetRepository As IVariableSetRepository)
+  overload: Octopus.Client.Editors.ProjectEditor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.ProjectEditor.Instance
+  commentId: P:Octopus.Client.Editors.ProjectEditor.Instance
+  id: Instance
+  parent: Octopus.Client.Editors.ProjectEditor
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: ProjectEditor.Instance
+  fullName: Octopus.Client.Editors.ProjectEditor.Instance
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Instance
+    path: ../source/Octopus.Client/Editors/ProjectEditor.cs
+    startLine: 30
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public ProjectResource Instance { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public ReadOnly Property Instance As ProjectResource
+  overload: Octopus.Client.Editors.ProjectEditor.Instance*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}.Instance
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Editors.ProjectEditor.Channels
+  commentId: P:Octopus.Client.Editors.ProjectEditor.Channels
+  id: Channels
+  parent: Octopus.Client.Editors.ProjectEditor
+  langs:
+  - csharp
+  - vb
+  name: Channels
+  nameWithType: ProjectEditor.Channels
+  fullName: Octopus.Client.Editors.ProjectEditor.Channels
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Channels
+    path: ../source/Octopus.Client/Editors/ProjectEditor.cs
+    startLine: 32
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public ProjectChannelsEditor Channels { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Editors.ProjectChannelsEditor
+    content.vb: Public ReadOnly Property Channels As ProjectChannelsEditor
+  overload: Octopus.Client.Editors.ProjectEditor.Channels*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Editors.ProjectEditor.DeploymentProcess
+  commentId: P:Octopus.Client.Editors.ProjectEditor.DeploymentProcess
+  id: DeploymentProcess
+  parent: Octopus.Client.Editors.ProjectEditor
+  langs:
+  - csharp
+  - vb
+  name: DeploymentProcess
+  nameWithType: ProjectEditor.DeploymentProcess
+  fullName: Octopus.Client.Editors.ProjectEditor.DeploymentProcess
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DeploymentProcess
+    path: ../source/Octopus.Client/Editors/ProjectEditor.cs
+    startLine: 34
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public DeploymentProcessEditor DeploymentProcess { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Editors.DeploymentProcessEditor
+    content.vb: Public ReadOnly Property DeploymentProcess As DeploymentProcessEditor
+  overload: Octopus.Client.Editors.ProjectEditor.DeploymentProcess*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Editors.ProjectEditor.Triggers
+  commentId: P:Octopus.Client.Editors.ProjectEditor.Triggers
+  id: Triggers
+  parent: Octopus.Client.Editors.ProjectEditor
+  langs:
+  - csharp
+  - vb
+  name: Triggers
+  nameWithType: ProjectEditor.Triggers
+  fullName: Octopus.Client.Editors.ProjectEditor.Triggers
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Triggers
+    path: ../source/Octopus.Client/Editors/ProjectEditor.cs
+    startLine: 36
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public ProjectTriggersEditor Triggers { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Editors.ProjectTriggersEditor
+    content.vb: Public ReadOnly Property Triggers As ProjectTriggersEditor
+  overload: Octopus.Client.Editors.ProjectEditor.Triggers*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Editors.ProjectEditor.Variables
+  commentId: P:Octopus.Client.Editors.ProjectEditor.Variables
+  id: Variables
+  parent: Octopus.Client.Editors.ProjectEditor
+  langs:
+  - csharp
+  - vb
+  name: Variables
+  nameWithType: ProjectEditor.Variables
+  fullName: Octopus.Client.Editors.ProjectEditor.Variables
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Variables
+    path: ../source/Octopus.Client/Editors/ProjectEditor.cs
+    startLine: 38
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public VariableSetEditor Variables { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Editors.VariableSetEditor
+    content.vb: Public ReadOnly Property Variables As VariableSetEditor
+  overload: Octopus.Client.Editors.ProjectEditor.Variables*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Editors.ProjectEditor.VariableTemplates
+  commentId: P:Octopus.Client.Editors.ProjectEditor.VariableTemplates
+  id: VariableTemplates
+  parent: Octopus.Client.Editors.ProjectEditor
+  langs:
+  - csharp
+  - vb
+  name: VariableTemplates
+  nameWithType: ProjectEditor.VariableTemplates
+  fullName: Octopus.Client.Editors.ProjectEditor.VariableTemplates
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: VariableTemplates
+    path: ../source/Octopus.Client/Editors/ProjectEditor.cs
+    startLine: 40
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public IVariableTemplateContainerEditor<ProjectResource> VariableTemplates { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+    content.vb: Public ReadOnly Property VariableTemplates As IVariableTemplateContainerEditor(Of ProjectResource)
+  overload: Octopus.Client.Editors.ProjectEditor.VariableTemplates*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Editors.ProjectEditor.CreateOrModify(System.String,Octopus.Client.Model.ProjectGroupResource,Octopus.Client.Model.LifecycleResource)
+  commentId: M:Octopus.Client.Editors.ProjectEditor.CreateOrModify(System.String,Octopus.Client.Model.ProjectGroupResource,Octopus.Client.Model.LifecycleResource)
+  id: CreateOrModify(System.String,Octopus.Client.Model.ProjectGroupResource,Octopus.Client.Model.LifecycleResource)
+  parent: Octopus.Client.Editors.ProjectEditor
+  langs:
+  - csharp
+  - vb
+  name: CreateOrModify(String, ProjectGroupResource, LifecycleResource)
+  nameWithType: ProjectEditor.CreateOrModify(String, ProjectGroupResource, LifecycleResource)
+  fullName: Octopus.Client.Editors.ProjectEditor.CreateOrModify(System.String, Octopus.Client.Model.ProjectGroupResource, Octopus.Client.Model.LifecycleResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CreateOrModify
+    path: ../source/Octopus.Client/Editors/ProjectEditor.cs
+    startLine: 42
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public ProjectEditor CreateOrModify(string name, ProjectGroupResource projectGroup, LifecycleResource lifecycle)
+    parameters:
+    - id: name
+      type: System.String
+    - id: projectGroup
+      type: Octopus.Client.Model.ProjectGroupResource
+    - id: lifecycle
+      type: Octopus.Client.Model.LifecycleResource
+    return:
+      type: Octopus.Client.Editors.ProjectEditor
+    content.vb: Public Function CreateOrModify(name As String, projectGroup As ProjectGroupResource, lifecycle As LifecycleResource) As ProjectEditor
+  overload: Octopus.Client.Editors.ProjectEditor.CreateOrModify*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.ProjectEditor.CreateOrModify(System.String,Octopus.Client.Model.ProjectGroupResource,Octopus.Client.Model.LifecycleResource,System.String,System.String)
+  commentId: M:Octopus.Client.Editors.ProjectEditor.CreateOrModify(System.String,Octopus.Client.Model.ProjectGroupResource,Octopus.Client.Model.LifecycleResource,System.String,System.String)
+  id: CreateOrModify(System.String,Octopus.Client.Model.ProjectGroupResource,Octopus.Client.Model.LifecycleResource,System.String,System.String)
+  parent: Octopus.Client.Editors.ProjectEditor
+  langs:
+  - csharp
+  - vb
+  name: CreateOrModify(String, ProjectGroupResource, LifecycleResource, String, String)
+  nameWithType: ProjectEditor.CreateOrModify(String, ProjectGroupResource, LifecycleResource, String, String)
+  fullName: Octopus.Client.Editors.ProjectEditor.CreateOrModify(System.String, Octopus.Client.Model.ProjectGroupResource, Octopus.Client.Model.LifecycleResource, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CreateOrModify
+    path: ../source/Octopus.Client/Editors/ProjectEditor.cs
+    startLine: 67
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public ProjectEditor CreateOrModify(string name, ProjectGroupResource projectGroup, LifecycleResource lifecycle, string description, string cloneId = null)
+    parameters:
+    - id: name
+      type: System.String
+    - id: projectGroup
+      type: Octopus.Client.Model.ProjectGroupResource
+    - id: lifecycle
+      type: Octopus.Client.Model.LifecycleResource
+    - id: description
+      type: System.String
+    - id: cloneId
+      type: System.String
+    return:
+      type: Octopus.Client.Editors.ProjectEditor
+    content.vb: Public Function CreateOrModify(name As String, projectGroup As ProjectGroupResource, lifecycle As LifecycleResource, description As String, cloneId As String = Nothing) As ProjectEditor
+  overload: Octopus.Client.Editors.ProjectEditor.CreateOrModify*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.ProjectEditor.SetLogo(System.String)
+  commentId: M:Octopus.Client.Editors.ProjectEditor.SetLogo(System.String)
+  id: SetLogo(System.String)
+  parent: Octopus.Client.Editors.ProjectEditor
+  langs:
+  - csharp
+  - vb
+  name: SetLogo(String)
+  nameWithType: ProjectEditor.SetLogo(String)
+  fullName: Octopus.Client.Editors.ProjectEditor.SetLogo(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SetLogo
+    path: ../source/Octopus.Client/Editors/ProjectEditor.cs
+    startLine: 94
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public ProjectEditor SetLogo(string logoFilePath)
+    parameters:
+    - id: logoFilePath
+      type: System.String
+    return:
+      type: Octopus.Client.Editors.ProjectEditor
+    content.vb: Public Function SetLogo(logoFilePath As String) As ProjectEditor
+  overload: Octopus.Client.Editors.ProjectEditor.SetLogo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.ProjectEditor.IncludingLibraryVariableSets(Octopus.Client.Model.LibraryVariableSetResource[])
+  commentId: M:Octopus.Client.Editors.ProjectEditor.IncludingLibraryVariableSets(Octopus.Client.Model.LibraryVariableSetResource[])
+  id: IncludingLibraryVariableSets(Octopus.Client.Model.LibraryVariableSetResource[])
+  parent: Octopus.Client.Editors.ProjectEditor
+  langs:
+  - csharp
+  - vb
+  name: IncludingLibraryVariableSets(LibraryVariableSetResource[])
+  nameWithType: ProjectEditor.IncludingLibraryVariableSets(LibraryVariableSetResource[])
+  fullName: Octopus.Client.Editors.ProjectEditor.IncludingLibraryVariableSets(Octopus.Client.Model.LibraryVariableSetResource[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IncludingLibraryVariableSets
+    path: ../source/Octopus.Client/Editors/ProjectEditor.cs
+    startLine: 104
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public ProjectEditor IncludingLibraryVariableSets(params LibraryVariableSetResource[] libraryVariableSets)
+    parameters:
+    - id: libraryVariableSets
+      type: Octopus.Client.Model.LibraryVariableSetResource[]
+    return:
+      type: Octopus.Client.Editors.ProjectEditor
+    content.vb: Public Function IncludingLibraryVariableSets(ParamArray libraryVariableSets As LibraryVariableSetResource()) As ProjectEditor
+  overload: Octopus.Client.Editors.ProjectEditor.IncludingLibraryVariableSets*
+  nameWithType.vb: ProjectEditor.IncludingLibraryVariableSets(LibraryVariableSetResource())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Editors.ProjectEditor.IncludingLibraryVariableSets(Octopus.Client.Model.LibraryVariableSetResource())
+  name.vb: IncludingLibraryVariableSets(LibraryVariableSetResource())
+- uid: Octopus.Client.Editors.ProjectEditor.Customize(System.Action{Octopus.Client.Model.ProjectResource})
+  commentId: M:Octopus.Client.Editors.ProjectEditor.Customize(System.Action{Octopus.Client.Model.ProjectResource})
+  id: Customize(System.Action{Octopus.Client.Model.ProjectResource})
+  parent: Octopus.Client.Editors.ProjectEditor
+  langs:
+  - csharp
+  - vb
+  name: Customize(Action<ProjectResource>)
+  nameWithType: ProjectEditor.Customize(Action<ProjectResource>)
+  fullName: Octopus.Client.Editors.ProjectEditor.Customize(System.Action<Octopus.Client.Model.ProjectResource>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Customize
+    path: ../source/Octopus.Client/Editors/ProjectEditor.cs
+    startLine: 110
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public ProjectEditor Customize(Action<ProjectResource> customize)
+    parameters:
+    - id: customize
+      type: System.Action{Octopus.Client.Model.ProjectResource}
+    return:
+      type: Octopus.Client.Editors.ProjectEditor
+    content.vb: Public Function Customize(customize As Action(Of ProjectResource)) As ProjectEditor
+  overload: Octopus.Client.Editors.ProjectEditor.Customize*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}.Customize(System.Action{Octopus.Client.Model.ProjectResource})
+  nameWithType.vb: ProjectEditor.Customize(Action(Of ProjectResource))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Editors.ProjectEditor.Customize(System.Action(Of Octopus.Client.Model.ProjectResource))
+  name.vb: Customize(Action(Of ProjectResource))
+- uid: Octopus.Client.Editors.ProjectEditor.Save
+  commentId: M:Octopus.Client.Editors.ProjectEditor.Save
+  id: Save
+  parent: Octopus.Client.Editors.ProjectEditor
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: ProjectEditor.Save()
+  fullName: Octopus.Client.Editors.ProjectEditor.Save()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/ProjectEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Save
+    path: ../source/Octopus.Client/Editors/ProjectEditor.cs
+    startLine: 116
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public ProjectEditor Save()
+    return:
+      type: Octopus.Client.Editors.ProjectEditor
+    content.vb: Public Function Save As ProjectEditor
+  overload: Octopus.Client.Editors.ProjectEditor.Save*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}.Save
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Editors
+  commentId: N:Octopus.Client.Editors
+  name: Octopus.Client.Editors
+  nameWithType: Octopus.Client.Editors
+  fullName: Octopus.Client.Editors
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}
+  commentId: T:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}
+  parent: Octopus.Client.Editors
+  definition: Octopus.Client.Editors.IResourceEditor`2
+  name: IResourceEditor<ProjectResource, ProjectEditor>
+  nameWithType: IResourceEditor<ProjectResource, ProjectEditor>
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.ProjectResource, Octopus.Client.Editors.ProjectEditor>
+  nameWithType.vb: IResourceEditor(Of ProjectResource, ProjectEditor)
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.ProjectResource, Octopus.Client.Editors.ProjectEditor)
+  name.vb: IResourceEditor(Of ProjectResource, ProjectEditor)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ProjectResource
+    name: ProjectResource
+    nameWithType: ProjectResource
+    fullName: Octopus.Client.Model.ProjectResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Editors.ProjectEditor
+    name: ProjectEditor
+    nameWithType: ProjectEditor
+    fullName: Octopus.Client.Editors.ProjectEditor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ProjectResource
+    name: ProjectResource
+    nameWithType: ProjectResource
+    fullName: Octopus.Client.Model.ProjectResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Editors.ProjectEditor
+    name: ProjectEditor
+    nameWithType: ProjectEditor
+    fullName: Octopus.Client.Editors.ProjectEditor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceBuilder
+  commentId: T:Octopus.Client.Editors.IResourceBuilder
+  parent: Octopus.Client.Editors
+  name: IResourceBuilder
+  nameWithType: IResourceBuilder
+  fullName: Octopus.Client.Editors.IResourceBuilder
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Editors.IResourceEditor`2
+  commentId: T:Octopus.Client.Editors.IResourceEditor`2
+  name: IResourceEditor<TResource, TResourceBuilder>
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder)
+  name.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResourceBuilder
+    nameWithType: TResourceBuilder
+    fullName: TResourceBuilder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResourceBuilder
+    nameWithType: TResourceBuilder
+    fullName: TResourceBuilder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.ProjectEditor.#ctor*
+  commentId: Overload:Octopus.Client.Editors.ProjectEditor.#ctor
+  name: ProjectEditor
+  nameWithType: ProjectEditor.ProjectEditor
+  fullName: Octopus.Client.Editors.ProjectEditor.ProjectEditor
+- uid: Octopus.Client.Repositories.IProjectRepository
+  commentId: T:Octopus.Client.Repositories.IProjectRepository
+  parent: Octopus.Client.Repositories
+  name: IProjectRepository
+  nameWithType: IProjectRepository
+  fullName: Octopus.Client.Repositories.IProjectRepository
+- uid: Octopus.Client.Repositories.IChannelRepository
+  commentId: T:Octopus.Client.Repositories.IChannelRepository
+  parent: Octopus.Client.Repositories
+  name: IChannelRepository
+  nameWithType: IChannelRepository
+  fullName: Octopus.Client.Repositories.IChannelRepository
+- uid: Octopus.Client.Repositories.IDeploymentProcessRepository
+  commentId: T:Octopus.Client.Repositories.IDeploymentProcessRepository
+  parent: Octopus.Client.Repositories
+  name: IDeploymentProcessRepository
+  nameWithType: IDeploymentProcessRepository
+  fullName: Octopus.Client.Repositories.IDeploymentProcessRepository
+- uid: Octopus.Client.Repositories.IProjectTriggerRepository
+  commentId: T:Octopus.Client.Repositories.IProjectTriggerRepository
+  parent: Octopus.Client.Repositories
+  name: IProjectTriggerRepository
+  nameWithType: IProjectTriggerRepository
+  fullName: Octopus.Client.Repositories.IProjectTriggerRepository
+- uid: Octopus.Client.Repositories.IVariableSetRepository
+  commentId: T:Octopus.Client.Repositories.IVariableSetRepository
+  parent: Octopus.Client.Repositories
+  name: IVariableSetRepository
+  nameWithType: IVariableSetRepository
+  fullName: Octopus.Client.Repositories.IVariableSetRepository
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Editors.ProjectEditor.Instance*
+  commentId: Overload:Octopus.Client.Editors.ProjectEditor.Instance
+  name: Instance
+  nameWithType: ProjectEditor.Instance
+  fullName: Octopus.Client.Editors.ProjectEditor.Instance
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}.Instance
+  commentId: P:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}.Instance
+  parent: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Instance
+  name: Instance
+  nameWithType: IResourceEditor<ProjectResource, ProjectEditor>.Instance
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.ProjectResource, Octopus.Client.Editors.ProjectEditor>.Instance
+  nameWithType.vb: IResourceEditor(Of ProjectResource, ProjectEditor).Instance
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.ProjectResource, Octopus.Client.Editors.ProjectEditor).Instance
+- uid: Octopus.Client.Model.ProjectResource
+  commentId: T:Octopus.Client.Model.ProjectResource
+  parent: Octopus.Client.Model
+  name: ProjectResource
+  nameWithType: ProjectResource
+  fullName: Octopus.Client.Model.ProjectResource
+- uid: Octopus.Client.Editors.IResourceEditor`2.Instance
+  commentId: P:Octopus.Client.Editors.IResourceEditor`2.Instance
+  name: Instance
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Instance
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Instance
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Instance
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Instance
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Editors.ProjectEditor.Channels*
+  commentId: Overload:Octopus.Client.Editors.ProjectEditor.Channels
+  name: Channels
+  nameWithType: ProjectEditor.Channels
+  fullName: Octopus.Client.Editors.ProjectEditor.Channels
+- uid: Octopus.Client.Editors.ProjectChannelsEditor
+  commentId: T:Octopus.Client.Editors.ProjectChannelsEditor
+  parent: Octopus.Client.Editors
+  name: ProjectChannelsEditor
+  nameWithType: ProjectChannelsEditor
+  fullName: Octopus.Client.Editors.ProjectChannelsEditor
+- uid: Octopus.Client.Editors.ProjectEditor.DeploymentProcess*
+  commentId: Overload:Octopus.Client.Editors.ProjectEditor.DeploymentProcess
+  name: DeploymentProcess
+  nameWithType: ProjectEditor.DeploymentProcess
+  fullName: Octopus.Client.Editors.ProjectEditor.DeploymentProcess
+- uid: Octopus.Client.Editors.DeploymentProcessEditor
+  commentId: T:Octopus.Client.Editors.DeploymentProcessEditor
+  parent: Octopus.Client.Editors
+  name: DeploymentProcessEditor
+  nameWithType: DeploymentProcessEditor
+  fullName: Octopus.Client.Editors.DeploymentProcessEditor
+- uid: Octopus.Client.Editors.ProjectEditor.Triggers*
+  commentId: Overload:Octopus.Client.Editors.ProjectEditor.Triggers
+  name: Triggers
+  nameWithType: ProjectEditor.Triggers
+  fullName: Octopus.Client.Editors.ProjectEditor.Triggers
+- uid: Octopus.Client.Editors.ProjectTriggersEditor
+  commentId: T:Octopus.Client.Editors.ProjectTriggersEditor
+  parent: Octopus.Client.Editors
+  name: ProjectTriggersEditor
+  nameWithType: ProjectTriggersEditor
+  fullName: Octopus.Client.Editors.ProjectTriggersEditor
+- uid: Octopus.Client.Editors.ProjectEditor.Variables*
+  commentId: Overload:Octopus.Client.Editors.ProjectEditor.Variables
+  name: Variables
+  nameWithType: ProjectEditor.Variables
+  fullName: Octopus.Client.Editors.ProjectEditor.Variables
+- uid: Octopus.Client.Editors.VariableSetEditor
+  commentId: T:Octopus.Client.Editors.VariableSetEditor
+  parent: Octopus.Client.Editors
+  name: VariableSetEditor
+  nameWithType: VariableSetEditor
+  fullName: Octopus.Client.Editors.VariableSetEditor
+- uid: Octopus.Client.Editors.ProjectEditor.VariableTemplates*
+  commentId: Overload:Octopus.Client.Editors.ProjectEditor.VariableTemplates
+  name: VariableTemplates
+  nameWithType: ProjectEditor.VariableTemplates
+  fullName: Octopus.Client.Editors.ProjectEditor.VariableTemplates
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  commentId: T:Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  parent: Octopus.Client.Model
+  definition: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  name: IVariableTemplateContainerEditor<ProjectResource>
+  nameWithType: IVariableTemplateContainerEditor<ProjectResource>
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>
+  nameWithType.vb: IVariableTemplateContainerEditor(Of ProjectResource)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource)
+  name.vb: IVariableTemplateContainerEditor(Of ProjectResource)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+    name: IVariableTemplateContainerEditor
+    nameWithType: IVariableTemplateContainerEditor
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ProjectResource
+    name: ProjectResource
+    nameWithType: ProjectResource
+    fullName: Octopus.Client.Model.ProjectResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+    name: IVariableTemplateContainerEditor
+    nameWithType: IVariableTemplateContainerEditor
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ProjectResource
+    name: ProjectResource
+    nameWithType: ProjectResource
+    fullName: Octopus.Client.Model.ProjectResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  commentId: T:Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  name: IVariableTemplateContainerEditor<TContainer>
+  nameWithType: IVariableTemplateContainerEditor<TContainer>
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer)
+  name.vb: IVariableTemplateContainerEditor(Of TContainer)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+    name: IVariableTemplateContainerEditor
+    nameWithType: IVariableTemplateContainerEditor
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TContainer
+    nameWithType: TContainer
+    fullName: TContainer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+    name: IVariableTemplateContainerEditor
+    nameWithType: IVariableTemplateContainerEditor
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TContainer
+    nameWithType: TContainer
+    fullName: TContainer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.ProjectEditor.CreateOrModify*
+  commentId: Overload:Octopus.Client.Editors.ProjectEditor.CreateOrModify
+  name: CreateOrModify
+  nameWithType: ProjectEditor.CreateOrModify
+  fullName: Octopus.Client.Editors.ProjectEditor.CreateOrModify
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.ProjectGroupResource
+  commentId: T:Octopus.Client.Model.ProjectGroupResource
+  parent: Octopus.Client.Model
+  name: ProjectGroupResource
+  nameWithType: ProjectGroupResource
+  fullName: Octopus.Client.Model.ProjectGroupResource
+- uid: Octopus.Client.Model.LifecycleResource
+  commentId: T:Octopus.Client.Model.LifecycleResource
+  parent: Octopus.Client.Model
+  name: LifecycleResource
+  nameWithType: LifecycleResource
+  fullName: Octopus.Client.Model.LifecycleResource
+- uid: Octopus.Client.Editors.ProjectEditor
+  commentId: T:Octopus.Client.Editors.ProjectEditor
+  parent: Octopus.Client.Editors
+  name: ProjectEditor
+  nameWithType: ProjectEditor
+  fullName: Octopus.Client.Editors.ProjectEditor
+- uid: Octopus.Client.Editors.ProjectEditor.SetLogo*
+  commentId: Overload:Octopus.Client.Editors.ProjectEditor.SetLogo
+  name: SetLogo
+  nameWithType: ProjectEditor.SetLogo
+  fullName: Octopus.Client.Editors.ProjectEditor.SetLogo
+- uid: Octopus.Client.Editors.ProjectEditor.IncludingLibraryVariableSets*
+  commentId: Overload:Octopus.Client.Editors.ProjectEditor.IncludingLibraryVariableSets
+  name: IncludingLibraryVariableSets
+  nameWithType: ProjectEditor.IncludingLibraryVariableSets
+  fullName: Octopus.Client.Editors.ProjectEditor.IncludingLibraryVariableSets
+- uid: Octopus.Client.Model.LibraryVariableSetResource[]
+  isExternal: true
+  name: LibraryVariableSetResource[]
+  nameWithType: LibraryVariableSetResource[]
+  fullName: Octopus.Client.Model.LibraryVariableSetResource[]
+  nameWithType.vb: LibraryVariableSetResource()
+  fullName.vb: Octopus.Client.Model.LibraryVariableSetResource()
+  name.vb: LibraryVariableSetResource()
+  spec.csharp:
+  - uid: Octopus.Client.Model.LibraryVariableSetResource
+    name: LibraryVariableSetResource
+    nameWithType: LibraryVariableSetResource
+    fullName: Octopus.Client.Model.LibraryVariableSetResource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Octopus.Client.Model.LibraryVariableSetResource
+    name: LibraryVariableSetResource
+    nameWithType: LibraryVariableSetResource
+    fullName: Octopus.Client.Model.LibraryVariableSetResource
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Octopus.Client.Editors.ProjectEditor.Customize*
+  commentId: Overload:Octopus.Client.Editors.ProjectEditor.Customize
+  name: Customize
+  nameWithType: ProjectEditor.Customize
+  fullName: Octopus.Client.Editors.ProjectEditor.Customize
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}.Customize(System.Action{Octopus.Client.Model.ProjectResource})
+  commentId: M:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}.Customize(System.Action{Octopus.Client.Model.ProjectResource})
+  parent: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  name: Customize(Action<ProjectResource>)
+  nameWithType: IResourceEditor<ProjectResource, ProjectEditor>.Customize(Action<ProjectResource>)
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.ProjectResource, Octopus.Client.Editors.ProjectEditor>.Customize(System.Action<Octopus.Client.Model.ProjectResource>)
+  nameWithType.vb: IResourceEditor(Of ProjectResource, ProjectEditor).Customize(Action(Of ProjectResource))
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.ProjectResource, Octopus.Client.Editors.ProjectEditor).Customize(System.Action(Of Octopus.Client.Model.ProjectResource))
+  name.vb: Customize(Action(Of ProjectResource))
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor<ProjectResource, ProjectEditor>.Customize
+    fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.ProjectResource, Octopus.Client.Editors.ProjectEditor>.Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ProjectResource
+    name: ProjectResource
+    nameWithType: ProjectResource
+    fullName: Octopus.Client.Model.ProjectResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor(Of ProjectResource, ProjectEditor).Customize
+    fullName: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.ProjectResource, Octopus.Client.Editors.ProjectEditor).Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ProjectResource
+    name: ProjectResource
+    nameWithType: ProjectResource
+    fullName: Octopus.Client.Model.ProjectResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{Octopus.Client.Model.ProjectResource}
+  commentId: T:System.Action{Octopus.Client.Model.ProjectResource}
+  parent: System
+  definition: System.Action`1
+  name: Action<ProjectResource>
+  nameWithType: Action<ProjectResource>
+  fullName: System.Action<Octopus.Client.Model.ProjectResource>
+  nameWithType.vb: Action(Of ProjectResource)
+  fullName.vb: System.Action(Of Octopus.Client.Model.ProjectResource)
+  name.vb: Action(Of ProjectResource)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ProjectResource
+    name: ProjectResource
+    nameWithType: ProjectResource
+    fullName: Octopus.Client.Model.ProjectResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ProjectResource
+    name: ProjectResource
+    nameWithType: ProjectResource
+    fullName: Octopus.Client.Model.ProjectResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  commentId: M:Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  isExternal: true
+  name: Customize(Action<TResource>)
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Customize(Action<TResource>)
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Customize(System.Action<TResource>)
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Customize(Action(Of TResource))
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Customize(System.Action(Of TResource))
+  name.vb: Customize(Action(Of TResource))
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor<TResource, TResourceBuilder>.Customize
+    fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor(Of TResource, TResourceBuilder).Customize
+    fullName: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.ProjectEditor.Save*
+  commentId: Overload:Octopus.Client.Editors.ProjectEditor.Save
+  name: Save
+  nameWithType: ProjectEditor.Save
+  fullName: Octopus.Client.Editors.ProjectEditor.Save
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}.Save
+  commentId: M:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}.Save
+  parent: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.ProjectResource,Octopus.Client.Editors.ProjectEditor}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Save
+  name: Save()
+  nameWithType: IResourceEditor<ProjectResource, ProjectEditor>.Save()
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.ProjectResource, Octopus.Client.Editors.ProjectEditor>.Save()
+  nameWithType.vb: IResourceEditor(Of ProjectResource, ProjectEditor).Save()
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.ProjectResource, Octopus.Client.Editors.ProjectEditor).Save()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor<ProjectResource, ProjectEditor>.Save
+    fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.ProjectResource, Octopus.Client.Editors.ProjectEditor>.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor(Of ProjectResource, ProjectEditor).Save
+    fullName: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.ProjectResource, Octopus.Client.Editors.ProjectEditor).Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceEditor`2.Save
+  commentId: M:Octopus.Client.Editors.IResourceEditor`2.Save
+  name: Save()
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Save()
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Save()
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Save()
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Save()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor<TResource, TResourceBuilder>.Save
+    fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor(Of TResource, TResourceBuilder).Save
+    fullName: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

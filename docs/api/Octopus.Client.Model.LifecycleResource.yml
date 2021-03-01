@@ -1,0 +1,1209 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.LifecycleResource
+  commentId: T:Octopus.Client.Model.LifecycleResource
+  id: LifecycleResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.LifecycleResource.#ctor
+  - Octopus.Client.Model.LifecycleResource.AddOrUpdatePhase(System.String)
+  - Octopus.Client.Model.LifecycleResource.Clear
+  - Octopus.Client.Model.LifecycleResource.Description
+  - Octopus.Client.Model.LifecycleResource.FindPhase(System.String)
+  - Octopus.Client.Model.LifecycleResource.Name
+  - Octopus.Client.Model.LifecycleResource.Phases
+  - Octopus.Client.Model.LifecycleResource.ReleaseRetentionPolicy
+  - Octopus.Client.Model.LifecycleResource.RemovePhase(System.String)
+  - Octopus.Client.Model.LifecycleResource.SpaceId
+  - Octopus.Client.Model.LifecycleResource.TentacleRetentionPolicy
+  - Octopus.Client.Model.LifecycleResource.WithReleaseRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  - Octopus.Client.Model.LifecycleResource.WithTentacleRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  langs:
+  - csharp
+  - vb
+  name: LifecycleResource
+  nameWithType: LifecycleResource
+  fullName: Octopus.Client.Model.LifecycleResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LifecycleResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: LifecycleResource
+    path: ../source/Octopus.Client/Model/LifecycleResource.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class LifecycleResource : Resource, IResource, IAuditedResource, INamedResource, IHaveSpaceResource'
+    content.vb: >-
+      Public Class LifecycleResource
+          Inherits Resource
+          Implements IResource, IAuditedResource, INamedResource, IHaveSpaceResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  - Octopus.Client.Extensibility.INamedResource
+  - Octopus.Client.Extensibility.IHaveSpaceResource
+  inheritedMembers:
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.LifecycleResource.#ctor
+  commentId: M:Octopus.Client.Model.LifecycleResource.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.LifecycleResource
+  langs:
+  - csharp
+  - vb
+  name: LifecycleResource()
+  nameWithType: LifecycleResource.LifecycleResource()
+  fullName: Octopus.Client.Model.LifecycleResource.LifecycleResource()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LifecycleResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/LifecycleResource.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public LifecycleResource()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.LifecycleResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LifecycleResource.Name
+  commentId: P:Octopus.Client.Model.LifecycleResource.Name
+  id: Name
+  parent: Octopus.Client.Model.LifecycleResource
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: LifecycleResource.Name
+  fullName: Octopus.Client.Model.LifecycleResource.Name
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LifecycleResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Name
+    path: ../source/Octopus.Client/Model/LifecycleResource.cs
+    startLine: 18
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty(Order = 2)]
+
+      public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty(Order:=2)>
+
+      Public Property Name As String
+  overload: Octopus.Client.Model.LifecycleResource.Name*
+  implements:
+  - Octopus.Client.Extensibility.INamedResource.Name
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 2
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LifecycleResource.Description
+  commentId: P:Octopus.Client.Model.LifecycleResource.Description
+  id: Description
+  parent: Octopus.Client.Model.LifecycleResource
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: LifecycleResource.Description
+  fullName: Octopus.Client.Model.LifecycleResource.Description
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LifecycleResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Description
+    path: ../source/Octopus.Client/Model/LifecycleResource.cs
+    startLine: 22
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty(Order = 20)]
+
+      public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty(Order:=20)>
+
+      Public Property Description As String
+  overload: Octopus.Client.Model.LifecycleResource.Description*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 20
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LifecycleResource.ReleaseRetentionPolicy
+  commentId: P:Octopus.Client.Model.LifecycleResource.ReleaseRetentionPolicy
+  id: ReleaseRetentionPolicy
+  parent: Octopus.Client.Model.LifecycleResource
+  langs:
+  - csharp
+  - vb
+  name: ReleaseRetentionPolicy
+  nameWithType: LifecycleResource.ReleaseRetentionPolicy
+  fullName: Octopus.Client.Model.LifecycleResource.ReleaseRetentionPolicy
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LifecycleResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ReleaseRetentionPolicy
+    path: ../source/Octopus.Client/Model/LifecycleResource.cs
+    startLine: 26
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty(Order = 5, ObjectCreationHandling = ObjectCreationHandling.Replace)]
+
+      public RetentionPeriod ReleaseRetentionPolicy { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.RetentionPeriod
+    content.vb: >-
+      <JsonProperty(Order:=5, ObjectCreationHandling:=ObjectCreationHandling.Replace)>
+
+      Public Property ReleaseRetentionPolicy As RetentionPeriod
+  overload: Octopus.Client.Model.LifecycleResource.ReleaseRetentionPolicy*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 5
+    - name: ObjectCreationHandling
+      type: Newtonsoft.Json.ObjectCreationHandling
+      value: 2
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LifecycleResource.TentacleRetentionPolicy
+  commentId: P:Octopus.Client.Model.LifecycleResource.TentacleRetentionPolicy
+  id: TentacleRetentionPolicy
+  parent: Octopus.Client.Model.LifecycleResource
+  langs:
+  - csharp
+  - vb
+  name: TentacleRetentionPolicy
+  nameWithType: LifecycleResource.TentacleRetentionPolicy
+  fullName: Octopus.Client.Model.LifecycleResource.TentacleRetentionPolicy
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LifecycleResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TentacleRetentionPolicy
+    path: ../source/Octopus.Client/Model/LifecycleResource.cs
+    startLine: 30
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty(Order = 6, ObjectCreationHandling = ObjectCreationHandling.Replace)]
+
+      public RetentionPeriod TentacleRetentionPolicy { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.RetentionPeriod
+    content.vb: >-
+      <JsonProperty(Order:=6, ObjectCreationHandling:=ObjectCreationHandling.Replace)>
+
+      Public Property TentacleRetentionPolicy As RetentionPeriod
+  overload: Octopus.Client.Model.LifecycleResource.TentacleRetentionPolicy*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 6
+    - name: ObjectCreationHandling
+      type: Newtonsoft.Json.ObjectCreationHandling
+      value: 2
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LifecycleResource.Phases
+  commentId: P:Octopus.Client.Model.LifecycleResource.Phases
+  id: Phases
+  parent: Octopus.Client.Model.LifecycleResource
+  langs:
+  - csharp
+  - vb
+  name: Phases
+  nameWithType: LifecycleResource.Phases
+  fullName: Octopus.Client.Model.LifecycleResource.Phases
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LifecycleResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Phases
+    path: ../source/Octopus.Client/Model/LifecycleResource.cs
+    startLine: 34
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public IList<PhaseResource> Phases { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Octopus.Client.Model.PhaseResource}
+    content.vb: Public ReadOnly Property Phases As IList(Of PhaseResource)
+  overload: Octopus.Client.Model.LifecycleResource.Phases*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.LifecycleResource.WithReleaseRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  commentId: M:Octopus.Client.Model.LifecycleResource.WithReleaseRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  id: WithReleaseRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  parent: Octopus.Client.Model.LifecycleResource
+  langs:
+  - csharp
+  - vb
+  name: WithReleaseRetentionPolicy(RetentionPeriod)
+  nameWithType: LifecycleResource.WithReleaseRetentionPolicy(RetentionPeriod)
+  fullName: Octopus.Client.Model.LifecycleResource.WithReleaseRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LifecycleResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WithReleaseRetentionPolicy
+    path: ../source/Octopus.Client/Model/LifecycleResource.cs
+    startLine: 36
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public LifecycleResource WithReleaseRetentionPolicy(RetentionPeriod period)
+    parameters:
+    - id: period
+      type: Octopus.Client.Model.RetentionPeriod
+    return:
+      type: Octopus.Client.Model.LifecycleResource
+    content.vb: Public Function WithReleaseRetentionPolicy(period As RetentionPeriod) As LifecycleResource
+  overload: Octopus.Client.Model.LifecycleResource.WithReleaseRetentionPolicy*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LifecycleResource.WithTentacleRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  commentId: M:Octopus.Client.Model.LifecycleResource.WithTentacleRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  id: WithTentacleRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  parent: Octopus.Client.Model.LifecycleResource
+  langs:
+  - csharp
+  - vb
+  name: WithTentacleRetentionPolicy(RetentionPeriod)
+  nameWithType: LifecycleResource.WithTentacleRetentionPolicy(RetentionPeriod)
+  fullName: Octopus.Client.Model.LifecycleResource.WithTentacleRetentionPolicy(Octopus.Client.Model.RetentionPeriod)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LifecycleResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WithTentacleRetentionPolicy
+    path: ../source/Octopus.Client/Model/LifecycleResource.cs
+    startLine: 42
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public LifecycleResource WithTentacleRetentionPolicy(RetentionPeriod period)
+    parameters:
+    - id: period
+      type: Octopus.Client.Model.RetentionPeriod
+    return:
+      type: Octopus.Client.Model.LifecycleResource
+    content.vb: Public Function WithTentacleRetentionPolicy(period As RetentionPeriod) As LifecycleResource
+  overload: Octopus.Client.Model.LifecycleResource.WithTentacleRetentionPolicy*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LifecycleResource.Clear
+  commentId: M:Octopus.Client.Model.LifecycleResource.Clear
+  id: Clear
+  parent: Octopus.Client.Model.LifecycleResource
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: LifecycleResource.Clear()
+  fullName: Octopus.Client.Model.LifecycleResource.Clear()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LifecycleResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Clear
+    path: ../source/Octopus.Client/Model/LifecycleResource.cs
+    startLine: 48
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public LifecycleResource Clear()
+    return:
+      type: Octopus.Client.Model.LifecycleResource
+    content.vb: Public Function Clear As LifecycleResource
+  overload: Octopus.Client.Model.LifecycleResource.Clear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LifecycleResource.FindPhase(System.String)
+  commentId: M:Octopus.Client.Model.LifecycleResource.FindPhase(System.String)
+  id: FindPhase(System.String)
+  parent: Octopus.Client.Model.LifecycleResource
+  langs:
+  - csharp
+  - vb
+  name: FindPhase(String)
+  nameWithType: LifecycleResource.FindPhase(String)
+  fullName: Octopus.Client.Model.LifecycleResource.FindPhase(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LifecycleResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: FindPhase
+    path: ../source/Octopus.Client/Model/LifecycleResource.cs
+    startLine: 54
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public PhaseResource FindPhase(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Octopus.Client.Model.PhaseResource
+    content.vb: Public Function FindPhase(name As String) As PhaseResource
+  overload: Octopus.Client.Model.LifecycleResource.FindPhase*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LifecycleResource.AddOrUpdatePhase(System.String)
+  commentId: M:Octopus.Client.Model.LifecycleResource.AddOrUpdatePhase(System.String)
+  id: AddOrUpdatePhase(System.String)
+  parent: Octopus.Client.Model.LifecycleResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdatePhase(String)
+  nameWithType: LifecycleResource.AddOrUpdatePhase(String)
+  fullName: Octopus.Client.Model.LifecycleResource.AddOrUpdatePhase(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LifecycleResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdatePhase
+    path: ../source/Octopus.Client/Model/LifecycleResource.cs
+    startLine: 59
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public PhaseResource AddOrUpdatePhase(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Octopus.Client.Model.PhaseResource
+    content.vb: Public Function AddOrUpdatePhase(name As String) As PhaseResource
+  overload: Octopus.Client.Model.LifecycleResource.AddOrUpdatePhase*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LifecycleResource.RemovePhase(System.String)
+  commentId: M:Octopus.Client.Model.LifecycleResource.RemovePhase(System.String)
+  id: RemovePhase(System.String)
+  parent: Octopus.Client.Model.LifecycleResource
+  langs:
+  - csharp
+  - vb
+  name: RemovePhase(String)
+  nameWithType: LifecycleResource.RemovePhase(String)
+  fullName: Octopus.Client.Model.LifecycleResource.RemovePhase(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LifecycleResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RemovePhase
+    path: ../source/Octopus.Client/Model/LifecycleResource.cs
+    startLine: 78
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public LifecycleResource RemovePhase(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Octopus.Client.Model.LifecycleResource
+    content.vb: Public Function RemovePhase(name As String) As LifecycleResource
+  overload: Octopus.Client.Model.LifecycleResource.RemovePhase*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LifecycleResource.SpaceId
+  commentId: P:Octopus.Client.Model.LifecycleResource.SpaceId
+  id: SpaceId
+  parent: Octopus.Client.Model.LifecycleResource
+  langs:
+  - csharp
+  - vb
+  name: SpaceId
+  nameWithType: LifecycleResource.SpaceId
+  fullName: Octopus.Client.Model.LifecycleResource.SpaceId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LifecycleResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SpaceId
+    path: ../source/Octopus.Client/Model/LifecycleResource.cs
+    startLine: 85
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string SpaceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SpaceId As String
+  overload: Octopus.Client.Model.LifecycleResource.SpaceId*
+  implements:
+  - Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Extensibility.INamedResource
+  commentId: T:Octopus.Client.Extensibility.INamedResource
+  parent: Octopus.Client.Extensibility
+  name: INamedResource
+  nameWithType: INamedResource
+  fullName: Octopus.Client.Extensibility.INamedResource
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource
+  commentId: T:Octopus.Client.Extensibility.IHaveSpaceResource
+  parent: Octopus.Client.Extensibility
+  name: IHaveSpaceResource
+  nameWithType: IHaveSpaceResource
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.LifecycleResource.#ctor*
+  commentId: Overload:Octopus.Client.Model.LifecycleResource.#ctor
+  name: LifecycleResource
+  nameWithType: LifecycleResource.LifecycleResource
+  fullName: Octopus.Client.Model.LifecycleResource.LifecycleResource
+- uid: Octopus.Client.Model.LifecycleResource.Name*
+  commentId: Overload:Octopus.Client.Model.LifecycleResource.Name
+  name: Name
+  nameWithType: LifecycleResource.Name
+  fullName: Octopus.Client.Model.LifecycleResource.Name
+- uid: Octopus.Client.Extensibility.INamedResource.Name
+  commentId: P:Octopus.Client.Extensibility.INamedResource.Name
+  parent: Octopus.Client.Extensibility.INamedResource
+  name: Name
+  nameWithType: INamedResource.Name
+  fullName: Octopus.Client.Extensibility.INamedResource.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.LifecycleResource.Description*
+  commentId: Overload:Octopus.Client.Model.LifecycleResource.Description
+  name: Description
+  nameWithType: LifecycleResource.Description
+  fullName: Octopus.Client.Model.LifecycleResource.Description
+- uid: Octopus.Client.Model.LifecycleResource.ReleaseRetentionPolicy*
+  commentId: Overload:Octopus.Client.Model.LifecycleResource.ReleaseRetentionPolicy
+  name: ReleaseRetentionPolicy
+  nameWithType: LifecycleResource.ReleaseRetentionPolicy
+  fullName: Octopus.Client.Model.LifecycleResource.ReleaseRetentionPolicy
+- uid: Octopus.Client.Model.RetentionPeriod
+  commentId: T:Octopus.Client.Model.RetentionPeriod
+  parent: Octopus.Client.Model
+  name: RetentionPeriod
+  nameWithType: RetentionPeriod
+  fullName: Octopus.Client.Model.RetentionPeriod
+- uid: Octopus.Client.Model.LifecycleResource.TentacleRetentionPolicy*
+  commentId: Overload:Octopus.Client.Model.LifecycleResource.TentacleRetentionPolicy
+  name: TentacleRetentionPolicy
+  nameWithType: LifecycleResource.TentacleRetentionPolicy
+  fullName: Octopus.Client.Model.LifecycleResource.TentacleRetentionPolicy
+- uid: Octopus.Client.Model.LifecycleResource.Phases*
+  commentId: Overload:Octopus.Client.Model.LifecycleResource.Phases
+  name: Phases
+  nameWithType: LifecycleResource.Phases
+  fullName: Octopus.Client.Model.LifecycleResource.Phases
+- uid: System.Collections.Generic.IList{Octopus.Client.Model.PhaseResource}
+  commentId: T:System.Collections.Generic.IList{Octopus.Client.Model.PhaseResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<PhaseResource>
+  nameWithType: IList<PhaseResource>
+  fullName: System.Collections.Generic.IList<Octopus.Client.Model.PhaseResource>
+  nameWithType.vb: IList(Of PhaseResource)
+  fullName.vb: System.Collections.Generic.IList(Of Octopus.Client.Model.PhaseResource)
+  name.vb: IList(Of PhaseResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.PhaseResource
+    name: PhaseResource
+    nameWithType: PhaseResource
+    fullName: Octopus.Client.Model.PhaseResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.PhaseResource
+    name: PhaseResource
+    nameWithType: PhaseResource
+    fullName: Octopus.Client.Model.PhaseResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.LifecycleResource.WithReleaseRetentionPolicy*
+  commentId: Overload:Octopus.Client.Model.LifecycleResource.WithReleaseRetentionPolicy
+  name: WithReleaseRetentionPolicy
+  nameWithType: LifecycleResource.WithReleaseRetentionPolicy
+  fullName: Octopus.Client.Model.LifecycleResource.WithReleaseRetentionPolicy
+- uid: Octopus.Client.Model.LifecycleResource
+  commentId: T:Octopus.Client.Model.LifecycleResource
+  parent: Octopus.Client.Model
+  name: LifecycleResource
+  nameWithType: LifecycleResource
+  fullName: Octopus.Client.Model.LifecycleResource
+- uid: Octopus.Client.Model.LifecycleResource.WithTentacleRetentionPolicy*
+  commentId: Overload:Octopus.Client.Model.LifecycleResource.WithTentacleRetentionPolicy
+  name: WithTentacleRetentionPolicy
+  nameWithType: LifecycleResource.WithTentacleRetentionPolicy
+  fullName: Octopus.Client.Model.LifecycleResource.WithTentacleRetentionPolicy
+- uid: Octopus.Client.Model.LifecycleResource.Clear*
+  commentId: Overload:Octopus.Client.Model.LifecycleResource.Clear
+  name: Clear
+  nameWithType: LifecycleResource.Clear
+  fullName: Octopus.Client.Model.LifecycleResource.Clear
+- uid: Octopus.Client.Model.LifecycleResource.FindPhase*
+  commentId: Overload:Octopus.Client.Model.LifecycleResource.FindPhase
+  name: FindPhase
+  nameWithType: LifecycleResource.FindPhase
+  fullName: Octopus.Client.Model.LifecycleResource.FindPhase
+- uid: Octopus.Client.Model.PhaseResource
+  commentId: T:Octopus.Client.Model.PhaseResource
+  parent: Octopus.Client.Model
+  name: PhaseResource
+  nameWithType: PhaseResource
+  fullName: Octopus.Client.Model.PhaseResource
+- uid: Octopus.Client.Model.LifecycleResource.AddOrUpdatePhase*
+  commentId: Overload:Octopus.Client.Model.LifecycleResource.AddOrUpdatePhase
+  name: AddOrUpdatePhase
+  nameWithType: LifecycleResource.AddOrUpdatePhase
+  fullName: Octopus.Client.Model.LifecycleResource.AddOrUpdatePhase
+- uid: Octopus.Client.Model.LifecycleResource.RemovePhase*
+  commentId: Overload:Octopus.Client.Model.LifecycleResource.RemovePhase
+  name: RemovePhase
+  nameWithType: LifecycleResource.RemovePhase
+  fullName: Octopus.Client.Model.LifecycleResource.RemovePhase
+- uid: Octopus.Client.Model.LifecycleResource.SpaceId*
+  commentId: Overload:Octopus.Client.Model.LifecycleResource.SpaceId
+  name: SpaceId
+  nameWithType: LifecycleResource.SpaceId
+  fullName: Octopus.Client.Model.LifecycleResource.SpaceId
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  commentId: P:Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  parent: Octopus.Client.Extensibility.IHaveSpaceResource
+  name: SpaceId
+  nameWithType: IHaveSpaceResource.SpaceId
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId

@@ -1,0 +1,564 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.LoginCommand
+  commentId: T:Octopus.Client.Model.LoginCommand
+  id: LoginCommand
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.LoginCommand.Password
+  - Octopus.Client.Model.LoginCommand.RememberMe
+  - Octopus.Client.Model.LoginCommand.State
+  - Octopus.Client.Model.LoginCommand.Username
+  langs:
+  - csharp
+  - vb
+  name: LoginCommand
+  nameWithType: LoginCommand
+  fullName: Octopus.Client.Model.LoginCommand
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LoginCommand.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: LoginCommand
+    path: ../source/Octopus.Client/Model/LoginCommand.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nA command resource used for logging in.\n"
+  example: []
+  syntax:
+    content: public class LoginCommand
+    content.vb: Public Class LoginCommand
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.LoginCommand.Username
+  commentId: P:Octopus.Client.Model.LoginCommand.Username
+  id: Username
+  parent: Octopus.Client.Model.LoginCommand
+  langs:
+  - csharp
+  - vb
+  name: Username
+  nameWithType: LoginCommand.Username
+  fullName: Octopus.Client.Model.LoginCommand.Username
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LoginCommand.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Username
+    path: ../source/Octopus.Client/Model/LoginCommand.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nThe username to log in with.\n"
+  example: []
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "Please provide a username.")]
+
+      public string Username { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(ErrorMessage:="Please provide a username.")>
+
+      Public Property Username As String
+  overload: Octopus.Client.Model.LoginCommand.Username*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Please provide a username.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LoginCommand.Password
+  commentId: P:Octopus.Client.Model.LoginCommand.Password
+  id: Password
+  parent: Octopus.Client.Model.LoginCommand
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: LoginCommand.Password
+  fullName: Octopus.Client.Model.LoginCommand.Password
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LoginCommand.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Password
+    path: ../source/Octopus.Client/Model/LoginCommand.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nThe password to log in with.\n"
+  example: []
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "Please provide a password.")]
+
+      public string Password { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required(ErrorMessage:="Please provide a password.")>
+
+      Public Property Password As String
+  overload: Octopus.Client.Model.LoginCommand.Password*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: Please provide a password.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LoginCommand.RememberMe
+  commentId: P:Octopus.Client.Model.LoginCommand.RememberMe
+  id: RememberMe
+  parent: Octopus.Client.Model.LoginCommand
+  langs:
+  - csharp
+  - vb
+  name: RememberMe
+  nameWithType: LoginCommand.RememberMe
+  fullName: Octopus.Client.Model.LoginCommand.RememberMe
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LoginCommand.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RememberMe
+    path: ../source/Octopus.Client/Model/LoginCommand.cs
+    startLine: 25
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nWhether the cookie should be persistent.\n"
+  example: []
+  syntax:
+    content: public bool RememberMe { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RememberMe As Boolean
+  overload: Octopus.Client.Model.LoginCommand.RememberMe*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.LoginCommand.State
+  commentId: P:Octopus.Client.Model.LoginCommand.State
+  id: State
+  parent: Octopus.Client.Model.LoginCommand
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: LoginCommand.State
+  fullName: Octopus.Client.Model.LoginCommand.State
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/LoginCommand.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: State
+    path: ../source/Octopus.Client/Model/LoginCommand.cs
+    startLine: 30
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nProvides hints to the server about the context of the client. This will be set automatically by the framework, or you can set it yourself to override the automatic behaviour.\n"
+  example: []
+  syntax:
+    content: public LoginState State { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.LoginState
+    content.vb: Public Property State As LoginState
+  overload: Octopus.Client.Model.LoginCommand.State*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.LoginCommand.Username*
+  commentId: Overload:Octopus.Client.Model.LoginCommand.Username
+  name: Username
+  nameWithType: LoginCommand.Username
+  fullName: Octopus.Client.Model.LoginCommand.Username
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.LoginCommand.Password*
+  commentId: Overload:Octopus.Client.Model.LoginCommand.Password
+  name: Password
+  nameWithType: LoginCommand.Password
+  fullName: Octopus.Client.Model.LoginCommand.Password
+- uid: Octopus.Client.Model.LoginCommand.RememberMe*
+  commentId: Overload:Octopus.Client.Model.LoginCommand.RememberMe
+  name: RememberMe
+  nameWithType: LoginCommand.RememberMe
+  fullName: Octopus.Client.Model.LoginCommand.RememberMe
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.LoginCommand.State*
+  commentId: Overload:Octopus.Client.Model.LoginCommand.State
+  name: State
+  nameWithType: LoginCommand.State
+  fullName: Octopus.Client.Model.LoginCommand.State
+- uid: Octopus.Client.Model.LoginState
+  commentId: T:Octopus.Client.Model.LoginState
+  parent: Octopus.Client.Model
+  name: LoginState
+  nameWithType: LoginState
+  fullName: Octopus.Client.Model.LoginState

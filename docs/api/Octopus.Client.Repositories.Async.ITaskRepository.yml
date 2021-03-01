@@ -1,0 +1,3503 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.ITaskRepository
+  commentId: T:Octopus.Client.Repositories.Async.ITaskRepository
+  id: ITaskRepository
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.ITaskRepository.Cancel(Octopus.Client.Model.TaskResource)
+  - Octopus.Client.Repositories.Async.ITaskRepository.ExecuteActionTemplate(Octopus.Client.Model.ActionTemplateResource,System.Collections.Generic.Dictionary{System.String,Octopus.Client.Model.PropertyValueResource},System.String[],System.String[],System.String[],System.String,System.Nullable{Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType})
+  - Octopus.Client.Repositories.Async.ITaskRepository.ExecuteAdHocScript(System.String,System.String[],System.String[],System.String[],System.String,System.String,System.Nullable{Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType})
+  - Octopus.Client.Repositories.Async.ITaskRepository.ExecuteBackup(System.String)
+  - Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCalamariUpdate(System.String,System.String[])
+  - Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCommunityActionTemplatesSynchronisation(System.String)
+  - Octopus.Client.Repositories.Async.ITaskRepository.ExecuteHealthCheck(System.String,System.Int32,System.Int32,System.String,System.String[],System.String,System.String,System.String[])
+  - Octopus.Client.Repositories.Async.ITaskRepository.ExecuteTentacleUpgrade(System.String,System.String,System.String[],System.String,System.String,System.String[])
+  - Octopus.Client.Repositories.Async.ITaskRepository.GetActiveWithSummary(System.Int32,System.Int32)
+  - Octopus.Client.Repositories.Async.ITaskRepository.GetAllActive(System.Int32)
+  - Octopus.Client.Repositories.Async.ITaskRepository.GetAllWithSummary(System.Int32,System.Int32)
+  - Octopus.Client.Repositories.Async.ITaskRepository.GetDetails(Octopus.Client.Model.TaskResource,System.Nullable{System.Boolean},System.Nullable{System.Int32})
+  - Octopus.Client.Repositories.Async.ITaskRepository.GetQueuedBehindTasks(Octopus.Client.Model.TaskResource)
+  - Octopus.Client.Repositories.Async.ITaskRepository.GetRawOutputLog(Octopus.Client.Model.TaskResource)
+  - Octopus.Client.Repositories.Async.ITaskRepository.GetTaskTypes
+  - Octopus.Client.Repositories.Async.ITaskRepository.ModifyState(Octopus.Client.Model.TaskResource,Octopus.Client.Model.TaskState,System.String)
+  - Octopus.Client.Repositories.Async.ITaskRepository.Rerun(Octopus.Client.Model.TaskResource)
+  - Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource,System.Int32,System.Int32,System.Action{Octopus.Client.Model.TaskResource[]})
+  - Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Int32,System.Action{Octopus.Client.Model.TaskResource[]})
+  - Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Int32,System.Func{Octopus.Client.Model.TaskResource[],System.Threading.Tasks.Task})
+  - Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Nullable{System.TimeSpan},System.Func{Octopus.Client.Model.TaskResource[],System.Threading.Tasks.Task})
+  langs:
+  - csharp
+  - vb
+  name: ITaskRepository
+  nameWithType: ITaskRepository
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ITaskRepository
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: 'public interface ITaskRepository : IPaginate<TaskResource>, IGet<TaskResource>, ICreate<TaskResource>, ICanExtendSpaceContext<ITaskRepository>'
+    content.vb: >-
+      Public Interface ITaskRepository
+          Inherits IPaginate(Of TaskResource), IGet(Of TaskResource), ICreate(Of TaskResource), ICanExtendSpaceContext(Of ITaskRepository)
+  inheritedMembers:
+  - Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.TaskResource},System.Boolean},System.String,System.Object)
+  - Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}.FindOne(System.Func{Octopus.Client.Model.TaskResource,System.Boolean},System.String,System.Object)
+  - Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}.FindMany(System.Func{Octopus.Client.Model.TaskResource,System.Boolean},System.String,System.Object)
+  - Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}.FindAll(System.String,System.Object)
+  - Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.TaskResource}.Get(System.String)
+  - Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.TaskResource}.Get(System.String[])
+  - Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.TaskResource}.Refresh(Octopus.Client.Model.TaskResource)
+  - Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.TaskResource}.Create(Octopus.Client.Model.TaskResource,System.Object)
+  - Octopus.Client.Repositories.Async.ICanExtendSpaceContext{Octopus.Client.Repositories.Async.ITaskRepository}.UsingContext(Octopus.Client.SpaceContext)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteHealthCheck(System.String,System.Int32,System.Int32,System.String,System.String[],System.String,System.String,System.String[])
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.ExecuteHealthCheck(System.String,System.Int32,System.Int32,System.String,System.String[],System.String,System.String,System.String[])
+  id: ExecuteHealthCheck(System.String,System.Int32,System.Int32,System.String,System.String[],System.String,System.String,System.String[])
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: ExecuteHealthCheck(String, Int32, Int32, String, String[], String, String, String[])
+  nameWithType: ITaskRepository.ExecuteHealthCheck(String, Int32, Int32, String, String[], String, String, String[])
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteHealthCheck(System.String, System.Int32, System.Int32, System.String, System.String[], System.String, System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ExecuteHealthCheck
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<TaskResource> ExecuteHealthCheck(string description = null, int timeoutAfterMinutes = 5, int machineTimeoutAfterMinutes = 1, string environmentId = null, string[] machineIds = null, string restrictTo = null, string workerpoolId = null, string[] workerIds = null)
+    parameters:
+    - id: description
+      type: System.String
+    - id: timeoutAfterMinutes
+      type: System.Int32
+    - id: machineTimeoutAfterMinutes
+      type: System.Int32
+    - id: environmentId
+      type: System.String
+    - id: machineIds
+      type: System.String[]
+    - id: restrictTo
+      type: System.String
+    - id: workerpoolId
+      type: System.String
+    - id: workerIds
+      type: System.String[]
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.TaskResource}
+    content.vb: Function ExecuteHealthCheck(description As String = Nothing, timeoutAfterMinutes As Integer = 5, machineTimeoutAfterMinutes As Integer = 1, environmentId As String = Nothing, machineIds As String() = Nothing, restrictTo As String = Nothing, workerpoolId As String = Nothing, workerIds As String() = Nothing) As Task(Of TaskResource)
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteHealthCheck*
+  nameWithType.vb: ITaskRepository.ExecuteHealthCheck(String, Int32, Int32, String, String(), String, String, String())
+  fullName.vb: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteHealthCheck(System.String, System.Int32, System.Int32, System.String, System.String(), System.String, System.String, System.String())
+  name.vb: ExecuteHealthCheck(String, Int32, Int32, String, String(), String, String, String())
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCalamariUpdate(System.String,System.String[])
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCalamariUpdate(System.String,System.String[])
+  id: ExecuteCalamariUpdate(System.String,System.String[])
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: ExecuteCalamariUpdate(String, String[])
+  nameWithType: ITaskRepository.ExecuteCalamariUpdate(String, String[])
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCalamariUpdate(System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ExecuteCalamariUpdate
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<TaskResource> ExecuteCalamariUpdate(string description = null, string[] machineIds = null)
+    parameters:
+    - id: description
+      type: System.String
+    - id: machineIds
+      type: System.String[]
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.TaskResource}
+    content.vb: Function ExecuteCalamariUpdate(description As String = Nothing, machineIds As String() = Nothing) As Task(Of TaskResource)
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCalamariUpdate*
+  nameWithType.vb: ITaskRepository.ExecuteCalamariUpdate(String, String())
+  fullName.vb: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCalamariUpdate(System.String, System.String())
+  name.vb: ExecuteCalamariUpdate(String, String())
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteBackup(System.String)
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.ExecuteBackup(System.String)
+  id: ExecuteBackup(System.String)
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: ExecuteBackup(String)
+  nameWithType: ITaskRepository.ExecuteBackup(String)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteBackup(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ExecuteBackup
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<TaskResource> ExecuteBackup(string description = null)
+    parameters:
+    - id: description
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.TaskResource}
+    content.vb: Function ExecuteBackup(description As String = Nothing) As Task(Of TaskResource)
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteBackup*
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteTentacleUpgrade(System.String,System.String,System.String[],System.String,System.String,System.String[])
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.ExecuteTentacleUpgrade(System.String,System.String,System.String[],System.String,System.String,System.String[])
+  id: ExecuteTentacleUpgrade(System.String,System.String,System.String[],System.String,System.String,System.String[])
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: ExecuteTentacleUpgrade(String, String, String[], String, String, String[])
+  nameWithType: ITaskRepository.ExecuteTentacleUpgrade(String, String, String[], String, String, String[])
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteTentacleUpgrade(System.String, System.String, System.String[], System.String, System.String, System.String[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ExecuteTentacleUpgrade
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 16
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<TaskResource> ExecuteTentacleUpgrade(string description = null, string environmentId = null, string[] machineIds = null, string restrictTo = null, string workerpooltId = null, string[] workerIds = null)
+    parameters:
+    - id: description
+      type: System.String
+    - id: environmentId
+      type: System.String
+    - id: machineIds
+      type: System.String[]
+    - id: restrictTo
+      type: System.String
+    - id: workerpooltId
+      type: System.String
+    - id: workerIds
+      type: System.String[]
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.TaskResource}
+    content.vb: Function ExecuteTentacleUpgrade(description As String = Nothing, environmentId As String = Nothing, machineIds As String() = Nothing, restrictTo As String = Nothing, workerpooltId As String = Nothing, workerIds As String() = Nothing) As Task(Of TaskResource)
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteTentacleUpgrade*
+  nameWithType.vb: ITaskRepository.ExecuteTentacleUpgrade(String, String, String(), String, String, String())
+  fullName.vb: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteTentacleUpgrade(System.String, System.String, System.String(), System.String, System.String, System.String())
+  name.vb: ExecuteTentacleUpgrade(String, String, String(), String, String, String())
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteAdHocScript(System.String,System.String[],System.String[],System.String[],System.String,System.String,System.Nullable{Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType})
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.ExecuteAdHocScript(System.String,System.String[],System.String[],System.String[],System.String,System.String,System.Nullable{Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType})
+  id: ExecuteAdHocScript(System.String,System.String[],System.String[],System.String[],System.String,System.String,System.Nullable{Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType})
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAdHocScript(String, String[], String[], String[], String, String, Nullable<BuiltInTasks.AdHocScript.TargetType>)
+  nameWithType: ITaskRepository.ExecuteAdHocScript(String, String[], String[], String[], String, String, Nullable<BuiltInTasks.AdHocScript.TargetType>)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteAdHocScript(System.String, System.String[], System.String[], System.String[], System.String, System.String, System.Nullable<Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ExecuteAdHocScript
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<TaskResource> ExecuteAdHocScript(string scriptBody, string[] machineIds = null, string[] environmentIds = null, string[] targetRoles = null, string description = null, string syntax = "PowerShell", BuiltInTasks.AdHocScript.TargetType? targetType = default(BuiltInTasks.AdHocScript.TargetType? ))
+    parameters:
+    - id: scriptBody
+      type: System.String
+    - id: machineIds
+      type: System.String[]
+    - id: environmentIds
+      type: System.String[]
+    - id: targetRoles
+      type: System.String[]
+    - id: description
+      type: System.String
+    - id: syntax
+      type: System.String
+    - id: targetType
+      type: System.Nullable{Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType}
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.TaskResource}
+    content.vb: Function ExecuteAdHocScript(scriptBody As String, machineIds As String() = Nothing, environmentIds As String() = Nothing, targetRoles As String() = Nothing, description As String = Nothing, syntax As String = "PowerShell", targetType As BuiltInTasks.AdHocScript.TargetType? = Nothing) As Task(Of TaskResource)
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteAdHocScript*
+  nameWithType.vb: ITaskRepository.ExecuteAdHocScript(String, String(), String(), String(), String, String, Nullable(Of BuiltInTasks.AdHocScript.TargetType))
+  fullName.vb: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteAdHocScript(System.String, System.String(), System.String(), System.String(), System.String, System.String, System.Nullable(Of Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType))
+  name.vb: ExecuteAdHocScript(String, String(), String(), String(), String, String, Nullable(Of BuiltInTasks.AdHocScript.TargetType))
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.GetDetails(Octopus.Client.Model.TaskResource,System.Nullable{System.Boolean},System.Nullable{System.Int32})
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.GetDetails(Octopus.Client.Model.TaskResource,System.Nullable{System.Boolean},System.Nullable{System.Int32})
+  id: GetDetails(Octopus.Client.Model.TaskResource,System.Nullable{System.Boolean},System.Nullable{System.Int32})
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: GetDetails(TaskResource, Nullable<Boolean>, Nullable<Int32>)
+  nameWithType: ITaskRepository.GetDetails(TaskResource, Nullable<Boolean>, Nullable<Int32>)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.GetDetails(Octopus.Client.Model.TaskResource, System.Nullable<System.Boolean>, System.Nullable<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetDetails
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 18
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<TaskDetailsResource> GetDetails(TaskResource resource, bool? includeVerboseOutput = default(bool? ), int? tail = default(int? ))
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.TaskResource
+    - id: includeVerboseOutput
+      type: System.Nullable{System.Boolean}
+    - id: tail
+      type: System.Nullable{System.Int32}
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.TaskDetailsResource}
+    content.vb: Function GetDetails(resource As TaskResource, includeVerboseOutput As Boolean? = Nothing, tail As Integer? = Nothing) As Task(Of TaskDetailsResource)
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.GetDetails*
+  nameWithType.vb: ITaskRepository.GetDetails(TaskResource, Nullable(Of Boolean), Nullable(Of Int32))
+  fullName.vb: Octopus.Client.Repositories.Async.ITaskRepository.GetDetails(Octopus.Client.Model.TaskResource, System.Nullable(Of System.Boolean), System.Nullable(Of System.Int32))
+  name.vb: GetDetails(TaskResource, Nullable(Of Boolean), Nullable(Of Int32))
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteActionTemplate(Octopus.Client.Model.ActionTemplateResource,System.Collections.Generic.Dictionary{System.String,Octopus.Client.Model.PropertyValueResource},System.String[],System.String[],System.String[],System.String,System.Nullable{Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType})
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.ExecuteActionTemplate(Octopus.Client.Model.ActionTemplateResource,System.Collections.Generic.Dictionary{System.String,Octopus.Client.Model.PropertyValueResource},System.String[],System.String[],System.String[],System.String,System.Nullable{Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType})
+  id: ExecuteActionTemplate(Octopus.Client.Model.ActionTemplateResource,System.Collections.Generic.Dictionary{System.String,Octopus.Client.Model.PropertyValueResource},System.String[],System.String[],System.String[],System.String,System.Nullable{Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType})
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: ExecuteActionTemplate(ActionTemplateResource, Dictionary<String, PropertyValueResource>, String[], String[], String[], String, Nullable<BuiltInTasks.AdHocScript.TargetType>)
+  nameWithType: ITaskRepository.ExecuteActionTemplate(ActionTemplateResource, Dictionary<String, PropertyValueResource>, String[], String[], String[], String, Nullable<BuiltInTasks.AdHocScript.TargetType>)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteActionTemplate(Octopus.Client.Model.ActionTemplateResource, System.Collections.Generic.Dictionary<System.String, Octopus.Client.Model.PropertyValueResource>, System.String[], System.String[], System.String[], System.String, System.Nullable<Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ExecuteActionTemplate
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<TaskResource> ExecuteActionTemplate(ActionTemplateResource resource, Dictionary<string, PropertyValueResource> properties, string[] machineIds = null, string[] environmentIds = null, string[] targetRoles = null, string description = null, BuiltInTasks.AdHocScript.TargetType? targetType = default(BuiltInTasks.AdHocScript.TargetType? ))
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.ActionTemplateResource
+    - id: properties
+      type: System.Collections.Generic.Dictionary{System.String,Octopus.Client.Model.PropertyValueResource}
+    - id: machineIds
+      type: System.String[]
+    - id: environmentIds
+      type: System.String[]
+    - id: targetRoles
+      type: System.String[]
+    - id: description
+      type: System.String
+    - id: targetType
+      type: System.Nullable{Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType}
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.TaskResource}
+    content.vb: Function ExecuteActionTemplate(resource As ActionTemplateResource, properties As Dictionary(Of String, PropertyValueResource), machineIds As String() = Nothing, environmentIds As String() = Nothing, targetRoles As String() = Nothing, description As String = Nothing, targetType As BuiltInTasks.AdHocScript.TargetType? = Nothing) As Task(Of TaskResource)
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteActionTemplate*
+  nameWithType.vb: ITaskRepository.ExecuteActionTemplate(ActionTemplateResource, Dictionary(Of String, PropertyValueResource), String(), String(), String(), String, Nullable(Of BuiltInTasks.AdHocScript.TargetType))
+  fullName.vb: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteActionTemplate(Octopus.Client.Model.ActionTemplateResource, System.Collections.Generic.Dictionary(Of System.String, Octopus.Client.Model.PropertyValueResource), System.String(), System.String(), System.String(), System.String, System.Nullable(Of Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType))
+  name.vb: ExecuteActionTemplate(ActionTemplateResource, Dictionary(Of String, PropertyValueResource), String(), String(), String(), String, Nullable(Of BuiltInTasks.AdHocScript.TargetType))
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCommunityActionTemplatesSynchronisation(System.String)
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCommunityActionTemplatesSynchronisation(System.String)
+  id: ExecuteCommunityActionTemplatesSynchronisation(System.String)
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: ExecuteCommunityActionTemplatesSynchronisation(String)
+  nameWithType: ITaskRepository.ExecuteCommunityActionTemplatesSynchronisation(String)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCommunityActionTemplatesSynchronisation(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ExecuteCommunityActionTemplatesSynchronisation
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 20
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<TaskResource> ExecuteCommunityActionTemplatesSynchronisation(string description = null)
+    parameters:
+    - id: description
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.TaskResource}
+    content.vb: Function ExecuteCommunityActionTemplatesSynchronisation(description As String = Nothing) As Task(Of TaskResource)
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCommunityActionTemplatesSynchronisation*
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.GetAllActive(System.Int32)
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.GetAllActive(System.Int32)
+  id: GetAllActive(System.Int32)
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllActive(Int32)
+  nameWithType: ITaskRepository.GetAllActive(Int32)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.GetAllActive(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetAllActive
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 27
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  summary: "\nGets all the active tasks (optionally limited to pageSize)\n"
+  example: []
+  syntax:
+    content: Task<List<TaskResource>> GetAllActive(int pageSize = 2147483647)
+    parameters:
+    - id: pageSize
+      type: System.Int32
+      description: Number of items per page, setting to less than the total items still retreives all items, but uses multiple requests reducing memory load on the server
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.TaskResource}}
+      description: ''
+    content.vb: Function GetAllActive(pageSize As Integer = 2147483647) As Task(Of List(Of TaskResource))
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.GetAllActive*
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.GetActiveWithSummary(System.Int32,System.Int32)
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.GetActiveWithSummary(System.Int32,System.Int32)
+  id: GetActiveWithSummary(System.Int32,System.Int32)
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: GetActiveWithSummary(Int32, Int32)
+  nameWithType: ITaskRepository.GetActiveWithSummary(Int32, Int32)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.GetActiveWithSummary(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetActiveWithSummary
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 35
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  summary: "\nReturns all active tasks (optionally limited to pageSize) along with a count of all tasks in each status\n"
+  example: []
+  syntax:
+    content: Task<TaskResourceCollection> GetActiveWithSummary(int pageSize = 2147483647, int skip = 0)
+    parameters:
+    - id: pageSize
+      type: System.Int32
+      description: ''
+    - id: skip
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.TaskResourceCollection}
+      description: ''
+    content.vb: Function GetActiveWithSummary(pageSize As Integer = 2147483647, skip As Integer = 0) As Task(Of TaskResourceCollection)
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.GetActiveWithSummary*
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.GetAllWithSummary(System.Int32,System.Int32)
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.GetAllWithSummary(System.Int32,System.Int32)
+  id: GetAllWithSummary(System.Int32,System.Int32)
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: GetAllWithSummary(Int32, Int32)
+  nameWithType: ITaskRepository.GetAllWithSummary(Int32, Int32)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.GetAllWithSummary(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetAllWithSummary
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 43
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  summary: "\nReturns all tasks (optionally limited to pageSize) along with a count of all tasks in each status\n"
+  example: []
+  syntax:
+    content: Task<TaskResourceCollection> GetAllWithSummary(int pageSize = 2147483647, int skip = 0)
+    parameters:
+    - id: pageSize
+      type: System.Int32
+      description: ''
+    - id: skip
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.TaskResourceCollection}
+      description: ''
+    content.vb: Function GetAllWithSummary(pageSize As Integer = 2147483647, skip As Integer = 0) As Task(Of TaskResourceCollection)
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.GetAllWithSummary*
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.GetRawOutputLog(Octopus.Client.Model.TaskResource)
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.GetRawOutputLog(Octopus.Client.Model.TaskResource)
+  id: GetRawOutputLog(Octopus.Client.Model.TaskResource)
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: GetRawOutputLog(TaskResource)
+  nameWithType: ITaskRepository.GetRawOutputLog(TaskResource)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.GetRawOutputLog(Octopus.Client.Model.TaskResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetRawOutputLog
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 45
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<string> GetRawOutputLog(TaskResource resource)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.TaskResource
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Function GetRawOutputLog(resource As TaskResource) As Task(Of String)
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.GetRawOutputLog*
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.GetTaskTypes
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.GetTaskTypes
+  id: GetTaskTypes
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: GetTaskTypes()
+  nameWithType: ITaskRepository.GetTaskTypes()
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.GetTaskTypes()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetTaskTypes
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 46
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<TaskTypeResource[]> GetTaskTypes()
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.TaskTypeResource[]}
+    content.vb: Function GetTaskTypes As Task(Of TaskTypeResource())
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.GetTaskTypes*
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.Rerun(Octopus.Client.Model.TaskResource)
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.Rerun(Octopus.Client.Model.TaskResource)
+  id: Rerun(Octopus.Client.Model.TaskResource)
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: Rerun(TaskResource)
+  nameWithType: ITaskRepository.Rerun(TaskResource)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.Rerun(Octopus.Client.Model.TaskResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Rerun
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 47
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task Rerun(TaskResource resource)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.TaskResource
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function Rerun(resource As TaskResource) As Task
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.Rerun*
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.Cancel(Octopus.Client.Model.TaskResource)
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.Cancel(Octopus.Client.Model.TaskResource)
+  id: Cancel(Octopus.Client.Model.TaskResource)
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: Cancel(TaskResource)
+  nameWithType: ITaskRepository.Cancel(TaskResource)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.Cancel(Octopus.Client.Model.TaskResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Cancel
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 48
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task Cancel(TaskResource resource)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.TaskResource
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function Cancel(resource As TaskResource) As Task
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.Cancel*
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ModifyState(Octopus.Client.Model.TaskResource,Octopus.Client.Model.TaskState,System.String)
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.ModifyState(Octopus.Client.Model.TaskResource,Octopus.Client.Model.TaskState,System.String)
+  id: ModifyState(Octopus.Client.Model.TaskResource,Octopus.Client.Model.TaskState,System.String)
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: ModifyState(TaskResource, TaskState, String)
+  nameWithType: ITaskRepository.ModifyState(TaskResource, TaskState, String)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ModifyState(Octopus.Client.Model.TaskResource, Octopus.Client.Model.TaskState, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ModifyState
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 49
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task ModifyState(TaskResource resource, TaskState newState, string reason)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.TaskResource
+    - id: newState
+      type: Octopus.Client.Model.TaskState
+    - id: reason
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ModifyState(resource As TaskResource, newState As TaskState, reason As String) As Task
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.ModifyState*
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.GetQueuedBehindTasks(Octopus.Client.Model.TaskResource)
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.GetQueuedBehindTasks(Octopus.Client.Model.TaskResource)
+  id: GetQueuedBehindTasks(Octopus.Client.Model.TaskResource)
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: GetQueuedBehindTasks(TaskResource)
+  nameWithType: ITaskRepository.GetQueuedBehindTasks(TaskResource)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.GetQueuedBehindTasks(Octopus.Client.Model.TaskResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetQueuedBehindTasks
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 50
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<IReadOnlyList<TaskResource>> GetQueuedBehindTasks(TaskResource resource)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.TaskResource
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.TaskResource}}
+    content.vb: Function GetQueuedBehindTasks(resource As TaskResource) As Task(Of IReadOnlyList(Of TaskResource))
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.GetQueuedBehindTasks*
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource,System.Int32,System.Int32,System.Action{Octopus.Client.Model.TaskResource[]})
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource,System.Int32,System.Int32,System.Action{Octopus.Client.Model.TaskResource[]})
+  id: WaitForCompletion(Octopus.Client.Model.TaskResource,System.Int32,System.Int32,System.Action{Octopus.Client.Model.TaskResource[]})
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: WaitForCompletion(TaskResource, Int32, Int32, Action<TaskResource[]>)
+  nameWithType: ITaskRepository.WaitForCompletion(TaskResource, Int32, Int32, Action<TaskResource[]>)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource, System.Int32, System.Int32, System.Action<Octopus.Client.Model.TaskResource[]>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WaitForCompletion
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 51
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task WaitForCompletion(TaskResource task, int pollIntervalSeconds = 4, int timeoutAfterMinutes = 0, Action<TaskResource[]> interval = null)
+    parameters:
+    - id: task
+      type: Octopus.Client.Model.TaskResource
+    - id: pollIntervalSeconds
+      type: System.Int32
+    - id: timeoutAfterMinutes
+      type: System.Int32
+    - id: interval
+      type: System.Action{Octopus.Client.Model.TaskResource[]}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function WaitForCompletion(task As TaskResource, pollIntervalSeconds As Integer = 4, timeoutAfterMinutes As Integer = 0, interval As Action(Of TaskResource()) = Nothing) As Task
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion*
+  nameWithType.vb: ITaskRepository.WaitForCompletion(TaskResource, Int32, Int32, Action(Of TaskResource()))
+  fullName.vb: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource, System.Int32, System.Int32, System.Action(Of Octopus.Client.Model.TaskResource()))
+  name.vb: WaitForCompletion(TaskResource, Int32, Int32, Action(Of TaskResource()))
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Int32,System.Action{Octopus.Client.Model.TaskResource[]})
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Int32,System.Action{Octopus.Client.Model.TaskResource[]})
+  id: WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Int32,System.Action{Octopus.Client.Model.TaskResource[]})
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: WaitForCompletion(TaskResource[], Int32, Int32, Action<TaskResource[]>)
+  nameWithType: ITaskRepository.WaitForCompletion(TaskResource[], Int32, Int32, Action<TaskResource[]>)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[], System.Int32, System.Int32, System.Action<Octopus.Client.Model.TaskResource[]>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WaitForCompletion
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 52
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task WaitForCompletion(TaskResource[] tasks, int pollIntervalSeconds = 4, int timeoutAfterMinutes = 0, Action<TaskResource[]> interval = null)
+    parameters:
+    - id: tasks
+      type: Octopus.Client.Model.TaskResource[]
+    - id: pollIntervalSeconds
+      type: System.Int32
+    - id: timeoutAfterMinutes
+      type: System.Int32
+    - id: interval
+      type: System.Action{Octopus.Client.Model.TaskResource[]}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function WaitForCompletion(tasks As TaskResource(), pollIntervalSeconds As Integer = 4, timeoutAfterMinutes As Integer = 0, interval As Action(Of TaskResource()) = Nothing) As Task
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion*
+  nameWithType.vb: ITaskRepository.WaitForCompletion(TaskResource(), Int32, Int32, Action(Of TaskResource()))
+  fullName.vb: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource(), System.Int32, System.Int32, System.Action(Of Octopus.Client.Model.TaskResource()))
+  name.vb: WaitForCompletion(TaskResource(), Int32, Int32, Action(Of TaskResource()))
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Int32,System.Func{Octopus.Client.Model.TaskResource[],System.Threading.Tasks.Task})
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Int32,System.Func{Octopus.Client.Model.TaskResource[],System.Threading.Tasks.Task})
+  id: WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Int32,System.Func{Octopus.Client.Model.TaskResource[],System.Threading.Tasks.Task})
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: WaitForCompletion(TaskResource[], Int32, Int32, Func<TaskResource[], Task>)
+  nameWithType: ITaskRepository.WaitForCompletion(TaskResource[], Int32, Int32, Func<TaskResource[], Task>)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[], System.Int32, System.Int32, System.Func<Octopus.Client.Model.TaskResource[], System.Threading.Tasks.Task>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WaitForCompletion
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 53
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task WaitForCompletion(TaskResource[] tasks, int pollIntervalSeconds = 4, int timeoutAfterMinutes = 0, Func<TaskResource[], Task> interval = null)
+    parameters:
+    - id: tasks
+      type: Octopus.Client.Model.TaskResource[]
+    - id: pollIntervalSeconds
+      type: System.Int32
+    - id: timeoutAfterMinutes
+      type: System.Int32
+    - id: interval
+      type: System.Func{Octopus.Client.Model.TaskResource[],System.Threading.Tasks.Task}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function WaitForCompletion(tasks As TaskResource(), pollIntervalSeconds As Integer = 4, timeoutAfterMinutes As Integer = 0, interval As Func(Of TaskResource(), Task) = Nothing) As Task
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion*
+  nameWithType.vb: ITaskRepository.WaitForCompletion(TaskResource(), Int32, Int32, Func(Of TaskResource(), Task))
+  fullName.vb: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource(), System.Int32, System.Int32, System.Func(Of Octopus.Client.Model.TaskResource(), System.Threading.Tasks.Task))
+  name.vb: WaitForCompletion(TaskResource(), Int32, Int32, Func(Of TaskResource(), Task))
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Nullable{System.TimeSpan},System.Func{Octopus.Client.Model.TaskResource[],System.Threading.Tasks.Task})
+  commentId: M:Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Nullable{System.TimeSpan},System.Func{Octopus.Client.Model.TaskResource[],System.Threading.Tasks.Task})
+  id: WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Nullable{System.TimeSpan},System.Func{Octopus.Client.Model.TaskResource[],System.Threading.Tasks.Task})
+  parent: Octopus.Client.Repositories.Async.ITaskRepository
+  langs:
+  - csharp
+  - vb
+  name: WaitForCompletion(TaskResource[], Int32, Nullable<TimeSpan>, Func<TaskResource[], Task>)
+  nameWithType: ITaskRepository.WaitForCompletion(TaskResource[], Int32, Nullable<TimeSpan>, Func<TaskResource[], Task>)
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[], System.Int32, System.Nullable<System.TimeSpan>, System.Func<Octopus.Client.Model.TaskResource[], System.Threading.Tasks.Task>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/TaskRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WaitForCompletion
+    path: ../source/Octopus.Client/Repositories/Async/TaskRepository.cs
+    startLine: 54
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task WaitForCompletion(TaskResource[] tasks, int pollIntervalSeconds = 4, TimeSpan? timeoutAfter = default(TimeSpan? ), Func<TaskResource[], Task> interval = null)
+    parameters:
+    - id: tasks
+      type: Octopus.Client.Model.TaskResource[]
+    - id: pollIntervalSeconds
+      type: System.Int32
+    - id: timeoutAfter
+      type: System.Nullable{System.TimeSpan}
+    - id: interval
+      type: System.Func{Octopus.Client.Model.TaskResource[],System.Threading.Tasks.Task}
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function WaitForCompletion(tasks As TaskResource(), pollIntervalSeconds As Integer = 4, timeoutAfter As TimeSpan? = Nothing, interval As Func(Of TaskResource(), Task) = Nothing) As Task
+  overload: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion*
+  nameWithType.vb: ITaskRepository.WaitForCompletion(TaskResource(), Int32, Nullable(Of TimeSpan), Func(Of TaskResource(), Task))
+  fullName.vb: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource(), System.Int32, System.Nullable(Of System.TimeSpan), System.Func(Of Octopus.Client.Model.TaskResource(), System.Threading.Tasks.Task))
+  name.vb: WaitForCompletion(TaskResource(), Int32, Nullable(Of TimeSpan), Func(Of TaskResource(), Task))
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.TaskResource},System.Boolean},System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.TaskResource},System.Boolean},System.String,System.Object)
+  parent: Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}
+  definition: Octopus.Client.Repositories.Async.IPaginate`1.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{`0},System.Boolean},System.String,System.Object)
+  name: Paginate(Func<ResourceCollection<TaskResource>, Boolean>, String, Object)
+  nameWithType: IPaginate<TaskResource>.Paginate(Func<ResourceCollection<TaskResource>, Boolean>, String, Object)
+  fullName: Octopus.Client.Repositories.Async.IPaginate<Octopus.Client.Model.TaskResource>.Paginate(System.Func<Octopus.Client.Model.ResourceCollection<Octopus.Client.Model.TaskResource>, System.Boolean>, System.String, System.Object)
+  nameWithType.vb: IPaginate(Of TaskResource).Paginate(Func(Of ResourceCollection(Of TaskResource), Boolean), String, Object)
+  fullName.vb: Octopus.Client.Repositories.Async.IPaginate(Of Octopus.Client.Model.TaskResource).Paginate(System.Func(Of Octopus.Client.Model.ResourceCollection(Of Octopus.Client.Model.TaskResource), System.Boolean), System.String, System.Object)
+  name.vb: Paginate(Func(Of ResourceCollection(Of TaskResource), Boolean), String, Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{`0},System.Boolean},System.String,System.Object)
+    name: Paginate
+    nameWithType: IPaginate<TaskResource>.Paginate
+    fullName: Octopus.Client.Repositories.Async.IPaginate<Octopus.Client.Model.TaskResource>.Paginate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{`0},System.Boolean},System.String,System.Object)
+    name: Paginate
+    nameWithType: IPaginate(Of TaskResource).Paginate
+    fullName: Octopus.Client.Repositories.Async.IPaginate(Of Octopus.Client.Model.TaskResource).Paginate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}.FindOne(System.Func{Octopus.Client.Model.TaskResource,System.Boolean},System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}.FindOne(System.Func{Octopus.Client.Model.TaskResource,System.Boolean},System.String,System.Object)
+  parent: Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}
+  definition: Octopus.Client.Repositories.Async.IPaginate`1.FindOne(System.Func{`0,System.Boolean},System.String,System.Object)
+  name: FindOne(Func<TaskResource, Boolean>, String, Object)
+  nameWithType: IPaginate<TaskResource>.FindOne(Func<TaskResource, Boolean>, String, Object)
+  fullName: Octopus.Client.Repositories.Async.IPaginate<Octopus.Client.Model.TaskResource>.FindOne(System.Func<Octopus.Client.Model.TaskResource, System.Boolean>, System.String, System.Object)
+  nameWithType.vb: IPaginate(Of TaskResource).FindOne(Func(Of TaskResource, Boolean), String, Object)
+  fullName.vb: Octopus.Client.Repositories.Async.IPaginate(Of Octopus.Client.Model.TaskResource).FindOne(System.Func(Of Octopus.Client.Model.TaskResource, System.Boolean), System.String, System.Object)
+  name.vb: FindOne(Func(Of TaskResource, Boolean), String, Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.FindOne(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindOne
+    nameWithType: IPaginate<TaskResource>.FindOne
+    fullName: Octopus.Client.Repositories.Async.IPaginate<Octopus.Client.Model.TaskResource>.FindOne
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.FindOne(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindOne
+    nameWithType: IPaginate(Of TaskResource).FindOne
+    fullName: Octopus.Client.Repositories.Async.IPaginate(Of Octopus.Client.Model.TaskResource).FindOne
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}.FindMany(System.Func{Octopus.Client.Model.TaskResource,System.Boolean},System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}.FindMany(System.Func{Octopus.Client.Model.TaskResource,System.Boolean},System.String,System.Object)
+  parent: Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}
+  definition: Octopus.Client.Repositories.Async.IPaginate`1.FindMany(System.Func{`0,System.Boolean},System.String,System.Object)
+  name: FindMany(Func<TaskResource, Boolean>, String, Object)
+  nameWithType: IPaginate<TaskResource>.FindMany(Func<TaskResource, Boolean>, String, Object)
+  fullName: Octopus.Client.Repositories.Async.IPaginate<Octopus.Client.Model.TaskResource>.FindMany(System.Func<Octopus.Client.Model.TaskResource, System.Boolean>, System.String, System.Object)
+  nameWithType.vb: IPaginate(Of TaskResource).FindMany(Func(Of TaskResource, Boolean), String, Object)
+  fullName.vb: Octopus.Client.Repositories.Async.IPaginate(Of Octopus.Client.Model.TaskResource).FindMany(System.Func(Of Octopus.Client.Model.TaskResource, System.Boolean), System.String, System.Object)
+  name.vb: FindMany(Func(Of TaskResource, Boolean), String, Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.FindMany(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindMany
+    nameWithType: IPaginate<TaskResource>.FindMany
+    fullName: Octopus.Client.Repositories.Async.IPaginate<Octopus.Client.Model.TaskResource>.FindMany
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.FindMany(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindMany
+    nameWithType: IPaginate(Of TaskResource).FindMany
+    fullName: Octopus.Client.Repositories.Async.IPaginate(Of Octopus.Client.Model.TaskResource).FindMany
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}.FindAll(System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}.FindAll(System.String,System.Object)
+  parent: Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}
+  definition: Octopus.Client.Repositories.Async.IPaginate`1.FindAll(System.String,System.Object)
+  name: FindAll(String, Object)
+  nameWithType: IPaginate<TaskResource>.FindAll(String, Object)
+  fullName: Octopus.Client.Repositories.Async.IPaginate<Octopus.Client.Model.TaskResource>.FindAll(System.String, System.Object)
+  nameWithType.vb: IPaginate(Of TaskResource).FindAll(String, Object)
+  fullName.vb: Octopus.Client.Repositories.Async.IPaginate(Of Octopus.Client.Model.TaskResource).FindAll(System.String, System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.FindAll(System.String,System.Object)
+    name: FindAll
+    nameWithType: IPaginate<TaskResource>.FindAll
+    fullName: Octopus.Client.Repositories.Async.IPaginate<Octopus.Client.Model.TaskResource>.FindAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.FindAll(System.String,System.Object)
+    name: FindAll
+    nameWithType: IPaginate(Of TaskResource).FindAll
+    fullName: Octopus.Client.Repositories.Async.IPaginate(Of Octopus.Client.Model.TaskResource).FindAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.TaskResource}.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.TaskResource}.Get(System.String)
+  parent: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.TaskResource}
+  definition: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+  name: Get(String)
+  nameWithType: IGet<TaskResource>.Get(String)
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.TaskResource>.Get(System.String)
+  nameWithType.vb: IGet(Of TaskResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.TaskResource).Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet<TaskResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.TaskResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet(Of TaskResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.TaskResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.TaskResource}.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.TaskResource}.Get(System.String[])
+  parent: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.TaskResource}
+  definition: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+  name: Get(String[])
+  nameWithType: IGet<TaskResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.TaskResource>.Get(System.String[])
+  nameWithType.vb: IGet(Of TaskResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.TaskResource).Get(System.String())
+  name.vb: Get(String())
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet<TaskResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.TaskResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet(Of TaskResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.TaskResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.TaskResource}.Refresh(Octopus.Client.Model.TaskResource)
+  commentId: M:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.TaskResource}.Refresh(Octopus.Client.Model.TaskResource)
+  parent: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.TaskResource}
+  definition: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+  name: Refresh(TaskResource)
+  nameWithType: IGet<TaskResource>.Refresh(TaskResource)
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.TaskResource>.Refresh(Octopus.Client.Model.TaskResource)
+  nameWithType.vb: IGet(Of TaskResource).Refresh(TaskResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.TaskResource).Refresh(Octopus.Client.Model.TaskResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet<TaskResource>.Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.TaskResource>.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet(Of TaskResource).Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.TaskResource).Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.TaskResource}.Create(Octopus.Client.Model.TaskResource,System.Object)
+  commentId: M:Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.TaskResource}.Create(Octopus.Client.Model.TaskResource,System.Object)
+  parent: Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.TaskResource}
+  definition: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+  name: Create(TaskResource, Object)
+  nameWithType: ICreate<TaskResource>.Create(TaskResource, Object)
+  fullName: Octopus.Client.Repositories.Async.ICreate<Octopus.Client.Model.TaskResource>.Create(Octopus.Client.Model.TaskResource, System.Object)
+  nameWithType.vb: ICreate(Of TaskResource).Create(TaskResource, Object)
+  fullName.vb: Octopus.Client.Repositories.Async.ICreate(Of Octopus.Client.Model.TaskResource).Create(Octopus.Client.Model.TaskResource, System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate<TaskResource>.Create
+    fullName: Octopus.Client.Repositories.Async.ICreate<Octopus.Client.Model.TaskResource>.Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate(Of TaskResource).Create
+    fullName: Octopus.Client.Repositories.Async.ICreate(Of Octopus.Client.Model.TaskResource).Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext{Octopus.Client.Repositories.Async.ITaskRepository}.UsingContext(Octopus.Client.SpaceContext)
+  commentId: M:Octopus.Client.Repositories.Async.ICanExtendSpaceContext{Octopus.Client.Repositories.Async.ITaskRepository}.UsingContext(Octopus.Client.SpaceContext)
+  parent: Octopus.Client.Repositories.Async.ICanExtendSpaceContext{Octopus.Client.Repositories.Async.ITaskRepository}
+  definition: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1.UsingContext(Octopus.Client.SpaceContext)
+  name: UsingContext(SpaceContext)
+  nameWithType: ICanExtendSpaceContext<ITaskRepository>.UsingContext(SpaceContext)
+  fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext<Octopus.Client.Repositories.Async.ITaskRepository>.UsingContext(Octopus.Client.SpaceContext)
+  nameWithType.vb: ICanExtendSpaceContext(Of ITaskRepository).UsingContext(SpaceContext)
+  fullName.vb: Octopus.Client.Repositories.Async.ICanExtendSpaceContext(Of Octopus.Client.Repositories.Async.ITaskRepository).UsingContext(Octopus.Client.SpaceContext)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1.UsingContext(Octopus.Client.SpaceContext)
+    name: UsingContext
+    nameWithType: ICanExtendSpaceContext<ITaskRepository>.UsingContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext<Octopus.Client.Repositories.Async.ITaskRepository>.UsingContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.SpaceContext
+    name: SpaceContext
+    nameWithType: SpaceContext
+    fullName: Octopus.Client.SpaceContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1.UsingContext(Octopus.Client.SpaceContext)
+    name: UsingContext
+    nameWithType: ICanExtendSpaceContext(Of ITaskRepository).UsingContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext(Of Octopus.Client.Repositories.Async.ITaskRepository).UsingContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.SpaceContext
+    name: SpaceContext
+    nameWithType: SpaceContext
+    fullName: Octopus.Client.SpaceContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IPaginate`1.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{`0},System.Boolean},System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.Async.IPaginate`1.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{`0},System.Boolean},System.String,System.Object)
+  isExternal: true
+  name: Paginate(Func<ResourceCollection<TResource>, Boolean>, String, Object)
+  nameWithType: IPaginate<TResource>.Paginate(Func<ResourceCollection<TResource>, Boolean>, String, Object)
+  fullName: Octopus.Client.Repositories.Async.IPaginate<TResource>.Paginate(System.Func<Octopus.Client.Model.ResourceCollection<TResource>, System.Boolean>, System.String, System.Object)
+  nameWithType.vb: IPaginate(Of TResource).Paginate(Func(Of ResourceCollection(Of TResource), Boolean), String, Object)
+  fullName.vb: Octopus.Client.Repositories.Async.IPaginate(Of TResource).Paginate(System.Func(Of Octopus.Client.Model.ResourceCollection(Of TResource), System.Boolean), System.String, System.Object)
+  name.vb: Paginate(Func(Of ResourceCollection(Of TResource), Boolean), String, Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{`0},System.Boolean},System.String,System.Object)
+    name: Paginate
+    nameWithType: IPaginate<TResource>.Paginate
+    fullName: Octopus.Client.Repositories.Async.IPaginate<TResource>.Paginate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.Paginate(System.Func{Octopus.Client.Model.ResourceCollection{`0},System.Boolean},System.String,System.Object)
+    name: Paginate
+    nameWithType: IPaginate(Of TResource).Paginate
+    fullName: Octopus.Client.Repositories.Async.IPaginate(Of TResource).Paginate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}
+  commentId: T:Octopus.Client.Repositories.Async.IPaginate{Octopus.Client.Model.TaskResource}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.IPaginate`1
+  name: IPaginate<TaskResource>
+  nameWithType: IPaginate<TaskResource>
+  fullName: Octopus.Client.Repositories.Async.IPaginate<Octopus.Client.Model.TaskResource>
+  nameWithType.vb: IPaginate(Of TaskResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IPaginate(Of Octopus.Client.Model.TaskResource)
+  name.vb: IPaginate(Of TaskResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1
+    name: IPaginate
+    nameWithType: IPaginate
+    fullName: Octopus.Client.Repositories.Async.IPaginate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1
+    name: IPaginate
+    nameWithType: IPaginate
+    fullName: Octopus.Client.Repositories.Async.IPaginate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IPaginate`1.FindOne(System.Func{`0,System.Boolean},System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.Async.IPaginate`1.FindOne(System.Func{`0,System.Boolean},System.String,System.Object)
+  isExternal: true
+  name: FindOne(Func<TResource, Boolean>, String, Object)
+  nameWithType: IPaginate<TResource>.FindOne(Func<TResource, Boolean>, String, Object)
+  fullName: Octopus.Client.Repositories.Async.IPaginate<TResource>.FindOne(System.Func<TResource, System.Boolean>, System.String, System.Object)
+  nameWithType.vb: IPaginate(Of TResource).FindOne(Func(Of TResource, Boolean), String, Object)
+  fullName.vb: Octopus.Client.Repositories.Async.IPaginate(Of TResource).FindOne(System.Func(Of TResource, System.Boolean), System.String, System.Object)
+  name.vb: FindOne(Func(Of TResource, Boolean), String, Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.FindOne(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindOne
+    nameWithType: IPaginate<TResource>.FindOne
+    fullName: Octopus.Client.Repositories.Async.IPaginate<TResource>.FindOne
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.FindOne(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindOne
+    nameWithType: IPaginate(Of TResource).FindOne
+    fullName: Octopus.Client.Repositories.Async.IPaginate(Of TResource).FindOne
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IPaginate`1.FindMany(System.Func{`0,System.Boolean},System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.Async.IPaginate`1.FindMany(System.Func{`0,System.Boolean},System.String,System.Object)
+  isExternal: true
+  name: FindMany(Func<TResource, Boolean>, String, Object)
+  nameWithType: IPaginate<TResource>.FindMany(Func<TResource, Boolean>, String, Object)
+  fullName: Octopus.Client.Repositories.Async.IPaginate<TResource>.FindMany(System.Func<TResource, System.Boolean>, System.String, System.Object)
+  nameWithType.vb: IPaginate(Of TResource).FindMany(Func(Of TResource, Boolean), String, Object)
+  fullName.vb: Octopus.Client.Repositories.Async.IPaginate(Of TResource).FindMany(System.Func(Of TResource, System.Boolean), System.String, System.Object)
+  name.vb: FindMany(Func(Of TResource, Boolean), String, Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.FindMany(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindMany
+    nameWithType: IPaginate<TResource>.FindMany
+    fullName: Octopus.Client.Repositories.Async.IPaginate<TResource>.FindMany
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.FindMany(System.Func{`0,System.Boolean},System.String,System.Object)
+    name: FindMany
+    nameWithType: IPaginate(Of TResource).FindMany
+    fullName: Octopus.Client.Repositories.Async.IPaginate(Of TResource).FindMany
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IPaginate`1.FindAll(System.String,System.Object)
+  commentId: M:Octopus.Client.Repositories.Async.IPaginate`1.FindAll(System.String,System.Object)
+  isExternal: true
+  name: FindAll(String, Object)
+  nameWithType: IPaginate<TResource>.FindAll(String, Object)
+  fullName: Octopus.Client.Repositories.Async.IPaginate<TResource>.FindAll(System.String, System.Object)
+  nameWithType.vb: IPaginate(Of TResource).FindAll(String, Object)
+  fullName.vb: Octopus.Client.Repositories.Async.IPaginate(Of TResource).FindAll(System.String, System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.FindAll(System.String,System.Object)
+    name: FindAll
+    nameWithType: IPaginate<TResource>.FindAll
+    fullName: Octopus.Client.Repositories.Async.IPaginate<TResource>.FindAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1.FindAll(System.String,System.Object)
+    name: FindAll
+    nameWithType: IPaginate(Of TResource).FindAll
+    fullName: Octopus.Client.Repositories.Async.IPaginate(Of TResource).FindAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+  isExternal: true
+  name: Get(String)
+  nameWithType: IGet<TResource>.Get(String)
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get(System.String)
+  nameWithType.vb: IGet(Of TResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource).Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet<TResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet(Of TResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of TResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.TaskResource}
+  commentId: T:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.TaskResource}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.IGet`1
+  name: IGet<TaskResource>
+  nameWithType: IGet<TaskResource>
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.TaskResource>
+  nameWithType.vb: IGet(Of TaskResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.TaskResource)
+  name.vb: IGet(Of TaskResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+  isExternal: true
+  name: Get(String[])
+  nameWithType: IGet<TResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get(System.String[])
+  nameWithType.vb: IGet(Of TResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource).Get(System.String())
+  name.vb: Get(String())
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet<TResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet(Of TResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of TResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+  commentId: M:Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+  name: Refresh(TResource)
+  nameWithType: IGet<TResource>.Refresh(TResource)
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Refresh(TResource)
+  nameWithType.vb: IGet(Of TResource).Refresh(TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource).Refresh(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet<TResource>.Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet(Of TResource).Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet(Of TResource).Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+  commentId: M:Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+  isExternal: true
+  name: Create(TResource, Object)
+  nameWithType: ICreate<TResource>.Create(TResource, Object)
+  fullName: Octopus.Client.Repositories.Async.ICreate<TResource>.Create(TResource, System.Object)
+  nameWithType.vb: ICreate(Of TResource).Create(TResource, Object)
+  fullName.vb: Octopus.Client.Repositories.Async.ICreate(Of TResource).Create(TResource, System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate<TResource>.Create
+    fullName: Octopus.Client.Repositories.Async.ICreate<TResource>.Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate(Of TResource).Create
+    fullName: Octopus.Client.Repositories.Async.ICreate(Of TResource).Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.TaskResource}
+  commentId: T:Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.TaskResource}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.ICreate`1
+  name: ICreate<TaskResource>
+  nameWithType: ICreate<TaskResource>
+  fullName: Octopus.Client.Repositories.Async.ICreate<Octopus.Client.Model.TaskResource>
+  nameWithType.vb: ICreate(Of TaskResource)
+  fullName.vb: Octopus.Client.Repositories.Async.ICreate(Of Octopus.Client.Model.TaskResource)
+  name.vb: ICreate(Of TaskResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.Async.ICreate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.Async.ICreate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1.UsingContext(Octopus.Client.SpaceContext)
+  commentId: M:Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1.UsingContext(Octopus.Client.SpaceContext)
+  name: UsingContext(SpaceContext)
+  nameWithType: ICanExtendSpaceContext<T>.UsingContext(SpaceContext)
+  fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext<T>.UsingContext(Octopus.Client.SpaceContext)
+  nameWithType.vb: ICanExtendSpaceContext(Of T).UsingContext(SpaceContext)
+  fullName.vb: Octopus.Client.Repositories.Async.ICanExtendSpaceContext(Of T).UsingContext(Octopus.Client.SpaceContext)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1.UsingContext(Octopus.Client.SpaceContext)
+    name: UsingContext
+    nameWithType: ICanExtendSpaceContext<T>.UsingContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext<T>.UsingContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.SpaceContext
+    name: SpaceContext
+    nameWithType: SpaceContext
+    fullName: Octopus.Client.SpaceContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1.UsingContext(Octopus.Client.SpaceContext)
+    name: UsingContext
+    nameWithType: ICanExtendSpaceContext(Of T).UsingContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext(Of T).UsingContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.SpaceContext
+    name: SpaceContext
+    nameWithType: SpaceContext
+    fullName: Octopus.Client.SpaceContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext{Octopus.Client.Repositories.Async.ITaskRepository}
+  commentId: T:Octopus.Client.Repositories.Async.ICanExtendSpaceContext{Octopus.Client.Repositories.Async.ITaskRepository}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1
+  name: ICanExtendSpaceContext<ITaskRepository>
+  nameWithType: ICanExtendSpaceContext<ITaskRepository>
+  fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext<Octopus.Client.Repositories.Async.ITaskRepository>
+  nameWithType.vb: ICanExtendSpaceContext(Of ITaskRepository)
+  fullName.vb: Octopus.Client.Repositories.Async.ICanExtendSpaceContext(Of Octopus.Client.Repositories.Async.ITaskRepository)
+  name.vb: ICanExtendSpaceContext(Of ITaskRepository)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1
+    name: ICanExtendSpaceContext
+    nameWithType: ICanExtendSpaceContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Repositories.Async.ITaskRepository
+    name: ITaskRepository
+    nameWithType: ITaskRepository
+    fullName: Octopus.Client.Repositories.Async.ITaskRepository
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1
+    name: ICanExtendSpaceContext
+    nameWithType: ICanExtendSpaceContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Repositories.Async.ITaskRepository
+    name: ITaskRepository
+    nameWithType: ITaskRepository
+    fullName: Octopus.Client.Repositories.Async.ITaskRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IPaginate`1
+  commentId: T:Octopus.Client.Repositories.Async.IPaginate`1
+  name: IPaginate<TResource>
+  nameWithType: IPaginate<TResource>
+  fullName: Octopus.Client.Repositories.Async.IPaginate<TResource>
+  nameWithType.vb: IPaginate(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IPaginate(Of TResource)
+  name.vb: IPaginate(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1
+    name: IPaginate
+    nameWithType: IPaginate
+    fullName: Octopus.Client.Repositories.Async.IPaginate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IPaginate`1
+    name: IPaginate
+    nameWithType: IPaginate
+    fullName: Octopus.Client.Repositories.Async.IPaginate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1
+  commentId: T:Octopus.Client.Repositories.Async.IGet`1
+  name: IGet<TResource>
+  nameWithType: IGet<TResource>
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>
+  nameWithType.vb: IGet(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource)
+  name.vb: IGet(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICreate`1
+  commentId: T:Octopus.Client.Repositories.Async.ICreate`1
+  name: ICreate<TResource>
+  nameWithType: ICreate<TResource>
+  fullName: Octopus.Client.Repositories.Async.ICreate<TResource>
+  nameWithType.vb: ICreate(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.ICreate(Of TResource)
+  name.vb: ICreate(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.Async.ICreate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.Async.ICreate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1
+  commentId: T:Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1
+  name: ICanExtendSpaceContext<T>
+  nameWithType: ICanExtendSpaceContext<T>
+  fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext<T>
+  nameWithType.vb: ICanExtendSpaceContext(Of T)
+  fullName.vb: Octopus.Client.Repositories.Async.ICanExtendSpaceContext(Of T)
+  name.vb: ICanExtendSpaceContext(Of T)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1
+    name: ICanExtendSpaceContext
+    nameWithType: ICanExtendSpaceContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICanExtendSpaceContext`1
+    name: ICanExtendSpaceContext
+    nameWithType: ICanExtendSpaceContext
+    fullName: Octopus.Client.Repositories.Async.ICanExtendSpaceContext
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteHealthCheck*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.ExecuteHealthCheck
+  name: ExecuteHealthCheck
+  nameWithType: ITaskRepository.ExecuteHealthCheck
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteHealthCheck
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.TaskResource}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.TaskResource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TaskResource>
+  nameWithType: Task<TaskResource>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.TaskResource>
+  nameWithType.vb: Task(Of TaskResource)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.TaskResource)
+  name.vb: Task(Of TaskResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCalamariUpdate*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCalamariUpdate
+  name: ExecuteCalamariUpdate
+  nameWithType: ITaskRepository.ExecuteCalamariUpdate
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCalamariUpdate
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteBackup*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.ExecuteBackup
+  name: ExecuteBackup
+  nameWithType: ITaskRepository.ExecuteBackup
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteBackup
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteTentacleUpgrade*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.ExecuteTentacleUpgrade
+  name: ExecuteTentacleUpgrade
+  nameWithType: ITaskRepository.ExecuteTentacleUpgrade
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteTentacleUpgrade
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteAdHocScript*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.ExecuteAdHocScript
+  name: ExecuteAdHocScript
+  nameWithType: ITaskRepository.ExecuteAdHocScript
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteAdHocScript
+- uid: System.Nullable{Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType}
+  commentId: T:System.Nullable{Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<BuiltInTasks.AdHocScript.TargetType>
+  nameWithType: Nullable<BuiltInTasks.AdHocScript.TargetType>
+  fullName: System.Nullable<Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType>
+  nameWithType.vb: Nullable(Of BuiltInTasks.AdHocScript.TargetType)
+  fullName.vb: System.Nullable(Of Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType)
+  name.vb: Nullable(Of BuiltInTasks.AdHocScript.TargetType)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType
+    name: BuiltInTasks.AdHocScript.TargetType
+    nameWithType: BuiltInTasks.AdHocScript.TargetType
+    fullName: Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType
+    name: BuiltInTasks.AdHocScript.TargetType
+    nameWithType: BuiltInTasks.AdHocScript.TargetType
+    fullName: Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.GetDetails*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.GetDetails
+  name: GetDetails
+  nameWithType: ITaskRepository.GetDetails
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.GetDetails
+- uid: Octopus.Client.Model.TaskResource
+  commentId: T:Octopus.Client.Model.TaskResource
+  parent: Octopus.Client.Model
+  name: TaskResource
+  nameWithType: TaskResource
+  fullName: Octopus.Client.Model.TaskResource
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Boolean>
+  nameWithType: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  nameWithType.vb: Nullable(Of Boolean)
+  fullName.vb: System.Nullable(Of System.Boolean)
+  name.vb: Nullable(Of Boolean)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.TaskDetailsResource}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.TaskDetailsResource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TaskDetailsResource>
+  nameWithType: Task<TaskDetailsResource>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.TaskDetailsResource>
+  nameWithType.vb: Task(Of TaskDetailsResource)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.TaskDetailsResource)
+  name.vb: Task(Of TaskDetailsResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TaskDetailsResource
+    name: TaskDetailsResource
+    nameWithType: TaskDetailsResource
+    fullName: Octopus.Client.Model.TaskDetailsResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TaskDetailsResource
+    name: TaskDetailsResource
+    nameWithType: TaskDetailsResource
+    fullName: Octopus.Client.Model.TaskDetailsResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteActionTemplate*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.ExecuteActionTemplate
+  name: ExecuteActionTemplate
+  nameWithType: ITaskRepository.ExecuteActionTemplate
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteActionTemplate
+- uid: Octopus.Client.Model.ActionTemplateResource
+  commentId: T:Octopus.Client.Model.ActionTemplateResource
+  parent: Octopus.Client.Model
+  name: ActionTemplateResource
+  nameWithType: ActionTemplateResource
+  fullName: Octopus.Client.Model.ActionTemplateResource
+- uid: System.Collections.Generic.Dictionary{System.String,Octopus.Client.Model.PropertyValueResource}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,Octopus.Client.Model.PropertyValueResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, PropertyValueResource>
+  nameWithType: Dictionary<String, PropertyValueResource>
+  fullName: System.Collections.Generic.Dictionary<System.String, Octopus.Client.Model.PropertyValueResource>
+  nameWithType.vb: Dictionary(Of String, PropertyValueResource)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, Octopus.Client.Model.PropertyValueResource)
+  name.vb: Dictionary(Of String, PropertyValueResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.PropertyValueResource
+    name: PropertyValueResource
+    nameWithType: PropertyValueResource
+    fullName: Octopus.Client.Model.PropertyValueResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.PropertyValueResource
+    name: PropertyValueResource
+    nameWithType: PropertyValueResource
+    fullName: Octopus.Client.Model.PropertyValueResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCommunityActionTemplatesSynchronisation*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCommunityActionTemplatesSynchronisation
+  name: ExecuteCommunityActionTemplatesSynchronisation
+  nameWithType: ITaskRepository.ExecuteCommunityActionTemplatesSynchronisation
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCommunityActionTemplatesSynchronisation
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.GetAllActive*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.GetAllActive
+  name: GetAllActive
+  nameWithType: ITaskRepository.GetAllActive
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.GetAllActive
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.TaskResource}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Octopus.Client.Model.TaskResource}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<TaskResource>>
+  nameWithType: Task<List<TaskResource>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Octopus.Client.Model.TaskResource>>
+  nameWithType.vb: Task(Of List(Of TaskResource))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Octopus.Client.Model.TaskResource))
+  name.vb: Task(Of List(Of TaskResource))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.GetActiveWithSummary*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.GetActiveWithSummary
+  name: GetActiveWithSummary
+  nameWithType: ITaskRepository.GetActiveWithSummary
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.GetActiveWithSummary
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.TaskResourceCollection}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.TaskResourceCollection}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TaskResourceCollection>
+  nameWithType: Task<TaskResourceCollection>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.TaskResourceCollection>
+  nameWithType.vb: Task(Of TaskResourceCollection)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.TaskResourceCollection)
+  name.vb: Task(Of TaskResourceCollection)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TaskResourceCollection
+    name: TaskResourceCollection
+    nameWithType: TaskResourceCollection
+    fullName: Octopus.Client.Model.TaskResourceCollection
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TaskResourceCollection
+    name: TaskResourceCollection
+    nameWithType: TaskResourceCollection
+    fullName: Octopus.Client.Model.TaskResourceCollection
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.GetAllWithSummary*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.GetAllWithSummary
+  name: GetAllWithSummary
+  nameWithType: ITaskRepository.GetAllWithSummary
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.GetAllWithSummary
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.GetRawOutputLog*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.GetRawOutputLog
+  name: GetRawOutputLog
+  nameWithType: ITaskRepository.GetRawOutputLog
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.GetRawOutputLog
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.GetTaskTypes*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.GetTaskTypes
+  name: GetTaskTypes
+  nameWithType: ITaskRepository.GetTaskTypes
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.GetTaskTypes
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.TaskTypeResource[]}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.TaskTypeResource[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TaskTypeResource[]>
+  nameWithType: Task<TaskTypeResource[]>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.TaskTypeResource[]>
+  nameWithType.vb: Task(Of TaskTypeResource())
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.TaskTypeResource())
+  name.vb: Task(Of TaskTypeResource())
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TaskTypeResource
+    name: TaskTypeResource
+    nameWithType: TaskTypeResource
+    fullName: Octopus.Client.Model.TaskTypeResource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TaskTypeResource
+    name: TaskTypeResource
+    nameWithType: TaskTypeResource
+    fullName: Octopus.Client.Model.TaskTypeResource
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.Rerun*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.Rerun
+  name: Rerun
+  nameWithType: ITaskRepository.Rerun
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.Rerun
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.Cancel*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.Cancel
+  name: Cancel
+  nameWithType: ITaskRepository.Cancel
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.Cancel
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.ModifyState*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.ModifyState
+  name: ModifyState
+  nameWithType: ITaskRepository.ModifyState
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.ModifyState
+- uid: Octopus.Client.Model.TaskState
+  commentId: T:Octopus.Client.Model.TaskState
+  parent: Octopus.Client.Model
+  name: TaskState
+  nameWithType: TaskState
+  fullName: Octopus.Client.Model.TaskState
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.GetQueuedBehindTasks*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.GetQueuedBehindTasks
+  name: GetQueuedBehindTasks
+  nameWithType: ITaskRepository.GetQueuedBehindTasks
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.GetQueuedBehindTasks
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.TaskResource}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.TaskResource}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IReadOnlyList<TaskResource>>
+  nameWithType: Task<IReadOnlyList<TaskResource>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<Octopus.Client.Model.TaskResource>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of TaskResource))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyList(Of Octopus.Client.Model.TaskResource))
+  name.vb: Task(Of IReadOnlyList(Of TaskResource))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion*
+  commentId: Overload:Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion
+  name: WaitForCompletion
+  nameWithType: ITaskRepository.WaitForCompletion
+  fullName: Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion
+- uid: System.Action{Octopus.Client.Model.TaskResource[]}
+  commentId: T:System.Action{Octopus.Client.Model.TaskResource[]}
+  parent: System
+  definition: System.Action`1
+  name: Action<TaskResource[]>
+  nameWithType: Action<TaskResource[]>
+  fullName: System.Action<Octopus.Client.Model.TaskResource[]>
+  nameWithType.vb: Action(Of TaskResource())
+  fullName.vb: System.Action(Of Octopus.Client.Model.TaskResource())
+  name.vb: Action(Of TaskResource())
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.TaskResource[]
+  isExternal: true
+  name: TaskResource[]
+  nameWithType: TaskResource[]
+  fullName: Octopus.Client.Model.TaskResource[]
+  nameWithType.vb: TaskResource()
+  fullName.vb: Octopus.Client.Model.TaskResource()
+  name.vb: TaskResource()
+  spec.csharp:
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Func{Octopus.Client.Model.TaskResource[],System.Threading.Tasks.Task}
+  commentId: T:System.Func{Octopus.Client.Model.TaskResource[],System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  name: Func<TaskResource[], Task>
+  nameWithType: Func<TaskResource[], Task>
+  fullName: System.Func<Octopus.Client.Model.TaskResource[], System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of TaskResource(), Task)
+  fullName.vb: System.Func(Of Octopus.Client.Model.TaskResource(), System.Threading.Tasks.Task)
+  name.vb: Func(Of TaskResource(), Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.TaskResource
+    name: TaskResource
+    nameWithType: TaskResource
+    fullName: Octopus.Client.Model.TaskResource
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  nameWithType: Nullable<TimeSpan>
+  fullName: System.Nullable<System.TimeSpan>
+  nameWithType.vb: Nullable(Of TimeSpan)
+  fullName.vb: System.Nullable(Of System.TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

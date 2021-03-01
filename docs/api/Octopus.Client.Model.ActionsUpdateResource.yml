@@ -1,0 +1,953 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.ActionsUpdateResource
+  commentId: T:Octopus.Client.Model.ActionsUpdateResource
+  id: ActionsUpdateResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.ActionsUpdateResource.#ctor
+  - Octopus.Client.Model.ActionsUpdateResource.ActionIdsByProcessId
+  - Octopus.Client.Model.ActionsUpdateResource.ActionsToUpdate
+  - Octopus.Client.Model.ActionsUpdateResource.DefaultPropertyValues
+  - Octopus.Client.Model.ActionsUpdateResource.Id
+  - Octopus.Client.Model.ActionsUpdateResource.Links
+  - Octopus.Client.Model.ActionsUpdateResource.Overrides
+  - Octopus.Client.Model.ActionsUpdateResource.Version
+  langs:
+  - csharp
+  - vb
+  name: ActionsUpdateResource
+  nameWithType: ActionsUpdateResource
+  fullName: Octopus.Client.Model.ActionsUpdateResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionsUpdateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ActionsUpdateResource
+    path: ../source/Octopus.Client/Model/ActionsUpdateResource.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class ActionsUpdateResource : IResource'
+    content.vb: >-
+      Public Class ActionsUpdateResource
+          Implements IResource
+  inheritance:
+  - System.Object
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.ActionsUpdateResource.#ctor
+  commentId: M:Octopus.Client.Model.ActionsUpdateResource.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.ActionsUpdateResource
+  langs:
+  - csharp
+  - vb
+  name: ActionsUpdateResource()
+  nameWithType: ActionsUpdateResource.ActionsUpdateResource()
+  fullName: Octopus.Client.Model.ActionsUpdateResource.ActionsUpdateResource()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionsUpdateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/ActionsUpdateResource.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ActionsUpdateResource()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.ActionsUpdateResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionsUpdateResource.Id
+  commentId: P:Octopus.Client.Model.ActionsUpdateResource.Id
+  id: Id
+  parent: Octopus.Client.Model.ActionsUpdateResource
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ActionsUpdateResource.Id
+  fullName: Octopus.Client.Model.ActionsUpdateResource.Id
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionsUpdateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Id
+    path: ../source/Octopus.Client/Model/ActionsUpdateResource.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Octopus.Client.Model.ActionsUpdateResource.Id*
+  implements:
+  - Octopus.Client.Extensibility.IResource.Id
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionsUpdateResource.Version
+  commentId: P:Octopus.Client.Model.ActionsUpdateResource.Version
+  id: Version
+  parent: Octopus.Client.Model.ActionsUpdateResource
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: ActionsUpdateResource.Version
+  fullName: Octopus.Client.Model.ActionsUpdateResource.Version
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionsUpdateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Version
+    path: ../source/Octopus.Client/Model/ActionsUpdateResource.cs
+    startLine: 20
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Required]
+
+      public int Version { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Required>
+
+      Public Property Version As Integer
+  overload: Octopus.Client.Model.ActionsUpdateResource.Version*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionsUpdateResource.DefaultPropertyValues
+  commentId: P:Octopus.Client.Model.ActionsUpdateResource.DefaultPropertyValues
+  id: DefaultPropertyValues
+  parent: Octopus.Client.Model.ActionsUpdateResource
+  langs:
+  - csharp
+  - vb
+  name: DefaultPropertyValues
+  nameWithType: ActionsUpdateResource.DefaultPropertyValues
+  fullName: Octopus.Client.Model.ActionsUpdateResource.DefaultPropertyValues
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionsUpdateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DefaultPropertyValues
+    path: ../source/Octopus.Client/Model/ActionsUpdateResource.cs
+    startLine: 22
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public IDictionary<string, PropertyValueResource> DefaultPropertyValues { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,Octopus.Client.Model.PropertyValueResource}
+    content.vb: Public Property DefaultPropertyValues As IDictionary(Of String, PropertyValueResource)
+  overload: Octopus.Client.Model.ActionsUpdateResource.DefaultPropertyValues*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionsUpdateResource.Overrides
+  commentId: P:Octopus.Client.Model.ActionsUpdateResource.Overrides
+  id: Overrides
+  parent: Octopus.Client.Model.ActionsUpdateResource
+  langs:
+  - csharp
+  - vb
+  name: Overrides
+  nameWithType: ActionsUpdateResource.Overrides
+  fullName: Octopus.Client.Model.ActionsUpdateResource.Overrides
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionsUpdateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Overrides
+    path: ../source/Octopus.Client/Model/ActionsUpdateResource.cs
+    startLine: 23
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public IDictionary<string, PropertyValueResource> Overrides { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,Octopus.Client.Model.PropertyValueResource}
+    content.vb: Public Property Overrides As IDictionary(Of String, PropertyValueResource)
+  overload: Octopus.Client.Model.ActionsUpdateResource.Overrides*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionsUpdateResource.Links
+  commentId: P:Octopus.Client.Model.ActionsUpdateResource.Links
+  id: Links
+  parent: Octopus.Client.Model.ActionsUpdateResource
+  langs:
+  - csharp
+  - vb
+  name: Links
+  nameWithType: ActionsUpdateResource.Links
+  fullName: Octopus.Client.Model.ActionsUpdateResource.Links
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionsUpdateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Links
+    path: ../source/Octopus.Client/Model/ActionsUpdateResource.cs
+    startLine: 24
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public LinkCollection Links { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Extensibility.LinkCollection
+    content.vb: Public Property Links As LinkCollection
+  overload: Octopus.Client.Model.ActionsUpdateResource.Links*
+  implements:
+  - Octopus.Client.Extensibility.IResource.Links
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionsUpdateResource.ActionIdsByProcessId
+  commentId: P:Octopus.Client.Model.ActionsUpdateResource.ActionIdsByProcessId
+  id: ActionIdsByProcessId
+  parent: Octopus.Client.Model.ActionsUpdateResource
+  langs:
+  - csharp
+  - vb
+  name: ActionIdsByProcessId
+  nameWithType: ActionsUpdateResource.ActionIdsByProcessId
+  fullName: Octopus.Client.Model.ActionsUpdateResource.ActionIdsByProcessId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionsUpdateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ActionIdsByProcessId
+    path: ../source/Octopus.Client/Model/ActionsUpdateResource.cs
+    startLine: 26
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Obsolete("UseActionsToUpdate instead")]
+
+      public IDictionary<string, string[]> ActionIdsByProcessId { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.String[]}
+    content.vb: >-
+      <Obsolete("UseActionsToUpdate instead")>
+
+      Public Property ActionIdsByProcessId As IDictionary(Of String, String())
+  overload: Octopus.Client.Model.ActionsUpdateResource.ActionIdsByProcessId*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UseActionsToUpdate instead
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ActionsUpdateResource.ActionsToUpdate
+  commentId: P:Octopus.Client.Model.ActionsUpdateResource.ActionsToUpdate
+  id: ActionsToUpdate
+  parent: Octopus.Client.Model.ActionsUpdateResource
+  langs:
+  - csharp
+  - vb
+  name: ActionsToUpdate
+  nameWithType: ActionsUpdateResource.ActionsToUpdate
+  fullName: Octopus.Client.Model.ActionsUpdateResource.ActionsToUpdate
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ActionsUpdateResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ActionsToUpdate
+    path: ../source/Octopus.Client/Model/ActionsUpdateResource.cs
+    startLine: 29
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Required]
+
+      public ActionsUpdateProcessResource[] ActionsToUpdate { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ActionsUpdateProcessResource[]
+    content.vb: >-
+      <Required>
+
+      Public Property ActionsToUpdate As ActionsUpdateProcessResource()
+  overload: Octopus.Client.Model.ActionsUpdateResource.ActionsToUpdate*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.ActionsUpdateResource.#ctor*
+  commentId: Overload:Octopus.Client.Model.ActionsUpdateResource.#ctor
+  name: ActionsUpdateResource
+  nameWithType: ActionsUpdateResource.ActionsUpdateResource
+  fullName: Octopus.Client.Model.ActionsUpdateResource.ActionsUpdateResource
+- uid: Octopus.Client.Model.ActionsUpdateResource.Id*
+  commentId: Overload:Octopus.Client.Model.ActionsUpdateResource.Id
+  name: Id
+  nameWithType: ActionsUpdateResource.Id
+  fullName: Octopus.Client.Model.ActionsUpdateResource.Id
+- uid: Octopus.Client.Extensibility.IResource.Id
+  commentId: P:Octopus.Client.Extensibility.IResource.Id
+  parent: Octopus.Client.Extensibility.IResource
+  name: Id
+  nameWithType: IResource.Id
+  fullName: Octopus.Client.Extensibility.IResource.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.ActionsUpdateResource.Version*
+  commentId: Overload:Octopus.Client.Model.ActionsUpdateResource.Version
+  name: Version
+  nameWithType: ActionsUpdateResource.Version
+  fullName: Octopus.Client.Model.ActionsUpdateResource.Version
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Octopus.Client.Model.ActionsUpdateResource.DefaultPropertyValues*
+  commentId: Overload:Octopus.Client.Model.ActionsUpdateResource.DefaultPropertyValues
+  name: DefaultPropertyValues
+  nameWithType: ActionsUpdateResource.DefaultPropertyValues
+  fullName: Octopus.Client.Model.ActionsUpdateResource.DefaultPropertyValues
+- uid: System.Collections.Generic.IDictionary{System.String,Octopus.Client.Model.PropertyValueResource}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,Octopus.Client.Model.PropertyValueResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, PropertyValueResource>
+  nameWithType: IDictionary<String, PropertyValueResource>
+  fullName: System.Collections.Generic.IDictionary<System.String, Octopus.Client.Model.PropertyValueResource>
+  nameWithType.vb: IDictionary(Of String, PropertyValueResource)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, Octopus.Client.Model.PropertyValueResource)
+  name.vb: IDictionary(Of String, PropertyValueResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.PropertyValueResource
+    name: PropertyValueResource
+    nameWithType: PropertyValueResource
+    fullName: Octopus.Client.Model.PropertyValueResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.PropertyValueResource
+    name: PropertyValueResource
+    nameWithType: PropertyValueResource
+    fullName: Octopus.Client.Model.PropertyValueResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.ActionsUpdateResource.Overrides*
+  commentId: Overload:Octopus.Client.Model.ActionsUpdateResource.Overrides
+  name: Overrides
+  nameWithType: ActionsUpdateResource.Overrides
+  fullName: Octopus.Client.Model.ActionsUpdateResource.Overrides
+- uid: Octopus.Client.Model.ActionsUpdateResource.Links*
+  commentId: Overload:Octopus.Client.Model.ActionsUpdateResource.Links
+  name: Links
+  nameWithType: ActionsUpdateResource.Links
+  fullName: Octopus.Client.Model.ActionsUpdateResource.Links
+- uid: Octopus.Client.Extensibility.IResource.Links
+  commentId: P:Octopus.Client.Extensibility.IResource.Links
+  parent: Octopus.Client.Extensibility.IResource
+  name: Links
+  nameWithType: IResource.Links
+  fullName: Octopus.Client.Extensibility.IResource.Links
+- uid: Octopus.Client.Extensibility.LinkCollection
+  commentId: T:Octopus.Client.Extensibility.LinkCollection
+  parent: Octopus.Client.Extensibility
+  name: LinkCollection
+  nameWithType: LinkCollection
+  fullName: Octopus.Client.Extensibility.LinkCollection
+- uid: Octopus.Client.Model.ActionsUpdateResource.ActionIdsByProcessId*
+  commentId: Overload:Octopus.Client.Model.ActionsUpdateResource.ActionIdsByProcessId
+  name: ActionIdsByProcessId
+  nameWithType: ActionsUpdateResource.ActionIdsByProcessId
+  fullName: Octopus.Client.Model.ActionsUpdateResource.ActionIdsByProcessId
+- uid: System.Collections.Generic.IDictionary{System.String,System.String[]}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, String[]>
+  nameWithType: IDictionary<String, String[]>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>
+  nameWithType.vb: IDictionary(Of String, String())
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String())
+  name.vb: IDictionary(Of String, String())
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ActionsUpdateResource.ActionsToUpdate*
+  commentId: Overload:Octopus.Client.Model.ActionsUpdateResource.ActionsToUpdate
+  name: ActionsToUpdate
+  nameWithType: ActionsUpdateResource.ActionsToUpdate
+  fullName: Octopus.Client.Model.ActionsUpdateResource.ActionsToUpdate
+- uid: Octopus.Client.Model.ActionsUpdateProcessResource[]
+  isExternal: true
+  name: ActionsUpdateProcessResource[]
+  nameWithType: ActionsUpdateProcessResource[]
+  fullName: Octopus.Client.Model.ActionsUpdateProcessResource[]
+  nameWithType.vb: ActionsUpdateProcessResource()
+  fullName.vb: Octopus.Client.Model.ActionsUpdateProcessResource()
+  name.vb: ActionsUpdateProcessResource()
+  spec.csharp:
+  - uid: Octopus.Client.Model.ActionsUpdateProcessResource
+    name: ActionsUpdateProcessResource
+    nameWithType: ActionsUpdateProcessResource
+    fullName: Octopus.Client.Model.ActionsUpdateProcessResource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Octopus.Client.Model.ActionsUpdateProcessResource
+    name: ActionsUpdateProcessResource
+    nameWithType: ActionsUpdateProcessResource
+    fullName: Octopus.Client.Model.ActionsUpdateProcessResource
+  - name: ()
+    nameWithType: ()
+    fullName: ()

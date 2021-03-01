@@ -1,0 +1,209 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.IDashboardConfigurationRepository
+  commentId: T:Octopus.Client.Repositories.Async.IDashboardConfigurationRepository
+  id: IDashboardConfigurationRepository
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.GetDashboardConfiguration
+  - Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.ModifyDashboardConfiguration(Octopus.Client.Model.DashboardConfigurationResource)
+  langs:
+  - csharp
+  - vb
+  name: IDashboardConfigurationRepository
+  nameWithType: IDashboardConfigurationRepository
+  fullName: Octopus.Client.Repositories.Async.IDashboardConfigurationRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/DashboardConfigurationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IDashboardConfigurationRepository
+    path: ../source/Octopus.Client/Repositories/Async/DashboardConfigurationRepository.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: public interface IDashboardConfigurationRepository
+    content.vb: Public Interface IDashboardConfigurationRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.GetDashboardConfiguration
+  commentId: M:Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.GetDashboardConfiguration
+  id: GetDashboardConfiguration
+  parent: Octopus.Client.Repositories.Async.IDashboardConfigurationRepository
+  langs:
+  - csharp
+  - vb
+  name: GetDashboardConfiguration()
+  nameWithType: IDashboardConfigurationRepository.GetDashboardConfiguration()
+  fullName: Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.GetDashboardConfiguration()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/DashboardConfigurationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetDashboardConfiguration
+    path: ../source/Octopus.Client/Repositories/Async/DashboardConfigurationRepository.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<DashboardConfigurationResource> GetDashboardConfiguration()
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.DashboardConfigurationResource}
+    content.vb: Function GetDashboardConfiguration As Task(Of DashboardConfigurationResource)
+  overload: Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.GetDashboardConfiguration*
+- uid: Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.ModifyDashboardConfiguration(Octopus.Client.Model.DashboardConfigurationResource)
+  commentId: M:Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.ModifyDashboardConfiguration(Octopus.Client.Model.DashboardConfigurationResource)
+  id: ModifyDashboardConfiguration(Octopus.Client.Model.DashboardConfigurationResource)
+  parent: Octopus.Client.Repositories.Async.IDashboardConfigurationRepository
+  langs:
+  - csharp
+  - vb
+  name: ModifyDashboardConfiguration(DashboardConfigurationResource)
+  nameWithType: IDashboardConfigurationRepository.ModifyDashboardConfiguration(DashboardConfigurationResource)
+  fullName: Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.ModifyDashboardConfiguration(Octopus.Client.Model.DashboardConfigurationResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/DashboardConfigurationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ModifyDashboardConfiguration
+    path: ../source/Octopus.Client/Repositories/Async/DashboardConfigurationRepository.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<DashboardConfigurationResource> ModifyDashboardConfiguration(DashboardConfigurationResource resource)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.DashboardConfigurationResource
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.DashboardConfigurationResource}
+    content.vb: Function ModifyDashboardConfiguration(resource As DashboardConfigurationResource) As Task(Of DashboardConfigurationResource)
+  overload: Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.ModifyDashboardConfiguration*
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.GetDashboardConfiguration*
+  commentId: Overload:Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.GetDashboardConfiguration
+  name: GetDashboardConfiguration
+  nameWithType: IDashboardConfigurationRepository.GetDashboardConfiguration
+  fullName: Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.GetDashboardConfiguration
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.DashboardConfigurationResource}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.DashboardConfigurationResource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<DashboardConfigurationResource>
+  nameWithType: Task<DashboardConfigurationResource>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.DashboardConfigurationResource>
+  nameWithType.vb: Task(Of DashboardConfigurationResource)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.DashboardConfigurationResource)
+  name.vb: Task(Of DashboardConfigurationResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.DashboardConfigurationResource
+    name: DashboardConfigurationResource
+    nameWithType: DashboardConfigurationResource
+    fullName: Octopus.Client.Model.DashboardConfigurationResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.DashboardConfigurationResource
+    name: DashboardConfigurationResource
+    nameWithType: DashboardConfigurationResource
+    fullName: Octopus.Client.Model.DashboardConfigurationResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.ModifyDashboardConfiguration*
+  commentId: Overload:Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.ModifyDashboardConfiguration
+  name: ModifyDashboardConfiguration
+  nameWithType: IDashboardConfigurationRepository.ModifyDashboardConfiguration
+  fullName: Octopus.Client.Repositories.Async.IDashboardConfigurationRepository.ModifyDashboardConfiguration
+- uid: Octopus.Client.Model.DashboardConfigurationResource
+  commentId: T:Octopus.Client.Model.DashboardConfigurationResource
+  parent: Octopus.Client.Model
+  name: DashboardConfigurationResource
+  nameWithType: DashboardConfigurationResource
+  fullName: Octopus.Client.Model.DashboardConfigurationResource
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model

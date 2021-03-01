@@ -1,0 +1,671 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Util.HashCodeCombiner
+  commentId: T:Octopus.Client.Util.HashCodeCombiner
+  id: HashCodeCombiner
+  parent: Octopus.Client.Util
+  children:
+  - Octopus.Client.Util.HashCodeCombiner.#ctor
+  - Octopus.Client.Util.HashCodeCombiner.AddInt32(System.Int32)
+  - Octopus.Client.Util.HashCodeCombiner.AddObject(System.Boolean)
+  - Octopus.Client.Util.HashCodeCombiner.AddObject(System.Int32)
+  - Octopus.Client.Util.HashCodeCombiner.AddObject(System.Object)
+  - Octopus.Client.Util.HashCodeCombiner.CombinedHash
+  - Octopus.Client.Util.HashCodeCombiner.GetHashCode(System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: HashCodeCombiner
+  nameWithType: HashCodeCombiner
+  fullName: Octopus.Client.Util.HashCodeCombiner
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Util/HashCodeCombiner.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: HashCodeCombiner
+    path: ../source/Octopus.Client/Util/HashCodeCombiner.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Util
+  summary: "\nHash code creator, based on the original NuGet hash code combiner/ASP hash code combiner implementations\n"
+  example: []
+  syntax:
+    content: public sealed class HashCodeCombiner
+    content.vb: Public NotInheritable Class HashCodeCombiner
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Octopus.Client.Util.HashCodeCombiner.#ctor
+  commentId: M:Octopus.Client.Util.HashCodeCombiner.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Util.HashCodeCombiner
+  langs:
+  - csharp
+  - vb
+  name: HashCodeCombiner()
+  nameWithType: HashCodeCombiner.HashCodeCombiner()
+  fullName: Octopus.Client.Util.HashCodeCombiner.HashCodeCombiner()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Util/HashCodeCombiner.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Util/HashCodeCombiner.cs
+    startLine: 16
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Util
+  syntax:
+    content: public HashCodeCombiner()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Util.HashCodeCombiner.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Util.HashCodeCombiner.CombinedHash
+  commentId: P:Octopus.Client.Util.HashCodeCombiner.CombinedHash
+  id: CombinedHash
+  parent: Octopus.Client.Util.HashCodeCombiner
+  langs:
+  - csharp
+  - vb
+  name: CombinedHash
+  nameWithType: HashCodeCombiner.CombinedHash
+  fullName: Octopus.Client.Util.HashCodeCombiner.CombinedHash
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Util/HashCodeCombiner.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CombinedHash
+    path: ../source/Octopus.Client/Util/HashCodeCombiner.cs
+    startLine: 21
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Util
+  syntax:
+    content: public int CombinedHash { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property CombinedHash As Integer
+  overload: Octopus.Client.Util.HashCodeCombiner.CombinedHash*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Util.HashCodeCombiner.AddInt32(System.Int32)
+  commentId: M:Octopus.Client.Util.HashCodeCombiner.AddInt32(System.Int32)
+  id: AddInt32(System.Int32)
+  parent: Octopus.Client.Util.HashCodeCombiner
+  langs:
+  - csharp
+  - vb
+  name: AddInt32(Int32)
+  nameWithType: HashCodeCombiner.AddInt32(Int32)
+  fullName: Octopus.Client.Util.HashCodeCombiner.AddInt32(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Util/HashCodeCombiner.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddInt32
+    path: ../source/Octopus.Client/Util/HashCodeCombiner.cs
+    startLine: 26
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Util
+  syntax:
+    content: public HashCodeCombiner AddInt32(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+    return:
+      type: Octopus.Client.Util.HashCodeCombiner
+    content.vb: Public Function AddInt32(i As Integer) As HashCodeCombiner
+  overload: Octopus.Client.Util.HashCodeCombiner.AddInt32*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Util.HashCodeCombiner.AddObject(System.Int32)
+  commentId: M:Octopus.Client.Util.HashCodeCombiner.AddObject(System.Int32)
+  id: AddObject(System.Int32)
+  parent: Octopus.Client.Util.HashCodeCombiner
+  langs:
+  - csharp
+  - vb
+  name: AddObject(Int32)
+  nameWithType: HashCodeCombiner.AddObject(Int32)
+  fullName: Octopus.Client.Util.HashCodeCombiner.AddObject(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Util/HashCodeCombiner.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddObject
+    path: ../source/Octopus.Client/Util/HashCodeCombiner.cs
+    startLine: 32
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Util
+  syntax:
+    content: public HashCodeCombiner AddObject(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+    return:
+      type: Octopus.Client.Util.HashCodeCombiner
+    content.vb: Public Function AddObject(i As Integer) As HashCodeCombiner
+  overload: Octopus.Client.Util.HashCodeCombiner.AddObject*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Util.HashCodeCombiner.AddObject(System.Boolean)
+  commentId: M:Octopus.Client.Util.HashCodeCombiner.AddObject(System.Boolean)
+  id: AddObject(System.Boolean)
+  parent: Octopus.Client.Util.HashCodeCombiner
+  langs:
+  - csharp
+  - vb
+  name: AddObject(Boolean)
+  nameWithType: HashCodeCombiner.AddObject(Boolean)
+  fullName: Octopus.Client.Util.HashCodeCombiner.AddObject(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Util/HashCodeCombiner.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddObject
+    path: ../source/Octopus.Client/Util/HashCodeCombiner.cs
+    startLine: 38
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Util
+  syntax:
+    content: public HashCodeCombiner AddObject(bool b)
+    parameters:
+    - id: b
+      type: System.Boolean
+    return:
+      type: Octopus.Client.Util.HashCodeCombiner
+    content.vb: Public Function AddObject(b As Boolean) As HashCodeCombiner
+  overload: Octopus.Client.Util.HashCodeCombiner.AddObject*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Util.HashCodeCombiner.AddObject(System.Object)
+  commentId: M:Octopus.Client.Util.HashCodeCombiner.AddObject(System.Object)
+  id: AddObject(System.Object)
+  parent: Octopus.Client.Util.HashCodeCombiner
+  langs:
+  - csharp
+  - vb
+  name: AddObject(Object)
+  nameWithType: HashCodeCombiner.AddObject(Object)
+  fullName: Octopus.Client.Util.HashCodeCombiner.AddObject(System.Object)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Util/HashCodeCombiner.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddObject
+    path: ../source/Octopus.Client/Util/HashCodeCombiner.cs
+    startLine: 44
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Util
+  syntax:
+    content: public HashCodeCombiner AddObject(object o)
+    parameters:
+    - id: o
+      type: System.Object
+    return:
+      type: Octopus.Client.Util.HashCodeCombiner
+    content.vb: Public Function AddObject(o As Object) As HashCodeCombiner
+  overload: Octopus.Client.Util.HashCodeCombiner.AddObject*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Util.HashCodeCombiner.GetHashCode(System.Object[])
+  commentId: M:Octopus.Client.Util.HashCodeCombiner.GetHashCode(System.Object[])
+  id: GetHashCode(System.Object[])
+  parent: Octopus.Client.Util.HashCodeCombiner
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode(Object[])
+  nameWithType: HashCodeCombiner.GetHashCode(Object[])
+  fullName: Octopus.Client.Util.HashCodeCombiner.GetHashCode(System.Object[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Util/HashCodeCombiner.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetHashCode
+    path: ../source/Octopus.Client/Util/HashCodeCombiner.cs
+    startLine: 56
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Util
+  summary: "\nCreate a unique hash code for the given set of items\n"
+  example: []
+  syntax:
+    content: public static int GetHashCode(params object[] objects)
+    parameters:
+    - id: objects
+      type: System.Object[]
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetHashCode(ParamArray objects As Object()) As Integer
+  overload: Octopus.Client.Util.HashCodeCombiner.GetHashCode*
+  nameWithType.vb: HashCodeCombiner.GetHashCode(Object())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Octopus.Client.Util.HashCodeCombiner.GetHashCode(System.Object())
+  name.vb: GetHashCode(Object())
+references:
+- uid: Octopus.Client.Util
+  commentId: N:Octopus.Client.Util
+  name: Octopus.Client.Util
+  nameWithType: Octopus.Client.Util
+  fullName: Octopus.Client.Util
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Util.HashCodeCombiner.#ctor*
+  commentId: Overload:Octopus.Client.Util.HashCodeCombiner.#ctor
+  name: HashCodeCombiner
+  nameWithType: HashCodeCombiner.HashCodeCombiner
+  fullName: Octopus.Client.Util.HashCodeCombiner.HashCodeCombiner
+- uid: Octopus.Client.Util.HashCodeCombiner.CombinedHash*
+  commentId: Overload:Octopus.Client.Util.HashCodeCombiner.CombinedHash
+  name: CombinedHash
+  nameWithType: HashCodeCombiner.CombinedHash
+  fullName: Octopus.Client.Util.HashCodeCombiner.CombinedHash
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Octopus.Client.Util.HashCodeCombiner.AddInt32*
+  commentId: Overload:Octopus.Client.Util.HashCodeCombiner.AddInt32
+  name: AddInt32
+  nameWithType: HashCodeCombiner.AddInt32
+  fullName: Octopus.Client.Util.HashCodeCombiner.AddInt32
+- uid: Octopus.Client.Util.HashCodeCombiner
+  commentId: T:Octopus.Client.Util.HashCodeCombiner
+  parent: Octopus.Client.Util
+  name: HashCodeCombiner
+  nameWithType: HashCodeCombiner
+  fullName: Octopus.Client.Util.HashCodeCombiner
+- uid: Octopus.Client.Util.HashCodeCombiner.AddObject*
+  commentId: Overload:Octopus.Client.Util.HashCodeCombiner.AddObject
+  name: AddObject
+  nameWithType: HashCodeCombiner.AddObject
+  fullName: Octopus.Client.Util.HashCodeCombiner.AddObject
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Util.HashCodeCombiner.GetHashCode*
+  commentId: Overload:Octopus.Client.Util.HashCodeCombiner.GetHashCode
+  name: GetHashCode
+  nameWithType: HashCodeCombiner.GetHashCode
+  fullName: Octopus.Client.Util.HashCodeCombiner.GetHashCode
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

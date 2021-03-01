@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.IBranchScopedRepository
+  commentId: T:Octopus.Client.Repositories.IBranchScopedRepository
+  id: IBranchScopedRepository
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.IBranchScopedRepository.Runbooks
+  langs:
+  - csharp
+  - vb
+  name: IBranchScopedRepository
+  nameWithType: IBranchScopedRepository
+  fullName: Octopus.Client.Repositories.IBranchScopedRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/BranchScopedRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IBranchScopedRepository
+    path: ../source/Octopus.Client/Repositories/BranchScopedRepository.cs
+    startLine: 4
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public interface IBranchScopedRepository
+    content.vb: Public Interface IBranchScopedRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.IBranchScopedRepository.Runbooks
+  commentId: P:Octopus.Client.Repositories.IBranchScopedRepository.Runbooks
+  id: Runbooks
+  parent: Octopus.Client.Repositories.IBranchScopedRepository
+  langs:
+  - csharp
+  - vb
+  name: Runbooks
+  nameWithType: IBranchScopedRepository.Runbooks
+  fullName: Octopus.Client.Repositories.IBranchScopedRepository.Runbooks
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/BranchScopedRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Runbooks
+    path: ../source/Octopus.Client/Repositories/BranchScopedRepository.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: IVcsRunbookRepository Runbooks { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IVcsRunbookRepository
+    content.vb: ReadOnly Property Runbooks As IVcsRunbookRepository
+  overload: Octopus.Client.Repositories.IBranchScopedRepository.Runbooks*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Repositories.IBranchScopedRepository.Runbooks*
+  commentId: Overload:Octopus.Client.Repositories.IBranchScopedRepository.Runbooks
+  name: Runbooks
+  nameWithType: IBranchScopedRepository.Runbooks
+  fullName: Octopus.Client.Repositories.IBranchScopedRepository.Runbooks
+- uid: Octopus.Client.Repositories.IVcsRunbookRepository
+  commentId: T:Octopus.Client.Repositories.IVcsRunbookRepository
+  parent: Octopus.Client.Repositories
+  name: IVcsRunbookRepository
+  nameWithType: IVcsRunbookRepository
+  fullName: Octopus.Client.Repositories.IVcsRunbookRepository

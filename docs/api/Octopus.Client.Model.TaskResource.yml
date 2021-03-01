@@ -1,0 +1,1901 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.TaskResource
+  commentId: T:Octopus.Client.Model.TaskResource
+  id: TaskResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.TaskResource.#ctor
+  - Octopus.Client.Model.TaskResource.Arguments
+  - Octopus.Client.Model.TaskResource.CanRerun
+  - Octopus.Client.Model.TaskResource.Completed
+  - Octopus.Client.Model.TaskResource.CompletedTime
+  - Octopus.Client.Model.TaskResource.Description
+  - Octopus.Client.Model.TaskResource.Duration
+  - Octopus.Client.Model.TaskResource.ErrorMessage
+  - Octopus.Client.Model.TaskResource.FinishedSuccessfully
+  - Octopus.Client.Model.TaskResource.HasBeenPickedUpByProcessor
+  - Octopus.Client.Model.TaskResource.HasPendingInterruptions
+  - Octopus.Client.Model.TaskResource.HasWarningsOrErrors
+  - Octopus.Client.Model.TaskResource.IsCompleted
+  - Octopus.Client.Model.TaskResource.LastUpdatedTime
+  - Octopus.Client.Model.TaskResource.Name
+  - Octopus.Client.Model.TaskResource.QueueTime
+  - Octopus.Client.Model.TaskResource.QueueTimeExpiry
+  - Octopus.Client.Model.TaskResource.ServerNode
+  - Octopus.Client.Model.TaskResource.SpaceId
+  - Octopus.Client.Model.TaskResource.StartTime
+  - Octopus.Client.Model.TaskResource.State
+  langs:
+  - csharp
+  - vb
+  name: TaskResource
+  nameWithType: TaskResource
+  fullName: Octopus.Client.Model.TaskResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TaskResource
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 21
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nOctopus doesn&apos;t just store information; it actively *does* things. Examples include deployments, checking that\nmachines are\nonline, automated database backups, and more. These &quot;tasks&quot; are queued and executed asynchronously, and their\nprogress and logs\ncan be monitored using the HTTP API. Some tasks are created automatically; for example, Octopus will automatically\ncreate a task\nto check the status of all machines every 5 minutes. Some tasks are created implicitly, such as when a deployment\nis created to execute\nthe actual deployment. And some tasks can be created manually, such as backup tasks and sending test emails.\n"
+  example: []
+  syntax:
+    content: 'public class TaskResource : Resource, IResource, IAuditedResource, IHaveSpaceResource'
+    content.vb: >-
+      Public Class TaskResource
+          Inherits Resource
+          Implements IResource, IAuditedResource, IHaveSpaceResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  - Octopus.Client.Extensibility.IHaveSpaceResource
+  inheritedMembers:
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.TaskResource.#ctor
+  commentId: M:Octopus.Client.Model.TaskResource.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: TaskResource()
+  nameWithType: TaskResource.TaskResource()
+  fullName: Octopus.Client.Model.TaskResource.TaskResource()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 26
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nCreate a new <xref href=\"Octopus.Client.Model.TaskResource\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public TaskResource()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.TaskResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.Name
+  commentId: P:Octopus.Client.Model.TaskResource.Name
+  id: Name
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: TaskResource.Name
+  fullName: Octopus.Client.Model.TaskResource.Name
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Name
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 35
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the name of the task to create. This name must be one of the list of possible names documented in the\ncreate API operation documentation.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 2)]
+
+      public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty(Order:=2)>
+
+      Public Property Name As String
+  overload: Octopus.Client.Model.TaskResource.Name*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 2
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.Description
+  commentId: P:Octopus.Client.Model.TaskResource.Description
+  id: Description
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: TaskResource.Description
+  fullName: Octopus.Client.Model.TaskResource.Description
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Description
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 44
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets a short, human-understandable description of this task. An example might be &quot;Manual database backup&quot;.\nThis is the\nname that will be shown in the task list.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 3)]
+
+      public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty(Order:=3)>
+
+      Public Property Description As String
+  overload: Octopus.Client.Model.TaskResource.Description*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 3
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.Arguments
+  commentId: P:Octopus.Client.Model.TaskResource.Arguments
+  id: Arguments
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: Arguments
+  nameWithType: TaskResource.Arguments
+  fullName: Octopus.Client.Model.TaskResource.Arguments
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Arguments
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 51
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets any arguments to the task.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 4)]
+
+      public Dictionary<string, object> Arguments { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    content.vb: >-
+      <JsonProperty(Order:=4)>
+
+      Public Property Arguments As Dictionary(Of String, Object)
+  overload: Octopus.Client.Model.TaskResource.Arguments*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 4
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.State
+  commentId: P:Octopus.Client.Model.TaskResource.State
+  id: State
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: TaskResource.State
+  fullName: Octopus.Client.Model.TaskResource.State
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: State
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 58
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the current state of the task.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      [JsonProperty(Order = 5)]
+
+      public TaskState State { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.TaskState
+    content.vb: >-
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      <JsonProperty(Order:=5)>
+
+      Public Property State As TaskState
+  overload: Octopus.Client.Model.TaskResource.State*
+  attributes:
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 5
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.Completed
+  commentId: P:Octopus.Client.Model.TaskResource.Completed
+  id: Completed
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: Completed
+  nameWithType: TaskResource.Completed
+  fullName: Octopus.Client.Model.TaskResource.Completed
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Completed
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 67
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets a value indicating the completion status of the task. May be &quot;Timed out&quot;, &quot;Queued...&quot;, &quot;Executing...&quot;,\nor the time at\nwhich the task completed for completed tasks.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 6)]
+
+      public string Completed { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty(Order:=6)>
+
+      Public Property Completed As String
+  overload: Octopus.Client.Model.TaskResource.Completed*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 6
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.QueueTime
+  commentId: P:Octopus.Client.Model.TaskResource.QueueTime
+  id: QueueTime
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: QueueTime
+  nameWithType: TaskResource.QueueTime
+  fullName: Octopus.Client.Model.TaskResource.QueueTime
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: QueueTime
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 73
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the time at which the task was queued.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 7)]
+
+      public DateTimeOffset QueueTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: >-
+      <JsonProperty(Order:=7)>
+
+      Public Property QueueTime As DateTimeOffset
+  overload: Octopus.Client.Model.TaskResource.QueueTime*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 7
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.QueueTimeExpiry
+  commentId: P:Octopus.Client.Model.TaskResource.QueueTimeExpiry
+  id: QueueTimeExpiry
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: QueueTimeExpiry
+  nameWithType: TaskResource.QueueTimeExpiry
+  fullName: Octopus.Client.Model.TaskResource.QueueTimeExpiry
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: QueueTimeExpiry
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 79
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the time that can elapse after the QueueTime before the task will timeout if it has not started executing.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 8)]
+
+      public DateTimeOffset? QueueTimeExpiry { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: >-
+      <JsonProperty(Order:=8)>
+
+      Public Property QueueTimeExpiry As DateTimeOffset?
+  overload: Octopus.Client.Model.TaskResource.QueueTimeExpiry*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 8
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.StartTime
+  commentId: P:Octopus.Client.Model.TaskResource.StartTime
+  id: StartTime
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: StartTime
+  nameWithType: TaskResource.StartTime
+  fullName: Octopus.Client.Model.TaskResource.StartTime
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: StartTime
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 85
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the time at which the task started executing.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 9)]
+
+      public DateTimeOffset? StartTime { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: >-
+      <JsonProperty(Order:=9)>
+
+      Public Property StartTime As DateTimeOffset?
+  overload: Octopus.Client.Model.TaskResource.StartTime*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 9
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.LastUpdatedTime
+  commentId: P:Octopus.Client.Model.TaskResource.LastUpdatedTime
+  id: LastUpdatedTime
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: LastUpdatedTime
+  nameWithType: TaskResource.LastUpdatedTime
+  fullName: Octopus.Client.Model.TaskResource.LastUpdatedTime
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: LastUpdatedTime
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 93
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the time that the Octopus Server last updated the status of this task. For a running task this should\nhappen\nat least every couple of minutes.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 10)]
+
+      public DateTimeOffset? LastUpdatedTime { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: >-
+      <JsonProperty(Order:=10)>
+
+      Public Property LastUpdatedTime As DateTimeOffset?
+  overload: Octopus.Client.Model.TaskResource.LastUpdatedTime*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 10
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.CompletedTime
+  commentId: P:Octopus.Client.Model.TaskResource.CompletedTime
+  id: CompletedTime
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: CompletedTime
+  nameWithType: TaskResource.CompletedTime
+  fullName: Octopus.Client.Model.TaskResource.CompletedTime
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CompletedTime
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 99
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets the date/time that the task completed. Will be null if the task has not yet completed.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 11)]
+
+      public DateTimeOffset? CompletedTime { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: >-
+      <JsonProperty(Order:=11)>
+
+      Public Property CompletedTime As DateTimeOffset?
+  overload: Octopus.Client.Model.TaskResource.CompletedTime*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 11
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.ServerNode
+  commentId: P:Octopus.Client.Model.TaskResource.ServerNode
+  id: ServerNode
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: ServerNode
+  nameWithType: TaskResource.ServerNode
+  fullName: Octopus.Client.Model.TaskResource.ServerNode
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ServerNode
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 105
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets the ID of the Octopus Server that created and will control this task.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 15)]
+
+      public string ServerNode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty(Order:=15)>
+
+      Public Property ServerNode As String
+  overload: Octopus.Client.Model.TaskResource.ServerNode*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 15
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.Duration
+  commentId: P:Octopus.Client.Model.TaskResource.Duration
+  id: Duration
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: TaskResource.Duration
+  fullName: Octopus.Client.Model.TaskResource.Duration
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Duration
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 111
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets a string indicating how long the task took to run.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 21)]
+
+      public string Duration { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty(Order:=21)>
+
+      Public Property Duration As String
+  overload: Octopus.Client.Model.TaskResource.Duration*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 21
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.ErrorMessage
+  commentId: P:Octopus.Client.Model.TaskResource.ErrorMessage
+  id: ErrorMessage
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage
+  nameWithType: TaskResource.ErrorMessage
+  fullName: Octopus.Client.Model.TaskResource.ErrorMessage
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ErrorMessage
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 117
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets a short summary of the errors encountered when the task ran (if any).\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 22)]
+
+      public string ErrorMessage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty(Order:=22)>
+
+      Public Property ErrorMessage As String
+  overload: Octopus.Client.Model.TaskResource.ErrorMessage*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 22
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.HasBeenPickedUpByProcessor
+  commentId: P:Octopus.Client.Model.TaskResource.HasBeenPickedUpByProcessor
+  id: HasBeenPickedUpByProcessor
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: HasBeenPickedUpByProcessor
+  nameWithType: TaskResource.HasBeenPickedUpByProcessor
+  fullName: Octopus.Client.Model.TaskResource.HasBeenPickedUpByProcessor
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: HasBeenPickedUpByProcessor
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 123
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets a boolean value indicating whether the Octopus Server is processing this task.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 23)]
+
+      public bool HasBeenPickedUpByProcessor { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty(Order:=23)>
+
+      Public Property HasBeenPickedUpByProcessor As Boolean
+  overload: Octopus.Client.Model.TaskResource.HasBeenPickedUpByProcessor*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 23
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.IsCompleted
+  commentId: P:Octopus.Client.Model.TaskResource.IsCompleted
+  id: IsCompleted
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: IsCompleted
+  nameWithType: TaskResource.IsCompleted
+  fullName: Octopus.Client.Model.TaskResource.IsCompleted
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsCompleted
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 130
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets a value indicating whether the task has completed (that is, not queued, not running, and not paused;\nmay have finished successfully or failed).\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 24)]
+
+      public bool IsCompleted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty(Order:=24)>
+
+      Public ReadOnly Property IsCompleted As Boolean
+  overload: Octopus.Client.Model.TaskResource.IsCompleted*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 24
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.TaskResource.FinishedSuccessfully
+  commentId: P:Octopus.Client.Model.TaskResource.FinishedSuccessfully
+  id: FinishedSuccessfully
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: FinishedSuccessfully
+  nameWithType: TaskResource.FinishedSuccessfully
+  fullName: Octopus.Client.Model.TaskResource.FinishedSuccessfully
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: FinishedSuccessfully
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 139
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets or sets a value indicating whether the task ran to completion successfully.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 31)]
+
+      public bool FinishedSuccessfully { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty(Order:=31)>
+
+      Public ReadOnly Property FinishedSuccessfully As Boolean
+  overload: Octopus.Client.Model.TaskResource.FinishedSuccessfully*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 31
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.TaskResource.HasPendingInterruptions
+  commentId: P:Octopus.Client.Model.TaskResource.HasPendingInterruptions
+  id: HasPendingInterruptions
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: HasPendingInterruptions
+  nameWithType: TaskResource.HasPendingInterruptions
+  fullName: Octopus.Client.Model.TaskResource.HasPendingInterruptions
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: HasPendingInterruptions
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 148
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nTrue if the task is waiting for manual intervention.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 32)]
+
+      public bool HasPendingInterruptions { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty(Order:=32)>
+
+      Public Property HasPendingInterruptions As Boolean
+  overload: Octopus.Client.Model.TaskResource.HasPendingInterruptions*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.CanRerun
+  commentId: P:Octopus.Client.Model.TaskResource.CanRerun
+  id: CanRerun
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: CanRerun
+  nameWithType: TaskResource.CanRerun
+  fullName: Octopus.Client.Model.TaskResource.CanRerun
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CanRerun
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 155
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nIf true, then the task can be used as the basis for a\nnew task with the same effect.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 33)]
+
+      public bool CanRerun { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty(Order:=33)>
+
+      Public Property CanRerun As Boolean
+  overload: Octopus.Client.Model.TaskResource.CanRerun*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 33
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.HasWarningsOrErrors
+  commentId: P:Octopus.Client.Model.TaskResource.HasWarningsOrErrors
+  id: HasWarningsOrErrors
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: HasWarningsOrErrors
+  nameWithType: TaskResource.HasWarningsOrErrors
+  fullName: Octopus.Client.Model.TaskResource.HasWarningsOrErrors
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: HasWarningsOrErrors
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 162
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nTrue if any warnings or non-fatal errors were recorded in\nthe task log during execution.\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty(Order = 34)]
+
+      public bool HasWarningsOrErrors { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty(Order:=34)>
+
+      Public Property HasWarningsOrErrors As Boolean
+  overload: Octopus.Client.Model.TaskResource.HasWarningsOrErrors*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 34
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.TaskResource.SpaceId
+  commentId: P:Octopus.Client.Model.TaskResource.SpaceId
+  id: SpaceId
+  parent: Octopus.Client.Model.TaskResource
+  langs:
+  - csharp
+  - vb
+  name: SpaceId
+  nameWithType: TaskResource.SpaceId
+  fullName: Octopus.Client.Model.TaskResource.SpaceId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/TaskResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SpaceId
+    path: ../source/Octopus.Client/Model/TaskResource.cs
+    startLine: 165
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string SpaceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SpaceId As String
+  overload: Octopus.Client.Model.TaskResource.SpaceId*
+  implements:
+  - Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource
+  commentId: T:Octopus.Client.Extensibility.IHaveSpaceResource
+  parent: Octopus.Client.Extensibility
+  name: IHaveSpaceResource
+  nameWithType: IHaveSpaceResource
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.TaskResource
+  commentId: T:Octopus.Client.Model.TaskResource
+  parent: Octopus.Client.Model
+  name: TaskResource
+  nameWithType: TaskResource
+  fullName: Octopus.Client.Model.TaskResource
+- uid: Octopus.Client.Model.TaskResource.#ctor*
+  commentId: Overload:Octopus.Client.Model.TaskResource.#ctor
+  name: TaskResource
+  nameWithType: TaskResource.TaskResource
+  fullName: Octopus.Client.Model.TaskResource.TaskResource
+- uid: Octopus.Client.Model.TaskResource.Name*
+  commentId: Overload:Octopus.Client.Model.TaskResource.Name
+  name: Name
+  nameWithType: TaskResource.Name
+  fullName: Octopus.Client.Model.TaskResource.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.TaskResource.Description*
+  commentId: Overload:Octopus.Client.Model.TaskResource.Description
+  name: Description
+  nameWithType: TaskResource.Description
+  fullName: Octopus.Client.Model.TaskResource.Description
+- uid: Octopus.Client.Model.TaskResource.Arguments*
+  commentId: Overload:Octopus.Client.Model.TaskResource.Arguments
+  name: Arguments
+  nameWithType: TaskResource.Arguments
+  fullName: Octopus.Client.Model.TaskResource.Arguments
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, Object>
+  nameWithType: Dictionary<String, Object>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.TaskResource.State*
+  commentId: Overload:Octopus.Client.Model.TaskResource.State
+  name: State
+  nameWithType: TaskResource.State
+  fullName: Octopus.Client.Model.TaskResource.State
+- uid: Octopus.Client.Model.TaskState
+  commentId: T:Octopus.Client.Model.TaskState
+  parent: Octopus.Client.Model
+  name: TaskState
+  nameWithType: TaskState
+  fullName: Octopus.Client.Model.TaskState
+- uid: Octopus.Client.Model.TaskResource.Completed*
+  commentId: Overload:Octopus.Client.Model.TaskResource.Completed
+  name: Completed
+  nameWithType: TaskResource.Completed
+  fullName: Octopus.Client.Model.TaskResource.Completed
+- uid: Octopus.Client.Model.TaskResource.QueueTime*
+  commentId: Overload:Octopus.Client.Model.TaskResource.QueueTime
+  name: QueueTime
+  nameWithType: TaskResource.QueueTime
+  fullName: Octopus.Client.Model.TaskResource.QueueTime
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Octopus.Client.Model.TaskResource.QueueTimeExpiry*
+  commentId: Overload:Octopus.Client.Model.TaskResource.QueueTimeExpiry
+  name: QueueTimeExpiry
+  nameWithType: TaskResource.QueueTimeExpiry
+  fullName: Octopus.Client.Model.TaskResource.QueueTimeExpiry
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  nameWithType: Nullable<DateTimeOffset>
+  fullName: System.Nullable<System.DateTimeOffset>
+  nameWithType.vb: Nullable(Of DateTimeOffset)
+  fullName.vb: System.Nullable(Of System.DateTimeOffset)
+  name.vb: Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.TaskResource.StartTime*
+  commentId: Overload:Octopus.Client.Model.TaskResource.StartTime
+  name: StartTime
+  nameWithType: TaskResource.StartTime
+  fullName: Octopus.Client.Model.TaskResource.StartTime
+- uid: Octopus.Client.Model.TaskResource.LastUpdatedTime*
+  commentId: Overload:Octopus.Client.Model.TaskResource.LastUpdatedTime
+  name: LastUpdatedTime
+  nameWithType: TaskResource.LastUpdatedTime
+  fullName: Octopus.Client.Model.TaskResource.LastUpdatedTime
+- uid: Octopus.Client.Model.TaskResource.CompletedTime*
+  commentId: Overload:Octopus.Client.Model.TaskResource.CompletedTime
+  name: CompletedTime
+  nameWithType: TaskResource.CompletedTime
+  fullName: Octopus.Client.Model.TaskResource.CompletedTime
+- uid: Octopus.Client.Model.TaskResource.ServerNode*
+  commentId: Overload:Octopus.Client.Model.TaskResource.ServerNode
+  name: ServerNode
+  nameWithType: TaskResource.ServerNode
+  fullName: Octopus.Client.Model.TaskResource.ServerNode
+- uid: Octopus.Client.Model.TaskResource.Duration*
+  commentId: Overload:Octopus.Client.Model.TaskResource.Duration
+  name: Duration
+  nameWithType: TaskResource.Duration
+  fullName: Octopus.Client.Model.TaskResource.Duration
+- uid: Octopus.Client.Model.TaskResource.ErrorMessage*
+  commentId: Overload:Octopus.Client.Model.TaskResource.ErrorMessage
+  name: ErrorMessage
+  nameWithType: TaskResource.ErrorMessage
+  fullName: Octopus.Client.Model.TaskResource.ErrorMessage
+- uid: Octopus.Client.Model.TaskResource.HasBeenPickedUpByProcessor*
+  commentId: Overload:Octopus.Client.Model.TaskResource.HasBeenPickedUpByProcessor
+  name: HasBeenPickedUpByProcessor
+  nameWithType: TaskResource.HasBeenPickedUpByProcessor
+  fullName: Octopus.Client.Model.TaskResource.HasBeenPickedUpByProcessor
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.TaskResource.IsCompleted*
+  commentId: Overload:Octopus.Client.Model.TaskResource.IsCompleted
+  name: IsCompleted
+  nameWithType: TaskResource.IsCompleted
+  fullName: Octopus.Client.Model.TaskResource.IsCompleted
+- uid: Octopus.Client.Model.TaskResource.FinishedSuccessfully*
+  commentId: Overload:Octopus.Client.Model.TaskResource.FinishedSuccessfully
+  name: FinishedSuccessfully
+  nameWithType: TaskResource.FinishedSuccessfully
+  fullName: Octopus.Client.Model.TaskResource.FinishedSuccessfully
+- uid: Octopus.Client.Model.TaskResource.HasPendingInterruptions*
+  commentId: Overload:Octopus.Client.Model.TaskResource.HasPendingInterruptions
+  name: HasPendingInterruptions
+  nameWithType: TaskResource.HasPendingInterruptions
+  fullName: Octopus.Client.Model.TaskResource.HasPendingInterruptions
+- uid: Octopus.Client.Model.TaskResource.CanRerun*
+  commentId: Overload:Octopus.Client.Model.TaskResource.CanRerun
+  name: CanRerun
+  nameWithType: TaskResource.CanRerun
+  fullName: Octopus.Client.Model.TaskResource.CanRerun
+- uid: Octopus.Client.Model.TaskResource.HasWarningsOrErrors*
+  commentId: Overload:Octopus.Client.Model.TaskResource.HasWarningsOrErrors
+  name: HasWarningsOrErrors
+  nameWithType: TaskResource.HasWarningsOrErrors
+  fullName: Octopus.Client.Model.TaskResource.HasWarningsOrErrors
+- uid: Octopus.Client.Model.TaskResource.SpaceId*
+  commentId: Overload:Octopus.Client.Model.TaskResource.SpaceId
+  name: SpaceId
+  nameWithType: TaskResource.SpaceId
+  fullName: Octopus.Client.Model.TaskResource.SpaceId
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  commentId: P:Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  parent: Octopus.Client.Extensibility.IHaveSpaceResource
+  name: SpaceId
+  nameWithType: IHaveSpaceResource.SpaceId
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId

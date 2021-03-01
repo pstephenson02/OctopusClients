@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.IDeploymentSettingsBetaRepository
+  commentId: T:Octopus.Client.Repositories.IDeploymentSettingsBetaRepository
+  id: IDeploymentSettingsBetaRepository
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Get(Octopus.Client.Model.ProjectResource,System.String)
+  - Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Modify(Octopus.Client.Model.ProjectResource,Octopus.Client.Model.DeploymentSettingsResource,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IDeploymentSettingsBetaRepository
+  nameWithType: IDeploymentSettingsBetaRepository
+  fullName: Octopus.Client.Repositories.IDeploymentSettingsBetaRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/DeploymentSettingsRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IDeploymentSettingsBetaRepository
+    path: ../source/Octopus.Client/Repositories/DeploymentSettingsRepository.cs
+    startLine: 24
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public interface IDeploymentSettingsBetaRepository
+    content.vb: Public Interface IDeploymentSettingsBetaRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Get(Octopus.Client.Model.ProjectResource,System.String)
+  commentId: M:Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Get(Octopus.Client.Model.ProjectResource,System.String)
+  id: Get(Octopus.Client.Model.ProjectResource,System.String)
+  parent: Octopus.Client.Repositories.IDeploymentSettingsBetaRepository
+  langs:
+  - csharp
+  - vb
+  name: Get(ProjectResource, String)
+  nameWithType: IDeploymentSettingsBetaRepository.Get(ProjectResource, String)
+  fullName: Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Get(Octopus.Client.Model.ProjectResource, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/DeploymentSettingsRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Get
+    path: ../source/Octopus.Client/Repositories/DeploymentSettingsRepository.cs
+    startLine: 26
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: DeploymentSettingsResource Get(ProjectResource project, string gitref = null)
+    parameters:
+    - id: project
+      type: Octopus.Client.Model.ProjectResource
+    - id: gitref
+      type: System.String
+    return:
+      type: Octopus.Client.Model.DeploymentSettingsResource
+    content.vb: Function Get(project As ProjectResource, gitref As String = Nothing) As DeploymentSettingsResource
+  overload: Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Get*
+- uid: Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Modify(Octopus.Client.Model.ProjectResource,Octopus.Client.Model.DeploymentSettingsResource,System.String)
+  commentId: M:Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Modify(Octopus.Client.Model.ProjectResource,Octopus.Client.Model.DeploymentSettingsResource,System.String)
+  id: Modify(Octopus.Client.Model.ProjectResource,Octopus.Client.Model.DeploymentSettingsResource,System.String)
+  parent: Octopus.Client.Repositories.IDeploymentSettingsBetaRepository
+  langs:
+  - csharp
+  - vb
+  name: Modify(ProjectResource, DeploymentSettingsResource, String)
+  nameWithType: IDeploymentSettingsBetaRepository.Modify(ProjectResource, DeploymentSettingsResource, String)
+  fullName: Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Modify(Octopus.Client.Model.ProjectResource, Octopus.Client.Model.DeploymentSettingsResource, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/DeploymentSettingsRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Modify
+    path: ../source/Octopus.Client/Repositories/DeploymentSettingsRepository.cs
+    startLine: 27
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: DeploymentSettingsResource Modify(ProjectResource project, DeploymentSettingsResource resource, string commitMessage = null)
+    parameters:
+    - id: project
+      type: Octopus.Client.Model.ProjectResource
+    - id: resource
+      type: Octopus.Client.Model.DeploymentSettingsResource
+    - id: commitMessage
+      type: System.String
+    return:
+      type: Octopus.Client.Model.DeploymentSettingsResource
+    content.vb: Function Modify(project As ProjectResource, resource As DeploymentSettingsResource, commitMessage As String = Nothing) As DeploymentSettingsResource
+  overload: Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Modify*
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Get*
+  commentId: Overload:Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Get
+  name: Get
+  nameWithType: IDeploymentSettingsBetaRepository.Get
+  fullName: Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Get
+- uid: Octopus.Client.Model.ProjectResource
+  commentId: T:Octopus.Client.Model.ProjectResource
+  parent: Octopus.Client.Model
+  name: ProjectResource
+  nameWithType: ProjectResource
+  fullName: Octopus.Client.Model.ProjectResource
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.DeploymentSettingsResource
+  commentId: T:Octopus.Client.Model.DeploymentSettingsResource
+  parent: Octopus.Client.Model
+  name: DeploymentSettingsResource
+  nameWithType: DeploymentSettingsResource
+  fullName: Octopus.Client.Model.DeploymentSettingsResource
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Modify*
+  commentId: Overload:Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Modify
+  name: Modify
+  nameWithType: IDeploymentSettingsBetaRepository.Modify
+  fullName: Octopus.Client.Repositories.IDeploymentSettingsBetaRepository.Modify

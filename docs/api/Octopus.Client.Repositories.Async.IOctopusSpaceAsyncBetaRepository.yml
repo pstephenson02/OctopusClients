@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository
+  commentId: T:Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository
+  id: IOctopusSpaceAsyncBetaRepository
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  langs:
+  - csharp
+  - vb
+  name: IOctopusSpaceAsyncBetaRepository
+  nameWithType: IOctopusSpaceAsyncBetaRepository
+  fullName: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/OctopusSpaceAsyncBetaRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IOctopusSpaceAsyncBetaRepository
+    path: ../source/Octopus.Client/Repositories/Async/OctopusSpaceAsyncBetaRepository.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: public interface IOctopusSpaceAsyncBetaRepository
+    content.vb: Public Interface IOctopusSpaceAsyncBetaRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  commentId: M:Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  id: ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  parent: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository
+  langs:
+  - csharp
+  - vb
+  name: ForBranch(VersionControlBranchResource)
+  nameWithType: IOctopusSpaceAsyncBetaRepository.ForBranch(VersionControlBranchResource)
+  fullName: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/OctopusSpaceAsyncBetaRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ForBranch
+    path: ../source/Octopus.Client/Repositories/Async/OctopusSpaceAsyncBetaRepository.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: IBranchScopedRepository ForBranch(VersionControlBranchResource branch)
+    parameters:
+    - id: branch
+      type: Octopus.Client.Model.VersionControlBranchResource
+    return:
+      type: Octopus.Client.Repositories.Async.IBranchScopedRepository
+    content.vb: Function ForBranch(branch As VersionControlBranchResource) As IBranchScopedRepository
+  overload: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch*
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch*
+  commentId: Overload:Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch
+  name: ForBranch
+  nameWithType: IOctopusSpaceAsyncBetaRepository.ForBranch
+  fullName: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch
+- uid: Octopus.Client.Model.VersionControlBranchResource
+  commentId: T:Octopus.Client.Model.VersionControlBranchResource
+  parent: Octopus.Client.Model
+  name: VersionControlBranchResource
+  nameWithType: VersionControlBranchResource
+  fullName: Octopus.Client.Model.VersionControlBranchResource
+- uid: Octopus.Client.Repositories.Async.IBranchScopedRepository
+  commentId: T:Octopus.Client.Repositories.Async.IBranchScopedRepository
+  parent: Octopus.Client.Repositories.Async
+  name: IBranchScopedRepository
+  nameWithType: IBranchScopedRepository
+  fullName: Octopus.Client.Repositories.Async.IBranchScopedRepository
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model

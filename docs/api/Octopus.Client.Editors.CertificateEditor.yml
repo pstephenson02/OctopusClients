@@ -1,0 +1,1064 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Editors.CertificateEditor
+  commentId: T:Octopus.Client.Editors.CertificateEditor
+  id: CertificateEditor
+  parent: Octopus.Client.Editors
+  children:
+  - Octopus.Client.Editors.CertificateEditor.#ctor(Octopus.Client.Repositories.ICertificateRepository)
+  - Octopus.Client.Editors.CertificateEditor.Create(System.String,System.String)
+  - Octopus.Client.Editors.CertificateEditor.Customize(System.Action{Octopus.Client.Model.CertificateResource})
+  - Octopus.Client.Editors.CertificateEditor.FindByName(System.String)
+  - Octopus.Client.Editors.CertificateEditor.Instance
+  - Octopus.Client.Editors.CertificateEditor.Save
+  - Octopus.Client.Editors.CertificateEditor.Usages
+  langs:
+  - csharp
+  - vb
+  name: CertificateEditor
+  nameWithType: CertificateEditor
+  fullName: Octopus.Client.Editors.CertificateEditor
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/CertificateEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CertificateEditor
+    path: ../source/Octopus.Client/Editors/CertificateEditor.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: 'public class CertificateEditor : IResourceEditor<CertificateResource, CertificateEditor>, IResourceBuilder'
+    content.vb: >-
+      Public Class CertificateEditor
+          Implements IResourceEditor(Of CertificateResource, CertificateEditor), IResourceBuilder
+  inheritance:
+  - System.Object
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}
+  - Octopus.Client.Editors.IResourceBuilder
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Editors.CertificateEditor.#ctor(Octopus.Client.Repositories.ICertificateRepository)
+  commentId: M:Octopus.Client.Editors.CertificateEditor.#ctor(Octopus.Client.Repositories.ICertificateRepository)
+  id: '#ctor(Octopus.Client.Repositories.ICertificateRepository)'
+  parent: Octopus.Client.Editors.CertificateEditor
+  langs:
+  - csharp
+  - vb
+  name: CertificateEditor(ICertificateRepository)
+  nameWithType: CertificateEditor.CertificateEditor(ICertificateRepository)
+  fullName: Octopus.Client.Editors.CertificateEditor.CertificateEditor(Octopus.Client.Repositories.ICertificateRepository)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/CertificateEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Editors/CertificateEditor.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public CertificateEditor(ICertificateRepository repository)
+    parameters:
+    - id: repository
+      type: Octopus.Client.Repositories.ICertificateRepository
+    content.vb: Public Sub New(repository As ICertificateRepository)
+  overload: Octopus.Client.Editors.CertificateEditor.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.CertificateEditor.Instance
+  commentId: P:Octopus.Client.Editors.CertificateEditor.Instance
+  id: Instance
+  parent: Octopus.Client.Editors.CertificateEditor
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: CertificateEditor.Instance
+  fullName: Octopus.Client.Editors.CertificateEditor.Instance
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/CertificateEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Instance
+    path: ../source/Octopus.Client/Editors/CertificateEditor.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public CertificateResource Instance { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.CertificateResource
+    content.vb: Public ReadOnly Property Instance As CertificateResource
+  overload: Octopus.Client.Editors.CertificateEditor.Instance*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}.Instance
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Editors.CertificateEditor.Create(System.String,System.String)
+  commentId: M:Octopus.Client.Editors.CertificateEditor.Create(System.String,System.String)
+  id: Create(System.String,System.String)
+  parent: Octopus.Client.Editors.CertificateEditor
+  langs:
+  - csharp
+  - vb
+  name: Create(String, String)
+  nameWithType: CertificateEditor.Create(String, String)
+  fullName: Octopus.Client.Editors.CertificateEditor.Create(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/CertificateEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Create
+    path: ../source/Octopus.Client/Editors/CertificateEditor.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public CertificateEditor Create(string name, string certificateData)
+    parameters:
+    - id: name
+      type: System.String
+    - id: certificateData
+      type: System.String
+    return:
+      type: Octopus.Client.Editors.CertificateEditor
+    content.vb: Public Function Create(name As String, certificateData As String) As CertificateEditor
+  overload: Octopus.Client.Editors.CertificateEditor.Create*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.CertificateEditor.FindByName(System.String)
+  commentId: M:Octopus.Client.Editors.CertificateEditor.FindByName(System.String)
+  id: FindByName(System.String)
+  parent: Octopus.Client.Editors.CertificateEditor
+  langs:
+  - csharp
+  - vb
+  name: FindByName(String)
+  nameWithType: CertificateEditor.FindByName(String)
+  fullName: Octopus.Client.Editors.CertificateEditor.FindByName(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/CertificateEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: FindByName
+    path: ../source/Octopus.Client/Editors/CertificateEditor.cs
+    startLine: 30
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public CertificateEditor FindByName(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Octopus.Client.Editors.CertificateEditor
+    content.vb: Public Function FindByName(name As String) As CertificateEditor
+  overload: Octopus.Client.Editors.CertificateEditor.FindByName*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.CertificateEditor.Customize(System.Action{Octopus.Client.Model.CertificateResource})
+  commentId: M:Octopus.Client.Editors.CertificateEditor.Customize(System.Action{Octopus.Client.Model.CertificateResource})
+  id: Customize(System.Action{Octopus.Client.Model.CertificateResource})
+  parent: Octopus.Client.Editors.CertificateEditor
+  langs:
+  - csharp
+  - vb
+  name: Customize(Action<CertificateResource>)
+  nameWithType: CertificateEditor.Customize(Action<CertificateResource>)
+  fullName: Octopus.Client.Editors.CertificateEditor.Customize(System.Action<Octopus.Client.Model.CertificateResource>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/CertificateEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Customize
+    path: ../source/Octopus.Client/Editors/CertificateEditor.cs
+    startLine: 45
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public CertificateEditor Customize(Action<CertificateResource> customize)
+    parameters:
+    - id: customize
+      type: System.Action{Octopus.Client.Model.CertificateResource}
+    return:
+      type: Octopus.Client.Editors.CertificateEditor
+    content.vb: Public Function Customize(customize As Action(Of CertificateResource)) As CertificateEditor
+  overload: Octopus.Client.Editors.CertificateEditor.Customize*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}.Customize(System.Action{Octopus.Client.Model.CertificateResource})
+  nameWithType.vb: CertificateEditor.Customize(Action(Of CertificateResource))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Editors.CertificateEditor.Customize(System.Action(Of Octopus.Client.Model.CertificateResource))
+  name.vb: Customize(Action(Of CertificateResource))
+- uid: Octopus.Client.Editors.CertificateEditor.Save
+  commentId: M:Octopus.Client.Editors.CertificateEditor.Save
+  id: Save
+  parent: Octopus.Client.Editors.CertificateEditor
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: CertificateEditor.Save()
+  fullName: Octopus.Client.Editors.CertificateEditor.Save()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/CertificateEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Save
+    path: ../source/Octopus.Client/Editors/CertificateEditor.cs
+    startLine: 51
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public CertificateEditor Save()
+    return:
+      type: Octopus.Client.Editors.CertificateEditor
+    content.vb: Public Function Save As CertificateEditor
+  overload: Octopus.Client.Editors.CertificateEditor.Save*
+  implements:
+  - Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}.Save
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Editors.CertificateEditor.Usages
+  commentId: M:Octopus.Client.Editors.CertificateEditor.Usages
+  id: Usages
+  parent: Octopus.Client.Editors.CertificateEditor
+  langs:
+  - csharp
+  - vb
+  name: Usages()
+  nameWithType: CertificateEditor.Usages()
+  fullName: Octopus.Client.Editors.CertificateEditor.Usages()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/CertificateEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Usages
+    path: ../source/Octopus.Client/Editors/CertificateEditor.cs
+    startLine: 57
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: public CertificateUsageResource Usages()
+    return:
+      type: Octopus.Client.Model.CertificateUsageResource
+    content.vb: Public Function Usages As CertificateUsageResource
+  overload: Octopus.Client.Editors.CertificateEditor.Usages*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Editors
+  commentId: N:Octopus.Client.Editors
+  name: Octopus.Client.Editors
+  nameWithType: Octopus.Client.Editors
+  fullName: Octopus.Client.Editors
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}
+  commentId: T:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}
+  parent: Octopus.Client.Editors
+  definition: Octopus.Client.Editors.IResourceEditor`2
+  name: IResourceEditor<CertificateResource, CertificateEditor>
+  nameWithType: IResourceEditor<CertificateResource, CertificateEditor>
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.CertificateResource, Octopus.Client.Editors.CertificateEditor>
+  nameWithType.vb: IResourceEditor(Of CertificateResource, CertificateEditor)
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.CertificateResource, Octopus.Client.Editors.CertificateEditor)
+  name.vb: IResourceEditor(Of CertificateResource, CertificateEditor)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.CertificateResource
+    name: CertificateResource
+    nameWithType: CertificateResource
+    fullName: Octopus.Client.Model.CertificateResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Editors.CertificateEditor
+    name: CertificateEditor
+    nameWithType: CertificateEditor
+    fullName: Octopus.Client.Editors.CertificateEditor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.CertificateResource
+    name: CertificateResource
+    nameWithType: CertificateResource
+    fullName: Octopus.Client.Model.CertificateResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Editors.CertificateEditor
+    name: CertificateEditor
+    nameWithType: CertificateEditor
+    fullName: Octopus.Client.Editors.CertificateEditor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceBuilder
+  commentId: T:Octopus.Client.Editors.IResourceBuilder
+  parent: Octopus.Client.Editors
+  name: IResourceBuilder
+  nameWithType: IResourceBuilder
+  fullName: Octopus.Client.Editors.IResourceBuilder
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Editors.IResourceEditor`2
+  commentId: T:Octopus.Client.Editors.IResourceEditor`2
+  name: IResourceEditor<TResource, TResourceBuilder>
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder)
+  name.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResourceBuilder
+    nameWithType: TResourceBuilder
+    fullName: TResourceBuilder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2
+    name: IResourceEditor
+    nameWithType: IResourceEditor
+    fullName: Octopus.Client.Editors.IResourceEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResourceBuilder
+    nameWithType: TResourceBuilder
+    fullName: TResourceBuilder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.CertificateEditor.#ctor*
+  commentId: Overload:Octopus.Client.Editors.CertificateEditor.#ctor
+  name: CertificateEditor
+  nameWithType: CertificateEditor.CertificateEditor
+  fullName: Octopus.Client.Editors.CertificateEditor.CertificateEditor
+- uid: Octopus.Client.Repositories.ICertificateRepository
+  commentId: T:Octopus.Client.Repositories.ICertificateRepository
+  parent: Octopus.Client.Repositories
+  name: ICertificateRepository
+  nameWithType: ICertificateRepository
+  fullName: Octopus.Client.Repositories.ICertificateRepository
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Editors.CertificateEditor.Instance*
+  commentId: Overload:Octopus.Client.Editors.CertificateEditor.Instance
+  name: Instance
+  nameWithType: CertificateEditor.Instance
+  fullName: Octopus.Client.Editors.CertificateEditor.Instance
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}.Instance
+  commentId: P:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}.Instance
+  parent: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Instance
+  name: Instance
+  nameWithType: IResourceEditor<CertificateResource, CertificateEditor>.Instance
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.CertificateResource, Octopus.Client.Editors.CertificateEditor>.Instance
+  nameWithType.vb: IResourceEditor(Of CertificateResource, CertificateEditor).Instance
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.CertificateResource, Octopus.Client.Editors.CertificateEditor).Instance
+- uid: Octopus.Client.Model.CertificateResource
+  commentId: T:Octopus.Client.Model.CertificateResource
+  parent: Octopus.Client.Model
+  name: CertificateResource
+  nameWithType: CertificateResource
+  fullName: Octopus.Client.Model.CertificateResource
+- uid: Octopus.Client.Editors.IResourceEditor`2.Instance
+  commentId: P:Octopus.Client.Editors.IResourceEditor`2.Instance
+  name: Instance
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Instance
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Instance
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Instance
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Instance
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Editors.CertificateEditor.Create*
+  commentId: Overload:Octopus.Client.Editors.CertificateEditor.Create
+  name: Create
+  nameWithType: CertificateEditor.Create
+  fullName: Octopus.Client.Editors.CertificateEditor.Create
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Editors.CertificateEditor
+  commentId: T:Octopus.Client.Editors.CertificateEditor
+  parent: Octopus.Client.Editors
+  name: CertificateEditor
+  nameWithType: CertificateEditor
+  fullName: Octopus.Client.Editors.CertificateEditor
+- uid: Octopus.Client.Editors.CertificateEditor.FindByName*
+  commentId: Overload:Octopus.Client.Editors.CertificateEditor.FindByName
+  name: FindByName
+  nameWithType: CertificateEditor.FindByName
+  fullName: Octopus.Client.Editors.CertificateEditor.FindByName
+- uid: Octopus.Client.Editors.CertificateEditor.Customize*
+  commentId: Overload:Octopus.Client.Editors.CertificateEditor.Customize
+  name: Customize
+  nameWithType: CertificateEditor.Customize
+  fullName: Octopus.Client.Editors.CertificateEditor.Customize
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}.Customize(System.Action{Octopus.Client.Model.CertificateResource})
+  commentId: M:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}.Customize(System.Action{Octopus.Client.Model.CertificateResource})
+  parent: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  name: Customize(Action<CertificateResource>)
+  nameWithType: IResourceEditor<CertificateResource, CertificateEditor>.Customize(Action<CertificateResource>)
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.CertificateResource, Octopus.Client.Editors.CertificateEditor>.Customize(System.Action<Octopus.Client.Model.CertificateResource>)
+  nameWithType.vb: IResourceEditor(Of CertificateResource, CertificateEditor).Customize(Action(Of CertificateResource))
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.CertificateResource, Octopus.Client.Editors.CertificateEditor).Customize(System.Action(Of Octopus.Client.Model.CertificateResource))
+  name.vb: Customize(Action(Of CertificateResource))
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor<CertificateResource, CertificateEditor>.Customize
+    fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.CertificateResource, Octopus.Client.Editors.CertificateEditor>.Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.CertificateResource
+    name: CertificateResource
+    nameWithType: CertificateResource
+    fullName: Octopus.Client.Model.CertificateResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor(Of CertificateResource, CertificateEditor).Customize
+    fullName: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.CertificateResource, Octopus.Client.Editors.CertificateEditor).Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.CertificateResource
+    name: CertificateResource
+    nameWithType: CertificateResource
+    fullName: Octopus.Client.Model.CertificateResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action{Octopus.Client.Model.CertificateResource}
+  commentId: T:System.Action{Octopus.Client.Model.CertificateResource}
+  parent: System
+  definition: System.Action`1
+  name: Action<CertificateResource>
+  nameWithType: Action<CertificateResource>
+  fullName: System.Action<Octopus.Client.Model.CertificateResource>
+  nameWithType.vb: Action(Of CertificateResource)
+  fullName.vb: System.Action(Of Octopus.Client.Model.CertificateResource)
+  name.vb: Action(Of CertificateResource)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.CertificateResource
+    name: CertificateResource
+    nameWithType: CertificateResource
+    fullName: Octopus.Client.Model.CertificateResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.CertificateResource
+    name: CertificateResource
+    nameWithType: CertificateResource
+    fullName: Octopus.Client.Model.CertificateResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  commentId: M:Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  isExternal: true
+  name: Customize(Action<TResource>)
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Customize(Action<TResource>)
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Customize(System.Action<TResource>)
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Customize(Action(Of TResource))
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Customize(System.Action(Of TResource))
+  name.vb: Customize(Action(Of TResource))
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor<TResource, TResourceBuilder>.Customize
+    fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+    name: Customize
+    nameWithType: IResourceEditor(Of TResource, TResourceBuilder).Customize
+    fullName: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Customize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.CertificateEditor.Save*
+  commentId: Overload:Octopus.Client.Editors.CertificateEditor.Save
+  name: Save
+  nameWithType: CertificateEditor.Save
+  fullName: Octopus.Client.Editors.CertificateEditor.Save
+- uid: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}.Save
+  commentId: M:Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}.Save
+  parent: Octopus.Client.Editors.IResourceEditor{Octopus.Client.Model.CertificateResource,Octopus.Client.Editors.CertificateEditor}
+  definition: Octopus.Client.Editors.IResourceEditor`2.Save
+  name: Save()
+  nameWithType: IResourceEditor<CertificateResource, CertificateEditor>.Save()
+  fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.CertificateResource, Octopus.Client.Editors.CertificateEditor>.Save()
+  nameWithType.vb: IResourceEditor(Of CertificateResource, CertificateEditor).Save()
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.CertificateResource, Octopus.Client.Editors.CertificateEditor).Save()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor<CertificateResource, CertificateEditor>.Save
+    fullName: Octopus.Client.Editors.IResourceEditor<Octopus.Client.Model.CertificateResource, Octopus.Client.Editors.CertificateEditor>.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor(Of CertificateResource, CertificateEditor).Save
+    fullName: Octopus.Client.Editors.IResourceEditor(Of Octopus.Client.Model.CertificateResource, Octopus.Client.Editors.CertificateEditor).Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.IResourceEditor`2.Save
+  commentId: M:Octopus.Client.Editors.IResourceEditor`2.Save
+  name: Save()
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Save()
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Save()
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Save()
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Save()
+  spec.csharp:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor<TResource, TResourceBuilder>.Save
+    fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Editors.IResourceEditor`2.Save
+    name: Save
+    nameWithType: IResourceEditor(Of TResource, TResourceBuilder).Save
+    fullName: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Save
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Editors.CertificateEditor.Usages*
+  commentId: Overload:Octopus.Client.Editors.CertificateEditor.Usages
+  name: Usages
+  nameWithType: CertificateEditor.Usages
+  fullName: Octopus.Client.Editors.CertificateEditor.Usages
+- uid: Octopus.Client.Model.CertificateUsageResource
+  commentId: T:Octopus.Client.Model.CertificateUsageResource
+  parent: Octopus.Client.Model
+  name: CertificateUsageResource
+  nameWithType: CertificateUsageResource
+  fullName: Octopus.Client.Model.CertificateUsageResource

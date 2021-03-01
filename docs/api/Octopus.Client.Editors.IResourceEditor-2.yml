@@ -1,0 +1,276 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Editors.IResourceEditor`2
+  commentId: T:Octopus.Client.Editors.IResourceEditor`2
+  id: IResourceEditor`2
+  parent: Octopus.Client.Editors
+  children:
+  - Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  - Octopus.Client.Editors.IResourceEditor`2.Instance
+  - Octopus.Client.Editors.IResourceEditor`2.Save
+  langs:
+  - csharp
+  - vb
+  name: IResourceEditor<TResource, TResourceBuilder>
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/IResourceEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IResourceEditor
+    path: ../source/Octopus.Client/Editors/IResourceEditor.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: 'public interface IResourceEditor<out TResource, out TResourceBuilder> : IResourceBuilder where TResource : Resource where TResourceBuilder : IResourceBuilder'
+    typeParameters:
+    - id: TResource
+    - id: TResourceBuilder
+    content.vb: >-
+      Public Interface IResourceEditor(Of Out TResource As Resource, Out TResourceBuilder As IResourceBuilder)
+          Inherits IResourceBuilder
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder)
+  name.vb: IResourceEditor(Of TResource, TResourceBuilder)
+- uid: Octopus.Client.Editors.IResourceEditor`2.Instance
+  commentId: P:Octopus.Client.Editors.IResourceEditor`2.Instance
+  id: Instance
+  parent: Octopus.Client.Editors.IResourceEditor`2
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Instance
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Instance
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/IResourceEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Instance
+    path: ../source/Octopus.Client/Editors/IResourceEditor.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: TResource Instance { get; }
+    parameters: []
+    return:
+      type: '{TResource}'
+    content.vb: ReadOnly Property Instance As TResource
+  overload: Octopus.Client.Editors.IResourceEditor`2.Instance*
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Instance
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Instance
+- uid: Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  commentId: M:Octopus.Client.Editors.IResourceEditor`2.Customize(System.Action{`0})
+  id: Customize(System.Action{`0})
+  parent: Octopus.Client.Editors.IResourceEditor`2
+  langs:
+  - csharp
+  - vb
+  name: Customize(Action<TResource>)
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Customize(Action<TResource>)
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Customize(System.Action<TResource>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/IResourceEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Customize
+    path: ../source/Octopus.Client/Editors/IResourceEditor.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: TResourceBuilder Customize(Action<TResource> customize)
+    parameters:
+    - id: customize
+      type: System.Action{{TResource}}
+    return:
+      type: '{TResourceBuilder}'
+    content.vb: Function Customize(customize As Action(Of TResource)) As TResourceBuilder
+  overload: Octopus.Client.Editors.IResourceEditor`2.Customize*
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Customize(Action(Of TResource))
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Customize(System.Action(Of TResource))
+  name.vb: Customize(Action(Of TResource))
+- uid: Octopus.Client.Editors.IResourceEditor`2.Save
+  commentId: M:Octopus.Client.Editors.IResourceEditor`2.Save
+  id: Save
+  parent: Octopus.Client.Editors.IResourceEditor`2
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Save()
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Save()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Editors/IResourceEditor.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Save
+    path: ../source/Octopus.Client/Editors/IResourceEditor.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Editors
+  syntax:
+    content: TResourceBuilder Save()
+    return:
+      type: '{TResourceBuilder}'
+    content.vb: Function Save As TResourceBuilder
+  overload: Octopus.Client.Editors.IResourceEditor`2.Save*
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Save()
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Save()
+references:
+- uid: Octopus.Client.Editors
+  commentId: N:Octopus.Client.Editors
+  name: Octopus.Client.Editors
+  nameWithType: Octopus.Client.Editors
+  fullName: Octopus.Client.Editors
+- uid: Octopus.Client.Editors.IResourceEditor`2.Instance*
+  commentId: Overload:Octopus.Client.Editors.IResourceEditor`2.Instance
+  name: Instance
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Instance
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Instance
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Instance
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Instance
+- uid: '{TResource}'
+  commentId: '!:TResource'
+  definition: TResource
+  name: TResource
+  nameWithType: TResource
+  fullName: TResource
+- uid: TResource
+  name: TResource
+  nameWithType: TResource
+  fullName: TResource
+- uid: Octopus.Client.Editors.IResourceEditor`2.Customize*
+  commentId: Overload:Octopus.Client.Editors.IResourceEditor`2.Customize
+  name: Customize
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Customize
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Customize
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Customize
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Customize
+- uid: System.Action{{TResource}}
+  commentId: T:System.Action{`0}
+  parent: System
+  definition: System.Action`1
+  name: Action<TResource>
+  nameWithType: Action<TResource>
+  fullName: System.Action<TResource>
+  nameWithType.vb: Action(Of TResource)
+  fullName.vb: System.Action(Of TResource)
+  name.vb: Action(Of TResource)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TResourceBuilder}'
+  commentId: '!:TResourceBuilder'
+  definition: TResourceBuilder
+  name: TResourceBuilder
+  nameWithType: TResourceBuilder
+  fullName: TResourceBuilder
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TResourceBuilder
+  name: TResourceBuilder
+  nameWithType: TResourceBuilder
+  fullName: TResourceBuilder
+- uid: Octopus.Client.Editors.IResourceEditor`2.Save*
+  commentId: Overload:Octopus.Client.Editors.IResourceEditor`2.Save
+  name: Save
+  nameWithType: IResourceEditor<TResource, TResourceBuilder>.Save
+  fullName: Octopus.Client.Editors.IResourceEditor<TResource, TResourceBuilder>.Save
+  nameWithType.vb: IResourceEditor(Of TResource, TResourceBuilder).Save
+  fullName.vb: Octopus.Client.Editors.IResourceEditor(Of TResource, TResourceBuilder).Save

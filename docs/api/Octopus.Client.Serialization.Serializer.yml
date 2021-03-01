@@ -1,0 +1,498 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Serialization.Serializer
+  commentId: T:Octopus.Client.Serialization.Serializer
+  id: Serializer
+  parent: Octopus.Client.Serialization
+  children:
+  - Octopus.Client.Serialization.Serializer.Deserialize``1(System.String)
+  - Octopus.Client.Serialization.Serializer.Serialize(System.Object)
+  - Octopus.Client.Serialization.Serializer.Serialize``1(System.Object,``0)
+  langs:
+  - csharp
+  - vb
+  name: Serializer
+  nameWithType: Serializer
+  fullName: Octopus.Client.Serialization.Serializer
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Serialization/Serializer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Serializer
+    path: ../source/Octopus.Client/Serialization/Serializer.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Serialization
+  summary: "\nA wrapper over the required Json serialization that sets up the serializer settings to\nspeak to Octopus correctly. \n"
+  example: []
+  syntax:
+    content: public static class Serializer
+    content.vb: Public Module Serializer
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Octopus.Client.Serialization.Serializer.Serialize``1(System.Object,``0)
+  commentId: M:Octopus.Client.Serialization.Serializer.Serialize``1(System.Object,``0)
+  id: Serialize``1(System.Object,``0)
+  parent: Octopus.Client.Serialization.Serializer
+  langs:
+  - csharp
+  - vb
+  name: Serialize<T>(Object, T)
+  nameWithType: Serializer.Serialize<T>(Object, T)
+  fullName: Octopus.Client.Serialization.Serializer.Serialize<T>(System.Object, T)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Serialization/Serializer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Serialize
+    path: ../source/Octopus.Client/Serialization/Serializer.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Serialization
+  syntax:
+    content: public static string Serialize<T>(object metadata, T exportObject)
+    parameters:
+    - id: metadata
+      type: System.Object
+    - id: exportObject
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: System.String
+    content.vb: Public Shared Function Serialize(Of T)(metadata As Object, exportObject As T) As String
+  overload: Octopus.Client.Serialization.Serializer.Serialize*
+  nameWithType.vb: Serializer.Serialize(Of T)(Object, T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Octopus.Client.Serialization.Serializer.Serialize(Of T)(System.Object, T)
+  name.vb: Serialize(Of T)(Object, T)
+- uid: Octopus.Client.Serialization.Serializer.Serialize(System.Object)
+  commentId: M:Octopus.Client.Serialization.Serializer.Serialize(System.Object)
+  id: Serialize(System.Object)
+  parent: Octopus.Client.Serialization.Serializer
+  langs:
+  - csharp
+  - vb
+  name: Serialize(Object)
+  nameWithType: Serializer.Serialize(Object)
+  fullName: Octopus.Client.Serialization.Serializer.Serialize(System.Object)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Serialization/Serializer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Serialize
+    path: ../source/Octopus.Client/Serialization/Serializer.cs
+    startLine: 21
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Serialization
+  syntax:
+    content: public static string Serialize(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.String
+    content.vb: Public Shared Function Serialize(obj As Object) As String
+  overload: Octopus.Client.Serialization.Serializer.Serialize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Octopus.Client.Serialization.Serializer.Deserialize``1(System.String)
+  commentId: M:Octopus.Client.Serialization.Serializer.Deserialize``1(System.String)
+  id: Deserialize``1(System.String)
+  parent: Octopus.Client.Serialization.Serializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize<T>(String)
+  nameWithType: Serializer.Deserialize<T>(String)
+  fullName: Octopus.Client.Serialization.Serializer.Deserialize<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Serialization/Serializer.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Deserialize
+    path: ../source/Octopus.Client/Serialization/Serializer.cs
+    startLine: 29
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Serialization
+  syntax:
+    content: public static object Deserialize<T>(string input)
+    parameters:
+    - id: input
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: System.Object
+    content.vb: Public Shared Function Deserialize(Of T)(input As String) As Object
+  overload: Octopus.Client.Serialization.Serializer.Deserialize*
+  nameWithType.vb: Serializer.Deserialize(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Octopus.Client.Serialization.Serializer.Deserialize(Of T)(System.String)
+  name.vb: Deserialize(Of T)(String)
+references:
+- uid: Octopus.Client.Serialization
+  commentId: N:Octopus.Client.Serialization
+  name: Octopus.Client.Serialization
+  nameWithType: Octopus.Client.Serialization
+  fullName: Octopus.Client.Serialization
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Serialization.Serializer.Serialize*
+  commentId: Overload:Octopus.Client.Serialization.Serializer.Serialize
+  name: Serialize
+  nameWithType: Serializer.Serialize
+  fullName: Octopus.Client.Serialization.Serializer.Serialize
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Octopus.Client.Serialization.Serializer.Deserialize*
+  commentId: Overload:Octopus.Client.Serialization.Serializer.Deserialize
+  name: Deserialize
+  nameWithType: Serializer.Deserialize
+  fullName: Octopus.Client.Serialization.Serializer.Deserialize

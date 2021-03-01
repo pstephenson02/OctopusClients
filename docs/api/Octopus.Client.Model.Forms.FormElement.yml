@@ -1,0 +1,542 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.Forms.FormElement
+  commentId: T:Octopus.Client.Model.Forms.FormElement
+  id: FormElement
+  parent: Octopus.Client.Model.Forms
+  children:
+  - Octopus.Client.Model.Forms.FormElement.#ctor(System.String,Octopus.Client.Model.Forms.Control,System.Boolean)
+  - Octopus.Client.Model.Forms.FormElement.Control
+  - Octopus.Client.Model.Forms.FormElement.IsValueRequired
+  - Octopus.Client.Model.Forms.FormElement.Name
+  langs:
+  - csharp
+  - vb
+  name: FormElement
+  nameWithType: FormElement
+  fullName: Octopus.Client.Model.Forms.FormElement
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Forms/FormElement.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: FormElement
+    path: ../source/Octopus.Client/Model/Forms/FormElement.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Forms
+  summary: "\nAn item displayed or retrieved from a <xref href=\"Octopus.Client.Model.Forms.Form\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public class FormElement
+    content.vb: Public Class FormElement
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.Forms.FormElement.#ctor(System.String,Octopus.Client.Model.Forms.Control,System.Boolean)
+  commentId: M:Octopus.Client.Model.Forms.FormElement.#ctor(System.String,Octopus.Client.Model.Forms.Control,System.Boolean)
+  id: '#ctor(System.String,Octopus.Client.Model.Forms.Control,System.Boolean)'
+  parent: Octopus.Client.Model.Forms.FormElement
+  langs:
+  - csharp
+  - vb
+  name: FormElement(String, Control, Boolean)
+  nameWithType: FormElement.FormElement(String, Control, Boolean)
+  fullName: Octopus.Client.Model.Forms.FormElement.FormElement(System.String, Octopus.Client.Model.Forms.Control, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Forms/FormElement.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Forms/FormElement.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Forms
+  syntax:
+    content: public FormElement(string name, Control control, bool isValueRequired = false)
+    parameters:
+    - id: name
+      type: System.String
+    - id: control
+      type: Octopus.Client.Model.Forms.Control
+    - id: isValueRequired
+      type: System.Boolean
+    content.vb: Public Sub New(name As String, control As Control, isValueRequired As Boolean = False)
+  overload: Octopus.Client.Model.Forms.FormElement.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.Forms.FormElement.Name
+  commentId: P:Octopus.Client.Model.Forms.FormElement.Name
+  id: Name
+  parent: Octopus.Client.Model.Forms.FormElement
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: FormElement.Name
+  fullName: Octopus.Client.Model.Forms.FormElement.Name
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Forms/FormElement.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Name
+    path: ../source/Octopus.Client/Model/Forms/FormElement.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Forms
+  summary: "\nThe name of the element. Must be unique within the form.\n"
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Octopus.Client.Model.Forms.FormElement.Name*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.Forms.FormElement.Control
+  commentId: P:Octopus.Client.Model.Forms.FormElement.Control
+  id: Control
+  parent: Octopus.Client.Model.Forms.FormElement
+  langs:
+  - csharp
+  - vb
+  name: Control
+  nameWithType: FormElement.Control
+  fullName: Octopus.Client.Model.Forms.FormElement.Control
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Forms/FormElement.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Control
+    path: ../source/Octopus.Client/Model/Forms/FormElement.cs
+    startLine: 24
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Forms
+  summary: "\nA control used to render the element.\n"
+  example: []
+  syntax:
+    content: public Control Control { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.Forms.Control
+    content.vb: Public ReadOnly Property Control As Control
+  overload: Octopus.Client.Model.Forms.FormElement.Control*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.Forms.FormElement.IsValueRequired
+  commentId: P:Octopus.Client.Model.Forms.FormElement.IsValueRequired
+  id: IsValueRequired
+  parent: Octopus.Client.Model.Forms.FormElement
+  langs:
+  - csharp
+  - vb
+  name: IsValueRequired
+  nameWithType: FormElement.IsValueRequired
+  fullName: Octopus.Client.Model.Forms.FormElement.IsValueRequired
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Forms/FormElement.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsValueRequired
+    path: ../source/Octopus.Client/Model/Forms/FormElement.cs
+    startLine: 30
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model.Forms
+  summary: "\nIf true, the receiver of the form expects that a value will be\nprovided for the element.\n"
+  example: []
+  syntax:
+    content: public bool IsValueRequired { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsValueRequired As Boolean
+  overload: Octopus.Client.Model.Forms.FormElement.IsValueRequired*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Octopus.Client.Model.Forms.Form
+  commentId: T:Octopus.Client.Model.Forms.Form
+  parent: Octopus.Client.Model.Forms
+  name: Form
+  nameWithType: Form
+  fullName: Octopus.Client.Model.Forms.Form
+- uid: Octopus.Client.Model.Forms
+  commentId: N:Octopus.Client.Model.Forms
+  name: Octopus.Client.Model.Forms
+  nameWithType: Octopus.Client.Model.Forms
+  fullName: Octopus.Client.Model.Forms
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.Forms.FormElement.#ctor*
+  commentId: Overload:Octopus.Client.Model.Forms.FormElement.#ctor
+  name: FormElement
+  nameWithType: FormElement.FormElement
+  fullName: Octopus.Client.Model.Forms.FormElement.FormElement
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.Forms.Control
+  commentId: T:Octopus.Client.Model.Forms.Control
+  parent: Octopus.Client.Model.Forms
+  name: Control
+  nameWithType: Control
+  fullName: Octopus.Client.Model.Forms.Control
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.Forms.FormElement.Name*
+  commentId: Overload:Octopus.Client.Model.Forms.FormElement.Name
+  name: Name
+  nameWithType: FormElement.Name
+  fullName: Octopus.Client.Model.Forms.FormElement.Name
+- uid: Octopus.Client.Model.Forms.FormElement.Control*
+  commentId: Overload:Octopus.Client.Model.Forms.FormElement.Control
+  name: Control
+  nameWithType: FormElement.Control
+  fullName: Octopus.Client.Model.Forms.FormElement.Control
+- uid: Octopus.Client.Model.Forms.FormElement.IsValueRequired*
+  commentId: Overload:Octopus.Client.Model.Forms.FormElement.IsValueRequired
+  name: IsValueRequired
+  nameWithType: FormElement.IsValueRequired
+  fullName: Octopus.Client.Model.Forms.FormElement.IsValueRequired

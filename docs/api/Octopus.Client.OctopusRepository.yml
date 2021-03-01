@@ -1,0 +1,4608 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.OctopusRepository
+  commentId: T:Octopus.Client.OctopusRepository
+  id: OctopusRepository
+  parent: Octopus.Client
+  children:
+  - Octopus.Client.OctopusRepository.#ctor(Octopus.Client.IOctopusClient,Octopus.Client.RepositoryScope)
+  - Octopus.Client.OctopusRepository.#ctor(Octopus.Client.OctopusServerEndpoint)
+  - Octopus.Client.OctopusRepository.#ctor(Octopus.Client.OctopusServerEndpoint,Octopus.Client.RepositoryScope)
+  - Octopus.Client.OctopusRepository.Accounts
+  - Octopus.Client.OctopusRepository.ActionTemplates
+  - Octopus.Client.OctopusRepository.Artifacts
+  - Octopus.Client.OctopusRepository.Backups
+  - Octopus.Client.OctopusRepository.Beta
+  - Octopus.Client.OctopusRepository.BuildInformationRepository
+  - Octopus.Client.OctopusRepository.BuiltInPackageRepository
+  - Octopus.Client.OctopusRepository.CertificateConfiguration
+  - Octopus.Client.OctopusRepository.Certificates
+  - Octopus.Client.OctopusRepository.Channels
+  - Octopus.Client.OctopusRepository.Client
+  - Octopus.Client.OctopusRepository.CommunityActionTemplates
+  - Octopus.Client.OctopusRepository.Configuration
+  - Octopus.Client.OctopusRepository.DashboardConfigurations
+  - Octopus.Client.OctopusRepository.Dashboards
+  - Octopus.Client.OctopusRepository.Defects
+  - Octopus.Client.OctopusRepository.DeploymentProcesses
+  - Octopus.Client.OctopusRepository.Deployments
+  - Octopus.Client.OctopusRepository.DeploymentSettings
+  - Octopus.Client.OctopusRepository.Environments
+  - Octopus.Client.OctopusRepository.Events
+  - Octopus.Client.OctopusRepository.FeaturesConfiguration
+  - Octopus.Client.OctopusRepository.Feeds
+  - Octopus.Client.OctopusRepository.HasLink(System.String)
+  - Octopus.Client.OctopusRepository.HasLinkParameter(System.String,System.String)
+  - Octopus.Client.OctopusRepository.Interruptions
+  - Octopus.Client.OctopusRepository.LibraryVariableSets
+  - Octopus.Client.OctopusRepository.Licenses
+  - Octopus.Client.OctopusRepository.Lifecycles
+  - Octopus.Client.OctopusRepository.Link(System.String)
+  - Octopus.Client.OctopusRepository.LoadRootDocument
+  - Octopus.Client.OctopusRepository.LoadSpaceRootDocument
+  - Octopus.Client.OctopusRepository.MachinePolicies
+  - Octopus.Client.OctopusRepository.MachineRoles
+  - Octopus.Client.OctopusRepository.Machines
+  - Octopus.Client.OctopusRepository.Migrations
+  - Octopus.Client.OctopusRepository.OctopusServerNodes
+  - Octopus.Client.OctopusRepository.PackageMetadataRepository
+  - Octopus.Client.OctopusRepository.PerformanceConfiguration
+  - Octopus.Client.OctopusRepository.ProjectGroups
+  - Octopus.Client.OctopusRepository.Projects
+  - Octopus.Client.OctopusRepository.ProjectTriggers
+  - Octopus.Client.OctopusRepository.Proxies
+  - Octopus.Client.OctopusRepository.Releases
+  - Octopus.Client.OctopusRepository.RetentionPolicies
+  - Octopus.Client.OctopusRepository.RunbookProcesses
+  - Octopus.Client.OctopusRepository.RunbookRuns
+  - Octopus.Client.OctopusRepository.Runbooks
+  - Octopus.Client.OctopusRepository.RunbookSnapshots
+  - Octopus.Client.OctopusRepository.Schedulers
+  - Octopus.Client.OctopusRepository.Scope
+  - Octopus.Client.OctopusRepository.ScopedUserRoles
+  - Octopus.Client.OctopusRepository.ServerStatus
+  - Octopus.Client.OctopusRepository.Spaces
+  - Octopus.Client.OctopusRepository.Subscriptions
+  - Octopus.Client.OctopusRepository.TagSets
+  - Octopus.Client.OctopusRepository.Tasks
+  - Octopus.Client.OctopusRepository.Teams
+  - Octopus.Client.OctopusRepository.Tenants
+  - Octopus.Client.OctopusRepository.TenantVariables
+  - Octopus.Client.OctopusRepository.UpgradeConfiguration
+  - Octopus.Client.OctopusRepository.UserInvites
+  - Octopus.Client.OctopusRepository.UserPermissions
+  - Octopus.Client.OctopusRepository.UserRoles
+  - Octopus.Client.OctopusRepository.Users
+  - Octopus.Client.OctopusRepository.UserTeams
+  - Octopus.Client.OctopusRepository.VariableSets
+  - Octopus.Client.OctopusRepository.WorkerPools
+  - Octopus.Client.OctopusRepository.Workers
+  langs:
+  - csharp
+  - vb
+  name: OctopusRepository
+  nameWithType: OctopusRepository
+  fullName: Octopus.Client.OctopusRepository
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: OctopusRepository
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 35
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  summary: "\nA simplified interface to commonly-used parts of the API.\nFunctionality not exposed by this interface can be accessed\nusing <xref href=\"Octopus.Client.IOctopusCommonRepository.Client\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: "\nCreate using:\n<pre><code>var repository = new OctopusRepository(new OctopusServerEndpoint(&quot;http://myoctopus/&quot;));</code></pre>\n"
+  example: []
+  syntax:
+    content: 'public class OctopusRepository : IOctopusRepository, IOctopusSpaceRepository, IOctopusSystemRepository, IOctopusCommonRepository'
+    content.vb: >-
+      Public Class OctopusRepository
+          Implements IOctopusRepository, IOctopusSpaceRepository, IOctopusSystemRepository, IOctopusCommonRepository
+  inheritance:
+  - System.Object
+  implements:
+  - Octopus.Client.IOctopusRepository
+  - Octopus.Client.IOctopusSpaceRepository
+  - Octopus.Client.IOctopusSystemRepository
+  - Octopus.Client.IOctopusCommonRepository
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - Octopus.Client.IOctopusRepository.Octopus.Client.OctopusRepositoryExtensions.ForSpace(Octopus.Client.Model.SpaceResource)
+  - Octopus.Client.IOctopusRepository.Octopus.Client.OctopusRepositoryExtensions.ForSystem
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.OctopusRepository.#ctor(Octopus.Client.OctopusServerEndpoint)
+  commentId: M:Octopus.Client.OctopusRepository.#ctor(Octopus.Client.OctopusServerEndpoint)
+  id: '#ctor(Octopus.Client.OctopusServerEndpoint)'
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: OctopusRepository(OctopusServerEndpoint)
+  nameWithType: OctopusRepository.OctopusRepository(OctopusServerEndpoint)
+  fullName: Octopus.Client.OctopusRepository.OctopusRepository(Octopus.Client.OctopusServerEndpoint)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 40
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public OctopusRepository(OctopusServerEndpoint endpoint)
+    parameters:
+    - id: endpoint
+      type: Octopus.Client.OctopusServerEndpoint
+    content.vb: Public Sub New(endpoint As OctopusServerEndpoint)
+  overload: Octopus.Client.OctopusRepository.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.OctopusRepository.#ctor(Octopus.Client.OctopusServerEndpoint,Octopus.Client.RepositoryScope)
+  commentId: M:Octopus.Client.OctopusRepository.#ctor(Octopus.Client.OctopusServerEndpoint,Octopus.Client.RepositoryScope)
+  id: '#ctor(Octopus.Client.OctopusServerEndpoint,Octopus.Client.RepositoryScope)'
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: OctopusRepository(OctopusServerEndpoint, RepositoryScope)
+  nameWithType: OctopusRepository.OctopusRepository(OctopusServerEndpoint, RepositoryScope)
+  fullName: Octopus.Client.OctopusRepository.OctopusRepository(Octopus.Client.OctopusServerEndpoint, Octopus.Client.RepositoryScope)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 44
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public OctopusRepository(OctopusServerEndpoint endpoint, RepositoryScope repositoryScope)
+    parameters:
+    - id: endpoint
+      type: Octopus.Client.OctopusServerEndpoint
+    - id: repositoryScope
+      type: Octopus.Client.RepositoryScope
+    content.vb: Public Sub New(endpoint As OctopusServerEndpoint, repositoryScope As RepositoryScope)
+  overload: Octopus.Client.OctopusRepository.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.OctopusRepository.#ctor(Octopus.Client.IOctopusClient,Octopus.Client.RepositoryScope)
+  commentId: M:Octopus.Client.OctopusRepository.#ctor(Octopus.Client.IOctopusClient,Octopus.Client.RepositoryScope)
+  id: '#ctor(Octopus.Client.IOctopusClient,Octopus.Client.RepositoryScope)'
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: OctopusRepository(IOctopusClient, RepositoryScope)
+  nameWithType: OctopusRepository.OctopusRepository(IOctopusClient, RepositoryScope)
+  fullName: Octopus.Client.OctopusRepository.OctopusRepository(Octopus.Client.IOctopusClient, Octopus.Client.RepositoryScope)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 48
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public OctopusRepository(IOctopusClient client, RepositoryScope repositoryScope = null)
+    parameters:
+    - id: client
+      type: Octopus.Client.IOctopusClient
+    - id: repositoryScope
+      type: Octopus.Client.RepositoryScope
+    content.vb: Public Sub New(client As IOctopusClient, repositoryScope As RepositoryScope = Nothing)
+  overload: Octopus.Client.OctopusRepository.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.OctopusRepository.Client
+  commentId: P:Octopus.Client.OctopusRepository.Client
+  id: Client
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Client
+  nameWithType: OctopusRepository.Client
+  fullName: Octopus.Client.OctopusRepository.Client
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Client
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 121
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IOctopusClient Client { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.IOctopusClient
+    content.vb: Public ReadOnly Property Client As IOctopusClient
+  overload: Octopus.Client.OctopusRepository.Client*
+  implements:
+  - Octopus.Client.IOctopusCommonRepository.Client
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Scope
+  commentId: P:Octopus.Client.OctopusRepository.Scope
+  id: Scope
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Scope
+  nameWithType: OctopusRepository.Scope
+  fullName: Octopus.Client.OctopusRepository.Scope
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Scope
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 122
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public RepositoryScope Scope { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.RepositoryScope
+    content.vb: Public ReadOnly Property Scope As RepositoryScope
+  overload: Octopus.Client.OctopusRepository.Scope*
+  implements:
+  - Octopus.Client.IOctopusCommonRepository.Scope
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Accounts
+  commentId: P:Octopus.Client.OctopusRepository.Accounts
+  id: Accounts
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Accounts
+  nameWithType: OctopusRepository.Accounts
+  fullName: Octopus.Client.OctopusRepository.Accounts
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Accounts
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 123
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IAccountRepository Accounts { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IAccountRepository
+    content.vb: Public ReadOnly Property Accounts As IAccountRepository
+  overload: Octopus.Client.OctopusRepository.Accounts*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Accounts
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.ActionTemplates
+  commentId: P:Octopus.Client.OctopusRepository.ActionTemplates
+  id: ActionTemplates
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: ActionTemplates
+  nameWithType: OctopusRepository.ActionTemplates
+  fullName: Octopus.Client.OctopusRepository.ActionTemplates
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ActionTemplates
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 124
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IActionTemplateRepository ActionTemplates { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IActionTemplateRepository
+    content.vb: Public ReadOnly Property ActionTemplates As IActionTemplateRepository
+  overload: Octopus.Client.OctopusRepository.ActionTemplates*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.ActionTemplates
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Artifacts
+  commentId: P:Octopus.Client.OctopusRepository.Artifacts
+  id: Artifacts
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Artifacts
+  nameWithType: OctopusRepository.Artifacts
+  fullName: Octopus.Client.OctopusRepository.Artifacts
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Artifacts
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 125
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IArtifactRepository Artifacts { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IArtifactRepository
+    content.vb: Public ReadOnly Property Artifacts As IArtifactRepository
+  overload: Octopus.Client.OctopusRepository.Artifacts*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Artifacts
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Backups
+  commentId: P:Octopus.Client.OctopusRepository.Backups
+  id: Backups
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Backups
+  nameWithType: OctopusRepository.Backups
+  fullName: Octopus.Client.OctopusRepository.Backups
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Backups
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 126
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IBackupRepository Backups { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IBackupRepository
+    content.vb: Public ReadOnly Property Backups As IBackupRepository
+  overload: Octopus.Client.OctopusRepository.Backups*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.Backups
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Beta
+  commentId: P:Octopus.Client.OctopusRepository.Beta
+  id: Beta
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Beta
+  nameWithType: OctopusRepository.Beta
+  fullName: Octopus.Client.OctopusRepository.Beta
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Beta
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 127
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IOctopusSpaceBetaRepository Beta { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IOctopusSpaceBetaRepository
+    content.vb: Public ReadOnly Property Beta As IOctopusSpaceBetaRepository
+  overload: Octopus.Client.OctopusRepository.Beta*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Beta
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.BuiltInPackageRepository
+  commentId: P:Octopus.Client.OctopusRepository.BuiltInPackageRepository
+  id: BuiltInPackageRepository
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: BuiltInPackageRepository
+  nameWithType: OctopusRepository.BuiltInPackageRepository
+  fullName: Octopus.Client.OctopusRepository.BuiltInPackageRepository
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: BuiltInPackageRepository
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 128
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IBuiltInPackageRepositoryRepository BuiltInPackageRepository { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IBuiltInPackageRepositoryRepository
+    content.vb: Public ReadOnly Property BuiltInPackageRepository As IBuiltInPackageRepositoryRepository
+  overload: Octopus.Client.OctopusRepository.BuiltInPackageRepository*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.BuiltInPackageRepository
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.BuildInformationRepository
+  commentId: P:Octopus.Client.OctopusRepository.BuildInformationRepository
+  id: BuildInformationRepository
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: BuildInformationRepository
+  nameWithType: OctopusRepository.BuildInformationRepository
+  fullName: Octopus.Client.OctopusRepository.BuildInformationRepository
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: BuildInformationRepository
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 129
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IBuildInformationRepository BuildInformationRepository { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IBuildInformationRepository
+    content.vb: Public ReadOnly Property BuildInformationRepository As IBuildInformationRepository
+  overload: Octopus.Client.OctopusRepository.BuildInformationRepository*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.BuildInformationRepository
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.CertificateConfiguration
+  commentId: P:Octopus.Client.OctopusRepository.CertificateConfiguration
+  id: CertificateConfiguration
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: CertificateConfiguration
+  nameWithType: OctopusRepository.CertificateConfiguration
+  fullName: Octopus.Client.OctopusRepository.CertificateConfiguration
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CertificateConfiguration
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 130
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public ICertificateConfigurationRepository CertificateConfiguration { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.ICertificateConfigurationRepository
+    content.vb: Public ReadOnly Property CertificateConfiguration As ICertificateConfigurationRepository
+  overload: Octopus.Client.OctopusRepository.CertificateConfiguration*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.CertificateConfiguration
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Certificates
+  commentId: P:Octopus.Client.OctopusRepository.Certificates
+  id: Certificates
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Certificates
+  nameWithType: OctopusRepository.Certificates
+  fullName: Octopus.Client.OctopusRepository.Certificates
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Certificates
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 131
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public ICertificateRepository Certificates { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.ICertificateRepository
+    content.vb: Public ReadOnly Property Certificates As ICertificateRepository
+  overload: Octopus.Client.OctopusRepository.Certificates*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Certificates
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Channels
+  commentId: P:Octopus.Client.OctopusRepository.Channels
+  id: Channels
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Channels
+  nameWithType: OctopusRepository.Channels
+  fullName: Octopus.Client.OctopusRepository.Channels
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Channels
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 132
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IChannelRepository Channels { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IChannelRepository
+    content.vb: Public ReadOnly Property Channels As IChannelRepository
+  overload: Octopus.Client.OctopusRepository.Channels*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Channels
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.CommunityActionTemplates
+  commentId: P:Octopus.Client.OctopusRepository.CommunityActionTemplates
+  id: CommunityActionTemplates
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: CommunityActionTemplates
+  nameWithType: OctopusRepository.CommunityActionTemplates
+  fullName: Octopus.Client.OctopusRepository.CommunityActionTemplates
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CommunityActionTemplates
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 133
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public ICommunityActionTemplateRepository CommunityActionTemplates { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.ICommunityActionTemplateRepository
+    content.vb: Public ReadOnly Property CommunityActionTemplates As ICommunityActionTemplateRepository
+  overload: Octopus.Client.OctopusRepository.CommunityActionTemplates*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.CommunityActionTemplates
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Configuration
+  commentId: P:Octopus.Client.OctopusRepository.Configuration
+  id: Configuration
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Configuration
+  nameWithType: OctopusRepository.Configuration
+  fullName: Octopus.Client.OctopusRepository.Configuration
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Configuration
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 134
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IConfigurationRepository Configuration { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IConfigurationRepository
+    content.vb: Public ReadOnly Property Configuration As IConfigurationRepository
+  overload: Octopus.Client.OctopusRepository.Configuration*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.Configuration
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.DashboardConfigurations
+  commentId: P:Octopus.Client.OctopusRepository.DashboardConfigurations
+  id: DashboardConfigurations
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: DashboardConfigurations
+  nameWithType: OctopusRepository.DashboardConfigurations
+  fullName: Octopus.Client.OctopusRepository.DashboardConfigurations
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DashboardConfigurations
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 135
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IDashboardConfigurationRepository DashboardConfigurations { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IDashboardConfigurationRepository
+    content.vb: Public ReadOnly Property DashboardConfigurations As IDashboardConfigurationRepository
+  overload: Octopus.Client.OctopusRepository.DashboardConfigurations*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.DashboardConfigurations
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Dashboards
+  commentId: P:Octopus.Client.OctopusRepository.Dashboards
+  id: Dashboards
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Dashboards
+  nameWithType: OctopusRepository.Dashboards
+  fullName: Octopus.Client.OctopusRepository.Dashboards
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Dashboards
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 136
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IDashboardRepository Dashboards { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IDashboardRepository
+    content.vb: Public ReadOnly Property Dashboards As IDashboardRepository
+  overload: Octopus.Client.OctopusRepository.Dashboards*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Dashboards
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Defects
+  commentId: P:Octopus.Client.OctopusRepository.Defects
+  id: Defects
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Defects
+  nameWithType: OctopusRepository.Defects
+  fullName: Octopus.Client.OctopusRepository.Defects
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Defects
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 137
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IDefectsRepository Defects { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IDefectsRepository
+    content.vb: Public ReadOnly Property Defects As IDefectsRepository
+  overload: Octopus.Client.OctopusRepository.Defects*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Defects
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.DeploymentProcesses
+  commentId: P:Octopus.Client.OctopusRepository.DeploymentProcesses
+  id: DeploymentProcesses
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: DeploymentProcesses
+  nameWithType: OctopusRepository.DeploymentProcesses
+  fullName: Octopus.Client.OctopusRepository.DeploymentProcesses
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DeploymentProcesses
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 138
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IDeploymentProcessRepository DeploymentProcesses { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IDeploymentProcessRepository
+    content.vb: Public ReadOnly Property DeploymentProcesses As IDeploymentProcessRepository
+  overload: Octopus.Client.OctopusRepository.DeploymentProcesses*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.DeploymentProcesses
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.DeploymentSettings
+  commentId: P:Octopus.Client.OctopusRepository.DeploymentSettings
+  id: DeploymentSettings
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: DeploymentSettings
+  nameWithType: OctopusRepository.DeploymentSettings
+  fullName: Octopus.Client.OctopusRepository.DeploymentSettings
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DeploymentSettings
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 139
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IDeploymentSettingsRepository DeploymentSettings { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IDeploymentSettingsRepository
+    content.vb: Public ReadOnly Property DeploymentSettings As IDeploymentSettingsRepository
+  overload: Octopus.Client.OctopusRepository.DeploymentSettings*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.DeploymentSettings
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Deployments
+  commentId: P:Octopus.Client.OctopusRepository.Deployments
+  id: Deployments
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Deployments
+  nameWithType: OctopusRepository.Deployments
+  fullName: Octopus.Client.OctopusRepository.Deployments
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Deployments
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 140
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IDeploymentRepository Deployments { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IDeploymentRepository
+    content.vb: Public ReadOnly Property Deployments As IDeploymentRepository
+  overload: Octopus.Client.OctopusRepository.Deployments*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Deployments
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Environments
+  commentId: P:Octopus.Client.OctopusRepository.Environments
+  id: Environments
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Environments
+  nameWithType: OctopusRepository.Environments
+  fullName: Octopus.Client.OctopusRepository.Environments
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Environments
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 141
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IEnvironmentRepository Environments { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IEnvironmentRepository
+    content.vb: Public ReadOnly Property Environments As IEnvironmentRepository
+  overload: Octopus.Client.OctopusRepository.Environments*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Environments
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Events
+  commentId: P:Octopus.Client.OctopusRepository.Events
+  id: Events
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Events
+  nameWithType: OctopusRepository.Events
+  fullName: Octopus.Client.OctopusRepository.Events
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Events
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 142
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IEventRepository Events { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IEventRepository
+    content.vb: Public ReadOnly Property Events As IEventRepository
+  overload: Octopus.Client.OctopusRepository.Events*
+  implements:
+  - Octopus.Client.IOctopusCommonRepository.Events
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.FeaturesConfiguration
+  commentId: P:Octopus.Client.OctopusRepository.FeaturesConfiguration
+  id: FeaturesConfiguration
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: FeaturesConfiguration
+  nameWithType: OctopusRepository.FeaturesConfiguration
+  fullName: Octopus.Client.OctopusRepository.FeaturesConfiguration
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: FeaturesConfiguration
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 143
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IFeaturesConfigurationRepository FeaturesConfiguration { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IFeaturesConfigurationRepository
+    content.vb: Public ReadOnly Property FeaturesConfiguration As IFeaturesConfigurationRepository
+  overload: Octopus.Client.OctopusRepository.FeaturesConfiguration*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.FeaturesConfiguration
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Feeds
+  commentId: P:Octopus.Client.OctopusRepository.Feeds
+  id: Feeds
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Feeds
+  nameWithType: OctopusRepository.Feeds
+  fullName: Octopus.Client.OctopusRepository.Feeds
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Feeds
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 144
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IFeedRepository Feeds { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IFeedRepository
+    content.vb: Public ReadOnly Property Feeds As IFeedRepository
+  overload: Octopus.Client.OctopusRepository.Feeds*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Feeds
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Interruptions
+  commentId: P:Octopus.Client.OctopusRepository.Interruptions
+  id: Interruptions
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Interruptions
+  nameWithType: OctopusRepository.Interruptions
+  fullName: Octopus.Client.OctopusRepository.Interruptions
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Interruptions
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 145
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IInterruptionRepository Interruptions { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IInterruptionRepository
+    content.vb: Public ReadOnly Property Interruptions As IInterruptionRepository
+  overload: Octopus.Client.OctopusRepository.Interruptions*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Interruptions
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.LibraryVariableSets
+  commentId: P:Octopus.Client.OctopusRepository.LibraryVariableSets
+  id: LibraryVariableSets
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: LibraryVariableSets
+  nameWithType: OctopusRepository.LibraryVariableSets
+  fullName: Octopus.Client.OctopusRepository.LibraryVariableSets
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: LibraryVariableSets
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 146
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public ILibraryVariableSetRepository LibraryVariableSets { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.ILibraryVariableSetRepository
+    content.vb: Public ReadOnly Property LibraryVariableSets As ILibraryVariableSetRepository
+  overload: Octopus.Client.OctopusRepository.LibraryVariableSets*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.LibraryVariableSets
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Lifecycles
+  commentId: P:Octopus.Client.OctopusRepository.Lifecycles
+  id: Lifecycles
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Lifecycles
+  nameWithType: OctopusRepository.Lifecycles
+  fullName: Octopus.Client.OctopusRepository.Lifecycles
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Lifecycles
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 147
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public ILifecyclesRepository Lifecycles { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.ILifecyclesRepository
+    content.vb: Public ReadOnly Property Lifecycles As ILifecyclesRepository
+  overload: Octopus.Client.OctopusRepository.Lifecycles*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Lifecycles
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Licenses
+  commentId: P:Octopus.Client.OctopusRepository.Licenses
+  id: Licenses
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Licenses
+  nameWithType: OctopusRepository.Licenses
+  fullName: Octopus.Client.OctopusRepository.Licenses
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Licenses
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 148
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public ILicensesRepository Licenses { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.ILicensesRepository
+    content.vb: Public ReadOnly Property Licenses As ILicensesRepository
+  overload: Octopus.Client.OctopusRepository.Licenses*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.Licenses
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.MachinePolicies
+  commentId: P:Octopus.Client.OctopusRepository.MachinePolicies
+  id: MachinePolicies
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: MachinePolicies
+  nameWithType: OctopusRepository.MachinePolicies
+  fullName: Octopus.Client.OctopusRepository.MachinePolicies
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: MachinePolicies
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 149
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IMachinePolicyRepository MachinePolicies { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IMachinePolicyRepository
+    content.vb: Public ReadOnly Property MachinePolicies As IMachinePolicyRepository
+  overload: Octopus.Client.OctopusRepository.MachinePolicies*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.MachinePolicies
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Machines
+  commentId: P:Octopus.Client.OctopusRepository.Machines
+  id: Machines
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Machines
+  nameWithType: OctopusRepository.Machines
+  fullName: Octopus.Client.OctopusRepository.Machines
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Machines
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 150
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IMachineRepository Machines { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IMachineRepository
+    content.vb: Public ReadOnly Property Machines As IMachineRepository
+  overload: Octopus.Client.OctopusRepository.Machines*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Machines
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.MachineRoles
+  commentId: P:Octopus.Client.OctopusRepository.MachineRoles
+  id: MachineRoles
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: MachineRoles
+  nameWithType: OctopusRepository.MachineRoles
+  fullName: Octopus.Client.OctopusRepository.MachineRoles
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: MachineRoles
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 151
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IMachineRoleRepository MachineRoles { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IMachineRoleRepository
+    content.vb: Public ReadOnly Property MachineRoles As IMachineRoleRepository
+  overload: Octopus.Client.OctopusRepository.MachineRoles*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.MachineRoles
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Migrations
+  commentId: P:Octopus.Client.OctopusRepository.Migrations
+  id: Migrations
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Migrations
+  nameWithType: OctopusRepository.Migrations
+  fullName: Octopus.Client.OctopusRepository.Migrations
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Migrations
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 152
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IMigrationRepository Migrations { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IMigrationRepository
+    content.vb: Public ReadOnly Property Migrations As IMigrationRepository
+  overload: Octopus.Client.OctopusRepository.Migrations*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.Migrations
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.OctopusServerNodes
+  commentId: P:Octopus.Client.OctopusRepository.OctopusServerNodes
+  id: OctopusServerNodes
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: OctopusServerNodes
+  nameWithType: OctopusRepository.OctopusServerNodes
+  fullName: Octopus.Client.OctopusRepository.OctopusServerNodes
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: OctopusServerNodes
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 153
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IOctopusServerNodeRepository OctopusServerNodes { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IOctopusServerNodeRepository
+    content.vb: Public ReadOnly Property OctopusServerNodes As IOctopusServerNodeRepository
+  overload: Octopus.Client.OctopusRepository.OctopusServerNodes*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.OctopusServerNodes
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.PerformanceConfiguration
+  commentId: P:Octopus.Client.OctopusRepository.PerformanceConfiguration
+  id: PerformanceConfiguration
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: PerformanceConfiguration
+  nameWithType: OctopusRepository.PerformanceConfiguration
+  fullName: Octopus.Client.OctopusRepository.PerformanceConfiguration
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: PerformanceConfiguration
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 154
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IPerformanceConfigurationRepository PerformanceConfiguration { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IPerformanceConfigurationRepository
+    content.vb: Public ReadOnly Property PerformanceConfiguration As IPerformanceConfigurationRepository
+  overload: Octopus.Client.OctopusRepository.PerformanceConfiguration*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.PerformanceConfiguration
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.PackageMetadataRepository
+  commentId: P:Octopus.Client.OctopusRepository.PackageMetadataRepository
+  id: PackageMetadataRepository
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: PackageMetadataRepository
+  nameWithType: OctopusRepository.PackageMetadataRepository
+  fullName: Octopus.Client.OctopusRepository.PackageMetadataRepository
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: PackageMetadataRepository
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 155
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IPackageMetadataRepository PackageMetadataRepository { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IPackageMetadataRepository
+    content.vb: Public ReadOnly Property PackageMetadataRepository As IPackageMetadataRepository
+  overload: Octopus.Client.OctopusRepository.PackageMetadataRepository*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.PackageMetadataRepository
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.ProjectGroups
+  commentId: P:Octopus.Client.OctopusRepository.ProjectGroups
+  id: ProjectGroups
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: ProjectGroups
+  nameWithType: OctopusRepository.ProjectGroups
+  fullName: Octopus.Client.OctopusRepository.ProjectGroups
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectGroups
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 156
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IProjectGroupRepository ProjectGroups { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IProjectGroupRepository
+    content.vb: Public ReadOnly Property ProjectGroups As IProjectGroupRepository
+  overload: Octopus.Client.OctopusRepository.ProjectGroups*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.ProjectGroups
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Projects
+  commentId: P:Octopus.Client.OctopusRepository.Projects
+  id: Projects
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Projects
+  nameWithType: OctopusRepository.Projects
+  fullName: Octopus.Client.OctopusRepository.Projects
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Projects
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 157
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IProjectRepository Projects { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IProjectRepository
+    content.vb: Public ReadOnly Property Projects As IProjectRepository
+  overload: Octopus.Client.OctopusRepository.Projects*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Projects
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Runbooks
+  commentId: P:Octopus.Client.OctopusRepository.Runbooks
+  id: Runbooks
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Runbooks
+  nameWithType: OctopusRepository.Runbooks
+  fullName: Octopus.Client.OctopusRepository.Runbooks
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Runbooks
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 158
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IRunbookRepository Runbooks { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IRunbookRepository
+    content.vb: Public ReadOnly Property Runbooks As IRunbookRepository
+  overload: Octopus.Client.OctopusRepository.Runbooks*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Runbooks
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.RunbookProcesses
+  commentId: P:Octopus.Client.OctopusRepository.RunbookProcesses
+  id: RunbookProcesses
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: RunbookProcesses
+  nameWithType: OctopusRepository.RunbookProcesses
+  fullName: Octopus.Client.OctopusRepository.RunbookProcesses
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RunbookProcesses
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 159
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IRunbookProcessRepository RunbookProcesses { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IRunbookProcessRepository
+    content.vb: Public ReadOnly Property RunbookProcesses As IRunbookProcessRepository
+  overload: Octopus.Client.OctopusRepository.RunbookProcesses*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.RunbookProcesses
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.RunbookSnapshots
+  commentId: P:Octopus.Client.OctopusRepository.RunbookSnapshots
+  id: RunbookSnapshots
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: RunbookSnapshots
+  nameWithType: OctopusRepository.RunbookSnapshots
+  fullName: Octopus.Client.OctopusRepository.RunbookSnapshots
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RunbookSnapshots
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 160
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IRunbookSnapshotRepository RunbookSnapshots { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IRunbookSnapshotRepository
+    content.vb: Public ReadOnly Property RunbookSnapshots As IRunbookSnapshotRepository
+  overload: Octopus.Client.OctopusRepository.RunbookSnapshots*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.RunbookSnapshots
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.RunbookRuns
+  commentId: P:Octopus.Client.OctopusRepository.RunbookRuns
+  id: RunbookRuns
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: RunbookRuns
+  nameWithType: OctopusRepository.RunbookRuns
+  fullName: Octopus.Client.OctopusRepository.RunbookRuns
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RunbookRuns
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 161
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IRunbookRunRepository RunbookRuns { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IRunbookRunRepository
+    content.vb: Public ReadOnly Property RunbookRuns As IRunbookRunRepository
+  overload: Octopus.Client.OctopusRepository.RunbookRuns*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.RunbookRuns
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.ProjectTriggers
+  commentId: P:Octopus.Client.OctopusRepository.ProjectTriggers
+  id: ProjectTriggers
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: ProjectTriggers
+  nameWithType: OctopusRepository.ProjectTriggers
+  fullName: Octopus.Client.OctopusRepository.ProjectTriggers
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectTriggers
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 162
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IProjectTriggerRepository ProjectTriggers { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IProjectTriggerRepository
+    content.vb: Public ReadOnly Property ProjectTriggers As IProjectTriggerRepository
+  overload: Octopus.Client.OctopusRepository.ProjectTriggers*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.ProjectTriggers
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Proxies
+  commentId: P:Octopus.Client.OctopusRepository.Proxies
+  id: Proxies
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Proxies
+  nameWithType: OctopusRepository.Proxies
+  fullName: Octopus.Client.OctopusRepository.Proxies
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Proxies
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 163
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IProxyRepository Proxies { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IProxyRepository
+    content.vb: Public ReadOnly Property Proxies As IProxyRepository
+  overload: Octopus.Client.OctopusRepository.Proxies*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Proxies
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Releases
+  commentId: P:Octopus.Client.OctopusRepository.Releases
+  id: Releases
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Releases
+  nameWithType: OctopusRepository.Releases
+  fullName: Octopus.Client.OctopusRepository.Releases
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Releases
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 164
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IReleaseRepository Releases { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IReleaseRepository
+    content.vb: Public ReadOnly Property Releases As IReleaseRepository
+  overload: Octopus.Client.OctopusRepository.Releases*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Releases
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.RetentionPolicies
+  commentId: P:Octopus.Client.OctopusRepository.RetentionPolicies
+  id: RetentionPolicies
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: RetentionPolicies
+  nameWithType: OctopusRepository.RetentionPolicies
+  fullName: Octopus.Client.OctopusRepository.RetentionPolicies
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: RetentionPolicies
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 165
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IRetentionPolicyRepository RetentionPolicies { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IRetentionPolicyRepository
+    content.vb: Public ReadOnly Property RetentionPolicies As IRetentionPolicyRepository
+  overload: Octopus.Client.OctopusRepository.RetentionPolicies*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.RetentionPolicies
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Schedulers
+  commentId: P:Octopus.Client.OctopusRepository.Schedulers
+  id: Schedulers
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Schedulers
+  nameWithType: OctopusRepository.Schedulers
+  fullName: Octopus.Client.OctopusRepository.Schedulers
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Schedulers
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 166
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public ISchedulerRepository Schedulers { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.ISchedulerRepository
+    content.vb: Public ReadOnly Property Schedulers As ISchedulerRepository
+  overload: Octopus.Client.OctopusRepository.Schedulers*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.Schedulers
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.ServerStatus
+  commentId: P:Octopus.Client.OctopusRepository.ServerStatus
+  id: ServerStatus
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: ServerStatus
+  nameWithType: OctopusRepository.ServerStatus
+  fullName: Octopus.Client.OctopusRepository.ServerStatus
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ServerStatus
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 167
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IServerStatusRepository ServerStatus { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IServerStatusRepository
+    content.vb: Public ReadOnly Property ServerStatus As IServerStatusRepository
+  overload: Octopus.Client.OctopusRepository.ServerStatus*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.ServerStatus
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Spaces
+  commentId: P:Octopus.Client.OctopusRepository.Spaces
+  id: Spaces
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Spaces
+  nameWithType: OctopusRepository.Spaces
+  fullName: Octopus.Client.OctopusRepository.Spaces
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Spaces
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 168
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public ISpaceRepository Spaces { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.ISpaceRepository
+    content.vb: Public ReadOnly Property Spaces As ISpaceRepository
+  overload: Octopus.Client.OctopusRepository.Spaces*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.Spaces
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Subscriptions
+  commentId: P:Octopus.Client.OctopusRepository.Subscriptions
+  id: Subscriptions
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Subscriptions
+  nameWithType: OctopusRepository.Subscriptions
+  fullName: Octopus.Client.OctopusRepository.Subscriptions
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Subscriptions
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 169
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public ISubscriptionRepository Subscriptions { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.ISubscriptionRepository
+    content.vb: Public ReadOnly Property Subscriptions As ISubscriptionRepository
+  overload: Octopus.Client.OctopusRepository.Subscriptions*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Subscriptions
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.TagSets
+  commentId: P:Octopus.Client.OctopusRepository.TagSets
+  id: TagSets
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: TagSets
+  nameWithType: OctopusRepository.TagSets
+  fullName: Octopus.Client.OctopusRepository.TagSets
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TagSets
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 170
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public ITagSetRepository TagSets { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.ITagSetRepository
+    content.vb: Public ReadOnly Property TagSets As ITagSetRepository
+  overload: Octopus.Client.OctopusRepository.TagSets*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.TagSets
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Tasks
+  commentId: P:Octopus.Client.OctopusRepository.Tasks
+  id: Tasks
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Tasks
+  nameWithType: OctopusRepository.Tasks
+  fullName: Octopus.Client.OctopusRepository.Tasks
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Tasks
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 171
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public ITaskRepository Tasks { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.ITaskRepository
+    content.vb: Public ReadOnly Property Tasks As ITaskRepository
+  overload: Octopus.Client.OctopusRepository.Tasks*
+  implements:
+  - Octopus.Client.IOctopusCommonRepository.Tasks
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Teams
+  commentId: P:Octopus.Client.OctopusRepository.Teams
+  id: Teams
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Teams
+  nameWithType: OctopusRepository.Teams
+  fullName: Octopus.Client.OctopusRepository.Teams
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Teams
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 172
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public ITeamsRepository Teams { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.ITeamsRepository
+    content.vb: Public ReadOnly Property Teams As ITeamsRepository
+  overload: Octopus.Client.OctopusRepository.Teams*
+  implements:
+  - Octopus.Client.IOctopusCommonRepository.Teams
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Tenants
+  commentId: P:Octopus.Client.OctopusRepository.Tenants
+  id: Tenants
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Tenants
+  nameWithType: OctopusRepository.Tenants
+  fullName: Octopus.Client.OctopusRepository.Tenants
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Tenants
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 173
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public ITenantRepository Tenants { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.ITenantRepository
+    content.vb: Public ReadOnly Property Tenants As ITenantRepository
+  overload: Octopus.Client.OctopusRepository.Tenants*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Tenants
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.TenantVariables
+  commentId: P:Octopus.Client.OctopusRepository.TenantVariables
+  id: TenantVariables
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: TenantVariables
+  nameWithType: OctopusRepository.TenantVariables
+  fullName: Octopus.Client.OctopusRepository.TenantVariables
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TenantVariables
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 174
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public ITenantVariablesRepository TenantVariables { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.ITenantVariablesRepository
+    content.vb: Public ReadOnly Property TenantVariables As ITenantVariablesRepository
+  overload: Octopus.Client.OctopusRepository.TenantVariables*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.TenantVariables
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.UserInvites
+  commentId: P:Octopus.Client.OctopusRepository.UserInvites
+  id: UserInvites
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: UserInvites
+  nameWithType: OctopusRepository.UserInvites
+  fullName: Octopus.Client.OctopusRepository.UserInvites
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: UserInvites
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 175
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IUserInvitesRepository UserInvites { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IUserInvitesRepository
+    content.vb: Public ReadOnly Property UserInvites As IUserInvitesRepository
+  overload: Octopus.Client.OctopusRepository.UserInvites*
+  implements:
+  - Octopus.Client.IOctopusCommonRepository.UserInvites
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Users
+  commentId: P:Octopus.Client.OctopusRepository.Users
+  id: Users
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Users
+  nameWithType: OctopusRepository.Users
+  fullName: Octopus.Client.OctopusRepository.Users
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Users
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 176
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IUserRepository Users { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IUserRepository
+    content.vb: Public ReadOnly Property Users As IUserRepository
+  overload: Octopus.Client.OctopusRepository.Users*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.Users
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.UserRoles
+  commentId: P:Octopus.Client.OctopusRepository.UserRoles
+  id: UserRoles
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: UserRoles
+  nameWithType: OctopusRepository.UserRoles
+  fullName: Octopus.Client.OctopusRepository.UserRoles
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: UserRoles
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 177
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IUserRolesRepository UserRoles { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IUserRolesRepository
+    content.vb: Public ReadOnly Property UserRoles As IUserRolesRepository
+  overload: Octopus.Client.OctopusRepository.UserRoles*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.UserRoles
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.VariableSets
+  commentId: P:Octopus.Client.OctopusRepository.VariableSets
+  id: VariableSets
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: VariableSets
+  nameWithType: OctopusRepository.VariableSets
+  fullName: Octopus.Client.OctopusRepository.VariableSets
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: VariableSets
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 178
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IVariableSetRepository VariableSets { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IVariableSetRepository
+    content.vb: Public ReadOnly Property VariableSets As IVariableSetRepository
+  overload: Octopus.Client.OctopusRepository.VariableSets*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.VariableSets
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.WorkerPools
+  commentId: P:Octopus.Client.OctopusRepository.WorkerPools
+  id: WorkerPools
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: WorkerPools
+  nameWithType: OctopusRepository.WorkerPools
+  fullName: Octopus.Client.OctopusRepository.WorkerPools
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: WorkerPools
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 179
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IWorkerPoolRepository WorkerPools { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IWorkerPoolRepository
+    content.vb: Public ReadOnly Property WorkerPools As IWorkerPoolRepository
+  overload: Octopus.Client.OctopusRepository.WorkerPools*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.WorkerPools
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.Workers
+  commentId: P:Octopus.Client.OctopusRepository.Workers
+  id: Workers
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Workers
+  nameWithType: OctopusRepository.Workers
+  fullName: Octopus.Client.OctopusRepository.Workers
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Workers
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 180
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IWorkerRepository Workers { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IWorkerRepository
+    content.vb: Public ReadOnly Property Workers As IWorkerRepository
+  overload: Octopus.Client.OctopusRepository.Workers*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.Workers
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.ScopedUserRoles
+  commentId: P:Octopus.Client.OctopusRepository.ScopedUserRoles
+  id: ScopedUserRoles
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: ScopedUserRoles
+  nameWithType: OctopusRepository.ScopedUserRoles
+  fullName: Octopus.Client.OctopusRepository.ScopedUserRoles
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ScopedUserRoles
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 181
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IScopedUserRoleRepository ScopedUserRoles { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IScopedUserRoleRepository
+    content.vb: Public ReadOnly Property ScopedUserRoles As IScopedUserRoleRepository
+  overload: Octopus.Client.OctopusRepository.ScopedUserRoles*
+  implements:
+  - Octopus.Client.IOctopusCommonRepository.ScopedUserRoles
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.UserPermissions
+  commentId: P:Octopus.Client.OctopusRepository.UserPermissions
+  id: UserPermissions
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: UserPermissions
+  nameWithType: OctopusRepository.UserPermissions
+  fullName: Octopus.Client.OctopusRepository.UserPermissions
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: UserPermissions
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 182
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IUserPermissionsRepository UserPermissions { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IUserPermissionsRepository
+    content.vb: Public ReadOnly Property UserPermissions As IUserPermissionsRepository
+  overload: Octopus.Client.OctopusRepository.UserPermissions*
+  implements:
+  - Octopus.Client.IOctopusCommonRepository.UserPermissions
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.UserTeams
+  commentId: P:Octopus.Client.OctopusRepository.UserTeams
+  id: UserTeams
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: UserTeams
+  nameWithType: OctopusRepository.UserTeams
+  fullName: Octopus.Client.OctopusRepository.UserTeams
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: UserTeams
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 183
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IUserTeamsRepository UserTeams { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IUserTeamsRepository
+    content.vb: Public ReadOnly Property UserTeams As IUserTeamsRepository
+  overload: Octopus.Client.OctopusRepository.UserTeams*
+  implements:
+  - Octopus.Client.IOctopusCommonRepository.UserTeams
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.UpgradeConfiguration
+  commentId: P:Octopus.Client.OctopusRepository.UpgradeConfiguration
+  id: UpgradeConfiguration
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: UpgradeConfiguration
+  nameWithType: OctopusRepository.UpgradeConfiguration
+  fullName: Octopus.Client.OctopusRepository.UpgradeConfiguration
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: UpgradeConfiguration
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 184
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public IUpgradeConfigurationRepository UpgradeConfiguration { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.Repositories.IUpgradeConfigurationRepository
+    content.vb: Public ReadOnly Property UpgradeConfiguration As IUpgradeConfigurationRepository
+  overload: Octopus.Client.OctopusRepository.UpgradeConfiguration*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.UpgradeConfiguration
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.OctopusRepository.HasLink(System.String)
+  commentId: M:Octopus.Client.OctopusRepository.HasLink(System.String)
+  id: HasLink(System.String)
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: HasLink(String)
+  nameWithType: OctopusRepository.HasLink(String)
+  fullName: Octopus.Client.OctopusRepository.HasLink(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: HasLink
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 186
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public bool HasLink(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasLink(name As String) As Boolean
+  overload: Octopus.Client.OctopusRepository.HasLink*
+  implements:
+  - Octopus.Client.IOctopusCommonRepository.HasLink(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.OctopusRepository.HasLinkParameter(System.String,System.String)
+  commentId: M:Octopus.Client.OctopusRepository.HasLinkParameter(System.String,System.String)
+  id: HasLinkParameter(System.String,System.String)
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: HasLinkParameter(String, String)
+  nameWithType: OctopusRepository.HasLinkParameter(String, String)
+  fullName: Octopus.Client.OctopusRepository.HasLinkParameter(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: HasLinkParameter
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 191
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public bool HasLinkParameter(string linkName, string parameterName)
+    parameters:
+    - id: linkName
+      type: System.String
+    - id: parameterName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasLinkParameter(linkName As String, parameterName As String) As Boolean
+  overload: Octopus.Client.OctopusRepository.HasLinkParameter*
+  implements:
+  - Octopus.Client.IOctopusCommonRepository.HasLinkParameter(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.OctopusRepository.Link(System.String)
+  commentId: M:Octopus.Client.OctopusRepository.Link(System.String)
+  id: Link(System.String)
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: Link(String)
+  nameWithType: OctopusRepository.Link(String)
+  fullName: Octopus.Client.OctopusRepository.Link(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Link
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 205
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public string Link(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function Link(name As String) As String
+  overload: Octopus.Client.OctopusRepository.Link*
+  implements:
+  - Octopus.Client.IOctopusCommonRepository.Link(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.OctopusRepository.LoadRootDocument
+  commentId: M:Octopus.Client.OctopusRepository.LoadRootDocument
+  id: LoadRootDocument
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: LoadRootDocument()
+  nameWithType: OctopusRepository.LoadRootDocument()
+  fullName: Octopus.Client.OctopusRepository.LoadRootDocument()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: LoadRootDocument
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 212
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public RootResource LoadRootDocument()
+    return:
+      type: Octopus.Client.Model.RootResource
+    content.vb: Public Function LoadRootDocument As RootResource
+  overload: Octopus.Client.OctopusRepository.LoadRootDocument*
+  implements:
+  - Octopus.Client.IOctopusSystemRepository.LoadRootDocument
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.OctopusRepository.LoadSpaceRootDocument
+  commentId: M:Octopus.Client.OctopusRepository.LoadSpaceRootDocument
+  id: LoadSpaceRootDocument
+  parent: Octopus.Client.OctopusRepository
+  langs:
+  - csharp
+  - vb
+  name: LoadSpaceRootDocument()
+  nameWithType: OctopusRepository.LoadSpaceRootDocument()
+  fullName: Octopus.Client.OctopusRepository.LoadSpaceRootDocument()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/OctopusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: LoadSpaceRootDocument
+    path: ../source/Octopus.Client/OctopusRepository.cs
+    startLine: 213
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client
+  syntax:
+    content: public SpaceRootResource LoadSpaceRootDocument()
+    return:
+      type: Octopus.Client.Model.SpaceRootResource
+    content.vb: Public Function LoadSpaceRootDocument As SpaceRootResource
+  overload: Octopus.Client.OctopusRepository.LoadSpaceRootDocument*
+  implements:
+  - Octopus.Client.IOctopusSpaceRepository.LoadSpaceRootDocument
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.IOctopusCommonRepository.Client
+  commentId: P:Octopus.Client.IOctopusCommonRepository.Client
+  parent: Octopus.Client.IOctopusCommonRepository
+  name: Client
+  nameWithType: IOctopusCommonRepository.Client
+  fullName: Octopus.Client.IOctopusCommonRepository.Client
+- uid: Octopus.Client
+  commentId: N:Octopus.Client
+  name: Octopus.Client
+  nameWithType: Octopus.Client
+  fullName: Octopus.Client
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.IOctopusRepository
+  commentId: T:Octopus.Client.IOctopusRepository
+  parent: Octopus.Client
+  name: IOctopusRepository
+  nameWithType: IOctopusRepository
+  fullName: Octopus.Client.IOctopusRepository
+- uid: Octopus.Client.IOctopusSpaceRepository
+  commentId: T:Octopus.Client.IOctopusSpaceRepository
+  parent: Octopus.Client
+  name: IOctopusSpaceRepository
+  nameWithType: IOctopusSpaceRepository
+  fullName: Octopus.Client.IOctopusSpaceRepository
+- uid: Octopus.Client.IOctopusSystemRepository
+  commentId: T:Octopus.Client.IOctopusSystemRepository
+  parent: Octopus.Client
+  name: IOctopusSystemRepository
+  nameWithType: IOctopusSystemRepository
+  fullName: Octopus.Client.IOctopusSystemRepository
+- uid: Octopus.Client.IOctopusCommonRepository
+  commentId: T:Octopus.Client.IOctopusCommonRepository
+  parent: Octopus.Client
+  name: IOctopusCommonRepository
+  nameWithType: IOctopusCommonRepository
+  fullName: Octopus.Client.IOctopusCommonRepository
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.IOctopusRepository.Octopus.Client.OctopusRepositoryExtensions.ForSpace(Octopus.Client.Model.SpaceResource)
+  commentId: M:Octopus.Client.OctopusRepositoryExtensions.ForSpace(Octopus.Client.IOctopusRepository,Octopus.Client.Model.SpaceResource)
+  parent: Octopus.Client.OctopusRepositoryExtensions
+  definition: Octopus.Client.OctopusRepositoryExtensions.ForSpace(Octopus.Client.IOctopusRepository,Octopus.Client.Model.SpaceResource)
+  name: ForSpace(SpaceResource)
+  nameWithType: OctopusRepositoryExtensions.ForSpace(SpaceResource)
+  fullName: Octopus.Client.OctopusRepositoryExtensions.ForSpace(Octopus.Client.Model.SpaceResource)
+  spec.csharp:
+  - uid: Octopus.Client.OctopusRepositoryExtensions.ForSpace(Octopus.Client.Model.SpaceResource)
+    name: ForSpace
+    nameWithType: OctopusRepositoryExtensions.ForSpace
+    fullName: Octopus.Client.OctopusRepositoryExtensions.ForSpace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.SpaceResource
+    name: SpaceResource
+    nameWithType: SpaceResource
+    fullName: Octopus.Client.Model.SpaceResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.OctopusRepositoryExtensions.ForSpace(Octopus.Client.Model.SpaceResource)
+    name: ForSpace
+    nameWithType: OctopusRepositoryExtensions.ForSpace
+    fullName: Octopus.Client.OctopusRepositoryExtensions.ForSpace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.SpaceResource
+    name: SpaceResource
+    nameWithType: SpaceResource
+    fullName: Octopus.Client.Model.SpaceResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.IOctopusRepository.Octopus.Client.OctopusRepositoryExtensions.ForSystem
+  commentId: M:Octopus.Client.OctopusRepositoryExtensions.ForSystem(Octopus.Client.IOctopusRepository)
+  parent: Octopus.Client.OctopusRepositoryExtensions
+  definition: Octopus.Client.OctopusRepositoryExtensions.ForSystem(Octopus.Client.IOctopusRepository)
+  name: ForSystem()
+  nameWithType: OctopusRepositoryExtensions.ForSystem()
+  fullName: Octopus.Client.OctopusRepositoryExtensions.ForSystem()
+  spec.csharp:
+  - uid: Octopus.Client.OctopusRepositoryExtensions.ForSystem
+    name: ForSystem
+    nameWithType: OctopusRepositoryExtensions.ForSystem
+    fullName: Octopus.Client.OctopusRepositoryExtensions.ForSystem
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.OctopusRepositoryExtensions.ForSystem
+    name: ForSystem
+    nameWithType: OctopusRepositoryExtensions.ForSystem
+    fullName: Octopus.Client.OctopusRepositoryExtensions.ForSystem
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.OctopusRepositoryExtensions.ForSpace(Octopus.Client.IOctopusRepository,Octopus.Client.Model.SpaceResource)
+  commentId: M:Octopus.Client.OctopusRepositoryExtensions.ForSpace(Octopus.Client.IOctopusRepository,Octopus.Client.Model.SpaceResource)
+  name: ForSpace(IOctopusRepository, SpaceResource)
+  nameWithType: OctopusRepositoryExtensions.ForSpace(IOctopusRepository, SpaceResource)
+  fullName: Octopus.Client.OctopusRepositoryExtensions.ForSpace(Octopus.Client.IOctopusRepository, Octopus.Client.Model.SpaceResource)
+  spec.csharp:
+  - uid: Octopus.Client.OctopusRepositoryExtensions.ForSpace(Octopus.Client.IOctopusRepository,Octopus.Client.Model.SpaceResource)
+    name: ForSpace
+    nameWithType: OctopusRepositoryExtensions.ForSpace
+    fullName: Octopus.Client.OctopusRepositoryExtensions.ForSpace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusRepository
+    name: IOctopusRepository
+    nameWithType: IOctopusRepository
+    fullName: Octopus.Client.IOctopusRepository
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.SpaceResource
+    name: SpaceResource
+    nameWithType: SpaceResource
+    fullName: Octopus.Client.Model.SpaceResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.OctopusRepositoryExtensions.ForSpace(Octopus.Client.IOctopusRepository,Octopus.Client.Model.SpaceResource)
+    name: ForSpace
+    nameWithType: OctopusRepositoryExtensions.ForSpace
+    fullName: Octopus.Client.OctopusRepositoryExtensions.ForSpace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusRepository
+    name: IOctopusRepository
+    nameWithType: IOctopusRepository
+    fullName: Octopus.Client.IOctopusRepository
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.SpaceResource
+    name: SpaceResource
+    nameWithType: SpaceResource
+    fullName: Octopus.Client.Model.SpaceResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.OctopusRepositoryExtensions
+  commentId: T:Octopus.Client.OctopusRepositoryExtensions
+  parent: Octopus.Client
+  name: OctopusRepositoryExtensions
+  nameWithType: OctopusRepositoryExtensions
+  fullName: Octopus.Client.OctopusRepositoryExtensions
+- uid: Octopus.Client.OctopusRepositoryExtensions.ForSystem(Octopus.Client.IOctopusRepository)
+  commentId: M:Octopus.Client.OctopusRepositoryExtensions.ForSystem(Octopus.Client.IOctopusRepository)
+  name: ForSystem(IOctopusRepository)
+  nameWithType: OctopusRepositoryExtensions.ForSystem(IOctopusRepository)
+  fullName: Octopus.Client.OctopusRepositoryExtensions.ForSystem(Octopus.Client.IOctopusRepository)
+  spec.csharp:
+  - uid: Octopus.Client.OctopusRepositoryExtensions.ForSystem(Octopus.Client.IOctopusRepository)
+    name: ForSystem
+    nameWithType: OctopusRepositoryExtensions.ForSystem
+    fullName: Octopus.Client.OctopusRepositoryExtensions.ForSystem
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusRepository
+    name: IOctopusRepository
+    nameWithType: IOctopusRepository
+    fullName: Octopus.Client.IOctopusRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.OctopusRepositoryExtensions.ForSystem(Octopus.Client.IOctopusRepository)
+    name: ForSystem
+    nameWithType: OctopusRepositoryExtensions.ForSystem
+    fullName: Octopus.Client.OctopusRepositoryExtensions.ForSystem
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.IOctopusRepository
+    name: IOctopusRepository
+    nameWithType: IOctopusRepository
+    fullName: Octopus.Client.IOctopusRepository
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.OctopusRepository.#ctor*
+  commentId: Overload:Octopus.Client.OctopusRepository.#ctor
+  name: OctopusRepository
+  nameWithType: OctopusRepository.OctopusRepository
+  fullName: Octopus.Client.OctopusRepository.OctopusRepository
+- uid: Octopus.Client.OctopusServerEndpoint
+  commentId: T:Octopus.Client.OctopusServerEndpoint
+  parent: Octopus.Client
+  name: OctopusServerEndpoint
+  nameWithType: OctopusServerEndpoint
+  fullName: Octopus.Client.OctopusServerEndpoint
+- uid: Octopus.Client.RepositoryScope
+  commentId: T:Octopus.Client.RepositoryScope
+  parent: Octopus.Client
+  name: RepositoryScope
+  nameWithType: RepositoryScope
+  fullName: Octopus.Client.RepositoryScope
+- uid: Octopus.Client.IOctopusClient
+  commentId: T:Octopus.Client.IOctopusClient
+  parent: Octopus.Client
+  name: IOctopusClient
+  nameWithType: IOctopusClient
+  fullName: Octopus.Client.IOctopusClient
+- uid: Octopus.Client.OctopusRepository.Client*
+  commentId: Overload:Octopus.Client.OctopusRepository.Client
+  name: Client
+  nameWithType: OctopusRepository.Client
+  fullName: Octopus.Client.OctopusRepository.Client
+- uid: Octopus.Client.OctopusRepository.Scope*
+  commentId: Overload:Octopus.Client.OctopusRepository.Scope
+  name: Scope
+  nameWithType: OctopusRepository.Scope
+  fullName: Octopus.Client.OctopusRepository.Scope
+- uid: Octopus.Client.IOctopusCommonRepository.Scope
+  commentId: P:Octopus.Client.IOctopusCommonRepository.Scope
+  parent: Octopus.Client.IOctopusCommonRepository
+  name: Scope
+  nameWithType: IOctopusCommonRepository.Scope
+  fullName: Octopus.Client.IOctopusCommonRepository.Scope
+- uid: Octopus.Client.OctopusRepository.Accounts*
+  commentId: Overload:Octopus.Client.OctopusRepository.Accounts
+  name: Accounts
+  nameWithType: OctopusRepository.Accounts
+  fullName: Octopus.Client.OctopusRepository.Accounts
+- uid: Octopus.Client.IOctopusSpaceRepository.Accounts
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Accounts
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Accounts
+  nameWithType: IOctopusSpaceRepository.Accounts
+  fullName: Octopus.Client.IOctopusSpaceRepository.Accounts
+- uid: Octopus.Client.Repositories.IAccountRepository
+  commentId: T:Octopus.Client.Repositories.IAccountRepository
+  parent: Octopus.Client.Repositories
+  name: IAccountRepository
+  nameWithType: IAccountRepository
+  fullName: Octopus.Client.Repositories.IAccountRepository
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.OctopusRepository.ActionTemplates*
+  commentId: Overload:Octopus.Client.OctopusRepository.ActionTemplates
+  name: ActionTemplates
+  nameWithType: OctopusRepository.ActionTemplates
+  fullName: Octopus.Client.OctopusRepository.ActionTemplates
+- uid: Octopus.Client.IOctopusSpaceRepository.ActionTemplates
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.ActionTemplates
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: ActionTemplates
+  nameWithType: IOctopusSpaceRepository.ActionTemplates
+  fullName: Octopus.Client.IOctopusSpaceRepository.ActionTemplates
+- uid: Octopus.Client.Repositories.IActionTemplateRepository
+  commentId: T:Octopus.Client.Repositories.IActionTemplateRepository
+  parent: Octopus.Client.Repositories
+  name: IActionTemplateRepository
+  nameWithType: IActionTemplateRepository
+  fullName: Octopus.Client.Repositories.IActionTemplateRepository
+- uid: Octopus.Client.OctopusRepository.Artifacts*
+  commentId: Overload:Octopus.Client.OctopusRepository.Artifacts
+  name: Artifacts
+  nameWithType: OctopusRepository.Artifacts
+  fullName: Octopus.Client.OctopusRepository.Artifacts
+- uid: Octopus.Client.IOctopusSpaceRepository.Artifacts
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Artifacts
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Artifacts
+  nameWithType: IOctopusSpaceRepository.Artifacts
+  fullName: Octopus.Client.IOctopusSpaceRepository.Artifacts
+- uid: Octopus.Client.Repositories.IArtifactRepository
+  commentId: T:Octopus.Client.Repositories.IArtifactRepository
+  parent: Octopus.Client.Repositories
+  name: IArtifactRepository
+  nameWithType: IArtifactRepository
+  fullName: Octopus.Client.Repositories.IArtifactRepository
+- uid: Octopus.Client.OctopusRepository.Backups*
+  commentId: Overload:Octopus.Client.OctopusRepository.Backups
+  name: Backups
+  nameWithType: OctopusRepository.Backups
+  fullName: Octopus.Client.OctopusRepository.Backups
+- uid: Octopus.Client.IOctopusSystemRepository.Backups
+  commentId: P:Octopus.Client.IOctopusSystemRepository.Backups
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: Backups
+  nameWithType: IOctopusSystemRepository.Backups
+  fullName: Octopus.Client.IOctopusSystemRepository.Backups
+- uid: Octopus.Client.Repositories.IBackupRepository
+  commentId: T:Octopus.Client.Repositories.IBackupRepository
+  parent: Octopus.Client.Repositories
+  name: IBackupRepository
+  nameWithType: IBackupRepository
+  fullName: Octopus.Client.Repositories.IBackupRepository
+- uid: Octopus.Client.OctopusRepository.Beta*
+  commentId: Overload:Octopus.Client.OctopusRepository.Beta
+  name: Beta
+  nameWithType: OctopusRepository.Beta
+  fullName: Octopus.Client.OctopusRepository.Beta
+- uid: Octopus.Client.IOctopusSpaceRepository.Beta
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Beta
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Beta
+  nameWithType: IOctopusSpaceRepository.Beta
+  fullName: Octopus.Client.IOctopusSpaceRepository.Beta
+- uid: Octopus.Client.Repositories.IOctopusSpaceBetaRepository
+  commentId: T:Octopus.Client.Repositories.IOctopusSpaceBetaRepository
+  parent: Octopus.Client.Repositories
+  name: IOctopusSpaceBetaRepository
+  nameWithType: IOctopusSpaceBetaRepository
+  fullName: Octopus.Client.Repositories.IOctopusSpaceBetaRepository
+- uid: Octopus.Client.OctopusRepository.BuiltInPackageRepository*
+  commentId: Overload:Octopus.Client.OctopusRepository.BuiltInPackageRepository
+  name: BuiltInPackageRepository
+  nameWithType: OctopusRepository.BuiltInPackageRepository
+  fullName: Octopus.Client.OctopusRepository.BuiltInPackageRepository
+- uid: Octopus.Client.IOctopusSpaceRepository.BuiltInPackageRepository
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.BuiltInPackageRepository
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: BuiltInPackageRepository
+  nameWithType: IOctopusSpaceRepository.BuiltInPackageRepository
+  fullName: Octopus.Client.IOctopusSpaceRepository.BuiltInPackageRepository
+- uid: Octopus.Client.Repositories.IBuiltInPackageRepositoryRepository
+  commentId: T:Octopus.Client.Repositories.IBuiltInPackageRepositoryRepository
+  parent: Octopus.Client.Repositories
+  name: IBuiltInPackageRepositoryRepository
+  nameWithType: IBuiltInPackageRepositoryRepository
+  fullName: Octopus.Client.Repositories.IBuiltInPackageRepositoryRepository
+- uid: Octopus.Client.OctopusRepository.BuildInformationRepository*
+  commentId: Overload:Octopus.Client.OctopusRepository.BuildInformationRepository
+  name: BuildInformationRepository
+  nameWithType: OctopusRepository.BuildInformationRepository
+  fullName: Octopus.Client.OctopusRepository.BuildInformationRepository
+- uid: Octopus.Client.IOctopusSpaceRepository.BuildInformationRepository
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.BuildInformationRepository
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: BuildInformationRepository
+  nameWithType: IOctopusSpaceRepository.BuildInformationRepository
+  fullName: Octopus.Client.IOctopusSpaceRepository.BuildInformationRepository
+- uid: Octopus.Client.Repositories.IBuildInformationRepository
+  commentId: T:Octopus.Client.Repositories.IBuildInformationRepository
+  parent: Octopus.Client.Repositories
+  name: IBuildInformationRepository
+  nameWithType: IBuildInformationRepository
+  fullName: Octopus.Client.Repositories.IBuildInformationRepository
+- uid: Octopus.Client.OctopusRepository.CertificateConfiguration*
+  commentId: Overload:Octopus.Client.OctopusRepository.CertificateConfiguration
+  name: CertificateConfiguration
+  nameWithType: OctopusRepository.CertificateConfiguration
+  fullName: Octopus.Client.OctopusRepository.CertificateConfiguration
+- uid: Octopus.Client.IOctopusSpaceRepository.CertificateConfiguration
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.CertificateConfiguration
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: CertificateConfiguration
+  nameWithType: IOctopusSpaceRepository.CertificateConfiguration
+  fullName: Octopus.Client.IOctopusSpaceRepository.CertificateConfiguration
+- uid: Octopus.Client.Repositories.ICertificateConfigurationRepository
+  commentId: T:Octopus.Client.Repositories.ICertificateConfigurationRepository
+  parent: Octopus.Client.Repositories
+  name: ICertificateConfigurationRepository
+  nameWithType: ICertificateConfigurationRepository
+  fullName: Octopus.Client.Repositories.ICertificateConfigurationRepository
+- uid: Octopus.Client.OctopusRepository.Certificates*
+  commentId: Overload:Octopus.Client.OctopusRepository.Certificates
+  name: Certificates
+  nameWithType: OctopusRepository.Certificates
+  fullName: Octopus.Client.OctopusRepository.Certificates
+- uid: Octopus.Client.IOctopusSpaceRepository.Certificates
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Certificates
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Certificates
+  nameWithType: IOctopusSpaceRepository.Certificates
+  fullName: Octopus.Client.IOctopusSpaceRepository.Certificates
+- uid: Octopus.Client.Repositories.ICertificateRepository
+  commentId: T:Octopus.Client.Repositories.ICertificateRepository
+  parent: Octopus.Client.Repositories
+  name: ICertificateRepository
+  nameWithType: ICertificateRepository
+  fullName: Octopus.Client.Repositories.ICertificateRepository
+- uid: Octopus.Client.OctopusRepository.Channels*
+  commentId: Overload:Octopus.Client.OctopusRepository.Channels
+  name: Channels
+  nameWithType: OctopusRepository.Channels
+  fullName: Octopus.Client.OctopusRepository.Channels
+- uid: Octopus.Client.IOctopusSpaceRepository.Channels
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Channels
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Channels
+  nameWithType: IOctopusSpaceRepository.Channels
+  fullName: Octopus.Client.IOctopusSpaceRepository.Channels
+- uid: Octopus.Client.Repositories.IChannelRepository
+  commentId: T:Octopus.Client.Repositories.IChannelRepository
+  parent: Octopus.Client.Repositories
+  name: IChannelRepository
+  nameWithType: IChannelRepository
+  fullName: Octopus.Client.Repositories.IChannelRepository
+- uid: Octopus.Client.OctopusRepository.CommunityActionTemplates*
+  commentId: Overload:Octopus.Client.OctopusRepository.CommunityActionTemplates
+  name: CommunityActionTemplates
+  nameWithType: OctopusRepository.CommunityActionTemplates
+  fullName: Octopus.Client.OctopusRepository.CommunityActionTemplates
+- uid: Octopus.Client.IOctopusSystemRepository.CommunityActionTemplates
+  commentId: P:Octopus.Client.IOctopusSystemRepository.CommunityActionTemplates
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: CommunityActionTemplates
+  nameWithType: IOctopusSystemRepository.CommunityActionTemplates
+  fullName: Octopus.Client.IOctopusSystemRepository.CommunityActionTemplates
+- uid: Octopus.Client.Repositories.ICommunityActionTemplateRepository
+  commentId: T:Octopus.Client.Repositories.ICommunityActionTemplateRepository
+  parent: Octopus.Client.Repositories
+  name: ICommunityActionTemplateRepository
+  nameWithType: ICommunityActionTemplateRepository
+  fullName: Octopus.Client.Repositories.ICommunityActionTemplateRepository
+- uid: Octopus.Client.OctopusRepository.Configuration*
+  commentId: Overload:Octopus.Client.OctopusRepository.Configuration
+  name: Configuration
+  nameWithType: OctopusRepository.Configuration
+  fullName: Octopus.Client.OctopusRepository.Configuration
+- uid: Octopus.Client.IOctopusSystemRepository.Configuration
+  commentId: P:Octopus.Client.IOctopusSystemRepository.Configuration
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: Configuration
+  nameWithType: IOctopusSystemRepository.Configuration
+  fullName: Octopus.Client.IOctopusSystemRepository.Configuration
+- uid: Octopus.Client.Repositories.IConfigurationRepository
+  commentId: T:Octopus.Client.Repositories.IConfigurationRepository
+  parent: Octopus.Client.Repositories
+  name: IConfigurationRepository
+  nameWithType: IConfigurationRepository
+  fullName: Octopus.Client.Repositories.IConfigurationRepository
+- uid: Octopus.Client.OctopusRepository.DashboardConfigurations*
+  commentId: Overload:Octopus.Client.OctopusRepository.DashboardConfigurations
+  name: DashboardConfigurations
+  nameWithType: OctopusRepository.DashboardConfigurations
+  fullName: Octopus.Client.OctopusRepository.DashboardConfigurations
+- uid: Octopus.Client.IOctopusSpaceRepository.DashboardConfigurations
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.DashboardConfigurations
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: DashboardConfigurations
+  nameWithType: IOctopusSpaceRepository.DashboardConfigurations
+  fullName: Octopus.Client.IOctopusSpaceRepository.DashboardConfigurations
+- uid: Octopus.Client.Repositories.IDashboardConfigurationRepository
+  commentId: T:Octopus.Client.Repositories.IDashboardConfigurationRepository
+  parent: Octopus.Client.Repositories
+  name: IDashboardConfigurationRepository
+  nameWithType: IDashboardConfigurationRepository
+  fullName: Octopus.Client.Repositories.IDashboardConfigurationRepository
+- uid: Octopus.Client.OctopusRepository.Dashboards*
+  commentId: Overload:Octopus.Client.OctopusRepository.Dashboards
+  name: Dashboards
+  nameWithType: OctopusRepository.Dashboards
+  fullName: Octopus.Client.OctopusRepository.Dashboards
+- uid: Octopus.Client.IOctopusSpaceRepository.Dashboards
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Dashboards
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Dashboards
+  nameWithType: IOctopusSpaceRepository.Dashboards
+  fullName: Octopus.Client.IOctopusSpaceRepository.Dashboards
+- uid: Octopus.Client.Repositories.IDashboardRepository
+  commentId: T:Octopus.Client.Repositories.IDashboardRepository
+  parent: Octopus.Client.Repositories
+  name: IDashboardRepository
+  nameWithType: IDashboardRepository
+  fullName: Octopus.Client.Repositories.IDashboardRepository
+- uid: Octopus.Client.OctopusRepository.Defects*
+  commentId: Overload:Octopus.Client.OctopusRepository.Defects
+  name: Defects
+  nameWithType: OctopusRepository.Defects
+  fullName: Octopus.Client.OctopusRepository.Defects
+- uid: Octopus.Client.IOctopusSpaceRepository.Defects
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Defects
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Defects
+  nameWithType: IOctopusSpaceRepository.Defects
+  fullName: Octopus.Client.IOctopusSpaceRepository.Defects
+- uid: Octopus.Client.Repositories.IDefectsRepository
+  commentId: T:Octopus.Client.Repositories.IDefectsRepository
+  parent: Octopus.Client.Repositories
+  name: IDefectsRepository
+  nameWithType: IDefectsRepository
+  fullName: Octopus.Client.Repositories.IDefectsRepository
+- uid: Octopus.Client.OctopusRepository.DeploymentProcesses*
+  commentId: Overload:Octopus.Client.OctopusRepository.DeploymentProcesses
+  name: DeploymentProcesses
+  nameWithType: OctopusRepository.DeploymentProcesses
+  fullName: Octopus.Client.OctopusRepository.DeploymentProcesses
+- uid: Octopus.Client.IOctopusSpaceRepository.DeploymentProcesses
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.DeploymentProcesses
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: DeploymentProcesses
+  nameWithType: IOctopusSpaceRepository.DeploymentProcesses
+  fullName: Octopus.Client.IOctopusSpaceRepository.DeploymentProcesses
+- uid: Octopus.Client.Repositories.IDeploymentProcessRepository
+  commentId: T:Octopus.Client.Repositories.IDeploymentProcessRepository
+  parent: Octopus.Client.Repositories
+  name: IDeploymentProcessRepository
+  nameWithType: IDeploymentProcessRepository
+  fullName: Octopus.Client.Repositories.IDeploymentProcessRepository
+- uid: Octopus.Client.OctopusRepository.DeploymentSettings*
+  commentId: Overload:Octopus.Client.OctopusRepository.DeploymentSettings
+  name: DeploymentSettings
+  nameWithType: OctopusRepository.DeploymentSettings
+  fullName: Octopus.Client.OctopusRepository.DeploymentSettings
+- uid: Octopus.Client.IOctopusSpaceRepository.DeploymentSettings
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.DeploymentSettings
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: DeploymentSettings
+  nameWithType: IOctopusSpaceRepository.DeploymentSettings
+  fullName: Octopus.Client.IOctopusSpaceRepository.DeploymentSettings
+- uid: Octopus.Client.Repositories.IDeploymentSettingsRepository
+  commentId: T:Octopus.Client.Repositories.IDeploymentSettingsRepository
+  parent: Octopus.Client.Repositories
+  name: IDeploymentSettingsRepository
+  nameWithType: IDeploymentSettingsRepository
+  fullName: Octopus.Client.Repositories.IDeploymentSettingsRepository
+- uid: Octopus.Client.OctopusRepository.Deployments*
+  commentId: Overload:Octopus.Client.OctopusRepository.Deployments
+  name: Deployments
+  nameWithType: OctopusRepository.Deployments
+  fullName: Octopus.Client.OctopusRepository.Deployments
+- uid: Octopus.Client.IOctopusSpaceRepository.Deployments
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Deployments
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Deployments
+  nameWithType: IOctopusSpaceRepository.Deployments
+  fullName: Octopus.Client.IOctopusSpaceRepository.Deployments
+- uid: Octopus.Client.Repositories.IDeploymentRepository
+  commentId: T:Octopus.Client.Repositories.IDeploymentRepository
+  parent: Octopus.Client.Repositories
+  name: IDeploymentRepository
+  nameWithType: IDeploymentRepository
+  fullName: Octopus.Client.Repositories.IDeploymentRepository
+- uid: Octopus.Client.OctopusRepository.Environments*
+  commentId: Overload:Octopus.Client.OctopusRepository.Environments
+  name: Environments
+  nameWithType: OctopusRepository.Environments
+  fullName: Octopus.Client.OctopusRepository.Environments
+- uid: Octopus.Client.IOctopusSpaceRepository.Environments
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Environments
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Environments
+  nameWithType: IOctopusSpaceRepository.Environments
+  fullName: Octopus.Client.IOctopusSpaceRepository.Environments
+- uid: Octopus.Client.Repositories.IEnvironmentRepository
+  commentId: T:Octopus.Client.Repositories.IEnvironmentRepository
+  parent: Octopus.Client.Repositories
+  name: IEnvironmentRepository
+  nameWithType: IEnvironmentRepository
+  fullName: Octopus.Client.Repositories.IEnvironmentRepository
+- uid: Octopus.Client.OctopusRepository.Events*
+  commentId: Overload:Octopus.Client.OctopusRepository.Events
+  name: Events
+  nameWithType: OctopusRepository.Events
+  fullName: Octopus.Client.OctopusRepository.Events
+- uid: Octopus.Client.IOctopusCommonRepository.Events
+  commentId: P:Octopus.Client.IOctopusCommonRepository.Events
+  parent: Octopus.Client.IOctopusCommonRepository
+  name: Events
+  nameWithType: IOctopusCommonRepository.Events
+  fullName: Octopus.Client.IOctopusCommonRepository.Events
+- uid: Octopus.Client.Repositories.IEventRepository
+  commentId: T:Octopus.Client.Repositories.IEventRepository
+  parent: Octopus.Client.Repositories
+  name: IEventRepository
+  nameWithType: IEventRepository
+  fullName: Octopus.Client.Repositories.IEventRepository
+- uid: Octopus.Client.OctopusRepository.FeaturesConfiguration*
+  commentId: Overload:Octopus.Client.OctopusRepository.FeaturesConfiguration
+  name: FeaturesConfiguration
+  nameWithType: OctopusRepository.FeaturesConfiguration
+  fullName: Octopus.Client.OctopusRepository.FeaturesConfiguration
+- uid: Octopus.Client.IOctopusSystemRepository.FeaturesConfiguration
+  commentId: P:Octopus.Client.IOctopusSystemRepository.FeaturesConfiguration
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: FeaturesConfiguration
+  nameWithType: IOctopusSystemRepository.FeaturesConfiguration
+  fullName: Octopus.Client.IOctopusSystemRepository.FeaturesConfiguration
+- uid: Octopus.Client.Repositories.IFeaturesConfigurationRepository
+  commentId: T:Octopus.Client.Repositories.IFeaturesConfigurationRepository
+  parent: Octopus.Client.Repositories
+  name: IFeaturesConfigurationRepository
+  nameWithType: IFeaturesConfigurationRepository
+  fullName: Octopus.Client.Repositories.IFeaturesConfigurationRepository
+- uid: Octopus.Client.OctopusRepository.Feeds*
+  commentId: Overload:Octopus.Client.OctopusRepository.Feeds
+  name: Feeds
+  nameWithType: OctopusRepository.Feeds
+  fullName: Octopus.Client.OctopusRepository.Feeds
+- uid: Octopus.Client.IOctopusSpaceRepository.Feeds
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Feeds
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Feeds
+  nameWithType: IOctopusSpaceRepository.Feeds
+  fullName: Octopus.Client.IOctopusSpaceRepository.Feeds
+- uid: Octopus.Client.Repositories.IFeedRepository
+  commentId: T:Octopus.Client.Repositories.IFeedRepository
+  parent: Octopus.Client.Repositories
+  name: IFeedRepository
+  nameWithType: IFeedRepository
+  fullName: Octopus.Client.Repositories.IFeedRepository
+- uid: Octopus.Client.OctopusRepository.Interruptions*
+  commentId: Overload:Octopus.Client.OctopusRepository.Interruptions
+  name: Interruptions
+  nameWithType: OctopusRepository.Interruptions
+  fullName: Octopus.Client.OctopusRepository.Interruptions
+- uid: Octopus.Client.IOctopusSpaceRepository.Interruptions
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Interruptions
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Interruptions
+  nameWithType: IOctopusSpaceRepository.Interruptions
+  fullName: Octopus.Client.IOctopusSpaceRepository.Interruptions
+- uid: Octopus.Client.Repositories.IInterruptionRepository
+  commentId: T:Octopus.Client.Repositories.IInterruptionRepository
+  parent: Octopus.Client.Repositories
+  name: IInterruptionRepository
+  nameWithType: IInterruptionRepository
+  fullName: Octopus.Client.Repositories.IInterruptionRepository
+- uid: Octopus.Client.OctopusRepository.LibraryVariableSets*
+  commentId: Overload:Octopus.Client.OctopusRepository.LibraryVariableSets
+  name: LibraryVariableSets
+  nameWithType: OctopusRepository.LibraryVariableSets
+  fullName: Octopus.Client.OctopusRepository.LibraryVariableSets
+- uid: Octopus.Client.IOctopusSpaceRepository.LibraryVariableSets
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.LibraryVariableSets
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: LibraryVariableSets
+  nameWithType: IOctopusSpaceRepository.LibraryVariableSets
+  fullName: Octopus.Client.IOctopusSpaceRepository.LibraryVariableSets
+- uid: Octopus.Client.Repositories.ILibraryVariableSetRepository
+  commentId: T:Octopus.Client.Repositories.ILibraryVariableSetRepository
+  parent: Octopus.Client.Repositories
+  name: ILibraryVariableSetRepository
+  nameWithType: ILibraryVariableSetRepository
+  fullName: Octopus.Client.Repositories.ILibraryVariableSetRepository
+- uid: Octopus.Client.OctopusRepository.Lifecycles*
+  commentId: Overload:Octopus.Client.OctopusRepository.Lifecycles
+  name: Lifecycles
+  nameWithType: OctopusRepository.Lifecycles
+  fullName: Octopus.Client.OctopusRepository.Lifecycles
+- uid: Octopus.Client.IOctopusSpaceRepository.Lifecycles
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Lifecycles
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Lifecycles
+  nameWithType: IOctopusSpaceRepository.Lifecycles
+  fullName: Octopus.Client.IOctopusSpaceRepository.Lifecycles
+- uid: Octopus.Client.Repositories.ILifecyclesRepository
+  commentId: T:Octopus.Client.Repositories.ILifecyclesRepository
+  parent: Octopus.Client.Repositories
+  name: ILifecyclesRepository
+  nameWithType: ILifecyclesRepository
+  fullName: Octopus.Client.Repositories.ILifecyclesRepository
+- uid: Octopus.Client.OctopusRepository.Licenses*
+  commentId: Overload:Octopus.Client.OctopusRepository.Licenses
+  name: Licenses
+  nameWithType: OctopusRepository.Licenses
+  fullName: Octopus.Client.OctopusRepository.Licenses
+- uid: Octopus.Client.IOctopusSystemRepository.Licenses
+  commentId: P:Octopus.Client.IOctopusSystemRepository.Licenses
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: Licenses
+  nameWithType: IOctopusSystemRepository.Licenses
+  fullName: Octopus.Client.IOctopusSystemRepository.Licenses
+- uid: Octopus.Client.Repositories.ILicensesRepository
+  commentId: T:Octopus.Client.Repositories.ILicensesRepository
+  parent: Octopus.Client.Repositories
+  name: ILicensesRepository
+  nameWithType: ILicensesRepository
+  fullName: Octopus.Client.Repositories.ILicensesRepository
+- uid: Octopus.Client.OctopusRepository.MachinePolicies*
+  commentId: Overload:Octopus.Client.OctopusRepository.MachinePolicies
+  name: MachinePolicies
+  nameWithType: OctopusRepository.MachinePolicies
+  fullName: Octopus.Client.OctopusRepository.MachinePolicies
+- uid: Octopus.Client.IOctopusSpaceRepository.MachinePolicies
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.MachinePolicies
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: MachinePolicies
+  nameWithType: IOctopusSpaceRepository.MachinePolicies
+  fullName: Octopus.Client.IOctopusSpaceRepository.MachinePolicies
+- uid: Octopus.Client.Repositories.IMachinePolicyRepository
+  commentId: T:Octopus.Client.Repositories.IMachinePolicyRepository
+  parent: Octopus.Client.Repositories
+  name: IMachinePolicyRepository
+  nameWithType: IMachinePolicyRepository
+  fullName: Octopus.Client.Repositories.IMachinePolicyRepository
+- uid: Octopus.Client.OctopusRepository.Machines*
+  commentId: Overload:Octopus.Client.OctopusRepository.Machines
+  name: Machines
+  nameWithType: OctopusRepository.Machines
+  fullName: Octopus.Client.OctopusRepository.Machines
+- uid: Octopus.Client.IOctopusSpaceRepository.Machines
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Machines
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Machines
+  nameWithType: IOctopusSpaceRepository.Machines
+  fullName: Octopus.Client.IOctopusSpaceRepository.Machines
+- uid: Octopus.Client.Repositories.IMachineRepository
+  commentId: T:Octopus.Client.Repositories.IMachineRepository
+  parent: Octopus.Client.Repositories
+  name: IMachineRepository
+  nameWithType: IMachineRepository
+  fullName: Octopus.Client.Repositories.IMachineRepository
+- uid: Octopus.Client.OctopusRepository.MachineRoles*
+  commentId: Overload:Octopus.Client.OctopusRepository.MachineRoles
+  name: MachineRoles
+  nameWithType: OctopusRepository.MachineRoles
+  fullName: Octopus.Client.OctopusRepository.MachineRoles
+- uid: Octopus.Client.IOctopusSpaceRepository.MachineRoles
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.MachineRoles
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: MachineRoles
+  nameWithType: IOctopusSpaceRepository.MachineRoles
+  fullName: Octopus.Client.IOctopusSpaceRepository.MachineRoles
+- uid: Octopus.Client.Repositories.IMachineRoleRepository
+  commentId: T:Octopus.Client.Repositories.IMachineRoleRepository
+  parent: Octopus.Client.Repositories
+  name: IMachineRoleRepository
+  nameWithType: IMachineRoleRepository
+  fullName: Octopus.Client.Repositories.IMachineRoleRepository
+- uid: Octopus.Client.OctopusRepository.Migrations*
+  commentId: Overload:Octopus.Client.OctopusRepository.Migrations
+  name: Migrations
+  nameWithType: OctopusRepository.Migrations
+  fullName: Octopus.Client.OctopusRepository.Migrations
+- uid: Octopus.Client.IOctopusSystemRepository.Migrations
+  commentId: P:Octopus.Client.IOctopusSystemRepository.Migrations
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: Migrations
+  nameWithType: IOctopusSystemRepository.Migrations
+  fullName: Octopus.Client.IOctopusSystemRepository.Migrations
+- uid: Octopus.Client.Repositories.IMigrationRepository
+  commentId: T:Octopus.Client.Repositories.IMigrationRepository
+  parent: Octopus.Client.Repositories
+  name: IMigrationRepository
+  nameWithType: IMigrationRepository
+  fullName: Octopus.Client.Repositories.IMigrationRepository
+- uid: Octopus.Client.OctopusRepository.OctopusServerNodes*
+  commentId: Overload:Octopus.Client.OctopusRepository.OctopusServerNodes
+  name: OctopusServerNodes
+  nameWithType: OctopusRepository.OctopusServerNodes
+  fullName: Octopus.Client.OctopusRepository.OctopusServerNodes
+- uid: Octopus.Client.IOctopusSystemRepository.OctopusServerNodes
+  commentId: P:Octopus.Client.IOctopusSystemRepository.OctopusServerNodes
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: OctopusServerNodes
+  nameWithType: IOctopusSystemRepository.OctopusServerNodes
+  fullName: Octopus.Client.IOctopusSystemRepository.OctopusServerNodes
+- uid: Octopus.Client.Repositories.IOctopusServerNodeRepository
+  commentId: T:Octopus.Client.Repositories.IOctopusServerNodeRepository
+  parent: Octopus.Client.Repositories
+  name: IOctopusServerNodeRepository
+  nameWithType: IOctopusServerNodeRepository
+  fullName: Octopus.Client.Repositories.IOctopusServerNodeRepository
+- uid: Octopus.Client.OctopusRepository.PerformanceConfiguration*
+  commentId: Overload:Octopus.Client.OctopusRepository.PerformanceConfiguration
+  name: PerformanceConfiguration
+  nameWithType: OctopusRepository.PerformanceConfiguration
+  fullName: Octopus.Client.OctopusRepository.PerformanceConfiguration
+- uid: Octopus.Client.IOctopusSystemRepository.PerformanceConfiguration
+  commentId: P:Octopus.Client.IOctopusSystemRepository.PerformanceConfiguration
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: PerformanceConfiguration
+  nameWithType: IOctopusSystemRepository.PerformanceConfiguration
+  fullName: Octopus.Client.IOctopusSystemRepository.PerformanceConfiguration
+- uid: Octopus.Client.Repositories.IPerformanceConfigurationRepository
+  commentId: T:Octopus.Client.Repositories.IPerformanceConfigurationRepository
+  parent: Octopus.Client.Repositories
+  name: IPerformanceConfigurationRepository
+  nameWithType: IPerformanceConfigurationRepository
+  fullName: Octopus.Client.Repositories.IPerformanceConfigurationRepository
+- uid: Octopus.Client.OctopusRepository.PackageMetadataRepository*
+  commentId: Overload:Octopus.Client.OctopusRepository.PackageMetadataRepository
+  name: PackageMetadataRepository
+  nameWithType: OctopusRepository.PackageMetadataRepository
+  fullName: Octopus.Client.OctopusRepository.PackageMetadataRepository
+- uid: Octopus.Client.IOctopusSpaceRepository.PackageMetadataRepository
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.PackageMetadataRepository
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: PackageMetadataRepository
+  nameWithType: IOctopusSpaceRepository.PackageMetadataRepository
+  fullName: Octopus.Client.IOctopusSpaceRepository.PackageMetadataRepository
+- uid: Octopus.Client.Repositories.IPackageMetadataRepository
+  commentId: T:Octopus.Client.Repositories.IPackageMetadataRepository
+  parent: Octopus.Client.Repositories
+  name: IPackageMetadataRepository
+  nameWithType: IPackageMetadataRepository
+  fullName: Octopus.Client.Repositories.IPackageMetadataRepository
+- uid: Octopus.Client.OctopusRepository.ProjectGroups*
+  commentId: Overload:Octopus.Client.OctopusRepository.ProjectGroups
+  name: ProjectGroups
+  nameWithType: OctopusRepository.ProjectGroups
+  fullName: Octopus.Client.OctopusRepository.ProjectGroups
+- uid: Octopus.Client.IOctopusSpaceRepository.ProjectGroups
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.ProjectGroups
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: ProjectGroups
+  nameWithType: IOctopusSpaceRepository.ProjectGroups
+  fullName: Octopus.Client.IOctopusSpaceRepository.ProjectGroups
+- uid: Octopus.Client.Repositories.IProjectGroupRepository
+  commentId: T:Octopus.Client.Repositories.IProjectGroupRepository
+  parent: Octopus.Client.Repositories
+  name: IProjectGroupRepository
+  nameWithType: IProjectGroupRepository
+  fullName: Octopus.Client.Repositories.IProjectGroupRepository
+- uid: Octopus.Client.OctopusRepository.Projects*
+  commentId: Overload:Octopus.Client.OctopusRepository.Projects
+  name: Projects
+  nameWithType: OctopusRepository.Projects
+  fullName: Octopus.Client.OctopusRepository.Projects
+- uid: Octopus.Client.IOctopusSpaceRepository.Projects
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Projects
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Projects
+  nameWithType: IOctopusSpaceRepository.Projects
+  fullName: Octopus.Client.IOctopusSpaceRepository.Projects
+- uid: Octopus.Client.Repositories.IProjectRepository
+  commentId: T:Octopus.Client.Repositories.IProjectRepository
+  parent: Octopus.Client.Repositories
+  name: IProjectRepository
+  nameWithType: IProjectRepository
+  fullName: Octopus.Client.Repositories.IProjectRepository
+- uid: Octopus.Client.OctopusRepository.Runbooks*
+  commentId: Overload:Octopus.Client.OctopusRepository.Runbooks
+  name: Runbooks
+  nameWithType: OctopusRepository.Runbooks
+  fullName: Octopus.Client.OctopusRepository.Runbooks
+- uid: Octopus.Client.IOctopusSpaceRepository.Runbooks
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Runbooks
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Runbooks
+  nameWithType: IOctopusSpaceRepository.Runbooks
+  fullName: Octopus.Client.IOctopusSpaceRepository.Runbooks
+- uid: Octopus.Client.Repositories.IRunbookRepository
+  commentId: T:Octopus.Client.Repositories.IRunbookRepository
+  parent: Octopus.Client.Repositories
+  name: IRunbookRepository
+  nameWithType: IRunbookRepository
+  fullName: Octopus.Client.Repositories.IRunbookRepository
+- uid: Octopus.Client.OctopusRepository.RunbookProcesses*
+  commentId: Overload:Octopus.Client.OctopusRepository.RunbookProcesses
+  name: RunbookProcesses
+  nameWithType: OctopusRepository.RunbookProcesses
+  fullName: Octopus.Client.OctopusRepository.RunbookProcesses
+- uid: Octopus.Client.IOctopusSpaceRepository.RunbookProcesses
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.RunbookProcesses
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: RunbookProcesses
+  nameWithType: IOctopusSpaceRepository.RunbookProcesses
+  fullName: Octopus.Client.IOctopusSpaceRepository.RunbookProcesses
+- uid: Octopus.Client.Repositories.IRunbookProcessRepository
+  commentId: T:Octopus.Client.Repositories.IRunbookProcessRepository
+  parent: Octopus.Client.Repositories
+  name: IRunbookProcessRepository
+  nameWithType: IRunbookProcessRepository
+  fullName: Octopus.Client.Repositories.IRunbookProcessRepository
+- uid: Octopus.Client.OctopusRepository.RunbookSnapshots*
+  commentId: Overload:Octopus.Client.OctopusRepository.RunbookSnapshots
+  name: RunbookSnapshots
+  nameWithType: OctopusRepository.RunbookSnapshots
+  fullName: Octopus.Client.OctopusRepository.RunbookSnapshots
+- uid: Octopus.Client.IOctopusSpaceRepository.RunbookSnapshots
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.RunbookSnapshots
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: RunbookSnapshots
+  nameWithType: IOctopusSpaceRepository.RunbookSnapshots
+  fullName: Octopus.Client.IOctopusSpaceRepository.RunbookSnapshots
+- uid: Octopus.Client.Repositories.IRunbookSnapshotRepository
+  commentId: T:Octopus.Client.Repositories.IRunbookSnapshotRepository
+  parent: Octopus.Client.Repositories
+  name: IRunbookSnapshotRepository
+  nameWithType: IRunbookSnapshotRepository
+  fullName: Octopus.Client.Repositories.IRunbookSnapshotRepository
+- uid: Octopus.Client.OctopusRepository.RunbookRuns*
+  commentId: Overload:Octopus.Client.OctopusRepository.RunbookRuns
+  name: RunbookRuns
+  nameWithType: OctopusRepository.RunbookRuns
+  fullName: Octopus.Client.OctopusRepository.RunbookRuns
+- uid: Octopus.Client.IOctopusSpaceRepository.RunbookRuns
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.RunbookRuns
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: RunbookRuns
+  nameWithType: IOctopusSpaceRepository.RunbookRuns
+  fullName: Octopus.Client.IOctopusSpaceRepository.RunbookRuns
+- uid: Octopus.Client.Repositories.IRunbookRunRepository
+  commentId: T:Octopus.Client.Repositories.IRunbookRunRepository
+  parent: Octopus.Client.Repositories
+  name: IRunbookRunRepository
+  nameWithType: IRunbookRunRepository
+  fullName: Octopus.Client.Repositories.IRunbookRunRepository
+- uid: Octopus.Client.OctopusRepository.ProjectTriggers*
+  commentId: Overload:Octopus.Client.OctopusRepository.ProjectTriggers
+  name: ProjectTriggers
+  nameWithType: OctopusRepository.ProjectTriggers
+  fullName: Octopus.Client.OctopusRepository.ProjectTriggers
+- uid: Octopus.Client.IOctopusSpaceRepository.ProjectTriggers
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.ProjectTriggers
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: ProjectTriggers
+  nameWithType: IOctopusSpaceRepository.ProjectTriggers
+  fullName: Octopus.Client.IOctopusSpaceRepository.ProjectTriggers
+- uid: Octopus.Client.Repositories.IProjectTriggerRepository
+  commentId: T:Octopus.Client.Repositories.IProjectTriggerRepository
+  parent: Octopus.Client.Repositories
+  name: IProjectTriggerRepository
+  nameWithType: IProjectTriggerRepository
+  fullName: Octopus.Client.Repositories.IProjectTriggerRepository
+- uid: Octopus.Client.OctopusRepository.Proxies*
+  commentId: Overload:Octopus.Client.OctopusRepository.Proxies
+  name: Proxies
+  nameWithType: OctopusRepository.Proxies
+  fullName: Octopus.Client.OctopusRepository.Proxies
+- uid: Octopus.Client.IOctopusSpaceRepository.Proxies
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Proxies
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Proxies
+  nameWithType: IOctopusSpaceRepository.Proxies
+  fullName: Octopus.Client.IOctopusSpaceRepository.Proxies
+- uid: Octopus.Client.Repositories.IProxyRepository
+  commentId: T:Octopus.Client.Repositories.IProxyRepository
+  parent: Octopus.Client.Repositories
+  name: IProxyRepository
+  nameWithType: IProxyRepository
+  fullName: Octopus.Client.Repositories.IProxyRepository
+- uid: Octopus.Client.OctopusRepository.Releases*
+  commentId: Overload:Octopus.Client.OctopusRepository.Releases
+  name: Releases
+  nameWithType: OctopusRepository.Releases
+  fullName: Octopus.Client.OctopusRepository.Releases
+- uid: Octopus.Client.IOctopusSpaceRepository.Releases
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Releases
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Releases
+  nameWithType: IOctopusSpaceRepository.Releases
+  fullName: Octopus.Client.IOctopusSpaceRepository.Releases
+- uid: Octopus.Client.Repositories.IReleaseRepository
+  commentId: T:Octopus.Client.Repositories.IReleaseRepository
+  parent: Octopus.Client.Repositories
+  name: IReleaseRepository
+  nameWithType: IReleaseRepository
+  fullName: Octopus.Client.Repositories.IReleaseRepository
+- uid: Octopus.Client.OctopusRepository.RetentionPolicies*
+  commentId: Overload:Octopus.Client.OctopusRepository.RetentionPolicies
+  name: RetentionPolicies
+  nameWithType: OctopusRepository.RetentionPolicies
+  fullName: Octopus.Client.OctopusRepository.RetentionPolicies
+- uid: Octopus.Client.IOctopusSpaceRepository.RetentionPolicies
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.RetentionPolicies
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: RetentionPolicies
+  nameWithType: IOctopusSpaceRepository.RetentionPolicies
+  fullName: Octopus.Client.IOctopusSpaceRepository.RetentionPolicies
+- uid: Octopus.Client.Repositories.IRetentionPolicyRepository
+  commentId: T:Octopus.Client.Repositories.IRetentionPolicyRepository
+  parent: Octopus.Client.Repositories
+  name: IRetentionPolicyRepository
+  nameWithType: IRetentionPolicyRepository
+  fullName: Octopus.Client.Repositories.IRetentionPolicyRepository
+- uid: Octopus.Client.OctopusRepository.Schedulers*
+  commentId: Overload:Octopus.Client.OctopusRepository.Schedulers
+  name: Schedulers
+  nameWithType: OctopusRepository.Schedulers
+  fullName: Octopus.Client.OctopusRepository.Schedulers
+- uid: Octopus.Client.IOctopusSystemRepository.Schedulers
+  commentId: P:Octopus.Client.IOctopusSystemRepository.Schedulers
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: Schedulers
+  nameWithType: IOctopusSystemRepository.Schedulers
+  fullName: Octopus.Client.IOctopusSystemRepository.Schedulers
+- uid: Octopus.Client.Repositories.ISchedulerRepository
+  commentId: T:Octopus.Client.Repositories.ISchedulerRepository
+  parent: Octopus.Client.Repositories
+  name: ISchedulerRepository
+  nameWithType: ISchedulerRepository
+  fullName: Octopus.Client.Repositories.ISchedulerRepository
+- uid: Octopus.Client.OctopusRepository.ServerStatus*
+  commentId: Overload:Octopus.Client.OctopusRepository.ServerStatus
+  name: ServerStatus
+  nameWithType: OctopusRepository.ServerStatus
+  fullName: Octopus.Client.OctopusRepository.ServerStatus
+- uid: Octopus.Client.IOctopusSystemRepository.ServerStatus
+  commentId: P:Octopus.Client.IOctopusSystemRepository.ServerStatus
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: ServerStatus
+  nameWithType: IOctopusSystemRepository.ServerStatus
+  fullName: Octopus.Client.IOctopusSystemRepository.ServerStatus
+- uid: Octopus.Client.Repositories.IServerStatusRepository
+  commentId: T:Octopus.Client.Repositories.IServerStatusRepository
+  parent: Octopus.Client.Repositories
+  name: IServerStatusRepository
+  nameWithType: IServerStatusRepository
+  fullName: Octopus.Client.Repositories.IServerStatusRepository
+- uid: Octopus.Client.OctopusRepository.Spaces*
+  commentId: Overload:Octopus.Client.OctopusRepository.Spaces
+  name: Spaces
+  nameWithType: OctopusRepository.Spaces
+  fullName: Octopus.Client.OctopusRepository.Spaces
+- uid: Octopus.Client.IOctopusSystemRepository.Spaces
+  commentId: P:Octopus.Client.IOctopusSystemRepository.Spaces
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: Spaces
+  nameWithType: IOctopusSystemRepository.Spaces
+  fullName: Octopus.Client.IOctopusSystemRepository.Spaces
+- uid: Octopus.Client.Repositories.ISpaceRepository
+  commentId: T:Octopus.Client.Repositories.ISpaceRepository
+  parent: Octopus.Client.Repositories
+  name: ISpaceRepository
+  nameWithType: ISpaceRepository
+  fullName: Octopus.Client.Repositories.ISpaceRepository
+- uid: Octopus.Client.OctopusRepository.Subscriptions*
+  commentId: Overload:Octopus.Client.OctopusRepository.Subscriptions
+  name: Subscriptions
+  nameWithType: OctopusRepository.Subscriptions
+  fullName: Octopus.Client.OctopusRepository.Subscriptions
+- uid: Octopus.Client.IOctopusSpaceRepository.Subscriptions
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Subscriptions
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Subscriptions
+  nameWithType: IOctopusSpaceRepository.Subscriptions
+  fullName: Octopus.Client.IOctopusSpaceRepository.Subscriptions
+- uid: Octopus.Client.Repositories.ISubscriptionRepository
+  commentId: T:Octopus.Client.Repositories.ISubscriptionRepository
+  parent: Octopus.Client.Repositories
+  name: ISubscriptionRepository
+  nameWithType: ISubscriptionRepository
+  fullName: Octopus.Client.Repositories.ISubscriptionRepository
+- uid: Octopus.Client.OctopusRepository.TagSets*
+  commentId: Overload:Octopus.Client.OctopusRepository.TagSets
+  name: TagSets
+  nameWithType: OctopusRepository.TagSets
+  fullName: Octopus.Client.OctopusRepository.TagSets
+- uid: Octopus.Client.IOctopusSpaceRepository.TagSets
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.TagSets
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: TagSets
+  nameWithType: IOctopusSpaceRepository.TagSets
+  fullName: Octopus.Client.IOctopusSpaceRepository.TagSets
+- uid: Octopus.Client.Repositories.ITagSetRepository
+  commentId: T:Octopus.Client.Repositories.ITagSetRepository
+  parent: Octopus.Client.Repositories
+  name: ITagSetRepository
+  nameWithType: ITagSetRepository
+  fullName: Octopus.Client.Repositories.ITagSetRepository
+- uid: Octopus.Client.OctopusRepository.Tasks*
+  commentId: Overload:Octopus.Client.OctopusRepository.Tasks
+  name: Tasks
+  nameWithType: OctopusRepository.Tasks
+  fullName: Octopus.Client.OctopusRepository.Tasks
+- uid: Octopus.Client.IOctopusCommonRepository.Tasks
+  commentId: P:Octopus.Client.IOctopusCommonRepository.Tasks
+  parent: Octopus.Client.IOctopusCommonRepository
+  name: Tasks
+  nameWithType: IOctopusCommonRepository.Tasks
+  fullName: Octopus.Client.IOctopusCommonRepository.Tasks
+- uid: Octopus.Client.Repositories.ITaskRepository
+  commentId: T:Octopus.Client.Repositories.ITaskRepository
+  parent: Octopus.Client.Repositories
+  name: ITaskRepository
+  nameWithType: ITaskRepository
+  fullName: Octopus.Client.Repositories.ITaskRepository
+- uid: Octopus.Client.OctopusRepository.Teams*
+  commentId: Overload:Octopus.Client.OctopusRepository.Teams
+  name: Teams
+  nameWithType: OctopusRepository.Teams
+  fullName: Octopus.Client.OctopusRepository.Teams
+- uid: Octopus.Client.IOctopusCommonRepository.Teams
+  commentId: P:Octopus.Client.IOctopusCommonRepository.Teams
+  parent: Octopus.Client.IOctopusCommonRepository
+  name: Teams
+  nameWithType: IOctopusCommonRepository.Teams
+  fullName: Octopus.Client.IOctopusCommonRepository.Teams
+- uid: Octopus.Client.Repositories.ITeamsRepository
+  commentId: T:Octopus.Client.Repositories.ITeamsRepository
+  parent: Octopus.Client.Repositories
+  name: ITeamsRepository
+  nameWithType: ITeamsRepository
+  fullName: Octopus.Client.Repositories.ITeamsRepository
+- uid: Octopus.Client.OctopusRepository.Tenants*
+  commentId: Overload:Octopus.Client.OctopusRepository.Tenants
+  name: Tenants
+  nameWithType: OctopusRepository.Tenants
+  fullName: Octopus.Client.OctopusRepository.Tenants
+- uid: Octopus.Client.IOctopusSpaceRepository.Tenants
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Tenants
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Tenants
+  nameWithType: IOctopusSpaceRepository.Tenants
+  fullName: Octopus.Client.IOctopusSpaceRepository.Tenants
+- uid: Octopus.Client.Repositories.ITenantRepository
+  commentId: T:Octopus.Client.Repositories.ITenantRepository
+  parent: Octopus.Client.Repositories
+  name: ITenantRepository
+  nameWithType: ITenantRepository
+  fullName: Octopus.Client.Repositories.ITenantRepository
+- uid: Octopus.Client.OctopusRepository.TenantVariables*
+  commentId: Overload:Octopus.Client.OctopusRepository.TenantVariables
+  name: TenantVariables
+  nameWithType: OctopusRepository.TenantVariables
+  fullName: Octopus.Client.OctopusRepository.TenantVariables
+- uid: Octopus.Client.IOctopusSpaceRepository.TenantVariables
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.TenantVariables
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: TenantVariables
+  nameWithType: IOctopusSpaceRepository.TenantVariables
+  fullName: Octopus.Client.IOctopusSpaceRepository.TenantVariables
+- uid: Octopus.Client.Repositories.ITenantVariablesRepository
+  commentId: T:Octopus.Client.Repositories.ITenantVariablesRepository
+  parent: Octopus.Client.Repositories
+  name: ITenantVariablesRepository
+  nameWithType: ITenantVariablesRepository
+  fullName: Octopus.Client.Repositories.ITenantVariablesRepository
+- uid: Octopus.Client.OctopusRepository.UserInvites*
+  commentId: Overload:Octopus.Client.OctopusRepository.UserInvites
+  name: UserInvites
+  nameWithType: OctopusRepository.UserInvites
+  fullName: Octopus.Client.OctopusRepository.UserInvites
+- uid: Octopus.Client.IOctopusCommonRepository.UserInvites
+  commentId: P:Octopus.Client.IOctopusCommonRepository.UserInvites
+  parent: Octopus.Client.IOctopusCommonRepository
+  name: UserInvites
+  nameWithType: IOctopusCommonRepository.UserInvites
+  fullName: Octopus.Client.IOctopusCommonRepository.UserInvites
+- uid: Octopus.Client.Repositories.IUserInvitesRepository
+  commentId: T:Octopus.Client.Repositories.IUserInvitesRepository
+  parent: Octopus.Client.Repositories
+  name: IUserInvitesRepository
+  nameWithType: IUserInvitesRepository
+  fullName: Octopus.Client.Repositories.IUserInvitesRepository
+- uid: Octopus.Client.OctopusRepository.Users*
+  commentId: Overload:Octopus.Client.OctopusRepository.Users
+  name: Users
+  nameWithType: OctopusRepository.Users
+  fullName: Octopus.Client.OctopusRepository.Users
+- uid: Octopus.Client.IOctopusSystemRepository.Users
+  commentId: P:Octopus.Client.IOctopusSystemRepository.Users
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: Users
+  nameWithType: IOctopusSystemRepository.Users
+  fullName: Octopus.Client.IOctopusSystemRepository.Users
+- uid: Octopus.Client.Repositories.IUserRepository
+  commentId: T:Octopus.Client.Repositories.IUserRepository
+  parent: Octopus.Client.Repositories
+  name: IUserRepository
+  nameWithType: IUserRepository
+  fullName: Octopus.Client.Repositories.IUserRepository
+- uid: Octopus.Client.OctopusRepository.UserRoles*
+  commentId: Overload:Octopus.Client.OctopusRepository.UserRoles
+  name: UserRoles
+  nameWithType: OctopusRepository.UserRoles
+  fullName: Octopus.Client.OctopusRepository.UserRoles
+- uid: Octopus.Client.IOctopusSystemRepository.UserRoles
+  commentId: P:Octopus.Client.IOctopusSystemRepository.UserRoles
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: UserRoles
+  nameWithType: IOctopusSystemRepository.UserRoles
+  fullName: Octopus.Client.IOctopusSystemRepository.UserRoles
+- uid: Octopus.Client.Repositories.IUserRolesRepository
+  commentId: T:Octopus.Client.Repositories.IUserRolesRepository
+  parent: Octopus.Client.Repositories
+  name: IUserRolesRepository
+  nameWithType: IUserRolesRepository
+  fullName: Octopus.Client.Repositories.IUserRolesRepository
+- uid: Octopus.Client.OctopusRepository.VariableSets*
+  commentId: Overload:Octopus.Client.OctopusRepository.VariableSets
+  name: VariableSets
+  nameWithType: OctopusRepository.VariableSets
+  fullName: Octopus.Client.OctopusRepository.VariableSets
+- uid: Octopus.Client.IOctopusSpaceRepository.VariableSets
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.VariableSets
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: VariableSets
+  nameWithType: IOctopusSpaceRepository.VariableSets
+  fullName: Octopus.Client.IOctopusSpaceRepository.VariableSets
+- uid: Octopus.Client.Repositories.IVariableSetRepository
+  commentId: T:Octopus.Client.Repositories.IVariableSetRepository
+  parent: Octopus.Client.Repositories
+  name: IVariableSetRepository
+  nameWithType: IVariableSetRepository
+  fullName: Octopus.Client.Repositories.IVariableSetRepository
+- uid: Octopus.Client.OctopusRepository.WorkerPools*
+  commentId: Overload:Octopus.Client.OctopusRepository.WorkerPools
+  name: WorkerPools
+  nameWithType: OctopusRepository.WorkerPools
+  fullName: Octopus.Client.OctopusRepository.WorkerPools
+- uid: Octopus.Client.IOctopusSpaceRepository.WorkerPools
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.WorkerPools
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: WorkerPools
+  nameWithType: IOctopusSpaceRepository.WorkerPools
+  fullName: Octopus.Client.IOctopusSpaceRepository.WorkerPools
+- uid: Octopus.Client.Repositories.IWorkerPoolRepository
+  commentId: T:Octopus.Client.Repositories.IWorkerPoolRepository
+  parent: Octopus.Client.Repositories
+  name: IWorkerPoolRepository
+  nameWithType: IWorkerPoolRepository
+  fullName: Octopus.Client.Repositories.IWorkerPoolRepository
+- uid: Octopus.Client.OctopusRepository.Workers*
+  commentId: Overload:Octopus.Client.OctopusRepository.Workers
+  name: Workers
+  nameWithType: OctopusRepository.Workers
+  fullName: Octopus.Client.OctopusRepository.Workers
+- uid: Octopus.Client.IOctopusSpaceRepository.Workers
+  commentId: P:Octopus.Client.IOctopusSpaceRepository.Workers
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: Workers
+  nameWithType: IOctopusSpaceRepository.Workers
+  fullName: Octopus.Client.IOctopusSpaceRepository.Workers
+- uid: Octopus.Client.Repositories.IWorkerRepository
+  commentId: T:Octopus.Client.Repositories.IWorkerRepository
+  parent: Octopus.Client.Repositories
+  name: IWorkerRepository
+  nameWithType: IWorkerRepository
+  fullName: Octopus.Client.Repositories.IWorkerRepository
+- uid: Octopus.Client.OctopusRepository.ScopedUserRoles*
+  commentId: Overload:Octopus.Client.OctopusRepository.ScopedUserRoles
+  name: ScopedUserRoles
+  nameWithType: OctopusRepository.ScopedUserRoles
+  fullName: Octopus.Client.OctopusRepository.ScopedUserRoles
+- uid: Octopus.Client.IOctopusCommonRepository.ScopedUserRoles
+  commentId: P:Octopus.Client.IOctopusCommonRepository.ScopedUserRoles
+  parent: Octopus.Client.IOctopusCommonRepository
+  name: ScopedUserRoles
+  nameWithType: IOctopusCommonRepository.ScopedUserRoles
+  fullName: Octopus.Client.IOctopusCommonRepository.ScopedUserRoles
+- uid: Octopus.Client.Repositories.IScopedUserRoleRepository
+  commentId: T:Octopus.Client.Repositories.IScopedUserRoleRepository
+  parent: Octopus.Client.Repositories
+  name: IScopedUserRoleRepository
+  nameWithType: IScopedUserRoleRepository
+  fullName: Octopus.Client.Repositories.IScopedUserRoleRepository
+- uid: Octopus.Client.OctopusRepository.UserPermissions*
+  commentId: Overload:Octopus.Client.OctopusRepository.UserPermissions
+  name: UserPermissions
+  nameWithType: OctopusRepository.UserPermissions
+  fullName: Octopus.Client.OctopusRepository.UserPermissions
+- uid: Octopus.Client.IOctopusCommonRepository.UserPermissions
+  commentId: P:Octopus.Client.IOctopusCommonRepository.UserPermissions
+  parent: Octopus.Client.IOctopusCommonRepository
+  name: UserPermissions
+  nameWithType: IOctopusCommonRepository.UserPermissions
+  fullName: Octopus.Client.IOctopusCommonRepository.UserPermissions
+- uid: Octopus.Client.Repositories.IUserPermissionsRepository
+  commentId: T:Octopus.Client.Repositories.IUserPermissionsRepository
+  parent: Octopus.Client.Repositories
+  name: IUserPermissionsRepository
+  nameWithType: IUserPermissionsRepository
+  fullName: Octopus.Client.Repositories.IUserPermissionsRepository
+- uid: Octopus.Client.OctopusRepository.UserTeams*
+  commentId: Overload:Octopus.Client.OctopusRepository.UserTeams
+  name: UserTeams
+  nameWithType: OctopusRepository.UserTeams
+  fullName: Octopus.Client.OctopusRepository.UserTeams
+- uid: Octopus.Client.IOctopusCommonRepository.UserTeams
+  commentId: P:Octopus.Client.IOctopusCommonRepository.UserTeams
+  parent: Octopus.Client.IOctopusCommonRepository
+  name: UserTeams
+  nameWithType: IOctopusCommonRepository.UserTeams
+  fullName: Octopus.Client.IOctopusCommonRepository.UserTeams
+- uid: Octopus.Client.Repositories.IUserTeamsRepository
+  commentId: T:Octopus.Client.Repositories.IUserTeamsRepository
+  parent: Octopus.Client.Repositories
+  name: IUserTeamsRepository
+  nameWithType: IUserTeamsRepository
+  fullName: Octopus.Client.Repositories.IUserTeamsRepository
+- uid: Octopus.Client.OctopusRepository.UpgradeConfiguration*
+  commentId: Overload:Octopus.Client.OctopusRepository.UpgradeConfiguration
+  name: UpgradeConfiguration
+  nameWithType: OctopusRepository.UpgradeConfiguration
+  fullName: Octopus.Client.OctopusRepository.UpgradeConfiguration
+- uid: Octopus.Client.IOctopusSystemRepository.UpgradeConfiguration
+  commentId: P:Octopus.Client.IOctopusSystemRepository.UpgradeConfiguration
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: UpgradeConfiguration
+  nameWithType: IOctopusSystemRepository.UpgradeConfiguration
+  fullName: Octopus.Client.IOctopusSystemRepository.UpgradeConfiguration
+- uid: Octopus.Client.Repositories.IUpgradeConfigurationRepository
+  commentId: T:Octopus.Client.Repositories.IUpgradeConfigurationRepository
+  parent: Octopus.Client.Repositories
+  name: IUpgradeConfigurationRepository
+  nameWithType: IUpgradeConfigurationRepository
+  fullName: Octopus.Client.Repositories.IUpgradeConfigurationRepository
+- uid: Octopus.Client.OctopusRepository.HasLink*
+  commentId: Overload:Octopus.Client.OctopusRepository.HasLink
+  name: HasLink
+  nameWithType: OctopusRepository.HasLink
+  fullName: Octopus.Client.OctopusRepository.HasLink
+- uid: Octopus.Client.IOctopusCommonRepository.HasLink(System.String)
+  commentId: M:Octopus.Client.IOctopusCommonRepository.HasLink(System.String)
+  parent: Octopus.Client.IOctopusCommonRepository
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: IOctopusCommonRepository.HasLink(String)
+  fullName: Octopus.Client.IOctopusCommonRepository.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.IOctopusCommonRepository.HasLink(System.String)
+    name: HasLink
+    nameWithType: IOctopusCommonRepository.HasLink
+    fullName: Octopus.Client.IOctopusCommonRepository.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.IOctopusCommonRepository.HasLink(System.String)
+    name: HasLink
+    nameWithType: IOctopusCommonRepository.HasLink
+    fullName: Octopus.Client.IOctopusCommonRepository.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.OctopusRepository.HasLinkParameter*
+  commentId: Overload:Octopus.Client.OctopusRepository.HasLinkParameter
+  name: HasLinkParameter
+  nameWithType: OctopusRepository.HasLinkParameter
+  fullName: Octopus.Client.OctopusRepository.HasLinkParameter
+- uid: Octopus.Client.IOctopusCommonRepository.HasLinkParameter(System.String,System.String)
+  commentId: M:Octopus.Client.IOctopusCommonRepository.HasLinkParameter(System.String,System.String)
+  parent: Octopus.Client.IOctopusCommonRepository
+  isExternal: true
+  name: HasLinkParameter(String, String)
+  nameWithType: IOctopusCommonRepository.HasLinkParameter(String, String)
+  fullName: Octopus.Client.IOctopusCommonRepository.HasLinkParameter(System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.IOctopusCommonRepository.HasLinkParameter(System.String,System.String)
+    name: HasLinkParameter
+    nameWithType: IOctopusCommonRepository.HasLinkParameter
+    fullName: Octopus.Client.IOctopusCommonRepository.HasLinkParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.IOctopusCommonRepository.HasLinkParameter(System.String,System.String)
+    name: HasLinkParameter
+    nameWithType: IOctopusCommonRepository.HasLinkParameter
+    fullName: Octopus.Client.IOctopusCommonRepository.HasLinkParameter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.OctopusRepository.Link*
+  commentId: Overload:Octopus.Client.OctopusRepository.Link
+  name: Link
+  nameWithType: OctopusRepository.Link
+  fullName: Octopus.Client.OctopusRepository.Link
+- uid: Octopus.Client.IOctopusCommonRepository.Link(System.String)
+  commentId: M:Octopus.Client.IOctopusCommonRepository.Link(System.String)
+  parent: Octopus.Client.IOctopusCommonRepository
+  isExternal: true
+  name: Link(String)
+  nameWithType: IOctopusCommonRepository.Link(String)
+  fullName: Octopus.Client.IOctopusCommonRepository.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.IOctopusCommonRepository.Link(System.String)
+    name: Link
+    nameWithType: IOctopusCommonRepository.Link
+    fullName: Octopus.Client.IOctopusCommonRepository.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.IOctopusCommonRepository.Link(System.String)
+    name: Link
+    nameWithType: IOctopusCommonRepository.Link
+    fullName: Octopus.Client.IOctopusCommonRepository.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.OctopusRepository.LoadRootDocument*
+  commentId: Overload:Octopus.Client.OctopusRepository.LoadRootDocument
+  name: LoadRootDocument
+  nameWithType: OctopusRepository.LoadRootDocument
+  fullName: Octopus.Client.OctopusRepository.LoadRootDocument
+- uid: Octopus.Client.IOctopusSystemRepository.LoadRootDocument
+  commentId: M:Octopus.Client.IOctopusSystemRepository.LoadRootDocument
+  parent: Octopus.Client.IOctopusSystemRepository
+  name: LoadRootDocument()
+  nameWithType: IOctopusSystemRepository.LoadRootDocument()
+  fullName: Octopus.Client.IOctopusSystemRepository.LoadRootDocument()
+  spec.csharp:
+  - uid: Octopus.Client.IOctopusSystemRepository.LoadRootDocument
+    name: LoadRootDocument
+    nameWithType: IOctopusSystemRepository.LoadRootDocument
+    fullName: Octopus.Client.IOctopusSystemRepository.LoadRootDocument
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.IOctopusSystemRepository.LoadRootDocument
+    name: LoadRootDocument
+    nameWithType: IOctopusSystemRepository.LoadRootDocument
+    fullName: Octopus.Client.IOctopusSystemRepository.LoadRootDocument
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.RootResource
+  commentId: T:Octopus.Client.Model.RootResource
+  parent: Octopus.Client.Model
+  name: RootResource
+  nameWithType: RootResource
+  fullName: Octopus.Client.Model.RootResource
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.OctopusRepository.LoadSpaceRootDocument*
+  commentId: Overload:Octopus.Client.OctopusRepository.LoadSpaceRootDocument
+  name: LoadSpaceRootDocument
+  nameWithType: OctopusRepository.LoadSpaceRootDocument
+  fullName: Octopus.Client.OctopusRepository.LoadSpaceRootDocument
+- uid: Octopus.Client.IOctopusSpaceRepository.LoadSpaceRootDocument
+  commentId: M:Octopus.Client.IOctopusSpaceRepository.LoadSpaceRootDocument
+  parent: Octopus.Client.IOctopusSpaceRepository
+  name: LoadSpaceRootDocument()
+  nameWithType: IOctopusSpaceRepository.LoadSpaceRootDocument()
+  fullName: Octopus.Client.IOctopusSpaceRepository.LoadSpaceRootDocument()
+  spec.csharp:
+  - uid: Octopus.Client.IOctopusSpaceRepository.LoadSpaceRootDocument
+    name: LoadSpaceRootDocument
+    nameWithType: IOctopusSpaceRepository.LoadSpaceRootDocument
+    fullName: Octopus.Client.IOctopusSpaceRepository.LoadSpaceRootDocument
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.IOctopusSpaceRepository.LoadSpaceRootDocument
+    name: LoadSpaceRootDocument
+    nameWithType: IOctopusSpaceRepository.LoadSpaceRootDocument
+    fullName: Octopus.Client.IOctopusSpaceRepository.LoadSpaceRootDocument
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.SpaceRootResource
+  commentId: T:Octopus.Client.Model.SpaceRootResource
+  parent: Octopus.Client.Model
+  name: SpaceRootResource
+  nameWithType: SpaceRootResource
+  fullName: Octopus.Client.Model.SpaceRootResource

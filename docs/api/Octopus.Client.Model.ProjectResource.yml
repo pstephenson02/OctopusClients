@@ -1,0 +1,4987 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.ProjectResource
+  commentId: T:Octopus.Client.Model.ProjectResource
+  id: ProjectResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.ProjectResource.#ctor
+  - Octopus.Client.Model.ProjectResource.#ctor(System.String,System.String,System.String)
+  - Octopus.Client.Model.ProjectResource.AddAutoDeployReleaseOverride(Octopus.Client.Model.EnvironmentResource,Octopus.Client.Model.ReleaseResource)
+  - Octopus.Client.Model.ProjectResource.AddAutoDeployReleaseOverride(Octopus.Client.Model.EnvironmentResource,Octopus.Client.Model.TenantResource,Octopus.Client.Model.ReleaseResource)
+  - Octopus.Client.Model.ProjectResource.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+  - Octopus.Client.Model.ProjectResource.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+  - Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  - Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  - Octopus.Client.Model.ProjectResource.AddOrUpdateSensitiveTemplate(System.String,System.String)
+  - Octopus.Client.Model.ProjectResource.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+  - Octopus.Client.Model.ProjectResource.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+  - Octopus.Client.Model.ProjectResource.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+  - Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  - Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  - Octopus.Client.Model.ProjectResource.AutoCreateRelease
+  - Octopus.Client.Model.ProjectResource.AutoDeployReleaseOverrides
+  - Octopus.Client.Model.ProjectResource.Clear
+  - Octopus.Client.Model.ProjectResource.ClonedFromProjectId
+  - Octopus.Client.Model.ProjectResource.DefaultGuidedFailureMode
+  - Octopus.Client.Model.ProjectResource.DefaultToSkipIfAlreadyInstalled
+  - Octopus.Client.Model.ProjectResource.DeploymentChangesTemplate
+  - Octopus.Client.Model.ProjectResource.DeploymentProcessId
+  - Octopus.Client.Model.ProjectResource.Description
+  - Octopus.Client.Model.ProjectResource.DiscreteChannelRelease
+  - Octopus.Client.Model.ProjectResource.IncludedLibraryVariableSetIds
+  - Octopus.Client.Model.ProjectResource.IncludingLibraryVariableSets(Octopus.Client.Model.LibraryVariableSetResource[])
+  - Octopus.Client.Model.ProjectResource.IsDisabled
+  - Octopus.Client.Model.ProjectResource.IsVersionControlled
+  - Octopus.Client.Model.ProjectResource.LifecycleId
+  - Octopus.Client.Model.ProjectResource.Name
+  - Octopus.Client.Model.ProjectResource.PersistenceSettings
+  - Octopus.Client.Model.ProjectResource.ProjectConnectivityPolicy
+  - Octopus.Client.Model.ProjectResource.ProjectGroupId
+  - Octopus.Client.Model.ProjectResource.ReleaseCreationStrategy
+  - Octopus.Client.Model.ProjectResource.ReleaseNotesTemplate
+  - Octopus.Client.Model.ProjectResource.Slug
+  - Octopus.Client.Model.ProjectResource.SpaceId
+  - Octopus.Client.Model.ProjectResource.Templates
+  - Octopus.Client.Model.ProjectResource.TenantedDeploymentMode
+  - Octopus.Client.Model.ProjectResource.VariableSetId
+  - Octopus.Client.Model.ProjectResource.VersioningStrategy
+  langs:
+  - csharp
+  - vb
+  name: ProjectResource
+  nameWithType: ProjectResource
+  fullName: Octopus.Client.Model.ProjectResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectResource
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nRepresents a project.\n"
+  example: []
+  syntax:
+    content: 'public class ProjectResource : ResourceWithExtensionSettings, IResource, IAuditedResource, INamedResource, IVariableTemplateContainer, IVariableTemplateContainerEditor<ProjectResource>, IHaveSpaceResource'
+    content.vb: >-
+      Public Class ProjectResource
+          Inherits ResourceWithExtensionSettings
+          Implements IResource, IAuditedResource, INamedResource, IVariableTemplateContainer, IVariableTemplateContainerEditor(Of ProjectResource), IHaveSpaceResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  - Octopus.Client.Model.ResourceWithExtensionSettings
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  - Octopus.Client.Extensibility.INamedResource
+  - Octopus.Client.Model.IVariableTemplateContainer
+  - Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  - Octopus.Client.Extensibility.IHaveSpaceResource
+  inheritedMembers:
+  - Octopus.Client.Model.ResourceWithExtensionSettings.ExtensionSettings
+  - Octopus.Client.Model.ResourceWithExtensionSettings.GetExtensionSettings``1(System.String)
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.ProjectResource.#ctor
+  commentId: M:Octopus.Client.Model.ProjectResource.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectResource()
+  nameWithType: ProjectResource.ProjectResource()
+  fullName: Octopus.Client.Model.ProjectResource.ProjectResource()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProjectResource()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.ProjectResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.#ctor(System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.ProjectResource.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectResource(String, String, String)
+  nameWithType: ProjectResource.ProjectResource(String, String, String)
+  fullName: Octopus.Client.Model.ProjectResource.ProjectResource(System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 31
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProjectResource(string id, string name, string slug)
+    parameters:
+    - id: id
+      type: System.String
+    - id: name
+      type: System.String
+    - id: slug
+      type: System.String
+    content.vb: Public Sub New(id As String, name As String, slug As String)
+  overload: Octopus.Client.Model.ProjectResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.Name
+  commentId: P:Octopus.Client.Model.ProjectResource.Name
+  id: Name
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ProjectResource.Name
+  fullName: Octopus.Client.Model.ProjectResource.Name
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Name
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 38
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty(Order = 2)]
+
+      public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty(Order:=2)>
+
+      Public Property Name As String
+  overload: Octopus.Client.Model.ProjectResource.Name*
+  implements:
+  - Octopus.Client.Extensibility.INamedResource.Name
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 2
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.Slug
+  commentId: P:Octopus.Client.Model.ProjectResource.Slug
+  id: Slug
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: Slug
+  nameWithType: ProjectResource.Slug
+  fullName: Octopus.Client.Model.ProjectResource.Slug
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Slug
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 43
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty(Order = 3)]
+
+      public string Slug { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty(Order:=3)>
+
+      Public Property Slug As String
+  overload: Octopus.Client.Model.ProjectResource.Slug*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 3
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.Description
+  commentId: P:Octopus.Client.Model.ProjectResource.Description
+  id: Description
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: ProjectResource.Description
+  fullName: Octopus.Client.Model.ProjectResource.Description
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Description
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 46
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty(Order = 20)]
+
+      public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty(Order:=20)>
+
+      Public Property Description As String
+  overload: Octopus.Client.Model.ProjectResource.Description*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 20
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.IsDisabled
+  commentId: P:Octopus.Client.Model.ProjectResource.IsDisabled
+  id: IsDisabled
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: IsDisabled
+  nameWithType: ProjectResource.IsDisabled
+  fullName: Octopus.Client.Model.ProjectResource.IsDisabled
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsDisabled
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 50
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty(Order = 22)]
+
+      public bool IsDisabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty(Order:=22)>
+
+      Public Property IsDisabled As Boolean
+  overload: Octopus.Client.Model.ProjectResource.IsDisabled*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 22
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.ProjectGroupId
+  commentId: P:Octopus.Client.Model.ProjectResource.ProjectGroupId
+  id: ProjectGroupId
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectGroupId
+  nameWithType: ProjectResource.ProjectGroupId
+  fullName: Octopus.Client.Model.ProjectResource.ProjectGroupId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectGroupId
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 54
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty(Order = 23)]
+
+      public string ProjectGroupId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty(Order:=23)>
+
+      Public Property ProjectGroupId As String
+  overload: Octopus.Client.Model.ProjectResource.ProjectGroupId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 23
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.VariableSetId
+  commentId: P:Octopus.Client.Model.ProjectResource.VariableSetId
+  id: VariableSetId
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: VariableSetId
+  nameWithType: ProjectResource.VariableSetId
+  fullName: Octopus.Client.Model.ProjectResource.VariableSetId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: VariableSetId
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 58
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string VariableSetId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property VariableSetId As String
+  overload: Octopus.Client.Model.ProjectResource.VariableSetId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.DeploymentProcessId
+  commentId: P:Octopus.Client.Model.ProjectResource.DeploymentProcessId
+  id: DeploymentProcessId
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: DeploymentProcessId
+  nameWithType: ProjectResource.DeploymentProcessId
+  fullName: Octopus.Client.Model.ProjectResource.DeploymentProcessId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DeploymentProcessId
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 59
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string DeploymentProcessId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DeploymentProcessId As String
+  overload: Octopus.Client.Model.ProjectResource.DeploymentProcessId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.ClonedFromProjectId
+  commentId: P:Octopus.Client.Model.ProjectResource.ClonedFromProjectId
+  id: ClonedFromProjectId
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: ClonedFromProjectId
+  nameWithType: ProjectResource.ClonedFromProjectId
+  fullName: Octopus.Client.Model.ProjectResource.ClonedFromProjectId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ClonedFromProjectId
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 60
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ClonedFromProjectId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClonedFromProjectId As String
+  overload: Octopus.Client.Model.ProjectResource.ClonedFromProjectId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.LifecycleId
+  commentId: P:Octopus.Client.Model.ProjectResource.LifecycleId
+  id: LifecycleId
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: LifecycleId
+  nameWithType: ProjectResource.LifecycleId
+  fullName: Octopus.Client.Model.ProjectResource.LifecycleId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: LifecycleId
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 62
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty(Order = 24)]
+
+      public string LifecycleId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty(Order:=24)>
+
+      Public Property LifecycleId As String
+  overload: Octopus.Client.Model.ProjectResource.LifecycleId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 24
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.AutoCreateRelease
+  commentId: P:Octopus.Client.Model.ProjectResource.AutoCreateRelease
+  id: AutoCreateRelease
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: AutoCreateRelease
+  nameWithType: ProjectResource.AutoCreateRelease
+  fullName: Octopus.Client.Model.ProjectResource.AutoCreateRelease
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AutoCreateRelease
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 66
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty(Order = 25)]
+
+      public bool AutoCreateRelease { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty(Order:=25)>
+
+      Public Property AutoCreateRelease As Boolean
+  overload: Octopus.Client.Model.ProjectResource.AutoCreateRelease*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 25
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.IsVersionControlled
+  commentId: P:Octopus.Client.Model.ProjectResource.IsVersionControlled
+  id: IsVersionControlled
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: IsVersionControlled
+  nameWithType: ProjectResource.IsVersionControlled
+  fullName: Octopus.Client.Model.ProjectResource.IsVersionControlled
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsVersionControlled
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 69
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty(Order = 26)]
+
+      public bool IsVersionControlled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty(Order:=26)>
+
+      Public Property IsVersionControlled As Boolean
+  overload: Octopus.Client.Model.ProjectResource.IsVersionControlled*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 26
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.PersistenceSettings
+  commentId: P:Octopus.Client.Model.ProjectResource.PersistenceSettings
+  id: PersistenceSettings
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: PersistenceSettings
+  nameWithType: ProjectResource.PersistenceSettings
+  fullName: Octopus.Client.Model.ProjectResource.PersistenceSettings
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: PersistenceSettings
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 72
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty(Order = 27)]
+
+      public PersistenceSettingsResource PersistenceSettings { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.PersistenceSettingsResource
+    content.vb: >-
+      <JsonProperty(Order:=27)>
+
+      Public Property PersistenceSettings As PersistenceSettingsResource
+  overload: Octopus.Client.Model.ProjectResource.PersistenceSettings*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 27
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.DiscreteChannelRelease
+  commentId: P:Octopus.Client.Model.ProjectResource.DiscreteChannelRelease
+  id: DiscreteChannelRelease
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: DiscreteChannelRelease
+  nameWithType: ProjectResource.DiscreteChannelRelease
+  fullName: Octopus.Client.Model.ProjectResource.DiscreteChannelRelease
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DiscreteChannelRelease
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 81
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nTreats releases of different channels to the same environment as a \nseperate deployment dimension. &apos;False&apos; indicates a &quot;hotfix&quot;-style \nusage of channels (single release active per environment ignoring channels), \nwhereas `True` indicates &quot;microservice&quot;-style usage (single release per environment per channel)\n"
+  example: []
+  syntax:
+    content: public bool DiscreteChannelRelease { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DiscreteChannelRelease As Boolean
+  overload: Octopus.Client.Model.ProjectResource.DiscreteChannelRelease*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.IncludedLibraryVariableSetIds
+  commentId: P:Octopus.Client.Model.ProjectResource.IncludedLibraryVariableSetIds
+  id: IncludedLibraryVariableSetIds
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: IncludedLibraryVariableSetIds
+  nameWithType: ProjectResource.IncludedLibraryVariableSetIds
+  fullName: Octopus.Client.Model.ProjectResource.IncludedLibraryVariableSetIds
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IncludedLibraryVariableSetIds
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 89
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nLibrary variable sets included in the project. Sets are listed in order\nof precedence, with earlier items in the list overriding any variables\nwith the same name and scope definition appearing later in the list.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Use DeploymentSettingsResource instead on the `deploymentsettings` API.")]
+
+      public List<string> IncludedLibraryVariableSetIds { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: >-
+      <Obsolete("Use DeploymentSettingsResource instead on the `deploymentsettings` API.")>
+
+      Public Property IncludedLibraryVariableSetIds As List(Of String)
+  overload: Octopus.Client.Model.ProjectResource.IncludedLibraryVariableSetIds*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use DeploymentSettingsResource instead on the `deploymentsettings` API.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.DefaultToSkipIfAlreadyInstalled
+  commentId: P:Octopus.Client.Model.ProjectResource.DefaultToSkipIfAlreadyInstalled
+  id: DefaultToSkipIfAlreadyInstalled
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: DefaultToSkipIfAlreadyInstalled
+  nameWithType: ProjectResource.DefaultToSkipIfAlreadyInstalled
+  fullName: Octopus.Client.Model.ProjectResource.DefaultToSkipIfAlreadyInstalled
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DefaultToSkipIfAlreadyInstalled
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 93
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Obsolete("Use DeploymentSettingsResource instead on the `deploymentsettings` API.")]
+
+      public bool DefaultToSkipIfAlreadyInstalled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Obsolete("Use DeploymentSettingsResource instead on the `deploymentsettings` API.")>
+
+      Public Property DefaultToSkipIfAlreadyInstalled As Boolean
+  overload: Octopus.Client.Model.ProjectResource.DefaultToSkipIfAlreadyInstalled*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use DeploymentSettingsResource instead on the `deploymentsettings` API.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.TenantedDeploymentMode
+  commentId: P:Octopus.Client.Model.ProjectResource.TenantedDeploymentMode
+  id: TenantedDeploymentMode
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: TenantedDeploymentMode
+  nameWithType: ProjectResource.TenantedDeploymentMode
+  fullName: Octopus.Client.Model.ProjectResource.TenantedDeploymentMode
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TenantedDeploymentMode
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 97
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public TenantedDeploymentMode TenantedDeploymentMode { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.TenantedDeploymentMode
+    content.vb: Public Property TenantedDeploymentMode As TenantedDeploymentMode
+  overload: Octopus.Client.Model.ProjectResource.TenantedDeploymentMode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.DefaultGuidedFailureMode
+  commentId: P:Octopus.Client.Model.ProjectResource.DefaultGuidedFailureMode
+  id: DefaultGuidedFailureMode
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: DefaultGuidedFailureMode
+  nameWithType: ProjectResource.DefaultGuidedFailureMode
+  fullName: Octopus.Client.Model.ProjectResource.DefaultGuidedFailureMode
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DefaultGuidedFailureMode
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 100
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Obsolete("Use DeploymentSettingsResource instead on the `deploymentsettings` API.")]
+
+      public GuidedFailureMode DefaultGuidedFailureMode { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.GuidedFailureMode
+    content.vb: >-
+      <Obsolete("Use DeploymentSettingsResource instead on the `deploymentsettings` API.")>
+
+      Public Property DefaultGuidedFailureMode As GuidedFailureMode
+  overload: Octopus.Client.Model.ProjectResource.DefaultGuidedFailureMode*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use DeploymentSettingsResource instead on the `deploymentsettings` API.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.VersioningStrategy
+  commentId: P:Octopus.Client.Model.ProjectResource.VersioningStrategy
+  id: VersioningStrategy
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: VersioningStrategy
+  nameWithType: ProjectResource.VersioningStrategy
+  fullName: Octopus.Client.Model.ProjectResource.VersioningStrategy
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: VersioningStrategy
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 104
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Obsolete("Use DeploymentSettingsResource instead on the `deploymentsettings` API.")]
+
+      public VersioningStrategyResource VersioningStrategy { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.VersioningStrategyResource
+    content.vb: >-
+      <Obsolete("Use DeploymentSettingsResource instead on the `deploymentsettings` API.")>
+
+      Public Property VersioningStrategy As VersioningStrategyResource
+  overload: Octopus.Client.Model.ProjectResource.VersioningStrategy*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use DeploymentSettingsResource instead on the `deploymentsettings` API.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.ReleaseCreationStrategy
+  commentId: P:Octopus.Client.Model.ProjectResource.ReleaseCreationStrategy
+  id: ReleaseCreationStrategy
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: ReleaseCreationStrategy
+  nameWithType: ProjectResource.ReleaseCreationStrategy
+  fullName: Octopus.Client.Model.ProjectResource.ReleaseCreationStrategy
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ReleaseCreationStrategy
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 108
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ReleaseCreationStrategyResource ReleaseCreationStrategy { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReleaseCreationStrategyResource
+    content.vb: Public Property ReleaseCreationStrategy As ReleaseCreationStrategyResource
+  overload: Octopus.Client.Model.ProjectResource.ReleaseCreationStrategy*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.Templates
+  commentId: P:Octopus.Client.Model.ProjectResource.Templates
+  id: Templates
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: Templates
+  nameWithType: ProjectResource.Templates
+  fullName: Octopus.Client.Model.ProjectResource.Templates
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Templates
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 111
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public List<ActionTemplateParameterResource> Templates { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.ActionTemplateParameterResource}
+    content.vb: Public Property Templates As List(Of ActionTemplateParameterResource)
+  overload: Octopus.Client.Model.ProjectResource.Templates*
+  implements:
+  - Octopus.Client.Model.IVariableTemplateContainer.Templates
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.ProjectConnectivityPolicy
+  commentId: P:Octopus.Client.Model.ProjectResource.ProjectConnectivityPolicy
+  id: ProjectConnectivityPolicy
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectConnectivityPolicy
+  nameWithType: ProjectResource.ProjectConnectivityPolicy
+  fullName: Octopus.Client.Model.ProjectResource.ProjectConnectivityPolicy
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectConnectivityPolicy
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 113
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [JsonProperty(Order = 45, ObjectCreationHandling = ObjectCreationHandling.Replace)]
+
+      [Obsolete("Use DeploymentSettingsResource instead on the `deploymentsettings` API.")]
+
+      public DeploymentConnectivityPolicy ProjectConnectivityPolicy { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.DeploymentConnectivityPolicy
+    content.vb: >-
+      <JsonProperty(Order:=45, ObjectCreationHandling:=ObjectCreationHandling.Replace)>
+
+      <Obsolete("Use DeploymentSettingsResource instead on the `deploymentsettings` API.")>
+
+      Public Property ProjectConnectivityPolicy As DeploymentConnectivityPolicy
+  overload: Octopus.Client.Model.ProjectResource.ProjectConnectivityPolicy*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 45
+    - name: ObjectCreationHandling
+      type: Newtonsoft.Json.ObjectCreationHandling
+      value: 2
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use DeploymentSettingsResource instead on the `deploymentsettings` API.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.AutoDeployReleaseOverrides
+  commentId: P:Octopus.Client.Model.ProjectResource.AutoDeployReleaseOverrides
+  id: AutoDeployReleaseOverrides
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: AutoDeployReleaseOverrides
+  nameWithType: ProjectResource.AutoDeployReleaseOverrides
+  fullName: Octopus.Client.Model.ProjectResource.AutoDeployReleaseOverrides
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AutoDeployReleaseOverrides
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 118
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ISet<AutoDeployReleaseOverrideResource> AutoDeployReleaseOverrides { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ISet{Octopus.Client.Model.AutoDeployReleaseOverrideResource}
+    content.vb: Public ReadOnly Property AutoDeployReleaseOverrides As ISet(Of AutoDeployReleaseOverrideResource)
+  overload: Octopus.Client.Model.ProjectResource.AutoDeployReleaseOverrides*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.ProjectResource.ReleaseNotesTemplate
+  commentId: P:Octopus.Client.Model.ProjectResource.ReleaseNotesTemplate
+  id: ReleaseNotesTemplate
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: ReleaseNotesTemplate
+  nameWithType: ProjectResource.ReleaseNotesTemplate
+  fullName: Octopus.Client.Model.ProjectResource.ReleaseNotesTemplate
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ReleaseNotesTemplate
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 121
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Obsolete("Use DeploymentSettingsResource instead on the `deploymentsettings` API.")]
+
+      public string ReleaseNotesTemplate { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Obsolete("Use DeploymentSettingsResource instead on the `deploymentsettings` API.")>
+
+      Public Property ReleaseNotesTemplate As String
+  overload: Octopus.Client.Model.ProjectResource.ReleaseNotesTemplate*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use DeploymentSettingsResource instead on the `deploymentsettings` API.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.DeploymentChangesTemplate
+  commentId: P:Octopus.Client.Model.ProjectResource.DeploymentChangesTemplate
+  id: DeploymentChangesTemplate
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: DeploymentChangesTemplate
+  nameWithType: ProjectResource.DeploymentChangesTemplate
+  fullName: Octopus.Client.Model.ProjectResource.DeploymentChangesTemplate
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DeploymentChangesTemplate
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 125
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: >-
+      [Obsolete("Use DeploymentSettingsResource instead on the `deploymentsettings` API.")]
+
+      public string DeploymentChangesTemplate { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Obsolete("Use DeploymentSettingsResource instead on the `deploymentsettings` API.")>
+
+      Public Property DeploymentChangesTemplate As String
+  overload: Octopus.Client.Model.ProjectResource.DeploymentChangesTemplate*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use DeploymentSettingsResource instead on the `deploymentsettings` API.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.Clear
+  commentId: M:Octopus.Client.Model.ProjectResource.Clear
+  id: Clear
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: ProjectResource.Clear()
+  fullName: Octopus.Client.Model.ProjectResource.Clear()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Clear
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 129
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProjectResource Clear()
+    return:
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public Function Clear As ProjectResource
+  overload: Octopus.Client.Model.ProjectResource.Clear*
+  implements:
+  - Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.Clear
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  commentId: M:Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  id: AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>, String, String)
+  nameWithType: ProjectResource.AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>, String, String)
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateVariableTemplate
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 134
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProjectResource AddOrUpdateVariableTemplate(string name, string label, IDictionary<string, string> displaySettings, string defaultValue, string helpText)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    - id: displaySettings
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    - id: defaultValue
+      type: System.String
+    - id: helpText
+      type: System.String
+    return:
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public Function AddOrUpdateVariableTemplate(name As String, label As String, displaySettings As IDictionary(Of String, String), defaultValue As String, helpText As String) As ProjectResource
+  overload: Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate*
+  implements:
+  - Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  nameWithType.vb: ProjectResource.AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String), String, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String), System.String, System.String)
+  name.vb: AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String), String, String)
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+  commentId: M:Octopus.Client.Model.ProjectResource.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+  id: AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateSingleLineTextTemplate(String, String)
+  nameWithType: ProjectResource.AddOrUpdateSingleLineTextTemplate(String, String)
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateSingleLineTextTemplate(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateSingleLineTextTemplate
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 139
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProjectResource AddOrUpdateSingleLineTextTemplate(string name, string label)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    return:
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public Function AddOrUpdateSingleLineTextTemplate(name As String, label As String) As ProjectResource
+  overload: Octopus.Client.Model.ProjectResource.AddOrUpdateSingleLineTextTemplate*
+  implements:
+  - Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.ProjectResource.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+  id: AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateSingleLineTextTemplate(String, String, String, String)
+  nameWithType: ProjectResource.AddOrUpdateSingleLineTextTemplate(String, String, String, String)
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateSingleLineTextTemplate(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateSingleLineTextTemplate
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 144
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProjectResource AddOrUpdateSingleLineTextTemplate(string name, string label, string defaultValue, string helpText)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    - id: defaultValue
+      type: System.String
+    - id: helpText
+      type: System.String
+    return:
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public Function AddOrUpdateSingleLineTextTemplate(name As String, label As String, defaultValue As String, helpText As String) As ProjectResource
+  overload: Octopus.Client.Model.ProjectResource.AddOrUpdateSingleLineTextTemplate*
+  implements:
+  - Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+  commentId: M:Octopus.Client.Model.ProjectResource.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+  id: AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateMultiLineTextTemplate(String, String)
+  nameWithType: ProjectResource.AddOrUpdateMultiLineTextTemplate(String, String)
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateMultiLineTextTemplate(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateMultiLineTextTemplate
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 149
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProjectResource AddOrUpdateMultiLineTextTemplate(string name, string label)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    return:
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public Function AddOrUpdateMultiLineTextTemplate(name As String, label As String) As ProjectResource
+  overload: Octopus.Client.Model.ProjectResource.AddOrUpdateMultiLineTextTemplate*
+  implements:
+  - Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.ProjectResource.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+  id: AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateMultiLineTextTemplate(String, String, String, String)
+  nameWithType: ProjectResource.AddOrUpdateMultiLineTextTemplate(String, String, String, String)
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateMultiLineTextTemplate(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateMultiLineTextTemplate
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 154
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProjectResource AddOrUpdateMultiLineTextTemplate(string name, string label, string defaultValue, string helpText)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    - id: defaultValue
+      type: System.String
+    - id: helpText
+      type: System.String
+    return:
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public Function AddOrUpdateMultiLineTextTemplate(name As String, label As String, defaultValue As String, helpText As String) As ProjectResource
+  overload: Octopus.Client.Model.ProjectResource.AddOrUpdateMultiLineTextTemplate*
+  implements:
+  - Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateSensitiveTemplate(System.String,System.String)
+  commentId: M:Octopus.Client.Model.ProjectResource.AddOrUpdateSensitiveTemplate(System.String,System.String)
+  id: AddOrUpdateSensitiveTemplate(System.String,System.String)
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateSensitiveTemplate(String, String)
+  nameWithType: ProjectResource.AddOrUpdateSensitiveTemplate(String, String)
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateSensitiveTemplate(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateSensitiveTemplate
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 159
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProjectResource AddOrUpdateSensitiveTemplate(string name, string label)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    return:
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public Function AddOrUpdateSensitiveTemplate(name As String, label As String) As ProjectResource
+  overload: Octopus.Client.Model.ProjectResource.AddOrUpdateSensitiveTemplate*
+  implements:
+  - Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSensitiveTemplate(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.ProjectResource.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+  id: AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateSensitiveTemplate(String, String, String, String)
+  nameWithType: ProjectResource.AddOrUpdateSensitiveTemplate(String, String, String, String)
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateSensitiveTemplate(System.String, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateSensitiveTemplate
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 164
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProjectResource AddOrUpdateSensitiveTemplate(string name, string label, string defaultValue, string helpText)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    - id: defaultValue
+      type: System.String
+    - id: helpText
+      type: System.String
+    return:
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public Function AddOrUpdateSensitiveTemplate(name As String, label As String, defaultValue As String, helpText As String) As ProjectResource
+  overload: Octopus.Client.Model.ProjectResource.AddOrUpdateSensitiveTemplate*
+  implements:
+  - Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  id: AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>)
+  nameWithType: ProjectResource.AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>)
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateSelectTemplate
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 169
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProjectResource AddOrUpdateSelectTemplate(string name, string label, IDictionary<string, string> options)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    - id: options
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    return:
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public Function AddOrUpdateSelectTemplate(name As String, label As String, options As IDictionary(Of String, String)) As ProjectResource
+  overload: Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate*
+  implements:
+  - Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  nameWithType.vb: ProjectResource.AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String))
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  commentId: M:Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  id: AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>, String, String)
+  nameWithType: ProjectResource.AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>, String, String)
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateSelectTemplate
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 174
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProjectResource AddOrUpdateSelectTemplate(string name, string label, IDictionary<string, string> options, string defaultValue, string helpText)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    - id: options
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    - id: defaultValue
+      type: System.String
+    - id: helpText
+      type: System.String
+    return:
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public Function AddOrUpdateSelectTemplate(name As String, label As String, options As IDictionary(Of String, String), defaultValue As String, helpText As String) As ProjectResource
+  overload: Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate*
+  implements:
+  - Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  nameWithType.vb: ProjectResource.AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String), String, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String), System.String, System.String)
+  name.vb: AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String), String, String)
+- uid: Octopus.Client.Model.ProjectResource.IncludingLibraryVariableSets(Octopus.Client.Model.LibraryVariableSetResource[])
+  commentId: M:Octopus.Client.Model.ProjectResource.IncludingLibraryVariableSets(Octopus.Client.Model.LibraryVariableSetResource[])
+  id: IncludingLibraryVariableSets(Octopus.Client.Model.LibraryVariableSetResource[])
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: IncludingLibraryVariableSets(LibraryVariableSetResource[])
+  nameWithType: ProjectResource.IncludingLibraryVariableSets(LibraryVariableSetResource[])
+  fullName: Octopus.Client.Model.ProjectResource.IncludingLibraryVariableSets(Octopus.Client.Model.LibraryVariableSetResource[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IncludingLibraryVariableSets
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 179
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProjectResource IncludingLibraryVariableSets(params LibraryVariableSetResource[] libraryVariableSets)
+    parameters:
+    - id: libraryVariableSets
+      type: Octopus.Client.Model.LibraryVariableSetResource[]
+    return:
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public Function IncludingLibraryVariableSets(ParamArray libraryVariableSets As LibraryVariableSetResource()) As ProjectResource
+  overload: Octopus.Client.Model.ProjectResource.IncludingLibraryVariableSets*
+  nameWithType.vb: ProjectResource.IncludingLibraryVariableSets(LibraryVariableSetResource())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.ProjectResource.IncludingLibraryVariableSets(Octopus.Client.Model.LibraryVariableSetResource())
+  name.vb: IncludingLibraryVariableSets(LibraryVariableSetResource())
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  id: AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>)
+  nameWithType: ProjectResource.AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>)
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddOrUpdateVariableTemplate
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 198
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ProjectResource AddOrUpdateVariableTemplate(string name, string label, IDictionary<string, string> displaySettings)
+    parameters:
+    - id: name
+      type: System.String
+    - id: label
+      type: System.String
+    - id: displaySettings
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+    return:
+      type: Octopus.Client.Model.ProjectResource
+    content.vb: Public Function AddOrUpdateVariableTemplate(name As String, label As String, displaySettings As IDictionary(Of String, String)) As ProjectResource
+  overload: Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate*
+  implements:
+  - Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  nameWithType.vb: ProjectResource.AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String))
+- uid: Octopus.Client.Model.ProjectResource.AddAutoDeployReleaseOverride(Octopus.Client.Model.EnvironmentResource,Octopus.Client.Model.ReleaseResource)
+  commentId: M:Octopus.Client.Model.ProjectResource.AddAutoDeployReleaseOverride(Octopus.Client.Model.EnvironmentResource,Octopus.Client.Model.ReleaseResource)
+  id: AddAutoDeployReleaseOverride(Octopus.Client.Model.EnvironmentResource,Octopus.Client.Model.ReleaseResource)
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: AddAutoDeployReleaseOverride(EnvironmentResource, ReleaseResource)
+  nameWithType: ProjectResource.AddAutoDeployReleaseOverride(EnvironmentResource, ReleaseResource)
+  fullName: Octopus.Client.Model.ProjectResource.AddAutoDeployReleaseOverride(Octopus.Client.Model.EnvironmentResource, Octopus.Client.Model.ReleaseResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddAutoDeployReleaseOverride
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 222
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public void AddAutoDeployReleaseOverride(EnvironmentResource environment, ReleaseResource release)
+    parameters:
+    - id: environment
+      type: Octopus.Client.Model.EnvironmentResource
+    - id: release
+      type: Octopus.Client.Model.ReleaseResource
+    content.vb: Public Sub AddAutoDeployReleaseOverride(environment As EnvironmentResource, release As ReleaseResource)
+  overload: Octopus.Client.Model.ProjectResource.AddAutoDeployReleaseOverride*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.AddAutoDeployReleaseOverride(Octopus.Client.Model.EnvironmentResource,Octopus.Client.Model.TenantResource,Octopus.Client.Model.ReleaseResource)
+  commentId: M:Octopus.Client.Model.ProjectResource.AddAutoDeployReleaseOverride(Octopus.Client.Model.EnvironmentResource,Octopus.Client.Model.TenantResource,Octopus.Client.Model.ReleaseResource)
+  id: AddAutoDeployReleaseOverride(Octopus.Client.Model.EnvironmentResource,Octopus.Client.Model.TenantResource,Octopus.Client.Model.ReleaseResource)
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: AddAutoDeployReleaseOverride(EnvironmentResource, TenantResource, ReleaseResource)
+  nameWithType: ProjectResource.AddAutoDeployReleaseOverride(EnvironmentResource, TenantResource, ReleaseResource)
+  fullName: Octopus.Client.Model.ProjectResource.AddAutoDeployReleaseOverride(Octopus.Client.Model.EnvironmentResource, Octopus.Client.Model.TenantResource, Octopus.Client.Model.ReleaseResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AddAutoDeployReleaseOverride
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 227
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public void AddAutoDeployReleaseOverride(EnvironmentResource environment, TenantResource tenant, ReleaseResource release)
+    parameters:
+    - id: environment
+      type: Octopus.Client.Model.EnvironmentResource
+    - id: tenant
+      type: Octopus.Client.Model.TenantResource
+    - id: release
+      type: Octopus.Client.Model.ReleaseResource
+    content.vb: Public Sub AddAutoDeployReleaseOverride(environment As EnvironmentResource, tenant As TenantResource, release As ReleaseResource)
+  overload: Octopus.Client.Model.ProjectResource.AddAutoDeployReleaseOverride*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.ProjectResource.SpaceId
+  commentId: P:Octopus.Client.Model.ProjectResource.SpaceId
+  id: SpaceId
+  parent: Octopus.Client.Model.ProjectResource
+  langs:
+  - csharp
+  - vb
+  name: SpaceId
+  nameWithType: ProjectResource.SpaceId
+  fullName: Octopus.Client.Model.ProjectResource.SpaceId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/ProjectResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SpaceId
+    path: ../source/Octopus.Client/Model/ProjectResource.cs
+    startLine: 238
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string SpaceId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SpaceId As String
+  overload: Octopus.Client.Model.ProjectResource.SpaceId*
+  implements:
+  - Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Model.ResourceWithExtensionSettings
+  commentId: T:Octopus.Client.Model.ResourceWithExtensionSettings
+  parent: Octopus.Client.Model
+  name: ResourceWithExtensionSettings
+  nameWithType: ResourceWithExtensionSettings
+  fullName: Octopus.Client.Model.ResourceWithExtensionSettings
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Extensibility.INamedResource
+  commentId: T:Octopus.Client.Extensibility.INamedResource
+  parent: Octopus.Client.Extensibility
+  name: INamedResource
+  nameWithType: INamedResource
+  fullName: Octopus.Client.Extensibility.INamedResource
+- uid: Octopus.Client.Model.IVariableTemplateContainer
+  commentId: T:Octopus.Client.Model.IVariableTemplateContainer
+  parent: Octopus.Client.Model
+  name: IVariableTemplateContainer
+  nameWithType: IVariableTemplateContainer
+  fullName: Octopus.Client.Model.IVariableTemplateContainer
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  commentId: T:Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  parent: Octopus.Client.Model
+  definition: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  name: IVariableTemplateContainerEditor<ProjectResource>
+  nameWithType: IVariableTemplateContainerEditor<ProjectResource>
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>
+  nameWithType.vb: IVariableTemplateContainerEditor(Of ProjectResource)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource)
+  name.vb: IVariableTemplateContainerEditor(Of ProjectResource)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+    name: IVariableTemplateContainerEditor
+    nameWithType: IVariableTemplateContainerEditor
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ProjectResource
+    name: ProjectResource
+    nameWithType: ProjectResource
+    fullName: Octopus.Client.Model.ProjectResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+    name: IVariableTemplateContainerEditor
+    nameWithType: IVariableTemplateContainerEditor
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ProjectResource
+    name: ProjectResource
+    nameWithType: ProjectResource
+    fullName: Octopus.Client.Model.ProjectResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource
+  commentId: T:Octopus.Client.Extensibility.IHaveSpaceResource
+  parent: Octopus.Client.Extensibility
+  name: IHaveSpaceResource
+  nameWithType: IHaveSpaceResource
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource
+- uid: Octopus.Client.Model.ResourceWithExtensionSettings.ExtensionSettings
+  commentId: P:Octopus.Client.Model.ResourceWithExtensionSettings.ExtensionSettings
+  parent: Octopus.Client.Model.ResourceWithExtensionSettings
+  name: ExtensionSettings
+  nameWithType: ResourceWithExtensionSettings.ExtensionSettings
+  fullName: Octopus.Client.Model.ResourceWithExtensionSettings.ExtensionSettings
+- uid: Octopus.Client.Model.ResourceWithExtensionSettings.GetExtensionSettings``1(System.String)
+  commentId: M:Octopus.Client.Model.ResourceWithExtensionSettings.GetExtensionSettings``1(System.String)
+  parent: Octopus.Client.Model.ResourceWithExtensionSettings
+  isExternal: true
+  name: GetExtensionSettings<TSettings>(String)
+  nameWithType: ResourceWithExtensionSettings.GetExtensionSettings<TSettings>(String)
+  fullName: Octopus.Client.Model.ResourceWithExtensionSettings.GetExtensionSettings<TSettings>(System.String)
+  nameWithType.vb: ResourceWithExtensionSettings.GetExtensionSettings(Of TSettings)(String)
+  fullName.vb: Octopus.Client.Model.ResourceWithExtensionSettings.GetExtensionSettings(Of TSettings)(System.String)
+  name.vb: GetExtensionSettings(Of TSettings)(String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.ResourceWithExtensionSettings.GetExtensionSettings``1(System.String)
+    name: GetExtensionSettings<TSettings>
+    nameWithType: ResourceWithExtensionSettings.GetExtensionSettings<TSettings>
+    fullName: Octopus.Client.Model.ResourceWithExtensionSettings.GetExtensionSettings<TSettings>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.ResourceWithExtensionSettings.GetExtensionSettings``1(System.String)
+    name: GetExtensionSettings(Of TSettings)
+    nameWithType: ResourceWithExtensionSettings.GetExtensionSettings(Of TSettings)
+    fullName: Octopus.Client.Model.ResourceWithExtensionSettings.GetExtensionSettings(Of TSettings)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  commentId: T:Octopus.Client.Model.IVariableTemplateContainerEditor`1
+  name: IVariableTemplateContainerEditor<TContainer>
+  nameWithType: IVariableTemplateContainerEditor<TContainer>
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer)
+  name.vb: IVariableTemplateContainerEditor(Of TContainer)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+    name: IVariableTemplateContainerEditor
+    nameWithType: IVariableTemplateContainerEditor
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TContainer
+    nameWithType: TContainer
+    fullName: TContainer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1
+    name: IVariableTemplateContainerEditor
+    nameWithType: IVariableTemplateContainerEditor
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TContainer
+    nameWithType: TContainer
+    fullName: TContainer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ProjectResource.#ctor*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.#ctor
+  name: ProjectResource
+  nameWithType: ProjectResource.ProjectResource
+  fullName: Octopus.Client.Model.ProjectResource.ProjectResource
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.ProjectResource.Name*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.Name
+  name: Name
+  nameWithType: ProjectResource.Name
+  fullName: Octopus.Client.Model.ProjectResource.Name
+- uid: Octopus.Client.Extensibility.INamedResource.Name
+  commentId: P:Octopus.Client.Extensibility.INamedResource.Name
+  parent: Octopus.Client.Extensibility.INamedResource
+  name: Name
+  nameWithType: INamedResource.Name
+  fullName: Octopus.Client.Extensibility.INamedResource.Name
+- uid: Octopus.Client.Model.ProjectResource.Slug*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.Slug
+  name: Slug
+  nameWithType: ProjectResource.Slug
+  fullName: Octopus.Client.Model.ProjectResource.Slug
+- uid: Octopus.Client.Model.ProjectResource.Description*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.Description
+  name: Description
+  nameWithType: ProjectResource.Description
+  fullName: Octopus.Client.Model.ProjectResource.Description
+- uid: Octopus.Client.Model.ProjectResource.IsDisabled*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.IsDisabled
+  name: IsDisabled
+  nameWithType: ProjectResource.IsDisabled
+  fullName: Octopus.Client.Model.ProjectResource.IsDisabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.ProjectResource.ProjectGroupId*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.ProjectGroupId
+  name: ProjectGroupId
+  nameWithType: ProjectResource.ProjectGroupId
+  fullName: Octopus.Client.Model.ProjectResource.ProjectGroupId
+- uid: Octopus.Client.Model.ProjectResource.VariableSetId*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.VariableSetId
+  name: VariableSetId
+  nameWithType: ProjectResource.VariableSetId
+  fullName: Octopus.Client.Model.ProjectResource.VariableSetId
+- uid: Octopus.Client.Model.ProjectResource.DeploymentProcessId*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.DeploymentProcessId
+  name: DeploymentProcessId
+  nameWithType: ProjectResource.DeploymentProcessId
+  fullName: Octopus.Client.Model.ProjectResource.DeploymentProcessId
+- uid: Octopus.Client.Model.ProjectResource.ClonedFromProjectId*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.ClonedFromProjectId
+  name: ClonedFromProjectId
+  nameWithType: ProjectResource.ClonedFromProjectId
+  fullName: Octopus.Client.Model.ProjectResource.ClonedFromProjectId
+- uid: Octopus.Client.Model.ProjectResource.LifecycleId*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.LifecycleId
+  name: LifecycleId
+  nameWithType: ProjectResource.LifecycleId
+  fullName: Octopus.Client.Model.ProjectResource.LifecycleId
+- uid: Octopus.Client.Model.ProjectResource.AutoCreateRelease*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.AutoCreateRelease
+  name: AutoCreateRelease
+  nameWithType: ProjectResource.AutoCreateRelease
+  fullName: Octopus.Client.Model.ProjectResource.AutoCreateRelease
+- uid: Octopus.Client.Model.ProjectResource.IsVersionControlled*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.IsVersionControlled
+  name: IsVersionControlled
+  nameWithType: ProjectResource.IsVersionControlled
+  fullName: Octopus.Client.Model.ProjectResource.IsVersionControlled
+- uid: Octopus.Client.Model.ProjectResource.PersistenceSettings*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.PersistenceSettings
+  name: PersistenceSettings
+  nameWithType: ProjectResource.PersistenceSettings
+  fullName: Octopus.Client.Model.ProjectResource.PersistenceSettings
+- uid: Octopus.Client.Model.PersistenceSettingsResource
+  commentId: T:Octopus.Client.Model.PersistenceSettingsResource
+  parent: Octopus.Client.Model
+  name: PersistenceSettingsResource
+  nameWithType: PersistenceSettingsResource
+  fullName: Octopus.Client.Model.PersistenceSettingsResource
+- uid: Octopus.Client.Model.ProjectResource.DiscreteChannelRelease*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.DiscreteChannelRelease
+  name: DiscreteChannelRelease
+  nameWithType: ProjectResource.DiscreteChannelRelease
+  fullName: Octopus.Client.Model.ProjectResource.DiscreteChannelRelease
+- uid: Octopus.Client.Model.ProjectResource.IncludedLibraryVariableSetIds*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.IncludedLibraryVariableSetIds
+  name: IncludedLibraryVariableSetIds
+  nameWithType: ProjectResource.IncludedLibraryVariableSetIds
+  fullName: Octopus.Client.Model.ProjectResource.IncludedLibraryVariableSetIds
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.ProjectResource.DefaultToSkipIfAlreadyInstalled*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.DefaultToSkipIfAlreadyInstalled
+  name: DefaultToSkipIfAlreadyInstalled
+  nameWithType: ProjectResource.DefaultToSkipIfAlreadyInstalled
+  fullName: Octopus.Client.Model.ProjectResource.DefaultToSkipIfAlreadyInstalled
+- uid: Octopus.Client.Model.ProjectResource.TenantedDeploymentMode*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.TenantedDeploymentMode
+  name: TenantedDeploymentMode
+  nameWithType: ProjectResource.TenantedDeploymentMode
+  fullName: Octopus.Client.Model.ProjectResource.TenantedDeploymentMode
+- uid: Octopus.Client.Model.TenantedDeploymentMode
+  commentId: T:Octopus.Client.Model.TenantedDeploymentMode
+  parent: Octopus.Client.Model
+  name: TenantedDeploymentMode
+  nameWithType: TenantedDeploymentMode
+  fullName: Octopus.Client.Model.TenantedDeploymentMode
+- uid: Octopus.Client.Model.ProjectResource.DefaultGuidedFailureMode*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.DefaultGuidedFailureMode
+  name: DefaultGuidedFailureMode
+  nameWithType: ProjectResource.DefaultGuidedFailureMode
+  fullName: Octopus.Client.Model.ProjectResource.DefaultGuidedFailureMode
+- uid: Octopus.Client.Model.GuidedFailureMode
+  commentId: T:Octopus.Client.Model.GuidedFailureMode
+  parent: Octopus.Client.Model
+  name: GuidedFailureMode
+  nameWithType: GuidedFailureMode
+  fullName: Octopus.Client.Model.GuidedFailureMode
+- uid: Octopus.Client.Model.ProjectResource.VersioningStrategy*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.VersioningStrategy
+  name: VersioningStrategy
+  nameWithType: ProjectResource.VersioningStrategy
+  fullName: Octopus.Client.Model.ProjectResource.VersioningStrategy
+- uid: Octopus.Client.Model.VersioningStrategyResource
+  commentId: T:Octopus.Client.Model.VersioningStrategyResource
+  parent: Octopus.Client.Model
+  name: VersioningStrategyResource
+  nameWithType: VersioningStrategyResource
+  fullName: Octopus.Client.Model.VersioningStrategyResource
+- uid: Octopus.Client.Model.ProjectResource.ReleaseCreationStrategy*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.ReleaseCreationStrategy
+  name: ReleaseCreationStrategy
+  nameWithType: ProjectResource.ReleaseCreationStrategy
+  fullName: Octopus.Client.Model.ProjectResource.ReleaseCreationStrategy
+- uid: Octopus.Client.Model.ReleaseCreationStrategyResource
+  commentId: T:Octopus.Client.Model.ReleaseCreationStrategyResource
+  parent: Octopus.Client.Model
+  name: ReleaseCreationStrategyResource
+  nameWithType: ReleaseCreationStrategyResource
+  fullName: Octopus.Client.Model.ReleaseCreationStrategyResource
+- uid: Octopus.Client.Model.ProjectResource.Templates*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.Templates
+  name: Templates
+  nameWithType: ProjectResource.Templates
+  fullName: Octopus.Client.Model.ProjectResource.Templates
+- uid: Octopus.Client.Model.IVariableTemplateContainer.Templates
+  commentId: P:Octopus.Client.Model.IVariableTemplateContainer.Templates
+  parent: Octopus.Client.Model.IVariableTemplateContainer
+  name: Templates
+  nameWithType: IVariableTemplateContainer.Templates
+  fullName: Octopus.Client.Model.IVariableTemplateContainer.Templates
+- uid: System.Collections.Generic.List{Octopus.Client.Model.ActionTemplateParameterResource}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.ActionTemplateParameterResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ActionTemplateParameterResource>
+  nameWithType: List<ActionTemplateParameterResource>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.ActionTemplateParameterResource>
+  nameWithType.vb: List(Of ActionTemplateParameterResource)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.ActionTemplateParameterResource)
+  name.vb: List(Of ActionTemplateParameterResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ActionTemplateParameterResource
+    name: ActionTemplateParameterResource
+    nameWithType: ActionTemplateParameterResource
+    fullName: Octopus.Client.Model.ActionTemplateParameterResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ActionTemplateParameterResource
+    name: ActionTemplateParameterResource
+    nameWithType: ActionTemplateParameterResource
+    fullName: Octopus.Client.Model.ActionTemplateParameterResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ProjectResource.ProjectConnectivityPolicy*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.ProjectConnectivityPolicy
+  name: ProjectConnectivityPolicy
+  nameWithType: ProjectResource.ProjectConnectivityPolicy
+  fullName: Octopus.Client.Model.ProjectResource.ProjectConnectivityPolicy
+- uid: Octopus.Client.Model.DeploymentConnectivityPolicy
+  commentId: T:Octopus.Client.Model.DeploymentConnectivityPolicy
+  parent: Octopus.Client.Model
+  name: DeploymentConnectivityPolicy
+  nameWithType: DeploymentConnectivityPolicy
+  fullName: Octopus.Client.Model.DeploymentConnectivityPolicy
+- uid: Octopus.Client.Model.ProjectResource.AutoDeployReleaseOverrides*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.AutoDeployReleaseOverrides
+  name: AutoDeployReleaseOverrides
+  nameWithType: ProjectResource.AutoDeployReleaseOverrides
+  fullName: Octopus.Client.Model.ProjectResource.AutoDeployReleaseOverrides
+- uid: System.Collections.Generic.ISet{Octopus.Client.Model.AutoDeployReleaseOverrideResource}
+  commentId: T:System.Collections.Generic.ISet{Octopus.Client.Model.AutoDeployReleaseOverrideResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ISet`1
+  name: ISet<AutoDeployReleaseOverrideResource>
+  nameWithType: ISet<AutoDeployReleaseOverrideResource>
+  fullName: System.Collections.Generic.ISet<Octopus.Client.Model.AutoDeployReleaseOverrideResource>
+  nameWithType.vb: ISet(Of AutoDeployReleaseOverrideResource)
+  fullName.vb: System.Collections.Generic.ISet(Of Octopus.Client.Model.AutoDeployReleaseOverrideResource)
+  name.vb: ISet(Of AutoDeployReleaseOverrideResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.AutoDeployReleaseOverrideResource
+    name: AutoDeployReleaseOverrideResource
+    nameWithType: AutoDeployReleaseOverrideResource
+    fullName: Octopus.Client.Model.AutoDeployReleaseOverrideResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.AutoDeployReleaseOverrideResource
+    name: AutoDeployReleaseOverrideResource
+    nameWithType: AutoDeployReleaseOverrideResource
+    fullName: Octopus.Client.Model.AutoDeployReleaseOverrideResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet`1
+  commentId: T:System.Collections.Generic.ISet`1
+  isExternal: true
+  name: ISet<T>
+  nameWithType: ISet<T>
+  fullName: System.Collections.Generic.ISet<T>
+  nameWithType.vb: ISet(Of T)
+  fullName.vb: System.Collections.Generic.ISet(Of T)
+  name.vb: ISet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ProjectResource.ReleaseNotesTemplate*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.ReleaseNotesTemplate
+  name: ReleaseNotesTemplate
+  nameWithType: ProjectResource.ReleaseNotesTemplate
+  fullName: Octopus.Client.Model.ProjectResource.ReleaseNotesTemplate
+- uid: Octopus.Client.Model.ProjectResource.DeploymentChangesTemplate*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.DeploymentChangesTemplate
+  name: DeploymentChangesTemplate
+  nameWithType: ProjectResource.DeploymentChangesTemplate
+  fullName: Octopus.Client.Model.ProjectResource.DeploymentChangesTemplate
+- uid: Octopus.Client.Model.ProjectResource.Clear*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.Clear
+  name: Clear
+  nameWithType: ProjectResource.Clear
+  fullName: Octopus.Client.Model.ProjectResource.Clear
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.Clear
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.Clear
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  definition: Octopus.Client.Model.IVariableTemplateContainerEditor`1.Clear
+  name: Clear()
+  nameWithType: IVariableTemplateContainerEditor<ProjectResource>.Clear()
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.Clear()
+  nameWithType.vb: IVariableTemplateContainerEditor(Of ProjectResource).Clear()
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).Clear()
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.Clear
+    name: Clear
+    nameWithType: IVariableTemplateContainerEditor<ProjectResource>.Clear
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.Clear
+    name: Clear
+    nameWithType: IVariableTemplateContainerEditor(Of ProjectResource).Clear
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ProjectResource
+  commentId: T:Octopus.Client.Model.ProjectResource
+  parent: Octopus.Client.Model
+  name: ProjectResource
+  nameWithType: ProjectResource
+  fullName: Octopus.Client.Model.ProjectResource
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.Clear
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.Clear
+  name: Clear()
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.Clear()
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.Clear()
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).Clear()
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).Clear()
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.Clear
+    name: Clear
+    nameWithType: IVariableTemplateContainerEditor<TContainer>.Clear
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.Clear
+    name: Clear
+    nameWithType: IVariableTemplateContainerEditor(Of TContainer).Clear
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate
+  name: AddOrUpdateVariableTemplate
+  nameWithType: ProjectResource.AddOrUpdateVariableTemplate
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateVariableTemplate
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  definition: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  name: AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>, String, String)
+  nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>, System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String), String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String), System.String, System.String)
+  name.vb: AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String), String, String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+    name: AddOrUpdateVariableTemplate
+    nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateVariableTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateVariableTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+    name: AddOrUpdateVariableTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateVariableTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateVariableTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, String>
+  nameWithType: IDictionary<String, String>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String>
+  nameWithType.vb: IDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  isExternal: true
+  name: AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>, String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>, System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String), String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String), System.String, System.String)
+  name.vb: AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String), String, String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+    name: AddOrUpdateVariableTemplate
+    nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateVariableTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateVariableTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+    name: AddOrUpdateVariableTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateVariableTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateVariableTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateSingleLineTextTemplate*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.AddOrUpdateSingleLineTextTemplate
+  name: AddOrUpdateSingleLineTextTemplate
+  nameWithType: ProjectResource.AddOrUpdateSingleLineTextTemplate
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateSingleLineTextTemplate
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  definition: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+  name: AddOrUpdateSingleLineTextTemplate(String, String)
+  nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateSingleLineTextTemplate(String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateSingleLineTextTemplate(System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateSingleLineTextTemplate(String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateSingleLineTextTemplate(System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+    name: AddOrUpdateSingleLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateSingleLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateSingleLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+    name: AddOrUpdateSingleLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateSingleLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateSingleLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+  isExternal: true
+  name: AddOrUpdateSingleLineTextTemplate(String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSingleLineTextTemplate(String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSingleLineTextTemplate(System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSingleLineTextTemplate(String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSingleLineTextTemplate(System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+    name: AddOrUpdateSingleLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSingleLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSingleLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String)
+    name: AddOrUpdateSingleLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSingleLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSingleLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  definition: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+  name: AddOrUpdateSingleLineTextTemplate(String, String, String, String)
+  nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateSingleLineTextTemplate(String, String, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateSingleLineTextTemplate(System.String, System.String, System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateSingleLineTextTemplate(String, String, String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateSingleLineTextTemplate(System.String, System.String, System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+    name: AddOrUpdateSingleLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateSingleLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateSingleLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+    name: AddOrUpdateSingleLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateSingleLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateSingleLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+  isExternal: true
+  name: AddOrUpdateSingleLineTextTemplate(String, String, String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSingleLineTextTemplate(String, String, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSingleLineTextTemplate(System.String, System.String, System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSingleLineTextTemplate(String, String, String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSingleLineTextTemplate(System.String, System.String, System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+    name: AddOrUpdateSingleLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSingleLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSingleLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSingleLineTextTemplate(System.String,System.String,System.String,System.String)
+    name: AddOrUpdateSingleLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSingleLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSingleLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateMultiLineTextTemplate*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.AddOrUpdateMultiLineTextTemplate
+  name: AddOrUpdateMultiLineTextTemplate
+  nameWithType: ProjectResource.AddOrUpdateMultiLineTextTemplate
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateMultiLineTextTemplate
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  definition: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+  name: AddOrUpdateMultiLineTextTemplate(String, String)
+  nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateMultiLineTextTemplate(String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateMultiLineTextTemplate(System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateMultiLineTextTemplate(String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateMultiLineTextTemplate(System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+    name: AddOrUpdateMultiLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateMultiLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateMultiLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+    name: AddOrUpdateMultiLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateMultiLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateMultiLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+  isExternal: true
+  name: AddOrUpdateMultiLineTextTemplate(String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateMultiLineTextTemplate(String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateMultiLineTextTemplate(System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateMultiLineTextTemplate(String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateMultiLineTextTemplate(System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+    name: AddOrUpdateMultiLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateMultiLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateMultiLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String)
+    name: AddOrUpdateMultiLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateMultiLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateMultiLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  definition: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+  name: AddOrUpdateMultiLineTextTemplate(String, String, String, String)
+  nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateMultiLineTextTemplate(String, String, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateMultiLineTextTemplate(System.String, System.String, System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateMultiLineTextTemplate(String, String, String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateMultiLineTextTemplate(System.String, System.String, System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+    name: AddOrUpdateMultiLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateMultiLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateMultiLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+    name: AddOrUpdateMultiLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateMultiLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateMultiLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+  isExternal: true
+  name: AddOrUpdateMultiLineTextTemplate(String, String, String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateMultiLineTextTemplate(String, String, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateMultiLineTextTemplate(System.String, System.String, System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateMultiLineTextTemplate(String, String, String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateMultiLineTextTemplate(System.String, System.String, System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+    name: AddOrUpdateMultiLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateMultiLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateMultiLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateMultiLineTextTemplate(System.String,System.String,System.String,System.String)
+    name: AddOrUpdateMultiLineTextTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateMultiLineTextTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateMultiLineTextTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateSensitiveTemplate*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.AddOrUpdateSensitiveTemplate
+  name: AddOrUpdateSensitiveTemplate
+  nameWithType: ProjectResource.AddOrUpdateSensitiveTemplate
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateSensitiveTemplate
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSensitiveTemplate(System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSensitiveTemplate(System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  definition: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String)
+  name: AddOrUpdateSensitiveTemplate(String, String)
+  nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateSensitiveTemplate(String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateSensitiveTemplate(System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateSensitiveTemplate(String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateSensitiveTemplate(System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String)
+    name: AddOrUpdateSensitiveTemplate
+    nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateSensitiveTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateSensitiveTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String)
+    name: AddOrUpdateSensitiveTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateSensitiveTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateSensitiveTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String)
+  isExternal: true
+  name: AddOrUpdateSensitiveTemplate(String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSensitiveTemplate(String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSensitiveTemplate(System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSensitiveTemplate(String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSensitiveTemplate(System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String)
+    name: AddOrUpdateSensitiveTemplate
+    nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSensitiveTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSensitiveTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String)
+    name: AddOrUpdateSensitiveTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSensitiveTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSensitiveTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  definition: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+  name: AddOrUpdateSensitiveTemplate(String, String, String, String)
+  nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateSensitiveTemplate(String, String, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateSensitiveTemplate(System.String, System.String, System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateSensitiveTemplate(String, String, String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateSensitiveTemplate(System.String, System.String, System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+    name: AddOrUpdateSensitiveTemplate
+    nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateSensitiveTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateSensitiveTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+    name: AddOrUpdateSensitiveTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateSensitiveTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateSensitiveTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+  isExternal: true
+  name: AddOrUpdateSensitiveTemplate(String, String, String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSensitiveTemplate(String, String, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSensitiveTemplate(System.String, System.String, System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSensitiveTemplate(String, String, String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSensitiveTemplate(System.String, System.String, System.String, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+    name: AddOrUpdateSensitiveTemplate
+    nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSensitiveTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSensitiveTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSensitiveTemplate(System.String,System.String,System.String,System.String)
+    name: AddOrUpdateSensitiveTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSensitiveTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSensitiveTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate
+  name: AddOrUpdateSelectTemplate
+  nameWithType: ProjectResource.AddOrUpdateSelectTemplate
+  fullName: Octopus.Client.Model.ProjectResource.AddOrUpdateSelectTemplate
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  definition: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  name: AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>)
+  nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String))
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: AddOrUpdateSelectTemplate
+    nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateSelectTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateSelectTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: AddOrUpdateSelectTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateSelectTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateSelectTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  isExternal: true
+  name: AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String))
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: AddOrUpdateSelectTemplate
+    nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSelectTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSelectTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: AddOrUpdateSelectTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSelectTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSelectTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  definition: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  name: AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>, String, String)
+  nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>, System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String), String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String), System.String, System.String)
+  name.vb: AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String), String, String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+    name: AddOrUpdateSelectTemplate
+    nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateSelectTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateSelectTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+    name: AddOrUpdateSelectTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateSelectTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateSelectTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+  isExternal: true
+  name: AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>, String, String)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSelectTemplate(String, String, IDictionary<String, String>, String, String)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>, System.String, System.String)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String), String, String)
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSelectTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String), System.String, System.String)
+  name.vb: AddOrUpdateSelectTemplate(String, String, IDictionary(Of String, String), String, String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+    name: AddOrUpdateSelectTemplate
+    nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSelectTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateSelectTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateSelectTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)
+    name: AddOrUpdateSelectTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSelectTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateSelectTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ProjectResource.IncludingLibraryVariableSets*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.IncludingLibraryVariableSets
+  name: IncludingLibraryVariableSets
+  nameWithType: ProjectResource.IncludingLibraryVariableSets
+  fullName: Octopus.Client.Model.ProjectResource.IncludingLibraryVariableSets
+- uid: Octopus.Client.Model.LibraryVariableSetResource[]
+  isExternal: true
+  name: LibraryVariableSetResource[]
+  nameWithType: LibraryVariableSetResource[]
+  fullName: Octopus.Client.Model.LibraryVariableSetResource[]
+  nameWithType.vb: LibraryVariableSetResource()
+  fullName.vb: Octopus.Client.Model.LibraryVariableSetResource()
+  name.vb: LibraryVariableSetResource()
+  spec.csharp:
+  - uid: Octopus.Client.Model.LibraryVariableSetResource
+    name: LibraryVariableSetResource
+    nameWithType: LibraryVariableSetResource
+    fullName: Octopus.Client.Model.LibraryVariableSetResource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Octopus.Client.Model.LibraryVariableSetResource
+    name: LibraryVariableSetResource
+    nameWithType: LibraryVariableSetResource
+    fullName: Octopus.Client.Model.LibraryVariableSetResource
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  parent: Octopus.Client.Model.IVariableTemplateContainerEditor{Octopus.Client.Model.ProjectResource}
+  definition: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  name: AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>)
+  nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String))
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: AddOrUpdateVariableTemplate
+    nameWithType: IVariableTemplateContainerEditor<ProjectResource>.AddOrUpdateVariableTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<Octopus.Client.Model.ProjectResource>.AddOrUpdateVariableTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: AddOrUpdateVariableTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of ProjectResource).AddOrUpdateVariableTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of Octopus.Client.Model.ProjectResource).AddOrUpdateVariableTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  commentId: M:Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+  isExternal: true
+  name: AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>)
+  nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateVariableTemplate(String, String, IDictionary<String, String>)
+  fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary<System.String, System.String>)
+  nameWithType.vb: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String))
+  fullName.vb: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateVariableTemplate(System.String, System.String, System.Collections.Generic.IDictionary(Of System.String, System.String))
+  name.vb: AddOrUpdateVariableTemplate(String, String, IDictionary(Of String, String))
+  spec.csharp:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: AddOrUpdateVariableTemplate
+    nameWithType: IVariableTemplateContainerEditor<TContainer>.AddOrUpdateVariableTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor<TContainer>.AddOrUpdateVariableTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.IVariableTemplateContainerEditor`1.AddOrUpdateVariableTemplate(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})
+    name: AddOrUpdateVariableTemplate
+    nameWithType: IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateVariableTemplate
+    fullName: Octopus.Client.Model.IVariableTemplateContainerEditor(Of TContainer).AddOrUpdateVariableTemplate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ProjectResource.AddAutoDeployReleaseOverride*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.AddAutoDeployReleaseOverride
+  name: AddAutoDeployReleaseOverride
+  nameWithType: ProjectResource.AddAutoDeployReleaseOverride
+  fullName: Octopus.Client.Model.ProjectResource.AddAutoDeployReleaseOverride
+- uid: Octopus.Client.Model.EnvironmentResource
+  commentId: T:Octopus.Client.Model.EnvironmentResource
+  parent: Octopus.Client.Model
+  name: EnvironmentResource
+  nameWithType: EnvironmentResource
+  fullName: Octopus.Client.Model.EnvironmentResource
+- uid: Octopus.Client.Model.ReleaseResource
+  commentId: T:Octopus.Client.Model.ReleaseResource
+  parent: Octopus.Client.Model
+  name: ReleaseResource
+  nameWithType: ReleaseResource
+  fullName: Octopus.Client.Model.ReleaseResource
+- uid: Octopus.Client.Model.TenantResource
+  commentId: T:Octopus.Client.Model.TenantResource
+  parent: Octopus.Client.Model
+  name: TenantResource
+  nameWithType: TenantResource
+  fullName: Octopus.Client.Model.TenantResource
+- uid: Octopus.Client.Model.ProjectResource.SpaceId*
+  commentId: Overload:Octopus.Client.Model.ProjectResource.SpaceId
+  name: SpaceId
+  nameWithType: ProjectResource.SpaceId
+  fullName: Octopus.Client.Model.ProjectResource.SpaceId
+- uid: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  commentId: P:Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId
+  parent: Octopus.Client.Extensibility.IHaveSpaceResource
+  name: SpaceId
+  nameWithType: IHaveSpaceResource.SpaceId
+  fullName: Octopus.Client.Extensibility.IHaveSpaceResource.SpaceId

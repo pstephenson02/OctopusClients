@@ -1,0 +1,749 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.SensitiveValue
+  commentId: T:Octopus.Client.Model.SensitiveValue
+  id: SensitiveValue
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.SensitiveValue.Equals(Octopus.Client.Model.SensitiveValue)
+  - Octopus.Client.Model.SensitiveValue.HasValue
+  - Octopus.Client.Model.SensitiveValue.Hint
+  - Octopus.Client.Model.SensitiveValue.NewValue
+  - Octopus.Client.Model.SensitiveValue.op_Implicit(System.String)~Octopus.Client.Model.SensitiveValue
+  langs:
+  - csharp
+  - vb
+  name: SensitiveValue
+  nameWithType: SensitiveValue
+  fullName: Octopus.Client.Model.SensitiveValue
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SensitiveValue.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SensitiveValue
+    path: ../source/Octopus.Client/Model/SensitiveValue.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nWhen reading from the API, only <xref href=\"Octopus.Client.Model.SensitiveValue.HasValue\" data-throw-if-not-resolved=\"false\"></xref> will be set, depending on\nwhether a server-side value exists. When writing to the API, passing any non-null\n<xref href=\"Octopus.Client.Model.SensitiveValue.NewValue\" data-throw-if-not-resolved=\"false\"></xref> will set the value; otherwise, leaving <xref href=\"Octopus.Client.Model.SensitiveValue.HasValue\" data-throw-if-not-resolved=\"false\"></xref>\nwith the status quo value will cause the server-side value to be unchanged, while\nsetting <xref href=\"Octopus.Client.Model.SensitiveValue.HasValue\" data-throw-if-not-resolved=\"false\"></xref> to false will clear any value.\n"
+  example: []
+  syntax:
+    content: 'public class SensitiveValue : IEquatable<SensitiveValue>'
+    content.vb: >-
+      Public Class SensitiveValue
+          Implements IEquatable(Of SensitiveValue)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Octopus.Client.Model.SensitiveValue}
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.SensitiveValue.HasValue
+  commentId: P:Octopus.Client.Model.SensitiveValue.HasValue
+  id: HasValue
+  parent: Octopus.Client.Model.SensitiveValue
+  langs:
+  - csharp
+  - vb
+  name: HasValue
+  nameWithType: SensitiveValue.HasValue
+  fullName: Octopus.Client.Model.SensitiveValue.HasValue
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SensitiveValue.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: HasValue
+    path: ../source/Octopus.Client/Model/SensitiveValue.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public bool HasValue { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property HasValue As Boolean
+  overload: Octopus.Client.Model.SensitiveValue.HasValue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SensitiveValue.NewValue
+  commentId: P:Octopus.Client.Model.SensitiveValue.NewValue
+  id: NewValue
+  parent: Octopus.Client.Model.SensitiveValue
+  langs:
+  - csharp
+  - vb
+  name: NewValue
+  nameWithType: SensitiveValue.NewValue
+  fullName: Octopus.Client.Model.SensitiveValue.NewValue
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SensitiveValue.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: NewValue
+    path: ../source/Octopus.Client/Model/SensitiveValue.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string NewValue { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property NewValue As String
+  overload: Octopus.Client.Model.SensitiveValue.NewValue*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SensitiveValue.Hint
+  commentId: P:Octopus.Client.Model.SensitiveValue.Hint
+  id: Hint
+  parent: Octopus.Client.Model.SensitiveValue
+  langs:
+  - csharp
+  - vb
+  name: Hint
+  nameWithType: SensitiveValue.Hint
+  fullName: Octopus.Client.Model.SensitiveValue.Hint
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SensitiveValue.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Hint
+    path: ../source/Octopus.Client/Model/SensitiveValue.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string Hint { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Hint As String
+  overload: Octopus.Client.Model.SensitiveValue.Hint*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SensitiveValue.op_Implicit(System.String)~Octopus.Client.Model.SensitiveValue
+  commentId: M:Octopus.Client.Model.SensitiveValue.op_Implicit(System.String)~Octopus.Client.Model.SensitiveValue
+  id: op_Implicit(System.String)~Octopus.Client.Model.SensitiveValue
+  parent: Octopus.Client.Model.SensitiveValue
+  langs:
+  - csharp
+  - vb
+  name: Implicit(String to SensitiveValue)
+  nameWithType: SensitiveValue.Implicit(String to SensitiveValue)
+  fullName: Octopus.Client.Model.SensitiveValue.Implicit(System.String to Octopus.Client.Model.SensitiveValue)
+  type: Operator
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SensitiveValue.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: op_Implicit
+    path: ../source/Octopus.Client/Model/SensitiveValue.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public static implicit operator SensitiveValue(string newValue)
+    parameters:
+    - id: newValue
+      type: System.String
+    return:
+      type: Octopus.Client.Model.SensitiveValue
+    content.vb: Public Shared Widening Operator CType(newValue As String) As SensitiveValue
+  overload: Octopus.Client.Model.SensitiveValue.op_Implicit*
+  nameWithType.vb: SensitiveValue.Widening(String to SensitiveValue)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Octopus.Client.Model.SensitiveValue.Widening(System.String to Octopus.Client.Model.SensitiveValue)
+  name.vb: Widening(String to SensitiveValue)
+- uid: Octopus.Client.Model.SensitiveValue.Equals(Octopus.Client.Model.SensitiveValue)
+  commentId: M:Octopus.Client.Model.SensitiveValue.Equals(Octopus.Client.Model.SensitiveValue)
+  id: Equals(Octopus.Client.Model.SensitiveValue)
+  parent: Octopus.Client.Model.SensitiveValue
+  langs:
+  - csharp
+  - vb
+  name: Equals(SensitiveValue)
+  nameWithType: SensitiveValue.Equals(SensitiveValue)
+  fullName: Octopus.Client.Model.SensitiveValue.Equals(Octopus.Client.Model.SensitiveValue)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/SensitiveValue.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Equals
+    path: ../source/Octopus.Client/Model/SensitiveValue.cs
+    startLine: 22
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public bool Equals(SensitiveValue other)
+    parameters:
+    - id: other
+      type: Octopus.Client.Model.SensitiveValue
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As SensitiveValue) As Boolean
+  overload: Octopus.Client.Model.SensitiveValue.Equals*
+  implements:
+  - System.IEquatable{Octopus.Client.Model.SensitiveValue}.Equals(Octopus.Client.Model.SensitiveValue)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model.SensitiveValue.HasValue
+  commentId: P:Octopus.Client.Model.SensitiveValue.HasValue
+  isExternal: true
+- uid: Octopus.Client.Model.SensitiveValue.NewValue
+  commentId: P:Octopus.Client.Model.SensitiveValue.NewValue
+  isExternal: true
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IEquatable{Octopus.Client.Model.SensitiveValue}
+  commentId: T:System.IEquatable{Octopus.Client.Model.SensitiveValue}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<SensitiveValue>
+  nameWithType: IEquatable<SensitiveValue>
+  fullName: System.IEquatable<Octopus.Client.Model.SensitiveValue>
+  nameWithType.vb: IEquatable(Of SensitiveValue)
+  fullName.vb: System.IEquatable(Of Octopus.Client.Model.SensitiveValue)
+  name.vb: IEquatable(Of SensitiveValue)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.SensitiveValue
+    name: SensitiveValue
+    nameWithType: SensitiveValue
+    fullName: Octopus.Client.Model.SensitiveValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.SensitiveValue
+    name: SensitiveValue
+    nameWithType: SensitiveValue
+    fullName: Octopus.Client.Model.SensitiveValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.SensitiveValue.HasValue*
+  commentId: Overload:Octopus.Client.Model.SensitiveValue.HasValue
+  name: HasValue
+  nameWithType: SensitiveValue.HasValue
+  fullName: Octopus.Client.Model.SensitiveValue.HasValue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.SensitiveValue.NewValue*
+  commentId: Overload:Octopus.Client.Model.SensitiveValue.NewValue
+  name: NewValue
+  nameWithType: SensitiveValue.NewValue
+  fullName: Octopus.Client.Model.SensitiveValue.NewValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.SensitiveValue.Hint*
+  commentId: Overload:Octopus.Client.Model.SensitiveValue.Hint
+  name: Hint
+  nameWithType: SensitiveValue.Hint
+  fullName: Octopus.Client.Model.SensitiveValue.Hint
+- uid: Octopus.Client.Model.SensitiveValue.op_Implicit*
+  commentId: Overload:Octopus.Client.Model.SensitiveValue.op_Implicit
+  name: Implicit
+  nameWithType: SensitiveValue.Implicit
+  fullName: Octopus.Client.Model.SensitiveValue.Implicit
+  nameWithType.vb: SensitiveValue.Widening
+  fullName.vb: Octopus.Client.Model.SensitiveValue.Widening
+  name.vb: Widening
+- uid: Octopus.Client.Model.SensitiveValue
+  commentId: T:Octopus.Client.Model.SensitiveValue
+  parent: Octopus.Client.Model
+  name: SensitiveValue
+  nameWithType: SensitiveValue
+  fullName: Octopus.Client.Model.SensitiveValue
+- uid: Octopus.Client.Model.SensitiveValue.Equals*
+  commentId: Overload:Octopus.Client.Model.SensitiveValue.Equals
+  name: Equals
+  nameWithType: SensitiveValue.Equals
+  fullName: Octopus.Client.Model.SensitiveValue.Equals
+- uid: System.IEquatable{Octopus.Client.Model.SensitiveValue}.Equals(Octopus.Client.Model.SensitiveValue)
+  commentId: M:System.IEquatable{Octopus.Client.Model.SensitiveValue}.Equals(Octopus.Client.Model.SensitiveValue)
+  parent: System.IEquatable{Octopus.Client.Model.SensitiveValue}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(SensitiveValue)
+  nameWithType: IEquatable<SensitiveValue>.Equals(SensitiveValue)
+  fullName: System.IEquatable<Octopus.Client.Model.SensitiveValue>.Equals(Octopus.Client.Model.SensitiveValue)
+  nameWithType.vb: IEquatable(Of SensitiveValue).Equals(SensitiveValue)
+  fullName.vb: System.IEquatable(Of Octopus.Client.Model.SensitiveValue).Equals(Octopus.Client.Model.SensitiveValue)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<SensitiveValue>.Equals
+    fullName: System.IEquatable<Octopus.Client.Model.SensitiveValue>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.SensitiveValue
+    name: SensitiveValue
+    nameWithType: SensitiveValue
+    fullName: Octopus.Client.Model.SensitiveValue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of SensitiveValue).Equals
+    fullName: System.IEquatable(Of Octopus.Client.Model.SensitiveValue).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.SensitiveValue
+    name: SensitiveValue
+    nameWithType: SensitiveValue
+    fullName: Octopus.Client.Model.SensitiveValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

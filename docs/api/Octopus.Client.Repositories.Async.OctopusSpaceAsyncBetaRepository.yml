@@ -1,0 +1,498 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository
+  commentId: T:Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository
+  id: OctopusSpaceAsyncBetaRepository
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.#ctor(Octopus.Client.IOctopusAsyncRepository)
+  - Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  langs:
+  - csharp
+  - vb
+  name: OctopusSpaceAsyncBetaRepository
+  nameWithType: OctopusSpaceAsyncBetaRepository
+  fullName: Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/OctopusSpaceAsyncBetaRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: OctopusSpaceAsyncBetaRepository
+    path: ../source/Octopus.Client/Repositories/Async/OctopusSpaceAsyncBetaRepository.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: 'public class OctopusSpaceAsyncBetaRepository : IOctopusSpaceAsyncBetaRepository'
+    content.vb: >-
+      Public Class OctopusSpaceAsyncBetaRepository
+          Implements IOctopusSpaceAsyncBetaRepository
+  inheritance:
+  - System.Object
+  implements:
+  - Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.#ctor(Octopus.Client.IOctopusAsyncRepository)
+  commentId: M:Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.#ctor(Octopus.Client.IOctopusAsyncRepository)
+  id: '#ctor(Octopus.Client.IOctopusAsyncRepository)'
+  parent: Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository
+  langs:
+  - csharp
+  - vb
+  name: OctopusSpaceAsyncBetaRepository(IOctopusAsyncRepository)
+  nameWithType: OctopusSpaceAsyncBetaRepository.OctopusSpaceAsyncBetaRepository(IOctopusAsyncRepository)
+  fullName: Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.OctopusSpaceAsyncBetaRepository(Octopus.Client.IOctopusAsyncRepository)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/OctopusSpaceAsyncBetaRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Repositories/Async/OctopusSpaceAsyncBetaRepository.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: public OctopusSpaceAsyncBetaRepository(IOctopusAsyncRepository repository)
+    parameters:
+    - id: repository
+      type: Octopus.Client.IOctopusAsyncRepository
+    content.vb: Public Sub New(repository As IOctopusAsyncRepository)
+  overload: Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  commentId: M:Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  id: ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  parent: Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository
+  langs:
+  - csharp
+  - vb
+  name: ForBranch(VersionControlBranchResource)
+  nameWithType: OctopusSpaceAsyncBetaRepository.ForBranch(VersionControlBranchResource)
+  fullName: Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/OctopusSpaceAsyncBetaRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ForBranch
+    path: ../source/Octopus.Client/Repositories/Async/OctopusSpaceAsyncBetaRepository.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: public IBranchScopedRepository ForBranch(VersionControlBranchResource branch)
+    parameters:
+    - id: branch
+      type: Octopus.Client.Model.VersionControlBranchResource
+    return:
+      type: Octopus.Client.Repositories.Async.IBranchScopedRepository
+    content.vb: Public Function ForBranch(branch As VersionControlBranchResource) As IBranchScopedRepository
+  overload: Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.ForBranch*
+  implements:
+  - Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository
+  commentId: T:Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository
+  parent: Octopus.Client.Repositories.Async
+  name: IOctopusSpaceAsyncBetaRepository
+  nameWithType: IOctopusSpaceAsyncBetaRepository
+  fullName: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.#ctor*
+  commentId: Overload:Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.#ctor
+  name: OctopusSpaceAsyncBetaRepository
+  nameWithType: OctopusSpaceAsyncBetaRepository.OctopusSpaceAsyncBetaRepository
+  fullName: Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.OctopusSpaceAsyncBetaRepository
+- uid: Octopus.Client.IOctopusAsyncRepository
+  commentId: T:Octopus.Client.IOctopusAsyncRepository
+  parent: Octopus.Client
+  name: IOctopusAsyncRepository
+  nameWithType: IOctopusAsyncRepository
+  fullName: Octopus.Client.IOctopusAsyncRepository
+- uid: Octopus.Client
+  commentId: N:Octopus.Client
+  name: Octopus.Client
+  nameWithType: Octopus.Client
+  fullName: Octopus.Client
+- uid: Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.ForBranch*
+  commentId: Overload:Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.ForBranch
+  name: ForBranch
+  nameWithType: OctopusSpaceAsyncBetaRepository.ForBranch
+  fullName: Octopus.Client.Repositories.Async.OctopusSpaceAsyncBetaRepository.ForBranch
+- uid: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  commentId: M:Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  parent: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository
+  name: ForBranch(VersionControlBranchResource)
+  nameWithType: IOctopusSpaceAsyncBetaRepository.ForBranch(VersionControlBranchResource)
+  fullName: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+    name: ForBranch
+    nameWithType: IOctopusSpaceAsyncBetaRepository.ForBranch
+    fullName: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.VersionControlBranchResource
+    name: VersionControlBranchResource
+    nameWithType: VersionControlBranchResource
+    fullName: Octopus.Client.Model.VersionControlBranchResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch(Octopus.Client.Model.VersionControlBranchResource)
+    name: ForBranch
+    nameWithType: IOctopusSpaceAsyncBetaRepository.ForBranch
+    fullName: Octopus.Client.Repositories.Async.IOctopusSpaceAsyncBetaRepository.ForBranch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.VersionControlBranchResource
+    name: VersionControlBranchResource
+    nameWithType: VersionControlBranchResource
+    fullName: Octopus.Client.Model.VersionControlBranchResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.VersionControlBranchResource
+  commentId: T:Octopus.Client.Model.VersionControlBranchResource
+  parent: Octopus.Client.Model
+  name: VersionControlBranchResource
+  nameWithType: VersionControlBranchResource
+  fullName: Octopus.Client.Model.VersionControlBranchResource
+- uid: Octopus.Client.Repositories.Async.IBranchScopedRepository
+  commentId: T:Octopus.Client.Repositories.Async.IBranchScopedRepository
+  parent: Octopus.Client.Repositories.Async
+  name: IBranchScopedRepository
+  nameWithType: IBranchScopedRepository
+  fullName: Octopus.Client.Repositories.Async.IBranchScopedRepository
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model

@@ -1,0 +1,1238 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.IProjectTriggerRepository
+  commentId: T:Octopus.Client.Repositories.Async.IProjectTriggerRepository
+  id: IProjectTriggerRepository
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.IProjectTriggerRepository.CreateOrModify(Octopus.Client.Model.ProjectResource,System.String,Octopus.Client.Model.Triggers.TriggerFilterResource,Octopus.Client.Model.Triggers.TriggerActionResource)
+  - Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByName(Octopus.Client.Model.ProjectResource,System.String)
+  - Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByRunbook(System.String[])
+  langs:
+  - csharp
+  - vb
+  name: IProjectTriggerRepository
+  nameWithType: IProjectTriggerRepository
+  fullName: Octopus.Client.Repositories.Async.IProjectTriggerRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/ProjectTriggerRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IProjectTriggerRepository
+    path: ../source/Octopus.Client/Repositories/Async/ProjectTriggerRepository.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: 'public interface IProjectTriggerRepository : ICreate<ProjectTriggerResource>, IModify<ProjectTriggerResource>, IGet<ProjectTriggerResource>, IDelete<ProjectTriggerResource>'
+    content.vb: >-
+      Public Interface IProjectTriggerRepository
+          Inherits ICreate(Of ProjectTriggerResource), IModify(Of ProjectTriggerResource), IGet(Of ProjectTriggerResource), IDelete(Of ProjectTriggerResource)
+  inheritedMembers:
+  - Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.ProjectTriggerResource}.Create(Octopus.Client.Model.ProjectTriggerResource,System.Object)
+  - Octopus.Client.Repositories.Async.IModify{Octopus.Client.Model.ProjectTriggerResource}.Modify(Octopus.Client.Model.ProjectTriggerResource)
+  - Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ProjectTriggerResource}.Get(System.String)
+  - Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ProjectTriggerResource}.Get(System.String[])
+  - Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ProjectTriggerResource}.Refresh(Octopus.Client.Model.ProjectTriggerResource)
+  - Octopus.Client.Repositories.Async.IDelete{Octopus.Client.Model.ProjectTriggerResource}.Delete(Octopus.Client.Model.ProjectTriggerResource)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByName(Octopus.Client.Model.ProjectResource,System.String)
+  commentId: M:Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByName(Octopus.Client.Model.ProjectResource,System.String)
+  id: FindByName(Octopus.Client.Model.ProjectResource,System.String)
+  parent: Octopus.Client.Repositories.Async.IProjectTriggerRepository
+  langs:
+  - csharp
+  - vb
+  name: FindByName(ProjectResource, String)
+  nameWithType: IProjectTriggerRepository.FindByName(ProjectResource, String)
+  fullName: Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByName(Octopus.Client.Model.ProjectResource, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/ProjectTriggerRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: FindByName
+    path: ../source/Octopus.Client/Repositories/Async/ProjectTriggerRepository.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<ProjectTriggerResource> FindByName(ProjectResource project, string name)
+    parameters:
+    - id: project
+      type: Octopus.Client.Model.ProjectResource
+    - id: name
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.ProjectTriggerResource}
+    content.vb: Function FindByName(project As ProjectResource, name As String) As Task(Of ProjectTriggerResource)
+  overload: Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByName*
+- uid: Octopus.Client.Repositories.Async.IProjectTriggerRepository.CreateOrModify(Octopus.Client.Model.ProjectResource,System.String,Octopus.Client.Model.Triggers.TriggerFilterResource,Octopus.Client.Model.Triggers.TriggerActionResource)
+  commentId: M:Octopus.Client.Repositories.Async.IProjectTriggerRepository.CreateOrModify(Octopus.Client.Model.ProjectResource,System.String,Octopus.Client.Model.Triggers.TriggerFilterResource,Octopus.Client.Model.Triggers.TriggerActionResource)
+  id: CreateOrModify(Octopus.Client.Model.ProjectResource,System.String,Octopus.Client.Model.Triggers.TriggerFilterResource,Octopus.Client.Model.Triggers.TriggerActionResource)
+  parent: Octopus.Client.Repositories.Async.IProjectTriggerRepository
+  langs:
+  - csharp
+  - vb
+  name: CreateOrModify(ProjectResource, String, TriggerFilterResource, TriggerActionResource)
+  nameWithType: IProjectTriggerRepository.CreateOrModify(ProjectResource, String, TriggerFilterResource, TriggerActionResource)
+  fullName: Octopus.Client.Repositories.Async.IProjectTriggerRepository.CreateOrModify(Octopus.Client.Model.ProjectResource, System.String, Octopus.Client.Model.Triggers.TriggerFilterResource, Octopus.Client.Model.Triggers.TriggerActionResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/ProjectTriggerRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CreateOrModify
+    path: ../source/Octopus.Client/Repositories/Async/ProjectTriggerRepository.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<ProjectTriggerEditor> CreateOrModify(ProjectResource project, string name, TriggerFilterResource filter, TriggerActionResource action)
+    parameters:
+    - id: project
+      type: Octopus.Client.Model.ProjectResource
+    - id: name
+      type: System.String
+    - id: filter
+      type: Octopus.Client.Model.Triggers.TriggerFilterResource
+    - id: action
+      type: Octopus.Client.Model.Triggers.TriggerActionResource
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Editors.Async.ProjectTriggerEditor}
+    content.vb: Function CreateOrModify(project As ProjectResource, name As String, filter As TriggerFilterResource, action As TriggerActionResource) As Task(Of ProjectTriggerEditor)
+  overload: Octopus.Client.Repositories.Async.IProjectTriggerRepository.CreateOrModify*
+- uid: Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByRunbook(System.String[])
+  commentId: M:Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByRunbook(System.String[])
+  id: FindByRunbook(System.String[])
+  parent: Octopus.Client.Repositories.Async.IProjectTriggerRepository
+  langs:
+  - csharp
+  - vb
+  name: FindByRunbook(String[])
+  nameWithType: IProjectTriggerRepository.FindByRunbook(String[])
+  fullName: Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByRunbook(System.String[])
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/ProjectTriggerRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: FindByRunbook
+    path: ../source/Octopus.Client/Repositories/Async/ProjectTriggerRepository.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<ResourceCollection<ProjectTriggerResource>> FindByRunbook(params string[] runbookIds)
+    parameters:
+    - id: runbookIds
+      type: System.String[]
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.ProjectTriggerResource}}
+    content.vb: Function FindByRunbook(ParamArray runbookIds As String()) As Task(Of ResourceCollection(Of ProjectTriggerResource))
+  overload: Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByRunbook*
+  nameWithType.vb: IProjectTriggerRepository.FindByRunbook(String())
+  fullName.vb: Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByRunbook(System.String())
+  name.vb: FindByRunbook(String())
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.ProjectTriggerResource}.Create(Octopus.Client.Model.ProjectTriggerResource,System.Object)
+  commentId: M:Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.ProjectTriggerResource}.Create(Octopus.Client.Model.ProjectTriggerResource,System.Object)
+  parent: Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.ProjectTriggerResource}
+  definition: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+  name: Create(ProjectTriggerResource, Object)
+  nameWithType: ICreate<ProjectTriggerResource>.Create(ProjectTriggerResource, Object)
+  fullName: Octopus.Client.Repositories.Async.ICreate<Octopus.Client.Model.ProjectTriggerResource>.Create(Octopus.Client.Model.ProjectTriggerResource, System.Object)
+  nameWithType.vb: ICreate(Of ProjectTriggerResource).Create(ProjectTriggerResource, Object)
+  fullName.vb: Octopus.Client.Repositories.Async.ICreate(Of Octopus.Client.Model.ProjectTriggerResource).Create(Octopus.Client.Model.ProjectTriggerResource, System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate<ProjectTriggerResource>.Create
+    fullName: Octopus.Client.Repositories.Async.ICreate<Octopus.Client.Model.ProjectTriggerResource>.Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate(Of ProjectTriggerResource).Create
+    fullName: Octopus.Client.Repositories.Async.ICreate(Of Octopus.Client.Model.ProjectTriggerResource).Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IModify{Octopus.Client.Model.ProjectTriggerResource}.Modify(Octopus.Client.Model.ProjectTriggerResource)
+  commentId: M:Octopus.Client.Repositories.Async.IModify{Octopus.Client.Model.ProjectTriggerResource}.Modify(Octopus.Client.Model.ProjectTriggerResource)
+  parent: Octopus.Client.Repositories.Async.IModify{Octopus.Client.Model.ProjectTriggerResource}
+  definition: Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+  name: Modify(ProjectTriggerResource)
+  nameWithType: IModify<ProjectTriggerResource>.Modify(ProjectTriggerResource)
+  fullName: Octopus.Client.Repositories.Async.IModify<Octopus.Client.Model.ProjectTriggerResource>.Modify(Octopus.Client.Model.ProjectTriggerResource)
+  nameWithType.vb: IModify(Of ProjectTriggerResource).Modify(ProjectTriggerResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IModify(Of Octopus.Client.Model.ProjectTriggerResource).Modify(Octopus.Client.Model.ProjectTriggerResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify<ProjectTriggerResource>.Modify
+    fullName: Octopus.Client.Repositories.Async.IModify<Octopus.Client.Model.ProjectTriggerResource>.Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify(Of ProjectTriggerResource).Modify
+    fullName: Octopus.Client.Repositories.Async.IModify(Of Octopus.Client.Model.ProjectTriggerResource).Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ProjectTriggerResource}.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ProjectTriggerResource}.Get(System.String)
+  parent: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ProjectTriggerResource}
+  definition: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+  name: Get(String)
+  nameWithType: IGet<ProjectTriggerResource>.Get(String)
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.ProjectTriggerResource>.Get(System.String)
+  nameWithType.vb: IGet(Of ProjectTriggerResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.ProjectTriggerResource).Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet<ProjectTriggerResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.ProjectTriggerResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet(Of ProjectTriggerResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.ProjectTriggerResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ProjectTriggerResource}.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ProjectTriggerResource}.Get(System.String[])
+  parent: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ProjectTriggerResource}
+  definition: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+  name: Get(String[])
+  nameWithType: IGet<ProjectTriggerResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.ProjectTriggerResource>.Get(System.String[])
+  nameWithType.vb: IGet(Of ProjectTriggerResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.ProjectTriggerResource).Get(System.String())
+  name.vb: Get(String())
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet<ProjectTriggerResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.ProjectTriggerResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet(Of ProjectTriggerResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.ProjectTriggerResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ProjectTriggerResource}.Refresh(Octopus.Client.Model.ProjectTriggerResource)
+  commentId: M:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ProjectTriggerResource}.Refresh(Octopus.Client.Model.ProjectTriggerResource)
+  parent: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ProjectTriggerResource}
+  definition: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+  name: Refresh(ProjectTriggerResource)
+  nameWithType: IGet<ProjectTriggerResource>.Refresh(ProjectTriggerResource)
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.ProjectTriggerResource>.Refresh(Octopus.Client.Model.ProjectTriggerResource)
+  nameWithType.vb: IGet(Of ProjectTriggerResource).Refresh(ProjectTriggerResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.ProjectTriggerResource).Refresh(Octopus.Client.Model.ProjectTriggerResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet<ProjectTriggerResource>.Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.ProjectTriggerResource>.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet(Of ProjectTriggerResource).Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.ProjectTriggerResource).Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IDelete{Octopus.Client.Model.ProjectTriggerResource}.Delete(Octopus.Client.Model.ProjectTriggerResource)
+  commentId: M:Octopus.Client.Repositories.Async.IDelete{Octopus.Client.Model.ProjectTriggerResource}.Delete(Octopus.Client.Model.ProjectTriggerResource)
+  parent: Octopus.Client.Repositories.Async.IDelete{Octopus.Client.Model.ProjectTriggerResource}
+  definition: Octopus.Client.Repositories.Async.IDelete`1.Delete(`0)
+  name: Delete(ProjectTriggerResource)
+  nameWithType: IDelete<ProjectTriggerResource>.Delete(ProjectTriggerResource)
+  fullName: Octopus.Client.Repositories.Async.IDelete<Octopus.Client.Model.ProjectTriggerResource>.Delete(Octopus.Client.Model.ProjectTriggerResource)
+  nameWithType.vb: IDelete(Of ProjectTriggerResource).Delete(ProjectTriggerResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IDelete(Of Octopus.Client.Model.ProjectTriggerResource).Delete(Octopus.Client.Model.ProjectTriggerResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1.Delete(`0)
+    name: Delete
+    nameWithType: IDelete<ProjectTriggerResource>.Delete
+    fullName: Octopus.Client.Repositories.Async.IDelete<Octopus.Client.Model.ProjectTriggerResource>.Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1.Delete(`0)
+    name: Delete
+    nameWithType: IDelete(Of ProjectTriggerResource).Delete
+    fullName: Octopus.Client.Repositories.Async.IDelete(Of Octopus.Client.Model.ProjectTriggerResource).Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+  commentId: M:Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+  isExternal: true
+  name: Create(TResource, Object)
+  nameWithType: ICreate<TResource>.Create(TResource, Object)
+  fullName: Octopus.Client.Repositories.Async.ICreate<TResource>.Create(TResource, System.Object)
+  nameWithType.vb: ICreate(Of TResource).Create(TResource, Object)
+  fullName.vb: Octopus.Client.Repositories.Async.ICreate(Of TResource).Create(TResource, System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate<TResource>.Create
+    fullName: Octopus.Client.Repositories.Async.ICreate<TResource>.Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1.Create(`0,System.Object)
+    name: Create
+    nameWithType: ICreate(Of TResource).Create
+    fullName: Octopus.Client.Repositories.Async.ICreate(Of TResource).Create
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.ProjectTriggerResource}
+  commentId: T:Octopus.Client.Repositories.Async.ICreate{Octopus.Client.Model.ProjectTriggerResource}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.ICreate`1
+  name: ICreate<ProjectTriggerResource>
+  nameWithType: ICreate<ProjectTriggerResource>
+  fullName: Octopus.Client.Repositories.Async.ICreate<Octopus.Client.Model.ProjectTriggerResource>
+  nameWithType.vb: ICreate(Of ProjectTriggerResource)
+  fullName.vb: Octopus.Client.Repositories.Async.ICreate(Of Octopus.Client.Model.ProjectTriggerResource)
+  name.vb: ICreate(Of ProjectTriggerResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.Async.ICreate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.Async.ICreate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+  commentId: M:Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+  name: Modify(TResource)
+  nameWithType: IModify<TResource>.Modify(TResource)
+  fullName: Octopus.Client.Repositories.Async.IModify<TResource>.Modify(TResource)
+  nameWithType.vb: IModify(Of TResource).Modify(TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IModify(Of TResource).Modify(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify<TResource>.Modify
+    fullName: Octopus.Client.Repositories.Async.IModify<TResource>.Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IModify`1.Modify(`0)
+    name: Modify
+    nameWithType: IModify(Of TResource).Modify
+    fullName: Octopus.Client.Repositories.Async.IModify(Of TResource).Modify
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IModify{Octopus.Client.Model.ProjectTriggerResource}
+  commentId: T:Octopus.Client.Repositories.Async.IModify{Octopus.Client.Model.ProjectTriggerResource}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.IModify`1
+  name: IModify<ProjectTriggerResource>
+  nameWithType: IModify<ProjectTriggerResource>
+  fullName: Octopus.Client.Repositories.Async.IModify<Octopus.Client.Model.ProjectTriggerResource>
+  nameWithType.vb: IModify(Of ProjectTriggerResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IModify(Of Octopus.Client.Model.ProjectTriggerResource)
+  name.vb: IModify(Of ProjectTriggerResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.Async.IModify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.Async.IModify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+  isExternal: true
+  name: Get(String)
+  nameWithType: IGet<TResource>.Get(String)
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get(System.String)
+  nameWithType.vb: IGet(Of TResource).Get(String)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource).Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet<TResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String)
+    name: Get
+    nameWithType: IGet(Of TResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of TResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ProjectTriggerResource}
+  commentId: T:Octopus.Client.Repositories.Async.IGet{Octopus.Client.Model.ProjectTriggerResource}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.IGet`1
+  name: IGet<ProjectTriggerResource>
+  nameWithType: IGet<ProjectTriggerResource>
+  fullName: Octopus.Client.Repositories.Async.IGet<Octopus.Client.Model.ProjectTriggerResource>
+  nameWithType.vb: IGet(Of ProjectTriggerResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of Octopus.Client.Model.ProjectTriggerResource)
+  name.vb: IGet(Of ProjectTriggerResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+  commentId: M:Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+  isExternal: true
+  name: Get(String[])
+  nameWithType: IGet<TResource>.Get(String[])
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get(System.String[])
+  nameWithType.vb: IGet(Of TResource).Get(String())
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource).Get(System.String())
+  name.vb: Get(String())
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet<TResource>.Get
+    fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Get(System.String[])
+    name: Get
+    nameWithType: IGet(Of TResource).Get
+    fullName: Octopus.Client.Repositories.Async.IGet(Of TResource).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+  commentId: M:Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+  name: Refresh(TResource)
+  nameWithType: IGet<TResource>.Refresh(TResource)
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Refresh(TResource)
+  nameWithType.vb: IGet(Of TResource).Refresh(TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource).Refresh(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet<TResource>.Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet<TResource>.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1.Refresh(`0)
+    name: Refresh
+    nameWithType: IGet(Of TResource).Refresh
+    fullName: Octopus.Client.Repositories.Async.IGet(Of TResource).Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IDelete`1.Delete(`0)
+  commentId: M:Octopus.Client.Repositories.Async.IDelete`1.Delete(`0)
+  name: Delete(TResource)
+  nameWithType: IDelete<TResource>.Delete(TResource)
+  fullName: Octopus.Client.Repositories.Async.IDelete<TResource>.Delete(TResource)
+  nameWithType.vb: IDelete(Of TResource).Delete(TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IDelete(Of TResource).Delete(TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1.Delete(`0)
+    name: Delete
+    nameWithType: IDelete<TResource>.Delete
+    fullName: Octopus.Client.Repositories.Async.IDelete<TResource>.Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1.Delete(`0)
+    name: Delete
+    nameWithType: IDelete(Of TResource).Delete
+    fullName: Octopus.Client.Repositories.Async.IDelete(Of TResource).Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IDelete{Octopus.Client.Model.ProjectTriggerResource}
+  commentId: T:Octopus.Client.Repositories.Async.IDelete{Octopus.Client.Model.ProjectTriggerResource}
+  parent: Octopus.Client.Repositories.Async
+  definition: Octopus.Client.Repositories.Async.IDelete`1
+  name: IDelete<ProjectTriggerResource>
+  nameWithType: IDelete<ProjectTriggerResource>
+  fullName: Octopus.Client.Repositories.Async.IDelete<Octopus.Client.Model.ProjectTriggerResource>
+  nameWithType.vb: IDelete(Of ProjectTriggerResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IDelete(Of Octopus.Client.Model.ProjectTriggerResource)
+  name.vb: IDelete(Of ProjectTriggerResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1
+    name: IDelete
+    nameWithType: IDelete
+    fullName: Octopus.Client.Repositories.Async.IDelete
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1
+    name: IDelete
+    nameWithType: IDelete
+    fullName: Octopus.Client.Repositories.Async.IDelete
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.ICreate`1
+  commentId: T:Octopus.Client.Repositories.Async.ICreate`1
+  name: ICreate<TResource>
+  nameWithType: ICreate<TResource>
+  fullName: Octopus.Client.Repositories.Async.ICreate<TResource>
+  nameWithType.vb: ICreate(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.ICreate(Of TResource)
+  name.vb: ICreate(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.Async.ICreate
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.ICreate`1
+    name: ICreate
+    nameWithType: ICreate
+    fullName: Octopus.Client.Repositories.Async.ICreate
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IModify`1
+  commentId: T:Octopus.Client.Repositories.Async.IModify`1
+  name: IModify<TResource>
+  nameWithType: IModify<TResource>
+  fullName: Octopus.Client.Repositories.Async.IModify<TResource>
+  nameWithType.vb: IModify(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IModify(Of TResource)
+  name.vb: IModify(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.Async.IModify
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IModify`1
+    name: IModify
+    nameWithType: IModify
+    fullName: Octopus.Client.Repositories.Async.IModify
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IGet`1
+  commentId: T:Octopus.Client.Repositories.Async.IGet`1
+  name: IGet<TResource>
+  nameWithType: IGet<TResource>
+  fullName: Octopus.Client.Repositories.Async.IGet<TResource>
+  nameWithType.vb: IGet(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IGet(Of TResource)
+  name.vb: IGet(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IGet`1
+    name: IGet
+    nameWithType: IGet
+    fullName: Octopus.Client.Repositories.Async.IGet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IDelete`1
+  commentId: T:Octopus.Client.Repositories.Async.IDelete`1
+  name: IDelete<TResource>
+  nameWithType: IDelete<TResource>
+  fullName: Octopus.Client.Repositories.Async.IDelete<TResource>
+  nameWithType.vb: IDelete(Of TResource)
+  fullName.vb: Octopus.Client.Repositories.Async.IDelete(Of TResource)
+  name.vb: IDelete(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1
+    name: IDelete
+    nameWithType: IDelete
+    fullName: Octopus.Client.Repositories.Async.IDelete
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Repositories.Async.IDelete`1
+    name: IDelete
+    nameWithType: IDelete
+    fullName: Octopus.Client.Repositories.Async.IDelete
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByName*
+  commentId: Overload:Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByName
+  name: FindByName
+  nameWithType: IProjectTriggerRepository.FindByName
+  fullName: Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByName
+- uid: Octopus.Client.Model.ProjectResource
+  commentId: T:Octopus.Client.Model.ProjectResource
+  parent: Octopus.Client.Model
+  name: ProjectResource
+  nameWithType: ProjectResource
+  fullName: Octopus.Client.Model.ProjectResource
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.ProjectTriggerResource}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.ProjectTriggerResource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ProjectTriggerResource>
+  nameWithType: Task<ProjectTriggerResource>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.ProjectTriggerResource>
+  nameWithType.vb: Task(Of ProjectTriggerResource)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.ProjectTriggerResource)
+  name.vb: Task(Of ProjectTriggerResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Octopus.Client.Repositories.Async.IProjectTriggerRepository.CreateOrModify*
+  commentId: Overload:Octopus.Client.Repositories.Async.IProjectTriggerRepository.CreateOrModify
+  name: CreateOrModify
+  nameWithType: IProjectTriggerRepository.CreateOrModify
+  fullName: Octopus.Client.Repositories.Async.IProjectTriggerRepository.CreateOrModify
+- uid: Octopus.Client.Model.Triggers.TriggerFilterResource
+  commentId: T:Octopus.Client.Model.Triggers.TriggerFilterResource
+  parent: Octopus.Client.Model.Triggers
+  name: TriggerFilterResource
+  nameWithType: TriggerFilterResource
+  fullName: Octopus.Client.Model.Triggers.TriggerFilterResource
+- uid: Octopus.Client.Model.Triggers.TriggerActionResource
+  commentId: T:Octopus.Client.Model.Triggers.TriggerActionResource
+  parent: Octopus.Client.Model.Triggers
+  name: TriggerActionResource
+  nameWithType: TriggerActionResource
+  fullName: Octopus.Client.Model.Triggers.TriggerActionResource
+- uid: System.Threading.Tasks.Task{Octopus.Client.Editors.Async.ProjectTriggerEditor}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Editors.Async.ProjectTriggerEditor}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ProjectTriggerEditor>
+  nameWithType: Task<ProjectTriggerEditor>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Editors.Async.ProjectTriggerEditor>
+  nameWithType.vb: Task(Of ProjectTriggerEditor)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Editors.Async.ProjectTriggerEditor)
+  name.vb: Task(Of ProjectTriggerEditor)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Editors.Async.ProjectTriggerEditor
+    name: ProjectTriggerEditor
+    nameWithType: ProjectTriggerEditor
+    fullName: Octopus.Client.Editors.Async.ProjectTriggerEditor
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Editors.Async.ProjectTriggerEditor
+    name: ProjectTriggerEditor
+    nameWithType: ProjectTriggerEditor
+    fullName: Octopus.Client.Editors.Async.ProjectTriggerEditor
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Triggers
+  commentId: N:Octopus.Client.Model.Triggers
+  name: Octopus.Client.Model.Triggers
+  nameWithType: Octopus.Client.Model.Triggers
+  fullName: Octopus.Client.Model.Triggers
+- uid: Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByRunbook*
+  commentId: Overload:Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByRunbook
+  name: FindByRunbook
+  nameWithType: IProjectTriggerRepository.FindByRunbook
+  fullName: Octopus.Client.Repositories.Async.IProjectTriggerRepository.FindByRunbook
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.ProjectTriggerResource}}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.ProjectTriggerResource}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ResourceCollection<ProjectTriggerResource>>
+  nameWithType: Task<ResourceCollection<ProjectTriggerResource>>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.ResourceCollection<Octopus.Client.Model.ProjectTriggerResource>>
+  nameWithType.vb: Task(Of ResourceCollection(Of ProjectTriggerResource))
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.ResourceCollection(Of Octopus.Client.Model.ProjectTriggerResource))
+  name.vb: Task(Of ResourceCollection(Of ProjectTriggerResource))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ProjectTriggerResource
+    name: ProjectTriggerResource
+    nameWithType: ProjectTriggerResource
+    fullName: Octopus.Client.Model.ProjectTriggerResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )

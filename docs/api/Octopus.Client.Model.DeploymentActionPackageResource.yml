@@ -1,0 +1,618 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.DeploymentActionPackageResource
+  commentId: T:Octopus.Client.Model.DeploymentActionPackageResource
+  id: DeploymentActionPackageResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.DeploymentActionPackageResource.#ctor(System.String)
+  - Octopus.Client.Model.DeploymentActionPackageResource.#ctor(System.String,System.String)
+  - Octopus.Client.Model.DeploymentActionPackageResource.DeploymentAction
+  - Octopus.Client.Model.DeploymentActionPackageResource.DeploymentActionNameMatches(System.String)
+  - Octopus.Client.Model.DeploymentActionPackageResource.PackageReference
+  - Octopus.Client.Model.DeploymentActionPackageResource.PackageReferenceNameMatches(System.String)
+  langs:
+  - csharp
+  - vb
+  name: DeploymentActionPackageResource
+  nameWithType: DeploymentActionPackageResource
+  fullName: Octopus.Client.Model.DeploymentActionPackageResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentActionPackageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DeploymentActionPackageResource
+    path: ../source/Octopus.Client/Model/DeploymentActionPackageResource.cs
+    startLine: 6
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public class DeploymentActionPackageResource
+    content.vb: Public Class DeploymentActionPackageResource
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.DeploymentActionPackageResource.#ctor(System.String)
+  commentId: M:Octopus.Client.Model.DeploymentActionPackageResource.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Octopus.Client.Model.DeploymentActionPackageResource
+  langs:
+  - csharp
+  - vb
+  name: DeploymentActionPackageResource(String)
+  nameWithType: DeploymentActionPackageResource.DeploymentActionPackageResource(String)
+  fullName: Octopus.Client.Model.DeploymentActionPackageResource.DeploymentActionPackageResource(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentActionPackageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/DeploymentActionPackageResource.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  example: []
+  syntax:
+    content: public DeploymentActionPackageResource(string deploymentAction)
+    parameters:
+    - id: deploymentAction
+      type: System.String
+      description: The name (or id) of the deployment action from the deployment process
+    content.vb: Public Sub New(deploymentAction As String)
+  overload: Octopus.Client.Model.DeploymentActionPackageResource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DeploymentActionPackageResource.#ctor(System.String,System.String)
+  commentId: M:Octopus.Client.Model.DeploymentActionPackageResource.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Octopus.Client.Model.DeploymentActionPackageResource
+  langs:
+  - csharp
+  - vb
+  name: DeploymentActionPackageResource(String, String)
+  nameWithType: DeploymentActionPackageResource.DeploymentActionPackageResource(String, String)
+  fullName: Octopus.Client.Model.DeploymentActionPackageResource.DeploymentActionPackageResource(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentActionPackageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/DeploymentActionPackageResource.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  example: []
+  syntax:
+    content: >-
+      [JsonConstructor]
+
+      public DeploymentActionPackageResource(string deploymentAction, string packageReference)
+    parameters:
+    - id: deploymentAction
+      type: System.String
+      description: The name (or id) of the deployment action from the deployment process
+    - id: packageReference
+      type: System.String
+      description: The name (or id) of the package-reference. This can be null or empty if it is the primary (un-named) package reference on an action.
+    content.vb: >-
+      <JsonConstructor>
+
+      Public Sub New(deploymentAction As String, packageReference As String)
+  overload: Octopus.Client.Model.DeploymentActionPackageResource.#ctor*
+  attributes:
+  - type: Newtonsoft.Json.JsonConstructorAttribute
+    ctor: Newtonsoft.Json.JsonConstructorAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DeploymentActionPackageResource.DeploymentAction
+  commentId: P:Octopus.Client.Model.DeploymentActionPackageResource.DeploymentAction
+  id: DeploymentAction
+  parent: Octopus.Client.Model.DeploymentActionPackageResource
+  langs:
+  - csharp
+  - vb
+  name: DeploymentAction
+  nameWithType: DeploymentActionPackageResource.DeploymentAction
+  fullName: Octopus.Client.Model.DeploymentActionPackageResource.DeploymentAction
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentActionPackageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DeploymentAction
+    path: ../source/Octopus.Client/Model/DeploymentActionPackageResource.cs
+    startLine: 25
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nThe name (or ID) of the deployment-action containing the package reference.\n"
+  example: []
+  syntax:
+    content: public string DeploymentAction { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DeploymentAction As String
+  overload: Octopus.Client.Model.DeploymentActionPackageResource.DeploymentAction*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DeploymentActionPackageResource.PackageReference
+  commentId: P:Octopus.Client.Model.DeploymentActionPackageResource.PackageReference
+  id: PackageReference
+  parent: Octopus.Client.Model.DeploymentActionPackageResource
+  langs:
+  - csharp
+  - vb
+  name: PackageReference
+  nameWithType: DeploymentActionPackageResource.PackageReference
+  fullName: Octopus.Client.Model.DeploymentActionPackageResource.PackageReference
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentActionPackageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: PackageReference
+    path: ../source/Octopus.Client/Model/DeploymentActionPackageResource.cs
+    startLine: 30
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nThe name of the package-reference.  This can be an empty string in the case of the \n"
+  example: []
+  syntax:
+    content: public string PackageReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PackageReference As String
+  overload: Octopus.Client.Model.DeploymentActionPackageResource.PackageReference*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DeploymentActionPackageResource.DeploymentActionNameMatches(System.String)
+  commentId: M:Octopus.Client.Model.DeploymentActionPackageResource.DeploymentActionNameMatches(System.String)
+  id: DeploymentActionNameMatches(System.String)
+  parent: Octopus.Client.Model.DeploymentActionPackageResource
+  langs:
+  - csharp
+  - vb
+  name: DeploymentActionNameMatches(String)
+  nameWithType: DeploymentActionPackageResource.DeploymentActionNameMatches(String)
+  fullName: Octopus.Client.Model.DeploymentActionPackageResource.DeploymentActionNameMatches(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentActionPackageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DeploymentActionNameMatches
+    path: ../source/Octopus.Client/Model/DeploymentActionPackageResource.cs
+    startLine: 35
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nPerforms a case-insensitive comparison\n"
+  example: []
+  syntax:
+    content: public bool DeploymentActionNameMatches(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function DeploymentActionNameMatches(name As String) As Boolean
+  overload: Octopus.Client.Model.DeploymentActionPackageResource.DeploymentActionNameMatches*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DeploymentActionPackageResource.PackageReferenceNameMatches(System.String)
+  commentId: M:Octopus.Client.Model.DeploymentActionPackageResource.PackageReferenceNameMatches(System.String)
+  id: PackageReferenceNameMatches(System.String)
+  parent: Octopus.Client.Model.DeploymentActionPackageResource
+  langs:
+  - csharp
+  - vb
+  name: PackageReferenceNameMatches(String)
+  nameWithType: DeploymentActionPackageResource.PackageReferenceNameMatches(String)
+  fullName: Octopus.Client.Model.DeploymentActionPackageResource.PackageReferenceNameMatches(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentActionPackageResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: PackageReferenceNameMatches
+    path: ../source/Octopus.Client/Model/DeploymentActionPackageResource.cs
+    startLine: 44
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nPerforms a case-insensitive comparison between the name of this package-reference and the\nsupplied name.  Nulls and empty strings are considered equal. \n"
+  example: []
+  syntax:
+    content: public bool PackageReferenceNameMatches(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function PackageReferenceNameMatches(name As String) As Boolean
+  overload: Octopus.Client.Model.DeploymentActionPackageResource.PackageReferenceNameMatches*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.DeploymentActionPackageResource.#ctor*
+  commentId: Overload:Octopus.Client.Model.DeploymentActionPackageResource.#ctor
+  name: DeploymentActionPackageResource
+  nameWithType: DeploymentActionPackageResource.DeploymentActionPackageResource
+  fullName: Octopus.Client.Model.DeploymentActionPackageResource.DeploymentActionPackageResource
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.DeploymentActionPackageResource.DeploymentAction*
+  commentId: Overload:Octopus.Client.Model.DeploymentActionPackageResource.DeploymentAction
+  name: DeploymentAction
+  nameWithType: DeploymentActionPackageResource.DeploymentAction
+  fullName: Octopus.Client.Model.DeploymentActionPackageResource.DeploymentAction
+- uid: Octopus.Client.Model.DeploymentActionPackageResource.PackageReference*
+  commentId: Overload:Octopus.Client.Model.DeploymentActionPackageResource.PackageReference
+  name: PackageReference
+  nameWithType: DeploymentActionPackageResource.PackageReference
+  fullName: Octopus.Client.Model.DeploymentActionPackageResource.PackageReference
+- uid: Octopus.Client.Model.DeploymentActionPackageResource.DeploymentActionNameMatches*
+  commentId: Overload:Octopus.Client.Model.DeploymentActionPackageResource.DeploymentActionNameMatches
+  name: DeploymentActionNameMatches
+  nameWithType: DeploymentActionPackageResource.DeploymentActionNameMatches
+  fullName: Octopus.Client.Model.DeploymentActionPackageResource.DeploymentActionNameMatches
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.DeploymentActionPackageResource.PackageReferenceNameMatches*
+  commentId: Overload:Octopus.Client.Model.DeploymentActionPackageResource.PackageReferenceNameMatches
+  name: PackageReferenceNameMatches
+  nameWithType: DeploymentActionPackageResource.PackageReferenceNameMatches
+  fullName: Octopus.Client.Model.DeploymentActionPackageResource.PackageReferenceNameMatches

@@ -1,0 +1,197 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Logging.ILogProvider
+  commentId: T:Octopus.Client.Logging.ILogProvider
+  id: ILogProvider
+  parent: Octopus.Client.Logging
+  children:
+  - Octopus.Client.Logging.ILogProvider.GetLogger(System.String)
+  - Octopus.Client.Logging.ILogProvider.OpenMappedContext(System.String,System.String)
+  - Octopus.Client.Logging.ILogProvider.OpenNestedContext(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ILogProvider
+  nameWithType: ILogProvider
+  fullName: Octopus.Client.Logging.ILogProvider
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Util/LibLog.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ILogProvider
+    path: ../source/Octopus.Client/Util/LibLog.cs
+    startLine: 380
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Logging
+  summary: "\nRepresents a way to get a <xref href=\"Octopus.Client.Logging.ILog\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public interface ILogProvider
+    content.vb: Public Interface ILogProvider
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Logging.ILogProvider.GetLogger(System.String)
+  commentId: M:Octopus.Client.Logging.ILogProvider.GetLogger(System.String)
+  id: GetLogger(System.String)
+  parent: Octopus.Client.Logging.ILogProvider
+  langs:
+  - csharp
+  - vb
+  name: GetLogger(String)
+  nameWithType: ILogProvider.GetLogger(String)
+  fullName: Octopus.Client.Logging.ILogProvider.GetLogger(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Util/LibLog.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetLogger
+    path: ../source/Octopus.Client/Util/LibLog.cs
+    startLine: 389
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Logging
+  summary: "\nGets the specified named logger.\n"
+  example: []
+  syntax:
+    content: Logger GetLogger(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the logger.
+    return:
+      type: Octopus.Client.Logging.Logger
+      description: The logger reference.
+    content.vb: Function GetLogger(name As String) As Logger
+  overload: Octopus.Client.Logging.ILogProvider.GetLogger*
+- uid: Octopus.Client.Logging.ILogProvider.OpenNestedContext(System.String)
+  commentId: M:Octopus.Client.Logging.ILogProvider.OpenNestedContext(System.String)
+  id: OpenNestedContext(System.String)
+  parent: Octopus.Client.Logging.ILogProvider
+  langs:
+  - csharp
+  - vb
+  name: OpenNestedContext(String)
+  nameWithType: ILogProvider.OpenNestedContext(String)
+  fullName: Octopus.Client.Logging.ILogProvider.OpenNestedContext(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Util/LibLog.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: OpenNestedContext
+    path: ../source/Octopus.Client/Util/LibLog.cs
+    startLine: 396
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Logging
+  summary: "\nOpens a nested diagnostics context. Not supported in EntLib logging.\n"
+  example: []
+  syntax:
+    content: IDisposable OpenNestedContext(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message to add to the diagnostics context.
+    return:
+      type: System.IDisposable
+      description: A disposable that when disposed removes the message from the context.
+    content.vb: Function OpenNestedContext(message As String) As IDisposable
+  overload: Octopus.Client.Logging.ILogProvider.OpenNestedContext*
+- uid: Octopus.Client.Logging.ILogProvider.OpenMappedContext(System.String,System.String)
+  commentId: M:Octopus.Client.Logging.ILogProvider.OpenMappedContext(System.String,System.String)
+  id: OpenMappedContext(System.String,System.String)
+  parent: Octopus.Client.Logging.ILogProvider
+  langs:
+  - csharp
+  - vb
+  name: OpenMappedContext(String, String)
+  nameWithType: ILogProvider.OpenMappedContext(String, String)
+  fullName: Octopus.Client.Logging.ILogProvider.OpenMappedContext(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Util/LibLog.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: OpenMappedContext
+    path: ../source/Octopus.Client/Util/LibLog.cs
+    startLine: 404
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Logging
+  summary: "\nOpens a mapped diagnostics context. Not supported in EntLib logging.\n"
+  example: []
+  syntax:
+    content: IDisposable OpenMappedContext(string key, string value)
+    parameters:
+    - id: key
+      type: System.String
+      description: A key.
+    - id: value
+      type: System.String
+      description: A value.
+    return:
+      type: System.IDisposable
+      description: A disposable that when disposed removes the map from the context.
+    content.vb: Function OpenMappedContext(key As String, value As String) As IDisposable
+  overload: Octopus.Client.Logging.ILogProvider.OpenMappedContext*
+references:
+- uid: Octopus.Client.Logging.ILog
+  commentId: T:Octopus.Client.Logging.ILog
+  isExternal: true
+- uid: Octopus.Client.Logging
+  commentId: N:Octopus.Client.Logging
+  name: Octopus.Client.Logging
+  nameWithType: Octopus.Client.Logging
+  fullName: Octopus.Client.Logging
+- uid: Octopus.Client.Logging.ILogProvider.GetLogger*
+  commentId: Overload:Octopus.Client.Logging.ILogProvider.GetLogger
+  name: GetLogger
+  nameWithType: ILogProvider.GetLogger
+  fullName: Octopus.Client.Logging.ILogProvider.GetLogger
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Logging.Logger
+  commentId: T:Octopus.Client.Logging.Logger
+  parent: Octopus.Client.Logging
+  name: Logger
+  nameWithType: Logger
+  fullName: Octopus.Client.Logging.Logger
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Logging.ILogProvider.OpenNestedContext*
+  commentId: Overload:Octopus.Client.Logging.ILogProvider.OpenNestedContext
+  name: OpenNestedContext
+  nameWithType: ILogProvider.OpenNestedContext
+  fullName: Octopus.Client.Logging.ILogProvider.OpenNestedContext
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Octopus.Client.Logging.ILogProvider.OpenMappedContext*
+  commentId: Overload:Octopus.Client.Logging.ILogProvider.OpenMappedContext
+  name: OpenMappedContext
+  nameWithType: ILogProvider.OpenMappedContext
+  fullName: Octopus.Client.Logging.ILogProvider.OpenMappedContext

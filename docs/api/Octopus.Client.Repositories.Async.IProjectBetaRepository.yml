@@ -1,0 +1,378 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.IProjectBetaRepository
+  commentId: T:Octopus.Client.Repositories.Async.IProjectBetaRepository
+  id: IProjectBetaRepository
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.IProjectBetaRepository.ConvertToVersionControlled(Octopus.Client.Model.ProjectResource,Octopus.Client.Model.VersionControlSettingsResource,System.String)
+  - Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranch(Octopus.Client.Model.ProjectResource,System.String)
+  - Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranches(Octopus.Client.Model.ProjectResource)
+  langs:
+  - csharp
+  - vb
+  name: IProjectBetaRepository
+  nameWithType: IProjectBetaRepository
+  fullName: Octopus.Client.Repositories.Async.IProjectBetaRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/ProjectRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IProjectBetaRepository
+    path: ../source/Octopus.Client/Repositories/Async/ProjectRepository.cs
+    startLine: 127
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: public interface IProjectBetaRepository
+    content.vb: Public Interface IProjectBetaRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranches(Octopus.Client.Model.ProjectResource)
+  commentId: M:Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranches(Octopus.Client.Model.ProjectResource)
+  id: GetVersionControlledBranches(Octopus.Client.Model.ProjectResource)
+  parent: Octopus.Client.Repositories.Async.IProjectBetaRepository
+  langs:
+  - csharp
+  - vb
+  name: GetVersionControlledBranches(ProjectResource)
+  nameWithType: IProjectBetaRepository.GetVersionControlledBranches(ProjectResource)
+  fullName: Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranches(Octopus.Client.Model.ProjectResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/ProjectRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetVersionControlledBranches
+    path: ../source/Octopus.Client/Repositories/Async/ProjectRepository.cs
+    startLine: 129
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<ResourceCollection<VersionControlBranchResource>> GetVersionControlledBranches(ProjectResource projectResource)
+    parameters:
+    - id: projectResource
+      type: Octopus.Client.Model.ProjectResource
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.VersionControlBranchResource}}
+    content.vb: Function GetVersionControlledBranches(projectResource As ProjectResource) As Task(Of ResourceCollection(Of VersionControlBranchResource))
+  overload: Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranches*
+- uid: Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranch(Octopus.Client.Model.ProjectResource,System.String)
+  commentId: M:Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranch(Octopus.Client.Model.ProjectResource,System.String)
+  id: GetVersionControlledBranch(Octopus.Client.Model.ProjectResource,System.String)
+  parent: Octopus.Client.Repositories.Async.IProjectBetaRepository
+  langs:
+  - csharp
+  - vb
+  name: GetVersionControlledBranch(ProjectResource, String)
+  nameWithType: IProjectBetaRepository.GetVersionControlledBranch(ProjectResource, String)
+  fullName: Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranch(Octopus.Client.Model.ProjectResource, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/ProjectRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetVersionControlledBranch
+    path: ../source/Octopus.Client/Repositories/Async/ProjectRepository.cs
+    startLine: 130
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<VersionControlBranchResource> GetVersionControlledBranch(ProjectResource projectResource, string branch)
+    parameters:
+    - id: projectResource
+      type: Octopus.Client.Model.ProjectResource
+    - id: branch
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.VersionControlBranchResource}
+    content.vb: Function GetVersionControlledBranch(projectResource As ProjectResource, branch As String) As Task(Of VersionControlBranchResource)
+  overload: Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranch*
+- uid: Octopus.Client.Repositories.Async.IProjectBetaRepository.ConvertToVersionControlled(Octopus.Client.Model.ProjectResource,Octopus.Client.Model.VersionControlSettingsResource,System.String)
+  commentId: M:Octopus.Client.Repositories.Async.IProjectBetaRepository.ConvertToVersionControlled(Octopus.Client.Model.ProjectResource,Octopus.Client.Model.VersionControlSettingsResource,System.String)
+  id: ConvertToVersionControlled(Octopus.Client.Model.ProjectResource,Octopus.Client.Model.VersionControlSettingsResource,System.String)
+  parent: Octopus.Client.Repositories.Async.IProjectBetaRepository
+  langs:
+  - csharp
+  - vb
+  name: ConvertToVersionControlled(ProjectResource, VersionControlSettingsResource, String)
+  nameWithType: IProjectBetaRepository.ConvertToVersionControlled(ProjectResource, VersionControlSettingsResource, String)
+  fullName: Octopus.Client.Repositories.Async.IProjectBetaRepository.ConvertToVersionControlled(Octopus.Client.Model.ProjectResource, Octopus.Client.Model.VersionControlSettingsResource, System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/ProjectRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ConvertToVersionControlled
+    path: ../source/Octopus.Client/Repositories/Async/ProjectRepository.cs
+    startLine: 131
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<ConvertProjectToVersionControlledResponse> ConvertToVersionControlled(ProjectResource project, VersionControlSettingsResource versionControlSettings, string commitMessage)
+    parameters:
+    - id: project
+      type: Octopus.Client.Model.ProjectResource
+    - id: versionControlSettings
+      type: Octopus.Client.Model.VersionControlSettingsResource
+    - id: commitMessage
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.VersionControl.ConvertProjectToVersionControlledResponse}
+    content.vb: Function ConvertToVersionControlled(project As ProjectResource, versionControlSettings As VersionControlSettingsResource, commitMessage As String) As Task(Of ConvertProjectToVersionControlledResponse)
+  overload: Octopus.Client.Repositories.Async.IProjectBetaRepository.ConvertToVersionControlled*
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranches*
+  commentId: Overload:Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranches
+  name: GetVersionControlledBranches
+  nameWithType: IProjectBetaRepository.GetVersionControlledBranches
+  fullName: Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranches
+- uid: Octopus.Client.Model.ProjectResource
+  commentId: T:Octopus.Client.Model.ProjectResource
+  parent: Octopus.Client.Model
+  name: ProjectResource
+  nameWithType: ProjectResource
+  fullName: Octopus.Client.Model.ProjectResource
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.VersionControlBranchResource}}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.VersionControlBranchResource}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ResourceCollection<VersionControlBranchResource>>
+  nameWithType: Task<ResourceCollection<VersionControlBranchResource>>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.ResourceCollection<Octopus.Client.Model.VersionControlBranchResource>>
+  nameWithType.vb: Task(Of ResourceCollection(Of VersionControlBranchResource))
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.ResourceCollection(Of Octopus.Client.Model.VersionControlBranchResource))
+  name.vb: Task(Of ResourceCollection(Of VersionControlBranchResource))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.VersionControlBranchResource
+    name: VersionControlBranchResource
+    nameWithType: VersionControlBranchResource
+    fullName: Octopus.Client.Model.VersionControlBranchResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.VersionControlBranchResource
+    name: VersionControlBranchResource
+    nameWithType: VersionControlBranchResource
+    fullName: Octopus.Client.Model.VersionControlBranchResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranch*
+  commentId: Overload:Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranch
+  name: GetVersionControlledBranch
+  nameWithType: IProjectBetaRepository.GetVersionControlledBranch
+  fullName: Octopus.Client.Repositories.Async.IProjectBetaRepository.GetVersionControlledBranch
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.VersionControlBranchResource}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.VersionControlBranchResource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<VersionControlBranchResource>
+  nameWithType: Task<VersionControlBranchResource>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.VersionControlBranchResource>
+  nameWithType.vb: Task(Of VersionControlBranchResource)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.VersionControlBranchResource)
+  name.vb: Task(Of VersionControlBranchResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.VersionControlBranchResource
+    name: VersionControlBranchResource
+    nameWithType: VersionControlBranchResource
+    fullName: Octopus.Client.Model.VersionControlBranchResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.VersionControlBranchResource
+    name: VersionControlBranchResource
+    nameWithType: VersionControlBranchResource
+    fullName: Octopus.Client.Model.VersionControlBranchResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Repositories.Async.IProjectBetaRepository.ConvertToVersionControlled*
+  commentId: Overload:Octopus.Client.Repositories.Async.IProjectBetaRepository.ConvertToVersionControlled
+  name: ConvertToVersionControlled
+  nameWithType: IProjectBetaRepository.ConvertToVersionControlled
+  fullName: Octopus.Client.Repositories.Async.IProjectBetaRepository.ConvertToVersionControlled
+- uid: Octopus.Client.Model.VersionControlSettingsResource
+  commentId: T:Octopus.Client.Model.VersionControlSettingsResource
+  parent: Octopus.Client.Model
+  name: VersionControlSettingsResource
+  nameWithType: VersionControlSettingsResource
+  fullName: Octopus.Client.Model.VersionControlSettingsResource
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.VersionControl.ConvertProjectToVersionControlledResponse}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.VersionControl.ConvertProjectToVersionControlledResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ConvertProjectToVersionControlledResponse>
+  nameWithType: Task<ConvertProjectToVersionControlledResponse>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.VersionControl.ConvertProjectToVersionControlledResponse>
+  nameWithType.vb: Task(Of ConvertProjectToVersionControlledResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.VersionControl.ConvertProjectToVersionControlledResponse)
+  name.vb: Task(Of ConvertProjectToVersionControlledResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.VersionControl.ConvertProjectToVersionControlledResponse
+    name: ConvertProjectToVersionControlledResponse
+    nameWithType: ConvertProjectToVersionControlledResponse
+    fullName: Octopus.Client.Model.VersionControl.ConvertProjectToVersionControlledResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.VersionControl.ConvertProjectToVersionControlledResponse
+    name: ConvertProjectToVersionControlledResponse
+    nameWithType: ConvertProjectToVersionControlledResponse
+    fullName: Octopus.Client.Model.VersionControl.ConvertProjectToVersionControlledResponse
+  - name: )
+    nameWithType: )
+    fullName: )

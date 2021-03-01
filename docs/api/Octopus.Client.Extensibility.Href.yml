@@ -1,0 +1,951 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Extensibility.Href
+  commentId: T:Octopus.Client.Extensibility.Href
+  id: Href
+  parent: Octopus.Client.Extensibility
+  children:
+  - Octopus.Client.Extensibility.Href.#ctor(System.String)
+  - Octopus.Client.Extensibility.Href.AsString
+  - Octopus.Client.Extensibility.Href.Equals(Octopus.Client.Extensibility.Href)
+  - Octopus.Client.Extensibility.Href.Equals(System.Object)
+  - Octopus.Client.Extensibility.Href.GetHashCode
+  - Octopus.Client.Extensibility.Href.op_Equality(Octopus.Client.Extensibility.Href,Octopus.Client.Extensibility.Href)
+  - Octopus.Client.Extensibility.Href.op_Implicit(Octopus.Client.Extensibility.Href)~System.String
+  - Octopus.Client.Extensibility.Href.op_Implicit(System.String)~Octopus.Client.Extensibility.Href
+  - Octopus.Client.Extensibility.Href.op_Inequality(Octopus.Client.Extensibility.Href,Octopus.Client.Extensibility.Href)
+  - Octopus.Client.Extensibility.Href.ToString
+  langs:
+  - csharp
+  - vb
+  name: Href
+  nameWithType: Href
+  fullName: Octopus.Client.Extensibility.Href
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Extensibility/Href.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Href
+    path: ../source/Octopus.Client/Extensibility/Href.cs
+    startLine: 4
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Extensibility
+  syntax:
+    content: 'public class Href : IEquatable<Href>'
+    content.vb: >-
+      Public Class Href
+          Implements IEquatable(Of Href)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Octopus.Client.Extensibility.Href}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Extensibility.Href.#ctor(System.String)
+  commentId: M:Octopus.Client.Extensibility.Href.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Octopus.Client.Extensibility.Href
+  langs:
+  - csharp
+  - vb
+  name: Href(String)
+  nameWithType: Href.Href(String)
+  fullName: Octopus.Client.Extensibility.Href.Href(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Extensibility/Href.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Extensibility/Href.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Extensibility
+  syntax:
+    content: public Href(string link)
+    parameters:
+    - id: link
+      type: System.String
+    content.vb: Public Sub New(link As String)
+  overload: Octopus.Client.Extensibility.Href.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Extensibility.Href.AsString
+  commentId: M:Octopus.Client.Extensibility.Href.AsString
+  id: AsString
+  parent: Octopus.Client.Extensibility.Href
+  langs:
+  - csharp
+  - vb
+  name: AsString()
+  nameWithType: Href.AsString()
+  fullName: Octopus.Client.Extensibility.Href.AsString()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Extensibility/Href.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AsString
+    path: ../source/Octopus.Client/Extensibility/Href.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Extensibility
+  syntax:
+    content: public string AsString()
+    return:
+      type: System.String
+    content.vb: Public Function AsString As String
+  overload: Octopus.Client.Extensibility.Href.AsString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Extensibility.Href.Equals(Octopus.Client.Extensibility.Href)
+  commentId: M:Octopus.Client.Extensibility.Href.Equals(Octopus.Client.Extensibility.Href)
+  id: Equals(Octopus.Client.Extensibility.Href)
+  parent: Octopus.Client.Extensibility.Href
+  langs:
+  - csharp
+  - vb
+  name: Equals(Href)
+  nameWithType: Href.Equals(Href)
+  fullName: Octopus.Client.Extensibility.Href.Equals(Octopus.Client.Extensibility.Href)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Extensibility/Href.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Equals
+    path: ../source/Octopus.Client/Extensibility/Href.cs
+    startLine: 18
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Extensibility
+  syntax:
+    content: public bool Equals(Href other)
+    parameters:
+    - id: other
+      type: Octopus.Client.Extensibility.Href
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Href) As Boolean
+  overload: Octopus.Client.Extensibility.Href.Equals*
+  implements:
+  - System.IEquatable{Octopus.Client.Extensibility.Href}.Equals(Octopus.Client.Extensibility.Href)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Extensibility.Href.Equals(System.Object)
+  commentId: M:Octopus.Client.Extensibility.Href.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Octopus.Client.Extensibility.Href
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Href.Equals(Object)
+  fullName: Octopus.Client.Extensibility.Href.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Extensibility/Href.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Equals
+    path: ../source/Octopus.Client/Extensibility/Href.cs
+    startLine: 23
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Extensibility
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Octopus.Client.Extensibility.Href.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Octopus.Client.Extensibility.Href.GetHashCode
+  commentId: M:Octopus.Client.Extensibility.Href.GetHashCode
+  id: GetHashCode
+  parent: Octopus.Client.Extensibility.Href
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Href.GetHashCode()
+  fullName: Octopus.Client.Extensibility.Href.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Extensibility/Href.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetHashCode
+    path: ../source/Octopus.Client/Extensibility/Href.cs
+    startLine: 31
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Extensibility
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.Object.GetHashCode
+  overload: Octopus.Client.Extensibility.Href.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Octopus.Client.Extensibility.Href.ToString
+  commentId: M:Octopus.Client.Extensibility.Href.ToString
+  id: ToString
+  parent: Octopus.Client.Extensibility.Href
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Href.ToString()
+  fullName: Octopus.Client.Extensibility.Href.ToString()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Extensibility/Href.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ToString
+    path: ../source/Octopus.Client/Extensibility/Href.cs
+    startLine: 36
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Extensibility
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Octopus.Client.Extensibility.Href.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Octopus.Client.Extensibility.Href.op_Equality(Octopus.Client.Extensibility.Href,Octopus.Client.Extensibility.Href)
+  commentId: M:Octopus.Client.Extensibility.Href.op_Equality(Octopus.Client.Extensibility.Href,Octopus.Client.Extensibility.Href)
+  id: op_Equality(Octopus.Client.Extensibility.Href,Octopus.Client.Extensibility.Href)
+  parent: Octopus.Client.Extensibility.Href
+  langs:
+  - csharp
+  - vb
+  name: Equality(Href, Href)
+  nameWithType: Href.Equality(Href, Href)
+  fullName: Octopus.Client.Extensibility.Href.Equality(Octopus.Client.Extensibility.Href, Octopus.Client.Extensibility.Href)
+  type: Operator
+  source:
+    remote:
+      path: source/Octopus.Client/Extensibility/Href.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: op_Equality
+    path: ../source/Octopus.Client/Extensibility/Href.cs
+    startLine: 41
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Extensibility
+  syntax:
+    content: public static bool operator ==(Href left, Href right)
+    parameters:
+    - id: left
+      type: Octopus.Client.Extensibility.Href
+    - id: right
+      type: Octopus.Client.Extensibility.Href
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Href, right As Href) As Boolean
+  overload: Octopus.Client.Extensibility.Href.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Octopus.Client.Extensibility.Href.op_Inequality(Octopus.Client.Extensibility.Href,Octopus.Client.Extensibility.Href)
+  commentId: M:Octopus.Client.Extensibility.Href.op_Inequality(Octopus.Client.Extensibility.Href,Octopus.Client.Extensibility.Href)
+  id: op_Inequality(Octopus.Client.Extensibility.Href,Octopus.Client.Extensibility.Href)
+  parent: Octopus.Client.Extensibility.Href
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Href, Href)
+  nameWithType: Href.Inequality(Href, Href)
+  fullName: Octopus.Client.Extensibility.Href.Inequality(Octopus.Client.Extensibility.Href, Octopus.Client.Extensibility.Href)
+  type: Operator
+  source:
+    remote:
+      path: source/Octopus.Client/Extensibility/Href.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: op_Inequality
+    path: ../source/Octopus.Client/Extensibility/Href.cs
+    startLine: 46
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Extensibility
+  syntax:
+    content: public static bool operator !=(Href left, Href right)
+    parameters:
+    - id: left
+      type: Octopus.Client.Extensibility.Href
+    - id: right
+      type: Octopus.Client.Extensibility.Href
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Href, right As Href) As Boolean
+  overload: Octopus.Client.Extensibility.Href.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Octopus.Client.Extensibility.Href.op_Implicit(Octopus.Client.Extensibility.Href)~System.String
+  commentId: M:Octopus.Client.Extensibility.Href.op_Implicit(Octopus.Client.Extensibility.Href)~System.String
+  id: op_Implicit(Octopus.Client.Extensibility.Href)~System.String
+  parent: Octopus.Client.Extensibility.Href
+  langs:
+  - csharp
+  - vb
+  name: Implicit(Href to String)
+  nameWithType: Href.Implicit(Href to String)
+  fullName: Octopus.Client.Extensibility.Href.Implicit(Octopus.Client.Extensibility.Href to System.String)
+  type: Operator
+  source:
+    remote:
+      path: source/Octopus.Client/Extensibility/Href.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: op_Implicit
+    path: ../source/Octopus.Client/Extensibility/Href.cs
+    startLine: 51
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Extensibility
+  syntax:
+    content: public static implicit operator string (Href href)
+    parameters:
+    - id: href
+      type: Octopus.Client.Extensibility.Href
+    return:
+      type: System.String
+    content.vb: Public Shared Widening Operator CType(href As Href) As String
+  overload: Octopus.Client.Extensibility.Href.op_Implicit*
+  nameWithType.vb: Href.Widening(Href to String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Octopus.Client.Extensibility.Href.Widening(Octopus.Client.Extensibility.Href to System.String)
+  name.vb: Widening(Href to String)
+- uid: Octopus.Client.Extensibility.Href.op_Implicit(System.String)~Octopus.Client.Extensibility.Href
+  commentId: M:Octopus.Client.Extensibility.Href.op_Implicit(System.String)~Octopus.Client.Extensibility.Href
+  id: op_Implicit(System.String)~Octopus.Client.Extensibility.Href
+  parent: Octopus.Client.Extensibility.Href
+  langs:
+  - csharp
+  - vb
+  name: Implicit(String to Href)
+  nameWithType: Href.Implicit(String to Href)
+  fullName: Octopus.Client.Extensibility.Href.Implicit(System.String to Octopus.Client.Extensibility.Href)
+  type: Operator
+  source:
+    remote:
+      path: source/Octopus.Client/Extensibility/Href.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: op_Implicit
+    path: ../source/Octopus.Client/Extensibility/Href.cs
+    startLine: 56
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Extensibility
+  syntax:
+    content: public static implicit operator Href(string href)
+    parameters:
+    - id: href
+      type: System.String
+    return:
+      type: Octopus.Client.Extensibility.Href
+    content.vb: Public Shared Widening Operator CType(href As String) As Href
+  overload: Octopus.Client.Extensibility.Href.op_Implicit*
+  nameWithType.vb: Href.Widening(String to Href)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Octopus.Client.Extensibility.Href.Widening(System.String to Octopus.Client.Extensibility.Href)
+  name.vb: Widening(String to Href)
+references:
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IEquatable{Octopus.Client.Extensibility.Href}
+  commentId: T:System.IEquatable{Octopus.Client.Extensibility.Href}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<Href>
+  nameWithType: IEquatable<Href>
+  fullName: System.IEquatable<Octopus.Client.Extensibility.Href>
+  nameWithType.vb: IEquatable(Of Href)
+  fullName.vb: System.IEquatable(Of Octopus.Client.Extensibility.Href)
+  name.vb: IEquatable(Of Href)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Extensibility.Href
+    name: Href
+    nameWithType: Href
+    fullName: Octopus.Client.Extensibility.Href
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Extensibility.Href
+    name: Href
+    nameWithType: Href
+    fullName: Octopus.Client.Extensibility.Href
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Extensibility.Href.#ctor*
+  commentId: Overload:Octopus.Client.Extensibility.Href.#ctor
+  name: Href
+  nameWithType: Href.Href
+  fullName: Octopus.Client.Extensibility.Href.Href
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Extensibility.Href.AsString*
+  commentId: Overload:Octopus.Client.Extensibility.Href.AsString
+  name: AsString
+  nameWithType: Href.AsString
+  fullName: Octopus.Client.Extensibility.Href.AsString
+- uid: Octopus.Client.Extensibility.Href.Equals*
+  commentId: Overload:Octopus.Client.Extensibility.Href.Equals
+  name: Equals
+  nameWithType: Href.Equals
+  fullName: Octopus.Client.Extensibility.Href.Equals
+- uid: System.IEquatable{Octopus.Client.Extensibility.Href}.Equals(Octopus.Client.Extensibility.Href)
+  commentId: M:System.IEquatable{Octopus.Client.Extensibility.Href}.Equals(Octopus.Client.Extensibility.Href)
+  parent: System.IEquatable{Octopus.Client.Extensibility.Href}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(Href)
+  nameWithType: IEquatable<Href>.Equals(Href)
+  fullName: System.IEquatable<Octopus.Client.Extensibility.Href>.Equals(Octopus.Client.Extensibility.Href)
+  nameWithType.vb: IEquatable(Of Href).Equals(Href)
+  fullName.vb: System.IEquatable(Of Octopus.Client.Extensibility.Href).Equals(Octopus.Client.Extensibility.Href)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<Href>.Equals
+    fullName: System.IEquatable<Octopus.Client.Extensibility.Href>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Extensibility.Href
+    name: Href
+    nameWithType: Href
+    fullName: Octopus.Client.Extensibility.Href
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of Href).Equals
+    fullName: System.IEquatable(Of Octopus.Client.Extensibility.Href).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Extensibility.Href
+    name: Href
+    nameWithType: Href
+    fullName: Octopus.Client.Extensibility.Href
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Extensibility.Href
+  commentId: T:Octopus.Client.Extensibility.Href
+  parent: Octopus.Client.Extensibility
+  name: Href
+  nameWithType: Href
+  fullName: Octopus.Client.Extensibility.Href
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Extensibility.Href.GetHashCode*
+  commentId: Overload:Octopus.Client.Extensibility.Href.GetHashCode
+  name: GetHashCode
+  nameWithType: Href.GetHashCode
+  fullName: Octopus.Client.Extensibility.Href.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Extensibility.Href.ToString*
+  commentId: Overload:Octopus.Client.Extensibility.Href.ToString
+  name: ToString
+  nameWithType: Href.ToString
+  fullName: Octopus.Client.Extensibility.Href.ToString
+- uid: Octopus.Client.Extensibility.Href.op_Equality*
+  commentId: Overload:Octopus.Client.Extensibility.Href.op_Equality
+  name: Equality
+  nameWithType: Href.Equality
+  fullName: Octopus.Client.Extensibility.Href.Equality
+- uid: Octopus.Client.Extensibility.Href.op_Inequality*
+  commentId: Overload:Octopus.Client.Extensibility.Href.op_Inequality
+  name: Inequality
+  nameWithType: Href.Inequality
+  fullName: Octopus.Client.Extensibility.Href.Inequality
+- uid: Octopus.Client.Extensibility.Href.op_Implicit*
+  commentId: Overload:Octopus.Client.Extensibility.Href.op_Implicit
+  name: Implicit
+  nameWithType: Href.Implicit
+  fullName: Octopus.Client.Extensibility.Href.Implicit
+  nameWithType.vb: Href.Widening
+  fullName.vb: Octopus.Client.Extensibility.Href.Widening
+  name.vb: Widening

@@ -1,0 +1,963 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.UserPermissionSetResource
+  commentId: T:Octopus.Client.Model.UserPermissionSetResource
+  id: UserPermissionSetResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.UserPermissionSetResource.IsPermissionsComplete
+  - Octopus.Client.Model.UserPermissionSetResource.IsTeamsComplete
+  - Octopus.Client.Model.UserPermissionSetResource.SpacePermissions
+  - Octopus.Client.Model.UserPermissionSetResource.SystemPermissions
+  - Octopus.Client.Model.UserPermissionSetResource.Teams
+  langs:
+  - csharp
+  - vb
+  name: UserPermissionSetResource
+  nameWithType: UserPermissionSetResource
+  fullName: Octopus.Client.Model.UserPermissionSetResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/UserPermissionSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: UserPermissionSetResource
+    path: ../source/Octopus.Client/Model/UserPermissionSetResource.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nSummarizes the permissions assigned to a user via their\nteam membership.\n"
+  example: []
+  syntax:
+    content: 'public class UserPermissionSetResource : Resource, IResource, IAuditedResource'
+    content.vb: >-
+      Public Class UserPermissionSetResource
+          Inherits Resource
+          Implements IResource, IAuditedResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  inheritedMembers:
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.UserPermissionSetResource.SpacePermissions
+  commentId: P:Octopus.Client.Model.UserPermissionSetResource.SpacePermissions
+  id: SpacePermissions
+  parent: Octopus.Client.Model.UserPermissionSetResource
+  langs:
+  - csharp
+  - vb
+  name: SpacePermissions
+  nameWithType: UserPermissionSetResource.SpacePermissions
+  fullName: Octopus.Client.Model.UserPermissionSetResource.SpacePermissions
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/UserPermissionSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SpacePermissions
+    path: ../source/Octopus.Client/Model/UserPermissionSetResource.cs
+    startLine: 20
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nLists individual space permissions granted, including restrictions where\napplicable.\n"
+  remarks: "\nMultiple entries may exist for any permission if different\nrestrictions are applied. Duplicate or redundant entries may be\nexcluded.\n"
+  example: []
+  syntax:
+    content: public Dictionary<Permission, List<UserPermissionRestriction>> SpacePermissions { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{Octopus.Client.Model.Permission,System.Collections.Generic.List{Octopus.Client.Model.UserPermissionRestriction}}
+    content.vb: Public Property SpacePermissions As Dictionary(Of Permission, List(Of UserPermissionRestriction))
+  overload: Octopus.Client.Model.UserPermissionSetResource.SpacePermissions*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.UserPermissionSetResource.SystemPermissions
+  commentId: P:Octopus.Client.Model.UserPermissionSetResource.SystemPermissions
+  id: SystemPermissions
+  parent: Octopus.Client.Model.UserPermissionSetResource
+  langs:
+  - csharp
+  - vb
+  name: SystemPermissions
+  nameWithType: UserPermissionSetResource.SystemPermissions
+  fullName: Octopus.Client.Model.UserPermissionSetResource.SystemPermissions
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/UserPermissionSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SystemPermissions
+    path: ../source/Octopus.Client/Model/UserPermissionSetResource.cs
+    startLine: 25
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nLists individual system permissions granted, these do not have restrictions\n"
+  example: []
+  syntax:
+    content: public List<Permission> SystemPermissions { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.Permission}
+    content.vb: Public Property SystemPermissions As List(Of Permission)
+  overload: Octopus.Client.Model.UserPermissionSetResource.SystemPermissions*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.UserPermissionSetResource.Teams
+  commentId: P:Octopus.Client.Model.UserPermissionSetResource.Teams
+  id: Teams
+  parent: Octopus.Client.Model.UserPermissionSetResource
+  langs:
+  - csharp
+  - vb
+  name: Teams
+  nameWithType: UserPermissionSetResource.Teams
+  fullName: Octopus.Client.Model.UserPermissionSetResource.Teams
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/UserPermissionSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Teams
+    path: ../source/Octopus.Client/Model/UserPermissionSetResource.cs
+    startLine: 30
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nGets the teams that the user is a member of.\n"
+  example: []
+  syntax:
+    content: public List<ProjectedTeamReferenceDataItem> Teams { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Octopus.Client.Model.ProjectedTeamReferenceDataItem}
+    content.vb: Public Property Teams As List(Of ProjectedTeamReferenceDataItem)
+  overload: Octopus.Client.Model.UserPermissionSetResource.Teams*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.UserPermissionSetResource.IsTeamsComplete
+  commentId: P:Octopus.Client.Model.UserPermissionSetResource.IsTeamsComplete
+  id: IsTeamsComplete
+  parent: Octopus.Client.Model.UserPermissionSetResource
+  langs:
+  - csharp
+  - vb
+  name: IsTeamsComplete
+  nameWithType: UserPermissionSetResource.IsTeamsComplete
+  fullName: Octopus.Client.Model.UserPermissionSetResource.IsTeamsComplete
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/UserPermissionSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsTeamsComplete
+    path: ../source/Octopus.Client/Model/UserPermissionSetResource.cs
+    startLine: 35
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nIf the requesting user had sufficient access to see a complete view of the teams that may drive permissions\n"
+  example: []
+  syntax:
+    content: public bool IsTeamsComplete { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsTeamsComplete As Boolean
+  overload: Octopus.Client.Model.UserPermissionSetResource.IsTeamsComplete*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.UserPermissionSetResource.IsPermissionsComplete
+  commentId: P:Octopus.Client.Model.UserPermissionSetResource.IsPermissionsComplete
+  id: IsPermissionsComplete
+  parent: Octopus.Client.Model.UserPermissionSetResource
+  langs:
+  - csharp
+  - vb
+  name: IsPermissionsComplete
+  nameWithType: UserPermissionSetResource.IsPermissionsComplete
+  fullName: Octopus.Client.Model.UserPermissionSetResource.IsPermissionsComplete
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/UserPermissionSetResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsPermissionsComplete
+    path: ../source/Octopus.Client/Model/UserPermissionSetResource.cs
+    startLine: 40
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nIf the requesting user had sufficient access to see a complete view of the permissions\n"
+  example: []
+  syntax:
+    content: public bool IsPermissionsComplete { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsPermissionsComplete As Boolean
+  overload: Octopus.Client.Model.UserPermissionSetResource.IsPermissionsComplete*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.UserPermissionSetResource.SpacePermissions*
+  commentId: Overload:Octopus.Client.Model.UserPermissionSetResource.SpacePermissions
+  name: SpacePermissions
+  nameWithType: UserPermissionSetResource.SpacePermissions
+  fullName: Octopus.Client.Model.UserPermissionSetResource.SpacePermissions
+- uid: System.Collections.Generic.Dictionary{Octopus.Client.Model.Permission,System.Collections.Generic.List{Octopus.Client.Model.UserPermissionRestriction}}
+  commentId: T:System.Collections.Generic.Dictionary{Octopus.Client.Model.Permission,System.Collections.Generic.List{Octopus.Client.Model.UserPermissionRestriction}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<Permission, List<UserPermissionRestriction>>
+  nameWithType: Dictionary<Permission, List<UserPermissionRestriction>>
+  fullName: System.Collections.Generic.Dictionary<Octopus.Client.Model.Permission, System.Collections.Generic.List<Octopus.Client.Model.UserPermissionRestriction>>
+  nameWithType.vb: Dictionary(Of Permission, List(Of UserPermissionRestriction))
+  fullName.vb: System.Collections.Generic.Dictionary(Of Octopus.Client.Model.Permission, System.Collections.Generic.List(Of Octopus.Client.Model.UserPermissionRestriction))
+  name.vb: Dictionary(Of Permission, List(Of UserPermissionRestriction))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Permission
+    name: Permission
+    nameWithType: Permission
+    fullName: Octopus.Client.Model.Permission
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.UserPermissionRestriction
+    name: UserPermissionRestriction
+    nameWithType: UserPermissionRestriction
+    fullName: Octopus.Client.Model.UserPermissionRestriction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Permission
+    name: Permission
+    nameWithType: Permission
+    fullName: Octopus.Client.Model.Permission
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.UserPermissionRestriction
+    name: UserPermissionRestriction
+    nameWithType: UserPermissionRestriction
+    fullName: Octopus.Client.Model.UserPermissionRestriction
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Octopus.Client.Model.UserPermissionSetResource.SystemPermissions*
+  commentId: Overload:Octopus.Client.Model.UserPermissionSetResource.SystemPermissions
+  name: SystemPermissions
+  nameWithType: UserPermissionSetResource.SystemPermissions
+  fullName: Octopus.Client.Model.UserPermissionSetResource.SystemPermissions
+- uid: System.Collections.Generic.List{Octopus.Client.Model.Permission}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.Permission}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Permission>
+  nameWithType: List<Permission>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.Permission>
+  nameWithType.vb: List(Of Permission)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.Permission)
+  name.vb: List(Of Permission)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Permission
+    name: Permission
+    nameWithType: Permission
+    fullName: Octopus.Client.Model.Permission
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Permission
+    name: Permission
+    nameWithType: Permission
+    fullName: Octopus.Client.Model.Permission
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.UserPermissionSetResource.Teams*
+  commentId: Overload:Octopus.Client.Model.UserPermissionSetResource.Teams
+  name: Teams
+  nameWithType: UserPermissionSetResource.Teams
+  fullName: Octopus.Client.Model.UserPermissionSetResource.Teams
+- uid: System.Collections.Generic.List{Octopus.Client.Model.ProjectedTeamReferenceDataItem}
+  commentId: T:System.Collections.Generic.List{Octopus.Client.Model.ProjectedTeamReferenceDataItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ProjectedTeamReferenceDataItem>
+  nameWithType: List<ProjectedTeamReferenceDataItem>
+  fullName: System.Collections.Generic.List<Octopus.Client.Model.ProjectedTeamReferenceDataItem>
+  nameWithType.vb: List(Of ProjectedTeamReferenceDataItem)
+  fullName.vb: System.Collections.Generic.List(Of Octopus.Client.Model.ProjectedTeamReferenceDataItem)
+  name.vb: List(Of ProjectedTeamReferenceDataItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.ProjectedTeamReferenceDataItem
+    name: ProjectedTeamReferenceDataItem
+    nameWithType: ProjectedTeamReferenceDataItem
+    fullName: Octopus.Client.Model.ProjectedTeamReferenceDataItem
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.ProjectedTeamReferenceDataItem
+    name: ProjectedTeamReferenceDataItem
+    nameWithType: ProjectedTeamReferenceDataItem
+    fullName: Octopus.Client.Model.ProjectedTeamReferenceDataItem
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.UserPermissionSetResource.IsTeamsComplete*
+  commentId: Overload:Octopus.Client.Model.UserPermissionSetResource.IsTeamsComplete
+  name: IsTeamsComplete
+  nameWithType: UserPermissionSetResource.IsTeamsComplete
+  fullName: Octopus.Client.Model.UserPermissionSetResource.IsTeamsComplete
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.UserPermissionSetResource.IsPermissionsComplete*
+  commentId: Overload:Octopus.Client.Model.UserPermissionSetResource.IsPermissionsComplete
+  name: IsPermissionsComplete
+  nameWithType: UserPermissionSetResource.IsPermissionsComplete
+  fullName: Octopus.Client.Model.UserPermissionSetResource.IsPermissionsComplete

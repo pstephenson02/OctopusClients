@@ -1,0 +1,1333 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.BuildInformationRepository
+  commentId: T:Octopus.Client.Repositories.BuildInformationRepository
+  id: BuildInformationRepository
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.BuildInformationRepository.#ctor(Octopus.Client.IOctopusRepository)
+  - Octopus.Client.Repositories.BuildInformationRepository.Delete(Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource)
+  - Octopus.Client.Repositories.BuildInformationRepository.DeleteBuilds(System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource})
+  - Octopus.Client.Repositories.BuildInformationRepository.Get(System.String)
+  - Octopus.Client.Repositories.BuildInformationRepository.LatestBuilds(System.Int32,System.Int32)
+  - Octopus.Client.Repositories.BuildInformationRepository.ListBuilds(System.String,System.Int32,System.Int32)
+  - Octopus.Client.Repositories.BuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation)
+  - Octopus.Client.Repositories.BuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation,Octopus.Client.Model.OverwriteMode)
+  langs:
+  - csharp
+  - vb
+  name: BuildInformationRepository
+  nameWithType: BuildInformationRepository
+  fullName: Octopus.Client.Repositories.BuildInformationRepository
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/BuildInformationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: BuildInformationRepository
+    path: ../source/Octopus.Client/Repositories/BuildInformationRepository.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: 'public class BuildInformationRepository : IBuildInformationRepository'
+    content.vb: >-
+      Public Class BuildInformationRepository
+          Implements IBuildInformationRepository
+  inheritance:
+  - System.Object
+  implements:
+  - Octopus.Client.Repositories.IBuildInformationRepository
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Repositories.BuildInformationRepository.#ctor(Octopus.Client.IOctopusRepository)
+  commentId: M:Octopus.Client.Repositories.BuildInformationRepository.#ctor(Octopus.Client.IOctopusRepository)
+  id: '#ctor(Octopus.Client.IOctopusRepository)'
+  parent: Octopus.Client.Repositories.BuildInformationRepository
+  langs:
+  - csharp
+  - vb
+  name: BuildInformationRepository(IOctopusRepository)
+  nameWithType: BuildInformationRepository.BuildInformationRepository(IOctopusRepository)
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.BuildInformationRepository(Octopus.Client.IOctopusRepository)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/BuildInformationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Repositories/BuildInformationRepository.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public BuildInformationRepository(IOctopusRepository repository)
+    parameters:
+    - id: repository
+      type: Octopus.Client.IOctopusRepository
+    content.vb: Public Sub New(repository As IOctopusRepository)
+  overload: Octopus.Client.Repositories.BuildInformationRepository.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Repositories.BuildInformationRepository.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.BuildInformationRepository.Get(System.String)
+  id: Get(System.String)
+  parent: Octopus.Client.Repositories.BuildInformationRepository
+  langs:
+  - csharp
+  - vb
+  name: Get(String)
+  nameWithType: BuildInformationRepository.Get(String)
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.Get(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/BuildInformationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Get
+    path: ../source/Octopus.Client/Repositories/BuildInformationRepository.cs
+    startLine: 20
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public OctopusPackageVersionBuildInformationMappedResource Get(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+    content.vb: Public Function Get(id As String) As OctopusPackageVersionBuildInformationMappedResource
+  overload: Octopus.Client.Repositories.BuildInformationRepository.Get*
+  implements:
+  - Octopus.Client.Repositories.IBuildInformationRepository.Get(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Repositories.BuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation)
+  commentId: M:Octopus.Client.Repositories.BuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation)
+  id: Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation)
+  parent: Octopus.Client.Repositories.BuildInformationRepository
+  langs:
+  - csharp
+  - vb
+  name: Push(String, String, OctopusBuildInformation)
+  nameWithType: BuildInformationRepository.Push(String, String, OctopusBuildInformation)
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.Push(System.String, System.String, Octopus.Client.Model.BuildInformation.OctopusBuildInformation)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/BuildInformationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Push
+    path: ../source/Octopus.Client/Repositories/BuildInformationRepository.cs
+    startLine: 26
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public OctopusPackageVersionBuildInformationMappedResource Push(string packageId, string version, OctopusBuildInformation octopusMetadata)
+    parameters:
+    - id: packageId
+      type: System.String
+    - id: version
+      type: System.String
+    - id: octopusMetadata
+      type: Octopus.Client.Model.BuildInformation.OctopusBuildInformation
+    return:
+      type: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+    content.vb: Public Function Push(packageId As String, version As String, octopusMetadata As OctopusBuildInformation) As OctopusPackageVersionBuildInformationMappedResource
+  overload: Octopus.Client.Repositories.BuildInformationRepository.Push*
+  implements:
+  - Octopus.Client.Repositories.IBuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Repositories.BuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation,Octopus.Client.Model.OverwriteMode)
+  commentId: M:Octopus.Client.Repositories.BuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation,Octopus.Client.Model.OverwriteMode)
+  id: Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation,Octopus.Client.Model.OverwriteMode)
+  parent: Octopus.Client.Repositories.BuildInformationRepository
+  langs:
+  - csharp
+  - vb
+  name: Push(String, String, OctopusBuildInformation, OverwriteMode)
+  nameWithType: BuildInformationRepository.Push(String, String, OctopusBuildInformation, OverwriteMode)
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.Push(System.String, System.String, Octopus.Client.Model.BuildInformation.OctopusBuildInformation, Octopus.Client.Model.OverwriteMode)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/BuildInformationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Push
+    path: ../source/Octopus.Client/Repositories/BuildInformationRepository.cs
+    startLine: 31
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public OctopusPackageVersionBuildInformationMappedResource Push(string packageId, string version, OctopusBuildInformation octopusMetadata, OverwriteMode overwriteMode)
+    parameters:
+    - id: packageId
+      type: System.String
+    - id: version
+      type: System.String
+    - id: octopusMetadata
+      type: Octopus.Client.Model.BuildInformation.OctopusBuildInformation
+    - id: overwriteMode
+      type: Octopus.Client.Model.OverwriteMode
+    return:
+      type: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+    content.vb: Public Function Push(packageId As String, version As String, octopusMetadata As OctopusBuildInformation, overwriteMode As OverwriteMode) As OctopusPackageVersionBuildInformationMappedResource
+  overload: Octopus.Client.Repositories.BuildInformationRepository.Push*
+  implements:
+  - Octopus.Client.Repositories.IBuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation,Octopus.Client.Model.OverwriteMode)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Repositories.BuildInformationRepository.ListBuilds(System.String,System.Int32,System.Int32)
+  commentId: M:Octopus.Client.Repositories.BuildInformationRepository.ListBuilds(System.String,System.Int32,System.Int32)
+  id: ListBuilds(System.String,System.Int32,System.Int32)
+  parent: Octopus.Client.Repositories.BuildInformationRepository
+  langs:
+  - csharp
+  - vb
+  name: ListBuilds(String, Int32, Int32)
+  nameWithType: BuildInformationRepository.ListBuilds(String, Int32, Int32)
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.ListBuilds(System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/BuildInformationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ListBuilds
+    path: ../source/Octopus.Client/Repositories/BuildInformationRepository.cs
+    startLine: 56
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public ResourceCollection<OctopusPackageVersionBuildInformationMappedResource> ListBuilds(string packageId, int skip = 0, int take = 30)
+    parameters:
+    - id: packageId
+      type: System.String
+    - id: skip
+      type: System.Int32
+    - id: take
+      type: System.Int32
+    return:
+      type: Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource}
+    content.vb: Public Function ListBuilds(packageId As String, skip As Integer = 0, take As Integer = 30) As ResourceCollection(Of OctopusPackageVersionBuildInformationMappedResource)
+  overload: Octopus.Client.Repositories.BuildInformationRepository.ListBuilds*
+  implements:
+  - Octopus.Client.Repositories.IBuildInformationRepository.ListBuilds(System.String,System.Int32,System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Repositories.BuildInformationRepository.LatestBuilds(System.Int32,System.Int32)
+  commentId: M:Octopus.Client.Repositories.BuildInformationRepository.LatestBuilds(System.Int32,System.Int32)
+  id: LatestBuilds(System.Int32,System.Int32)
+  parent: Octopus.Client.Repositories.BuildInformationRepository
+  langs:
+  - csharp
+  - vb
+  name: LatestBuilds(Int32, Int32)
+  nameWithType: BuildInformationRepository.LatestBuilds(Int32, Int32)
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.LatestBuilds(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/BuildInformationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: LatestBuilds
+    path: ../source/Octopus.Client/Repositories/BuildInformationRepository.cs
+    startLine: 61
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public ResourceCollection<OctopusPackageVersionBuildInformationMappedResource> LatestBuilds(int skip = 0, int take = 30)
+    parameters:
+    - id: skip
+      type: System.Int32
+    - id: take
+      type: System.Int32
+    return:
+      type: Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource}
+    content.vb: Public Function LatestBuilds(skip As Integer = 0, take As Integer = 30) As ResourceCollection(Of OctopusPackageVersionBuildInformationMappedResource)
+  overload: Octopus.Client.Repositories.BuildInformationRepository.LatestBuilds*
+  implements:
+  - Octopus.Client.Repositories.IBuildInformationRepository.LatestBuilds(System.Int32,System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Repositories.BuildInformationRepository.Delete(Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource)
+  commentId: M:Octopus.Client.Repositories.BuildInformationRepository.Delete(Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource)
+  id: Delete(Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource)
+  parent: Octopus.Client.Repositories.BuildInformationRepository
+  langs:
+  - csharp
+  - vb
+  name: Delete(OctopusPackageVersionBuildInformationMappedResource)
+  nameWithType: BuildInformationRepository.Delete(OctopusPackageVersionBuildInformationMappedResource)
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.Delete(Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/BuildInformationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Delete
+    path: ../source/Octopus.Client/Repositories/BuildInformationRepository.cs
+    startLine: 66
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public void Delete(OctopusPackageVersionBuildInformationMappedResource buildInformation)
+    parameters:
+    - id: buildInformation
+      type: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+    content.vb: Public Sub Delete(buildInformation As OctopusPackageVersionBuildInformationMappedResource)
+  overload: Octopus.Client.Repositories.BuildInformationRepository.Delete*
+  implements:
+  - Octopus.Client.Repositories.IBuildInformationRepository.Delete(Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Repositories.BuildInformationRepository.DeleteBuilds(System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource})
+  commentId: M:Octopus.Client.Repositories.BuildInformationRepository.DeleteBuilds(System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource})
+  id: DeleteBuilds(System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource})
+  parent: Octopus.Client.Repositories.BuildInformationRepository
+  langs:
+  - csharp
+  - vb
+  name: DeleteBuilds(IReadOnlyList<OctopusPackageVersionBuildInformationMappedResource>)
+  nameWithType: BuildInformationRepository.DeleteBuilds(IReadOnlyList<OctopusPackageVersionBuildInformationMappedResource>)
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.DeleteBuilds(System.Collections.Generic.IReadOnlyList<Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource>)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/BuildInformationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DeleteBuilds
+    path: ../source/Octopus.Client/Repositories/BuildInformationRepository.cs
+    startLine: 71
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public void DeleteBuilds(IReadOnlyList<OctopusPackageVersionBuildInformationMappedResource> builds)
+    parameters:
+    - id: builds
+      type: System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource}
+    content.vb: Public Sub DeleteBuilds(builds As IReadOnlyList(Of OctopusPackageVersionBuildInformationMappedResource))
+  overload: Octopus.Client.Repositories.BuildInformationRepository.DeleteBuilds*
+  implements:
+  - Octopus.Client.Repositories.IBuildInformationRepository.DeleteBuilds(System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource})
+  nameWithType.vb: BuildInformationRepository.DeleteBuilds(IReadOnlyList(Of OctopusPackageVersionBuildInformationMappedResource))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Repositories.BuildInformationRepository.DeleteBuilds(System.Collections.Generic.IReadOnlyList(Of Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource))
+  name.vb: DeleteBuilds(IReadOnlyList(Of OctopusPackageVersionBuildInformationMappedResource))
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Repositories.IBuildInformationRepository
+  commentId: T:Octopus.Client.Repositories.IBuildInformationRepository
+  parent: Octopus.Client.Repositories
+  name: IBuildInformationRepository
+  nameWithType: IBuildInformationRepository
+  fullName: Octopus.Client.Repositories.IBuildInformationRepository
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Repositories.BuildInformationRepository.#ctor*
+  commentId: Overload:Octopus.Client.Repositories.BuildInformationRepository.#ctor
+  name: BuildInformationRepository
+  nameWithType: BuildInformationRepository.BuildInformationRepository
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.BuildInformationRepository
+- uid: Octopus.Client.IOctopusRepository
+  commentId: T:Octopus.Client.IOctopusRepository
+  parent: Octopus.Client
+  name: IOctopusRepository
+  nameWithType: IOctopusRepository
+  fullName: Octopus.Client.IOctopusRepository
+- uid: Octopus.Client
+  commentId: N:Octopus.Client
+  name: Octopus.Client
+  nameWithType: Octopus.Client
+  fullName: Octopus.Client
+- uid: Octopus.Client.Repositories.BuildInformationRepository.Get*
+  commentId: Overload:Octopus.Client.Repositories.BuildInformationRepository.Get
+  name: Get
+  nameWithType: BuildInformationRepository.Get
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.Get
+- uid: Octopus.Client.Repositories.IBuildInformationRepository.Get(System.String)
+  commentId: M:Octopus.Client.Repositories.IBuildInformationRepository.Get(System.String)
+  parent: Octopus.Client.Repositories.IBuildInformationRepository
+  isExternal: true
+  name: Get(String)
+  nameWithType: IBuildInformationRepository.Get(String)
+  fullName: Octopus.Client.Repositories.IBuildInformationRepository.Get(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IBuildInformationRepository.Get(System.String)
+    name: Get
+    nameWithType: IBuildInformationRepository.Get
+    fullName: Octopus.Client.Repositories.IBuildInformationRepository.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IBuildInformationRepository.Get(System.String)
+    name: Get
+    nameWithType: IBuildInformationRepository.Get
+    fullName: Octopus.Client.Repositories.IBuildInformationRepository.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+  commentId: T:Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+  parent: Octopus.Client.Model.BuildInformation
+  name: OctopusPackageVersionBuildInformationMappedResource
+  nameWithType: OctopusPackageVersionBuildInformationMappedResource
+  fullName: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+- uid: Octopus.Client.Model.BuildInformation
+  commentId: N:Octopus.Client.Model.BuildInformation
+  name: Octopus.Client.Model.BuildInformation
+  nameWithType: Octopus.Client.Model.BuildInformation
+  fullName: Octopus.Client.Model.BuildInformation
+- uid: Octopus.Client.Repositories.BuildInformationRepository.Push*
+  commentId: Overload:Octopus.Client.Repositories.BuildInformationRepository.Push
+  name: Push
+  nameWithType: BuildInformationRepository.Push
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.Push
+- uid: Octopus.Client.Repositories.IBuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation)
+  commentId: M:Octopus.Client.Repositories.IBuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation)
+  parent: Octopus.Client.Repositories.IBuildInformationRepository
+  isExternal: true
+  name: Push(String, String, OctopusBuildInformation)
+  nameWithType: IBuildInformationRepository.Push(String, String, OctopusBuildInformation)
+  fullName: Octopus.Client.Repositories.IBuildInformationRepository.Push(System.String, System.String, Octopus.Client.Model.BuildInformation.OctopusBuildInformation)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IBuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation)
+    name: Push
+    nameWithType: IBuildInformationRepository.Push
+    fullName: Octopus.Client.Repositories.IBuildInformationRepository.Push
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.BuildInformation.OctopusBuildInformation
+    name: OctopusBuildInformation
+    nameWithType: OctopusBuildInformation
+    fullName: Octopus.Client.Model.BuildInformation.OctopusBuildInformation
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IBuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation)
+    name: Push
+    nameWithType: IBuildInformationRepository.Push
+    fullName: Octopus.Client.Repositories.IBuildInformationRepository.Push
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.BuildInformation.OctopusBuildInformation
+    name: OctopusBuildInformation
+    nameWithType: OctopusBuildInformation
+    fullName: Octopus.Client.Model.BuildInformation.OctopusBuildInformation
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.BuildInformation.OctopusBuildInformation
+  commentId: T:Octopus.Client.Model.BuildInformation.OctopusBuildInformation
+  parent: Octopus.Client.Model.BuildInformation
+  name: OctopusBuildInformation
+  nameWithType: OctopusBuildInformation
+  fullName: Octopus.Client.Model.BuildInformation.OctopusBuildInformation
+- uid: Octopus.Client.Repositories.IBuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation,Octopus.Client.Model.OverwriteMode)
+  commentId: M:Octopus.Client.Repositories.IBuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation,Octopus.Client.Model.OverwriteMode)
+  parent: Octopus.Client.Repositories.IBuildInformationRepository
+  isExternal: true
+  name: Push(String, String, OctopusBuildInformation, OverwriteMode)
+  nameWithType: IBuildInformationRepository.Push(String, String, OctopusBuildInformation, OverwriteMode)
+  fullName: Octopus.Client.Repositories.IBuildInformationRepository.Push(System.String, System.String, Octopus.Client.Model.BuildInformation.OctopusBuildInformation, Octopus.Client.Model.OverwriteMode)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IBuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation,Octopus.Client.Model.OverwriteMode)
+    name: Push
+    nameWithType: IBuildInformationRepository.Push
+    fullName: Octopus.Client.Repositories.IBuildInformationRepository.Push
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.BuildInformation.OctopusBuildInformation
+    name: OctopusBuildInformation
+    nameWithType: OctopusBuildInformation
+    fullName: Octopus.Client.Model.BuildInformation.OctopusBuildInformation
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.OverwriteMode
+    name: OverwriteMode
+    nameWithType: OverwriteMode
+    fullName: Octopus.Client.Model.OverwriteMode
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IBuildInformationRepository.Push(System.String,System.String,Octopus.Client.Model.BuildInformation.OctopusBuildInformation,Octopus.Client.Model.OverwriteMode)
+    name: Push
+    nameWithType: IBuildInformationRepository.Push
+    fullName: Octopus.Client.Repositories.IBuildInformationRepository.Push
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.BuildInformation.OctopusBuildInformation
+    name: OctopusBuildInformation
+    nameWithType: OctopusBuildInformation
+    fullName: Octopus.Client.Model.BuildInformation.OctopusBuildInformation
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.OverwriteMode
+    name: OverwriteMode
+    nameWithType: OverwriteMode
+    fullName: Octopus.Client.Model.OverwriteMode
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.OverwriteMode
+  commentId: T:Octopus.Client.Model.OverwriteMode
+  parent: Octopus.Client.Model
+  name: OverwriteMode
+  nameWithType: OverwriteMode
+  fullName: Octopus.Client.Model.OverwriteMode
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Repositories.BuildInformationRepository.ListBuilds*
+  commentId: Overload:Octopus.Client.Repositories.BuildInformationRepository.ListBuilds
+  name: ListBuilds
+  nameWithType: BuildInformationRepository.ListBuilds
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.ListBuilds
+- uid: Octopus.Client.Repositories.IBuildInformationRepository.ListBuilds(System.String,System.Int32,System.Int32)
+  commentId: M:Octopus.Client.Repositories.IBuildInformationRepository.ListBuilds(System.String,System.Int32,System.Int32)
+  parent: Octopus.Client.Repositories.IBuildInformationRepository
+  isExternal: true
+  name: ListBuilds(String, Int32, Int32)
+  nameWithType: IBuildInformationRepository.ListBuilds(String, Int32, Int32)
+  fullName: Octopus.Client.Repositories.IBuildInformationRepository.ListBuilds(System.String, System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IBuildInformationRepository.ListBuilds(System.String,System.Int32,System.Int32)
+    name: ListBuilds
+    nameWithType: IBuildInformationRepository.ListBuilds
+    fullName: Octopus.Client.Repositories.IBuildInformationRepository.ListBuilds
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IBuildInformationRepository.ListBuilds(System.String,System.Int32,System.Int32)
+    name: ListBuilds
+    nameWithType: IBuildInformationRepository.ListBuilds
+    fullName: Octopus.Client.Repositories.IBuildInformationRepository.ListBuilds
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource}
+  commentId: T:Octopus.Client.Model.ResourceCollection{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource}
+  parent: Octopus.Client.Model
+  definition: Octopus.Client.Model.ResourceCollection`1
+  name: ResourceCollection<OctopusPackageVersionBuildInformationMappedResource>
+  nameWithType: ResourceCollection<OctopusPackageVersionBuildInformationMappedResource>
+  fullName: Octopus.Client.Model.ResourceCollection<Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource>
+  nameWithType.vb: ResourceCollection(Of OctopusPackageVersionBuildInformationMappedResource)
+  fullName.vb: Octopus.Client.Model.ResourceCollection(Of Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource)
+  name.vb: ResourceCollection(Of OctopusPackageVersionBuildInformationMappedResource)
+  spec.csharp:
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+    name: OctopusPackageVersionBuildInformationMappedResource
+    nameWithType: OctopusPackageVersionBuildInformationMappedResource
+    fullName: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+    name: OctopusPackageVersionBuildInformationMappedResource
+    nameWithType: OctopusPackageVersionBuildInformationMappedResource
+    fullName: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.ResourceCollection`1
+  commentId: T:Octopus.Client.Model.ResourceCollection`1
+  name: ResourceCollection<TResource>
+  nameWithType: ResourceCollection<TResource>
+  fullName: Octopus.Client.Model.ResourceCollection<TResource>
+  nameWithType.vb: ResourceCollection(Of TResource)
+  fullName.vb: Octopus.Client.Model.ResourceCollection(Of TResource)
+  name.vb: ResourceCollection(Of TResource)
+  spec.csharp:
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Octopus.Client.Model.ResourceCollection`1
+    name: ResourceCollection
+    nameWithType: ResourceCollection
+    fullName: Octopus.Client.Model.ResourceCollection
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResource
+    nameWithType: TResource
+    fullName: TResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.BuildInformationRepository.LatestBuilds*
+  commentId: Overload:Octopus.Client.Repositories.BuildInformationRepository.LatestBuilds
+  name: LatestBuilds
+  nameWithType: BuildInformationRepository.LatestBuilds
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.LatestBuilds
+- uid: Octopus.Client.Repositories.IBuildInformationRepository.LatestBuilds(System.Int32,System.Int32)
+  commentId: M:Octopus.Client.Repositories.IBuildInformationRepository.LatestBuilds(System.Int32,System.Int32)
+  parent: Octopus.Client.Repositories.IBuildInformationRepository
+  isExternal: true
+  name: LatestBuilds(Int32, Int32)
+  nameWithType: IBuildInformationRepository.LatestBuilds(Int32, Int32)
+  fullName: Octopus.Client.Repositories.IBuildInformationRepository.LatestBuilds(System.Int32, System.Int32)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IBuildInformationRepository.LatestBuilds(System.Int32,System.Int32)
+    name: LatestBuilds
+    nameWithType: IBuildInformationRepository.LatestBuilds
+    fullName: Octopus.Client.Repositories.IBuildInformationRepository.LatestBuilds
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IBuildInformationRepository.LatestBuilds(System.Int32,System.Int32)
+    name: LatestBuilds
+    nameWithType: IBuildInformationRepository.LatestBuilds
+    fullName: Octopus.Client.Repositories.IBuildInformationRepository.LatestBuilds
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.BuildInformationRepository.Delete*
+  commentId: Overload:Octopus.Client.Repositories.BuildInformationRepository.Delete
+  name: Delete
+  nameWithType: BuildInformationRepository.Delete
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.Delete
+- uid: Octopus.Client.Repositories.IBuildInformationRepository.Delete(Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource)
+  commentId: M:Octopus.Client.Repositories.IBuildInformationRepository.Delete(Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource)
+  parent: Octopus.Client.Repositories.IBuildInformationRepository
+  name: Delete(OctopusPackageVersionBuildInformationMappedResource)
+  nameWithType: IBuildInformationRepository.Delete(OctopusPackageVersionBuildInformationMappedResource)
+  fullName: Octopus.Client.Repositories.IBuildInformationRepository.Delete(Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource)
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IBuildInformationRepository.Delete(Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource)
+    name: Delete
+    nameWithType: IBuildInformationRepository.Delete
+    fullName: Octopus.Client.Repositories.IBuildInformationRepository.Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+    name: OctopusPackageVersionBuildInformationMappedResource
+    nameWithType: OctopusPackageVersionBuildInformationMappedResource
+    fullName: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IBuildInformationRepository.Delete(Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource)
+    name: Delete
+    nameWithType: IBuildInformationRepository.Delete
+    fullName: Octopus.Client.Repositories.IBuildInformationRepository.Delete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+    name: OctopusPackageVersionBuildInformationMappedResource
+    nameWithType: OctopusPackageVersionBuildInformationMappedResource
+    fullName: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Repositories.BuildInformationRepository.DeleteBuilds*
+  commentId: Overload:Octopus.Client.Repositories.BuildInformationRepository.DeleteBuilds
+  name: DeleteBuilds
+  nameWithType: BuildInformationRepository.DeleteBuilds
+  fullName: Octopus.Client.Repositories.BuildInformationRepository.DeleteBuilds
+- uid: Octopus.Client.Repositories.IBuildInformationRepository.DeleteBuilds(System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource})
+  commentId: M:Octopus.Client.Repositories.IBuildInformationRepository.DeleteBuilds(System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource})
+  parent: Octopus.Client.Repositories.IBuildInformationRepository
+  isExternal: true
+  name: DeleteBuilds(IReadOnlyList<OctopusPackageVersionBuildInformationMappedResource>)
+  nameWithType: IBuildInformationRepository.DeleteBuilds(IReadOnlyList<OctopusPackageVersionBuildInformationMappedResource>)
+  fullName: Octopus.Client.Repositories.IBuildInformationRepository.DeleteBuilds(System.Collections.Generic.IReadOnlyList<Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource>)
+  nameWithType.vb: IBuildInformationRepository.DeleteBuilds(IReadOnlyList(Of OctopusPackageVersionBuildInformationMappedResource))
+  fullName.vb: Octopus.Client.Repositories.IBuildInformationRepository.DeleteBuilds(System.Collections.Generic.IReadOnlyList(Of Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource))
+  name.vb: DeleteBuilds(IReadOnlyList(Of OctopusPackageVersionBuildInformationMappedResource))
+  spec.csharp:
+  - uid: Octopus.Client.Repositories.IBuildInformationRepository.DeleteBuilds(System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource})
+    name: DeleteBuilds
+    nameWithType: IBuildInformationRepository.DeleteBuilds
+    fullName: Octopus.Client.Repositories.IBuildInformationRepository.DeleteBuilds
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+    name: OctopusPackageVersionBuildInformationMappedResource
+    nameWithType: OctopusPackageVersionBuildInformationMappedResource
+    fullName: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Repositories.IBuildInformationRepository.DeleteBuilds(System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource})
+    name: DeleteBuilds
+    nameWithType: IBuildInformationRepository.DeleteBuilds
+    fullName: Octopus.Client.Repositories.IBuildInformationRepository.DeleteBuilds
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+    name: OctopusPackageVersionBuildInformationMappedResource
+    nameWithType: OctopusPackageVersionBuildInformationMappedResource
+    fullName: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList<OctopusPackageVersionBuildInformationMappedResource>
+  nameWithType: IReadOnlyList<OctopusPackageVersionBuildInformationMappedResource>
+  fullName: System.Collections.Generic.IReadOnlyList<Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource>
+  nameWithType.vb: IReadOnlyList(Of OctopusPackageVersionBuildInformationMappedResource)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource)
+  name.vb: IReadOnlyList(Of OctopusPackageVersionBuildInformationMappedResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+    name: OctopusPackageVersionBuildInformationMappedResource
+    nameWithType: OctopusPackageVersionBuildInformationMappedResource
+    fullName: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+    name: OctopusPackageVersionBuildInformationMappedResource
+    nameWithType: OctopusPackageVersionBuildInformationMappedResource
+    fullName: Octopus.Client.Model.BuildInformation.OctopusPackageVersionBuildInformationMappedResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

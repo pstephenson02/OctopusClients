@@ -1,0 +1,1410 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.DashboardItemResource
+  commentId: T:Octopus.Client.Model.DashboardItemResource
+  id: DashboardItemResource
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.DashboardItemResource.ChannelId
+  - Octopus.Client.Model.DashboardItemResource.CompletedTime
+  - Octopus.Client.Model.DashboardItemResource.Created
+  - Octopus.Client.Model.DashboardItemResource.DeploymentId
+  - Octopus.Client.Model.DashboardItemResource.Duration
+  - Octopus.Client.Model.DashboardItemResource.EnvironmentId
+  - Octopus.Client.Model.DashboardItemResource.ErrorMessage
+  - Octopus.Client.Model.DashboardItemResource.HasPendingInterruptions
+  - Octopus.Client.Model.DashboardItemResource.HasWarningsOrErrors
+  - Octopus.Client.Model.DashboardItemResource.IsCompleted
+  - Octopus.Client.Model.DashboardItemResource.IsCurrent
+  - Octopus.Client.Model.DashboardItemResource.IsPrevious
+  - Octopus.Client.Model.DashboardItemResource.ProjectId
+  - Octopus.Client.Model.DashboardItemResource.QueueTime
+  - Octopus.Client.Model.DashboardItemResource.ReleaseId
+  - Octopus.Client.Model.DashboardItemResource.ReleaseVersion
+  - Octopus.Client.Model.DashboardItemResource.StartTime
+  - Octopus.Client.Model.DashboardItemResource.State
+  - Octopus.Client.Model.DashboardItemResource.TaskId
+  - Octopus.Client.Model.DashboardItemResource.TenantId
+  langs:
+  - csharp
+  - vb
+  name: DashboardItemResource
+  nameWithType: DashboardItemResource
+  fullName: Octopus.Client.Model.DashboardItemResource
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DashboardItemResource
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: 'public class DashboardItemResource : Resource, IResource, IAuditedResource'
+    content.vb: >-
+      Public Class DashboardItemResource
+          Inherits Resource
+          Implements IResource, IAuditedResource
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Resource
+  implements:
+  - Octopus.Client.Extensibility.IResource
+  - Octopus.Client.Model.IAuditedResource
+  inheritedMembers:
+  - Octopus.Client.Model.Resource.Id
+  - Octopus.Client.Model.Resource.LastModifiedOn
+  - Octopus.Client.Model.Resource.LastModifiedBy
+  - Octopus.Client.Model.Resource.Links
+  - Octopus.Client.Model.Resource.HasLink(System.String)
+  - Octopus.Client.Model.Resource.Link(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.DashboardItemResource.ProjectId
+  commentId: P:Octopus.Client.Model.DashboardItemResource.ProjectId
+  id: ProjectId
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: ProjectId
+  nameWithType: DashboardItemResource.ProjectId
+  fullName: Octopus.Client.Model.DashboardItemResource.ProjectId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ProjectId
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ProjectId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProjectId As String
+  overload: Octopus.Client.Model.DashboardItemResource.ProjectId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.EnvironmentId
+  commentId: P:Octopus.Client.Model.DashboardItemResource.EnvironmentId
+  id: EnvironmentId
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentId
+  nameWithType: DashboardItemResource.EnvironmentId
+  fullName: Octopus.Client.Model.DashboardItemResource.EnvironmentId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: EnvironmentId
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 12
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string EnvironmentId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EnvironmentId As String
+  overload: Octopus.Client.Model.DashboardItemResource.EnvironmentId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.ReleaseId
+  commentId: P:Octopus.Client.Model.DashboardItemResource.ReleaseId
+  id: ReleaseId
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: ReleaseId
+  nameWithType: DashboardItemResource.ReleaseId
+  fullName: Octopus.Client.Model.DashboardItemResource.ReleaseId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ReleaseId
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ReleaseId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ReleaseId As String
+  overload: Octopus.Client.Model.DashboardItemResource.ReleaseId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.DeploymentId
+  commentId: P:Octopus.Client.Model.DashboardItemResource.DeploymentId
+  id: DeploymentId
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: DeploymentId
+  nameWithType: DashboardItemResource.DeploymentId
+  fullName: Octopus.Client.Model.DashboardItemResource.DeploymentId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DeploymentId
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 14
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string DeploymentId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DeploymentId As String
+  overload: Octopus.Client.Model.DashboardItemResource.DeploymentId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.TaskId
+  commentId: P:Octopus.Client.Model.DashboardItemResource.TaskId
+  id: TaskId
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: TaskId
+  nameWithType: DashboardItemResource.TaskId
+  fullName: Octopus.Client.Model.DashboardItemResource.TaskId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TaskId
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string TaskId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TaskId As String
+  overload: Octopus.Client.Model.DashboardItemResource.TaskId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.TenantId
+  commentId: P:Octopus.Client.Model.DashboardItemResource.TenantId
+  id: TenantId
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: TenantId
+  nameWithType: DashboardItemResource.TenantId
+  fullName: Octopus.Client.Model.DashboardItemResource.TenantId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TenantId
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 16
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string TenantId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TenantId As String
+  overload: Octopus.Client.Model.DashboardItemResource.TenantId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.ChannelId
+  commentId: P:Octopus.Client.Model.DashboardItemResource.ChannelId
+  id: ChannelId
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: ChannelId
+  nameWithType: DashboardItemResource.ChannelId
+  fullName: Octopus.Client.Model.DashboardItemResource.ChannelId
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ChannelId
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ChannelId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ChannelId As String
+  overload: Octopus.Client.Model.DashboardItemResource.ChannelId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.ReleaseVersion
+  commentId: P:Octopus.Client.Model.DashboardItemResource.ReleaseVersion
+  id: ReleaseVersion
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: ReleaseVersion
+  nameWithType: DashboardItemResource.ReleaseVersion
+  fullName: Octopus.Client.Model.DashboardItemResource.ReleaseVersion
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ReleaseVersion
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 18
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ReleaseVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ReleaseVersion As String
+  overload: Octopus.Client.Model.DashboardItemResource.ReleaseVersion*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.Created
+  commentId: P:Octopus.Client.Model.DashboardItemResource.Created
+  id: Created
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: Created
+  nameWithType: DashboardItemResource.Created
+  fullName: Octopus.Client.Model.DashboardItemResource.Created
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Created
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 19
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public DateTimeOffset Created { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property Created As DateTimeOffset
+  overload: Octopus.Client.Model.DashboardItemResource.Created*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.QueueTime
+  commentId: P:Octopus.Client.Model.DashboardItemResource.QueueTime
+  id: QueueTime
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: QueueTime
+  nameWithType: DashboardItemResource.QueueTime
+  fullName: Octopus.Client.Model.DashboardItemResource.QueueTime
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: QueueTime
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 20
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public DateTimeOffset QueueTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property QueueTime As DateTimeOffset
+  overload: Octopus.Client.Model.DashboardItemResource.QueueTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.StartTime
+  commentId: P:Octopus.Client.Model.DashboardItemResource.StartTime
+  id: StartTime
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: StartTime
+  nameWithType: DashboardItemResource.StartTime
+  fullName: Octopus.Client.Model.DashboardItemResource.StartTime
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: StartTime
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 21
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public DateTimeOffset? StartTime { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property StartTime As DateTimeOffset?
+  overload: Octopus.Client.Model.DashboardItemResource.StartTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.CompletedTime
+  commentId: P:Octopus.Client.Model.DashboardItemResource.CompletedTime
+  id: CompletedTime
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: CompletedTime
+  nameWithType: DashboardItemResource.CompletedTime
+  fullName: Octopus.Client.Model.DashboardItemResource.CompletedTime
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: CompletedTime
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 22
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public DateTimeOffset? CompletedTime { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property CompletedTime As DateTimeOffset?
+  overload: Octopus.Client.Model.DashboardItemResource.CompletedTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.State
+  commentId: P:Octopus.Client.Model.DashboardItemResource.State
+  id: State
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: DashboardItemResource.State
+  fullName: Octopus.Client.Model.DashboardItemResource.State
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: State
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 23
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public TaskState State { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.TaskState
+    content.vb: Public Property State As TaskState
+  overload: Octopus.Client.Model.DashboardItemResource.State*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.HasPendingInterruptions
+  commentId: P:Octopus.Client.Model.DashboardItemResource.HasPendingInterruptions
+  id: HasPendingInterruptions
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: HasPendingInterruptions
+  nameWithType: DashboardItemResource.HasPendingInterruptions
+  fullName: Octopus.Client.Model.DashboardItemResource.HasPendingInterruptions
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: HasPendingInterruptions
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 24
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public bool HasPendingInterruptions { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property HasPendingInterruptions As Boolean
+  overload: Octopus.Client.Model.DashboardItemResource.HasPendingInterruptions*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.HasWarningsOrErrors
+  commentId: P:Octopus.Client.Model.DashboardItemResource.HasWarningsOrErrors
+  id: HasWarningsOrErrors
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: HasWarningsOrErrors
+  nameWithType: DashboardItemResource.HasWarningsOrErrors
+  fullName: Octopus.Client.Model.DashboardItemResource.HasWarningsOrErrors
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: HasWarningsOrErrors
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 25
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public bool HasWarningsOrErrors { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property HasWarningsOrErrors As Boolean
+  overload: Octopus.Client.Model.DashboardItemResource.HasWarningsOrErrors*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.ErrorMessage
+  commentId: P:Octopus.Client.Model.DashboardItemResource.ErrorMessage
+  id: ErrorMessage
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage
+  nameWithType: DashboardItemResource.ErrorMessage
+  fullName: Octopus.Client.Model.DashboardItemResource.ErrorMessage
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ErrorMessage
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 26
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string ErrorMessage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ErrorMessage As String
+  overload: Octopus.Client.Model.DashboardItemResource.ErrorMessage*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.Duration
+  commentId: P:Octopus.Client.Model.DashboardItemResource.Duration
+  id: Duration
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: DashboardItemResource.Duration
+  fullName: Octopus.Client.Model.DashboardItemResource.Duration
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Duration
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 27
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string Duration { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Duration As String
+  overload: Octopus.Client.Model.DashboardItemResource.Duration*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.IsCurrent
+  commentId: P:Octopus.Client.Model.DashboardItemResource.IsCurrent
+  id: IsCurrent
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: IsCurrent
+  nameWithType: DashboardItemResource.IsCurrent
+  fullName: Octopus.Client.Model.DashboardItemResource.IsCurrent
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsCurrent
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 28
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public bool IsCurrent { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsCurrent As Boolean
+  overload: Octopus.Client.Model.DashboardItemResource.IsCurrent*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.IsPrevious
+  commentId: P:Octopus.Client.Model.DashboardItemResource.IsPrevious
+  id: IsPrevious
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: IsPrevious
+  nameWithType: DashboardItemResource.IsPrevious
+  fullName: Octopus.Client.Model.DashboardItemResource.IsPrevious
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsPrevious
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 29
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public bool IsPrevious { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsPrevious As Boolean
+  overload: Octopus.Client.Model.DashboardItemResource.IsPrevious*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DashboardItemResource.IsCompleted
+  commentId: P:Octopus.Client.Model.DashboardItemResource.IsCompleted
+  id: IsCompleted
+  parent: Octopus.Client.Model.DashboardItemResource
+  langs:
+  - csharp
+  - vb
+  name: IsCompleted
+  nameWithType: DashboardItemResource.IsCompleted
+  fullName: Octopus.Client.Model.DashboardItemResource.IsCompleted
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DashboardItemResource.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsCompleted
+    path: ../source/Octopus.Client/Model/DashboardItemResource.cs
+    startLine: 30
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public bool IsCompleted { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsCompleted As Boolean
+  overload: Octopus.Client.Model.DashboardItemResource.IsCompleted*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Resource
+  commentId: T:Octopus.Client.Model.Resource
+  parent: Octopus.Client.Model
+  name: Resource
+  nameWithType: Resource
+  fullName: Octopus.Client.Model.Resource
+- uid: Octopus.Client.Extensibility.IResource
+  commentId: T:Octopus.Client.Extensibility.IResource
+  parent: Octopus.Client.Extensibility
+  name: IResource
+  nameWithType: IResource
+  fullName: Octopus.Client.Extensibility.IResource
+- uid: Octopus.Client.Model.IAuditedResource
+  commentId: T:Octopus.Client.Model.IAuditedResource
+  parent: Octopus.Client.Model
+  name: IAuditedResource
+  nameWithType: IAuditedResource
+  fullName: Octopus.Client.Model.IAuditedResource
+- uid: Octopus.Client.Model.Resource.Id
+  commentId: P:Octopus.Client.Model.Resource.Id
+  parent: Octopus.Client.Model.Resource
+  name: Id
+  nameWithType: Resource.Id
+  fullName: Octopus.Client.Model.Resource.Id
+- uid: Octopus.Client.Model.Resource.LastModifiedOn
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedOn
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedOn
+  nameWithType: Resource.LastModifiedOn
+  fullName: Octopus.Client.Model.Resource.LastModifiedOn
+- uid: Octopus.Client.Model.Resource.LastModifiedBy
+  commentId: P:Octopus.Client.Model.Resource.LastModifiedBy
+  parent: Octopus.Client.Model.Resource
+  name: LastModifiedBy
+  nameWithType: Resource.LastModifiedBy
+  fullName: Octopus.Client.Model.Resource.LastModifiedBy
+- uid: Octopus.Client.Model.Resource.Links
+  commentId: P:Octopus.Client.Model.Resource.Links
+  parent: Octopus.Client.Model.Resource
+  name: Links
+  nameWithType: Resource.Links
+  fullName: Octopus.Client.Model.Resource.Links
+- uid: Octopus.Client.Model.Resource.HasLink(System.String)
+  commentId: M:Octopus.Client.Model.Resource.HasLink(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: HasLink(String)
+  nameWithType: Resource.HasLink(String)
+  fullName: Octopus.Client.Model.Resource.HasLink(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.HasLink(System.String)
+    name: HasLink
+    nameWithType: Resource.HasLink
+    fullName: Octopus.Client.Model.Resource.HasLink
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Resource.Link(System.String)
+  commentId: M:Octopus.Client.Model.Resource.Link(System.String)
+  parent: Octopus.Client.Model.Resource
+  isExternal: true
+  name: Link(String)
+  nameWithType: Resource.Link(String)
+  fullName: Octopus.Client.Model.Resource.Link(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Resource.Link(System.String)
+    name: Link
+    nameWithType: Resource.Link
+    fullName: Octopus.Client.Model.Resource.Link
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Extensibility
+  commentId: N:Octopus.Client.Extensibility
+  name: Octopus.Client.Extensibility
+  nameWithType: Octopus.Client.Extensibility
+  fullName: Octopus.Client.Extensibility
+- uid: Octopus.Client.Model.DashboardItemResource.ProjectId*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.ProjectId
+  name: ProjectId
+  nameWithType: DashboardItemResource.ProjectId
+  fullName: Octopus.Client.Model.DashboardItemResource.ProjectId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.DashboardItemResource.EnvironmentId*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.EnvironmentId
+  name: EnvironmentId
+  nameWithType: DashboardItemResource.EnvironmentId
+  fullName: Octopus.Client.Model.DashboardItemResource.EnvironmentId
+- uid: Octopus.Client.Model.DashboardItemResource.ReleaseId*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.ReleaseId
+  name: ReleaseId
+  nameWithType: DashboardItemResource.ReleaseId
+  fullName: Octopus.Client.Model.DashboardItemResource.ReleaseId
+- uid: Octopus.Client.Model.DashboardItemResource.DeploymentId*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.DeploymentId
+  name: DeploymentId
+  nameWithType: DashboardItemResource.DeploymentId
+  fullName: Octopus.Client.Model.DashboardItemResource.DeploymentId
+- uid: Octopus.Client.Model.DashboardItemResource.TaskId*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.TaskId
+  name: TaskId
+  nameWithType: DashboardItemResource.TaskId
+  fullName: Octopus.Client.Model.DashboardItemResource.TaskId
+- uid: Octopus.Client.Model.DashboardItemResource.TenantId*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.TenantId
+  name: TenantId
+  nameWithType: DashboardItemResource.TenantId
+  fullName: Octopus.Client.Model.DashboardItemResource.TenantId
+- uid: Octopus.Client.Model.DashboardItemResource.ChannelId*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.ChannelId
+  name: ChannelId
+  nameWithType: DashboardItemResource.ChannelId
+  fullName: Octopus.Client.Model.DashboardItemResource.ChannelId
+- uid: Octopus.Client.Model.DashboardItemResource.ReleaseVersion*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.ReleaseVersion
+  name: ReleaseVersion
+  nameWithType: DashboardItemResource.ReleaseVersion
+  fullName: Octopus.Client.Model.DashboardItemResource.ReleaseVersion
+- uid: Octopus.Client.Model.DashboardItemResource.Created*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.Created
+  name: Created
+  nameWithType: DashboardItemResource.Created
+  fullName: Octopus.Client.Model.DashboardItemResource.Created
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Octopus.Client.Model.DashboardItemResource.QueueTime*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.QueueTime
+  name: QueueTime
+  nameWithType: DashboardItemResource.QueueTime
+  fullName: Octopus.Client.Model.DashboardItemResource.QueueTime
+- uid: Octopus.Client.Model.DashboardItemResource.StartTime*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.StartTime
+  name: StartTime
+  nameWithType: DashboardItemResource.StartTime
+  fullName: Octopus.Client.Model.DashboardItemResource.StartTime
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  nameWithType: Nullable<DateTimeOffset>
+  fullName: System.Nullable<System.DateTimeOffset>
+  nameWithType.vb: Nullable(Of DateTimeOffset)
+  fullName.vb: System.Nullable(Of System.DateTimeOffset)
+  name.vb: Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.DashboardItemResource.CompletedTime*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.CompletedTime
+  name: CompletedTime
+  nameWithType: DashboardItemResource.CompletedTime
+  fullName: Octopus.Client.Model.DashboardItemResource.CompletedTime
+- uid: Octopus.Client.Model.DashboardItemResource.State*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.State
+  name: State
+  nameWithType: DashboardItemResource.State
+  fullName: Octopus.Client.Model.DashboardItemResource.State
+- uid: Octopus.Client.Model.TaskState
+  commentId: T:Octopus.Client.Model.TaskState
+  parent: Octopus.Client.Model
+  name: TaskState
+  nameWithType: TaskState
+  fullName: Octopus.Client.Model.TaskState
+- uid: Octopus.Client.Model.DashboardItemResource.HasPendingInterruptions*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.HasPendingInterruptions
+  name: HasPendingInterruptions
+  nameWithType: DashboardItemResource.HasPendingInterruptions
+  fullName: Octopus.Client.Model.DashboardItemResource.HasPendingInterruptions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.DashboardItemResource.HasWarningsOrErrors*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.HasWarningsOrErrors
+  name: HasWarningsOrErrors
+  nameWithType: DashboardItemResource.HasWarningsOrErrors
+  fullName: Octopus.Client.Model.DashboardItemResource.HasWarningsOrErrors
+- uid: Octopus.Client.Model.DashboardItemResource.ErrorMessage*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.ErrorMessage
+  name: ErrorMessage
+  nameWithType: DashboardItemResource.ErrorMessage
+  fullName: Octopus.Client.Model.DashboardItemResource.ErrorMessage
+- uid: Octopus.Client.Model.DashboardItemResource.Duration*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.Duration
+  name: Duration
+  nameWithType: DashboardItemResource.Duration
+  fullName: Octopus.Client.Model.DashboardItemResource.Duration
+- uid: Octopus.Client.Model.DashboardItemResource.IsCurrent*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.IsCurrent
+  name: IsCurrent
+  nameWithType: DashboardItemResource.IsCurrent
+  fullName: Octopus.Client.Model.DashboardItemResource.IsCurrent
+- uid: Octopus.Client.Model.DashboardItemResource.IsPrevious*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.IsPrevious
+  name: IsPrevious
+  nameWithType: DashboardItemResource.IsPrevious
+  fullName: Octopus.Client.Model.DashboardItemResource.IsPrevious
+- uid: Octopus.Client.Model.DashboardItemResource.IsCompleted*
+  commentId: Overload:Octopus.Client.Model.DashboardItemResource.IsCompleted
+  name: IsCompleted
+  nameWithType: DashboardItemResource.IsCompleted
+  fullName: Octopus.Client.Model.DashboardItemResource.IsCompleted

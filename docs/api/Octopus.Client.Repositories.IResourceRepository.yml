@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.IResourceRepository
+  commentId: T:Octopus.Client.Repositories.IResourceRepository
+  id: IResourceRepository
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.IResourceRepository.Client
+  langs:
+  - csharp
+  - vb
+  name: IResourceRepository
+  nameWithType: IResourceRepository
+  fullName: Octopus.Client.Repositories.IResourceRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/IResourceRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IResourceRepository
+    path: ../source/Octopus.Client/Repositories/IResourceRepository.cs
+    startLine: 2
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public interface IResourceRepository
+    content.vb: Public Interface IResourceRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.IResourceRepository.Client
+  commentId: P:Octopus.Client.Repositories.IResourceRepository.Client
+  id: Client
+  parent: Octopus.Client.Repositories.IResourceRepository
+  langs:
+  - csharp
+  - vb
+  name: Client
+  nameWithType: IResourceRepository.Client
+  fullName: Octopus.Client.Repositories.IResourceRepository.Client
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/IResourceRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Client
+    path: ../source/Octopus.Client/Repositories/IResourceRepository.cs
+    startLine: 4
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: IOctopusClient Client { get; }
+    parameters: []
+    return:
+      type: Octopus.Client.IOctopusClient
+    content.vb: ReadOnly Property Client As IOctopusClient
+  overload: Octopus.Client.Repositories.IResourceRepository.Client*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Repositories.IResourceRepository.Client*
+  commentId: Overload:Octopus.Client.Repositories.IResourceRepository.Client
+  name: Client
+  nameWithType: IResourceRepository.Client
+  fullName: Octopus.Client.Repositories.IResourceRepository.Client
+- uid: Octopus.Client.IOctopusClient
+  commentId: T:Octopus.Client.IOctopusClient
+  parent: Octopus.Client
+  name: IOctopusClient
+  nameWithType: IOctopusClient
+  fullName: Octopus.Client.IOctopusClient
+- uid: Octopus.Client
+  commentId: N:Octopus.Client
+  name: Octopus.Client
+  nameWithType: Octopus.Client
+  fullName: Octopus.Client

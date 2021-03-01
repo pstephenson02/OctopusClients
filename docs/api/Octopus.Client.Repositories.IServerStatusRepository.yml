@@ -1,0 +1,168 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.IServerStatusRepository
+  commentId: T:Octopus.Client.Repositories.IServerStatusRepository
+  id: IServerStatusRepository
+  parent: Octopus.Client.Repositories
+  children:
+  - Octopus.Client.Repositories.IServerStatusRepository.GetServerHealth
+  - Octopus.Client.Repositories.IServerStatusRepository.GetServerStatus
+  - Octopus.Client.Repositories.IServerStatusRepository.GetSystemInfo(Octopus.Client.Model.ServerStatusResource)
+  langs:
+  - csharp
+  - vb
+  name: IServerStatusRepository
+  nameWithType: IServerStatusRepository
+  fullName: Octopus.Client.Repositories.IServerStatusRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/ServerStatusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IServerStatusRepository
+    path: ../source/Octopus.Client/Repositories/ServerStatusRepository.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: public interface IServerStatusRepository
+    content.vb: Public Interface IServerStatusRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.IServerStatusRepository.GetServerStatus
+  commentId: M:Octopus.Client.Repositories.IServerStatusRepository.GetServerStatus
+  id: GetServerStatus
+  parent: Octopus.Client.Repositories.IServerStatusRepository
+  langs:
+  - csharp
+  - vb
+  name: GetServerStatus()
+  nameWithType: IServerStatusRepository.GetServerStatus()
+  fullName: Octopus.Client.Repositories.IServerStatusRepository.GetServerStatus()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/ServerStatusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetServerStatus
+    path: ../source/Octopus.Client/Repositories/ServerStatusRepository.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: ServerStatusResource GetServerStatus()
+    return:
+      type: Octopus.Client.Model.ServerStatusResource
+    content.vb: Function GetServerStatus As ServerStatusResource
+  overload: Octopus.Client.Repositories.IServerStatusRepository.GetServerStatus*
+- uid: Octopus.Client.Repositories.IServerStatusRepository.GetSystemInfo(Octopus.Client.Model.ServerStatusResource)
+  commentId: M:Octopus.Client.Repositories.IServerStatusRepository.GetSystemInfo(Octopus.Client.Model.ServerStatusResource)
+  id: GetSystemInfo(Octopus.Client.Model.ServerStatusResource)
+  parent: Octopus.Client.Repositories.IServerStatusRepository
+  langs:
+  - csharp
+  - vb
+  name: GetSystemInfo(ServerStatusResource)
+  nameWithType: IServerStatusRepository.GetSystemInfo(ServerStatusResource)
+  fullName: Octopus.Client.Repositories.IServerStatusRepository.GetSystemInfo(Octopus.Client.Model.ServerStatusResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/ServerStatusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetSystemInfo
+    path: ../source/Octopus.Client/Repositories/ServerStatusRepository.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: SystemInfoResource GetSystemInfo(ServerStatusResource status)
+    parameters:
+    - id: status
+      type: Octopus.Client.Model.ServerStatusResource
+    return:
+      type: Octopus.Client.Model.SystemInfoResource
+    content.vb: Function GetSystemInfo(status As ServerStatusResource) As SystemInfoResource
+  overload: Octopus.Client.Repositories.IServerStatusRepository.GetSystemInfo*
+- uid: Octopus.Client.Repositories.IServerStatusRepository.GetServerHealth
+  commentId: M:Octopus.Client.Repositories.IServerStatusRepository.GetServerHealth
+  id: GetServerHealth
+  parent: Octopus.Client.Repositories.IServerStatusRepository
+  langs:
+  - csharp
+  - vb
+  name: GetServerHealth()
+  nameWithType: IServerStatusRepository.GetServerHealth()
+  fullName: Octopus.Client.Repositories.IServerStatusRepository.GetServerHealth()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/ServerStatusRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: GetServerHealth
+    path: ../source/Octopus.Client/Repositories/ServerStatusRepository.cs
+    startLine: 9
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories
+  syntax:
+    content: ServerStatusHealthResource GetServerHealth()
+    return:
+      type: Octopus.Client.Model.ServerStatusHealthResource
+    content.vb: Function GetServerHealth As ServerStatusHealthResource
+  overload: Octopus.Client.Repositories.IServerStatusRepository.GetServerHealth*
+references:
+- uid: Octopus.Client.Repositories
+  commentId: N:Octopus.Client.Repositories
+  name: Octopus.Client.Repositories
+  nameWithType: Octopus.Client.Repositories
+  fullName: Octopus.Client.Repositories
+- uid: Octopus.Client.Repositories.IServerStatusRepository.GetServerStatus*
+  commentId: Overload:Octopus.Client.Repositories.IServerStatusRepository.GetServerStatus
+  name: GetServerStatus
+  nameWithType: IServerStatusRepository.GetServerStatus
+  fullName: Octopus.Client.Repositories.IServerStatusRepository.GetServerStatus
+- uid: Octopus.Client.Model.ServerStatusResource
+  commentId: T:Octopus.Client.Model.ServerStatusResource
+  parent: Octopus.Client.Model
+  name: ServerStatusResource
+  nameWithType: ServerStatusResource
+  fullName: Octopus.Client.Model.ServerStatusResource
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: Octopus.Client.Repositories.IServerStatusRepository.GetSystemInfo*
+  commentId: Overload:Octopus.Client.Repositories.IServerStatusRepository.GetSystemInfo
+  name: GetSystemInfo
+  nameWithType: IServerStatusRepository.GetSystemInfo
+  fullName: Octopus.Client.Repositories.IServerStatusRepository.GetSystemInfo
+- uid: Octopus.Client.Model.SystemInfoResource
+  commentId: T:Octopus.Client.Model.SystemInfoResource
+  parent: Octopus.Client.Model
+  name: SystemInfoResource
+  nameWithType: SystemInfoResource
+  fullName: Octopus.Client.Model.SystemInfoResource
+- uid: Octopus.Client.Repositories.IServerStatusRepository.GetServerHealth*
+  commentId: Overload:Octopus.Client.Repositories.IServerStatusRepository.GetServerHealth
+  name: GetServerHealth
+  nameWithType: IServerStatusRepository.GetServerHealth
+  fullName: Octopus.Client.Repositories.IServerStatusRepository.GetServerHealth
+- uid: Octopus.Client.Model.ServerStatusHealthResource
+  commentId: T:Octopus.Client.Model.ServerStatusHealthResource
+  parent: Octopus.Client.Model
+  name: ServerStatusHealthResource
+  nameWithType: ServerStatusHealthResource
+  fullName: Octopus.Client.Model.ServerStatusHealthResource

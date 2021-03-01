@@ -1,0 +1,2193 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.SemanticVersion
+  commentId: T:Octopus.Client.Model.SemanticVersion
+  id: SemanticVersion
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.SemanticVersion.#ctor(Octopus.Client.Model.SemanticVersion)
+  - Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32)
+  - Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.String)
+  - Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.String)
+  - Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String)
+  - Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.String)
+  - Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String)
+  - Octopus.Client.Model.SemanticVersion.#ctor(System.String)
+  - Octopus.Client.Model.SemanticVersion.#ctor(System.Version,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Boolean)
+  - Octopus.Client.Model.SemanticVersion.#ctor(System.Version,System.String,System.String)
+  - Octopus.Client.Model.SemanticVersion.IncrementRelease(System.String)
+  - Octopus.Client.Model.SemanticVersion.IsLegacyVersion
+  - Octopus.Client.Model.SemanticVersion.IsSemVer2
+  - Octopus.Client.Model.SemanticVersion.op_Explicit(System.String)~Octopus.Client.Model.SemanticVersion
+  - Octopus.Client.Model.SemanticVersion.OriginalString
+  - Octopus.Client.Model.SemanticVersion.Parse(System.String,System.Boolean)
+  - Octopus.Client.Model.SemanticVersion.Revision
+  - Octopus.Client.Model.SemanticVersion.ToString
+  - Octopus.Client.Model.SemanticVersion.TryParse(System.String,Octopus.Client.Model.SemanticVersion@,System.Boolean)
+  - Octopus.Client.Model.SemanticVersion.TryParseStrict(System.String,Octopus.Client.Model.SemanticVersion@)
+  - Octopus.Client.Model.SemanticVersion.Version
+  langs:
+  - csharp
+  - vb
+  name: SemanticVersion
+  nameWithType: SemanticVersion
+  fullName: Octopus.Client.Model.SemanticVersion
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersionFactory.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SemanticVersion
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersionFactory.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nA hybrid implementation of SemVer that supports semantic versioning as described at http://semver.org while\nnot strictly enforcing it to\nallow older 4-digit versioning schemes to continue working.\n"
+  example: []
+  syntax:
+    content: 'public class SemanticVersion : StrictSemanticVersion, IFormattable, IComparable, IComparable<StrictSemanticVersion>, IEquatable<StrictSemanticVersion>'
+    content.vb: >-
+      Public Class SemanticVersion
+          Inherits StrictSemanticVersion
+          Implements IFormattable, IComparable, IComparable(Of StrictSemanticVersion), IEquatable(Of StrictSemanticVersion)
+  inheritance:
+  - System.Object
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion
+  implements:
+  - System.IFormattable
+  - System.IComparable
+  - System.IComparable{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  - System.IEquatable{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  inheritedMembers:
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.Major
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.Minor
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.Patch
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.ReleaseLabels
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.Release
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.IsPrerelease
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.HasMetadata
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.Metadata
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.ToNormalizedString
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString(System.String,System.IFormatProvider)
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.TryFormatter(System.String,System.IFormatProvider,System.String@)
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.GetHashCode
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(System.Object)
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(System.Object)
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.Parse(System.String)
+  - Octopus.Client.Model.Versioning.StrictSemanticVersion.TryParse(System.String,Octopus.Client.Model.Versioning.StrictSemanticVersion@)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.SemanticVersion.#ctor(System.String)
+  commentId: M:Octopus.Client.Model.SemanticVersion.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: SemanticVersion(String)
+  nameWithType: SemanticVersion.SemanticVersion(String)
+  fullName: Octopus.Client.Model.SemanticVersion.SemanticVersion(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 26
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nCreates a NuGetVersion using NuGetVersion.Parse(string)\n"
+  example: []
+  syntax:
+    content: public SemanticVersion(string version)
+    parameters:
+    - id: version
+      type: System.String
+      description: Version string
+    content.vb: Public Sub New(version As String)
+  overload: Octopus.Client.Model.SemanticVersion.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SemanticVersion.#ctor(Octopus.Client.Model.SemanticVersion)
+  commentId: M:Octopus.Client.Model.SemanticVersion.#ctor(Octopus.Client.Model.SemanticVersion)
+  id: '#ctor(Octopus.Client.Model.SemanticVersion)'
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: SemanticVersion(SemanticVersion)
+  nameWithType: SemanticVersion.SemanticVersion(SemanticVersion)
+  fullName: Octopus.Client.Model.SemanticVersion.SemanticVersion(Octopus.Client.Model.SemanticVersion)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 34
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nCreates a NuGetVersion from an existing NuGetVersion\n"
+  example: []
+  syntax:
+    content: public SemanticVersion(SemanticVersion version)
+    parameters:
+    - id: version
+      type: Octopus.Client.Model.SemanticVersion
+    content.vb: Public Sub New(version As SemanticVersion)
+  overload: Octopus.Client.Model.SemanticVersion.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SemanticVersion.#ctor(System.Version,System.String,System.String)
+  commentId: M:Octopus.Client.Model.SemanticVersion.#ctor(System.Version,System.String,System.String)
+  id: '#ctor(System.Version,System.String,System.String)'
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: SemanticVersion(Version, String, String)
+  nameWithType: SemanticVersion.SemanticVersion(Version, String, String)
+  fullName: Octopus.Client.Model.SemanticVersion.SemanticVersion(System.Version, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 45
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nCreates a NuGetVersion from a .NET Version\n"
+  example: []
+  syntax:
+    content: public SemanticVersion(Version version, string releaseLabel = null, string metadata = null)
+    parameters:
+    - id: version
+      type: System.Version
+      description: Version numbers
+    - id: releaseLabel
+      type: System.String
+      description: Prerelease label
+    - id: metadata
+      type: System.String
+      description: Build metadata
+    content.vb: Public Sub New(version As Version, releaseLabel As String = Nothing, metadata As String = Nothing)
+  overload: Octopus.Client.Model.SemanticVersion.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32)
+  commentId: M:Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32)'
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: SemanticVersion(Int32, Int32, Int32)
+  nameWithType: SemanticVersion.SemanticVersion(Int32, Int32, Int32)
+  fullName: Octopus.Client.Model.SemanticVersion.SemanticVersion(System.Int32, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 56
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nCreates a NuGetVersion X.Y.Z\n"
+  example: []
+  syntax:
+    content: public SemanticVersion(int major, int minor, int patch)
+    parameters:
+    - id: major
+      type: System.Int32
+      description: X.y.z
+    - id: minor
+      type: System.Int32
+      description: x.Y.z
+    - id: patch
+      type: System.Int32
+      description: x.y.Z
+    content.vb: Public Sub New(major As Integer, minor As Integer, patch As Integer)
+  overload: Octopus.Client.Model.SemanticVersion.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.String)
+  commentId: M:Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.String)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.String)'
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: SemanticVersion(Int32, Int32, Int32, String)
+  nameWithType: SemanticVersion.SemanticVersion(Int32, Int32, Int32, String)
+  fullName: Octopus.Client.Model.SemanticVersion.SemanticVersion(System.Int32, System.Int32, System.Int32, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 68
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nCreates a NuGetVersion X.Y.Z-alpha\n"
+  example: []
+  syntax:
+    content: public SemanticVersion(int major, int minor, int patch, string releaseLabel)
+    parameters:
+    - id: major
+      type: System.Int32
+      description: X.y.z
+    - id: minor
+      type: System.Int32
+      description: x.Y.z
+    - id: patch
+      type: System.Int32
+      description: x.y.Z
+    - id: releaseLabel
+      type: System.String
+      description: Prerelease label
+    content.vb: Public Sub New(major As Integer, minor As Integer, patch As Integer, releaseLabel As String)
+  overload: Octopus.Client.Model.SemanticVersion.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String)
+  commentId: M:Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String)'
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: SemanticVersion(Int32, Int32, Int32, String, String)
+  nameWithType: SemanticVersion.SemanticVersion(Int32, Int32, Int32, String, String)
+  fullName: Octopus.Client.Model.SemanticVersion.SemanticVersion(System.Int32, System.Int32, System.Int32, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 81
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nCreates a NuGetVersion X.Y.Z-alpha#build01\n"
+  example: []
+  syntax:
+    content: public SemanticVersion(int major, int minor, int patch, string releaseLabel, string metadata)
+    parameters:
+    - id: major
+      type: System.Int32
+      description: X.y.z
+    - id: minor
+      type: System.Int32
+      description: x.Y.z
+    - id: patch
+      type: System.Int32
+      description: x.y.Z
+    - id: releaseLabel
+      type: System.String
+      description: Prerelease label
+    - id: metadata
+      type: System.String
+      description: Build metadata
+    content.vb: Public Sub New(major As Integer, minor As Integer, patch As Integer, releaseLabel As String, metadata As String)
+  overload: Octopus.Client.Model.SemanticVersion.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.String)
+  commentId: M:Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.String)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.String)'
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: SemanticVersion(Int32, Int32, Int32, IEnumerable<String>, String)
+  nameWithType: SemanticVersion.SemanticVersion(Int32, Int32, Int32, IEnumerable<String>, String)
+  fullName: Octopus.Client.Model.SemanticVersion.SemanticVersion(System.Int32, System.Int32, System.Int32, System.Collections.Generic.IEnumerable<System.String>, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 94
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nCreates a NuGetVersion X.Y.Z-alpha.1.2#build01\n"
+  example: []
+  syntax:
+    content: public SemanticVersion(int major, int minor, int patch, IEnumerable<string> releaseLabels, string metadata)
+    parameters:
+    - id: major
+      type: System.Int32
+      description: X.y.z
+    - id: minor
+      type: System.Int32
+      description: x.Y.z
+    - id: patch
+      type: System.Int32
+      description: x.y.Z
+    - id: releaseLabels
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Prerelease labels
+    - id: metadata
+      type: System.String
+      description: Build metadata
+    content.vb: Public Sub New(major As Integer, minor As Integer, patch As Integer, releaseLabels As IEnumerable(Of String), metadata As String)
+  overload: Octopus.Client.Model.SemanticVersion.#ctor*
+  nameWithType.vb: SemanticVersion.SemanticVersion(Int32, Int32, Int32, IEnumerable(Of String), String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.SemanticVersion.SemanticVersion(System.Int32, System.Int32, System.Int32, System.Collections.Generic.IEnumerable(Of System.String), System.String)
+  name.vb: SemanticVersion(Int32, Int32, Int32, IEnumerable(Of String), String)
+- uid: Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32)'
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: SemanticVersion(Int32, Int32, Int32, Int32)
+  nameWithType: SemanticVersion.SemanticVersion(Int32, Int32, Int32, Int32)
+  fullName: Octopus.Client.Model.SemanticVersion.SemanticVersion(System.Int32, System.Int32, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 106
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nCreates a NuGetVersion W.X.Y.Z\n"
+  example: []
+  syntax:
+    content: public SemanticVersion(int major, int minor, int patch, int revision)
+    parameters:
+    - id: major
+      type: System.Int32
+      description: W.x.y.z
+    - id: minor
+      type: System.Int32
+      description: w.X.y.z
+    - id: patch
+      type: System.Int32
+      description: w.x.Y.z
+    - id: revision
+      type: System.Int32
+      description: w.x.y.Z
+    content.vb: Public Sub New(major As Integer, minor As Integer, patch As Integer, revision As Integer)
+  overload: Octopus.Client.Model.SemanticVersion.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String)
+  commentId: M:Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String)'
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: SemanticVersion(Int32, Int32, Int32, Int32, String, String)
+  nameWithType: SemanticVersion.SemanticVersion(Int32, Int32, Int32, Int32, String, String)
+  fullName: Octopus.Client.Model.SemanticVersion.SemanticVersion(System.Int32, System.Int32, System.Int32, System.Int32, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 120
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nCreates a NuGetVersion W.X.Y.Z-alpha#build01\n"
+  example: []
+  syntax:
+    content: public SemanticVersion(int major, int minor, int patch, int revision, string releaseLabel, string metadata)
+    parameters:
+    - id: major
+      type: System.Int32
+      description: W.x.y.z
+    - id: minor
+      type: System.Int32
+      description: w.X.y.z
+    - id: patch
+      type: System.Int32
+      description: w.x.Y.z
+    - id: revision
+      type: System.Int32
+      description: w.x.y.Z
+    - id: releaseLabel
+      type: System.String
+      description: Prerelease label
+    - id: metadata
+      type: System.String
+      description: Build metadata
+    content.vb: Public Sub New(major As Integer, minor As Integer, patch As Integer, revision As Integer, releaseLabel As String, metadata As String)
+  overload: Octopus.Client.Model.SemanticVersion.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.String)
+  commentId: M:Octopus.Client.Model.SemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.String)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.String)'
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: SemanticVersion(Int32, Int32, Int32, Int32, IEnumerable<String>, String)
+  nameWithType: SemanticVersion.SemanticVersion(Int32, Int32, Int32, Int32, IEnumerable<String>, String)
+  fullName: Octopus.Client.Model.SemanticVersion.SemanticVersion(System.Int32, System.Int32, System.Int32, System.Int32, System.Collections.Generic.IEnumerable<System.String>, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 134
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nCreates a NuGetVersion W.X.Y.Z-alpha.1#build01\n"
+  example: []
+  syntax:
+    content: public SemanticVersion(int major, int minor, int patch, int revision, IEnumerable<string> releaseLabels, string metadata)
+    parameters:
+    - id: major
+      type: System.Int32
+      description: W.x.y.z
+    - id: minor
+      type: System.Int32
+      description: w.X.y.z
+    - id: patch
+      type: System.Int32
+      description: w.x.Y.z
+    - id: revision
+      type: System.Int32
+      description: w.x.y.Z
+    - id: releaseLabels
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Prerelease labels
+    - id: metadata
+      type: System.String
+      description: Build metadata
+    content.vb: Public Sub New(major As Integer, minor As Integer, patch As Integer, revision As Integer, releaseLabels As IEnumerable(Of String), metadata As String)
+  overload: Octopus.Client.Model.SemanticVersion.#ctor*
+  nameWithType.vb: SemanticVersion.SemanticVersion(Int32, Int32, Int32, Int32, IEnumerable(Of String), String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.SemanticVersion.SemanticVersion(System.Int32, System.Int32, System.Int32, System.Int32, System.Collections.Generic.IEnumerable(Of System.String), System.String)
+  name.vb: SemanticVersion(Int32, Int32, Int32, Int32, IEnumerable(Of String), String)
+- uid: Octopus.Client.Model.SemanticVersion.#ctor(System.Version,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Boolean)
+  commentId: M:Octopus.Client.Model.SemanticVersion.#ctor(System.Version,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Boolean)
+  id: '#ctor(System.Version,System.Collections.Generic.IEnumerable{System.String},System.String,System.String,System.Boolean)'
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: SemanticVersion(Version, IEnumerable<String>, String, String, Boolean)
+  nameWithType: SemanticVersion.SemanticVersion(Version, IEnumerable<String>, String, String, Boolean)
+  fullName: Octopus.Client.Model.SemanticVersion.SemanticVersion(System.Version, System.Collections.Generic.IEnumerable<System.String>, System.String, System.String, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 148
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nCreates a NuGetVersion from a .NET Version with additional release labels, build metadata, and a\nnon-normalized version string.\n"
+  example: []
+  syntax:
+    content: public SemanticVersion(Version version, IEnumerable<string> releaseLabels, string metadata, string originalVersion, bool preserveMissingComponents = false)
+    parameters:
+    - id: version
+      type: System.Version
+      description: Version numbers
+    - id: releaseLabels
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: prerelease labels
+    - id: metadata
+      type: System.String
+      description: Build metadata
+    - id: originalVersion
+      type: System.String
+      description: Non-normalized original version string
+    - id: preserveMissingComponents
+      type: System.Boolean
+      description: Indicates whether to normalize to semantic version
+    content.vb: Public Sub New(version As Version, releaseLabels As IEnumerable(Of String), metadata As String, originalVersion As String, preserveMissingComponents As Boolean = False)
+  overload: Octopus.Client.Model.SemanticVersion.#ctor*
+  nameWithType.vb: SemanticVersion.SemanticVersion(Version, IEnumerable(Of String), String, String, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Octopus.Client.Model.SemanticVersion.SemanticVersion(System.Version, System.Collections.Generic.IEnumerable(Of System.String), System.String, System.String, System.Boolean)
+  name.vb: SemanticVersion(Version, IEnumerable(Of String), String, String, Boolean)
+- uid: Octopus.Client.Model.SemanticVersion.op_Explicit(System.String)~Octopus.Client.Model.SemanticVersion
+  commentId: M:Octopus.Client.Model.SemanticVersion.op_Explicit(System.String)~Octopus.Client.Model.SemanticVersion
+  id: op_Explicit(System.String)~Octopus.Client.Model.SemanticVersion
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: Explicit(String to SemanticVersion)
+  nameWithType: SemanticVersion.Explicit(String to SemanticVersion)
+  fullName: Octopus.Client.Model.SemanticVersion.Explicit(System.String to Octopus.Client.Model.SemanticVersion)
+  type: Operator
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: op_Explicit
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 154
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public static explicit operator SemanticVersion(string versionString)
+    parameters:
+    - id: versionString
+      type: System.String
+    return:
+      type: Octopus.Client.Model.SemanticVersion
+    content.vb: Public Shared Narrowing Operator CType(versionString As String) As SemanticVersion
+  overload: Octopus.Client.Model.SemanticVersion.op_Explicit*
+  nameWithType.vb: SemanticVersion.Narrowing(String to SemanticVersion)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Octopus.Client.Model.SemanticVersion.Narrowing(System.String to Octopus.Client.Model.SemanticVersion)
+  name.vb: Narrowing(String to SemanticVersion)
+- uid: Octopus.Client.Model.SemanticVersion.ToString
+  commentId: M:Octopus.Client.Model.SemanticVersion.ToString
+  id: ToString
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: SemanticVersion.ToString()
+  fullName: Octopus.Client.Model.SemanticVersion.ToString()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ToString
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 163
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nReturns the version string.\n"
+  remarks: This method includes legacy behavior. Use ToNormalizedString() instead.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString
+  overload: Octopus.Client.Model.SemanticVersion.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Octopus.Client.Model.SemanticVersion.Version
+  commentId: P:Octopus.Client.Model.SemanticVersion.Version
+  id: Version
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: SemanticVersion.Version
+  fullName: Octopus.Client.Model.SemanticVersion.Version
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Version
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 176
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nA System.Version representation of the version without metadata or release labels.\n"
+  example: []
+  syntax:
+    content: public Version Version { get; }
+    parameters: []
+    return:
+      type: System.Version
+    content.vb: Public ReadOnly Property Version As Version
+  overload: Octopus.Client.Model.SemanticVersion.Version*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.SemanticVersion.IsLegacyVersion
+  commentId: P:Octopus.Client.Model.SemanticVersion.IsLegacyVersion
+  id: IsLegacyVersion
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: IsLegacyVersion
+  nameWithType: SemanticVersion.IsLegacyVersion
+  fullName: Octopus.Client.Model.SemanticVersion.IsLegacyVersion
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsLegacyVersion
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 184
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nTrue if the NuGetVersion is using legacy behavior.\n"
+  example: []
+  syntax:
+    content: public virtual bool IsLegacyVersion { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property IsLegacyVersion As Boolean
+  overload: Octopus.Client.Model.SemanticVersion.IsLegacyVersion*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Octopus.Client.Model.SemanticVersion.Revision
+  commentId: P:Octopus.Client.Model.SemanticVersion.Revision
+  id: Revision
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: Revision
+  nameWithType: SemanticVersion.Revision
+  fullName: Octopus.Client.Model.SemanticVersion.Revision
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Revision
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 192
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nRevision version R (x.y.z.R)\n"
+  example: []
+  syntax:
+    content: public int Revision { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Revision As Integer
+  overload: Octopus.Client.Model.SemanticVersion.Revision*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.SemanticVersion.IsSemVer2
+  commentId: P:Octopus.Client.Model.SemanticVersion.IsSemVer2
+  id: IsSemVer2
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: IsSemVer2
+  nameWithType: SemanticVersion.IsSemVer2
+  fullName: Octopus.Client.Model.SemanticVersion.IsSemVer2
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IsSemVer2
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 200
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nReturns true if version is a SemVer 2.0.0 version\n"
+  example: []
+  syntax:
+    content: public bool IsSemVer2 { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsSemVer2 As Boolean
+  overload: Octopus.Client.Model.SemanticVersion.IsSemVer2*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.SemanticVersion.OriginalString
+  commentId: P:Octopus.Client.Model.SemanticVersion.OriginalString
+  id: OriginalString
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: OriginalString
+  nameWithType: SemanticVersion.OriginalString
+  fullName: Octopus.Client.Model.SemanticVersion.OriginalString
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: OriginalString
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 205
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public string OriginalString { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property OriginalString As String
+  overload: Octopus.Client.Model.SemanticVersion.OriginalString*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Octopus.Client.Model.SemanticVersion.IncrementRelease(System.String)
+  commentId: M:Octopus.Client.Model.SemanticVersion.IncrementRelease(System.String)
+  id: IncrementRelease(System.String)
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: IncrementRelease(String)
+  nameWithType: SemanticVersion.IncrementRelease(String)
+  fullName: Octopus.Client.Model.SemanticVersion.IncrementRelease(System.String)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IncrementRelease
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersion.cs
+    startLine: 210
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public static string IncrementRelease(string release)
+    parameters:
+    - id: release
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function IncrementRelease(release As String) As String
+  overload: Octopus.Client.Model.SemanticVersion.IncrementRelease*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Octopus.Client.Model.SemanticVersion.Parse(System.String,System.Boolean)
+  commentId: M:Octopus.Client.Model.SemanticVersion.Parse(System.String,System.Boolean)
+  id: Parse(System.String,System.Boolean)
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: Parse(String, Boolean)
+  nameWithType: SemanticVersion.Parse(String, Boolean)
+  fullName: Octopus.Client.Model.SemanticVersion.Parse(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersionFactory.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Parse
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersionFactory.cs
+    startLine: 18
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nCreates a NuGetVersion from a string representing the semantic version.\n"
+  example: []
+  syntax:
+    content: public static SemanticVersion Parse(string value, bool preserveMissingComponents = false)
+    parameters:
+    - id: value
+      type: System.String
+    - id: preserveMissingComponents
+      type: System.Boolean
+    return:
+      type: Octopus.Client.Model.SemanticVersion
+    content.vb: Public Shared Function Parse(value As String, preserveMissingComponents As Boolean = False) As SemanticVersion
+  overload: Octopus.Client.Model.SemanticVersion.Parse*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Octopus.Client.Model.SemanticVersion.TryParse(System.String,Octopus.Client.Model.SemanticVersion@,System.Boolean)
+  commentId: M:Octopus.Client.Model.SemanticVersion.TryParse(System.String,Octopus.Client.Model.SemanticVersion@,System.Boolean)
+  id: TryParse(System.String,Octopus.Client.Model.SemanticVersion@,System.Boolean)
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: TryParse(String, out SemanticVersion, Boolean)
+  nameWithType: SemanticVersion.TryParse(String, out SemanticVersion, Boolean)
+  fullName: Octopus.Client.Model.SemanticVersion.TryParse(System.String, out Octopus.Client.Model.SemanticVersion, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersionFactory.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TryParse
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersionFactory.cs
+    startLine: 38
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nParses a version string using loose semantic versioning rules that allows 2-4 version components followed\nby an optional special version.\n"
+  example: []
+  syntax:
+    content: public static bool TryParse(string value, out SemanticVersion version, bool preserveMissingComponents = false)
+    parameters:
+    - id: value
+      type: System.String
+    - id: version
+      type: Octopus.Client.Model.SemanticVersion
+    - id: preserveMissingComponents
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryParse(value As String, ByRef version As SemanticVersion, preserveMissingComponents As Boolean = False) As Boolean
+  overload: Octopus.Client.Model.SemanticVersion.TryParse*
+  nameWithType.vb: SemanticVersion.TryParse(String, ByRef SemanticVersion, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Octopus.Client.Model.SemanticVersion.TryParse(System.String, ByRef Octopus.Client.Model.SemanticVersion, System.Boolean)
+  name.vb: TryParse(String, ByRef SemanticVersion, Boolean)
+- uid: Octopus.Client.Model.SemanticVersion.TryParseStrict(System.String,Octopus.Client.Model.SemanticVersion@)
+  commentId: M:Octopus.Client.Model.SemanticVersion.TryParseStrict(System.String,Octopus.Client.Model.SemanticVersion@)
+  id: TryParseStrict(System.String,Octopus.Client.Model.SemanticVersion@)
+  parent: Octopus.Client.Model.SemanticVersion
+  langs:
+  - csharp
+  - vb
+  name: TryParseStrict(String, out SemanticVersion)
+  nameWithType: SemanticVersion.TryParseStrict(String, out SemanticVersion)
+  fullName: Octopus.Client.Model.SemanticVersion.TryParseStrict(System.String, out Octopus.Client.Model.SemanticVersion)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Model/Versioning/SemanticVersionFactory.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TryParseStrict
+    path: ../source/Octopus.Client/Model/Versioning/SemanticVersionFactory.cs
+    startLine: 104
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  summary: "\nParses a version string using strict SemVer rules.\n"
+  example: []
+  syntax:
+    content: public static bool TryParseStrict(string value, out SemanticVersion version)
+    parameters:
+    - id: value
+      type: System.String
+    - id: version
+      type: Octopus.Client.Model.SemanticVersion
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryParseStrict(value As String, ByRef version As SemanticVersion) As Boolean
+  overload: Octopus.Client.Model.SemanticVersion.TryParseStrict*
+  nameWithType.vb: SemanticVersion.TryParseStrict(String, ByRef SemanticVersion)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Octopus.Client.Model.SemanticVersion.TryParseStrict(System.String, ByRef Octopus.Client.Model.SemanticVersion)
+  name.vb: TryParseStrict(String, ByRef SemanticVersion)
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  commentId: T:Octopus.Client.Model.Versioning.StrictSemanticVersion
+  parent: Octopus.Client.Model.Versioning
+  name: StrictSemanticVersion
+  nameWithType: StrictSemanticVersion
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+- uid: System.IFormattable
+  commentId: T:System.IFormattable
+  parent: System
+  isExternal: true
+  name: IFormattable
+  nameWithType: IFormattable
+  fullName: System.IFormattable
+- uid: System.IComparable
+  commentId: T:System.IComparable
+  parent: System
+  isExternal: true
+  name: IComparable
+  nameWithType: IComparable
+  fullName: System.IComparable
+- uid: System.IComparable{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  commentId: T:System.IComparable{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  parent: System
+  definition: System.IComparable`1
+  name: IComparable<StrictSemanticVersion>
+  nameWithType: IComparable<StrictSemanticVersion>
+  fullName: System.IComparable<Octopus.Client.Model.Versioning.StrictSemanticVersion>
+  nameWithType.vb: IComparable(Of StrictSemanticVersion)
+  fullName.vb: System.IComparable(Of Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  name.vb: IComparable(Of StrictSemanticVersion)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  commentId: T:System.IEquatable{Octopus.Client.Model.Versioning.StrictSemanticVersion}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<StrictSemanticVersion>
+  nameWithType: IEquatable<StrictSemanticVersion>
+  fullName: System.IEquatable<Octopus.Client.Model.Versioning.StrictSemanticVersion>
+  nameWithType.vb: IEquatable(Of StrictSemanticVersion)
+  fullName.vb: System.IEquatable(Of Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  name.vb: IEquatable(Of StrictSemanticVersion)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Major
+  commentId: P:Octopus.Client.Model.Versioning.StrictSemanticVersion.Major
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: Major
+  nameWithType: StrictSemanticVersion.Major
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Major
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Minor
+  commentId: P:Octopus.Client.Model.Versioning.StrictSemanticVersion.Minor
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: Minor
+  nameWithType: StrictSemanticVersion.Minor
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Minor
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Patch
+  commentId: P:Octopus.Client.Model.Versioning.StrictSemanticVersion.Patch
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: Patch
+  nameWithType: StrictSemanticVersion.Patch
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Patch
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.ReleaseLabels
+  commentId: P:Octopus.Client.Model.Versioning.StrictSemanticVersion.ReleaseLabels
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: ReleaseLabels
+  nameWithType: StrictSemanticVersion.ReleaseLabels
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.ReleaseLabels
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Release
+  commentId: P:Octopus.Client.Model.Versioning.StrictSemanticVersion.Release
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: Release
+  nameWithType: StrictSemanticVersion.Release
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Release
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.IsPrerelease
+  commentId: P:Octopus.Client.Model.Versioning.StrictSemanticVersion.IsPrerelease
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: IsPrerelease
+  nameWithType: StrictSemanticVersion.IsPrerelease
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.IsPrerelease
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.HasMetadata
+  commentId: P:Octopus.Client.Model.Versioning.StrictSemanticVersion.HasMetadata
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: HasMetadata
+  nameWithType: StrictSemanticVersion.HasMetadata
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.HasMetadata
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Metadata
+  commentId: P:Octopus.Client.Model.Versioning.StrictSemanticVersion.Metadata
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: Metadata
+  nameWithType: StrictSemanticVersion.Metadata
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Metadata
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToNormalizedString
+  commentId: M:Octopus.Client.Model.Versioning.StrictSemanticVersion.ToNormalizedString
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: ToNormalizedString()
+  nameWithType: StrictSemanticVersion.ToNormalizedString()
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToNormalizedString()
+  spec.csharp:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToNormalizedString
+    name: ToNormalizedString
+    nameWithType: StrictSemanticVersion.ToNormalizedString
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToNormalizedString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToNormalizedString
+    name: ToNormalizedString
+    nameWithType: StrictSemanticVersion.ToNormalizedString
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToNormalizedString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString(System.String,System.IFormatProvider)
+  commentId: M:Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString(System.String,System.IFormatProvider)
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  isExternal: true
+  name: ToString(String, IFormatProvider)
+  nameWithType: StrictSemanticVersion.ToString(String, IFormatProvider)
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString(System.String, System.IFormatProvider)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    nameWithType: StrictSemanticVersion.ToString
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString(System.String,System.IFormatProvider)
+    name: ToString
+    nameWithType: StrictSemanticVersion.ToString
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.TryFormatter(System.String,System.IFormatProvider,System.String@)
+  commentId: M:Octopus.Client.Model.Versioning.StrictSemanticVersion.TryFormatter(System.String,System.IFormatProvider,System.String@)
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  isExternal: true
+  name: TryFormatter(String, IFormatProvider, String)
+  nameWithType: StrictSemanticVersion.TryFormatter(String, IFormatProvider, String)
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.TryFormatter(System.String, System.IFormatProvider, System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.TryFormatter(System.String,System.IFormatProvider,System.String@)
+    name: TryFormatter
+    nameWithType: StrictSemanticVersion.TryFormatter
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.TryFormatter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.TryFormatter(System.String,System.IFormatProvider,System.String@)
+    name: TryFormatter
+    nameWithType: StrictSemanticVersion.TryFormatter
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.TryFormatter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IFormatProvider
+    name: IFormatProvider
+    nameWithType: IFormatProvider
+    fullName: System.IFormatProvider
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.GetHashCode
+  commentId: M:Octopus.Client.Model.Versioning.StrictSemanticVersion.GetHashCode
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: GetHashCode()
+  nameWithType: StrictSemanticVersion.GetHashCode()
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.GetHashCode()
+  spec.csharp:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.GetHashCode
+    name: GetHashCode
+    nameWithType: StrictSemanticVersion.GetHashCode
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.GetHashCode
+    name: GetHashCode
+    nameWithType: StrictSemanticVersion.GetHashCode
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(System.Object)
+  commentId: M:Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(System.Object)
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  isExternal: true
+  name: CompareTo(Object)
+  nameWithType: StrictSemanticVersion.CompareTo(Object)
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(System.Object)
+    name: CompareTo
+    nameWithType: StrictSemanticVersion.CompareTo
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(System.Object)
+    name: CompareTo
+    nameWithType: StrictSemanticVersion.CompareTo
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  commentId: M:Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: CompareTo(StrictSemanticVersion)
+  nameWithType: StrictSemanticVersion.CompareTo(StrictSemanticVersion)
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+    name: CompareTo
+    nameWithType: StrictSemanticVersion.CompareTo
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+    name: CompareTo
+    nameWithType: StrictSemanticVersion.CompareTo
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(System.Object)
+  commentId: M:Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(System.Object)
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: StrictSemanticVersion.Equals(Object)
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(System.Object)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(System.Object)
+    name: Equals
+    nameWithType: StrictSemanticVersion.Equals
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(System.Object)
+    name: Equals
+    nameWithType: StrictSemanticVersion.Equals
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  commentId: M:Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: Equals(StrictSemanticVersion)
+  nameWithType: StrictSemanticVersion.Equals(StrictSemanticVersion)
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+    name: Equals
+    nameWithType: StrictSemanticVersion.Equals
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion)
+    name: Equals
+    nameWithType: StrictSemanticVersion.Equals
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)
+  commentId: M:Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: Equals(StrictSemanticVersion, VersionComparison)
+  nameWithType: StrictSemanticVersion.Equals(StrictSemanticVersion, VersionComparison)
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion, Octopus.Client.Model.Versioning.VersionComparison)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)
+    name: Equals
+    nameWithType: StrictSemanticVersion.Equals
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Versioning.VersionComparison
+    name: VersionComparison
+    nameWithType: VersionComparison
+    fullName: Octopus.Client.Model.Versioning.VersionComparison
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)
+    name: Equals
+    nameWithType: StrictSemanticVersion.Equals
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Versioning.VersionComparison
+    name: VersionComparison
+    nameWithType: VersionComparison
+    fullName: Octopus.Client.Model.Versioning.VersionComparison
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)
+  commentId: M:Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: CompareTo(StrictSemanticVersion, VersionComparison)
+  nameWithType: StrictSemanticVersion.CompareTo(StrictSemanticVersion, VersionComparison)
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion, Octopus.Client.Model.Versioning.VersionComparison)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)
+    name: CompareTo
+    nameWithType: StrictSemanticVersion.CompareTo
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Versioning.VersionComparison
+    name: VersionComparison
+    nameWithType: VersionComparison
+    fullName: Octopus.Client.Model.Versioning.VersionComparison
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)
+    name: CompareTo
+    nameWithType: StrictSemanticVersion.CompareTo
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Versioning.VersionComparison
+    name: VersionComparison
+    nameWithType: VersionComparison
+    fullName: Octopus.Client.Model.Versioning.VersionComparison
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Parse(System.String)
+  commentId: M:Octopus.Client.Model.Versioning.StrictSemanticVersion.Parse(System.String)
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  isExternal: true
+  name: Parse(String)
+  nameWithType: StrictSemanticVersion.Parse(String)
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Parse(System.String)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Parse(System.String)
+    name: Parse
+    nameWithType: StrictSemanticVersion.Parse
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Parse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.Parse(System.String)
+    name: Parse
+    nameWithType: StrictSemanticVersion.Parse
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.Parse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.TryParse(System.String,Octopus.Client.Model.Versioning.StrictSemanticVersion@)
+  commentId: M:Octopus.Client.Model.Versioning.StrictSemanticVersion.TryParse(System.String,Octopus.Client.Model.Versioning.StrictSemanticVersion@)
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  isExternal: true
+  name: TryParse(String, StrictSemanticVersion)
+  nameWithType: StrictSemanticVersion.TryParse(String, StrictSemanticVersion)
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.TryParse(System.String, Octopus.Client.Model.Versioning.StrictSemanticVersion)
+  spec.csharp:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.TryParse(System.String,Octopus.Client.Model.Versioning.StrictSemanticVersion@)
+    name: TryParse
+    nameWithType: StrictSemanticVersion.TryParse
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.TryParse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.TryParse(System.String,Octopus.Client.Model.Versioning.StrictSemanticVersion@)
+    name: TryParse
+    nameWithType: StrictSemanticVersion.TryParse
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.TryParse
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion
+    name: StrictSemanticVersion
+    nameWithType: StrictSemanticVersion
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.Versioning
+  commentId: N:Octopus.Client.Model.Versioning
+  name: Octopus.Client.Model.Versioning
+  nameWithType: Octopus.Client.Model.Versioning
+  fullName: Octopus.Client.Model.Versioning
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: System.IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.SemanticVersion.#ctor*
+  commentId: Overload:Octopus.Client.Model.SemanticVersion.#ctor
+  name: SemanticVersion
+  nameWithType: SemanticVersion.SemanticVersion
+  fullName: Octopus.Client.Model.SemanticVersion.SemanticVersion
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Octopus.Client.Model.SemanticVersion
+  commentId: T:Octopus.Client.Model.SemanticVersion
+  parent: Octopus.Client.Model
+  name: SemanticVersion
+  nameWithType: SemanticVersion
+  fullName: Octopus.Client.Model.SemanticVersion
+- uid: System.Version
+  commentId: T:System.Version
+  parent: System
+  isExternal: true
+  name: Version
+  nameWithType: Version
+  fullName: System.Version
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.SemanticVersion.op_Explicit*
+  commentId: Overload:Octopus.Client.Model.SemanticVersion.op_Explicit
+  name: Explicit
+  nameWithType: SemanticVersion.Explicit
+  fullName: Octopus.Client.Model.SemanticVersion.Explicit
+  nameWithType.vb: SemanticVersion.Narrowing
+  fullName.vb: Octopus.Client.Model.SemanticVersion.Narrowing
+  name.vb: Narrowing
+- uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString
+  commentId: M:Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString
+  parent: Octopus.Client.Model.Versioning.StrictSemanticVersion
+  name: ToString()
+  nameWithType: StrictSemanticVersion.ToString()
+  fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString()
+  spec.csharp:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString
+    name: ToString
+    nameWithType: StrictSemanticVersion.ToString
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString
+    name: ToString
+    nameWithType: StrictSemanticVersion.ToString
+    fullName: Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Octopus.Client.Model.SemanticVersion.ToString*
+  commentId: Overload:Octopus.Client.Model.SemanticVersion.ToString
+  name: ToString
+  nameWithType: SemanticVersion.ToString
+  fullName: Octopus.Client.Model.SemanticVersion.ToString
+- uid: Octopus.Client.Model.SemanticVersion.Version*
+  commentId: Overload:Octopus.Client.Model.SemanticVersion.Version
+  name: Version
+  nameWithType: SemanticVersion.Version
+  fullName: Octopus.Client.Model.SemanticVersion.Version
+- uid: Octopus.Client.Model.SemanticVersion.IsLegacyVersion*
+  commentId: Overload:Octopus.Client.Model.SemanticVersion.IsLegacyVersion
+  name: IsLegacyVersion
+  nameWithType: SemanticVersion.IsLegacyVersion
+  fullName: Octopus.Client.Model.SemanticVersion.IsLegacyVersion
+- uid: Octopus.Client.Model.SemanticVersion.Revision*
+  commentId: Overload:Octopus.Client.Model.SemanticVersion.Revision
+  name: Revision
+  nameWithType: SemanticVersion.Revision
+  fullName: Octopus.Client.Model.SemanticVersion.Revision
+- uid: Octopus.Client.Model.SemanticVersion.IsSemVer2*
+  commentId: Overload:Octopus.Client.Model.SemanticVersion.IsSemVer2
+  name: IsSemVer2
+  nameWithType: SemanticVersion.IsSemVer2
+  fullName: Octopus.Client.Model.SemanticVersion.IsSemVer2
+- uid: Octopus.Client.Model.SemanticVersion.OriginalString*
+  commentId: Overload:Octopus.Client.Model.SemanticVersion.OriginalString
+  name: OriginalString
+  nameWithType: SemanticVersion.OriginalString
+  fullName: Octopus.Client.Model.SemanticVersion.OriginalString
+- uid: Octopus.Client.Model.SemanticVersion.IncrementRelease*
+  commentId: Overload:Octopus.Client.Model.SemanticVersion.IncrementRelease
+  name: IncrementRelease
+  nameWithType: SemanticVersion.IncrementRelease
+  fullName: Octopus.Client.Model.SemanticVersion.IncrementRelease
+- uid: Octopus.Client.Model.SemanticVersion.Parse*
+  commentId: Overload:Octopus.Client.Model.SemanticVersion.Parse
+  name: Parse
+  nameWithType: SemanticVersion.Parse
+  fullName: Octopus.Client.Model.SemanticVersion.Parse
+- uid: Octopus.Client.Model.SemanticVersion.TryParse*
+  commentId: Overload:Octopus.Client.Model.SemanticVersion.TryParse
+  name: TryParse
+  nameWithType: SemanticVersion.TryParse
+  fullName: Octopus.Client.Model.SemanticVersion.TryParse
+- uid: Octopus.Client.Model.SemanticVersion.TryParseStrict*
+  commentId: Overload:Octopus.Client.Model.SemanticVersion.TryParseStrict
+  name: TryParseStrict
+  nameWithType: SemanticVersion.TryParseStrict
+  fullName: Octopus.Client.Model.SemanticVersion.TryParseStrict

@@ -1,0 +1,561 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Model.DeploymentConnectivityPolicy
+  commentId: T:Octopus.Client.Model.DeploymentConnectivityPolicy
+  id: DeploymentConnectivityPolicy
+  parent: Octopus.Client.Model
+  children:
+  - Octopus.Client.Model.DeploymentConnectivityPolicy.#ctor
+  - Octopus.Client.Model.DeploymentConnectivityPolicy.AllowDeploymentsToNoTargets
+  - Octopus.Client.Model.DeploymentConnectivityPolicy.ExcludeUnhealthyTargets
+  - Octopus.Client.Model.DeploymentConnectivityPolicy.SkipMachineBehavior
+  - Octopus.Client.Model.DeploymentConnectivityPolicy.TargetRoles
+  langs:
+  - csharp
+  - vb
+  name: DeploymentConnectivityPolicy
+  nameWithType: DeploymentConnectivityPolicy
+  fullName: Octopus.Client.Model.DeploymentConnectivityPolicy
+  type: Class
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentConnectivityPolicy.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: DeploymentConnectivityPolicy
+    path: ../source/Octopus.Client/Model/DeploymentConnectivityPolicy.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public class DeploymentConnectivityPolicy
+    content.vb: Public Class DeploymentConnectivityPolicy
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Octopus.Client.Model.DeploymentConnectivityPolicy.SkipMachineBehavior
+  commentId: P:Octopus.Client.Model.DeploymentConnectivityPolicy.SkipMachineBehavior
+  id: SkipMachineBehavior
+  parent: Octopus.Client.Model.DeploymentConnectivityPolicy
+  langs:
+  - csharp
+  - vb
+  name: SkipMachineBehavior
+  nameWithType: DeploymentConnectivityPolicy.SkipMachineBehavior
+  fullName: Octopus.Client.Model.DeploymentConnectivityPolicy.SkipMachineBehavior
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentConnectivityPolicy.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: SkipMachineBehavior
+    path: ../source/Octopus.Client/Model/DeploymentConnectivityPolicy.cs
+    startLine: 10
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public SkipMachineBehavior SkipMachineBehavior { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.SkipMachineBehavior
+    content.vb: Public Property SkipMachineBehavior As SkipMachineBehavior
+  overload: Octopus.Client.Model.DeploymentConnectivityPolicy.SkipMachineBehavior*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DeploymentConnectivityPolicy.TargetRoles
+  commentId: P:Octopus.Client.Model.DeploymentConnectivityPolicy.TargetRoles
+  id: TargetRoles
+  parent: Octopus.Client.Model.DeploymentConnectivityPolicy
+  langs:
+  - csharp
+  - vb
+  name: TargetRoles
+  nameWithType: DeploymentConnectivityPolicy.TargetRoles
+  fullName: Octopus.Client.Model.DeploymentConnectivityPolicy.TargetRoles
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentConnectivityPolicy.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: TargetRoles
+    path: ../source/Octopus.Client/Model/DeploymentConnectivityPolicy.cs
+    startLine: 11
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public ReferenceCollection TargetRoles { get; set; }
+    parameters: []
+    return:
+      type: Octopus.Client.Model.ReferenceCollection
+    content.vb: Public Property TargetRoles As ReferenceCollection
+  overload: Octopus.Client.Model.DeploymentConnectivityPolicy.TargetRoles*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DeploymentConnectivityPolicy.AllowDeploymentsToNoTargets
+  commentId: P:Octopus.Client.Model.DeploymentConnectivityPolicy.AllowDeploymentsToNoTargets
+  id: AllowDeploymentsToNoTargets
+  parent: Octopus.Client.Model.DeploymentConnectivityPolicy
+  langs:
+  - csharp
+  - vb
+  name: AllowDeploymentsToNoTargets
+  nameWithType: DeploymentConnectivityPolicy.AllowDeploymentsToNoTargets
+  fullName: Octopus.Client.Model.DeploymentConnectivityPolicy.AllowDeploymentsToNoTargets
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentConnectivityPolicy.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: AllowDeploymentsToNoTargets
+    path: ../source/Octopus.Client/Model/DeploymentConnectivityPolicy.cs
+    startLine: 13
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public bool AllowDeploymentsToNoTargets { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property AllowDeploymentsToNoTargets As Boolean
+  overload: Octopus.Client.Model.DeploymentConnectivityPolicy.AllowDeploymentsToNoTargets*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DeploymentConnectivityPolicy.ExcludeUnhealthyTargets
+  commentId: P:Octopus.Client.Model.DeploymentConnectivityPolicy.ExcludeUnhealthyTargets
+  id: ExcludeUnhealthyTargets
+  parent: Octopus.Client.Model.DeploymentConnectivityPolicy
+  langs:
+  - csharp
+  - vb
+  name: ExcludeUnhealthyTargets
+  nameWithType: DeploymentConnectivityPolicy.ExcludeUnhealthyTargets
+  fullName: Octopus.Client.Model.DeploymentConnectivityPolicy.ExcludeUnhealthyTargets
+  type: Property
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentConnectivityPolicy.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: ExcludeUnhealthyTargets
+    path: ../source/Octopus.Client/Model/DeploymentConnectivityPolicy.cs
+    startLine: 15
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public bool ExcludeUnhealthyTargets { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ExcludeUnhealthyTargets As Boolean
+  overload: Octopus.Client.Model.DeploymentConnectivityPolicy.ExcludeUnhealthyTargets*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Octopus.Client.Model.DeploymentConnectivityPolicy.#ctor
+  commentId: M:Octopus.Client.Model.DeploymentConnectivityPolicy.#ctor
+  id: '#ctor'
+  parent: Octopus.Client.Model.DeploymentConnectivityPolicy
+  langs:
+  - csharp
+  - vb
+  name: DeploymentConnectivityPolicy()
+  nameWithType: DeploymentConnectivityPolicy.DeploymentConnectivityPolicy()
+  fullName: Octopus.Client.Model.DeploymentConnectivityPolicy.DeploymentConnectivityPolicy()
+  type: Constructor
+  source:
+    remote:
+      path: source/Octopus.Client/Model/DeploymentConnectivityPolicy.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: .ctor
+    path: ../source/Octopus.Client/Model/DeploymentConnectivityPolicy.cs
+    startLine: 17
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Model
+  syntax:
+    content: public DeploymentConnectivityPolicy()
+    content.vb: Public Sub New
+  overload: Octopus.Client.Model.DeploymentConnectivityPolicy.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Octopus.Client.Model.DeploymentConnectivityPolicy.SkipMachineBehavior*
+  commentId: Overload:Octopus.Client.Model.DeploymentConnectivityPolicy.SkipMachineBehavior
+  name: SkipMachineBehavior
+  nameWithType: DeploymentConnectivityPolicy.SkipMachineBehavior
+  fullName: Octopus.Client.Model.DeploymentConnectivityPolicy.SkipMachineBehavior
+- uid: Octopus.Client.Model.SkipMachineBehavior
+  commentId: T:Octopus.Client.Model.SkipMachineBehavior
+  parent: Octopus.Client.Model
+  name: SkipMachineBehavior
+  nameWithType: SkipMachineBehavior
+  fullName: Octopus.Client.Model.SkipMachineBehavior
+- uid: Octopus.Client.Model.DeploymentConnectivityPolicy.TargetRoles*
+  commentId: Overload:Octopus.Client.Model.DeploymentConnectivityPolicy.TargetRoles
+  name: TargetRoles
+  nameWithType: DeploymentConnectivityPolicy.TargetRoles
+  fullName: Octopus.Client.Model.DeploymentConnectivityPolicy.TargetRoles
+- uid: Octopus.Client.Model.ReferenceCollection
+  commentId: T:Octopus.Client.Model.ReferenceCollection
+  parent: Octopus.Client.Model
+  name: ReferenceCollection
+  nameWithType: ReferenceCollection
+  fullName: Octopus.Client.Model.ReferenceCollection
+- uid: Octopus.Client.Model.DeploymentConnectivityPolicy.AllowDeploymentsToNoTargets*
+  commentId: Overload:Octopus.Client.Model.DeploymentConnectivityPolicy.AllowDeploymentsToNoTargets
+  name: AllowDeploymentsToNoTargets
+  nameWithType: DeploymentConnectivityPolicy.AllowDeploymentsToNoTargets
+  fullName: Octopus.Client.Model.DeploymentConnectivityPolicy.AllowDeploymentsToNoTargets
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Octopus.Client.Model.DeploymentConnectivityPolicy.ExcludeUnhealthyTargets*
+  commentId: Overload:Octopus.Client.Model.DeploymentConnectivityPolicy.ExcludeUnhealthyTargets
+  name: ExcludeUnhealthyTargets
+  nameWithType: DeploymentConnectivityPolicy.ExcludeUnhealthyTargets
+  fullName: Octopus.Client.Model.DeploymentConnectivityPolicy.ExcludeUnhealthyTargets
+- uid: Octopus.Client.Model.DeploymentConnectivityPolicy.#ctor*
+  commentId: Overload:Octopus.Client.Model.DeploymentConnectivityPolicy.#ctor
+  name: DeploymentConnectivityPolicy
+  nameWithType: DeploymentConnectivityPolicy.DeploymentConnectivityPolicy
+  fullName: Octopus.Client.Model.DeploymentConnectivityPolicy.DeploymentConnectivityPolicy

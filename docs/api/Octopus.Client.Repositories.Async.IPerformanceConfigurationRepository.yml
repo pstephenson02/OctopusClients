@@ -1,0 +1,209 @@
+### YamlMime:ManagedReference
+items:
+- uid: Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository
+  commentId: T:Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository
+  id: IPerformanceConfigurationRepository
+  parent: Octopus.Client.Repositories.Async
+  children:
+  - Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Get
+  - Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Modify(Octopus.Client.Model.PerformanceConfigurationResource)
+  langs:
+  - csharp
+  - vb
+  name: IPerformanceConfigurationRepository
+  nameWithType: IPerformanceConfigurationRepository
+  fullName: Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository
+  type: Interface
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/PerformanceConfigurationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: IPerformanceConfigurationRepository
+    path: ../source/Octopus.Client/Repositories/Async/PerformanceConfigurationRepository.cs
+    startLine: 5
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: public interface IPerformanceConfigurationRepository
+    content.vb: Public Interface IPerformanceConfigurationRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Get
+  commentId: M:Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Get
+  id: Get
+  parent: Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: IPerformanceConfigurationRepository.Get()
+  fullName: Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Get()
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/PerformanceConfigurationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Get
+    path: ../source/Octopus.Client/Repositories/Async/PerformanceConfigurationRepository.cs
+    startLine: 7
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<PerformanceConfigurationResource> Get()
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.PerformanceConfigurationResource}
+    content.vb: Function Get As Task(Of PerformanceConfigurationResource)
+  overload: Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Get*
+- uid: Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Modify(Octopus.Client.Model.PerformanceConfigurationResource)
+  commentId: M:Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Modify(Octopus.Client.Model.PerformanceConfigurationResource)
+  id: Modify(Octopus.Client.Model.PerformanceConfigurationResource)
+  parent: Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository
+  langs:
+  - csharp
+  - vb
+  name: Modify(PerformanceConfigurationResource)
+  nameWithType: IPerformanceConfigurationRepository.Modify(PerformanceConfigurationResource)
+  fullName: Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Modify(Octopus.Client.Model.PerformanceConfigurationResource)
+  type: Method
+  source:
+    remote:
+      path: source/Octopus.Client/Repositories/Async/PerformanceConfigurationRepository.cs
+      branch: docfx
+      repo: https://github.com/pstephenson02/OctopusClients.git
+    id: Modify
+    path: ../source/Octopus.Client/Repositories/Async/PerformanceConfigurationRepository.cs
+    startLine: 8
+  assemblies:
+  - Octopus.Client
+  namespace: Octopus.Client.Repositories.Async
+  syntax:
+    content: Task<PerformanceConfigurationResource> Modify(PerformanceConfigurationResource resource)
+    parameters:
+    - id: resource
+      type: Octopus.Client.Model.PerformanceConfigurationResource
+    return:
+      type: System.Threading.Tasks.Task{Octopus.Client.Model.PerformanceConfigurationResource}
+    content.vb: Function Modify(resource As PerformanceConfigurationResource) As Task(Of PerformanceConfigurationResource)
+  overload: Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Modify*
+references:
+- uid: Octopus.Client.Repositories.Async
+  commentId: N:Octopus.Client.Repositories.Async
+  name: Octopus.Client.Repositories.Async
+  nameWithType: Octopus.Client.Repositories.Async
+  fullName: Octopus.Client.Repositories.Async
+- uid: Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Get*
+  commentId: Overload:Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Get
+  name: Get
+  nameWithType: IPerformanceConfigurationRepository.Get
+  fullName: Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Get
+- uid: System.Threading.Tasks.Task{Octopus.Client.Model.PerformanceConfigurationResource}
+  commentId: T:System.Threading.Tasks.Task{Octopus.Client.Model.PerformanceConfigurationResource}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<PerformanceConfigurationResource>
+  nameWithType: Task<PerformanceConfigurationResource>
+  fullName: System.Threading.Tasks.Task<Octopus.Client.Model.PerformanceConfigurationResource>
+  nameWithType.vb: Task(Of PerformanceConfigurationResource)
+  fullName.vb: System.Threading.Tasks.Task(Of Octopus.Client.Model.PerformanceConfigurationResource)
+  name.vb: Task(Of PerformanceConfigurationResource)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Octopus.Client.Model.PerformanceConfigurationResource
+    name: PerformanceConfigurationResource
+    nameWithType: PerformanceConfigurationResource
+    fullName: Octopus.Client.Model.PerformanceConfigurationResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Octopus.Client.Model.PerformanceConfigurationResource
+    name: PerformanceConfigurationResource
+    nameWithType: PerformanceConfigurationResource
+    fullName: Octopus.Client.Model.PerformanceConfigurationResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Modify*
+  commentId: Overload:Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Modify
+  name: Modify
+  nameWithType: IPerformanceConfigurationRepository.Modify
+  fullName: Octopus.Client.Repositories.Async.IPerformanceConfigurationRepository.Modify
+- uid: Octopus.Client.Model.PerformanceConfigurationResource
+  commentId: T:Octopus.Client.Model.PerformanceConfigurationResource
+  parent: Octopus.Client.Model
+  name: PerformanceConfigurationResource
+  nameWithType: PerformanceConfigurationResource
+  fullName: Octopus.Client.Model.PerformanceConfigurationResource
+- uid: Octopus.Client.Model
+  commentId: N:Octopus.Client.Model
+  name: Octopus.Client.Model
+  nameWithType: Octopus.Client.Model
+  fullName: Octopus.Client.Model
