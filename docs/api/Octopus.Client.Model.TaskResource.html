@@ -1,0 +1,868 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TaskResource
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TaskResource
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Octopus.Client.Model.TaskResource">
+  
+  
+  <h1 id="Octopus_Client_Model_TaskResource" data-uid="Octopus.Client.Model.TaskResource" class="text-break">Class TaskResource
+  </h1>
+  <div class="markdown level0 summary"><p>Octopus doesn't just store information; it actively <em>does</em> things. Examples include deployments, checking that
+machines are
+online, automated database backups, and more. These &quot;tasks&quot; are queued and executed asynchronously, and their
+progress and logs
+can be monitored using the HTTP API. Some tasks are created automatically; for example, Octopus will automatically
+create a task
+to check the status of all machines every 5 minutes. Some tasks are created implicitly, such as when a deployment
+is created to execute
+the actual deployment. And some tasks can be created manually, such as backup tasks and sending test emails.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Octopus.Client.Model.Resource.html">Resource</a></div>
+    <div class="level2"><span class="xref">TaskResource</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Octopus.Client.Extensibility.IResource.html">IResource</a></div>
+    <div><a class="xref" href="Octopus.Client.Model.IAuditedResource.html">IAuditedResource</a></div>
+    <div><a class="xref" href="Octopus.Client.Extensibility.IHaveSpaceResource.html">IHaveSpaceResource</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_Id">Resource.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_LastModifiedOn">Resource.LastModifiedOn</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_LastModifiedBy">Resource.LastModifiedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_Links">Resource.Links</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_HasLink_System_String_">Resource.HasLink(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_Link_System_String_">Resource.Link(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Octopus.Client.Model.html">Octopus.Client.Model</a></h6>
+  <h6><strong>Assembly</strong>: Octopus.Client.dll</h6>
+  <h5 id="Octopus_Client_Model_TaskResource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TaskResource : Resource, IResource, IAuditedResource, IHaveSpaceResource</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource__ctor.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L27">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource__ctor_" data-uid="Octopus.Client.Model.TaskResource.#ctor*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource__ctor" data-uid="Octopus.Client.Model.TaskResource.#ctor">TaskResource()</h4>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TaskResource()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_Arguments.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.Arguments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L52">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_Arguments_" data-uid="Octopus.Client.Model.TaskResource.Arguments*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_Arguments" data-uid="Octopus.Client.Model.TaskResource.Arguments">Arguments</h4>
+  <div class="markdown level1 summary"><p>Gets or sets any arguments to the task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 4)]
+public Dictionary&lt;string, object&gt; Arguments { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_CanRerun.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.CanRerun%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L156">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_CanRerun_" data-uid="Octopus.Client.Model.TaskResource.CanRerun*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_CanRerun" data-uid="Octopus.Client.Model.TaskResource.CanRerun">CanRerun</h4>
+  <div class="markdown level1 summary"><p>If true, then the task can be used as the basis for a
+new task with the same effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 33)]
+public bool CanRerun { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_Completed.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.Completed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L68">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_Completed_" data-uid="Octopus.Client.Model.TaskResource.Completed*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_Completed" data-uid="Octopus.Client.Model.TaskResource.Completed">Completed</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating the completion status of the task. May be &quot;Timed out&quot;, &quot;Queued...&quot;, &quot;Executing...&quot;,
+or the time at
+which the task completed for completed tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 6)]
+public string Completed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_CompletedTime.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.CompletedTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L100">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_CompletedTime_" data-uid="Octopus.Client.Model.TaskResource.CompletedTime*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_CompletedTime" data-uid="Octopus.Client.Model.TaskResource.CompletedTime">CompletedTime</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the date/time that the task completed. Will be null if the task has not yet completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 11)]
+public DateTimeOffset? CompletedTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_Description.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L45">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_Description_" data-uid="Octopus.Client.Model.TaskResource.Description*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_Description" data-uid="Octopus.Client.Model.TaskResource.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a short, human-understandable description of this task. An example might be &quot;Manual database backup&quot;.
+This is the
+name that will be shown in the task list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 3)]
+public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_Duration.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.Duration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L112">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_Duration_" data-uid="Octopus.Client.Model.TaskResource.Duration*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_Duration" data-uid="Octopus.Client.Model.TaskResource.Duration">Duration</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a string indicating how long the task took to run.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 21)]
+public string Duration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_ErrorMessage.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.ErrorMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L118">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_ErrorMessage_" data-uid="Octopus.Client.Model.TaskResource.ErrorMessage*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_ErrorMessage" data-uid="Octopus.Client.Model.TaskResource.ErrorMessage">ErrorMessage</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a short summary of the errors encountered when the task ran (if any).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 22)]
+public string ErrorMessage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_FinishedSuccessfully.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.FinishedSuccessfully%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L140">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_FinishedSuccessfully_" data-uid="Octopus.Client.Model.TaskResource.FinishedSuccessfully*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_FinishedSuccessfully" data-uid="Octopus.Client.Model.TaskResource.FinishedSuccessfully">FinishedSuccessfully</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the task ran to completion successfully.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 31)]
+public bool FinishedSuccessfully { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_HasBeenPickedUpByProcessor.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.HasBeenPickedUpByProcessor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L124">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_HasBeenPickedUpByProcessor_" data-uid="Octopus.Client.Model.TaskResource.HasBeenPickedUpByProcessor*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_HasBeenPickedUpByProcessor" data-uid="Octopus.Client.Model.TaskResource.HasBeenPickedUpByProcessor">HasBeenPickedUpByProcessor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a boolean value indicating whether the Octopus Server is processing this task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 23)]
+public bool HasBeenPickedUpByProcessor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_HasPendingInterruptions.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.HasPendingInterruptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L149">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_HasPendingInterruptions_" data-uid="Octopus.Client.Model.TaskResource.HasPendingInterruptions*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_HasPendingInterruptions" data-uid="Octopus.Client.Model.TaskResource.HasPendingInterruptions">HasPendingInterruptions</h4>
+  <div class="markdown level1 summary"><p>True if the task is waiting for manual intervention.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 32)]
+public bool HasPendingInterruptions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_HasWarningsOrErrors.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.HasWarningsOrErrors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L163">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_HasWarningsOrErrors_" data-uid="Octopus.Client.Model.TaskResource.HasWarningsOrErrors*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_HasWarningsOrErrors" data-uid="Octopus.Client.Model.TaskResource.HasWarningsOrErrors">HasWarningsOrErrors</h4>
+  <div class="markdown level1 summary"><p>True if any warnings or non-fatal errors were recorded in
+the task log during execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 34)]
+public bool HasWarningsOrErrors { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_IsCompleted.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.IsCompleted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L131">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_IsCompleted_" data-uid="Octopus.Client.Model.TaskResource.IsCompleted*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_IsCompleted" data-uid="Octopus.Client.Model.TaskResource.IsCompleted">IsCompleted</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the task has completed (that is, not queued, not running, and not paused;
+may have finished successfully or failed).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 24)]
+public bool IsCompleted { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_LastUpdatedTime.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.LastUpdatedTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L94">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_LastUpdatedTime_" data-uid="Octopus.Client.Model.TaskResource.LastUpdatedTime*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_LastUpdatedTime" data-uid="Octopus.Client.Model.TaskResource.LastUpdatedTime">LastUpdatedTime</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the time that the Octopus Server last updated the status of this task. For a running task this should
+happen
+at least every couple of minutes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 10)]
+public DateTimeOffset? LastUpdatedTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_Name.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L36">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_Name_" data-uid="Octopus.Client.Model.TaskResource.Name*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_Name" data-uid="Octopus.Client.Model.TaskResource.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the name of the task to create. This name must be one of the list of possible names documented in the
+create API operation documentation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 2)]
+public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_QueueTime.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.QueueTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L74">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_QueueTime_" data-uid="Octopus.Client.Model.TaskResource.QueueTime*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_QueueTime" data-uid="Octopus.Client.Model.TaskResource.QueueTime">QueueTime</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the time at which the task was queued.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 7)]
+public DateTimeOffset QueueTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_QueueTimeExpiry.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.QueueTimeExpiry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L80">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_QueueTimeExpiry_" data-uid="Octopus.Client.Model.TaskResource.QueueTimeExpiry*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_QueueTimeExpiry" data-uid="Octopus.Client.Model.TaskResource.QueueTimeExpiry">QueueTimeExpiry</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the time that can elapse after the QueueTime before the task will timeout if it has not started executing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 8)]
+public DateTimeOffset? QueueTimeExpiry { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_ServerNode.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.ServerNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L106">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_ServerNode_" data-uid="Octopus.Client.Model.TaskResource.ServerNode*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_ServerNode" data-uid="Octopus.Client.Model.TaskResource.ServerNode">ServerNode</h4>
+  <div class="markdown level1 summary"><p>Gets the ID of the Octopus Server that created and will control this task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 15)]
+public string ServerNode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_SpaceId.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.SpaceId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L166">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_SpaceId_" data-uid="Octopus.Client.Model.TaskResource.SpaceId*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_SpaceId" data-uid="Octopus.Client.Model.TaskResource.SpaceId">SpaceId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SpaceId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_StartTime.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.StartTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L86">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_StartTime_" data-uid="Octopus.Client.Model.TaskResource.StartTime*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_StartTime" data-uid="Octopus.Client.Model.TaskResource.StartTime">StartTime</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the time at which the task started executing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(Order = 9)]
+public DateTimeOffset? StartTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource_State.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource.State%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L59">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_TaskResource_State_" data-uid="Octopus.Client.Model.TaskResource.State*"></a>
+  <h4 id="Octopus_Client_Model_TaskResource_State" data-uid="Octopus.Client.Model.TaskResource.State">State</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the current state of the task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(StringEnumConverter))]
+[JsonProperty(Order = 5)]
+public TaskState State { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TaskState.html">TaskState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Octopus.Client.Extensibility.IResource.html">IResource</a>
+  </div>
+  <div>
+      <a class="xref" href="Octopus.Client.Model.IAuditedResource.html">IAuditedResource</a>
+  </div>
+  <div>
+      <a class="xref" href="Octopus.Client.Extensibility.IHaveSpaceResource.html">IHaveSpaceResource</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_TaskResource.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.TaskResource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/TaskResource.cs/#L22" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

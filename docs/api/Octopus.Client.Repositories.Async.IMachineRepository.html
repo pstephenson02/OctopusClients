@@ -1,0 +1,705 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IMachineRepository
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IMachineRepository
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Octopus.Client.Repositories.Async.IMachineRepository">
+  
+  
+  <h1 id="Octopus_Client_Repositories_Async_IMachineRepository" data-uid="Octopus.Client.Repositories.Async.IMachineRepository" class="text-break">Interface IMachineRepository
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IFindByName-1.html#Octopus_Client_Repositories_Async_IFindByName_1_FindByName_System_String_System_String_System_Object_">IFindByName&lt;MachineResource&gt;.FindByName(String, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IFindByName-1.html#Octopus_Client_Repositories_Async_IFindByName_1_FindByNames_System_Collections_Generic_IEnumerable_System_String__System_String_System_Object_">IFindByName&lt;MachineResource&gt;.FindByNames(IEnumerable&lt;String&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IPaginate-1.html#Octopus_Client_Repositories_Async_IPaginate_1_Paginate_System_Func_Octopus_Client_Model_ResourceCollection__0__System_Boolean__System_String_System_Object_">IPaginate&lt;MachineResource&gt;.Paginate(Func&lt;ResourceCollection&lt;MachineResource&gt;, Boolean&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IPaginate-1.html#Octopus_Client_Repositories_Async_IPaginate_1_FindOne_System_Func__0_System_Boolean__System_String_System_Object_">IPaginate&lt;MachineResource&gt;.FindOne(Func&lt;MachineResource, Boolean&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IPaginate-1.html#Octopus_Client_Repositories_Async_IPaginate_1_FindMany_System_Func__0_System_Boolean__System_String_System_Object_">IPaginate&lt;MachineResource&gt;.FindMany(Func&lt;MachineResource, Boolean&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IPaginate-1.html#Octopus_Client_Repositories_Async_IPaginate_1_FindAll_System_String_System_Object_">IPaginate&lt;MachineResource&gt;.FindAll(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IGet-1.html#Octopus_Client_Repositories_Async_IGet_1_Get_System_String_">IGet&lt;MachineResource&gt;.Get(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IGet-1.html#Octopus_Client_Repositories_Async_IGet_1_Get_System_String___">IGet&lt;MachineResource&gt;.Get(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IGet-1.html#Octopus_Client_Repositories_Async_IGet_1_Refresh__0_">IGet&lt;MachineResource&gt;.Refresh(MachineResource)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.ICreate-1.html#Octopus_Client_Repositories_Async_ICreate_1_Create__0_System_Object_">ICreate&lt;MachineResource&gt;.Create(MachineResource, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IModify-1.html#Octopus_Client_Repositories_Async_IModify_1_Modify__0_">IModify&lt;MachineResource&gt;.Modify(MachineResource)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IDelete-1.html#Octopus_Client_Repositories_Async_IDelete_1_Delete__0_">IDelete&lt;MachineResource&gt;.Delete(MachineResource)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Octopus.Client.Repositories.Async.html">Octopus.Client.Repositories.Async</a></h6>
+  <h6><strong>Assembly</strong>: Octopus.Client.dll</h6>
+  <h5 id="Octopus_Client_Repositories_Async_IMachineRepository_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IMachineRepository : IFindByName&lt;MachineResource&gt;, IPaginate&lt;MachineResource&gt;, IGet&lt;MachineResource&gt;, ICreate&lt;MachineResource&gt;, IModify&lt;MachineResource&gt;, IDelete&lt;MachineResource&gt;</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_IMachineRepository_CreateOrModify_System_String_Octopus_Client_Model_Endpoints_EndpointResource_Octopus_Client_Model_EnvironmentResource___System_String___.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.IMachineRepository.CreateOrModify(System.String%2COctopus.Client.Model.Endpoints.EndpointResource%2COctopus.Client.Model.EnvironmentResource%5B%5D%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/MachineRepository.cs/#L28">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_IMachineRepository_CreateOrModify_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.CreateOrModify*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_IMachineRepository_CreateOrModify_System_String_Octopus_Client_Model_Endpoints_EndpointResource_Octopus_Client_Model_EnvironmentResource___System_String___" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.CreateOrModify(System.String,Octopus.Client.Model.Endpoints.EndpointResource,Octopus.Client.Model.EnvironmentResource[],System.String[])">CreateOrModify(String, EndpointResource, EnvironmentResource[], String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MachineEditor&gt; CreateOrModify(string name, EndpointResource endpoint, EnvironmentResource[] environments, string[] roles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Endpoints.EndpointResource.html">EndpointResource</a></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.EnvironmentResource.html">EnvironmentResource</a>[]</td>
+        <td><span class="parametername">environments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">roles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Editors.Async.MachineEditor.html">MachineEditor</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_IMachineRepository_CreateOrModify_System_String_Octopus_Client_Model_Endpoints_EndpointResource_Octopus_Client_Model_EnvironmentResource___System_String___Octopus_Client_Model_TenantResource___Octopus_Client_Model_TagResource___System_Nullable_Octopus_Client_Model_TenantedDeploymentMode__.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.IMachineRepository.CreateOrModify(System.String%2COctopus.Client.Model.Endpoints.EndpointResource%2COctopus.Client.Model.EnvironmentResource%5B%5D%2CSystem.String%5B%5D%2COctopus.Client.Model.TenantResource%5B%5D%2COctopus.Client.Model.TagResource%5B%5D%2CSystem.Nullable%7BOctopus.Client.Model.TenantedDeploymentMode%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/MachineRepository.cs/#L19">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_IMachineRepository_CreateOrModify_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.CreateOrModify*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_IMachineRepository_CreateOrModify_System_String_Octopus_Client_Model_Endpoints_EndpointResource_Octopus_Client_Model_EnvironmentResource___System_String___Octopus_Client_Model_TenantResource___Octopus_Client_Model_TagResource___System_Nullable_Octopus_Client_Model_TenantedDeploymentMode__" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.CreateOrModify(System.String,Octopus.Client.Model.Endpoints.EndpointResource,Octopus.Client.Model.EnvironmentResource[],System.String[],Octopus.Client.Model.TenantResource[],Octopus.Client.Model.TagResource[],System.Nullable{Octopus.Client.Model.TenantedDeploymentMode})">CreateOrModify(String, EndpointResource, EnvironmentResource[], String[], TenantResource[], TagResource[], Nullable&lt;TenantedDeploymentMode&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MachineEditor&gt; CreateOrModify(string name, EndpointResource endpoint, EnvironmentResource[] environments, string[] roles, TenantResource[] tenants, TagResource[] tenantTags, TenantedDeploymentMode? tenantedDeploymentParticipation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Endpoints.EndpointResource.html">EndpointResource</a></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.EnvironmentResource.html">EnvironmentResource</a>[]</td>
+        <td><span class="parametername">environments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">roles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TenantResource.html">TenantResource</a>[]</td>
+        <td><span class="parametername">tenants</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TagResource.html">TagResource</a>[]</td>
+        <td><span class="parametername">tenantTags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Octopus.Client.Model.TenantedDeploymentMode.html">TenantedDeploymentMode</a>&gt;</td>
+        <td><span class="parametername">tenantedDeploymentParticipation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Editors.Async.MachineEditor.html">MachineEditor</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_IMachineRepository_Discover_Octopus_Client_Model_DiscoverMachineOptions_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.IMachineRepository.Discover(Octopus.Client.Model.DiscoverMachineOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/MachineRepository.cs/#L13">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_IMachineRepository_Discover_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.Discover*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_IMachineRepository_Discover_Octopus_Client_Model_DiscoverMachineOptions_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.Discover(Octopus.Client.Model.DiscoverMachineOptions)">Discover(DiscoverMachineOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MachineResource&gt; Discover(DiscoverMachineOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.DiscoverMachineOptions.html">DiscoverMachineOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_IMachineRepository_Discover_System_String_System_Int32_System_Nullable_Octopus_Client_Model_DiscoverableEndpointType__.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.IMachineRepository.Discover(System.String%2CSystem.Int32%2CSystem.Nullable%7BOctopus.Client.Model.DiscoverableEndpointType%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/MachineRepository.cs/#L12">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_IMachineRepository_Discover_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.Discover*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_IMachineRepository_Discover_System_String_System_Int32_System_Nullable_Octopus_Client_Model_DiscoverableEndpointType__" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.Discover(System.String,System.Int32,System.Nullable{Octopus.Client.Model.DiscoverableEndpointType})">Discover(String, Int32, Nullable&lt;DiscoverableEndpointType&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MachineResource&gt; Discover(string host, int port = 10933, DiscoverableEndpointType? discoverableEndpointType = default(DiscoverableEndpointType? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">host</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">port</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Octopus.Client.Model.DiscoverableEndpointType.html">DiscoverableEndpointType</a>&gt;</td>
+        <td><span class="parametername">discoverableEndpointType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_IMachineRepository_FindByThumbprint_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.IMachineRepository.FindByThumbprint(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/MachineRepository.cs/#L15">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_IMachineRepository_FindByThumbprint_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.FindByThumbprint*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_IMachineRepository_FindByThumbprint_System_String_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.FindByThumbprint(System.String)">FindByThumbprint(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;MachineResource&gt;&gt; FindByThumbprint(string thumbprint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">thumbprint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_IMachineRepository_GetConnectionStatus_Octopus_Client_Model_MachineResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.IMachineRepository.GetConnectionStatus(Octopus.Client.Model.MachineResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/MachineRepository.cs/#L14">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_IMachineRepository_GetConnectionStatus_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.GetConnectionStatus*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_IMachineRepository_GetConnectionStatus_Octopus_Client_Model_MachineResource_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.GetConnectionStatus(Octopus.Client.Model.MachineResource)">GetConnectionStatus(MachineResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MachineConnectionStatus&gt; GetConnectionStatus(MachineResource machine)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td><span class="parametername">machine</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.MachineConnectionStatus.html">MachineConnectionStatus</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_IMachineRepository_GetTasks_Octopus_Client_Model_MachineResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.IMachineRepository.GetTasks(Octopus.Client.Model.MachineResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/MachineRepository.cs/#L16">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_IMachineRepository_GetTasks_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.GetTasks*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_IMachineRepository_GetTasks_Octopus_Client_Model_MachineResource_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.GetTasks(Octopus.Client.Model.MachineResource)">GetTasks(MachineResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IReadOnlyList&lt;TaskResource&gt;&gt; GetTasks(MachineResource machine)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td><span class="parametername">machine</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_IMachineRepository_GetTasks_Octopus_Client_Model_MachineResource_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.IMachineRepository.GetTasks(Octopus.Client.Model.MachineResource%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/MachineRepository.cs/#L17">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_IMachineRepository_GetTasks_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.GetTasks*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_IMachineRepository_GetTasks_Octopus_Client_Model_MachineResource_System_Object_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.GetTasks(Octopus.Client.Model.MachineResource,System.Object)">GetTasks(MachineResource, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IReadOnlyList&lt;TaskResource&gt;&gt; GetTasks(MachineResource machine, object pathParameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td><span class="parametername">machine</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_IMachineRepository_List_System_Int32_System_Nullable_System_Int32__System_String_System_String_System_String_System_String_System_Nullable_System_Boolean__System_String_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.IMachineRepository.List(System.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/MachineRepository.cs/#L34">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_IMachineRepository_List_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.List*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_IMachineRepository_List_System_Int32_System_Nullable_System_Int32__System_String_System_String_System_String_System_String_System_Nullable_System_Boolean__System_String_System_String_System_String_System_String_System_String_" data-uid="Octopus.Client.Repositories.Async.IMachineRepository.List(System.Int32,System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String)">List(Int32, Nullable&lt;Int32&gt;, String, String, String, String, Nullable&lt;Boolean&gt;, String, String, String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResourceCollection&lt;MachineResource&gt;&gt; List(int skip = 0, int? take = default(int? ), string ids = null, string name = null, string partialName = null, string roles = null, bool? isDisabled, string healthStatuses = null, string commStyles = null, string tenantIds = null, string tenantTags = null, string environmentIds = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">take</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ids</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">partialName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">roles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">isDisabled</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">healthStatuses</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commStyles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tenantIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tenantTags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">environmentIds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.ResourceCollection-1.html">ResourceCollection</a>&lt;<a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_IMachineRepository.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.IMachineRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/MachineRepository.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

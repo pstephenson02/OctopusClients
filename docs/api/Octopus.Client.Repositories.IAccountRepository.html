@@ -1,0 +1,840 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IAccountRepository
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IAccountRepository
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Octopus.Client.Repositories.IAccountRepository">
+  
+  
+  <h1 id="Octopus_Client_Repositories_IAccountRepository" data-uid="Octopus.Client.Repositories.IAccountRepository" class="text-break">Interface IAccountRepository
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IResourceRepository.html#Octopus_Client_Repositories_IResourceRepository_Client">IResourceRepository.Client</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.ICreate-1.html#Octopus_Client_Repositories_ICreate_1_Create__0_System_Object_">ICreate&lt;AccountResource&gt;.Create(AccountResource, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IModify-1.html#Octopus_Client_Repositories_IModify_1_Modify__0_">IModify&lt;AccountResource&gt;.Modify(AccountResource)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IDelete-1.html#Octopus_Client_Repositories_IDelete_1_Delete__0_">IDelete&lt;AccountResource&gt;.Delete(AccountResource)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IGet-1.html#Octopus_Client_Repositories_IGet_1_Get_System_String_">IGet&lt;AccountResource&gt;.Get(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IGet-1.html#Octopus_Client_Repositories_IGet_1_Get_System_String___">IGet&lt;AccountResource&gt;.Get(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IGet-1.html#Octopus_Client_Repositories_IGet_1_Refresh__0_">IGet&lt;AccountResource&gt;.Refresh(AccountResource)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IFindByName-1.html#Octopus_Client_Repositories_IFindByName_1_FindByName_System_String_System_String_System_Object_">IFindByName&lt;AccountResource&gt;.FindByName(String, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IFindByName-1.html#Octopus_Client_Repositories_IFindByName_1_FindByNames_System_Collections_Generic_IEnumerable_System_String__System_String_System_Object_">IFindByName&lt;AccountResource&gt;.FindByNames(IEnumerable&lt;String&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IPaginate-1.html#Octopus_Client_Repositories_IPaginate_1_Paginate_System_Func_Octopus_Client_Model_ResourceCollection__0__System_Boolean__System_String_System_Object_">IPaginate&lt;AccountResource&gt;.Paginate(Func&lt;ResourceCollection&lt;AccountResource&gt;, Boolean&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IPaginate-1.html#Octopus_Client_Repositories_IPaginate_1_FindOne_System_Func__0_System_Boolean__System_String_System_Object_">IPaginate&lt;AccountResource&gt;.FindOne(Func&lt;AccountResource, Boolean&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IPaginate-1.html#Octopus_Client_Repositories_IPaginate_1_FindMany_System_Func__0_System_Boolean__System_String_System_Object_">IPaginate&lt;AccountResource&gt;.FindMany(Func&lt;AccountResource, Boolean&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IPaginate-1.html#Octopus_Client_Repositories_IPaginate_1_FindAll_System_String_System_Object_">IPaginate&lt;AccountResource&gt;.FindAll(String, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Octopus.Client.Repositories.html">Octopus.Client.Repositories</a></h6>
+  <h6><strong>Assembly</strong>: Octopus.Client.dll</h6>
+  <h5 id="Octopus_Client_Repositories_IAccountRepository_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAccountRepository : IResourceRepository, ICreate&lt;AccountResource&gt;, IModify&lt;AccountResource&gt;, IDelete&lt;AccountResource&gt;, IGet&lt;AccountResource&gt;, IFindByName&lt;AccountResource&gt;, IPaginate&lt;AccountResource&gt;</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IAccountRepository_DetermineAccountType__1.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IAccountRepository.DetermineAccountType%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/IAccountRepository.cs/#L14">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IAccountRepository_DetermineAccountType_" data-uid="Octopus.Client.Repositories.IAccountRepository.DetermineAccountType*"></a>
+  <h4 id="Octopus_Client_Repositories_IAccountRepository_DetermineAccountType__1" data-uid="Octopus.Client.Repositories.IAccountRepository.DetermineAccountType``1">DetermineAccountType&lt;TAccount&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AccountType DetermineAccountType&lt;TAccount&gt;()
+
+    where TAccount : AccountResource</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Accounts.AccountType.html">AccountType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TAccount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IAccountRepository_FindAllOfType__1_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IAccountRepository.FindAllOfType%60%601(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/IAccountRepository.cs/#L26">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IAccountRepository_FindAllOfType_" data-uid="Octopus.Client.Repositories.IAccountRepository.FindAllOfType*"></a>
+  <h4 id="Octopus_Client_Repositories_IAccountRepository_FindAllOfType__1_System_Object_" data-uid="Octopus.Client.Repositories.IAccountRepository.FindAllOfType``1(System.Object)">FindAllOfType&lt;TAccount&gt;(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;TAccount&gt; FindAllOfType&lt;TAccount&gt;(object pathParameters = null)
+
+    where TAccount : AccountResource</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;TAccount&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TAccount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IAccountRepository_FindByNameOfType__1_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IAccountRepository.FindByNameOfType%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/IAccountRepository.cs/#L20">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IAccountRepository_FindByNameOfType_" data-uid="Octopus.Client.Repositories.IAccountRepository.FindByNameOfType*"></a>
+  <h4 id="Octopus_Client_Repositories_IAccountRepository_FindByNameOfType__1_System_String_" data-uid="Octopus.Client.Repositories.IAccountRepository.FindByNameOfType``1(System.String)">FindByNameOfType&lt;TAccount&gt;(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TAccount FindByNameOfType&lt;TAccount&gt;(string name)
+
+    where TAccount : AccountResource</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TAccount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TAccount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IAccountRepository_FindByNamesOfType__1_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IAccountRepository.FindByNamesOfType%60%601(System.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/IAccountRepository.cs/#L21">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IAccountRepository_FindByNamesOfType_" data-uid="Octopus.Client.Repositories.IAccountRepository.FindByNamesOfType*"></a>
+  <h4 id="Octopus_Client_Repositories_IAccountRepository_FindByNamesOfType__1_System_Collections_Generic_IEnumerable_System_String__" data-uid="Octopus.Client.Repositories.IAccountRepository.FindByNamesOfType``1(System.Collections.Generic.IEnumerable{System.String})">FindByNamesOfType&lt;TAccount&gt;(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;TAccount&gt; FindByNamesOfType&lt;TAccount&gt;(IEnumerable&lt;string&gt; names)
+
+    where TAccount : AccountResource</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">names</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;TAccount&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TAccount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IAccountRepository_FindManyOfType__1_System_Func___0_System_Boolean__System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IAccountRepository.FindManyOfType%60%601(System.Func%7B%60%600%2CSystem.Boolean%7D%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/IAccountRepository.cs/#L25">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IAccountRepository_FindManyOfType_" data-uid="Octopus.Client.Repositories.IAccountRepository.FindManyOfType*"></a>
+  <h4 id="Octopus_Client_Repositories_IAccountRepository_FindManyOfType__1_System_Func___0_System_Boolean__System_Object_" data-uid="Octopus.Client.Repositories.IAccountRepository.FindManyOfType``1(System.Func{``0,System.Boolean},System.Object)">FindManyOfType&lt;TAccount&gt;(Func&lt;TAccount, Boolean&gt;, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;TAccount&gt; FindManyOfType&lt;TAccount&gt;(Func&lt;TAccount, bool&gt; search, object pathParameters = null)
+
+    where TAccount : AccountResource</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TAccount, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">search</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;TAccount&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TAccount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IAccountRepository_FindOneOfType__1_System_Func___0_System_Boolean__System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IAccountRepository.FindOneOfType%60%601(System.Func%7B%60%600%2CSystem.Boolean%7D%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/IAccountRepository.cs/#L24">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IAccountRepository_FindOneOfType_" data-uid="Octopus.Client.Repositories.IAccountRepository.FindOneOfType*"></a>
+  <h4 id="Octopus_Client_Repositories_IAccountRepository_FindOneOfType__1_System_Func___0_System_Boolean__System_Object_" data-uid="Octopus.Client.Repositories.IAccountRepository.FindOneOfType``1(System.Func{``0,System.Boolean},System.Object)">FindOneOfType&lt;TAccount&gt;(Func&lt;TAccount, Boolean&gt;, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TAccount FindOneOfType&lt;TAccount&gt;(Func&lt;TAccount, bool&gt; search, object pathParameters = null)
+
+    where TAccount : AccountResource</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TAccount, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">search</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TAccount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TAccount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IAccountRepository_GetAccountUsage_Octopus_Client_Model_Accounts_AccountResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IAccountRepository.GetAccountUsage(Octopus.Client.Model.Accounts.AccountResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/IAccountRepository.cs/#L28">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IAccountRepository_GetAccountUsage_" data-uid="Octopus.Client.Repositories.IAccountRepository.GetAccountUsage*"></a>
+  <h4 id="Octopus_Client_Repositories_IAccountRepository_GetAccountUsage_Octopus_Client_Model_Accounts_AccountResource_" data-uid="Octopus.Client.Repositories.IAccountRepository.GetAccountUsage(Octopus.Client.Model.Accounts.AccountResource)">GetAccountUsage(AccountResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AccountUsageResource GetAccountUsage(AccountResource account)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Accounts.AccountResource.html">AccountResource</a></td>
+        <td><span class="parametername">account</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Accounts.Usages.AccountUsageResource.html">AccountUsageResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IAccountRepository_GetOfType__1_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IAccountRepository.GetOfType%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/IAccountRepository.cs/#L16">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IAccountRepository_GetOfType_" data-uid="Octopus.Client.Repositories.IAccountRepository.GetOfType*"></a>
+  <h4 id="Octopus_Client_Repositories_IAccountRepository_GetOfType__1_System_String_" data-uid="Octopus.Client.Repositories.IAccountRepository.GetOfType``1(System.String)">GetOfType&lt;TAccount&gt;(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TAccount GetOfType&lt;TAccount&gt;(string idOrHref)
+
+    where TAccount : AccountResource</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">idOrHref</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TAccount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TAccount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IAccountRepository_GetOfType__1_System_String___.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IAccountRepository.GetOfType%60%601(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/IAccountRepository.cs/#L17">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IAccountRepository_GetOfType_" data-uid="Octopus.Client.Repositories.IAccountRepository.GetOfType*"></a>
+  <h4 id="Octopus_Client_Repositories_IAccountRepository_GetOfType__1_System_String___" data-uid="Octopus.Client.Repositories.IAccountRepository.GetOfType``1(System.String[])">GetOfType&lt;TAccount&gt;(String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;TAccount&gt; GetOfType&lt;TAccount&gt;(params string[] ids)
+
+    where TAccount : AccountResource</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">ids</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;TAccount&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TAccount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IAccountRepository_PaginateOfType__1_System_Func_Octopus_Client_Model_ResourceCollection___0__System_Boolean__System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IAccountRepository.PaginateOfType%60%601(System.Func%7BOctopus.Client.Model.ResourceCollection%7B%60%600%7D%2CSystem.Boolean%7D%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/IAccountRepository.cs/#L23">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IAccountRepository_PaginateOfType_" data-uid="Octopus.Client.Repositories.IAccountRepository.PaginateOfType*"></a>
+  <h4 id="Octopus_Client_Repositories_IAccountRepository_PaginateOfType__1_System_Func_Octopus_Client_Model_ResourceCollection___0__System_Boolean__System_Object_" data-uid="Octopus.Client.Repositories.IAccountRepository.PaginateOfType``1(System.Func{Octopus.Client.Model.ResourceCollection{``0},System.Boolean},System.Object)">PaginateOfType&lt;TAccount&gt;(Func&lt;ResourceCollection&lt;TAccount&gt;, Boolean&gt;, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PaginateOfType&lt;TAccount&gt;(Func&lt;ResourceCollection&lt;TAccount&gt;, bool&gt; getNextPage, object pathParameters = null)
+
+    where TAccount : AccountResource</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Octopus.Client.Model.ResourceCollection-1.html">ResourceCollection</a>&lt;TAccount&gt;, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">getNextPage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TAccount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IAccountRepository_RefreshOfType__1___0_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IAccountRepository.RefreshOfType%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/IAccountRepository.cs/#L18">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IAccountRepository_RefreshOfType_" data-uid="Octopus.Client.Repositories.IAccountRepository.RefreshOfType*"></a>
+  <h4 id="Octopus_Client_Repositories_IAccountRepository_RefreshOfType__1___0_" data-uid="Octopus.Client.Repositories.IAccountRepository.RefreshOfType``1(``0)">RefreshOfType&lt;TAccount&gt;(TAccount)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TAccount RefreshOfType&lt;TAccount&gt;(TAccount resource)
+
+    where TAccount : AccountResource</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TAccount</span></td>
+        <td><span class="parametername">resource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TAccount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TAccount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IAccountRepository.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IAccountRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/IAccountRepository.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

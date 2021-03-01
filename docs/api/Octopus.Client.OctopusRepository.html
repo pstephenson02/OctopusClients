@@ -1,0 +1,2427 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OctopusRepository
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OctopusRepository
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Octopus.Client.OctopusRepository">
+  
+  
+  <h1 id="Octopus_Client_OctopusRepository" data-uid="Octopus.Client.OctopusRepository" class="text-break">Class OctopusRepository
+  </h1>
+  <div class="markdown level0 summary"><p>A simplified interface to commonly-used parts of the API.
+Functionality not exposed by this interface can be accessed
+using <a class="xref" href="Octopus.Client.IOctopusCommonRepository.html#Octopus_Client_IOctopusCommonRepository_Client">Client</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">OctopusRepository</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Octopus.Client.IOctopusRepository.html">IOctopusRepository</a></div>
+    <div><a class="xref" href="Octopus.Client.IOctopusSpaceRepository.html">IOctopusSpaceRepository</a></div>
+    <div><a class="xref" href="Octopus.Client.IOctopusSystemRepository.html">IOctopusSystemRepository</a></div>
+    <div><a class="xref" href="Octopus.Client.IOctopusCommonRepository.html">IOctopusCommonRepository</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Octopus.Client.html">Octopus.Client</a></h6>
+  <h6><strong>Assembly</strong>: Octopus.Client.dll</h6>
+  <h5 id="Octopus_Client_OctopusRepository_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OctopusRepository : IOctopusRepository, IOctopusSpaceRepository, IOctopusSystemRepository, IOctopusCommonRepository</code></pre>
+  </div>
+  <h5 id="Octopus_Client_OctopusRepository_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Create using:</p>
+<pre><code>var repository = new OctopusRepository(new OctopusServerEndpoint(&quot;http://myoctopus/&quot;));</code></pre>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository__ctor_Octopus_Client_IOctopusClient_Octopus_Client_RepositoryScope_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.%23ctor(Octopus.Client.IOctopusClient%2COctopus.Client.RepositoryScope)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L49">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository__ctor_" data-uid="Octopus.Client.OctopusRepository.#ctor*"></a>
+  <h4 id="Octopus_Client_OctopusRepository__ctor_Octopus_Client_IOctopusClient_Octopus_Client_RepositoryScope_" data-uid="Octopus.Client.OctopusRepository.#ctor(Octopus.Client.IOctopusClient,Octopus.Client.RepositoryScope)">OctopusRepository(IOctopusClient, RepositoryScope)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OctopusRepository(IOctopusClient client, RepositoryScope repositoryScope = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.IOctopusClient.html">IOctopusClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.RepositoryScope.html">RepositoryScope</a></td>
+        <td><span class="parametername">repositoryScope</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository__ctor_Octopus_Client_OctopusServerEndpoint_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.%23ctor(Octopus.Client.OctopusServerEndpoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L41">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository__ctor_" data-uid="Octopus.Client.OctopusRepository.#ctor*"></a>
+  <h4 id="Octopus_Client_OctopusRepository__ctor_Octopus_Client_OctopusServerEndpoint_" data-uid="Octopus.Client.OctopusRepository.#ctor(Octopus.Client.OctopusServerEndpoint)">OctopusRepository(OctopusServerEndpoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OctopusRepository(OctopusServerEndpoint endpoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.OctopusServerEndpoint.html">OctopusServerEndpoint</a></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository__ctor_Octopus_Client_OctopusServerEndpoint_Octopus_Client_RepositoryScope_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.%23ctor(Octopus.Client.OctopusServerEndpoint%2COctopus.Client.RepositoryScope)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L45">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository__ctor_" data-uid="Octopus.Client.OctopusRepository.#ctor*"></a>
+  <h4 id="Octopus_Client_OctopusRepository__ctor_Octopus_Client_OctopusServerEndpoint_Octopus_Client_RepositoryScope_" data-uid="Octopus.Client.OctopusRepository.#ctor(Octopus.Client.OctopusServerEndpoint,Octopus.Client.RepositoryScope)">OctopusRepository(OctopusServerEndpoint, RepositoryScope)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OctopusRepository(OctopusServerEndpoint endpoint, RepositoryScope repositoryScope)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.OctopusServerEndpoint.html">OctopusServerEndpoint</a></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.RepositoryScope.html">RepositoryScope</a></td>
+        <td><span class="parametername">repositoryScope</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Accounts.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Accounts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L124">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Accounts_" data-uid="Octopus.Client.OctopusRepository.Accounts*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Accounts" data-uid="Octopus.Client.OctopusRepository.Accounts">Accounts</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAccountRepository Accounts { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IAccountRepository.html">IAccountRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_ActionTemplates.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.ActionTemplates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L125">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_ActionTemplates_" data-uid="Octopus.Client.OctopusRepository.ActionTemplates*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_ActionTemplates" data-uid="Octopus.Client.OctopusRepository.ActionTemplates">ActionTemplates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IActionTemplateRepository ActionTemplates { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IActionTemplateRepository.html">IActionTemplateRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Artifacts.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Artifacts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L126">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Artifacts_" data-uid="Octopus.Client.OctopusRepository.Artifacts*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Artifacts" data-uid="Octopus.Client.OctopusRepository.Artifacts">Artifacts</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IArtifactRepository Artifacts { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IArtifactRepository.html">IArtifactRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Backups.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Backups%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L127">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Backups_" data-uid="Octopus.Client.OctopusRepository.Backups*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Backups" data-uid="Octopus.Client.OctopusRepository.Backups">Backups</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBackupRepository Backups { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IBackupRepository.html">IBackupRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Beta.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Beta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L128">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Beta_" data-uid="Octopus.Client.OctopusRepository.Beta*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Beta" data-uid="Octopus.Client.OctopusRepository.Beta">Beta</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IOctopusSpaceBetaRepository Beta { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IOctopusSpaceBetaRepository.html">IOctopusSpaceBetaRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_BuildInformationRepository.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.BuildInformationRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L130">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_BuildInformationRepository_" data-uid="Octopus.Client.OctopusRepository.BuildInformationRepository*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_BuildInformationRepository" data-uid="Octopus.Client.OctopusRepository.BuildInformationRepository">BuildInformationRepository</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBuildInformationRepository BuildInformationRepository { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IBuildInformationRepository.html">IBuildInformationRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_BuiltInPackageRepository.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.BuiltInPackageRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L129">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_BuiltInPackageRepository_" data-uid="Octopus.Client.OctopusRepository.BuiltInPackageRepository*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_BuiltInPackageRepository" data-uid="Octopus.Client.OctopusRepository.BuiltInPackageRepository">BuiltInPackageRepository</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBuiltInPackageRepositoryRepository BuiltInPackageRepository { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IBuiltInPackageRepositoryRepository.html">IBuiltInPackageRepositoryRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_CertificateConfiguration.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.CertificateConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L131">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_CertificateConfiguration_" data-uid="Octopus.Client.OctopusRepository.CertificateConfiguration*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_CertificateConfiguration" data-uid="Octopus.Client.OctopusRepository.CertificateConfiguration">CertificateConfiguration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICertificateConfigurationRepository CertificateConfiguration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.ICertificateConfigurationRepository.html">ICertificateConfigurationRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Certificates.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Certificates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L132">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Certificates_" data-uid="Octopus.Client.OctopusRepository.Certificates*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Certificates" data-uid="Octopus.Client.OctopusRepository.Certificates">Certificates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICertificateRepository Certificates { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.ICertificateRepository.html">ICertificateRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Channels.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Channels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L133">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Channels_" data-uid="Octopus.Client.OctopusRepository.Channels*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Channels" data-uid="Octopus.Client.OctopusRepository.Channels">Channels</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IChannelRepository Channels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IChannelRepository.html">IChannelRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Client.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L122">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Client_" data-uid="Octopus.Client.OctopusRepository.Client*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Client" data-uid="Octopus.Client.OctopusRepository.Client">Client</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IOctopusClient Client { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.IOctopusClient.html">IOctopusClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_CommunityActionTemplates.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.CommunityActionTemplates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L134">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_CommunityActionTemplates_" data-uid="Octopus.Client.OctopusRepository.CommunityActionTemplates*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_CommunityActionTemplates" data-uid="Octopus.Client.OctopusRepository.CommunityActionTemplates">CommunityActionTemplates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICommunityActionTemplateRepository CommunityActionTemplates { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.ICommunityActionTemplateRepository.html">ICommunityActionTemplateRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Configuration.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Configuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L135">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Configuration_" data-uid="Octopus.Client.OctopusRepository.Configuration*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Configuration" data-uid="Octopus.Client.OctopusRepository.Configuration">Configuration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IConfigurationRepository Configuration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IConfigurationRepository.html">IConfigurationRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_DashboardConfigurations.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.DashboardConfigurations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L136">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_DashboardConfigurations_" data-uid="Octopus.Client.OctopusRepository.DashboardConfigurations*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_DashboardConfigurations" data-uid="Octopus.Client.OctopusRepository.DashboardConfigurations">DashboardConfigurations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDashboardConfigurationRepository DashboardConfigurations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IDashboardConfigurationRepository.html">IDashboardConfigurationRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Dashboards.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Dashboards%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L137">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Dashboards_" data-uid="Octopus.Client.OctopusRepository.Dashboards*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Dashboards" data-uid="Octopus.Client.OctopusRepository.Dashboards">Dashboards</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDashboardRepository Dashboards { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IDashboardRepository.html">IDashboardRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Defects.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Defects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L138">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Defects_" data-uid="Octopus.Client.OctopusRepository.Defects*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Defects" data-uid="Octopus.Client.OctopusRepository.Defects">Defects</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDefectsRepository Defects { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IDefectsRepository.html">IDefectsRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_DeploymentProcesses.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.DeploymentProcesses%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L139">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_DeploymentProcesses_" data-uid="Octopus.Client.OctopusRepository.DeploymentProcesses*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_DeploymentProcesses" data-uid="Octopus.Client.OctopusRepository.DeploymentProcesses">DeploymentProcesses</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDeploymentProcessRepository DeploymentProcesses { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IDeploymentProcessRepository.html">IDeploymentProcessRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Deployments.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Deployments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L141">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Deployments_" data-uid="Octopus.Client.OctopusRepository.Deployments*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Deployments" data-uid="Octopus.Client.OctopusRepository.Deployments">Deployments</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDeploymentRepository Deployments { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IDeploymentRepository.html">IDeploymentRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_DeploymentSettings.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.DeploymentSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L140">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_DeploymentSettings_" data-uid="Octopus.Client.OctopusRepository.DeploymentSettings*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_DeploymentSettings" data-uid="Octopus.Client.OctopusRepository.DeploymentSettings">DeploymentSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDeploymentSettingsRepository DeploymentSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IDeploymentSettingsRepository.html">IDeploymentSettingsRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Environments.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Environments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L142">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Environments_" data-uid="Octopus.Client.OctopusRepository.Environments*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Environments" data-uid="Octopus.Client.OctopusRepository.Environments">Environments</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnvironmentRepository Environments { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IEnvironmentRepository.html">IEnvironmentRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Events.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Events%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L143">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Events_" data-uid="Octopus.Client.OctopusRepository.Events*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Events" data-uid="Octopus.Client.OctopusRepository.Events">Events</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEventRepository Events { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IEventRepository.html">IEventRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_FeaturesConfiguration.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.FeaturesConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L144">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_FeaturesConfiguration_" data-uid="Octopus.Client.OctopusRepository.FeaturesConfiguration*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_FeaturesConfiguration" data-uid="Octopus.Client.OctopusRepository.FeaturesConfiguration">FeaturesConfiguration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IFeaturesConfigurationRepository FeaturesConfiguration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IFeaturesConfigurationRepository.html">IFeaturesConfigurationRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Feeds.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Feeds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L145">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Feeds_" data-uid="Octopus.Client.OctopusRepository.Feeds*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Feeds" data-uid="Octopus.Client.OctopusRepository.Feeds">Feeds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IFeedRepository Feeds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IFeedRepository.html">IFeedRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Interruptions.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Interruptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L146">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Interruptions_" data-uid="Octopus.Client.OctopusRepository.Interruptions*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Interruptions" data-uid="Octopus.Client.OctopusRepository.Interruptions">Interruptions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IInterruptionRepository Interruptions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IInterruptionRepository.html">IInterruptionRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_LibraryVariableSets.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.LibraryVariableSets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L147">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_LibraryVariableSets_" data-uid="Octopus.Client.OctopusRepository.LibraryVariableSets*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_LibraryVariableSets" data-uid="Octopus.Client.OctopusRepository.LibraryVariableSets">LibraryVariableSets</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILibraryVariableSetRepository LibraryVariableSets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.ILibraryVariableSetRepository.html">ILibraryVariableSetRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Licenses.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Licenses%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L149">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Licenses_" data-uid="Octopus.Client.OctopusRepository.Licenses*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Licenses" data-uid="Octopus.Client.OctopusRepository.Licenses">Licenses</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILicensesRepository Licenses { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.ILicensesRepository.html">ILicensesRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Lifecycles.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Lifecycles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L148">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Lifecycles_" data-uid="Octopus.Client.OctopusRepository.Lifecycles*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Lifecycles" data-uid="Octopus.Client.OctopusRepository.Lifecycles">Lifecycles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILifecyclesRepository Lifecycles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.ILifecyclesRepository.html">ILifecyclesRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_MachinePolicies.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.MachinePolicies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L150">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_MachinePolicies_" data-uid="Octopus.Client.OctopusRepository.MachinePolicies*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_MachinePolicies" data-uid="Octopus.Client.OctopusRepository.MachinePolicies">MachinePolicies</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMachinePolicyRepository MachinePolicies { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IMachinePolicyRepository.html">IMachinePolicyRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_MachineRoles.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.MachineRoles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L152">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_MachineRoles_" data-uid="Octopus.Client.OctopusRepository.MachineRoles*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_MachineRoles" data-uid="Octopus.Client.OctopusRepository.MachineRoles">MachineRoles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMachineRoleRepository MachineRoles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IMachineRoleRepository.html">IMachineRoleRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Machines.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Machines%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L151">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Machines_" data-uid="Octopus.Client.OctopusRepository.Machines*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Machines" data-uid="Octopus.Client.OctopusRepository.Machines">Machines</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMachineRepository Machines { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IMachineRepository.html">IMachineRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Migrations.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Migrations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L153">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Migrations_" data-uid="Octopus.Client.OctopusRepository.Migrations*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Migrations" data-uid="Octopus.Client.OctopusRepository.Migrations">Migrations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMigrationRepository Migrations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IMigrationRepository.html">IMigrationRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_OctopusServerNodes.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.OctopusServerNodes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L154">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_OctopusServerNodes_" data-uid="Octopus.Client.OctopusRepository.OctopusServerNodes*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_OctopusServerNodes" data-uid="Octopus.Client.OctopusRepository.OctopusServerNodes">OctopusServerNodes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IOctopusServerNodeRepository OctopusServerNodes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IOctopusServerNodeRepository.html">IOctopusServerNodeRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_PackageMetadataRepository.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.PackageMetadataRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L156">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_PackageMetadataRepository_" data-uid="Octopus.Client.OctopusRepository.PackageMetadataRepository*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_PackageMetadataRepository" data-uid="Octopus.Client.OctopusRepository.PackageMetadataRepository">PackageMetadataRepository</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPackageMetadataRepository PackageMetadataRepository { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IPackageMetadataRepository.html">IPackageMetadataRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_PerformanceConfiguration.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.PerformanceConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L155">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_PerformanceConfiguration_" data-uid="Octopus.Client.OctopusRepository.PerformanceConfiguration*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_PerformanceConfiguration" data-uid="Octopus.Client.OctopusRepository.PerformanceConfiguration">PerformanceConfiguration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPerformanceConfigurationRepository PerformanceConfiguration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IPerformanceConfigurationRepository.html">IPerformanceConfigurationRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_ProjectGroups.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.ProjectGroups%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L157">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_ProjectGroups_" data-uid="Octopus.Client.OctopusRepository.ProjectGroups*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_ProjectGroups" data-uid="Octopus.Client.OctopusRepository.ProjectGroups">ProjectGroups</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IProjectGroupRepository ProjectGroups { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IProjectGroupRepository.html">IProjectGroupRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Projects.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Projects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L158">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Projects_" data-uid="Octopus.Client.OctopusRepository.Projects*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Projects" data-uid="Octopus.Client.OctopusRepository.Projects">Projects</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IProjectRepository Projects { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IProjectRepository.html">IProjectRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_ProjectTriggers.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.ProjectTriggers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L163">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_ProjectTriggers_" data-uid="Octopus.Client.OctopusRepository.ProjectTriggers*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_ProjectTriggers" data-uid="Octopus.Client.OctopusRepository.ProjectTriggers">ProjectTriggers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IProjectTriggerRepository ProjectTriggers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IProjectTriggerRepository.html">IProjectTriggerRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Proxies.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Proxies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L164">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Proxies_" data-uid="Octopus.Client.OctopusRepository.Proxies*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Proxies" data-uid="Octopus.Client.OctopusRepository.Proxies">Proxies</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IProxyRepository Proxies { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IProxyRepository.html">IProxyRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Releases.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Releases%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L165">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Releases_" data-uid="Octopus.Client.OctopusRepository.Releases*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Releases" data-uid="Octopus.Client.OctopusRepository.Releases">Releases</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReleaseRepository Releases { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IReleaseRepository.html">IReleaseRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_RetentionPolicies.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.RetentionPolicies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L166">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_RetentionPolicies_" data-uid="Octopus.Client.OctopusRepository.RetentionPolicies*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_RetentionPolicies" data-uid="Octopus.Client.OctopusRepository.RetentionPolicies">RetentionPolicies</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRetentionPolicyRepository RetentionPolicies { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IRetentionPolicyRepository.html">IRetentionPolicyRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_RunbookProcesses.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.RunbookProcesses%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L160">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_RunbookProcesses_" data-uid="Octopus.Client.OctopusRepository.RunbookProcesses*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_RunbookProcesses" data-uid="Octopus.Client.OctopusRepository.RunbookProcesses">RunbookProcesses</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRunbookProcessRepository RunbookProcesses { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IRunbookProcessRepository.html">IRunbookProcessRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_RunbookRuns.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.RunbookRuns%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L162">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_RunbookRuns_" data-uid="Octopus.Client.OctopusRepository.RunbookRuns*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_RunbookRuns" data-uid="Octopus.Client.OctopusRepository.RunbookRuns">RunbookRuns</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRunbookRunRepository RunbookRuns { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IRunbookRunRepository.html">IRunbookRunRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Runbooks.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Runbooks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L159">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Runbooks_" data-uid="Octopus.Client.OctopusRepository.Runbooks*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Runbooks" data-uid="Octopus.Client.OctopusRepository.Runbooks">Runbooks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRunbookRepository Runbooks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IRunbookRepository.html">IRunbookRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_RunbookSnapshots.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.RunbookSnapshots%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L161">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_RunbookSnapshots_" data-uid="Octopus.Client.OctopusRepository.RunbookSnapshots*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_RunbookSnapshots" data-uid="Octopus.Client.OctopusRepository.RunbookSnapshots">RunbookSnapshots</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRunbookSnapshotRepository RunbookSnapshots { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IRunbookSnapshotRepository.html">IRunbookSnapshotRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Schedulers.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Schedulers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L167">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Schedulers_" data-uid="Octopus.Client.OctopusRepository.Schedulers*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Schedulers" data-uid="Octopus.Client.OctopusRepository.Schedulers">Schedulers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISchedulerRepository Schedulers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.ISchedulerRepository.html">ISchedulerRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Scope.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Scope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L123">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Scope_" data-uid="Octopus.Client.OctopusRepository.Scope*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Scope" data-uid="Octopus.Client.OctopusRepository.Scope">Scope</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RepositoryScope Scope { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.RepositoryScope.html">RepositoryScope</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_ScopedUserRoles.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.ScopedUserRoles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L182">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_ScopedUserRoles_" data-uid="Octopus.Client.OctopusRepository.ScopedUserRoles*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_ScopedUserRoles" data-uid="Octopus.Client.OctopusRepository.ScopedUserRoles">ScopedUserRoles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IScopedUserRoleRepository ScopedUserRoles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IScopedUserRoleRepository.html">IScopedUserRoleRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_ServerStatus.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.ServerStatus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L168">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_ServerStatus_" data-uid="Octopus.Client.OctopusRepository.ServerStatus*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_ServerStatus" data-uid="Octopus.Client.OctopusRepository.ServerStatus">ServerStatus</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IServerStatusRepository ServerStatus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IServerStatusRepository.html">IServerStatusRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Spaces.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Spaces%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L169">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Spaces_" data-uid="Octopus.Client.OctopusRepository.Spaces*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Spaces" data-uid="Octopus.Client.OctopusRepository.Spaces">Spaces</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISpaceRepository Spaces { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.ISpaceRepository.html">ISpaceRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Subscriptions.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Subscriptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L170">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Subscriptions_" data-uid="Octopus.Client.OctopusRepository.Subscriptions*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Subscriptions" data-uid="Octopus.Client.OctopusRepository.Subscriptions">Subscriptions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISubscriptionRepository Subscriptions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.ISubscriptionRepository.html">ISubscriptionRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_TagSets.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.TagSets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L171">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_TagSets_" data-uid="Octopus.Client.OctopusRepository.TagSets*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_TagSets" data-uid="Octopus.Client.OctopusRepository.TagSets">TagSets</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITagSetRepository TagSets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.ITagSetRepository.html">ITagSetRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Tasks.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Tasks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L172">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Tasks_" data-uid="Octopus.Client.OctopusRepository.Tasks*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Tasks" data-uid="Octopus.Client.OctopusRepository.Tasks">Tasks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITaskRepository Tasks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.ITaskRepository.html">ITaskRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Teams.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Teams%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L173">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Teams_" data-uid="Octopus.Client.OctopusRepository.Teams*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Teams" data-uid="Octopus.Client.OctopusRepository.Teams">Teams</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITeamsRepository Teams { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.ITeamsRepository.html">ITeamsRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Tenants.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Tenants%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L174">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Tenants_" data-uid="Octopus.Client.OctopusRepository.Tenants*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Tenants" data-uid="Octopus.Client.OctopusRepository.Tenants">Tenants</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITenantRepository Tenants { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.ITenantRepository.html">ITenantRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_TenantVariables.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.TenantVariables%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L175">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_TenantVariables_" data-uid="Octopus.Client.OctopusRepository.TenantVariables*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_TenantVariables" data-uid="Octopus.Client.OctopusRepository.TenantVariables">TenantVariables</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITenantVariablesRepository TenantVariables { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.ITenantVariablesRepository.html">ITenantVariablesRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_UpgradeConfiguration.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.UpgradeConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L185">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_UpgradeConfiguration_" data-uid="Octopus.Client.OctopusRepository.UpgradeConfiguration*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_UpgradeConfiguration" data-uid="Octopus.Client.OctopusRepository.UpgradeConfiguration">UpgradeConfiguration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IUpgradeConfigurationRepository UpgradeConfiguration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IUpgradeConfigurationRepository.html">IUpgradeConfigurationRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_UserInvites.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.UserInvites%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L176">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_UserInvites_" data-uid="Octopus.Client.OctopusRepository.UserInvites*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_UserInvites" data-uid="Octopus.Client.OctopusRepository.UserInvites">UserInvites</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IUserInvitesRepository UserInvites { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IUserInvitesRepository.html">IUserInvitesRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_UserPermissions.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.UserPermissions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L183">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_UserPermissions_" data-uid="Octopus.Client.OctopusRepository.UserPermissions*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_UserPermissions" data-uid="Octopus.Client.OctopusRepository.UserPermissions">UserPermissions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IUserPermissionsRepository UserPermissions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IUserPermissionsRepository.html">IUserPermissionsRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_UserRoles.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.UserRoles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L178">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_UserRoles_" data-uid="Octopus.Client.OctopusRepository.UserRoles*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_UserRoles" data-uid="Octopus.Client.OctopusRepository.UserRoles">UserRoles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IUserRolesRepository UserRoles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IUserRolesRepository.html">IUserRolesRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Users.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Users%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L177">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Users_" data-uid="Octopus.Client.OctopusRepository.Users*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Users" data-uid="Octopus.Client.OctopusRepository.Users">Users</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IUserRepository Users { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IUserRepository.html">IUserRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_UserTeams.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.UserTeams%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L184">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_UserTeams_" data-uid="Octopus.Client.OctopusRepository.UserTeams*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_UserTeams" data-uid="Octopus.Client.OctopusRepository.UserTeams">UserTeams</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IUserTeamsRepository UserTeams { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IUserTeamsRepository.html">IUserTeamsRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_VariableSets.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.VariableSets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L179">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_VariableSets_" data-uid="Octopus.Client.OctopusRepository.VariableSets*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_VariableSets" data-uid="Octopus.Client.OctopusRepository.VariableSets">VariableSets</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IVariableSetRepository VariableSets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IVariableSetRepository.html">IVariableSetRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_WorkerPools.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.WorkerPools%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L180">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_WorkerPools_" data-uid="Octopus.Client.OctopusRepository.WorkerPools*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_WorkerPools" data-uid="Octopus.Client.OctopusRepository.WorkerPools">WorkerPools</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWorkerPoolRepository WorkerPools { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IWorkerPoolRepository.html">IWorkerPoolRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Workers.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Workers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L181">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Workers_" data-uid="Octopus.Client.OctopusRepository.Workers*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Workers" data-uid="Octopus.Client.OctopusRepository.Workers">Workers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWorkerRepository Workers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IWorkerRepository.html">IWorkerRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_HasLink_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.HasLink(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L187">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_HasLink_" data-uid="Octopus.Client.OctopusRepository.HasLink*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_HasLink_System_String_" data-uid="Octopus.Client.OctopusRepository.HasLink(System.String)">HasLink(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasLink(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_HasLinkParameter_System_String_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.HasLinkParameter(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L192">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_HasLinkParameter_" data-uid="Octopus.Client.OctopusRepository.HasLinkParameter*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_HasLinkParameter_System_String_System_String_" data-uid="Octopus.Client.OctopusRepository.HasLinkParameter(System.String,System.String)">HasLinkParameter(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasLinkParameter(string linkName, string parameterName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">linkName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">parameterName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_Link_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.Link(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L206">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_Link_" data-uid="Octopus.Client.OctopusRepository.Link*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_Link_System_String_" data-uid="Octopus.Client.OctopusRepository.Link(System.String)">Link(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Link(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_LoadRootDocument.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.LoadRootDocument%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L213">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_LoadRootDocument_" data-uid="Octopus.Client.OctopusRepository.LoadRootDocument*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_LoadRootDocument" data-uid="Octopus.Client.OctopusRepository.LoadRootDocument">LoadRootDocument()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RootResource LoadRootDocument()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.RootResource.html">RootResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository_LoadSpaceRootDocument.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository.LoadSpaceRootDocument%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L214">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusRepository_LoadSpaceRootDocument_" data-uid="Octopus.Client.OctopusRepository.LoadSpaceRootDocument*"></a>
+  <h4 id="Octopus_Client_OctopusRepository_LoadSpaceRootDocument" data-uid="Octopus.Client.OctopusRepository.LoadSpaceRootDocument">LoadSpaceRootDocument()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpaceRootResource LoadSpaceRootDocument()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.SpaceRootResource.html">SpaceRootResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Octopus.Client.IOctopusRepository.html">IOctopusRepository</a>
+  </div>
+  <div>
+      <a class="xref" href="Octopus.Client.IOctopusSpaceRepository.html">IOctopusSpaceRepository</a>
+  </div>
+  <div>
+      <a class="xref" href="Octopus.Client.IOctopusSystemRepository.html">IOctopusSystemRepository</a>
+  </div>
+  <div>
+      <a class="xref" href="Octopus.Client.IOctopusCommonRepository.html">IOctopusCommonRepository</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Octopus.Client.OctopusRepositoryExtensions.html#Octopus_Client_OctopusRepositoryExtensions_ForSpace_Octopus_Client_IOctopusRepository_Octopus_Client_Model_SpaceResource_">OctopusRepositoryExtensions.ForSpace(IOctopusRepository, SpaceResource)</a>
+  </div>
+  <div>
+      <a class="xref" href="Octopus.Client.OctopusRepositoryExtensions.html#Octopus_Client_OctopusRepositoryExtensions_ForSystem_Octopus_Client_IOctopusRepository_">OctopusRepositoryExtensions.ForSystem(IOctopusRepository)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusRepository.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusRepository.cs/#L36" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

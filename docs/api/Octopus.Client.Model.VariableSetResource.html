@@ -1,0 +1,662 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VariableSetResource
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VariableSetResource
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Octopus.Client.Model.VariableSetResource">
+  
+  
+  <h1 id="Octopus_Client_Model_VariableSetResource" data-uid="Octopus.Client.Model.VariableSetResource" class="text-break">Class VariableSetResource
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a collection of variables that is attached to a document.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Octopus.Client.Model.Resource.html">Resource</a></div>
+    <div class="level2"><span class="xref">VariableSetResource</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Octopus.Client.Extensibility.IResource.html">IResource</a></div>
+    <div><a class="xref" href="Octopus.Client.Model.IAuditedResource.html">IAuditedResource</a></div>
+    <div><a class="xref" href="Octopus.Client.Extensibility.IHaveSpaceResource.html">IHaveSpaceResource</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_Id">Resource.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_LastModifiedOn">Resource.LastModifiedOn</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_LastModifiedBy">Resource.LastModifiedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_Links">Resource.Links</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_HasLink_System_String_">Resource.HasLink(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_Link_System_String_">Resource.Link(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Octopus.Client.Model.html">Octopus.Client.Model</a></h6>
+  <h6><strong>Assembly</strong>: Octopus.Client.dll</h6>
+  <h5 id="Octopus_Client_Model_VariableSetResource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VariableSetResource : Resource, IResource, IAuditedResource, IHaveSpaceResource</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_VariableSetResource__ctor.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.VariableSetResource.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/VariableSetResource.cs/#L16">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_VariableSetResource__ctor_" data-uid="Octopus.Client.Model.VariableSetResource.#ctor*"></a>
+  <h4 id="Octopus_Client_Model_VariableSetResource__ctor" data-uid="Octopus.Client.Model.VariableSetResource.#ctor">VariableSetResource()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Octopus.Client.Model.VariableSetResource.html">VariableSetResource</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VariableSetResource()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_VariableSetResource_OwnerId.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.VariableSetResource.OwnerId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/VariableSetResource.cs/#L24">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_VariableSetResource_OwnerId_" data-uid="Octopus.Client.Model.VariableSetResource.OwnerId*"></a>
+  <h4 id="Octopus_Client_Model_VariableSetResource_OwnerId" data-uid="Octopus.Client.Model.VariableSetResource.OwnerId">OwnerId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the ID of the document that owns these variables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OwnerId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_VariableSetResource_ScopeValues.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.VariableSetResource.ScopeValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/VariableSetResource.cs/#L39">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_VariableSetResource_ScopeValues_" data-uid="Octopus.Client.Model.VariableSetResource.ScopeValues*"></a>
+  <h4 id="Octopus_Client_Model_VariableSetResource_ScopeValues" data-uid="Octopus.Client.Model.VariableSetResource.ScopeValues">ScopeValues</h4>
+  <div class="markdown level1 summary"><p>Gets the scope values that apply to the variables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VariableScopeValues ScopeValues { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.VariableScopeValues.html">VariableScopeValues</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_VariableSetResource_SpaceId.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.VariableSetResource.SpaceId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/VariableSetResource.cs/#L169">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_VariableSetResource_SpaceId_" data-uid="Octopus.Client.Model.VariableSetResource.SpaceId*"></a>
+  <h4 id="Octopus_Client_Model_VariableSetResource_SpaceId" data-uid="Octopus.Client.Model.VariableSetResource.SpaceId">SpaceId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SpaceId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_VariableSetResource_Variables.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.VariableSetResource.Variables%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/VariableSetResource.cs/#L34">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_VariableSetResource_Variables_" data-uid="Octopus.Client.Model.VariableSetResource.Variables*"></a>
+  <h4 id="Octopus_Client_Model_VariableSetResource_Variables" data-uid="Octopus.Client.Model.VariableSetResource.Variables">Variables</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of variables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;VariableResource&gt; Variables { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Octopus.Client.Model.VariableResource.html">VariableResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_VariableSetResource_Version.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.VariableSetResource.Version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/VariableSetResource.cs/#L29">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_VariableSetResource_Version_" data-uid="Octopus.Client.Model.VariableSetResource.Version*"></a>
+  <h4 id="Octopus_Client_Model_VariableSetResource_Version" data-uid="Octopus.Client.Model.VariableSetResource.Version">Version</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the version number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Version { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_System_String_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/VariableSetResource.cs/#L41">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_" data-uid="Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue*"></a>
+  <h4 id="Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_System_String_System_String_" data-uid="Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue(System.String,System.String)">AddOrUpdateVariableValue(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VariableSetResource AddOrUpdateVariableValue(string name, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.VariableSetResource.html">VariableSetResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_System_String_System_String_Octopus_Client_Model_ScopeSpecification_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue(System.String%2CSystem.String%2COctopus.Client.Model.ScopeSpecification)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/VariableSetResource.cs/#L91">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_" data-uid="Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue*"></a>
+  <h4 id="Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_System_String_System_String_Octopus_Client_Model_ScopeSpecification_" data-uid="Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification)">AddOrUpdateVariableValue(String, String, ScopeSpecification)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VariableSetResource AddOrUpdateVariableValue(string name, string value, ScopeSpecification scope)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ScopeSpecification.html">ScopeSpecification</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.VariableSetResource.html">VariableSetResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_System_String_System_String_Octopus_Client_Model_ScopeSpecification_System_Boolean_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue(System.String%2CSystem.String%2COctopus.Client.Model.ScopeSpecification%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/VariableSetResource.cs/#L115">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_" data-uid="Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue*"></a>
+  <h4 id="Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_System_String_System_String_Octopus_Client_Model_ScopeSpecification_System_Boolean_" data-uid="Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification,System.Boolean)">AddOrUpdateVariableValue(String, String, ScopeSpecification, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VariableSetResource AddOrUpdateVariableValue(string name, string value, ScopeSpecification scope, bool isSensitive)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ScopeSpecification.html">ScopeSpecification</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isSensitive</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.VariableSetResource.html">VariableSetResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_System_String_System_String_Octopus_Client_Model_ScopeSpecification_System_Boolean_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue(System.String%2CSystem.String%2COctopus.Client.Model.ScopeSpecification%2CSystem.Boolean%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/VariableSetResource.cs/#L141">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_" data-uid="Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue*"></a>
+  <h4 id="Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_System_String_System_String_Octopus_Client_Model_ScopeSpecification_System_Boolean_System_String_" data-uid="Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue(System.String,System.String,Octopus.Client.Model.ScopeSpecification,System.Boolean,System.String)">AddOrUpdateVariableValue(String, String, ScopeSpecification, Boolean, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VariableSetResource AddOrUpdateVariableValue(string name, string value, ScopeSpecification scope, bool isSensitive, string description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ScopeSpecification.html">ScopeSpecification</a></td>
+        <td><span class="parametername">scope</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isSensitive</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.VariableSetResource.html">VariableSetResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/VariableSetResource.cs/#L65">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_" data-uid="Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue*"></a>
+  <h4 id="Octopus_Client_Model_VariableSetResource_AddOrUpdateVariableValue_System_String_System_String_System_String_" data-uid="Octopus.Client.Model.VariableSetResource.AddOrUpdateVariableValue(System.String,System.String,System.String)">AddOrUpdateVariableValue(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VariableSetResource AddOrUpdateVariableValue(string name, string value, string description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.VariableSetResource.html">VariableSetResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Octopus.Client.Extensibility.IResource.html">IResource</a>
+  </div>
+  <div>
+      <a class="xref" href="Octopus.Client.Model.IAuditedResource.html">IAuditedResource</a>
+  </div>
+  <div>
+      <a class="xref" href="Octopus.Client.Extensibility.IHaveSpaceResource.html">IHaveSpaceResource</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_VariableSetResource.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.VariableSetResource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/VariableSetResource.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1347 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ITaskRepository
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ITaskRepository
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Octopus.Client.Repositories.Async.ITaskRepository">
+  
+  
+  <h1 id="Octopus_Client_Repositories_Async_ITaskRepository" data-uid="Octopus.Client.Repositories.Async.ITaskRepository" class="text-break">Interface ITaskRepository
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IPaginate-1.html#Octopus_Client_Repositories_Async_IPaginate_1_Paginate_System_Func_Octopus_Client_Model_ResourceCollection__0__System_Boolean__System_String_System_Object_">IPaginate&lt;TaskResource&gt;.Paginate(Func&lt;ResourceCollection&lt;TaskResource&gt;, Boolean&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IPaginate-1.html#Octopus_Client_Repositories_Async_IPaginate_1_FindOne_System_Func__0_System_Boolean__System_String_System_Object_">IPaginate&lt;TaskResource&gt;.FindOne(Func&lt;TaskResource, Boolean&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IPaginate-1.html#Octopus_Client_Repositories_Async_IPaginate_1_FindMany_System_Func__0_System_Boolean__System_String_System_Object_">IPaginate&lt;TaskResource&gt;.FindMany(Func&lt;TaskResource, Boolean&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IPaginate-1.html#Octopus_Client_Repositories_Async_IPaginate_1_FindAll_System_String_System_Object_">IPaginate&lt;TaskResource&gt;.FindAll(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IGet-1.html#Octopus_Client_Repositories_Async_IGet_1_Get_System_String_">IGet&lt;TaskResource&gt;.Get(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IGet-1.html#Octopus_Client_Repositories_Async_IGet_1_Get_System_String___">IGet&lt;TaskResource&gt;.Get(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.IGet-1.html#Octopus_Client_Repositories_Async_IGet_1_Refresh__0_">IGet&lt;TaskResource&gt;.Refresh(TaskResource)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.ICreate-1.html#Octopus_Client_Repositories_Async_ICreate_1_Create__0_System_Object_">ICreate&lt;TaskResource&gt;.Create(TaskResource, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.Async.ICanExtendSpaceContext-1.html#Octopus_Client_Repositories_Async_ICanExtendSpaceContext_1_UsingContext_Octopus_Client_SpaceContext_">ICanExtendSpaceContext&lt;ITaskRepository&gt;.UsingContext(SpaceContext)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Octopus.Client.Repositories.Async.html">Octopus.Client.Repositories.Async</a></h6>
+  <h6><strong>Assembly</strong>: Octopus.Client.dll</h6>
+  <h5 id="Octopus_Client_Repositories_Async_ITaskRepository_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ITaskRepository : IPaginate&lt;TaskResource&gt;, IGet&lt;TaskResource&gt;, ICreate&lt;TaskResource&gt;, ICanExtendSpaceContext&lt;ITaskRepository&gt;</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_Cancel_Octopus_Client_Model_TaskResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.Cancel(Octopus.Client.Model.TaskResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L49">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_Cancel_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.Cancel*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_Cancel_Octopus_Client_Model_TaskResource_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.Cancel(Octopus.Client.Model.TaskResource)">Cancel(TaskResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task Cancel(TaskResource resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_ExecuteActionTemplate_Octopus_Client_Model_ActionTemplateResource_System_Collections_Generic_Dictionary_System_String_Octopus_Client_Model_PropertyValueResource__System_String___System_String___System_String___System_String_System_Nullable_Octopus_Client_Model_BuiltInTasks_AdHocScript_TargetType__.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.ExecuteActionTemplate(Octopus.Client.Model.ActionTemplateResource%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2COctopus.Client.Model.PropertyValueResource%7D%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CSystem.String%2CSystem.Nullable%7BOctopus.Client.Model.BuiltInTasks.AdHocScript.TargetType%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L20">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_ExecuteActionTemplate_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ExecuteActionTemplate*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_ExecuteActionTemplate_Octopus_Client_Model_ActionTemplateResource_System_Collections_Generic_Dictionary_System_String_Octopus_Client_Model_PropertyValueResource__System_String___System_String___System_String___System_String_System_Nullable_Octopus_Client_Model_BuiltInTasks_AdHocScript_TargetType__" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ExecuteActionTemplate(Octopus.Client.Model.ActionTemplateResource,System.Collections.Generic.Dictionary{System.String,Octopus.Client.Model.PropertyValueResource},System.String[],System.String[],System.String[],System.String,System.Nullable{Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType})">ExecuteActionTemplate(ActionTemplateResource, Dictionary&lt;String, PropertyValueResource&gt;, String[], String[], String[], String, Nullable&lt;BuiltInTasks.AdHocScript.TargetType&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TaskResource&gt; ExecuteActionTemplate(ActionTemplateResource resource, Dictionary&lt;string, PropertyValueResource&gt; properties, string[] machineIds = null, string[] environmentIds = null, string[] targetRoles = null, string description = null, BuiltInTasks.AdHocScript.TargetType? targetType = default(BuiltInTasks.AdHocScript.TargetType? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ActionTemplateResource.html">ActionTemplateResource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Octopus.Client.Model.PropertyValueResource.html">PropertyValueResource</a>&gt;</td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">machineIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">environmentIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">targetRoles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType.html">BuiltInTasks.AdHocScript.TargetType</a>&gt;</td>
+        <td><span class="parametername">targetType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_ExecuteAdHocScript_System_String_System_String___System_String___System_String___System_String_System_String_System_Nullable_Octopus_Client_Model_BuiltInTasks_AdHocScript_TargetType__.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.ExecuteAdHocScript(System.String%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CSystem.String%5B%5D%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BOctopus.Client.Model.BuiltInTasks.AdHocScript.TargetType%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L18">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_ExecuteAdHocScript_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ExecuteAdHocScript*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_ExecuteAdHocScript_System_String_System_String___System_String___System_String___System_String_System_String_System_Nullable_Octopus_Client_Model_BuiltInTasks_AdHocScript_TargetType__" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ExecuteAdHocScript(System.String,System.String[],System.String[],System.String[],System.String,System.String,System.Nullable{Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType})">ExecuteAdHocScript(String, String[], String[], String[], String, String, Nullable&lt;BuiltInTasks.AdHocScript.TargetType&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TaskResource&gt; ExecuteAdHocScript(string scriptBody, string[] machineIds = null, string[] environmentIds = null, string[] targetRoles = null, string description = null, string syntax = &quot;PowerShell&quot;, BuiltInTasks.AdHocScript.TargetType? targetType = default(BuiltInTasks.AdHocScript.TargetType? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">scriptBody</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">machineIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">environmentIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">targetRoles</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">syntax</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Octopus.Client.Model.BuiltInTasks.AdHocScript.TargetType.html">BuiltInTasks.AdHocScript.TargetType</a>&gt;</td>
+        <td><span class="parametername">targetType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_ExecuteBackup_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.ExecuteBackup(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L16">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_ExecuteBackup_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ExecuteBackup*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_ExecuteBackup_System_String_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ExecuteBackup(System.String)">ExecuteBackup(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TaskResource&gt; ExecuteBackup(string description = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_ExecuteCalamariUpdate_System_String_System_String___.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCalamariUpdate(System.String%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L15">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_ExecuteCalamariUpdate_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCalamariUpdate*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_ExecuteCalamariUpdate_System_String_System_String___" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCalamariUpdate(System.String,System.String[])">ExecuteCalamariUpdate(String, String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TaskResource&gt; ExecuteCalamariUpdate(string description = null, string[] machineIds = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">machineIds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_ExecuteCommunityActionTemplatesSynchronisation_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCommunityActionTemplatesSynchronisation(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L21">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_ExecuteCommunityActionTemplatesSynchronisation_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCommunityActionTemplatesSynchronisation*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_ExecuteCommunityActionTemplatesSynchronisation_System_String_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ExecuteCommunityActionTemplatesSynchronisation(System.String)">ExecuteCommunityActionTemplatesSynchronisation(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TaskResource&gt; ExecuteCommunityActionTemplatesSynchronisation(string description = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_ExecuteHealthCheck_System_String_System_Int32_System_Int32_System_String_System_String___System_String_System_String_System_String___.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.ExecuteHealthCheck(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.String%2CSystem.String%5B%5D%2CSystem.String%2CSystem.String%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L14">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_ExecuteHealthCheck_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ExecuteHealthCheck*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_ExecuteHealthCheck_System_String_System_Int32_System_Int32_System_String_System_String___System_String_System_String_System_String___" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ExecuteHealthCheck(System.String,System.Int32,System.Int32,System.String,System.String[],System.String,System.String,System.String[])">ExecuteHealthCheck(String, Int32, Int32, String, String[], String, String, String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TaskResource&gt; ExecuteHealthCheck(string description = null, int timeoutAfterMinutes = 5, int machineTimeoutAfterMinutes = 1, string environmentId = null, string[] machineIds = null, string restrictTo = null, string workerpoolId = null, string[] workerIds = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeoutAfterMinutes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">machineTimeoutAfterMinutes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">environmentId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">machineIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">restrictTo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">workerpoolId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">workerIds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_ExecuteTentacleUpgrade_System_String_System_String_System_String___System_String_System_String_System_String___.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.ExecuteTentacleUpgrade(System.String%2CSystem.String%2CSystem.String%5B%5D%2CSystem.String%2CSystem.String%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L17">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_ExecuteTentacleUpgrade_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ExecuteTentacleUpgrade*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_ExecuteTentacleUpgrade_System_String_System_String_System_String___System_String_System_String_System_String___" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ExecuteTentacleUpgrade(System.String,System.String,System.String[],System.String,System.String,System.String[])">ExecuteTentacleUpgrade(String, String, String[], String, String, String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TaskResource&gt; ExecuteTentacleUpgrade(string description = null, string environmentId = null, string[] machineIds = null, string restrictTo = null, string workerpooltId = null, string[] workerIds = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">environmentId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">machineIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">restrictTo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">workerpooltId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">workerIds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_GetActiveWithSummary_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.GetActiveWithSummary(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L36">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_GetActiveWithSummary_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.GetActiveWithSummary*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_GetActiveWithSummary_System_Int32_System_Int32_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.GetActiveWithSummary(System.Int32,System.Int32)">GetActiveWithSummary(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns all active tasks (optionally limited to pageSize) along with a count of all tasks in each status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TaskResourceCollection&gt; GetActiveWithSummary(int pageSize = 2147483647, int skip = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResourceCollection.html">TaskResourceCollection</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_GetAllActive_System_Int32_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.GetAllActive(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L28">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_GetAllActive_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.GetAllActive*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_GetAllActive_System_Int32_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.GetAllActive(System.Int32)">GetAllActive(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all the active tasks (optionally limited to pageSize)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;TaskResource&gt;&gt; GetAllActive(int pageSize = 2147483647)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>Number of items per page, setting to less than the total items still retreives all items, but uses multiple requests reducing memory load on the server</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_GetAllWithSummary_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.GetAllWithSummary(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L44">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_GetAllWithSummary_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.GetAllWithSummary*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_GetAllWithSummary_System_Int32_System_Int32_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.GetAllWithSummary(System.Int32,System.Int32)">GetAllWithSummary(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns all tasks (optionally limited to pageSize) along with a count of all tasks in each status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TaskResourceCollection&gt; GetAllWithSummary(int pageSize = 2147483647, int skip = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResourceCollection.html">TaskResourceCollection</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_GetDetails_Octopus_Client_Model_TaskResource_System_Nullable_System_Boolean__System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.GetDetails(Octopus.Client.Model.TaskResource%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L19">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_GetDetails_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.GetDetails*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_GetDetails_Octopus_Client_Model_TaskResource_System_Nullable_System_Boolean__System_Nullable_System_Int32__" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.GetDetails(Octopus.Client.Model.TaskResource,System.Nullable{System.Boolean},System.Nullable{System.Int32})">GetDetails(TaskResource, Nullable&lt;Boolean&gt;, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TaskDetailsResource&gt; GetDetails(TaskResource resource, bool? includeVerboseOutput = default(bool? ), int? tail = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">includeVerboseOutput</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">tail</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskDetailsResource.html">TaskDetailsResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_GetQueuedBehindTasks_Octopus_Client_Model_TaskResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.GetQueuedBehindTasks(Octopus.Client.Model.TaskResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L51">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_GetQueuedBehindTasks_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.GetQueuedBehindTasks*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_GetQueuedBehindTasks_Octopus_Client_Model_TaskResource_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.GetQueuedBehindTasks(Octopus.Client.Model.TaskResource)">GetQueuedBehindTasks(TaskResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IReadOnlyList&lt;TaskResource&gt;&gt; GetQueuedBehindTasks(TaskResource resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_GetRawOutputLog_Octopus_Client_Model_TaskResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.GetRawOutputLog(Octopus.Client.Model.TaskResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L46">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_GetRawOutputLog_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.GetRawOutputLog*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_GetRawOutputLog_Octopus_Client_Model_TaskResource_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.GetRawOutputLog(Octopus.Client.Model.TaskResource)">GetRawOutputLog(TaskResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; GetRawOutputLog(TaskResource resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_GetTaskTypes.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.GetTaskTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L47">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_GetTaskTypes_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.GetTaskTypes*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_GetTaskTypes" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.GetTaskTypes">GetTaskTypes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TaskTypeResource[]&gt; GetTaskTypes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskTypeResource.html">TaskTypeResource</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_ModifyState_Octopus_Client_Model_TaskResource_Octopus_Client_Model_TaskState_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.ModifyState(Octopus.Client.Model.TaskResource%2COctopus.Client.Model.TaskState%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L50">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_ModifyState_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ModifyState*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_ModifyState_Octopus_Client_Model_TaskResource_Octopus_Client_Model_TaskState_System_String_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.ModifyState(Octopus.Client.Model.TaskResource,Octopus.Client.Model.TaskState,System.String)">ModifyState(TaskResource, TaskState, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task ModifyState(TaskResource resource, TaskState newState, string reason)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TaskState.html">TaskState</a></td>
+        <td><span class="parametername">newState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reason</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_Rerun_Octopus_Client_Model_TaskResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.Rerun(Octopus.Client.Model.TaskResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L48">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_Rerun_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.Rerun*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_Rerun_Octopus_Client_Model_TaskResource_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.Rerun(Octopus.Client.Model.TaskResource)">Rerun(TaskResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task Rerun(TaskResource resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_WaitForCompletion_Octopus_Client_Model_TaskResource_System_Int32_System_Int32_System_Action_Octopus_Client_Model_TaskResource____.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource%2CSystem.Int32%2CSystem.Int32%2CSystem.Action%7BOctopus.Client.Model.TaskResource%5B%5D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L52">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_WaitForCompletion_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_WaitForCompletion_Octopus_Client_Model_TaskResource_System_Int32_System_Int32_System_Action_Octopus_Client_Model_TaskResource____" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource,System.Int32,System.Int32,System.Action{Octopus.Client.Model.TaskResource[]})">WaitForCompletion(TaskResource, Int32, Int32, Action&lt;TaskResource[]&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task WaitForCompletion(TaskResource task, int pollIntervalSeconds = 4, int timeoutAfterMinutes = 0, Action&lt;TaskResource[]&gt; interval = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a></td>
+        <td><span class="parametername">task</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pollIntervalSeconds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeoutAfterMinutes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>[]&gt;</td>
+        <td><span class="parametername">interval</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_WaitForCompletion_Octopus_Client_Model_TaskResource___System_Int32_System_Int32_System_Action_Octopus_Client_Model_TaskResource____.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Action%7BOctopus.Client.Model.TaskResource%5B%5D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L53">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_WaitForCompletion_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_WaitForCompletion_Octopus_Client_Model_TaskResource___System_Int32_System_Int32_System_Action_Octopus_Client_Model_TaskResource____" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Int32,System.Action{Octopus.Client.Model.TaskResource[]})">WaitForCompletion(TaskResource[], Int32, Int32, Action&lt;TaskResource[]&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task WaitForCompletion(TaskResource[] tasks, int pollIntervalSeconds = 4, int timeoutAfterMinutes = 0, Action&lt;TaskResource[]&gt; interval = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>[]</td>
+        <td><span class="parametername">tasks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pollIntervalSeconds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeoutAfterMinutes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>[]&gt;</td>
+        <td><span class="parametername">interval</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_WaitForCompletion_Octopus_Client_Model_TaskResource___System_Int32_System_Int32_System_Func_Octopus_Client_Model_TaskResource___System_Threading_Tasks_Task__.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Func%7BOctopus.Client.Model.TaskResource%5B%5D%2CSystem.Threading.Tasks.Task%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L54">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_WaitForCompletion_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_WaitForCompletion_Octopus_Client_Model_TaskResource___System_Int32_System_Int32_System_Func_Octopus_Client_Model_TaskResource___System_Threading_Tasks_Task__" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Int32,System.Func{Octopus.Client.Model.TaskResource[],System.Threading.Tasks.Task})">WaitForCompletion(TaskResource[], Int32, Int32, Func&lt;TaskResource[], Task&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task WaitForCompletion(TaskResource[] tasks, int pollIntervalSeconds = 4, int timeoutAfterMinutes = 0, Func&lt;TaskResource[], Task&gt; interval = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>[]</td>
+        <td><span class="parametername">tasks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pollIntervalSeconds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeoutAfterMinutes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>[], <span class="xref">System.Threading.Tasks.Task</span>&gt;</td>
+        <td><span class="parametername">interval</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository_WaitForCompletion_Octopus_Client_Model_TaskResource___System_Int32_System_Nullable_System_TimeSpan__System_Func_Octopus_Client_Model_TaskResource___System_Threading_Tasks_Task__.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource%5B%5D%2CSystem.Int32%2CSystem.Nullable%7BSystem.TimeSpan%7D%2CSystem.Func%7BOctopus.Client.Model.TaskResource%5B%5D%2CSystem.Threading.Tasks.Task%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L55">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_Async_ITaskRepository_WaitForCompletion_" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion*"></a>
+  <h4 id="Octopus_Client_Repositories_Async_ITaskRepository_WaitForCompletion_Octopus_Client_Model_TaskResource___System_Int32_System_Nullable_System_TimeSpan__System_Func_Octopus_Client_Model_TaskResource___System_Threading_Tasks_Task__" data-uid="Octopus.Client.Repositories.Async.ITaskRepository.WaitForCompletion(Octopus.Client.Model.TaskResource[],System.Int32,System.Nullable{System.TimeSpan},System.Func{Octopus.Client.Model.TaskResource[],System.Threading.Tasks.Task})">WaitForCompletion(TaskResource[], Int32, Nullable&lt;TimeSpan&gt;, Func&lt;TaskResource[], Task&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task WaitForCompletion(TaskResource[] tasks, int pollIntervalSeconds = 4, TimeSpan? timeoutAfter = default(TimeSpan? ), Func&lt;TaskResource[], Task&gt; interval = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>[]</td>
+        <td><span class="parametername">tasks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pollIntervalSeconds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><span class="parametername">timeoutAfter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Octopus.Client.Model.TaskResource.html">TaskResource</a>[], <span class="xref">System.Threading.Tasks.Task</span>&gt;</td>
+        <td><span class="parametername">interval</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_Async_ITaskRepository.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.Async.ITaskRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/Async/TaskRepository.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

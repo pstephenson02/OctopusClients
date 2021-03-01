@@ -1,0 +1,1032 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IProjectRepository
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IProjectRepository
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Octopus.Client.Repositories.IProjectRepository">
+  
+  
+  <h1 id="Octopus_Client_Repositories_IProjectRepository" data-uid="Octopus.Client.Repositories.IProjectRepository" class="text-break">Interface IProjectRepository
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IFindByName-1.html#Octopus_Client_Repositories_IFindByName_1_FindByName_System_String_System_String_System_Object_">IFindByName&lt;ProjectResource&gt;.FindByName(String, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IFindByName-1.html#Octopus_Client_Repositories_IFindByName_1_FindByNames_System_Collections_Generic_IEnumerable_System_String__System_String_System_Object_">IFindByName&lt;ProjectResource&gt;.FindByNames(IEnumerable&lt;String&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IPaginate-1.html#Octopus_Client_Repositories_IPaginate_1_Paginate_System_Func_Octopus_Client_Model_ResourceCollection__0__System_Boolean__System_String_System_Object_">IPaginate&lt;ProjectResource&gt;.Paginate(Func&lt;ResourceCollection&lt;ProjectResource&gt;, Boolean&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IPaginate-1.html#Octopus_Client_Repositories_IPaginate_1_FindOne_System_Func__0_System_Boolean__System_String_System_Object_">IPaginate&lt;ProjectResource&gt;.FindOne(Func&lt;ProjectResource, Boolean&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IPaginate-1.html#Octopus_Client_Repositories_IPaginate_1_FindMany_System_Func__0_System_Boolean__System_String_System_Object_">IPaginate&lt;ProjectResource&gt;.FindMany(Func&lt;ProjectResource, Boolean&gt;, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IPaginate-1.html#Octopus_Client_Repositories_IPaginate_1_FindAll_System_String_System_Object_">IPaginate&lt;ProjectResource&gt;.FindAll(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IGet-1.html#Octopus_Client_Repositories_IGet_1_Get_System_String_">IGet&lt;ProjectResource&gt;.Get(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IGet-1.html#Octopus_Client_Repositories_IGet_1_Get_System_String___">IGet&lt;ProjectResource&gt;.Get(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IGet-1.html#Octopus_Client_Repositories_IGet_1_Refresh__0_">IGet&lt;ProjectResource&gt;.Refresh(ProjectResource)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.ICreate-1.html#Octopus_Client_Repositories_ICreate_1_Create__0_System_Object_">ICreate&lt;ProjectResource&gt;.Create(ProjectResource, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IModify-1.html#Octopus_Client_Repositories_IModify_1_Modify__0_">IModify&lt;ProjectResource&gt;.Modify(ProjectResource)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IDelete-1.html#Octopus_Client_Repositories_IDelete_1_Delete__0_">IDelete&lt;ProjectResource&gt;.Delete(ProjectResource)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Repositories.IGetAll-1.html#Octopus_Client_Repositories_IGetAll_1_GetAll">IGetAll&lt;ProjectResource&gt;.GetAll()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Octopus.Client.Repositories.html">Octopus.Client.Repositories</a></h6>
+  <h6><strong>Assembly</strong>: Octopus.Client.dll</h6>
+  <h5 id="Octopus_Client_Repositories_IProjectRepository_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IProjectRepository : IFindByName&lt;ProjectResource&gt;, IPaginate&lt;ProjectResource&gt;, IGet&lt;ProjectResource&gt;, ICreate&lt;ProjectResource&gt;, IModify&lt;ProjectResource&gt;, IDelete&lt;ProjectResource&gt;, IGetAll&lt;ProjectResource&gt;</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_Beta.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.Beta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L12">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_Beta_" data-uid="Octopus.Client.Repositories.IProjectRepository.Beta*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_Beta" data-uid="Octopus.Client.Repositories.IProjectRepository.Beta">Beta()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IProjectBetaRepository Beta()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Repositories.IProjectBetaRepository.html">IProjectBetaRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_CreateOrModify_System_String_Octopus_Client_Model_ProjectGroupResource_Octopus_Client_Model_LifecycleResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.CreateOrModify(System.String%2COctopus.Client.Model.ProjectGroupResource%2COctopus.Client.Model.LifecycleResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L22">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_CreateOrModify_" data-uid="Octopus.Client.Repositories.IProjectRepository.CreateOrModify*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_CreateOrModify_System_String_Octopus_Client_Model_ProjectGroupResource_Octopus_Client_Model_LifecycleResource_" data-uid="Octopus.Client.Repositories.IProjectRepository.CreateOrModify(System.String,Octopus.Client.Model.ProjectGroupResource,Octopus.Client.Model.LifecycleResource)">CreateOrModify(String, ProjectGroupResource, LifecycleResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ProjectEditor CreateOrModify(string name, ProjectGroupResource projectGroup, LifecycleResource lifecycle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectGroupResource.html">ProjectGroupResource</a></td>
+        <td><span class="parametername">projectGroup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.LifecycleResource.html">LifecycleResource</a></td>
+        <td><span class="parametername">lifecycle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Editors.ProjectEditor.html">ProjectEditor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_CreateOrModify_System_String_Octopus_Client_Model_ProjectGroupResource_Octopus_Client_Model_LifecycleResource_System_String_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.CreateOrModify(System.String%2COctopus.Client.Model.ProjectGroupResource%2COctopus.Client.Model.LifecycleResource%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L23">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_CreateOrModify_" data-uid="Octopus.Client.Repositories.IProjectRepository.CreateOrModify*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_CreateOrModify_System_String_Octopus_Client_Model_ProjectGroupResource_Octopus_Client_Model_LifecycleResource_System_String_System_String_" data-uid="Octopus.Client.Repositories.IProjectRepository.CreateOrModify(System.String,Octopus.Client.Model.ProjectGroupResource,Octopus.Client.Model.LifecycleResource,System.String,System.String)">CreateOrModify(String, ProjectGroupResource, LifecycleResource, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ProjectEditor CreateOrModify(string name, ProjectGroupResource projectGroup, LifecycleResource lifecycle, string description, string cloneId = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectGroupResource.html">ProjectGroupResource</a></td>
+        <td><span class="parametername">projectGroup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.LifecycleResource.html">LifecycleResource</a></td>
+        <td><span class="parametername">lifecycle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">cloneId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Editors.ProjectEditor.html">ProjectEditor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_GetAllChannels_Octopus_Client_Model_ProjectResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.GetAllChannels(Octopus.Client.Model.ProjectResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L17">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_GetAllChannels_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetAllChannels*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_GetAllChannels_Octopus_Client_Model_ProjectResource_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetAllChannels(Octopus.Client.Model.ProjectResource)">GetAllChannels(ProjectResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;ChannelResource&gt; GetAllChannels(ProjectResource project)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectResource.html">ProjectResource</a></td>
+        <td><span class="parametername">project</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Octopus.Client.Model.ChannelResource.html">ChannelResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_GetAllReleases_Octopus_Client_Model_ProjectResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.GetAllReleases(Octopus.Client.Model.ProjectResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L14">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_GetAllReleases_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetAllReleases*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_GetAllReleases_Octopus_Client_Model_ProjectResource_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetAllReleases(Octopus.Client.Model.ProjectResource)">GetAllReleases(ProjectResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;ReleaseResource&gt; GetAllReleases(ProjectResource project)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectResource.html">ProjectResource</a></td>
+        <td><span class="parametername">project</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Octopus.Client.Model.ReleaseResource.html">ReleaseResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_GetAllRunbooks_Octopus_Client_Model_ProjectResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.GetAllRunbooks(Octopus.Client.Model.ProjectResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L28">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_GetAllRunbooks_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetAllRunbooks*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_GetAllRunbooks_Octopus_Client_Model_ProjectResource_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetAllRunbooks(Octopus.Client.Model.ProjectResource)">GetAllRunbooks(ProjectResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;RunbookResource&gt; GetAllRunbooks(ProjectResource project)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectResource.html">ProjectResource</a></td>
+        <td><span class="parametername">project</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Octopus.Client.Model.RunbookResource.html">RunbookResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_GetAllRunbookSnapshots_Octopus_Client_Model_ProjectResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.GetAllRunbookSnapshots(Octopus.Client.Model.ProjectResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L25">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_GetAllRunbookSnapshots_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetAllRunbookSnapshots*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_GetAllRunbookSnapshots_Octopus_Client_Model_ProjectResource_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetAllRunbookSnapshots(Octopus.Client.Model.ProjectResource)">GetAllRunbookSnapshots(ProjectResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;RunbookSnapshotResource&gt; GetAllRunbookSnapshots(ProjectResource project)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectResource.html">ProjectResource</a></td>
+        <td><span class="parametername">project</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Octopus.Client.Model.RunbookSnapshotResource.html">RunbookSnapshotResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_GetAllTriggers_Octopus_Client_Model_ProjectResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.GetAllTriggers(Octopus.Client.Model.ProjectResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L20">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_GetAllTriggers_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetAllTriggers*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_GetAllTriggers_Octopus_Client_Model_ProjectResource_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetAllTriggers(Octopus.Client.Model.ProjectResource)">GetAllTriggers(ProjectResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;ProjectTriggerResource&gt; GetAllTriggers(ProjectResource project)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectResource.html">ProjectResource</a></td>
+        <td><span class="parametername">project</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Octopus.Client.Model.ProjectTriggerResource.html">ProjectTriggerResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_GetChannels_Octopus_Client_Model_ProjectResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.GetChannels(Octopus.Client.Model.ProjectResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L16">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_GetChannels_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetChannels*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_GetChannels_Octopus_Client_Model_ProjectResource_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetChannels(Octopus.Client.Model.ProjectResource)">GetChannels(ProjectResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ResourceCollection&lt;ChannelResource&gt; GetChannels(ProjectResource project)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectResource.html">ProjectResource</a></td>
+        <td><span class="parametername">project</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ResourceCollection-1.html">ResourceCollection</a>&lt;<a class="xref" href="Octopus.Client.Model.ChannelResource.html">ChannelResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_GetProgression_Octopus_Client_Model_ProjectResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.GetProgression(Octopus.Client.Model.ProjectResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L18">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_GetProgression_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetProgression*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_GetProgression_Octopus_Client_Model_ProjectResource_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetProgression(Octopus.Client.Model.ProjectResource)">GetProgression(ProjectResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ProgressionResource GetProgression(ProjectResource project)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectResource.html">ProjectResource</a></td>
+        <td><span class="parametername">project</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProgressionResource.html">ProgressionResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_GetReleaseByVersion_Octopus_Client_Model_ProjectResource_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.GetReleaseByVersion(Octopus.Client.Model.ProjectResource%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L15">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_GetReleaseByVersion_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetReleaseByVersion*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_GetReleaseByVersion_Octopus_Client_Model_ProjectResource_System_String_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetReleaseByVersion(Octopus.Client.Model.ProjectResource,System.String)">GetReleaseByVersion(ProjectResource, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ReleaseResource GetReleaseByVersion(ProjectResource project, string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectResource.html">ProjectResource</a></td>
+        <td><span class="parametername">project</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ReleaseResource.html">ReleaseResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_GetReleases_Octopus_Client_Model_ProjectResource_System_Int32_System_Nullable_System_Int32__System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.GetReleases(Octopus.Client.Model.ProjectResource%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L13">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_GetReleases_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetReleases*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_GetReleases_Octopus_Client_Model_ProjectResource_System_Int32_System_Nullable_System_Int32__System_String_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetReleases(Octopus.Client.Model.ProjectResource,System.Int32,System.Nullable{System.Int32},System.String)">GetReleases(ProjectResource, Int32, Nullable&lt;Int32&gt;, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ResourceCollection&lt;ReleaseResource&gt; GetReleases(ProjectResource project, int skip = 0, int? take = default(int? ), string searchByVersion = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectResource.html">ProjectResource</a></td>
+        <td><span class="parametername">project</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">take</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">searchByVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ResourceCollection-1.html">ResourceCollection</a>&lt;<a class="xref" href="Octopus.Client.Model.ReleaseResource.html">ReleaseResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_GetRunbooks_Octopus_Client_Model_ProjectResource_System_Int32_System_Nullable_System_Int32__System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.GetRunbooks(Octopus.Client.Model.ProjectResource%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L27">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_GetRunbooks_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetRunbooks*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_GetRunbooks_Octopus_Client_Model_ProjectResource_System_Int32_System_Nullable_System_Int32__System_String_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetRunbooks(Octopus.Client.Model.ProjectResource,System.Int32,System.Nullable{System.Int32},System.String)">GetRunbooks(ProjectResource, Int32, Nullable&lt;Int32&gt;, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ResourceCollection&lt;RunbookResource&gt; GetRunbooks(ProjectResource project, int skip = 0, int? take = default(int? ), string searchByName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectResource.html">ProjectResource</a></td>
+        <td><span class="parametername">project</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">take</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">searchByName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ResourceCollection-1.html">ResourceCollection</a>&lt;<a class="xref" href="Octopus.Client.Model.RunbookResource.html">RunbookResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_GetRunbookSnapshotByName_Octopus_Client_Model_ProjectResource_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.GetRunbookSnapshotByName(Octopus.Client.Model.ProjectResource%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L26">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_GetRunbookSnapshotByName_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetRunbookSnapshotByName*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_GetRunbookSnapshotByName_Octopus_Client_Model_ProjectResource_System_String_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetRunbookSnapshotByName(Octopus.Client.Model.ProjectResource,System.String)">GetRunbookSnapshotByName(ProjectResource, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RunbookSnapshotResource GetRunbookSnapshotByName(ProjectResource project, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectResource.html">ProjectResource</a></td>
+        <td><span class="parametername">project</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.RunbookSnapshotResource.html">RunbookSnapshotResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_GetRunbookSnapshots_Octopus_Client_Model_ProjectResource_System_Int32_System_Nullable_System_Int32__System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.GetRunbookSnapshots(Octopus.Client.Model.ProjectResource%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L24">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_GetRunbookSnapshots_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetRunbookSnapshots*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_GetRunbookSnapshots_Octopus_Client_Model_ProjectResource_System_Int32_System_Nullable_System_Int32__System_String_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetRunbookSnapshots(Octopus.Client.Model.ProjectResource,System.Int32,System.Nullable{System.Int32},System.String)">GetRunbookSnapshots(ProjectResource, Int32, Nullable&lt;Int32&gt;, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ResourceCollection&lt;RunbookSnapshotResource&gt; GetRunbookSnapshots(ProjectResource project, int skip = 0, int? take = default(int? ), string searchByName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectResource.html">ProjectResource</a></td>
+        <td><span class="parametername">project</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">take</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">searchByName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ResourceCollection-1.html">ResourceCollection</a>&lt;<a class="xref" href="Octopus.Client.Model.RunbookSnapshotResource.html">RunbookSnapshotResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_GetTriggers_Octopus_Client_Model_ProjectResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.GetTriggers(Octopus.Client.Model.ProjectResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L19">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_GetTriggers_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetTriggers*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_GetTriggers_Octopus_Client_Model_ProjectResource_" data-uid="Octopus.Client.Repositories.IProjectRepository.GetTriggers(Octopus.Client.Model.ProjectResource)">GetTriggers(ProjectResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ResourceCollection&lt;ProjectTriggerResource&gt; GetTriggers(ProjectResource project)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectResource.html">ProjectResource</a></td>
+        <td><span class="parametername">project</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ResourceCollection-1.html">ResourceCollection</a>&lt;<a class="xref" href="Octopus.Client.Model.ProjectTriggerResource.html">ProjectTriggerResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository_SetLogo_Octopus_Client_Model_ProjectResource_System_String_System_IO_Stream_.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository.SetLogo(Octopus.Client.Model.ProjectResource%2CSystem.String%2CSystem.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L21">View Source</a>
+  </span>
+  <a id="Octopus_Client_Repositories_IProjectRepository_SetLogo_" data-uid="Octopus.Client.Repositories.IProjectRepository.SetLogo*"></a>
+  <h4 id="Octopus_Client_Repositories_IProjectRepository_SetLogo_Octopus_Client_Model_ProjectResource_System_String_System_IO_Stream_" data-uid="Octopus.Client.Repositories.IProjectRepository.SetLogo(Octopus.Client.Model.ProjectResource,System.String,System.IO.Stream)">SetLogo(ProjectResource, String, Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetLogo(ProjectResource project, string fileName, Stream contents)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ProjectResource.html">ProjectResource</a></td>
+        <td><span class="parametername">project</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">contents</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Repositories_IProjectRepository.md&amp;value=---%0Auid%3A%20Octopus.Client.Repositories.IProjectRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Repositories/ProjectRepository.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,900 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MachineResource
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MachineResource
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Octopus.Client.Model.MachineResource">
+  
+  
+  <h1 id="Octopus_Client_Model_MachineResource" data-uid="Octopus.Client.Model.MachineResource" class="text-break">Class MachineResource
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Octopus.Client.Model.Resource.html">Resource</a></div>
+    <div class="level2"><a class="xref" href="Octopus.Client.Model.MachineBasedResource.html">MachineBasedResource</a></div>
+    <div class="level3"><span class="xref">MachineResource</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Octopus.Client.Extensibility.IResource.html">IResource</a></div>
+    <div><a class="xref" href="Octopus.Client.Model.IAuditedResource.html">IAuditedResource</a></div>
+    <div><a class="xref" href="Octopus.Client.Extensibility.INamedResource.html">INamedResource</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.MachineBasedResource.html#Octopus_Client_Model_MachineBasedResource_Name">MachineBasedResource.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.MachineBasedResource.html#Octopus_Client_Model_MachineBasedResource_Thumbprint">MachineBasedResource.Thumbprint</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.MachineBasedResource.html#Octopus_Client_Model_MachineBasedResource_Uri">MachineBasedResource.Uri</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.MachineBasedResource.html#Octopus_Client_Model_MachineBasedResource_IsDisabled">MachineBasedResource.IsDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.MachineBasedResource.html#Octopus_Client_Model_MachineBasedResource_MachinePolicyId">MachineBasedResource.MachinePolicyId</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.MachineBasedResource.html#Octopus_Client_Model_MachineBasedResource_Status">MachineBasedResource.Status</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.MachineBasedResource.html#Octopus_Client_Model_MachineBasedResource_HealthStatus">MachineBasedResource.HealthStatus</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.MachineBasedResource.html#Octopus_Client_Model_MachineBasedResource_HasLatestCalamari">MachineBasedResource.HasLatestCalamari</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.MachineBasedResource.html#Octopus_Client_Model_MachineBasedResource_StatusSummary">MachineBasedResource.StatusSummary</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.MachineBasedResource.html#Octopus_Client_Model_MachineBasedResource_IsInProcess">MachineBasedResource.IsInProcess</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.MachineBasedResource.html#Octopus_Client_Model_MachineBasedResource_Endpoint">MachineBasedResource.Endpoint</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.MachineBasedResource.html#Octopus_Client_Model_MachineBasedResource_OperatingSystem">MachineBasedResource.OperatingSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.MachineBasedResource.html#Octopus_Client_Model_MachineBasedResource_ShellName">MachineBasedResource.ShellName</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.MachineBasedResource.html#Octopus_Client_Model_MachineBasedResource_ShellVersion">MachineBasedResource.ShellVersion</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_Id">Resource.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_LastModifiedOn">Resource.LastModifiedOn</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_LastModifiedBy">Resource.LastModifiedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_Links">Resource.Links</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_HasLink_System_String_">Resource.HasLink(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_Link_System_String_">Resource.Link(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Octopus.Client.Model.html">Octopus.Client.Model</a></h6>
+  <h6><strong>Assembly</strong>: Octopus.Client.dll</h6>
+  <h5 id="Octopus_Client_Model_MachineResource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MachineResource : MachineBasedResource, IResource, IAuditedResource, INamedResource</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource__ctor.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L8">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource__ctor_" data-uid="Octopus.Client.Model.MachineResource.#ctor*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource__ctor" data-uid="Octopus.Client.Model.MachineResource.#ctor">MachineResource()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MachineResource()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_EnvironmentIds.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.EnvironmentIds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L16">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_EnvironmentIds_" data-uid="Octopus.Client.Model.MachineResource.EnvironmentIds*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_EnvironmentIds" data-uid="Octopus.Client.Model.MachineResource.EnvironmentIds">EnvironmentIds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReferenceCollection EnvironmentIds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ReferenceCollection.html">ReferenceCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_Roles.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.Roles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L19">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_Roles_" data-uid="Octopus.Client.Model.MachineResource.Roles*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_Roles" data-uid="Octopus.Client.Model.MachineResource.Roles">Roles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReferenceCollection Roles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ReferenceCollection.html">ReferenceCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_TenantedDeploymentParticipation.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.TenantedDeploymentParticipation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L25">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_TenantedDeploymentParticipation_" data-uid="Octopus.Client.Model.MachineResource.TenantedDeploymentParticipation*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_TenantedDeploymentParticipation" data-uid="Octopus.Client.Model.MachineResource.TenantedDeploymentParticipation">TenantedDeploymentParticipation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TenantedDeploymentMode TenantedDeploymentParticipation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TenantedDeploymentMode.html">TenantedDeploymentMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_TenantIds.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.TenantIds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L43">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_TenantIds_" data-uid="Octopus.Client.Model.MachineResource.TenantIds*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_TenantIds" data-uid="Octopus.Client.Model.MachineResource.TenantIds">TenantIds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReferenceCollection TenantIds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ReferenceCollection.html">ReferenceCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_TenantTags.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.TenantTags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L46">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_TenantTags_" data-uid="Octopus.Client.Model.MachineResource.TenantTags*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_TenantTags" data-uid="Octopus.Client.Model.MachineResource.TenantTags">TenantTags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReferenceCollection TenantTags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ReferenceCollection.html">ReferenceCollection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_AddOrUpdateEnvironments_Octopus_Client_Model_EnvironmentResource___.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.AddOrUpdateEnvironments(Octopus.Client.Model.EnvironmentResource%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L49">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_AddOrUpdateEnvironments_" data-uid="Octopus.Client.Model.MachineResource.AddOrUpdateEnvironments*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_AddOrUpdateEnvironments_Octopus_Client_Model_EnvironmentResource___" data-uid="Octopus.Client.Model.MachineResource.AddOrUpdateEnvironments(Octopus.Client.Model.EnvironmentResource[])">AddOrUpdateEnvironments(EnvironmentResource[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MachineResource AddOrUpdateEnvironments(params EnvironmentResource[] environments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.EnvironmentResource.html">EnvironmentResource</a>[]</td>
+        <td><span class="parametername">environments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_AddOrUpdateRoles_System_String___.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.AddOrUpdateRoles(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L70">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_AddOrUpdateRoles_" data-uid="Octopus.Client.Model.MachineResource.AddOrUpdateRoles*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_AddOrUpdateRoles_System_String___" data-uid="Octopus.Client.Model.MachineResource.AddOrUpdateRoles(System.String[])">AddOrUpdateRoles(String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MachineResource AddOrUpdateRoles(params string[] roles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">roles</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_AddOrUpdateTenants_Octopus_Client_Model_TenantResource___.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.AddOrUpdateTenants(Octopus.Client.Model.TenantResource%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L91">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_AddOrUpdateTenants_" data-uid="Octopus.Client.Model.MachineResource.AddOrUpdateTenants*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_AddOrUpdateTenants_Octopus_Client_Model_TenantResource___" data-uid="Octopus.Client.Model.MachineResource.AddOrUpdateTenants(Octopus.Client.Model.TenantResource[])">AddOrUpdateTenants(TenantResource[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MachineResource AddOrUpdateTenants(params TenantResource[] tenants)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TenantResource.html">TenantResource</a>[]</td>
+        <td><span class="parametername">tenants</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_AddOrUpdateTenantTags_Octopus_Client_Model_TagResource___.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.AddOrUpdateTenantTags(Octopus.Client.Model.TagResource%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L112">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_AddOrUpdateTenantTags_" data-uid="Octopus.Client.Model.MachineResource.AddOrUpdateTenantTags*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_AddOrUpdateTenantTags_Octopus_Client_Model_TagResource___" data-uid="Octopus.Client.Model.MachineResource.AddOrUpdateTenantTags(Octopus.Client.Model.TagResource[])">AddOrUpdateTenantTags(TagResource[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MachineResource AddOrUpdateTenantTags(params TagResource[] tenantTags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TagResource.html">TagResource</a>[]</td>
+        <td><span class="parametername">tenantTags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_ClearEnvironments.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.ClearEnvironments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L64">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_ClearEnvironments_" data-uid="Octopus.Client.Model.MachineResource.ClearEnvironments*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_ClearEnvironments" data-uid="Octopus.Client.Model.MachineResource.ClearEnvironments">ClearEnvironments()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MachineResource ClearEnvironments()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_ClearRoles.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.ClearRoles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L85">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_ClearRoles_" data-uid="Octopus.Client.Model.MachineResource.ClearRoles*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_ClearRoles" data-uid="Octopus.Client.Model.MachineResource.ClearRoles">ClearRoles()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MachineResource ClearRoles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_ClearTenants.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.ClearTenants%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L106">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_ClearTenants_" data-uid="Octopus.Client.Model.MachineResource.ClearTenants*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_ClearTenants" data-uid="Octopus.Client.Model.MachineResource.ClearTenants">ClearTenants()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MachineResource ClearTenants()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_ClearTenantTags.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.ClearTenantTags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L127">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_ClearTenantTags_" data-uid="Octopus.Client.Model.MachineResource.ClearTenantTags*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_ClearTenantTags" data-uid="Octopus.Client.Model.MachineResource.ClearTenantTags">ClearTenantTags()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MachineResource ClearTenantTags()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_RemoveEnvironment_Octopus_Client_Model_EnvironmentResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.RemoveEnvironment(Octopus.Client.Model.EnvironmentResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L58">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_RemoveEnvironment_" data-uid="Octopus.Client.Model.MachineResource.RemoveEnvironment*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_RemoveEnvironment_Octopus_Client_Model_EnvironmentResource_" data-uid="Octopus.Client.Model.MachineResource.RemoveEnvironment(Octopus.Client.Model.EnvironmentResource)">RemoveEnvironment(EnvironmentResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MachineResource RemoveEnvironment(EnvironmentResource environment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.EnvironmentResource.html">EnvironmentResource</a></td>
+        <td><span class="parametername">environment</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_RemoveRole_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.RemoveRole(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L79">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_RemoveRole_" data-uid="Octopus.Client.Model.MachineResource.RemoveRole*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_RemoveRole_System_String_" data-uid="Octopus.Client.Model.MachineResource.RemoveRole(System.String)">RemoveRole(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MachineResource RemoveRole(string role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_RemoveTenant_Octopus_Client_Model_TenantResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.RemoveTenant(Octopus.Client.Model.TenantResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L100">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_RemoveTenant_" data-uid="Octopus.Client.Model.MachineResource.RemoveTenant*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_RemoveTenant_Octopus_Client_Model_TenantResource_" data-uid="Octopus.Client.Model.MachineResource.RemoveTenant(Octopus.Client.Model.TenantResource)">RemoveTenant(TenantResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MachineResource RemoveTenant(TenantResource tenant)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TenantResource.html">TenantResource</a></td>
+        <td><span class="parametername">tenant</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource_RemoveTenantTag_Octopus_Client_Model_TagResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource.RemoveTenantTag(Octopus.Client.Model.TagResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L121">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_MachineResource_RemoveTenantTag_" data-uid="Octopus.Client.Model.MachineResource.RemoveTenantTag*"></a>
+  <h4 id="Octopus_Client_Model_MachineResource_RemoveTenantTag_Octopus_Client_Model_TagResource_" data-uid="Octopus.Client.Model.MachineResource.RemoveTenantTag(Octopus.Client.Model.TagResource)">RemoveTenantTag(TagResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MachineResource RemoveTenantTag(TagResource tenantTag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.TagResource.html">TagResource</a></td>
+        <td><span class="parametername">tenantTag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.MachineResource.html">MachineResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Octopus.Client.Extensibility.IResource.html">IResource</a>
+  </div>
+  <div>
+      <a class="xref" href="Octopus.Client.Model.IAuditedResource.html">IAuditedResource</a>
+  </div>
+  <div>
+      <a class="xref" href="Octopus.Client.Extensibility.INamedResource.html">INamedResource</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_MachineResource.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.MachineResource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/MachineResource.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

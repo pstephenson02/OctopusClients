@@ -1,0 +1,1756 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OctopusClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OctopusClient
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Octopus.Client.OctopusClient">
+  
+  
+  <h1 id="Octopus_Client_OctopusClient" data-uid="Octopus.Client.OctopusClient" class="text-break">Class OctopusClient
+  </h1>
+  <div class="markdown level0 summary"><p>The Octopus Deploy RESTful HTTP API client.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">OctopusClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Octopus.Client.IHttpOctopusClient.html">IHttpOctopusClient</a></div>
+    <div><a class="xref" href="Octopus.Client.IOctopusClient.html">IOctopusClient</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Octopus.Client.html">Octopus.Client</a></h6>
+  <h6><strong>Assembly</strong>: Octopus.Client.dll</h6>
+  <h5 id="Octopus_Client_OctopusClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OctopusClient : IHttpOctopusClient, IOctopusClient, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient__ctor_Octopus_Client_OctopusServerEndpoint_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.%23ctor(Octopus.Client.OctopusServerEndpoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L33">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient__ctor_" data-uid="Octopus.Client.OctopusClient.#ctor*"></a>
+  <h4 id="Octopus_Client_OctopusClient__ctor_Octopus_Client_OctopusServerEndpoint_" data-uid="Octopus.Client.OctopusClient.#ctor(Octopus.Client.OctopusServerEndpoint)">OctopusClient(OctopusServerEndpoint)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Octopus.Client.OctopusClient.html">OctopusClient</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OctopusClient(OctopusServerEndpoint serverEndpoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.OctopusServerEndpoint.html">OctopusServerEndpoint</a></td>
+        <td><span class="parametername">serverEndpoint</span></td>
+        <td><p>The server endpoint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_IsUsingSecureConnection.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.IsUsingSecureConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L52">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_IsUsingSecureConnection_" data-uid="Octopus.Client.OctopusClient.IsUsingSecureConnection*"></a>
+  <h4 id="Octopus_Client_OctopusClient_IsUsingSecureConnection" data-uid="Octopus.Client.OctopusClient.IsUsingSecureConnection">IsUsingSecureConnection</h4>
+  <div class="markdown level1 summary"><p>Indicates whether a secure (SSL) connection is being used to communicate with the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUsingSecureConnection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Repository.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Repository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L47">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Repository_" data-uid="Octopus.Client.OctopusClient.Repository*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Repository" data-uid="Octopus.Client.OctopusClient.Repository">Repository</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IOctopusRepository Repository { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.IOctopusRepository.html">IOctopusRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_RootDocument.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.RootDocument%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L46">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_RootDocument_" data-uid="Octopus.Client.OctopusClient.RootDocument*"></a>
+  <h4 id="Octopus_Client_OctopusClient_RootDocument" data-uid="Octopus.Client.OctopusClient.RootDocument">RootDocument</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RootResource RootDocument { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.RootResource.html">RootResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Create__1_System_String___0_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Create%60%601(System.String%2C%60%600%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L222">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Create_" data-uid="Octopus.Client.OctopusClient.Create*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Create__1_System_String___0_System_Object_" data-uid="Octopus.Client.OctopusClient.Create``1(System.String,``0,System.Object)">Create&lt;TResource&gt;(String, TResource, Object)</h4>
+  <div class="markdown level1 summary"><p>Creates a resource at the given URI on the server using the POST verb, then performs a fresh GET request to fetch
+the created item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TResource Create&lt;TResource&gt;(string path, TResource resource, object pathParameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the container resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TResource</span></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>The resource to create.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td><p>If the <code>path</code> is a URI template, parameters to use for substitution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TResource</span></td>
+        <td><p>The latest copy of the resource from the server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Delete_System_String_System_Object_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Delete(System.String%2CSystem.Object%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L333">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Delete_" data-uid="Octopus.Client.OctopusClient.Delete*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Delete_System_String_System_Object_System_Object_" data-uid="Octopus.Client.OctopusClient.Delete(System.String,System.Object,System.Object)">Delete(String, Object, Object)</h4>
+  <div class="markdown level1 summary"><p>Deletes the resource at the given URI from the server using a the DELETE verb.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete(string path, object pathParameters = null, object resource = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the resource to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td><p>If the <code>path</code> is a URI template, parameters to use for substitution.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>The resource to pass as the request body, if supplied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_DispatchRequest__1_Octopus_Client_OctopusRequest_System_Boolean_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.DispatchRequest%60%601(Octopus.Client.OctopusRequest%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L402">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_DispatchRequest_" data-uid="Octopus.Client.OctopusClient.DispatchRequest*"></a>
+  <h4 id="Octopus_Client_OctopusClient_DispatchRequest__1_Octopus_Client_OctopusRequest_System_Boolean_" data-uid="Octopus.Client.OctopusClient.DispatchRequest``1(Octopus.Client.OctopusRequest,System.Boolean)">DispatchRequest&lt;TResponseResource&gt;(OctopusRequest, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual OctopusResponse&lt;TResponseResource&gt; DispatchRequest&lt;TResponseResource&gt;(OctopusRequest request, bool readResponse)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.OctopusRequest.html">OctopusRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">readResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.OctopusResponse-1.html">OctopusResponse</a>&lt;TResponseResource&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResponseResource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Dispose.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L583">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Dispose_" data-uid="Octopus.Client.OctopusClient.Dispose*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Dispose" data-uid="Octopus.Client.OctopusClient.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_ForSpace_Octopus_Client_Model_SpaceResource_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.ForSpace(Octopus.Client.Model.SpaceResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L54">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_ForSpace_" data-uid="Octopus.Client.OctopusClient.ForSpace*"></a>
+  <h4 id="Octopus_Client_OctopusClient_ForSpace_Octopus_Client_Model_SpaceResource_" data-uid="Octopus.Client.OctopusClient.ForSpace(Octopus.Client.Model.SpaceResource)">ForSpace(SpaceResource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IOctopusSpaceRepository ForSpace(SpaceResource space)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.SpaceResource.html">SpaceResource</a></td>
+        <td><span class="parametername">space</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.IOctopusSpaceRepository.html">IOctopusSpaceRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_ForSystem.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.ForSystem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L60">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_ForSystem_" data-uid="Octopus.Client.OctopusClient.ForSystem*"></a>
+  <h4 id="Octopus_Client_OctopusClient_ForSystem" data-uid="Octopus.Client.OctopusClient.ForSystem">ForSystem()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IOctopusSystemRepository ForSystem()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.IOctopusSystemRepository.html">IOctopusSystemRepository</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Get__1_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Get%60%601(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L133">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Get_" data-uid="Octopus.Client.OctopusClient.Get*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Get__1_System_String_System_Object_" data-uid="Octopus.Client.OctopusClient.Get``1(System.String,System.Object)">Get&lt;TResource&gt;(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Fetches a single resource from the server using the HTTP GET verb.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TResource Get&lt;TResource&gt;(string path, object pathParameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path from which to fetch the resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td><p>If the <code>path</code> is a URI template, parameters to use for substitution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TResource</span></td>
+        <td><p>The resource from the server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_GetContent_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.GetContent(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L375">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_GetContent_" data-uid="Octopus.Client.OctopusClient.GetContent*"></a>
+  <h4 id="Octopus_Client_OctopusClient_GetContent_System_String_System_Object_" data-uid="Octopus.Client.OctopusClient.GetContent(System.String,System.Object)">GetContent(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Fetches raw content from the resource at the specified path, using the GET verb.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stream GetContent(string path, object pathParameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the resource to fetch.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td><p>If the <code>path</code> is a URI template, parameters to use for substitution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><p>A stream containing the content of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Exceptions.OctopusSecurityException.html">OctopusSecurityException</a></td>
+        <td><p>HTTP 401 or 403: Thrown when the current user's API key was not valid, their
+account is disabled, or they don't have permission to perform the specified action.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Exceptions.OctopusServerException.html">OctopusServerException</a></td>
+        <td><p>If any other error is successfully returned from the server (e.g., a 500
+server error).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Exceptions.OctopusValidationException.html">OctopusValidationException</a></td>
+        <td><p>HTTP 400: If there was a problem with the request provided by the user.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Exceptions.OctopusResourceNotFoundException.html">OctopusResourceNotFoundException</a></td>
+        <td><p>HTTP 404: If the specified resource does not exist on the server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Initialize.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L109">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Initialize_" data-uid="Octopus.Client.OctopusClient.Initialize*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Initialize" data-uid="Octopus.Client.OctopusClient.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Initializes this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_List__1_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.List%60%601(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L151">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_List_" data-uid="Octopus.Client.OctopusClient.List*"></a>
+  <h4 id="Octopus_Client_OctopusClient_List__1_System_String_System_Object_" data-uid="Octopus.Client.OctopusClient.List``1(System.String,System.Object)">List&lt;TResource&gt;(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Fetches a collection of resources from the server using the HTTP GET verb. The collection itself will usually be
+limited in size (pagination) and links to the next page of data is available in the <a class="xref" href="Octopus.Client.Model.Resource.html#Octopus_Client_Model_Resource_Links">Links</a>
+property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourceCollection&lt;TResource&gt; List&lt;TResource&gt;(string path, object pathParameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path from which to fetch the resources.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td><p>If the <code>path</code> is a URI template, parameters to use for substitution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.ResourceCollection-1.html">ResourceCollection</a>&lt;TResource&gt;</td>
+        <td><p>The collection of resources from the server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_ListAll__1_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.ListAll%60%601(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L166">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_ListAll_" data-uid="Octopus.Client.OctopusClient.ListAll*"></a>
+  <h4 id="Octopus_Client_OctopusClient_ListAll__1_System_String_System_Object_" data-uid="Octopus.Client.OctopusClient.ListAll``1(System.String,System.Object)">ListAll&lt;TResource&gt;(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Fetches a collection of resources from the server using the HTTP GET verb. All pages will be retrieved.
+property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;TResource&gt; ListAll&lt;TResource&gt;(string path, object pathParameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path from which to fetch the resources.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td><p>If the <code>path</code> is a URI template, parameters to use for substitution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;TResource&gt;</td>
+        <td><p>The collection of resources from the server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Paginate__1_System_String_System_Func_Octopus_Client_Model_ResourceCollection___0__System_Boolean__.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Paginate%60%601(System.String%2CSystem.Func%7BOctopus.Client.Model.ResourceCollection%7B%60%600%7D%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L206">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Paginate_" data-uid="Octopus.Client.OctopusClient.Paginate*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Paginate__1_System_String_System_Func_Octopus_Client_Model_ResourceCollection___0__System_Boolean__" data-uid="Octopus.Client.OctopusClient.Paginate``1(System.String,System.Func{Octopus.Client.Model.ResourceCollection{``0},System.Boolean})">Paginate&lt;TResource&gt;(String, Func&lt;ResourceCollection&lt;TResource&gt;, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Fetches a collection of resources from the server one page at a time using the HTTP GET verb.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Paginate&lt;TResource&gt;(string path, Func&lt;ResourceCollection&lt;TResource&gt;, bool&gt; getNextPage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path from which to fetch the resources.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Octopus.Client.Model.ResourceCollection-1.html">ResourceCollection</a>&lt;TResource&gt;, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">getNextPage</span></td>
+        <td><p>A callback invoked for each page of data found. If the callback returns <code>true</code>, the next
+page will also be requested.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Paginate__1_System_String_System_Object_System_Func_Octopus_Client_Model_ResourceCollection___0__System_Boolean__.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Paginate%60%601(System.String%2CSystem.Object%2CSystem.Func%7BOctopus.Client.Model.ResourceCollection%7B%60%600%7D%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L187">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Paginate_" data-uid="Octopus.Client.OctopusClient.Paginate*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Paginate__1_System_String_System_Object_System_Func_Octopus_Client_Model_ResourceCollection___0__System_Boolean__" data-uid="Octopus.Client.OctopusClient.Paginate``1(System.String,System.Object,System.Func{Octopus.Client.Model.ResourceCollection{``0},System.Boolean})">Paginate&lt;TResource&gt;(String, Object, Func&lt;ResourceCollection&lt;TResource&gt;, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Fetches a collection of resources from the server one page at a time using the HTTP GET verb.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Paginate&lt;TResource&gt;(string path, object pathParameters, Func&lt;ResourceCollection&lt;TResource&gt;, bool&gt; getNextPage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path from which to fetch the resources.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td><p>If the <code>path</code> is a URI template, parameters to use for substitution.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Octopus.Client.Model.ResourceCollection-1.html">ResourceCollection</a>&lt;TResource&gt;, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">getNextPage</span></td>
+        <td><p>A callback invoked for each page of data found. If the callback returns <code>true</code>, the next
+page will also be requested.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Post_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Post(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L263">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Post_" data-uid="Octopus.Client.OctopusClient.Post*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Post_System_String_" data-uid="Octopus.Client.OctopusClient.Post(System.String)">Post(String)</h4>
+  <div class="markdown level1 summary"><p>Sends a command to a resource at the given URI on the server using the POST verb.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Post(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the container resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Post__1_System_String___0_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Post%60%601(System.String%2C%60%600%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L237">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Post_" data-uid="Octopus.Client.OctopusClient.Post*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Post__1_System_String___0_System_Object_" data-uid="Octopus.Client.OctopusClient.Post``1(System.String,``0,System.Object)">Post&lt;TResource&gt;(String, TResource, Object)</h4>
+  <div class="markdown level1 summary"><p>Sends a command to a resource at the given URI on the server using the POST verb.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Post&lt;TResource&gt;(string path, TResource resource, object pathParameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the container resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TResource</span></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>The resource to create.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td><p>If the <code>path</code> is a URI template, parameters to use for substitution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Post__2_System_String___0_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Post%60%602(System.String%2C%60%600%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L252">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Post_" data-uid="Octopus.Client.OctopusClient.Post*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Post__2_System_String___0_System_Object_" data-uid="Octopus.Client.OctopusClient.Post``2(System.String,``0,System.Object)">Post&lt;TResource, TResponse&gt;(String, TResource, Object)</h4>
+  <div class="markdown level1 summary"><p>Sends a command to a resource at the given URI on the server using the POST verb.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TResponse Post&lt;TResource, TResponse&gt;(string path, TResource resource, object pathParameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the container resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TResource</span></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>The resource to post.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td><p>If the <code>path</code> is a URI template, parameters to use for substitution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Put_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Put(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L306">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Put_" data-uid="Octopus.Client.OctopusClient.Put*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Put_System_String_" data-uid="Octopus.Client.OctopusClient.Put(System.String)">Put(String)</h4>
+  <div class="markdown level1 summary"><p>Sends a command to a resource at the given URI on the server using the PUT verb.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Put(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the container resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Exceptions.OctopusSecurityException.html">OctopusSecurityException</a></td>
+        <td><p>HTTP 401 or 403: Thrown when the current user's API key was not valid, their
+account is disabled, or they don't have permission to perform the specified action.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Exceptions.OctopusServerException.html">OctopusServerException</a></td>
+        <td><p>If any other error is successfully returned from the server (e.g., a 500
+server error).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Exceptions.OctopusValidationException.html">OctopusValidationException</a></td>
+        <td><p>HTTP 400: If there was a problem with the request provided by the user.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Exceptions.OctopusResourceNotFoundException.html">OctopusResourceNotFoundException</a></td>
+        <td><p>HTTP 404: If the specified resource does not exist on the server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Put__1_System_String___0_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Put%60%601(System.String%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L285">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Put_" data-uid="Octopus.Client.OctopusClient.Put*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Put__1_System_String___0_" data-uid="Octopus.Client.OctopusClient.Put``1(System.String,``0)">Put&lt;TResource&gt;(String, TResource)</h4>
+  <div class="markdown level1 summary"><p>Sends a command to a resource at the given URI on the server using the PUT verb.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Put&lt;TResource&gt;(string path, TResource resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the container resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TResource</span></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>The resource to create.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Exceptions.OctopusSecurityException.html">OctopusSecurityException</a></td>
+        <td><p>HTTP 401 or 403: Thrown when the current user's API key was not valid, their
+account is disabled, or they don't have permission to perform the specified action.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Exceptions.OctopusServerException.html">OctopusServerException</a></td>
+        <td><p>If any other error is successfully returned from the server (e.g., a 500
+server error).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Exceptions.OctopusValidationException.html">OctopusValidationException</a></td>
+        <td><p>HTTP 400: If there was a problem with the request provided by the user.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Exceptions.OctopusResourceNotFoundException.html">OctopusResourceNotFoundException</a></td>
+        <td><p>HTTP 404: If the specified resource does not exist on the server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Put__1_System_String___0_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Put%60%601(System.String%2C%60%600%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L320">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Put_" data-uid="Octopus.Client.OctopusClient.Put*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Put__1_System_String___0_System_Object_" data-uid="Octopus.Client.OctopusClient.Put``1(System.String,``0,System.Object)">Put&lt;TResource&gt;(String, TResource, Object)</h4>
+  <div class="markdown level1 summary"><p>Sends a command to a resource at the given URI on the server using the PUT verb.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Put&lt;TResource&gt;(string path, TResource resource, object pathParameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the container resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TResource</span></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>The resource to create.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td><p>If the <code>path</code> is a URI template, parameters to use for substitution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_PutContent_System_String_System_IO_Stream_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.PutContent(System.String%2CSystem.IO.Stream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L386">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_PutContent_" data-uid="Octopus.Client.OctopusClient.PutContent*"></a>
+  <h4 id="Octopus_Client_OctopusClient_PutContent_System_String_System_IO_Stream_" data-uid="Octopus.Client.OctopusClient.PutContent(System.String,System.IO.Stream)">PutContent(String, Stream)</h4>
+  <div class="markdown level1 summary"><p>Creates or updates the raw content of the resource at the specified path, using the PUT verb.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PutContent(string path, Stream contentStream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the resource to create or update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">contentStream</span></td>
+        <td><p>A stream containing content of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_QualifyUri_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.QualifyUri(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L393">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_QualifyUri_" data-uid="Octopus.Client.OctopusClient.QualifyUri*"></a>
+  <h4 id="Octopus_Client_OctopusClient_QualifyUri_System_String_System_Object_" data-uid="Octopus.Client.OctopusClient.QualifyUri(System.String,System.Object)">QualifyUri(String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri QualifyUri(string path, object parameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_SignIn_Octopus_Client_Model_LoginCommand_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.SignIn(Octopus.Client.Model.LoginCommand)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L65">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_SignIn_" data-uid="Octopus.Client.OctopusClient.SignIn*"></a>
+  <h4 id="Octopus_Client_OctopusClient_SignIn_Octopus_Client_Model_LoginCommand_" data-uid="Octopus.Client.OctopusClient.SignIn(Octopus.Client.Model.LoginCommand)">SignIn(LoginCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SignIn(LoginCommand loginCommand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.LoginCommand.html">LoginCommand</a></td>
+        <td><span class="parametername">loginCommand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_SignOut.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.SignOut%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L80">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_SignOut_" data-uid="Octopus.Client.OctopusClient.SignOut*"></a>
+  <h4 id="Octopus_Client_OctopusClient_SignOut" data-uid="Octopus.Client.OctopusClient.SignOut">SignOut()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SignOut()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_Update__1_System_String___0_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.Update%60%601(System.String%2C%60%600%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L351">View Source</a>
+  </span>
+  <a id="Octopus_Client_OctopusClient_Update_" data-uid="Octopus.Client.OctopusClient.Update*"></a>
+  <h4 id="Octopus_Client_OctopusClient_Update__1_System_String___0_System_Object_" data-uid="Octopus.Client.OctopusClient.Update``1(System.String,``0,System.Object)">Update&lt;TResource&gt;(String, TResource, Object)</h4>
+  <div class="markdown level1 summary"><p>Updates the resource at the given URI on the server using the PUT verb, then performs a fresh GET request to reload
+the data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TResource Update&lt;TResource&gt;(string path, TResource resource, object pathParameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the resource to update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TResource</span></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>The resource to update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">pathParameters</span></td>
+        <td><p>If the <code>path</code> is a URI template, parameters to use for substitution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TResource</span></td>
+        <td><p>The latest copy of the resource from the server.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_AfterReceivingHttpResponse.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.AfterReceivingHttpResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L94">View Source</a>
+  </span>
+  <h4 id="Octopus_Client_OctopusClient_AfterReceivingHttpResponse" data-uid="Octopus.Client.OctopusClient.AfterReceivingHttpResponse">AfterReceivingHttpResponse</h4>
+  <div class="markdown level1 summary"><p>Occurs when a response has been received.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;WebResponse&gt; AfterReceivingHttpResponse</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Net.WebResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_BeforeSendingHttpRequest.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.BeforeSendingHttpRequest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L89">View Source</a>
+  </span>
+  <h4 id="Octopus_Client_OctopusClient_BeforeSendingHttpRequest" data-uid="Octopus.Client.OctopusClient.BeforeSendingHttpRequest">BeforeSendingHttpRequest</h4>
+  <div class="markdown level1 summary"><p>Occurs when a request is about to be sent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;WebRequest&gt; BeforeSendingHttpRequest</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Net.WebRequest</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_ReceivedOctopusResponse.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.ReceivedOctopusResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L104">View Source</a>
+  </span>
+  <h4 id="Octopus_Client_OctopusClient_ReceivedOctopusResponse" data-uid="Octopus.Client.OctopusClient.ReceivedOctopusResponse">ReceivedOctopusResponse</h4>
+  <div class="markdown level1 summary"><p>Occurs when a response is received from the Octopus Server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;OctopusResponse&gt; ReceivedOctopusResponse</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Octopus.Client.OctopusResponse.html">OctopusResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient_SendingOctopusRequest.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient.SendingOctopusRequest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L99">View Source</a>
+  </span>
+  <h4 id="Octopus_Client_OctopusClient_SendingOctopusRequest" data-uid="Octopus.Client.OctopusClient.SendingOctopusRequest">SendingOctopusRequest</h4>
+  <div class="markdown level1 summary"><p>Occurs when a request is about to be sent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;OctopusRequest&gt; SendingOctopusRequest</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Octopus.Client.OctopusRequest.html">OctopusRequest</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Octopus.Client.IHttpOctopusClient.html">IHttpOctopusClient</a>
+  </div>
+  <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html">IOctopusClient</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_OctopusClient.md&amp;value=---%0Auid%3A%20Octopus.Client.OctopusClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/OctopusClient.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

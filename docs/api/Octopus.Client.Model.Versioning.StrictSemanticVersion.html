@@ -1,0 +1,1795 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StrictSemanticVersion
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StrictSemanticVersion
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion">
+  
+  
+  <h1 id="Octopus_Client_Model_Versioning_StrictSemanticVersion" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion" class="text-break">Class StrictSemanticVersion
+  </h1>
+  <div class="markdown level0 summary"><p>A strict SemVer implementation</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">StrictSemanticVersion</span></div>
+      <div class="level2"><a class="xref" href="Octopus.Client.Model.SemanticVersion.html">SemanticVersion</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IFormattable</span></div>
+    <div><span class="xref">System.IComparable</span></div>
+    <div><span class="xref">System.IComparable</span>&lt;<a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Octopus.Client.Model.Versioning.html">Octopus.Client.Model.Versioning</a></h6>
+  <h6><strong>Assembly</strong>: Octopus.Client.dll</h6>
+  <h5 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StrictSemanticVersion : IFormattable, IComparable, IComparable&lt;StrictSemanticVersion&gt;, IEquatable&lt;StrictSemanticVersion&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_Octopus_Client_Model_Versioning_StrictSemanticVersion_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.%23ctor(Octopus.Client.Model.Versioning.StrictSemanticVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L23">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_Octopus_Client_Model_Versioning_StrictSemanticVersion_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor(Octopus.Client.Model.Versioning.StrictSemanticVersion)">StrictSemanticVersion(StrictSemanticVersion)</h4>
+  <div class="markdown level1 summary"><p>Creates a SemanticVersion from an existing SemanticVersion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StrictSemanticVersion(StrictSemanticVersion version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L34">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Int32_System_Int32_System_Int32_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor(System.Int32,System.Int32,System.Int32)">StrictSemanticVersion(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a SemanticVersion X.Y.Z</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StrictSemanticVersion(int major, int minor, int patch)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>X.y.z</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>x.Y.z</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td><p>x.y.Z</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Int32_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_System_String__System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L72">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Int32_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_System_String__System_String_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.String)">StrictSemanticVersion(Int32, Int32, Int32, IEnumerable&lt;String&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a NuGetVersion X.Y.Z-alpha.1.2#build01</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StrictSemanticVersion(int major, int minor, int patch, IEnumerable&lt;string&gt; releaseLabels, string metadata)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>X.y.z</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>x.Y.z</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td><p>x.y.Z</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">releaseLabels</span></td>
+        <td><p>Release labels that have been split by the dot separator</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Build metadata</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Int32_System_Int32_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_System_String__System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L87">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Int32_System_Int32_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_System_String__System_String_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.String)">StrictSemanticVersion(Int32, Int32, Int32, Int32, IEnumerable&lt;String&gt;, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected StrictSemanticVersion(int major, int minor, int patch, int revision, IEnumerable&lt;string&gt; releaseLabels, string metadata)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">revision</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">releaseLabels</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metadata</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Int32_System_Int32_System_Int32_System_Int32_System_String_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L82">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Int32_System_Int32_System_Int32_System_Int32_System_String_System_String_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String)">StrictSemanticVersion(Int32, Int32, Int32, Int32, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected StrictSemanticVersion(int major, int minor, int patch, int revision, string releaseLabel, string metadata)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">revision</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">releaseLabel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metadata</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Int32_System_Int32_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L46">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Int32_System_Int32_System_Int32_System_String_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.String)">StrictSemanticVersion(Int32, Int32, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a NuGetVersion X.Y.Z-alpha</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StrictSemanticVersion(int major, int minor, int patch, string releaseLabel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>X.y.z</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>x.Y.z</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td><p>x.y.Z</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">releaseLabel</span></td>
+        <td><p>Prerelease label</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Int32_System_Int32_System_Int32_System_String_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.%23ctor(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L59">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Int32_System_Int32_System_Int32_System_String_System_String_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String)">StrictSemanticVersion(Int32, Int32, Int32, String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a NuGetVersion X.Y.Z-alpha#build01</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StrictSemanticVersion(int major, int minor, int patch, string releaseLabel, string metadata)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>X.y.z</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>x.Y.z</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td><p>x.y.Z</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">releaseLabel</span></td>
+        <td><p>Prerelease label</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Build metadata</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Version_System_Collections_Generic_IEnumerable_System_String__System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.%23ctor(System.Version%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L92">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Version_System_Collections_Generic_IEnumerable_System_String__System_String_System_Boolean_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor(System.Version,System.Collections.Generic.IEnumerable{System.String},System.String,System.Boolean)">StrictSemanticVersion(Version, IEnumerable&lt;String&gt;, String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected StrictSemanticVersion(Version version, IEnumerable&lt;string&gt; releaseLabels, string metadata, bool preserveMissingComponents = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Version</span></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">releaseLabels</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metadata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">preserveMissingComponents</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Version_System_String_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.%23ctor(System.Version%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L77">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion__ctor_System_Version_System_String_System_String_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.#ctor(System.Version,System.String,System.String)">StrictSemanticVersion(Version, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected StrictSemanticVersion(Version version, string releaseLabel = null, string metadata = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Version</span></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">releaseLabel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metadata</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_HasMetadata.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.HasMetadata%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L180">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_HasMetadata_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.HasMetadata*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_HasMetadata" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.HasMetadata">HasMetadata</h4>
+  <div class="markdown level1 summary"><p>True if metadata exists for the version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HasMetadata { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_IsPrerelease.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.IsPrerelease%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L163">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_IsPrerelease_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.IsPrerelease*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_IsPrerelease" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.IsPrerelease">IsPrerelease</h4>
+  <div class="markdown level1 summary"><p>True if pre-release labels exist for the version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsPrerelease { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_Major.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.Major%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L115">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Major_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Major*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Major" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Major">Major</h4>
+  <div class="markdown level1 summary"><p>Major version X (X.y.z)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Major { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_Metadata.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.Metadata%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L188">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Metadata_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Metadata*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Metadata" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Metadata">Metadata</h4>
+  <div class="markdown level1 summary"><p>Build metadata attached to the version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Metadata { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_Minor.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.Minor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L123">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Minor_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Minor*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Minor" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Minor">Minor</h4>
+  <div class="markdown level1 summary"><p>Minor version Y (x.Y.z)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Minor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_Patch.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.Patch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L131">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Patch_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Patch*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Patch" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Patch">Patch</h4>
+  <div class="markdown level1 summary"><p>Patch version Z (x.y.Z)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Patch { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_Release.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.Release%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L147">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Release_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Release*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Release" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Release">Release</h4>
+  <div class="markdown level1 summary"><p>The full pre-release label for the version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Release { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_ReleaseLabels.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.ReleaseLabels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersion.cs/#L139">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_ReleaseLabels_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.ReleaseLabels*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_ReleaseLabels" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.ReleaseLabels">ReleaseLabels</h4>
+  <div class="markdown level1 summary"><p>A collection of pre-release labels attached to the version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; ReleaseLabels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_CompareTo_Octopus_Client_Model_Versioning_StrictSemanticVersion_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L68">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_CompareTo_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_CompareTo_Octopus_Client_Model_Versioning_StrictSemanticVersion_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion)">CompareTo(StrictSemanticVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CompareTo(StrictSemanticVersion other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_CompareTo_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_VersionComparison_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion%2COctopus.Client.Model.Versioning.VersionComparison)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L94">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_CompareTo_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_CompareTo_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_VersionComparison_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)">CompareTo(StrictSemanticVersion, VersionComparison)</h4>
+  <div class="markdown level1 summary"><p>Compares NuGetVersion objects using the given comparison mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CompareTo(StrictSemanticVersion other, VersionComparison versionComparison)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.VersionComparison.html">VersionComparison</a></td>
+        <td><span class="parametername">versionComparison</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_CompareTo_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L63">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_CompareTo_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_CompareTo_System_Object_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.CompareTo(System.Object)">CompareTo(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int CompareTo(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_Equals_Octopus_Client_Model_Versioning_StrictSemanticVersion_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L78">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Equals_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Equals_Octopus_Client_Model_Versioning_StrictSemanticVersion_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion)">Equals(StrictSemanticVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Equals(StrictSemanticVersion other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_Equals_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_VersionComparison_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion%2COctopus.Client.Model.Versioning.VersionComparison)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L86">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Equals_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Equals_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_VersionComparison_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.VersionComparison)">Equals(StrictSemanticVersion, VersionComparison)</h4>
+  <div class="markdown level1 summary"><p>True if the VersionBase objects are equal based on the given comparison mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Equals(StrictSemanticVersion other, VersionComparison versionComparison)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.VersionComparison.html">VersionComparison</a></td>
+        <td><span class="parametername">versionComparison</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L73">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Equals_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Equals_System_Object_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_GetHashCode.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L58">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_GetHashCode_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.GetHashCode*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_GetHashCode" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_Parse_System_String_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionFactory.cs/#L15">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Parse_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Parse*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_Parse_System_String_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.Parse(System.String)">Parse(String)</h4>
+  <div class="markdown level1 summary"><p>Parses a SemVer string using strict SemVer rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StrictSemanticVersion Parse(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_ToNormalizedString.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.ToNormalizedString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L17">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_ToNormalizedString_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.ToNormalizedString*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_ToNormalizedString" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.ToNormalizedString">ToNormalizedString()</h4>
+  <div class="markdown level1 summary"><p>Gives a normalized representation of the version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ToNormalizedString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_ToString.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L22">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_ToString_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_ToString" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_ToString_System_String_System_IFormatProvider_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString(System.String%2CSystem.IFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L27">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_ToString_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_ToString_System_String_System_IFormatProvider_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.ToString(System.String,System.IFormatProvider)">ToString(String, IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ToString(string format, IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_TryFormatter_System_String_System_IFormatProvider_System_String__.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.TryFormatter(System.String%2CSystem.IFormatProvider%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L40">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_TryFormatter_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.TryFormatter*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_TryFormatter_System_String_System_IFormatProvider_System_String__" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.TryFormatter(System.String,System.IFormatProvider,System.String@)">TryFormatter(String, IFormatProvider, out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TryFormatter(string format, IFormatProvider formatProvider, out string formattedString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">formattedString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_TryParse_System_String_Octopus_Client_Model_Versioning_StrictSemanticVersion__.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.TryParse(System.String%2COctopus.Client.Model.Versioning.StrictSemanticVersion%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionFactory.cs/#L30">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_TryParse_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.TryParse*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_TryParse_System_String_Octopus_Client_Model_Versioning_StrictSemanticVersion__" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.TryParse(System.String,Octopus.Client.Model.Versioning.StrictSemanticVersion@)">TryParse(String, out StrictSemanticVersion)</h4>
+  <div class="markdown level1 summary"><p>Parse a version string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParse(string value, out StrictSemanticVersion version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>false if the version is not a strict semver</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_op_Equality_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_StrictSemanticVersion_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.op_Equality(Octopus.Client.Model.Versioning.StrictSemanticVersion%2COctopus.Client.Model.Versioning.StrictSemanticVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L103">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_op_Equality_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.op_Equality*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_op_Equality_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_StrictSemanticVersion_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.op_Equality(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)">Equality(StrictSemanticVersion, StrictSemanticVersion)</h4>
+  <div class="markdown level1 summary"><p>==</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(StrictSemanticVersion version1, StrictSemanticVersion version2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">version1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">version2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_op_GreaterThan_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_StrictSemanticVersion_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.op_GreaterThan(Octopus.Client.Model.Versioning.StrictSemanticVersion%2COctopus.Client.Model.Versioning.StrictSemanticVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L129">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_op_GreaterThan_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.op_GreaterThan*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_op_GreaterThan_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_StrictSemanticVersion_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.op_GreaterThan(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)">GreaterThan(StrictSemanticVersion, StrictSemanticVersion)</h4>
+  <div class="markdown level1 summary"><blockquote>
+</blockquote>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator&gt;(StrictSemanticVersion version1, StrictSemanticVersion version2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">version1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">version2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_op_GreaterThanOrEqual_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_StrictSemanticVersion_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.op_GreaterThanOrEqual(Octopus.Client.Model.Versioning.StrictSemanticVersion%2COctopus.Client.Model.Versioning.StrictSemanticVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L137">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_op_GreaterThanOrEqual_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.op_GreaterThanOrEqual*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_op_GreaterThanOrEqual_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_StrictSemanticVersion_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.op_GreaterThanOrEqual(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)">GreaterThanOrEqual(StrictSemanticVersion, StrictSemanticVersion)</h4>
+  <div class="markdown level1 summary"><blockquote>
+<p>=</p>
+</blockquote>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(StrictSemanticVersion version1, StrictSemanticVersion version2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">version1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">version2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_op_Inequality_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_StrictSemanticVersion_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.op_Inequality(Octopus.Client.Model.Versioning.StrictSemanticVersion%2COctopus.Client.Model.Versioning.StrictSemanticVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L111">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_op_Inequality_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.op_Inequality*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_op_Inequality_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_StrictSemanticVersion_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.op_Inequality(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)">Inequality(StrictSemanticVersion, StrictSemanticVersion)</h4>
+  <div class="markdown level1 summary"><p>!=</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(StrictSemanticVersion version1, StrictSemanticVersion version2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">version1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">version2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_op_LessThan_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_StrictSemanticVersion_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.op_LessThan(Octopus.Client.Model.Versioning.StrictSemanticVersion%2COctopus.Client.Model.Versioning.StrictSemanticVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L116">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_op_LessThan_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.op_LessThan*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_op_LessThan_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_StrictSemanticVersion_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.op_LessThan(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)">LessThan(StrictSemanticVersion, StrictSemanticVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(StrictSemanticVersion version1, StrictSemanticVersion version2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">version1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">version2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion_op_LessThanOrEqual_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_StrictSemanticVersion_.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion.op_LessThanOrEqual(Octopus.Client.Model.Versioning.StrictSemanticVersion%2COctopus.Client.Model.Versioning.StrictSemanticVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionBase.cs/#L121">View Source</a>
+  </span>
+  <a id="Octopus_Client_Model_Versioning_StrictSemanticVersion_op_LessThanOrEqual_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.op_LessThanOrEqual*"></a>
+  <h4 id="Octopus_Client_Model_Versioning_StrictSemanticVersion_op_LessThanOrEqual_Octopus_Client_Model_Versioning_StrictSemanticVersion_Octopus_Client_Model_Versioning_StrictSemanticVersion_" data-uid="Octopus.Client.Model.Versioning.StrictSemanticVersion.op_LessThanOrEqual(Octopus.Client.Model.Versioning.StrictSemanticVersion,Octopus.Client.Model.Versioning.StrictSemanticVersion)">LessThanOrEqual(StrictSemanticVersion, StrictSemanticVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(StrictSemanticVersion version1, StrictSemanticVersion version2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">version1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Octopus.Client.Model.Versioning.StrictSemanticVersion.html">StrictSemanticVersion</a></td>
+        <td><span class="parametername">version2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IFormattable</span>
+  </div>
+  <div>
+      <span class="xref">System.IComparable</span>
+  </div>
+  <div>
+      <span class="xref">System.IComparable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_Model_Versioning_StrictSemanticVersion.md&amp;value=---%0Auid%3A%20Octopus.Client.Model.Versioning.StrictSemanticVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/Model/Versioning/StrictSemanticVersionFactory.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

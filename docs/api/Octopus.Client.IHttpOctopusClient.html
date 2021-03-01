@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IHttpOctopusClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IHttpOctopusClient
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Octopus.Client.IHttpOctopusClient">
+  
+  
+  <h1 id="Octopus_Client_IHttpOctopusClient" data-uid="Octopus.Client.IHttpOctopusClient" class="text-break">Interface IHttpOctopusClient
+  </h1>
+  <div class="markdown level0 summary"><p>Implemented by an <a class="xref" href="Octopus.Client.IOctopusClient.html">IOctopusClient</a> that uses HTTP to communicate.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_Repository">IOctopusClient.Repository</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_IsUsingSecureConnection">IOctopusClient.IsUsingSecureConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_SendingOctopusRequest">IOctopusClient.SendingOctopusRequest</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_ReceivedOctopusResponse">IOctopusClient.ReceivedOctopusResponse</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_List__1_System_String_System_Object_">IOctopusClient.List&lt;TResource&gt;(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_ListAll__1_System_String_System_Object_">IOctopusClient.ListAll&lt;TResource&gt;(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_Paginate__1_System_String_System_Func_Octopus_Client_Model_ResourceCollection___0__System_Boolean__">IOctopusClient.Paginate&lt;TResource&gt;(String, Func&lt;ResourceCollection&lt;TResource&gt;, Boolean&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_Paginate__1_System_String_System_Object_System_Func_Octopus_Client_Model_ResourceCollection___0__System_Boolean__">IOctopusClient.Paginate&lt;TResource&gt;(String, Object, Func&lt;ResourceCollection&lt;TResource&gt;, Boolean&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_Get__1_System_String_System_Object_">IOctopusClient.Get&lt;TResource&gt;(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_Create__1_System_String___0_System_Object_">IOctopusClient.Create&lt;TResource&gt;(String, TResource, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_Post__1_System_String___0_System_Object_">IOctopusClient.Post&lt;TResource&gt;(String, TResource, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_Post__2_System_String___0_System_Object_">IOctopusClient.Post&lt;TResource, TResponse&gt;(String, TResource, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_Post_System_String_">IOctopusClient.Post(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_Put__1_System_String___0_">IOctopusClient.Put&lt;TResource&gt;(String, TResource)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_Put_System_String_">IOctopusClient.Put(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_Put__1_System_String___0_System_Object_">IOctopusClient.Put&lt;TResource&gt;(String, TResource, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_Update__1_System_String___0_System_Object_">IOctopusClient.Update&lt;TResource&gt;(String, TResource, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_Delete_System_String_System_Object_System_Object_">IOctopusClient.Delete(String, Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_GetContent_System_String_System_Object_">IOctopusClient.GetContent(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_PutContent_System_String_System_IO_Stream_">IOctopusClient.PutContent(String, Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_QualifyUri_System_String_System_Object_">IOctopusClient.QualifyUri(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_SignIn_Octopus_Client_Model_LoginCommand_">IOctopusClient.SignIn(LoginCommand)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_SignOut">IOctopusClient.SignOut()</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_ForSpace_Octopus_Client_Model_SpaceResource_">IOctopusClient.ForSpace(SpaceResource)</a>
+    </div>
+    <div>
+      <a class="xref" href="Octopus.Client.IOctopusClient.html#Octopus_Client_IOctopusClient_ForSystem">IOctopusClient.ForSystem()</a>
+    </div>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Octopus.Client.html">Octopus.Client</a></h6>
+  <h6><strong>Assembly</strong>: Octopus.Client.dll</h6>
+  <h5 id="Octopus_Client_IHttpOctopusClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IHttpOctopusClient : IOctopusClient, IDisposable</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_IHttpOctopusClient_AfterReceivingHttpResponse.md&amp;value=---%0Auid%3A%20Octopus.Client.IHttpOctopusClient.AfterReceivingHttpResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/IHttpOctopusClient.cs/#L19">View Source</a>
+  </span>
+  <h4 id="Octopus_Client_IHttpOctopusClient_AfterReceivingHttpResponse" data-uid="Octopus.Client.IHttpOctopusClient.AfterReceivingHttpResponse">AfterReceivingHttpResponse</h4>
+  <div class="markdown level1 summary"><p>Occurs when a response has been received.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;WebResponse&gt; AfterReceivingHttpResponse</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Net.WebResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_IHttpOctopusClient_BeforeSendingHttpRequest.md&amp;value=---%0Auid%3A%20Octopus.Client.IHttpOctopusClient.BeforeSendingHttpRequest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/IHttpOctopusClient.cs/#L14">View Source</a>
+  </span>
+  <h4 id="Octopus_Client_IHttpOctopusClient_BeforeSendingHttpRequest" data-uid="Octopus.Client.IHttpOctopusClient.BeforeSendingHttpRequest">BeforeSendingHttpRequest</h4>
+  <div class="markdown level1 summary"><p>Occurs when a request is about to be sent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;WebRequest&gt; BeforeSendingHttpRequest</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Net.WebRequest</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/new/docfx/apiSpec/new?filename=Octopus_Client_IHttpOctopusClient.md&amp;value=---%0Auid%3A%20Octopus.Client.IHttpOctopusClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/pstephenson02/OctopusClients/blob/docfx/source/Octopus.Client/IHttpOctopusClient.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
