@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PLACEHOLDER </title>
+    <title>Octopus.Client </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="PLACEHOLDER ">
+    <meta name="title" content="Octopus.Client ">
     <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,9 +67,45 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="placeholder">PLACEHOLDER</h1>
+<h1 id="octopusclient">Octopus.Client</h1>
 
-<p>TODO: Add .NET projects to the <em>src</em> folder and run <code>docfx</code> to generate <strong>REAL</strong> <em>API Documentation</em>!</p>
+<p>Octopus.Client is an <a href="https://github.com/OctopusDeploy/OctopusClients">open source</a> .NET library that makes it easy to write C# programs or PowerShell scripts that manipulate the <a href="https://octopus.com/docs/octopus-rest-api">Octopus Deploy REST API</a>.</p>
+<p>The library targets:</p>
+<ul>
+<li>.NET Framework 4.5.2</li>
+<li>.NET Standard 2.0</li>
+</ul>
+<p>Details for where to find the API, how to authenticate, and the resources that are available can be found on <a href="https://g.octopushq.com/ApiDocs">the API documentation site</a>, and <a href="https://samples.octopus.app/swaggerui">swagger documentation is also available</a>.</p>
+<h2 id="installation">Installation</h2>
+<pre><code class="lang-pwsh">Install-Package Octopus.Client
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>In PowerShell, you can load the DLLs into your session using the <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/add-type?view=powershell-7.1"><code>Add-Type</code></a> cmdlet.</p>
+<pre><code class="lang-pwsh">$path = Join-Path (Get-Item ((Get-Package Octopus.Client).source)).Directory.FullName &quot;lib/net452/Octopus.Client.dll&quot;
+Add-Type -Path $path
+</code></pre>
+<p>Using the DLL that targets netstandard may require additional types:</p>
+<pre><code class="lang-pwsh">$path = Join-Path (Get-Item ((Get-Package NewtonSoft.Json).source)).Directory.FullName &quot;lib/netstandard2.0/NewtonSoft.Json.dll&quot;
+Add-Type -Path $path
+$path = Join-Path (Get-Item ((Get-Package Octodiff).source)).Directory.FullName &quot;lib/netstandard2.0/Octodiff.dll&quot;
+Add-Type -Path $path
+</code></pre>
+<h2 id="authentication">Authentication</h2>
+<h3 id="api-key">Api Key</h3>
+<p>See our documentation on <a href="https://octopus.com/docs/octopus-rest-api/how-to-create-an-api-key">how to create an API key</a>.</p>
+<pre><code class="lang-csharp">var server = &quot;https://myoctopus.example.com/&quot;;
+var apiKey = &quot;API-YOURKEY&quot;;
+var endpoint = new OctopusServerEndpoint(server, apiKey);
+using (var client = await OctopusAsyncClient.Create(endpoint))
+{
+    // client is ready to use
+}
+</code></pre>
+<h3 id="username-and-password">Username and password</h3>
+<pre><code class="lang-csharp">await client.Repository.Users.SignIn(new LoginCommand { Username = &quot;me&quot;, Password = &quot;secret&quot; });
+</code></pre>
+<h2 id="octopusclient-examples">Octopus.Client Examples</h2>
+<p>We have many examples showing how to use Octopus.Client in both our <a href="/docs/octopus-rest-api/examples/index.md">API examples</a>, and on the <a href="https://github.com/OctopusDeploy/OctopusDeploy-Api/tree/master/Octopus.Client">OctopusDeploy-API GitHub repository</a>.</p>
 </article>
           </div>
           
